@@ -1,0 +1,23 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/PATO_import.owl.
+
+[Source ontology]
+PATO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/PATO_0000011 #age
+http://purl.obolibrary.org/obo/PATO_0000047 #biological sex
+http://purl.obolibrary.org/obo/PATO_0000119 #height
+http://purl.obolibrary.org/obo/PATO_0000128 #weight
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/PATO_0001241 #physical object quality
+subClassOf http://purl.obolibrary.org/obo/PATO_0001241 #physical object quality
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+includeAllAxioms
+
+[Source annotation URIs to be excluded]

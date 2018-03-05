@@ -1,0 +1,28 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/ordi/IAO_imports.owl
+
+[Source ontology]
+IAO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/IAO_0000590 #written name
+http://purl.obolibrary.org/obo/IAO_0000109 #measurement datum
+
+http://purl.obolibrary.org/obo/IAO_0000413 #is duration of
+
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/IAO_0000030 #information content entity
+subClassOf http://purl.obolibrary.org/obo/IAO_0000030
+
+http://purl.obolibrary.org/obo/IAO_0000590 #written name
+subClassOf http://purl.obolibrary.org/obo/IAO_0000300 #textual entity
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
+
+[Source annotation URIs to be excluded]

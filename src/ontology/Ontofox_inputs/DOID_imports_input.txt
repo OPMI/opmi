@@ -1,0 +1,32 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/ordi/DOID_imports.owl
+
+[Source ontology]
+DOID
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/HP_0002086 #Abnormality of the respiratory system
+http://purl.obolibrary.org/obo/DOID_10825 #essential hypertension
+http://purl.obolibrary.org/obo/DOID_6000 #congestive heart failure
+http://purl.obolibrary.org/obo/DOID_3393 #Coronary artery disease
+http://purl.obolibrary.org/obo/DOID_9351 #diabetes mellitus
+http://purl.obolibrary.org/obo/DOID_0060497 #Pollen allergy
+
+includeAllChildren
+
+http://purl.obolibrary.org/obo/DOID_1579 #respiratory system disease
+includeAllChildren
+
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/DOID_4 #disease
+subClassOf http://purl.obolibrary.org/obo/BFO_0000016 #disposition
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
+
+[Source annotation URIs to be excluded]

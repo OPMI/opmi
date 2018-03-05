@@ -1,0 +1,42 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/ordi/ENVO_imports.owl
+
+[Source ontology]
+ENVO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/ENVO_02000099 #coal dust
+http://purl.obolibrary.org/obo/ENVO_02000100 # mineral dust
+http://purl.obolibrary.org/obo/ENVO_02000101 #fibrous dust
+http://purl.obolibrary.org/obo/ENVO_02000102 #fibrous glass dust
+http://purl.obolibrary.org/obo/ENVO_02000106 #asbestos dust
+http://purl.obolibrary.org/obo/ENVO_02000103 # metallic dust
+http://purl.obolibrary.org/obo/ENVO_02000104 #cement dust
+http://purl.obolibrary.org/obo/ENVO_02000105 #clay dust
+http://purl.obolibrary.org/obo/ENVO_02000109 #dust from plant parts
+http://purl.obolibrary.org/obo/ENVO_02000107 #grain dust
+http://purl.obolibrary.org/obo/ENVO_02000108 #cotton dust
+http://purl.obolibrary.org/obo/ENVO_02000113 #welding fume
+http://purl.obolibrary.org/obo/ENVO_02000114 #paraffin wax fume
+http://purl.obolibrary.org/obo/ENVO_02000120 #zinc chloride fume
+http://purl.obolibrary.org/obo/ENVO_02000115 #vanadium fume
+http://purl.obolibrary.org/obo/ENVO_00000000 #geographic feature
+http://purl.obolibrary.org/obo/CHEBI_33292 #fuel
+http://purl.obolibrary.org/obo/CHEBI_35230 #fossil fuel
+http://purl.obolibrary.org/obo/ENVO_01000744 #human dwelling
+http://purl.obolibrary.org/obo/ENVO_01000773 #village
+http://purl.obolibrary.org/obo/ENVO_00000856 #city
+http://purl.obolibrary.org/obo/ENVO_01000552 #natural gas
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/BFO_0000040 #material entity
+http://purl.obolibrary.org/obo/ENVO_00000000 #geographic feature
+http://purl.obolibrary.org/obo/ENVO_00000062 #populated place 
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+includeAllAxiomsRecursively
+
+[Source annotation URIs to be excluded]

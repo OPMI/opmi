@@ -1,0 +1,63 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/ordi/HP_imports.owl
+
+[Source ontology]
+HP
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/HP_0030718 #Right atrial enlargement
+http://purl.obolibrary.org/obo/HP_0001688 #Sinus Bradycardia
+http://purl.obolibrary.org/obo/HP_0011703 #Sinus tachycardia
+http://purl.obolibrary.org/obo/HP_0006699 # Premature atrial contractions
+http://purl.obolibrary.org/obo/HP_0006682 #Premature Ventricular  contractions
+http://purl.obolibrary.org/obo/HP_0001712 #Left Ventricular Hypertrophy
+http://purl.obolibrary.org/obo/HP_0001667 # Right Ventricular Hypertrophy by ECG Finding
+http://purl.obolibrary.org/obo/HP_0011675 #Arrhythmia
+includeAllChildren
+
+http://purl.obolibrary.org/obo/HP_0003115 #Abnormal EKG
+includeAllChildren
+
+http://purl.obolibrary.org/obo/HP_0012735 #Cough
+http://purl.obolibrary.org/obo/HP_0011947 #Respiratory tract infection
+http://purl.obolibrary.org/obo/HP_0002094 #Dyspnea
+http://purl.obolibrary.org/obo/HP_0001945 #fever
+http://purl.obolibrary.org/obo/HP_0002329 #Drowsiness
+http://purl.obolibrary.org/obo/HP_0002315 #Headache
+http://purl.obolibrary.org/obo/HP_0002039 #Anorexia
+http://purl.obolibrary.org/obo/HP_0030848 # Elevated jugular venous pressure
+http://purl.obolibrary.org/obo/HP_0012375 #Chemosis 
+http://purl.obolibrary.org/obo/HP_0010307 #Stridor
+http://purl.obolibrary.org/obo/HP_0030828 #Wheezing
+http://purl.obolibrary.org/obo/HP_0030831 #Rhonchi
+http://purl.obolibrary.org/obo/HP_0030830 #crackles
+http://purl.obolibrary.org/obo/HP_0010741 #Edema of the lower limbs
+http://purl.obolibrary.org/obo/HP_0002020 #Gastroesophageal reflux
+http://purl.obolibrary.org/obo/HP_0000939 #Osteoporosis
+http://purl.obolibrary.org/obo/HP_0000964 #Eczema
+http://purl.obolibrary.org/obo/HP_0005110 #atrial fibrillation
+
+http://purl.obolibrary.org/obo/HP_0000118 #Phenotypic abnormality
+
+http://purl.obolibrary.org/obo/HP_0003193 #Allergic rhinitis
+http://purl.obolibrary.org/obo/HP_0000961 #Cyanosis
+http://purl.obolibrary.org/obo/HP_0001678 #Atrioventricular block
+http://purl.obolibrary.org/obo/HP_0004755 #Supraventricular tachycardia
+
+includeAllChildren
+
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/HP_0000118 #Phenotypic abnormality
+subClassOf http://purl.obolibrary.org/obo/BFO_0000019 #quallity
+
+[Source term retrieval setting]
+includeComputedIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000111 #iao:preferredTerm
+http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
+http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
+
+[Source annotation URIs to be excluded]
