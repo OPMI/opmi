@@ -1,5 +1,5 @@
 [URI of the OWL(RDF/XML) output file]
-http://purl.obolibrary.org/obo/ordi/CHEBI_imports.owl
+http://purl.obolibrary.org/obo/opmi/CHEBI_imports.owl
 
 [Source ontology]
 CHEBI
@@ -8,19 +8,6 @@ CHEBI
 http://purl.obolibrary.org/obo/CHEBI_27933 #beta-lactam antibiotic
 http://purl.obolibrary.org/obo/CHEBI_23066 #cephalosporin
 http://purl.obolibrary.org/obo/CHEBI_17334 #penicillin
-http://purl.obolibrary.org/obo/CHEBI_9321 #Sulbactam
-http://purl.obolibrary.org/obo/CHEBI_25105 #macrolide antibiotic
-http://purl.obolibrary.org/obo/CHEBI_24396 #glycopeptide antibiotic
-http://purl.obolibrary.org/obo/CHEBI_22507 #aminoglycoside antibiotic
-http://purl.obolibrary.org/obo/CHEBI_23765 #quinolone
-http://purl.obolibrary.org/obo/CHEBI_28177 #theophylline
-http://purl.obolibrary.org/obo/CHEBI_2659 #Aminophylline
-http://purl.obolibrary.org/obo/CHEBI_24261 #glucocorticoid
-http://purl.obolibrary.org/obo/CHEBI_46633 #carbapenems
-http://purl.obolibrary.org/obo/CHEBI_77035 #expectorant
-http://purl.obolibrary.org/obo/CHEBI_50857 #anti-allergic agent
-http://purl.obolibrary.org/obo/CHEBI_48876 #muscarinic antagonist
-http://purl.obolibrary.org/obo/CHEBI_33281 #antimicrobial agent
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/BFO_0000040 #material entity

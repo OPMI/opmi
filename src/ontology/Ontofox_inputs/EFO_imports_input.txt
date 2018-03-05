@@ -1,11 +1,11 @@
 [URI of the OWL(RDF/XML) output file]
-http://purl.obolibrary.org/obo/ordi/EFO_imports.owl
+http://purl.obolibrary.org/obo/opmi/EFO_imports.owl
 
 [Source ontology]
 EFO
 
 [Low level source term URIs]
-http://www.ebi.ac.uk/efo/EFO_0003157 #Chinese
+http://www.ebi.ac.uk/efo/EFO_0001799 #ethnic group
 includeAllChildren
 
 [Top level source term URIs and target direct superclass URIs]

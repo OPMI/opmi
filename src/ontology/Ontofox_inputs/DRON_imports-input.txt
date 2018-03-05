@@ -1,30 +1,13 @@
 [URI of the OWL(RDF/XML) output file]
-http://purl.obolibrary.org/obo/ordi/DRON_imports.owl
+http://purl.obolibrary.org/obo/opmi/DRON_imports.owl
 
 [Source ontology]
 DRON
 
 [Low level source term URIs]
-http://purl.obolibrary.org/obo/DRON_00031786 #Budesonide Dry Powder Inhaler
-http://purl.obolibrary.org/obo/DRON_00031766 #Beclomethasone Metered Dose Inhaler
-http://purl.obolibrary.org/obo/DRON_00031767 #fluticasone Nasal Inhaler
-http://purl.obolibrary.org/obo/DRON_00031776 #Ipratropium Metered Dose Inhaler
-http://purl.obolibrary.org/obo/DRON_00031755 # Albuterol Metered Dose Inhaler
-http://purl.obolibrary.org/obo/DRON_00031758 #Budesonide / formoterol Metered Dose Inhaler
-http://purl.obolibrary.org/obo/DRON_00031782 #fluticasone / salmeterol Dry Powder Inhaler
 http://purl.obolibrary.org/obo/CHEBI_27933 #beta-lactam antibiotic
 http://purl.obolibrary.org/obo/CHEBI_23066 #cephalosporin
 http://purl.obolibrary.org/obo/CHEBI_17334 #penicillin
-http://purl.obolibrary.org/obo/CHEBI_9321 #Sulbactam
-http://purl.obolibrary.org/obo/CHEBI_25105 #macrolide antibiotic
-http://purl.obolibrary.org/obo/CHEBI_24396 #glycopeptide antibiotic
-http://purl.obolibrary.org/obo/CHEBI_22507 #aminoglycoside antibiotic
-http://purl.obolibrary.org/obo/CHEBI_23765 #quinolone
-http://purl.obolibrary.org/obo/CHEBI_28177 #theophylline
-http://purl.obolibrary.org/obo/CHEBI_2659 #Aminophylline
-http://purl.obolibrary.org/obo/CHEBI_24261 #glucocorticoid
-http://purl.obolibrary.org/obo/CHEBI_46633 #carbapenems
-
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/DRON_00000005 #drug product
@@ -36,3 +19,4 @@ includeAllIntermediates
 includeAllAxiomsRecursively
 
 [Source annotation URIs to be excluded]
+

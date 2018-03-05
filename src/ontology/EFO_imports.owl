@@ -1,0 +1,514 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/opmi/EFO_imports.owl#"
+     xml:base="http://purl.obolibrary.org/obo/opmi/EFO_imports.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:efo="http://www.ebi.ac.uk/efo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/opmi/EFO_imports.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/UMLS_definition_citation">
+        <efo:UMLS_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/UMLS_definition_citation is an annotation property that is drawn from UMLS</efo:UMLS_definition_citation>
+        <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/NCI_Thesaurus_definition_citation">
+        <efo:NCI_Thesaurus_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/NCI_Thesaurus_definition_citation is an annotation property that is drawn from NCI_Thesaurus</efo:NCI_Thesaurus_definition_citation>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/NCI_Thesaurus_definition_citation is an annotation property that is drawn from NCI_Thesaurus</obo:IAO_0000115>
+        <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/definition_citation">
+        <obo:IAO_0000115>A definition citation is a document, ontology class, person or organization from which the definition of the class is derived. It is used in the same sense as a citation in literature, in that the definition may have been derived from these sources or that this definition is related to these source.</obo:IAO_0000115>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/NIFSTD_definition_citation">
+        <efo:NIFSTD_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/NIFSTD_definition_citation is an annotation property that is drawn from NIFSTD</efo:NIFSTD_definition_citation>
+        <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/bioportal_provenance"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
+        <rdfs:label>term editor</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/SNOMEDCT_definition_citation">
+        <efo:SNOMEDCT_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/SNOMEDCT_definition_citation is an annotation property that is drawn from SNOMEDCT</efo:SNOMEDCT_definition_citation>
+        <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/alternative_term">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alternative_term</rdfs:label>
+        <obo:IAO_0000115>An alternative label for a given entity such as a commonly used abbreviation or synonym. </obo:IAO_0000115>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/has_flag -->
+
+    <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/efo/has_flag">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_flag</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0001799 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0001799">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ethnic group</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A group of people with a common cultural heritage that sets them apart from others in a variety of social relationships. (MSH); A social group characterized by a distinctive social and cultural tradition maintained from generation to generation, a common history and origin and a sense of identification with the group; members of the group have distinctive features in their way of life, shared experiences and often a common genetic heritage; these features may be reflected in their experience of health and disease. (NCI); Ethnicity - an arbitrary classification of the social group a person belongs to, and either identifies with or is identified with by others, as a result of a complex of cultural, biological, geographical and other factors such as linguistic, dietary and religion traditions; ancestry, background, allegiance, or association; and physical characteristics traditionally associated with race. Increasingly the concept is used synonymously with race but this use trend has a pragmatic basis rather than scientific. (NCI); The concept of ethnic origin is an attempt to classify people, not according to their current ethnicity, but according to where their ancestors came from. Ethnic origin has become a popular classification in statistics, where the concept of race has been largely discarded. (from Wikipedia) (NCI); a group of people with a common cultural heritage that sets them apart from others in a variety of social relationships. (CSP)</obo:IAO_0000115>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A group of people with a common cultural heritage that sets them apart from others in a variety of social relationships. (MSH); A social group characterized by a distinctive social and cultural tradition maintained from generation to generation, a common history and origin and a sense of identification with the group; members of the group have distinctive features in their way of life, shared experiences and often a common genetic heritage; these features may be reflected in their experience of health and disease. (NCI); Ethnicity - an arbitrary classification of the social group a person belongs to, and either identifies with or is identified with by others, as a result of a complex of cultural, biological, geographical and other factors such as linguistic, dietary and religion traditions; ancestry, background, allegiance, or association; and physical characteristics traditionally associated with race. Increasingly the concept is used synonymously with race but this use trend has a pragmatic basis rather than scientific. (NCI); The concept of ethnic origin is an attempt to classify people, not according to their current ethnicity, but according to where their ancestors came from. Ethnic origin has become a popular classification in statistics, where the concept of race has been largely discarded. (from Wikipedia) (NCI); a group of people with a common cultural heritage that sets them apart from others in a variety of social relationships. (CSP)[accessedResource: NIFSTD:birnlex_3016][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ethnic group is a population whose members have a common heritage that is real or presumed such as common culture, language, religion, behaviour or biological trait.</obo:IAO_0000115>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ethnicity</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ethnicity[accessedResource: NIFSTD:birnlex_3016][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">James Malone</obo:IAO_0000117>
+        <efo:NCI_Thesaurus_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIt:C16564</efo:NCI_Thesaurus_definition_citation>
+        <efo:NIFSTD_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIFSTD:birnlex_3016</efo:NIFSTD_definition_citation>
+        <efo:SNOMEDCT_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNOMEDCT:364699009</efo:SNOMEDCT_definition_citation>
+        <efo:SNOMEDCT_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNOMEDCT:372148003</efo:SNOMEDCT_definition_citation>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tomasz Adamusiak</obo:IAO_0000117>
+        <efo:definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Ethnic_group</efo:definition_citation>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">race</efo:alternative_term>
+        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0003150 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0003150">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">African American</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0001799"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A term used in the United States to categorize a population group comprised of persons having origins in any of the black racial groups of Africa. Includes population subgroups (e.g., Kenyan, Nigerian, Haitian). The concept refers also to individuals who classify themselves as described.</obo:IAO_0000115>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A term used in the United States to categorize a population group comprised of persons having origins in any of the black racial groups of Africa. Includes population subgroups (e.g., Kenyan, Nigerian, Haitian). The concept refers also to individuals who classify themselves as described.[accessedResource: NCIt:C16352][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Afro American</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Afro American[accessedResource: NCIt:C16352][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BLACK OR AFRICAN AMERICAN</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BLACK OR AFRICAN AMERICAN[accessedResource: NCIt:C16352][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Black</efo:alternative_term>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Black Populations</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Black Populations[accessedResource: NCIt:C16352][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Black[accessedResource: NCIt:C16352][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:NCI_Thesaurus_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIt:C16352</efo:NCI_Thesaurus_definition_citation>
+        <efo:SNOMEDCT_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNOMEDCT:15086000</efo:SNOMEDCT_definition_citation>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tomasz Adamusiak</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0003151 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0003151">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">American</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0001799"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tomasz Adamusiak</obo:IAO_0000117>
+        <efo:UMLS_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0596070</efo:UMLS_definition_citation>
+        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0003152 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0003152">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0001799"/>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asians</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asians[accessedResource: NCIt:C41260][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Denotes a person having origins in any of the original peoples of the Far East, Southeast Asia, or the Indian subcontinent, including Cambodia, China, India, Japan, Korea, Malaysia, Mongolia, Pakistan, the Philippine Islands, Thailand, and Vietnam.</obo:IAO_0000115>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Denotes a person having origins in any of the original peoples of the Far East, Southeast Asia, or the Indian subcontinent, including Cambodia, China, India, Japan, Korea, Malaysia, Mongolia, Pakistan, the Philippine Islands, Thailand, and Vietnam.[accessedResource: NCIt:C41260][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jie Zheng</obo:IAO_0000117>
+        <efo:NCI_Thesaurus_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIt:C41260</efo:NCI_Thesaurus_definition_citation>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tomasz Adamusiak</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0003153 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0003153">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asian Indian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0001799"/>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asian Indians</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asian Indians[accessedResource: NCIt:C41262][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hindu</efo:alternative_term>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In North America the term is used to distinguish a person having origins in the original peoples of the Indian sub-continent from Native Americans.</obo:IAO_0000115>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In North America the term is used to distinguish a person having origins in the original peoples of the Indian sub-continent from Native Americans.[accessedResource: NCIt:C41262][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indian</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indian[accessedResource: NCIt:C41262][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:NCI_Thesaurus_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIt:C41262</efo:NCI_Thesaurus_definition_citation>
+        <efo:SNOMEDCT_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNOMEDCT:414481008</efo:SNOMEDCT_definition_citation>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tomasz Adamusiak</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0003154 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0003154">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asian/Pacific Islander</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0001799"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Denotes a person having origins in any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands. The term covers particularly people who identify themselves as part-Hawaiian, Native Hawaiian, Guamanian or Chamorro, Carolinian, Samoan, Chuukese (Trukese), Fijian, Kosraean, Melanesian, Micronesian, Northern Mariana Islander, Palauan, Papua New Guinean, Pohnpeian, Polynesian, Solomon Islander, Tahitian, Tokelauan, Tongan, Yapese, or Pacific Islander, not specified.</obo:IAO_0000115>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Denotes a person having origins in any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands. The term covers particularly people who identify themselves as part-Hawaiian, Native Hawaiian, Guamanian or Chamorro, Carolinian, Samoan, Chuukese (Trukese), Fijian, Kosraean, Melanesian, Micronesian, Northern Mariana Islander, Palauan, Papua New Guinean, Pohnpeian, Polynesian, Solomon Islander, Tahitian, Tokelauan, Tongan, Yapese, or Pacific Islander, not specified.[accessedResource: NCIt:C41219][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:NCI_Thesaurus_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIt:C41219</efo:NCI_Thesaurus_definition_citation>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Native Hawaiian or Other Pacific Islander</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Native Hawaiian or Other Pacific Islander[accessedResource: NCIt:C41219][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tomasz Adamusiak</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0003155 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0003155">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">British</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0001799"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tomasz Adamusiak</obo:IAO_0000117>
+        <efo:UMLS_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0596227</efo:UMLS_definition_citation>
+        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0003156 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0003156">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Caucasian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0001799"/>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Caucasians</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Caucasians[accessedResource: NCIt:C41261][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Caucasoid</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Caucasoid[accessedResource: NCIt:C41261][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Denotes person with European, Middle Eastern, or North African ancestral origin who identifies, or is identified, as White.</obo:IAO_0000115>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Denotes person with European, Middle Eastern, or North African ancestral origin who identifies, or is identified, as White.[accessedResource: NCIt:C41261][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">European</efo:alternative_term>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jie Zheng</obo:IAO_0000117>
+        <efo:NCI_Thesaurus_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIt:C41261</efo:NCI_Thesaurus_definition_citation>
+        <efo:NCI_Thesaurus_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIt:C43851</efo:NCI_Thesaurus_definition_citation>
+        <efo:NCI_Thesaurus_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIt:C48325</efo:NCI_Thesaurus_definition_citation>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Occidental</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Occidental[accessedResource: NCIt:C41261][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:SNOMEDCT_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNOMEDCT:14045001</efo:SNOMEDCT_definition_citation>
+        <efo:SNOMEDCT_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNOMEDCT:413773004</efo:SNOMEDCT_definition_citation>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tomasz Adamusiak</obo:IAO_0000117>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">White</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">White[accessedResource: NCIt:C41261][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Whites</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Whites[accessedResource: NCIt:C41261][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0003157 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0003157">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chinese</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0001799"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Denotes the inhabitants of China, a person from there, or their descendants elsewhere.</obo:IAO_0000115>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Denotes the inhabitants of China, a person from there, or their descendants elsewhere.[accessedResource: NCIt:C43391][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:NCI_Thesaurus_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIt:C43391</efo:NCI_Thesaurus_definition_citation>
+        <efo:SNOMEDCT_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNOMEDCT:33897005</efo:SNOMEDCT_definition_citation>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tomasz Adamusiak</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0003158 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0003158">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eastern Indian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0001799"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ele Holloway</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0003159 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0003159">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">European-American</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0001799"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tomasz Adamusiak</obo:IAO_0000117>
+        <efo:definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/European_American</efo:definition_citation>
+        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0003160 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0003160">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Filipino</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0003152"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Denotes the inhabitants of the Philippine Islands, a person from there, or their descendants elsewhere.</obo:IAO_0000115>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Denotes the inhabitants of the Philippine Islands, a person from there, or their descendants elsewhere.[accessedResource: NCIt:C43393][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:NCI_Thesaurus_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIt:C43393</efo:NCI_Thesaurus_definition_citation>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tomasz Adamusiak</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0003161 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0003161">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Han Chinese</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0003157"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Han Chinese</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tomasz Adamusiak</obo:IAO_0000117>
+        <efo:definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Han_Chinese</efo:definition_citation>
+        <efo:definition_citation>http://en.wikipedia.org/wiki/Han_Chinese</efo:definition_citation>
+        <efo:alternative_term>Han People</efo:alternative_term>
+        <obo:IAO_0000115>Han Chinese are an ethnic group native to East Asia. Han Chinese constitute about 92% of the population of the People&#39;s Republic of China (mainland China)</obo:IAO_0000115>
+        <efo:alternative_term>CHB</efo:alternative_term>
+        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0003162 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0003162">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iranian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0001799"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Denotes the inhabitants of Iran, a person from there, or their descendants elsewhere.</obo:IAO_0000115>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Denotes the inhabitants of Iran, a person from there, or their descendants elsewhere.[accessedResource: NCIt:C43869][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:NCI_Thesaurus_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIt:C43869</efo:NCI_Thesaurus_definition_citation>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tomasz Adamusiak</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0003163 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0003163">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Irish</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0001799"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Denotes the inhabitants of Ireland, a person from there, or their descendants elsewhere.</obo:IAO_0000115>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Denotes the inhabitants of Ireland, a person from there, or their descendants elsewhere.[accessedResource: NCIt:C43856][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:NCI_Thesaurus_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIt:C43856</efo:NCI_Thesaurus_definition_citation>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tomasz Adamusiak</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0003164 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0003164">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Japanese</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0003152"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Denotes the inhabitants of Japan, a person from there, or their descendants elsewhere.</obo:IAO_0000115>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Denotes the inhabitants of Japan, a person from there, or their descendants elsewhere.[accessedResource: NCIt:C43392][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:NCI_Thesaurus_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIt:C43392</efo:NCI_Thesaurus_definition_citation>
+        <efo:SNOMEDCT_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNOMEDCT:414551003</efo:SNOMEDCT_definition_citation>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tomasz Adamusiak</obo:IAO_0000117>
+        <efo:alternative_term>JPT</efo:alternative_term>
+        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0003165 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0003165">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Korean</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0003152"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Denotes the inhabitants of Korea, a person from there, or their descendants elsewhere.</obo:IAO_0000115>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Denotes the inhabitants of Korea, a person from there, or their descendants elsewhere.[accessedResource: NCIt:C43395][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:NCI_Thesaurus_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIt:C43395</efo:NCI_Thesaurus_definition_citation>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tomasz Adamusiak</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0003166 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0003166">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Latino</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0001799"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person of Mexican, Puerto Rican, Cuban, Central or South American or other Spanish culture or origin, regardless of race. An arbitrary ethnic classification.</obo:IAO_0000115>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person of Mexican, Puerto Rican, Cuban, Central or South American or other Spanish culture or origin, regardless of race. An arbitrary ethnic classification.[accessedResource: NCIt:C17459][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hispanic</efo:alternative_term>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hispanic Populations</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hispanic Populations[accessedResource: NCIt:C17459][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hispanic or Latino</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hispanic or Latino[accessedResource: NCIt:C17459][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hispanic[accessedResource: NCIt:C17459][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hispanics or Latinos</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hispanics or Latinos[accessedResource: NCIt:C17459][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Latino Population</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Latino Population[accessedResource: NCIt:C17459][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:NCI_Thesaurus_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIt:C17459</efo:NCI_Thesaurus_definition_citation>
+        <efo:SNOMEDCT_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNOMEDCT:414408004</efo:SNOMEDCT_definition_citation>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spanish Origin</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spanish Origin[accessedResource: NCIt:C17459][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tomasz Adamusiak</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0003167 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0003167">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pima Indian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0001799"/>
+        <efo:NCI_Thesaurus_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIt:C44085</efo:NCI_Thesaurus_definition_citation>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pima</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pima[accessedResource: NCIt:C44085][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tomasz Adamusiak</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0003168 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0003168">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hawaiian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0001799"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Denotes a person having origins in any of the original peoples of Hawaii, a person from there, or their descendants elsewhere.</obo:IAO_0000115>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Denotes a person having origins in any of the original peoples of Hawaii, a person from there, or their descendants elsewhere.[accessedResource: NCIt:C43394][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:NCI_Thesaurus_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIt:C43394</efo:NCI_Thesaurus_definition_citation>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Native Hawaiian</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Native Hawaiian[accessedResource: NCIt:C43394][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tomasz Adamusiak</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0003169 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0003169">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hispanic</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0001799"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person of Mexican, Puerto Rican, Cuban, Central or South American or other Spanish culture or origin, regardless of race. An arbitrary ethnic classification.</obo:IAO_0000115>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person of Mexican, Puerto Rican, Cuban, Central or South American or other Spanish culture or origin, regardless of race. An arbitrary ethnic classification.[accessedResource: NCIt:C17459][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hispanic Populations</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hispanic Populations[accessedResource: NCIt:C17459][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hispanic or Latino</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hispanic or Latino[accessedResource: NCIt:C17459][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hispanics or Latinos</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hispanics or Latinos[accessedResource: NCIt:C17459][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Latino Population</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Latino Population[accessedResource: NCIt:C17459][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:NCI_Thesaurus_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIt:C17459</efo:NCI_Thesaurus_definition_citation>
+        <efo:SNOMEDCT_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNOMEDCT:414408004</efo:SNOMEDCT_definition_citation>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spanish Origin</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spanish Origin[accessedResource: NCIt:C17459][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tomasz Adamusiak</rdfs:comment>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tomasz Adamusiak</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0004561 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0004561">
+        <rdfs:label>African</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0001799"/>
+        <efo:NCI_Thesaurus_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIt:C42331</efo:NCI_Thesaurus_definition_citation>
+        <obo:IAO_0000117>Helen Parkinson</obo:IAO_0000117>
+        <obo:IAO_0000115>Denotes a person with African ancestral origins who self identifies, or is identified, as African. The concept does not refer to those of other ancestry, for example, European and South Asian. In practice, the term mainly refers to people originated from forty-eight sub-Saharan Africa nations; and excudes individuals from North Africa countries, e.g. such as Algeria, Morocco, Egypt, Tunisia with Arab and Berber ethnicity.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0004900 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0004900">
+        <rdfs:label>Yoruba</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0004561"/>
+        <efo:SNOMEDCT_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNOMEDCT:440659006</efo:SNOMEDCT_definition_citation>
+        <obo:IAO_0000117>James Malone</obo:IAO_0000117>
+        <efo:definition_citation>http://en.wikipedia.org/wiki/Yoruba_people</efo:definition_citation>
+        <obo:IAO_0000115>The Yoruba people are one of the largest ethnic groups in West Africa.</obo:IAO_0000115>
+        <efo:alternative_term>YRI</efo:alternative_term>
+        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0004901 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0004901">
+        <rdfs:label>Northern and Western European</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0001799"/>
+        <efo:alternative_term>CEU</efo:alternative_term>
+        <obo:IAO_0000115>Population of northern and western European ancestry.</obo:IAO_0000115>
+        <obo:IAO_0000117>James Malone</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.4.1806) http://owlapi.sourceforge.net -->
+

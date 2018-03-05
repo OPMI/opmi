@@ -1,5 +1,5 @@
 [URI of the OWL(RDF/XML) output file]
-http://purl.obolibrary.org/obo/PATO_import.owl.
+http://purl.obolibrary.org/obo/opmi/PATO_import.owl
 
 [Source ontology]
 PATO

@@ -1,5 +1,5 @@
 [URI of the OWL(RDF/XML) output file]
-http://purl.obolibrary.org/obo/ordi/IAO_imports.owl
+http://purl.obolibrary.org/obo/opmi/IAO_imports.owl
 
 [Source ontology]
 IAO

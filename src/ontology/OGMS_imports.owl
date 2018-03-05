@@ -1,38 +1,13 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/ogms.owl#"
-     xml:base="http://purl.obolibrary.org/obo/ogms.owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/opmi/OGMS_imports.owl#"
+     xml:base="http://purl.obolibrary.org/obo/opmi/OGMS_imports.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ogms.owl">
-        <dc:creator>Albert Goldfain</dc:creator>
-        <dc:creator>Anand Kumar</dc:creator>
-        <dc:creator>Barry Smith</dc:creator>
-        <dc:creator>Bill Hogan</dc:creator>
-        <dc:creator>Richard Scheuermann</dc:creator>
-        <dc:creator>Cornelius Rosse</dc:creator>
-        <rdfs:comment>The Ontology for General Medical Science (OGMS) is based on the papers Toward an Ontological Treatment of Disease and Diagnosis and On Carcinomas and Other Pathological Entities. The ontology attempts to address some of the issues raised at the Workshop on Ontology of Diseases (Dallas, TX). OGMS was formerly called the clinical phenotype ontology. Terms from OGMS hang from the Basic Formal Ontology.
-
-The latest version of OGMS is always available at http://purl.obolibrary.org/obo/ogms.owl
-This is version 2011-09-20 aka &#39;0.9&#39;
-http://purl.obolibrary.org/obo/ogms/2011-09-20/ogms.owl
-
-The OGMS developer site is http://code.google.com/p/ogms/
-The discussion group is http://groups.google.com/group/ogms-discuss
-
-If you are interested in participating in the development of OGMS, please send email to albertgoldfain@gmail.com. Be sure to include a google-account username with your request (this will be the username associated with a gmail address).</rdfs:comment>
-        <owl:versionInfo>2011-09-20</owl:versionInfo>
-        <dc:creator>Lindsay Cowell</dc:creator>
-        <rdfs:comment>This ontology is in early development. Expect it to change.</rdfs:comment>
-        <dc:creator>Alan Ruttenberg</dc:creator>
-        <dc:creator>Werner Ceusters</dc:creator>
-        <dc:date>2009-08-07</dc:date>
-        <dc:creator>Sivaram Arabandi</dc:creator>
-        <dc:creator>Daniel Merico</dc:creator>
-    </owl:Ontology>
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/opmi/OGMS_imports.owl"/>
     
 
 
@@ -74,6 +49,14 @@ If you are interested in participating in the development of OGMS, please send e
          of content or a free-text account of the content.</dc:description>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
     </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000601">
+        <rdfs:label xml:lang="en">has associated axiom(nl)</rdfs:label>
+        <obo:IAO_0000600 xml:lang="en">An axiom associated with a term expressed using natural language</obo:IAO_0000600>
+        <obo:IAO_0000119 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">has associated axiom(nl)</obo:IAO_0000111>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
         <rdfs:label>definition</rdfs:label>
         <rdfs:label xml:lang="en">definition</rdfs:label>
@@ -102,14 +85,6 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
         <obo:IAO_0000111 xml:lang="en">definition</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000601">
-        <rdfs:label xml:lang="en">has associated axiom(nl)</rdfs:label>
-        <obo:IAO_0000600 xml:lang="en">An axiom associated with a term expressed using natural language</obo:IAO_0000600>
-        <obo:IAO_0000119 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000119>
-        <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000111 xml:lang="en">has associated axiom(nl)</obo:IAO_0000111>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000602">
@@ -627,6 +602,43 @@ We also have the outstanding issue of how to aim different definitions to differ
     </owl:NamedIndividual>
     <rdf:Description>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ogms.owl">
+        <dc:creator>Barry Smith</dc:creator>
+        <dc:creator>Anand Kumar</dc:creator>
+        <dc:creator>Albert Goldfain</dc:creator>
+        <dc:creator>Bill Hogan</dc:creator>
+        <dc:creator>Richard Scheuermann</dc:creator>
+        <dc:creator>Cornelius Rosse</dc:creator>
+        <rdfs:comment>The Ontology for General Medical Science (OGMS) is based on the papers Toward an Ontological Treatment of Disease and Diagnosis and On Carcinomas and Other Pathological Entities. The ontology attempts to address some of the issues raised at the Workshop on Ontology of Diseases (Dallas, TX). OGMS was formerly called the clinical phenotype ontology. Terms from OGMS hang from the Basic Formal Ontology.
+
+The latest version of OGMS is always available at http://purl.obolibrary.org/obo/ogms.owl
+This is version 2011-09-20 aka &#39;0.9&#39;
+http://purl.obolibrary.org/obo/ogms/2011-09-20/ogms.owl
+
+The OGMS developer site is http://code.google.com/p/ogms/
+The discussion group is http://groups.google.com/group/ogms-discuss
+
+If you are interested in participating in the development of OGMS, please send email to albertgoldfain@gmail.com. Be sure to include a google-account username with your request (this will be the username associated with a gmail address).</rdfs:comment>
+        <owl:versionInfo>2011-09-20</owl:versionInfo>
+        <rdfs:comment>This ontology is in early development. Expect it to change.</rdfs:comment>
+        <dc:creator>Lindsay Cowell</dc:creator>
+        <dc:creator>Werner Ceusters</dc:creator>
+        <dc:creator>Alan Ruttenberg</dc:creator>
+        <dc:date>2009-08-07</dc:date>
+        <dc:creator>Sivaram Arabandi</dc:creator>
+        <dc:creator>Daniel Merico</dc:creator>
     </rdf:Description>
 </rdf:RDF>
 
