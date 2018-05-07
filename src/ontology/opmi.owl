@@ -44,6 +44,25 @@
         <owl:imports rdf:resource="&obo;opmi/OMRSE_imports.owl"/>
         <owl:imports rdf:resource="&obo;opmi/PATO_imports.owl"/>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCO_0000000 -->
+
+    <rdf:Description rdf:about="&obo;PCO_0000000">
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
+    </rdf:Description>
 </rdf:RDF>
 
 
