@@ -1,5 +1,5 @@
 # OPMI-ontology
-OPMI: Ontology of Precision Medicine and Investigations
+OPMI: Ontology of Precision Medicine and Investigation
 
 OPMI is an application ontology to support precision medicine and related investigations. It is community-driven and developed by following the OBO Foundry ontology development principles. OPMI reuses, aligns, and integrates related terms from existing ontologies in the OBO ontology liborary.
 
