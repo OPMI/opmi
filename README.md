@@ -7,3 +7,4 @@ OPMI was first developed by extracting general precision medicine related terms 
 
 OPMI is now supported by the new NIH/NIDDK-supported Kidney Precision Medicine Project ([KPMP, http://kpmp.org](http://kpmp.org)). With >20 universities/institutes involved, KPMP aims to study a large number of human subjects with the acute kidney injury (AKI) and chronic kidney disease (CKD). As requested by the KPMP consortium, OPMI aims to represent and standardize the entities associated with precision medicine, including all the data/metadata types, investigation processes, and analysis in various aspects of clinical, pathological, and molecular studies to be conducted in KPMP. Example KPMP data types include clinical electronical health record types, pathological image data types, and various Omics data types. 
 
+Collaborations are welcome! 
