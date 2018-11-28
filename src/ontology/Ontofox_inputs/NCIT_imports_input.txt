@@ -1,0 +1,35 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/opmi/NCIT_imports.owl
+
+[Source ontology]
+NCIT
+
+[Low level source term URIs]
+
+http://purl.obolibrary.org/obo/NCIT_C17005 #population group
+
+http://purl.obolibrary.org/obo/NCIT_C16564 #ethnic group
+includeAllChildren
+
+http://purl.obolibrary.org/obo/NCIT_C17049
+includeAllChildren
+
+
+[Top level source term URIs and target direct superclass URIs]
+
+http://purl.obolibrary.org/obo/NCIT_C17005 #population group
+subClassOf http://purl.obolibrary.org/obo/BFO_0000040 #material entity 
+
+http://purl.obolibrary.org/obo/NCIT_C16564 #ethnic group
+subClassOf http://purl.obolibrary.org/obo/NCIT_C17005 #population group 
+
+http://purl.obolibrary.org/obo/NCIT_C17049
+subClassOf http://purl.obolibrary.org/obo/NCIT_C17005 #population group 
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+includeAllAxioms
+
+[Source annotation URIs to be excluded]
