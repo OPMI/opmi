@@ -22,14 +22,15 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="&obo;opmi.owl">
-        <dc:date xml:lang="en">02-22-2018</dc:date>
+        <dc:date xml:lang="en">11-28-2018</dc:date>
         <dc:creator xml:lang="en">Hong Yu</dc:creator>
+        <dc:creator xml:lang="en">Jennifer Schaub</dc:creator>
         <dc:creator xml:lang="en">Jie Zheng</dc:creator>
         <dc:description xml:lang="en">OPMI is a biomedical ontology in the area of precision medicine and its related investigations. It is community-driven and developed by following the OBO Foundry ontology development principles.</dc:description>
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <dc:format xml:lang="en">OWL-DL</dc:format>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.02</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.19</owl:versionInfo>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
         <owl:imports rdf:resource="&obo;opmi/CHEBI_imports.owl"/>
         <owl:imports rdf:resource="&obo;opmi/DOID_imports.owl"/>
@@ -43,6 +44,7 @@
         <owl:imports rdf:resource="&obo;opmi/OGMS_imports.owl"/>
         <owl:imports rdf:resource="&obo;opmi/OMRSE_imports.owl"/>
         <owl:imports rdf:resource="&obo;opmi/PATO_imports.owl"/>
+        <owl:imports rdf:resource="&obo;opmi/NCIT_imports.owl"/>
     </owl:Ontology>
     
 
