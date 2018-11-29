@@ -1,0 +1,30 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/opmi/CMO_import.owl
+
+[Source ontology]
+CMO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/CMO_0000000 #clinical measurement
+
+http://purl.obolibrary.org/obo/CMO_0000015 #body temperature
+includeAllChildren
+
+http://purl.obolibrary.org/obo/CMO_0000001 #cardiovascular measurement
+includeAllChildren
+
+http://purl.obolibrary.org/obo/CMO_0000906 #kidney measurement
+includeAllChildren
+
+[Top level source term URIs and target direct superclass URIs]
+
+http://purl.obolibrary.org/obo/CMO_0000000 #clinical measurement
+subClassOf http://purl.obolibrary.org/obo/IAO_0000109 #measurement data
+
+[Source term retrieval setting]
+includeComputedIntermediates
+
+[Source annotation URIs]
+includeAllAxioms
+
+[Source annotation URIs to be excluded]

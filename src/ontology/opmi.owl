@@ -33,18 +33,18 @@
         <owl:versionInfo xml:lang="en">Vision Release: 1.0.19</owl:versionInfo>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
         <owl:imports rdf:resource="&obo;opmi/CHEBI_imports.owl"/>
+        <owl:imports rdf:resource="&obo;opmi/CMO_import.owl"/>
         <owl:imports rdf:resource="&obo;opmi/DOID_imports.owl"/>
         <owl:imports rdf:resource="&obo;opmi/DRON_imports.owl"/>
-        <owl:imports rdf:resource="&obo;opmi/EFO_imports.owl"/>
         <owl:imports rdf:resource="&obo;opmi/ENVO_imports.owl"/>
         <owl:imports rdf:resource="&obo;opmi/HP_imports.owl"/>
         <owl:imports rdf:resource="&obo;opmi/IAO_imports.owl"/>
         <owl:imports rdf:resource="&obo;opmi/NCBITaxon_imports.owl"/>
+        <owl:imports rdf:resource="&obo;opmi/NCIT_imports.owl"/>
         <owl:imports rdf:resource="&obo;opmi/OBI_imports.owl"/>
         <owl:imports rdf:resource="&obo;opmi/OGMS_imports.owl"/>
         <owl:imports rdf:resource="&obo;opmi/OMRSE_imports.owl"/>
         <owl:imports rdf:resource="&obo;opmi/PATO_imports.owl"/>
-        <owl:imports rdf:resource="&obo;opmi/NCIT_imports.owl"/>
     </owl:Ontology>
     
 
