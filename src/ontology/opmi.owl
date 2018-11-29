@@ -22,7 +22,7 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="&obo;opmi.owl">
-        <dc:date xml:lang="en">11-28-2018</dc:date>
+        <dc:date xml:lang="en">11-29-2018</dc:date>
         <dc:creator xml:lang="en">Hong Yu</dc:creator>
         <dc:creator xml:lang="en">Jennifer Schaub</dc:creator>
         <dc:creator xml:lang="en">Jie Zheng</dc:creator>
@@ -30,7 +30,7 @@
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <dc:format xml:lang="en">OWL-DL</dc:format>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.19</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.20</owl:versionInfo>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
         <owl:imports rdf:resource="&obo;opmi/CHEBI_imports.owl"/>
         <owl:imports rdf:resource="&obo;opmi/CMO_import.owl"/>
@@ -60,10 +60,292 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCIT_C46109 -->
+
+    <rdf:Description rdf:about="&obo;NCIT_C46109">
+        <rdfs:subClassOf rdf:resource="&obo;NCIT_C17357"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C46110 -->
+
+    <rdf:Description rdf:about="&obo;NCIT_C46110">
+        <rdfs:subClassOf rdf:resource="&obo;NCIT_C17357"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C46112 -->
+
+    <rdf:Description rdf:about="&obo;NCIT_C46112">
+        <rdfs:subClassOf rdf:resource="&obo;NCIT_C28421"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C46113 -->
+
+    <rdf:Description rdf:about="&obo;NCIT_C46113">
+        <rdfs:subClassOf rdf:resource="&obo;NCIT_C28421"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C67123 -->
+
+    <rdf:Description rdf:about="&obo;NCIT_C67123">
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000001"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C67124 -->
+
+    <rdf:Description rdf:about="&obo;NCIT_C67124">
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000001"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C67125 -->
+
+    <rdf:Description rdf:about="&obo;NCIT_C67125">
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000001"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C67126 -->
+
+    <rdf:Description rdf:about="&obo;NCIT_C67126">
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000001"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C67127 -->
+
+    <rdf:Description rdf:about="&obo;NCIT_C67127">
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000001"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C67128 -->
+
+    <rdf:Description rdf:about="&obo;NCIT_C67128">
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000001"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C67129 -->
+
+    <rdf:Description rdf:about="&obo;NCIT_C67129">
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000001"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C67130 -->
+
+    <rdf:Description rdf:about="&obo;NCIT_C67130">
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000002"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C67131 -->
+
+    <rdf:Description rdf:about="&obo;NCIT_C67131">
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000002"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C67132 -->
+
+    <rdf:Description rdf:about="&obo;NCIT_C67132">
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000002"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C67133 -->
+
+    <rdf:Description rdf:about="&obo;NCIT_C67133">
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000002"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000001 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000001">
+        <rdfs:label xml:lang="en">less than 8th grade completion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCIT_C17953"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000002 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000002">
+        <rdfs:label xml:lang="en">less than 12th grade completion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCIT_C17953"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000003 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000003">
+        <rdfs:label xml:lang="en">household size</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCIT_C17468"/>
+        <obo:IAO_0000119>https://www.healthcare.gov/income-and-household-information/household-size/</obo:IAO_0000119>
+        <rdfs:comment>We may use IRS&apos;s definition: https://www.healthcare.gov/income-and-household-information/household-size/</rdfs:comment>
+        <obo:IAO_0000115>the number of people living together supported jointly by an household income</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000004 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000004">
+        <rdfs:label xml:lang="en">more than 5.5 pounds (2500 grams) birth weight</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCIT_C76325"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000005 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000005">
+        <rdfs:label xml:lang="en">less than 5.5 pounds (2500 grams) birth weight</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCIT_C76325"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000006 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000006">
+        <rdfs:label xml:lang="en">unknown birth weight</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCIT_C76325"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000007 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000007">
+        <rdfs:label xml:lang="en">birth weight declined to answer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCIT_C76325"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000008 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000008">
+        <rdfs:label xml:lang="en">individual plan insurance (paid by the member)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCIT_C16745"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000009 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000009">
+        <rdfs:label xml:lang="en">group plan insurance through employee union</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCIT_C16745"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000010 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000010">
+        <rdfs:label xml:lang="en">USA government health plan insurance</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCIT_C16745"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000011 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000011">
+        <rdfs:label xml:lang="en">no insurance status</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCIT_C16745"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000012 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000012">
+        <rdfs:label xml:lang="en">body temperature measured orally</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;CMO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000013 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000013">
+        <rdfs:label xml:lang="en">body temprature by ear (tempanic, aural)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;CMO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000014 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000014">
+        <rdfs:label xml:lang="en">body temprature by forhead</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;CMO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000015 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000015">
+        <rdfs:label xml:lang="en">arterial line body temperature</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;CMO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000016 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000016">
+        <rdfs:label xml:lang="en">body temprature by other measurement</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;CMO_0000015"/>
+        <rdfs:comment>What is other?</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PCO_0000000 -->
 
     <rdf:Description rdf:about="&obo;PCO_0000000">
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="&obo;NCIT_C94488">
+        <rdfs:label>standing height</rdfs:label>
     </rdf:Description>
 </rdf:RDF>
 
