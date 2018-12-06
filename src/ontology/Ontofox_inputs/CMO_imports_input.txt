@@ -16,6 +16,39 @@ includeAllChildren
 http://purl.obolibrary.org/obo/CMO_0000906 #kidney measurement
 includeAllChildren
 
+http://purl.obolibrary.org/obo/CMO_0000026
+http://purl.obolibrary.org/obo/CMO_0000027
+http://purl.obolibrary.org/obo/CMO_0000029
+http://purl.obolibrary.org/obo/CMO_0000046
+http://purl.obolibrary.org/obo/CMO_0000049
+http://purl.obolibrary.org/obo/CMO_0000051
+http://purl.obolibrary.org/obo/CMO_0000052
+http://purl.obolibrary.org/obo/CMO_0000053
+http://purl.obolibrary.org/obo/CMO_0000118
+http://purl.obolibrary.org/obo/CMO_0000123
+http://purl.obolibrary.org/obo/CMO_0000125
+http://purl.obolibrary.org/obo/CMO_0000130
+http://purl.obolibrary.org/obo/CMO_0000210
+http://purl.obolibrary.org/obo/CMO_0000257
+http://purl.obolibrary.org/obo/CMO_0000368
+http://purl.obolibrary.org/obo/CMO_0000369
+http://purl.obolibrary.org/obo/CMO_0000370
+http://purl.obolibrary.org/obo/CMO_0000371
+http://purl.obolibrary.org/obo/CMO_0000374
+http://purl.obolibrary.org/obo/CMO_0000496
+http://purl.obolibrary.org/obo/CMO_0000497
+http://purl.obolibrary.org/obo/CMO_0000498
+http://purl.obolibrary.org/obo/CMO_0000499
+http://purl.obolibrary.org/obo/CMO_0000502
+http://purl.obolibrary.org/obo/CMO_0000504
+http://purl.obolibrary.org/obo/CMO_0000550
+http://purl.obolibrary.org/obo/CMO_0000574
+http://purl.obolibrary.org/obo/CMO_0000576
+http://purl.obolibrary.org/obo/CMO_0000580
+http://purl.obolibrary.org/obo/CMO_0000591
+http://purl.obolibrary.org/obo/CMO_0002242
+
+
 [Top level source term URIs and target direct superclass URIs]
 
 http://purl.obolibrary.org/obo/CMO_0000000 #clinical measurement
