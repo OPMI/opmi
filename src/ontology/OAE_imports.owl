@@ -1,0 +1,251 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/oae.owl#"
+     xml:base="http://purl.obolibrary.org/obo/oae.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/oae.owl">
+        <dc:creator>Sirarat Sarntivijai</dc:creator>
+        <dc:date>2017-05-06</dc:date>
+        <dc:creator>Noemi Garg</dc:creator>
+        <dc:creator>Jiangan Xie</dc:creator>
+        <dc:creator>Edison Ong</dc:creator>
+        <dc:creator>Kelly Yang</dc:creator>
+        <dc:creator>&quot;Asiyah&quot; Yu Lin</dc:creator>
+        <dc:contributor>Keith Burkhart</dc:contributor>
+        <dc:contributor>Darrell R. Abernethy</dc:contributor>
+        <dc:contributor>Izabela Birsanescu</dc:contributor>
+        <dc:contributor>Elizabeth Blair</dc:contributor>
+        <dc:creator>Zuoshuang &quot;Allen&quot; Xiang</dc:creator>
+        <dc:creator>Sydni Joubran</dc:creator>
+        <dc:creator>Barry Smith</dc:creator>
+        <dc:creator>Liwei Wang</dc:creator>
+        <dc:creator>Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
+        <dc:creator>Kevin Mo</dc:creator>
+        <dc:creator>Abra Guo</dc:creator>
+        <dc:contributor>Luca Toldo</dc:contributor>
+        <dc:creator>Qingping Liu</dc:creator>
+        <dc:contributor>Sydni Joubran</dc:contributor>
+        <dc:creator>Rebecca Racz</dc:creator>
+        <dc:subject xml:lang="en">An ontology for the annotation of the adverse event domain.</dc:subject>
+        <dc:creator xml:lang="en">Bingjian Yang</dc:creator>
+        <dc:creator xml:lang="en">Desikan Jagannathan</dc:creator>
+        <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
+        <dc:creator xml:lang="en">Meiu Wong</dc:creator>
+        <dc:title xml:lang="en">OAE: Ontology of Adverse Events</dc:title>
+        <dc:format xml:lang="en">OWL-DL</dc:format>
+        <obo:IAO_0000116 xml:lang="en">Product version</obo:IAO_0000116>
+        <dc:creator xml:lang="en">Shelley Zhang</dc:creator>
+        <dc:description xml:lang="en">The Ontology of Adverse Eventsy (OAE) is a biomedical ontology in the domain of adverse events. OAE aims to standardize adverse event annotation, integrate various adverse event data, and support computer-assisted reasoning.  OAE is a community-based ontology. Its development follows the OBO Foundry principles. Vaccine adverse events have been used as an initial testing use case. OAE also studies adverse events associated with the administration of drug and nutritional products, the operation of surgeries, and the usage of medical devices, etc.</dc:description>
+        <owl:versionInfo xml:lang="en">Vision Release; 1.1.355</owl:versionInfo>
+        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/oae/BFO_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/oae/DOID_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/oae/GO_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/oae/OBI_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/oae/OGMS_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/oae/PATO_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/oae/RO_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/oae/UBERON_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/oae/VO_import.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/subject"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+        <rdfs:label>label</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label>definition</rdfs:label>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
+        <rdfs:label>editor note</rdfs:label>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <rdfs:label>imported from</rdfs:label>
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
+        <rdfs:label>has curation status</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
+        <rdfs:label>definition source</rdfs:label>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
+        <rdfs:label>definition editor</rdfs:label>
+        <rdfs:label>term editor</rdfs:label>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
+        <rdfs:label>alternative term</rdfs:label>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/format"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000062 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000062">
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/oae.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0000001">
+        <rdfs:label>adverse event</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000061"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000062"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OAE_0000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000116>YH: The main scope of OAE includes: (1) represent terms and relations in the area of adverse events, (2) assess possible associations between an adverse event and a medical intervention, particularly, identify any causal effect of a medical intervention to an adverse event; and (2) understand the mechanism (including molecular mechanisms) of causal adverse events.</obo:IAO_0000116>
+        <rdfs:comment>The OAE official website is: http://www.oae-ontology.org/.</rdfs:comment>
+        <obo:IAO_0000116>Melanie Courtot and YH: More work is needed on how to restrict the scope of a term to be an &#39;adverse event&#39;, notably regarding temporal association. When is an appropirate time interval between a medical intervention and an adverse event observed? One week, one month, one year, or a lifetime? For some well-studied medical interventions (e.g., administration of many vaccines or drugs), we probably have a general idea. For many new interventions, we don&#39;t know much. In OAE, this issue is associated with defining the &#39;adverse event incubation time&#39;.</obo:IAO_0000116>
+        <obo:IAO_0000118>AE</obo:IAO_0000118>
+        <obo:IAO_0000116>YH: An adverse event is a process that has specified output of some adverse medical outcome (e.g., symptom, sign or accident) after a medical intervention (or process) (e.g., administration of drug or vaccine). The medical intervention can be an administration of a drug, a vaccine (i.e., vaccination), or a special nutritional product (for example, dietary supplement, infant formula, medical food), surgery, or usage of a medical device.</obo:IAO_0000116>
+        <obo:IAO_0000119>WEB: http://www.fda.gov/Safety/MedWatch/HowToReport/ucm053087.htm</obo:IAO_0000119>
+        <obo:IAO_0000119>WEB: http://www.ncbi.nlm.nih.gov/pubmed/25093068</obo:IAO_0000119>
+        <obo:IAO_0000116>YH: An adverse event is possibly induced by the medical intervention. It can be caused by the medical intervention, or may not be caused by the medical intervention. One ultimate goal (or the goal in clinics) of study adverse events is to assess if the adverse event outcome is due to the medical intervention.</obo:IAO_0000116>
+        <obo:IAO_0000116>YH: There has been discussion regarding whether the term &#39;side effect&#39; is an alternative term for &#39;adverse event&#39;. In AERO, the term &#39;AERO:adverse event&#39; represents a subset of those adverse events for which causality has been established. In OAE, an adverse event for which causality has been established is called &#39;causal adverse event&#39;.</obo:IAO_0000116>
+        <obo:IAO_0000116>YH: In development of OAE, we initially use vaccine adverse event as our use case. A vaccine adverse event is associated with a vaccination (i.e. a medical intervention), regardless of whether it is considered vaccine-related, and includes any side effect, injury, toxicity, or sensitivity reaction or significant failure of immunization (i.e., a pharmacologic action).
+Ref: Baylor NW and Midthum K. Regulation and testing of vaccines. In: Vaccines (Editors: Plotkin S, Orenstein W, and Offit P). 2008.  p1623.</obo:IAO_0000116>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Adverse_event</obo:IAO_0000119>
+        <obo:IAO_0000116>YH: The current term &#39;adverse event&#39; is different from the term definition shown in our paper: He Y, Xiang Z, Sarntivijai S, Toldo L, Ceusters W. OAE: a realism-based biomedical ontology for the representation of adverse events. Adverse Event Representation Workshop, International Conference on Biomedical Ontologies (ICBO), University at Buffalo, NY, July 26-30, 2011. Full lenghth conference proceeding paper.  
+
+We  made the name changing in order to make OAE cover the broader sense of the &#39;adverse event&#39; which does not assume definite causal effect between an adverse event and a medical intervention. In current definition, the adverse event emphasizes the time association and assumes a likelihood of such a causal association. This term &#39;adverse event&#39; is stil under the OGMS:pathological bodily process.
+
+The &#39;adverse event&#39; defined in the above paper has now been changed to a new term: &#39;causal adverse event&#39;. See more information in the new publication: Yongqun He Y, Sirarat Sarntivijai, Yu Lin, Zuoshuang Xiang, Abra Guo, Shelley Zhang, Desikan Jagannathan, Luca Toldo, Cui Tao and Barry Smith. OAE: The Ontology of Adverse Events. Journal of Biomedical Semantics. 2014, 5:29  doi:10.1186/2041-1480-5-29. PMID: 25093068.PMCID: PMC4120740.</obo:IAO_0000116>
+        <obo:IAO_0000118>adverse reaction</obo:IAO_0000118>
+        <obo:IAO_0000115>a pathological bodily process that occurs after a medical intervention. An adverse event is likely caused by the medical intervention; however, such a causal association is not required to be an adverse event.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/oae.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0000002">
+        <rdfs:label>medical intervention</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <obo:IAO_0000116>The act of intervening, interfering or interceding with the intent of modifying the outcome. In medicine, an intervention is usually undertaken to help treat or cure a condition. For example, &quot;Acupuncture as a therapeutic intervention is widely practiced in the United States,&quot; 
+Reference:
+http://www.medterms.com/script/main/art.asp?articlekey=34214 . Some interventions can be used for diagnosis. </obo:IAO_0000116>
+        <obo:IAO_0000119>WEB: http://wiki.answers.com/Q/What_is_medical_intervention</obo:IAO_0000119>
+        <obo:IAO_0000115>medical intervention is a planned process that has the goal of diagnosing, preventing or relieving illness or injury. </obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/oae.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/oae.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/vo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/oae.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000061 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000061">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000060"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/oae.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.4.1806) http://owlapi.sourceforge.net -->
+
