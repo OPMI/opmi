@@ -17,10 +17,9 @@ http://purl.obolibrary.org/obo/BFO_0000148 #zero-dimensional temporal region
 http://purl.obolibrary.org/obo/BFO_0000038 #one-dimensional temporal region
 http://purl.obolibrary.org/obo/OBI_0100026 #organism
 http://purl.obolibrary.org/obo/BFO_0000182 #history
-http://purl.obolibrary.org/obo/OBI_0000075 #diagnosis textual entity
+http://purl.obolibrary.org/obo/OBI_0000075 #diagnosis textual entityinvestigation
 http://purl.obolibrary.org/obo/BFO_0000019 #quality
-
-
+http://purl.obolibrary.org/obo/OBI_0000066 #investigation
 
 
 [Top level source term URIs and target direct superclass URIs]

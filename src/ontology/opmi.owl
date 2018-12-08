@@ -30,9 +30,8 @@
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <dc:format xml:lang="en">OWL-DL</dc:format>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.21</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.23</owl:versionInfo>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
-        <owl:imports rdf:resource="&obo;opmi/OAE_imports.owl"/>
         <owl:imports rdf:resource="&obo;opmi/CHEBI_imports.owl"/>
         <owl:imports rdf:resource="&obo;opmi/CMO_import.owl"/>
         <owl:imports rdf:resource="&obo;opmi/DOID_imports.owl"/>
@@ -42,6 +41,7 @@
         <owl:imports rdf:resource="&obo;opmi/IAO_imports.owl"/>
         <owl:imports rdf:resource="&obo;opmi/NCBITaxon_imports.owl"/>
         <owl:imports rdf:resource="&obo;opmi/NCIT_imports.owl"/>
+        <owl:imports rdf:resource="&obo;opmi/OAE_imports.owl"/>
         <owl:imports rdf:resource="&obo;opmi/OBI_imports.owl"/>
         <owl:imports rdf:resource="&obo;opmi/OGMS_imports.owl"/>
         <owl:imports rdf:resource="&obo;opmi/OMRSE_imports.owl"/>
@@ -96,7 +96,7 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C67123 -->
 
     <rdf:Description rdf:about="&obo;NCIT_C67123">
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000001"/>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000020"/>
     </rdf:Description>
     
 
@@ -104,7 +104,7 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C67124 -->
 
     <rdf:Description rdf:about="&obo;NCIT_C67124">
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000001"/>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000020"/>
     </rdf:Description>
     
 
@@ -112,7 +112,7 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C67125 -->
 
     <rdf:Description rdf:about="&obo;NCIT_C67125">
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000001"/>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000020"/>
     </rdf:Description>
     
 
@@ -120,7 +120,7 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C67126 -->
 
     <rdf:Description rdf:about="&obo;NCIT_C67126">
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000001"/>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000020"/>
     </rdf:Description>
     
 
@@ -128,7 +128,7 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C67127 -->
 
     <rdf:Description rdf:about="&obo;NCIT_C67127">
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000001"/>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000020"/>
     </rdf:Description>
     
 
@@ -136,7 +136,7 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C67128 -->
 
     <rdf:Description rdf:about="&obo;NCIT_C67128">
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000001"/>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000020"/>
     </rdf:Description>
     
 
@@ -144,7 +144,7 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C67129 -->
 
     <rdf:Description rdf:about="&obo;NCIT_C67129">
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000001"/>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000020"/>
     </rdf:Description>
     
 
@@ -152,7 +152,7 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C67130 -->
 
     <rdf:Description rdf:about="&obo;NCIT_C67130">
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000002"/>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000017"/>
     </rdf:Description>
     
 
@@ -160,7 +160,7 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C67131 -->
 
     <rdf:Description rdf:about="&obo;NCIT_C67131">
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000002"/>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000017"/>
     </rdf:Description>
     
 
@@ -168,7 +168,7 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C67132 -->
 
     <rdf:Description rdf:about="&obo;NCIT_C67132">
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000002"/>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000017"/>
     </rdf:Description>
     
 
@@ -176,7 +176,7 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C67133 -->
 
     <rdf:Description rdf:about="&obo;NCIT_C67133">
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000002"/>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000017"/>
     </rdf:Description>
     
 
@@ -184,8 +184,10 @@
     <!-- http://purl.obolibrary.org/obo/OPMI_0000001 -->
 
     <owl:Class rdf:about="&obo;OPMI_0000001">
-        <rdfs:label xml:lang="en">less than 8th grade completion</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C17953"/>
+        <rdfs:label xml:lang="en">precision medicine process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
+        <obo:IAO_0000115>A medical process that includes the customization of healthcare, with medical decisions, treatments, practices, or products being tailored to the individual patient</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Precision_medicine</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -193,8 +195,10 @@
     <!-- http://purl.obolibrary.org/obo/OPMI_0000002 -->
 
     <owl:Class rdf:about="&obo;OPMI_0000002">
-        <rdfs:label xml:lang="en">less than 12th grade completion</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C17953"/>
+        <rdfs:label xml:lang="en">precision medicine investigation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000066"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Precision_medicine</obo:IAO_0000119>
+        <obo:IAO_0000115>An investigation that is targeted for precision medicine</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -325,6 +329,24 @@
         <rdfs:label xml:lang="en">body temprature by other measurement</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;CMO_0000015"/>
         <rdfs:comment>What is other?</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000017 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000017">
+        <rdfs:label xml:lang="en">less than 12th grade completion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCIT_C17953"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000020 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000020">
+        <rdfs:label xml:lang="en">less than 8th grade completion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCIT_C17953"/>
     </owl:Class>
     
 
