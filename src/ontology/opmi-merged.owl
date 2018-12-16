@@ -32,7 +32,7 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="&obo;opmi.owl">
-        <dc:date xml:lang="en">12-05-2018</dc:date>
+        <dc:date xml:lang="en">12-16-2018</dc:date>
         <dc:creator xml:lang="en">Hong Yu</dc:creator>
         <dc:creator xml:lang="en">Jennifer Schaub</dc:creator>
         <dc:creator xml:lang="en">Jie Zheng</dc:creator>
@@ -40,7 +40,7 @@
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <dc:format xml:lang="en">OWL-DL</dc:format>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.23</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.25</owl:versionInfo>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
     </owl:Ontology>
     
@@ -1143,11 +1143,11 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
         <obo:IAO_0000116 xml:lang="en">Everything is part of itself. Any part of any part of a thing is itself part of that thing. Two distinct things cannot be part of each other.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">a core relation that holds between a part and its whole</obo:IAO_0000115>
         <rdfs:seeAlso>http://www.obofoundry.org/ro/#OBO_REL:part_of</rdfs:seeAlso>
         <obo:IAO_0000116 xml:lang="en">Parthood requires the part and the whole to have compatible classes: only an occurrent can be part of an occurrent; only a process can be part of a process; only a continuant can be part of a continuant; only an independent continuant can be part of an independent continuant; only an immaterial entity can be part of an immaterial entity; only a specifically dependent continuant can be part of a specifically dependent continuant; only a generically dependent continuant can be part of a generically dependent continuant. (This list is not exhaustive.)
 
 A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An occurrent cannot be part of a continuant: use &apos;has participant&apos;. A material entity cannot be part of an immaterial entity: use &apos;has location&apos;. A specifically dependent continuant cannot be part of an independent continuant: use &apos;inheres in&apos;. An independent continuant cannot be part of a specifically dependent continuant: use &apos;bearer of&apos;.</obo:IAO_0000116>
-        <obo:IAO_0000115 xml:lang="en">a core relation that holds between a part and its whole</obo:IAO_0000115>
         <obo:IAO_0000111 xml:lang="en">is part of</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">my brain is part of my body (continuant parthood, two material entities)</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">my stomach cavity is part of my stomach (continuant parthood, immaterial entity is part of material entity)</obo:IAO_0000112>
@@ -1170,35 +1170,35 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasDefinition>
             <rdf:Description/>
         </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
         <owl:equivalentProperty>
             <rdf:Description>
                 <owl:inverseOf rdf:resource="&obo;BFO_0000051"/>
             </rdf:Description>
         </owl:equivalentProperty>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
         <oboInOwl:hasDefinition>
             <rdf:Description/>
         </oboInOwl:hasDefinition>
@@ -1437,16 +1437,16 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasDefinition>
             <rdf:Description/>
         </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="&obo;BFO_0000066"/>
             <rdf:Description rdf:about="&obo;BFO_0000050"/>
         </owl:propertyChainAxiom>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
         <oboInOwl:hasDefinition>
             <rdf:Description/>
         </oboInOwl:hasDefinition>
@@ -13908,15 +13908,15 @@ resulting from the influence of human beings on nature.</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="&obo;ENVO_00002297"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002219"/>
-                <owl:someValuesFrom rdf:resource="&obo;ENVO_01000637"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:onClass rdf:resource="&obo;ENVO_01000799"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:onClass rdf:resource="&obo;ENVO_01000799"/>
-                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onProperty rdf:resource="&obo;RO_0002219"/>
+                <owl:someValuesFrom rdf:resource="&obo;ENVO_01000637"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasRelatedSynonym>celestial object</oboInOwl:hasRelatedSynonym>
@@ -14020,14 +14020,14 @@ resulting from the influence of human beings on nature.</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="&obo;ENVO_02500027"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002233"/>
-                <owl:someValuesFrom rdf:resource="&obo;ENVO_01000951"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002234"/>
+                <owl:someValuesFrom rdf:resource="&obo;ENVO_01000313"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002234"/>
-                <owl:someValuesFrom rdf:resource="&obo;ENVO_01000313"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002233"/>
+                <owl:someValuesFrom rdf:resource="&obo;ENVO_01000951"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>anthropization</oboInOwl:hasExactSynonym>
@@ -14045,12 +14045,6 @@ resulting from the influence of human beings on nature.</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="&obo;ENVO_01000813"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;ENVO_00000070"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0002131"/>
                 <owl:someValuesFrom rdf:resource="&obo;ENVO_01000817"/>
             </owl:Restriction>
@@ -14059,6 +14053,12 @@ resulting from the influence of human beings on nature.</obo:IAO_0000115>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="&obo;ENVO_00003074"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;ENVO_00000070"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>The gravitational sphere of influence referenced in this class&apos; definition is the Hill sphere: a region in which an object dominates the attraction of satellites despite gravitational perturbations.</rdfs:comment>
@@ -16405,8 +16405,8 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <rdfs:label>African American</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NCIT_C16352"/>
         <obo:NCIT_P108>African American</obo:NCIT_P108>
-        <obo:NCIT_NHC0>C128937</obo:NCIT_NHC0>
         <obo:NCIT_P325>A person having origins in the original peoples of sub-Saharan Africa and the United States.</obo:NCIT_P325>
+        <obo:NCIT_NHC0>C128937</obo:NCIT_NHC0>
         <oboInOwl:hasExactSynonym>Afro American</oboInOwl:hasExactSynonym>
         <obo:NCIT_P208>CL415133</obo:NCIT_P208>
         <oboInOwl:hasExactSynonym>AFRICAN AMERICAN</oboInOwl:hasExactSynonym>
@@ -17079,8 +17079,8 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <oboInOwl:hasExactSynonym>Race</oboInOwl:hasExactSynonym>
         <obo:NCIT_P371>Race</obo:NCIT_P371>
         <obo:NCIT_P207>C0034510</obo:NCIT_P207>
-        <obo:NCIT_P106>Population Group</obo:NCIT_P106>
         <obo:NCIT_P322>FDA</obo:NCIT_P322>
+        <obo:NCIT_P106>Population Group</obo:NCIT_P106>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C54447"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C83187"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C83188"/>
@@ -17424,8 +17424,8 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:NCIT_P325>The time elapsed since birth.</obo:NCIT_P325>
         <obo:IAO_0000115>How long something has existed; elapsed time since birth.</obo:IAO_0000115>
         <obo:NCIT_P371>Chronological Age</obo:NCIT_P371>
-        <oboInOwl:hasExactSynonym>Age</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>AGE</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Age</oboInOwl:hasExactSynonym>
         <obo:NCIT_P325>How long something has existed; elapsed time since birth. (NCI)</obo:NCIT_P325>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C118466"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C19752"/>
@@ -18695,8 +18695,8 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:NCIT_NHC0>C43671</obo:NCIT_NHC0>
         <obo:NCIT_P106>Population Group</obo:NCIT_P106>
         <obo:NCIT_P325>A person having origins in any of the original peoples of Bangladesh.</obo:NCIT_P325>
-        <oboInOwl:hasExactSynonym>BANGLADESHI</oboInOwl:hasExactSynonym>
         <obo:NCIT_P366>Bangladeshi</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym>BANGLADESHI</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C128689"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
@@ -19622,8 +19622,8 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <rdfs:label>Irish</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NCIT_C43851"/>
         <obo:NCIT_P106>Population Group</obo:NCIT_P106>
-        <obo:IAO_0000115>Denotes the inhabitants of Ireland, a person from there, or their descendants elsewhere.</obo:IAO_0000115>
         <obo:NCIT_NHC0>C43856</obo:NCIT_NHC0>
+        <obo:IAO_0000115>Denotes the inhabitants of Ireland, a person from there, or their descendants elsewhere.</obo:IAO_0000115>
         <obo:NCIT_P108>Irish</obo:NCIT_P108>
         <obo:NCIT_P366>Irish</obo:NCIT_P366>
         <oboInOwl:hasExactSynonym>Irish</oboInOwl:hasExactSynonym>
@@ -19909,8 +19909,8 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:NCIT_P108>Palestinian</obo:NCIT_P108>
         <obo:NCIT_P366>Palestinian</obo:NCIT_P366>
         <obo:NCIT_P106>Population Group</obo:NCIT_P106>
-        <obo:NCIT_NHC0>C43872</obo:NCIT_NHC0>
         <obo:NCIT_P207>C0282539</obo:NCIT_P207>
+        <obo:NCIT_NHC0>C43872</obo:NCIT_NHC0>
         <obo:IAO_0000115>Denotes those persons of mainly Arabic speakers who regard themselves as a distinct branch of the Arabic-speaking peoples, with family origin in Palestine being the defining characteristic.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
     </owl:Class>
@@ -19980,8 +19980,8 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:IAO_0000115>Denotes a person with ethnic origins in the Semitic people originally from the Arabian peninsula and surrounding territories in the Middle East and northern Africa.</obo:IAO_0000115>
         <obo:NCIT_P106>Population Group</obo:NCIT_P106>
         <obo:NCIT_NHC0>C43876</obo:NCIT_NHC0>
-        <oboInOwl:hasExactSynonym>Arab</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>ARAB</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Arab</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C128689"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
@@ -20567,8 +20567,8 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:NCIT_P106>Population Group</obo:NCIT_P106>
         <oboInOwl:hasExactSynonym>California Tribes</oboInOwl:hasExactSynonym>
         <obo:NCIT_P108>California Tribes</obo:NCIT_P108>
-        <obo:NCIT_P366>California_Tribes</obo:NCIT_P366>
         <obo:NCIT_NHC0>C43915</obo:NCIT_NHC0>
+        <obo:NCIT_P366>California_Tribes</obo:NCIT_P366>
         <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
     </owl:Class>
     
@@ -21496,8 +21496,8 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:NCIT_NHC0>C43975</obo:NCIT_NHC0>
         <oboInOwl:hasExactSynonym>Fort Mcdowell</oboInOwl:hasExactSynonym>
         <obo:NCIT_P207>C1555217</obo:NCIT_P207>
-        <obo:NCIT_P366>Fort_McDowell</obo:NCIT_P366>
         <oboInOwl:hasExactSynonym>Fort McDowell</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P366>Fort_McDowell</obo:NCIT_P366>
         <obo:NCIT_P106>Population Group</obo:NCIT_P106>
         <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
     </owl:Class>
@@ -22152,8 +22152,8 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:NCIT_P366>La_Jolla</obo:NCIT_P366>
         <obo:NCIT_P108>La Jolla</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>La Jolla</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P106>Population Group</obo:NCIT_P106>
         <obo:NCIT_P207>C1555265</obo:NCIT_P207>
+        <obo:NCIT_P106>Population Group</obo:NCIT_P106>
         <obo:NCIT_NHC0>C44016</obo:NCIT_NHC0>
         <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
     </owl:Class>
@@ -22456,8 +22456,8 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <oboInOwl:hasExactSynonym>Indiana Miami</oboInOwl:hasExactSynonym>
         <obo:NCIT_P106>Population Group</obo:NCIT_P106>
         <obo:NCIT_P108>Indiana Miami</obo:NCIT_P108>
-        <obo:NCIT_P366>Indiana_Miami</obo:NCIT_P366>
         <obo:NCIT_P207>C1551423</obo:NCIT_P207>
+        <obo:NCIT_P366>Indiana_Miami</obo:NCIT_P366>
         <obo:NCIT_NHC0>C44035</obo:NCIT_NHC0>
         <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
     </owl:Class>
@@ -22519,8 +22519,8 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <rdfs:subClassOf rdf:resource="&obo;NCIT_C44038"/>
         <obo:NCIT_P108>Aroostook</obo:NCIT_P108>
         <obo:NCIT_P207>C1551427</obo:NCIT_P207>
-        <obo:NCIT_P106>Population Group</obo:NCIT_P106>
         <obo:NCIT_NHC0>C44039</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Population Group</obo:NCIT_P106>
         <obo:NCIT_P366>Aroostook</obo:NCIT_P366>
         <oboInOwl:hasExactSynonym>Aroostook</oboInOwl:hasExactSynonym>
         <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
@@ -23376,9 +23376,9 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <rdfs:subClassOf rdf:resource="&obo;NCIT_C44091"/>
         <obo:NCIT_NHC0>C44093</obo:NCIT_NHC0>
         <obo:NCIT_P366>Oklahoma_Ponca</obo:NCIT_P366>
+        <obo:NCIT_P207>C1551504</obo:NCIT_P207>
         <oboInOwl:hasExactSynonym>Oklahoma Ponca</oboInOwl:hasExactSynonym>
         <obo:NCIT_P108>Oklahoma Ponca</obo:NCIT_P108>
-        <obo:NCIT_P207>C1551504</obo:NCIT_P207>
         <obo:NCIT_P106>Population Group</obo:NCIT_P106>
         <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
     </owl:Class>
@@ -23424,10 +23424,10 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <rdfs:subClassOf rdf:resource="&obo;NCIT_C43877"/>
         <obo:NCIT_P207>C1556090</obo:NCIT_P207>
         <obo:NCIT_NHC0>C44096</obo:NCIT_NHC0>
-        <oboInOwl:hasExactSynonym>Pueblo</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P366>Pueblo</obo:NCIT_P366>
         <obo:NCIT_P106>Population Group</obo:NCIT_P106>
         <obo:NCIT_P108>Pueblo</obo:NCIT_P108>
-        <obo:NCIT_P366>Pueblo</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym>Pueblo</oboInOwl:hasExactSynonym>
         <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
     </owl:Class>
     
@@ -23856,8 +23856,8 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <rdfs:subClassOf rdf:resource="&obo;NCIT_C44126"/>
         <obo:NCIT_P366>Eastern_Shawnee</obo:NCIT_P366>
         <obo:NCIT_P207>C1551585</obo:NCIT_P207>
-        <obo:NCIT_P108>Eastern Shawnee</obo:NCIT_P108>
         <obo:NCIT_NHC0>C44128</obo:NCIT_NHC0>
+        <obo:NCIT_P108>Eastern Shawnee</obo:NCIT_P108>
         <obo:NCIT_P106>Population Group</obo:NCIT_P106>
         <oboInOwl:hasExactSynonym>Eastern Shawnee</oboInOwl:hasExactSynonym>
         <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
@@ -24356,10 +24356,10 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <rdfs:label>Santee Sioux</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NCIT_C44142"/>
         <obo:NCIT_P207>C1551626</obo:NCIT_P207>
-        <obo:NCIT_P108>Santee Sioux</obo:NCIT_P108>
         <obo:NCIT_P106>Population Group</obo:NCIT_P106>
-        <obo:NCIT_NHC0>C44159</obo:NCIT_NHC0>
         <oboInOwl:hasExactSynonym>Santee Sioux</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P108>Santee Sioux</obo:NCIT_P108>
+        <obo:NCIT_NHC0>C44159</obo:NCIT_NHC0>
         <obo:NCIT_P366>Santee_Sioux</obo:NCIT_P366>
         <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
     </owl:Class>
@@ -25255,8 +25255,8 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <oboInOwl:hasExactSynonym>Pascua Yaqui</oboInOwl:hasExactSynonym>
         <obo:NCIT_P108>Pascua Yaqui</obo:NCIT_P108>
         <obo:NCIT_P366>Pascua_Yaqui</obo:NCIT_P366>
-        <obo:NCIT_P106>Population Group</obo:NCIT_P106>
         <obo:NCIT_NHC0>C44237</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Population Group</obo:NCIT_P106>
         <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
     </owl:Class>
     
@@ -28053,8 +28053,8 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:NCIT_P366>Georgetown</obo:NCIT_P366>
         <oboInOwl:hasExactSynonym>Georgetown</oboInOwl:hasExactSynonym>
         <obo:NCIT_P108>Georgetown</obo:NCIT_P108>
-        <obo:NCIT_P106>Population Group</obo:NCIT_P106>
         <obo:NCIT_NHC0>C44633</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Population Group</obo:NCIT_P106>
         <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
     </owl:Class>
     
@@ -28145,8 +28145,8 @@ Request that IAO either clarify these or change definitions not to use them</rdf
     <owl:Class rdf:about="&obo;NCIT_C44640">
         <rdfs:label>Belkofski</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NCIT_C44490"/>
-        <oboInOwl:hasExactSynonym>Belkofski</oboInOwl:hasExactSynonym>
         <obo:NCIT_P106>Population Group</obo:NCIT_P106>
+        <oboInOwl:hasExactSynonym>Belkofski</oboInOwl:hasExactSynonym>
         <obo:NCIT_P207>C1553307</obo:NCIT_P207>
         <obo:NCIT_NHC0>C44640</obo:NCIT_NHC0>
         <obo:NCIT_P108>Belkofski</obo:NCIT_P108>
@@ -29156,11 +29156,11 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <rdfs:label>Wainwright</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NCIT_C44268"/>
         <obo:NCIT_NHC0>C44705</obo:NCIT_NHC0>
+        <oboInOwl:hasExactSynonym>Wainwright</oboInOwl:hasExactSynonym>
         <obo:NCIT_P207>C1551836</obo:NCIT_P207>
         <obo:NCIT_P106>Population Group</obo:NCIT_P106>
         <obo:NCIT_P366>Wainwright</obo:NCIT_P366>
         <obo:NCIT_P108>Wainwright</obo:NCIT_P108>
-        <oboInOwl:hasExactSynonym>Wainwright</oboInOwl:hasExactSynonym>
         <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
     </owl:Class>
     
@@ -29832,8 +29832,8 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:NCIT_P108>Cook Inlet</obo:NCIT_P108>
         <obo:NCIT_NHC0>C44747</obo:NCIT_NHC0>
         <obo:NCIT_P106>Population Group</obo:NCIT_P106>
-        <oboInOwl:hasExactSynonym>Cook Inlet</oboInOwl:hasExactSynonym>
         <obo:NCIT_P207>C1551715</obo:NCIT_P207>
+        <oboInOwl:hasExactSynonym>Cook Inlet</oboInOwl:hasExactSynonym>
         <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
     </owl:Class>
     
@@ -29909,8 +29909,8 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <rdfs:label>Eagle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NCIT_C44254"/>
         <obo:NCIT_NHC0>C44752</obo:NCIT_NHC0>
-        <oboInOwl:hasExactSynonym>Eagle</oboInOwl:hasExactSynonym>
         <obo:NCIT_P106>Population Group</obo:NCIT_P106>
+        <oboInOwl:hasExactSynonym>Eagle</oboInOwl:hasExactSynonym>
         <obo:NCIT_P207>C1551720</obo:NCIT_P207>
         <obo:NCIT_P366>Eagle</obo:NCIT_P366>
         <obo:NCIT_P108>Eagle</obo:NCIT_P108>
@@ -30021,10 +30021,10 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <rdfs:label>Gulkana</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NCIT_C44254"/>
         <obo:NCIT_P207>C1551727</obo:NCIT_P207>
-        <obo:NCIT_P108>Gulkana</obo:NCIT_P108>
         <obo:NCIT_P106>Population Group</obo:NCIT_P106>
         <oboInOwl:hasExactSynonym>Gulkana</oboInOwl:hasExactSynonym>
         <obo:NCIT_P366>Gulkana</obo:NCIT_P366>
+        <obo:NCIT_P108>Gulkana</obo:NCIT_P108>
         <obo:NCIT_NHC0>C44759</obo:NCIT_NHC0>
         <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
     </owl:Class>
@@ -31271,9 +31271,9 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:NCIT_P106>Population Group</obo:NCIT_P106>
         <obo:NCIT_P207>C1551527</obo:NCIT_P207>
         <obo:NCIT_NHC0>C44837</obo:NCIT_NHC0>
-        <oboInOwl:hasExactSynonym>San Juan Pueblo</oboInOwl:hasExactSynonym>
         <obo:NCIT_P366>San_Juan_Pueblo</obo:NCIT_P366>
         <obo:NCIT_P108>San Juan Pueblo</obo:NCIT_P108>
+        <oboInOwl:hasExactSynonym>San Juan Pueblo</oboInOwl:hasExactSynonym>
         <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
     </owl:Class>
     
@@ -35486,8 +35486,8 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:NCIT_P106>Quantitative Concept</obo:NCIT_P106>
         <oboInOwl:hasExactSynonym>Environmental Temperature Units</oboInOwl:hasExactSynonym>
         <obo:IAO_0000115>The units of measure that are used to express the temperature of the surroundings.</obo:IAO_0000115>
-        <obo:NCIT_P207>C2983602</obo:NCIT_P207>
         <obo:NCIT_P325>The units of measure that are used to express the temperature of the surroundings. (NCI)</obo:NCIT_P325>
+        <obo:NCIT_P207>C2983602</obo:NCIT_P207>
         <oboInOwl:hasExactSynonym>ENVTEMPU</oboInOwl:hasExactSynonym>
         <obo:NCIT_P322>CDISC</obo:NCIT_P322>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
@@ -36013,13 +36013,13 @@ objectives is a planned process.</obo:IAO_0000116>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBI_0000338"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000572"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000572"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0000338"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -36066,14 +36066,14 @@ editor = PRS</obo:IAO_0000232>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000023"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
-                <owl:allValuesFrom rdf:resource="&obo;OBI_0000070"/>
+                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="&obo;BFO_0000040"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
-                <owl:someValuesFrom rdf:resource="&obo;BFO_0000040"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
+                <owl:allValuesFrom rdf:resource="&obo;OBI_0000070"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000232 rdf:datatype="&xsd;string">Feb 10, 2009.  changes after discussion at OBI Consortium Workshop Feb 2-6, 2009.  accepted as core term.</obo:IAO_0000232>
@@ -36214,12 +36214,6 @@ editor = PRS</obo:IAO_0000232>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:allValuesFrom rdf:resource="&obo;BFO_0000040"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
                 <owl:someValuesFrom rdf:resource="&obo;OBI_0000047"/>
             </owl:Restriction>
@@ -36233,6 +36227,12 @@ editor = PRS</obo:IAO_0000232>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:allValuesFrom rdf:resource="&obo;BFO_0000040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
                 <owl:allValuesFrom rdf:resource="&obo;BFO_0000040"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -36697,9 +36697,16 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
 
     <owl:Class rdf:about="&obo;OPMI_0000001">
         <rdfs:label xml:lang="en">precision medicine process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
-        <obo:IAO_0000115>A medical process that includes the customization of healthcare, with medical decisions, treatments, practices, or products being tailored to the individual patient</obo:IAO_0000115>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="&obo;OPMI_0000019"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
+        <obo:IAO_0000115>A planned process that achieves the planned objective of precision medicine objective. Specifically, it is a medical process that includes the customization of healthcare, with medical decisions, treatments, practices, or products being tailored to the individual patient.</obo:IAO_0000115>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Precision_medicine</obo:IAO_0000119>
+        <obo:IAO_0000117>Oliver He, Jie Zheng</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -36709,6 +36716,12 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     <owl:Class rdf:about="&obo;OPMI_0000002">
         <rdfs:label xml:lang="en">precision medicine investigation</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000066"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="&obo;OPMI_0000019"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Precision_medicine</obo:IAO_0000119>
         <obo:IAO_0000115>An investigation that is targeted for precision medicine</obo:IAO_0000115>
     </owl:Class>
@@ -36859,6 +36872,15 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     <owl:Class rdf:about="&obo;OPMI_0000018">
         <rdfs:label xml:lang="en">direct serum bilirubin level</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;CMO_0000023"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000019 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000019">
+        <rdfs:label xml:lang="en">precision medicine objective</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
     </owl:Class>
     
 
@@ -37063,13 +37085,13 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000105"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002229"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="&obo;UBERON_0000104"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002229"/>
                 <owl:someValuesFrom rdf:resource="&obo;UBERON_0000104"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -37215,14 +37237,14 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000067"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000068"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002223"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000104"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002223"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000104"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000068"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">1-cell stage</oboInOwl:hasExactSynonym>
@@ -37262,14 +37284,14 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000067"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000106"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000068"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000068"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000106"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BILS:0000107</oboInOwl:hasDbXref>
@@ -37387,14 +37409,14 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000067"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000068"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000062"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000109"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000062"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000109"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000068"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BILS:0000110</oboInOwl:hasDbXref>
@@ -37541,14 +37563,14 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000105"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000092"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0007221"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0007221"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000092"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A mammalian developmental stage that covers the period from birth until weaning.</obo:IAO_0000115>
@@ -37826,54 +37848,12 @@ This interpretation is *not* the same as an at-all-times relation
         <dc:creator xml:lang="en">Yongqun He</dc:creator>
     </owl:NamedIndividual>
     <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;dron.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
         <obo:IAO_0000412 rdf:resource="&obo;ogms.owl"/>
     </rdf:Description>
     <rdf:Description>
         <obo:IAO_0000412 rdf:resource="&obo;dron.owl"/>
     </rdf:Description>
     <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;dron.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;dron.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;dron.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;dron.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;dron.owl"/>
-    </rdf:Description>
-    <rdf:Description>
         <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
     </rdf:Description>
     <rdf:Description>
@@ -37887,24 +37867,51 @@ This interpretation is *not* the same as an at-all-times relation
     </rdf:Description>
     <rdf:Description>
         <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;dron.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;dron.owl"/>
     </rdf:Description>
     <rdf:Description>
         <obo:IAO_0000412 rdf:resource="&obo;oae.owl"/>
     </rdf:Description>
     <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;dron.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;dron.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;dron.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
     </rdf:Description>
     <rdf:Description>
         <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
     </rdf:Description>
     <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
     </rdf:Description>
     <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
     </rdf:Description>
     <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
     </rdf:Description>
     <rdf:Description>
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
@@ -37917,6 +37924,21 @@ This interpretation is *not* the same as an at-all-times relation
     </rdf:Description>
     <rdf:Description>
         <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;dron.owl"/>
     </rdf:Description>
     
 
@@ -37931,8 +37953,8 @@ This interpretation is *not* the same as an at-all-times relation
 
     <rdf:Description rdf:about="&obo;ogms.owl">
         <dc:creator>Daniel Merico</dc:creator>
-        <dc:creator>Anand Kumar</dc:creator>
         <dc:creator>Werner Ceusters</dc:creator>
+        <dc:creator>Anand Kumar</dc:creator>
         <dc:creator>Lindsay Cowell</dc:creator>
         <dc:date>2009-08-07</dc:date>
         <dc:creator>Albert Goldfain</dc:creator>
@@ -37962,26 +37984,26 @@ If you are interested in participating in the development of OGMS, please send e
         <dc:creator>Qingping Liu</dc:creator>
         <dc:creator>Barry Smith</dc:creator>
         <dc:creator>Ling Wan</dc:creator>
-        <dc:creator>Liwei Wang</dc:creator>
         <dc:contributor>Keith Burkhart</dc:contributor>
+        <dc:creator>Liwei Wang</dc:creator>
         <dc:subject xml:lang="en">An ontology for the annotation of the adverse event domain.</dc:subject>
         <dc:creator xml:lang="en">Bingjian Yang</dc:creator>
         <dc:contributor>Luca Toldo</dc:contributor>
-        <dc:contributor>Sydni Joubran</dc:contributor>
         <dc:creator>Abra Guo</dc:creator>
         <dc:creator>Jiangan Xie</dc:creator>
         <dc:creator>&quot;Asiyah&quot; Yu Lin</dc:creator>
-        <dc:creator xml:lang="en">Desikan Jagannathan</dc:creator>
         <dc:contributor>Izabela Birsanescu</dc:contributor>
-        <dc:creator>Edison Ong</dc:creator>
         <dc:creator>Zuoshuang &quot;Allen&quot; Xiang</dc:creator>
+        <dc:creator>Edison Ong</dc:creator>
         <dc:creator>Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
         <dc:creator>Kevin Mo</dc:creator>
-        <dc:creator xml:lang="en">Shelley Zhang</dc:creator>
         <dc:creator>Sydni Joubran</dc:creator>
+        <dc:contributor>Sydni Joubran</dc:contributor>
         <dc:date>2018-08-31</dc:date>
+        <dc:creator xml:lang="en">Desikan Jagannathan</dc:creator>
         <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
         <dc:creator xml:lang="en">Meiu Wong</dc:creator>
+        <dc:creator xml:lang="en">Shelley Zhang</dc:creator>
         <dc:creator>Sirarat Sarntivijai</dc:creator>
         <dc:creator>Rebecca Racz</dc:creator>
         <dc:creator>Noemi Garg</dc:creator>
@@ -38034,5 +38056,5 @@ Please see www.environmentontology.org for more information and citations.</rdfs
 
 
 
-<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
 
