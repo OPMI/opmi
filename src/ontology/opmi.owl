@@ -391,6 +391,85 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000022 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000022">
+        <rdfs:label xml:lang="en">answer to question</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+        <obo:IAO_0000115>An information content entity that is the answer to a specific question</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000023 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000023">
+        <rdfs:label xml:lang="en">yes answer to question</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000022"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000024 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000024">
+        <rdfs:label xml:lang="en">no answer to question</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000022"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000025 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000025">
+        <rdfs:label xml:lang="en">do not know answer to question</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000022"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000026 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000026">
+        <rdfs:label xml:lang="en">do not know due to data unavailable answer to question</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000025"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000027 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000027">
+        <rdfs:label xml:lang="en">declined to answer to question</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000022"/>
+        <obo:IAO_0000118>refuse to answer</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000028 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000028">
+        <rdfs:label xml:lang="en">other answer to question</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000022"/>
+        <obo:IAO_0000115>An answer that is not enumerated in the list and then may be entered with free text in a separate text box</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Fred Dowd</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000029 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000029">
+        <rdfs:label xml:lang="en">none answer to question</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000022"/>
+        <obo:IAO_0000115>an answer that is not listed with the whole anwer list</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Fred Dowd</obo:IAO_0000117>
+        <obo:IAO_0000115>An answer that is not enumerated in the list and then may be entered with free text in a separate text box</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PCO_0000000 -->
 
     <rdf:Description rdf:about="&obo;PCO_0000000">
