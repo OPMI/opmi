@@ -22,7 +22,7 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="&obo;opmi.owl">
-        <dc:date xml:lang="en">12-16-2018</dc:date>
+        <dc:date xml:lang="en">1-31-2019</dc:date>
         <dc:creator xml:lang="en">Hong Yu</dc:creator>
         <dc:creator xml:lang="en">Jennifer Schaub</dc:creator>
         <dc:creator xml:lang="en">Jie Zheng</dc:creator>
@@ -30,7 +30,7 @@
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <dc:format xml:lang="en">OWL-DL</dc:format>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.25</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.30</owl:versionInfo>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
         <owl:imports rdf:resource="&obo;opmi/CHEBI_imports.owl"/>
         <owl:imports rdf:resource="&obo;opmi/CMO_import.owl"/>
@@ -349,7 +349,7 @@
     <!-- http://purl.obolibrary.org/obo/OPMI_0000017 -->
 
     <owl:Class rdf:about="&obo;OPMI_0000017">
-        <rdfs:label xml:lang="en">less than 12th grade completion</rdfs:label>
+        <rdfs:label xml:lang="en">high than 8th grade but less than 12th grade completion</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NCIT_C17953"/>
     </owl:Class>
     
@@ -377,6 +377,15 @@
 
     <owl:Class rdf:about="&obo;OPMI_0000020">
         <rdfs:label xml:lang="en">less than 8th grade completion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCIT_C17953"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000021 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000021">
+        <rdfs:label xml:lang="en">high school completed, GED or equivalent</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NCIT_C17953"/>
     </owl:Class>
     
