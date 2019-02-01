@@ -23,13 +23,18 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="&obo;opmi.owl">
         <dc:date xml:lang="en">1-31-2019</dc:date>
+        <dc:contributor xml:lang="en">Becky Steck</dc:contributor>
+        <dc:contributor xml:lang="en">Christopher Park</dc:contributor>
+        <dc:creator xml:lang="en">Fred Dowd</dc:creator>
         <dc:creator xml:lang="en">Hong Yu</dc:creator>
         <dc:creator xml:lang="en">Jennifer Schaub</dc:creator>
         <dc:creator xml:lang="en">Jie Zheng</dc:creator>
+        <dc:contributor xml:lang="en">John O&apos;toole</dc:contributor>
         <dc:description xml:lang="en">OPMI is a biomedical ontology in the area of precision medicine and its related investigations. It is community-driven and developed by following the OBO Foundry ontology development principles.</dc:description>
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <dc:format xml:lang="en">OWL-DL</dc:format>
+        <dc:contributor xml:lang="en">Sean Mooney</dc:contributor>
         <owl:versionInfo xml:lang="en">Vision Release: 1.0.30</owl:versionInfo>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
         <owl:imports rdf:resource="&obo;opmi/CHEBI_imports.owl"/>
@@ -39,6 +44,7 @@
         <owl:imports rdf:resource="&obo;opmi/ENVO_imports.owl"/>
         <owl:imports rdf:resource="&obo;opmi/HP_imports.owl"/>
         <owl:imports rdf:resource="&obo;opmi/IAO_imports.owl"/>
+        <owl:imports rdf:resource="&obo;opmi/ICO_imports.owl"/>
         <owl:imports rdf:resource="&obo;opmi/NCBITaxon_imports.owl"/>
         <owl:imports rdf:resource="&obo;opmi/NCIT_imports.owl"/>
         <owl:imports rdf:resource="&obo;opmi/OAE_imports.owl"/>
@@ -396,6 +402,7 @@
     <owl:Class rdf:about="&obo;OPMI_0000022">
         <rdfs:label xml:lang="en">answer to question</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+        <obo:IAO_0000117>Fred Dowd, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000115>An information content entity that is the answer to a specific question</obo:IAO_0000115>
     </owl:Class>
     
@@ -406,6 +413,8 @@
     <owl:Class rdf:about="&obo;OPMI_0000023">
         <rdfs:label xml:lang="en">yes answer to question</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OPMI_0000022"/>
+        <obo:IAO_0000115>An answer to question where the answer is Yes.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Fred Dowd</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -415,6 +424,8 @@
     <owl:Class rdf:about="&obo;OPMI_0000024">
         <rdfs:label xml:lang="en">no answer to question</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OPMI_0000022"/>
+        <obo:IAO_0000117>Fred Dowd, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>An answer to question where the answer is No.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -424,6 +435,8 @@
     <owl:Class rdf:about="&obo;OPMI_0000025">
         <rdfs:label xml:lang="en">do not know answer to question</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OPMI_0000022"/>
+        <obo:IAO_0000117>Fred Dowd, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>An answer to question that indicates the response to the specified question is unknown.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -433,6 +446,8 @@
     <owl:Class rdf:about="&obo;OPMI_0000026">
         <rdfs:label xml:lang="en">do not know due to data unavailable answer to question</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OPMI_0000025"/>
+        <obo:IAO_0000117>Fred Dowd, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>A do not know answer to question that is answered due to data unavailable</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -442,7 +457,10 @@
     <owl:Class rdf:about="&obo;OPMI_0000027">
         <rdfs:label xml:lang="en">declined to answer to question</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OPMI_0000022"/>
+        <obo:IAO_0000115>An answer to question where one declines to answer the specified question.</obo:IAO_0000115>
         <obo:IAO_0000118>refuse to answer</obo:IAO_0000118>
+        <obo:IAO_0000118>decline to answer</obo:IAO_0000118>
+        <obo:IAO_0000117>Fred Dowd, Oliver He</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -452,7 +470,7 @@
     <owl:Class rdf:about="&obo;OPMI_0000028">
         <rdfs:label xml:lang="en">other answer to question</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OPMI_0000022"/>
-        <obo:IAO_0000115>An answer that is not enumerated in the list and then may be entered with free text in a separate text box</obo:IAO_0000115>
+        <obo:IAO_0000115>An answer to question that is not enumerated in the list and then may be entered with free text in a separate text box</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Fred Dowd</obo:IAO_0000117>
     </owl:Class>
     
@@ -463,9 +481,385 @@
     <owl:Class rdf:about="&obo;OPMI_0000029">
         <rdfs:label xml:lang="en">none answer to question</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OPMI_0000022"/>
-        <obo:IAO_0000115>an answer that is not listed with the whole anwer list</obo:IAO_0000115>
+        <obo:IAO_0000115>An answer to question that is not listed in the whole list of response options</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Fred Dowd</obo:IAO_0000117>
-        <obo:IAO_0000115>An answer that is not enumerated in the list and then may be entered with free text in a separate text box</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000030 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000030">
+        <rdfs:label xml:lang="en">textual question</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000300"/>
+        <obo:IAO_0000117>Fred Dowd, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>A textual entity that is a question presented in text</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000031 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000031">
+        <rdfs:label xml:lang="en">medical history form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000032 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000032">
+        <rdfs:label xml:lang="en">eligibility assessment form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+        <obo:IAO_0000115>A form with questions that is used to assess a person&apos;s eligibility to participate in a specific study (e.g., kidney precision medicine project).</obo:IAO_0000115>
+        <obo:IAO_0000117>Fred Down, Oliver He</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000033 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000033">
+        <rdfs:label xml:lang="en">demographic information form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+        <obo:IAO_0000119>https://www.investopedia.com/terms/d/demographics.asp</obo:IAO_0000119>
+        <obo:IAO_0000117>Fred Dowd, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>A form with questions that includes statistical data related to particular groups within a population where a person belongs to</obo:IAO_0000115>
+        <obo:IAO_0000118>demographics form</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000034 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000034">
+        <rdfs:label xml:lang="en">physical measurement form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000035 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000035">
+        <rdfs:label xml:lang="en">question with enumerated responses</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000030"/>
+        <obo:IAO_0000117>Fred Dowd, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>A textual question that includes a list of enumerated answers</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000036 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000036">
+        <rdfs:label xml:lang="en">question with yes and no responses</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000037"/>
+        <obo:IAO_0000115>A question that has two primary and definitive answers: Yes and No, and there may be other given options like Don&apos;t know or Decline to answer.</obo:IAO_0000115>
+        <obo:IAO_0000117>Fred Dowd, Oliver He</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000037 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000037">
+        <rdfs:label xml:lang="en">question with enumerated responses where only one answer chosen</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000035"/>
+        <obo:IAO_0000117>Fred Dowd, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>A question with enumerated responses where one can only choose one answer.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000038 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000038">
+        <rdfs:label xml:lang="en">question with enumerated responses where multiple answers may be chosen</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000035"/>
+        <obo:IAO_0000115>A question with enumerated responses where one can choose multiple answers.</obo:IAO_0000115>
+        <obo:IAO_0000117>Fred Dowd, Oliver He</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000039 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000039">
+        <rdfs:label xml:lang="en">form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000310"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Form_(document)</obo:IAO_0000119>
+        <obo:IAO_0000115>a document (printed or electronic) with spaces in which to write or enter data</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000040 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000040">
+        <rdfs:label xml:lang="en">laboratory result form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+        <obo:IAO_0000117>Fred Down, Oliver He</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000041 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000041">
+        <rdfs:label xml:lang="en">new patient form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+        <obo:IAO_0000117>Fred Down, Oliver He</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000042 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000042">
+        <rdfs:label xml:lang="en">biopsy procedure form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+        <obo:IAO_0000117>Fred Down, Oliver He</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000043 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000043">
+        <rdfs:label xml:lang="en">kidney biopsy procedure form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000042"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000044 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000044">
+        <rdfs:label xml:lang="en">medical records release form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+        <obo:IAO_0000117>Fred Down, Oliver He</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000045 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000045">
+        <rdfs:label xml:lang="en">paper form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+        <obo:IAO_0000117>Fred Down, Oliver He</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000046 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000046">
+        <rdfs:label xml:lang="en">paper form with signature required</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000045"/>
+        <obo:IAO_0000117>Fred Dowd, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000112>Medical records release form is usually required to be a paper form that should be signed by the patient who agrees to have his/her medical records released.</obo:IAO_0000112>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000047 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000047">
+        <rdfs:label xml:lang="en">HIPAA release form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000048 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000048">
+        <rdfs:label xml:lang="en">contact information form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000049 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000049">
+        <rdfs:label xml:lang="en">biosample collection form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000050 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000050">
+        <rdfs:label xml:lang="en">clinic reception form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000051 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000051">
+        <rdfs:label xml:lang="en">medications form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000052 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000052">
+        <rdfs:label xml:lang="en">participant study status form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000053 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000053">
+        <rdfs:label xml:lang="en">hospitalization form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000054 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000054">
+        <rdfs:label xml:lang="en">personal history form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000055 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000055">
+        <rdfs:label xml:lang="en">AKI hospitalization form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000053"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000056 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000056">
+        <rdfs:label xml:lang="en">CKD hospitalization form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000053"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000057 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000057">
+        <rdfs:label xml:lang="en">participant reported outcome measures form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000058 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000058">
+        <rdfs:label xml:lang="en">health literacy questionnaire form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000059 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000059">
+        <rdfs:label xml:lang="en">biopsy safety checklist form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000060 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000060">
+        <rdfs:label xml:lang="en">post biopsy form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000061 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000061">
+        <rdfs:label xml:lang="en">tissue tracking form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000062 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000062">
+        <rdfs:label xml:lang="en">pathology images upload form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000063 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000063">
+        <rdfs:label xml:lang="en">Dx core - .jpg images QC form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000064 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000064">
+        <rdfs:label xml:lang="en">Dx core - disease categories form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000065 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000065">
+        <rdfs:label xml:lang="en">central path quality metrics assessment Dx core form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000066 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000066">
+        <rdfs:label xml:lang="en">central path quality metrics assessment interrogation core form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000067 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000067">
+        <rdfs:label xml:lang="en">patient experience survey form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000068 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000068">
+        <rdfs:label xml:lang="en">adverse event entry form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
     </owl:Class>
     
 
