@@ -59,6 +59,28 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000069 -->
+
+    <owl:ObjectProperty rdf:about="&obo;OPMI_0000069">
+        <rdfs:label xml:lang="en">executed in</rdfs:label>
+        <obo:IAO_0000112>A kidney biopsy protocol is executed in a kidney biopsy process.</obo:IAO_0000112>
+        <obo:IAO_0000117>Jie Zheng, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>A shortcut relation that is concretized and realized in some process.</obo:IAO_0000115>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
