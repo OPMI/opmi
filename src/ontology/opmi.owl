@@ -22,7 +22,7 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="&obo;opmi.owl">
-        <dc:date xml:lang="en">1-31-2019</dc:date>
+        <dc:date>2-2-2019</dc:date>
         <dc:contributor xml:lang="en">Becky Steck</dc:contributor>
         <dc:contributor xml:lang="en">Christopher Park</dc:contributor>
         <dc:creator xml:lang="en">Fred Dowd</dc:creator>
@@ -35,7 +35,7 @@
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:contributor xml:lang="en">Sean Mooney</dc:contributor>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.30</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.34</owl:versionInfo>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
         <owl:imports rdf:resource="&obo;opmi/CHEBI_imports.owl"/>
         <owl:imports rdf:resource="&obo;opmi/CMO_import.owl"/>

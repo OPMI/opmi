@@ -1,5 +1,5 @@
 [URI of the OWL(RDF/XML) output file]
-http://purl.obolibrary.org/obo/opmi/PATO_import.owl
+http://purl.obolibrary.org/obo/opmi/PATO_imports.owl
 
 [Source ontology]
 PATO
@@ -7,6 +7,9 @@ PATO
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/PATO_0000011 #age
 http://purl.obolibrary.org/obo/PATO_0000047 #biological sex
+http://purl.obolibrary.org/obo/PATO_0000383 #female
+http://purl.obolibrary.org/obo/PATO_0000384 #male 
+
 http://purl.obolibrary.org/obo/PATO_0000119 #height
 http://purl.obolibrary.org/obo/PATO_0000128 #weight
 
@@ -15,7 +18,7 @@ http://purl.obolibrary.org/obo/PATO_0001241 #physical object quality
 subClassOf http://purl.obolibrary.org/obo/PATO_0001241 #physical object quality
 
 [Source term retrieval setting]
-includeNoIntermediates
+includeComputedIntermediates
 
 [Source annotation URIs]
 includeAllAxioms
