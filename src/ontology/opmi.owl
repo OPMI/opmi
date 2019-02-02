@@ -35,7 +35,7 @@
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:contributor xml:lang="en">Sean Mooney</dc:contributor>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.35</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.36</owl:versionInfo>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
         <owl:imports rdf:resource="&obo;opmi/CHEBI_imports.owl"/>
         <owl:imports rdf:resource="&obo;opmi/CMO_import.owl"/>
@@ -53,6 +53,26 @@
         <owl:imports rdf:resource="&obo;opmi/OMRSE_imports.owl"/>
         <owl:imports rdf:resource="&obo;opmi/PATO_imports.owl"/>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICO_0000091 -->
+
+    <rdf:Description rdf:about="&obo;ICO_0000091">
+        <obo:ICO_0000091>C3829466</obo:ICO_0000091>
+        <obo:ICO_0000092>NCIT_C106180</obo:ICO_0000092>
+    </rdf:Description>
     
 
 
@@ -882,6 +902,260 @@
     <owl:Class rdf:about="&obo;OPMI_0000068">
         <rdfs:label xml:lang="en">adverse event entry form</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000070 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000070">
+        <rdfs:label xml:lang="en">month of year</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000038"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000071 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000071">
+        <rdfs:label xml:lang="en">January</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000070"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Gregorian_calendar</obo:IAO_0000119>
+        <obo:IAO_0000115>The first month of the year in the Gregorian calendar</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000072 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000072">
+        <rdfs:label xml:lang="en">February</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000070"/>
+        <obo:IAO_0000115>The second month of the year in the Gregorian calendar.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Gregorian_calendar</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000073 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000073">
+        <rdfs:label xml:lang="en">March</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000070"/>
+        <obo:IAO_0000115>The third month of the year in the Gregorian calendar.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Gregorian_calendar</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000074 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000074">
+        <rdfs:label xml:lang="en">April</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000070"/>
+        <obo:IAO_0000115>The4th month of the year in the Gregorian calendar</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Gregorian_calendar</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000075 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000075">
+        <rdfs:label xml:lang="en">May</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000070"/>
+        <obo:IAO_0000115>The 5th month of the year in the Gregorian calendar</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Gregorian_calendar</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000076 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000076">
+        <rdfs:label xml:lang="en">June</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000070"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Gregorian_calendar</obo:IAO_0000119>
+        <obo:IAO_0000115>The 6th month of the year in the Gregorian calendar</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000077 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000077">
+        <rdfs:label xml:lang="en">July</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000070"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Gregorian_calendar</obo:IAO_0000119>
+        <obo:IAO_0000115>The 7th month of the year in the Gregorian calendar</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000078 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000078">
+        <rdfs:label xml:lang="en">August</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000070"/>
+        <obo:IAO_0000115>The 8th month of the year in the Gregorian calendar</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Gregorian_calendar</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000079 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000079">
+        <rdfs:label xml:lang="en">September</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000070"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Gregorian_calendar</obo:IAO_0000119>
+        <obo:IAO_0000115>The 9th month of the year in the Gregorian calendar</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000080 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000080">
+        <rdfs:label xml:lang="en">October</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000070"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Gregorian_calendar</obo:IAO_0000119>
+        <obo:IAO_0000115>The 10th month of the year in the Gregorian calendar</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000081 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000081">
+        <rdfs:label xml:lang="en">November</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000070"/>
+        <obo:IAO_0000115>The 11th month of the year in the Gregorian calendar</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Gregorian_calendar</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000082 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000082">
+        <rdfs:label xml:lang="en">December</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000070"/>
+        <obo:IAO_0000115>The 12th month of the year in the Gregorian calendar</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Gregorian_calendar</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000083 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000083">
+        <rdfs:label xml:lang="en">day of week</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000038"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Week</obo:IAO_0000119>
+        <obo:IAO_0000115>A day of a calendar week that includes covers 24 hours each day.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000084 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000084">
+        <rdfs:label xml:lang="en">Monday</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000083"/>
+        <obo:IAO_0000115>The first day of the week.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Week</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000085 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000085">
+        <rdfs:label xml:lang="en">Tuesday</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000083"/>
+        <obo:IAO_0000115>The second day of the week.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Week</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000086 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000086">
+        <rdfs:label xml:lang="en">Wednesday</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000083"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Week</obo:IAO_0000119>
+        <obo:IAO_0000115>The third day of the week.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000087 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000087">
+        <rdfs:label xml:lang="en">Thursday</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000083"/>
+        <obo:IAO_0000115>The fourth day of the week.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Week</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000088 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000088">
+        <rdfs:label xml:lang="en">Friday</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000083"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Week</obo:IAO_0000119>
+        <obo:IAO_0000115>The fifth day of the week.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000089 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000089">
+        <rdfs:label xml:lang="en">Saturday</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000083"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Week</obo:IAO_0000119>
+        <obo:IAO_0000115>The 6th day of the week.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000090 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000090">
+        <rdfs:label xml:lang="en">Sunday</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000083"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Week</obo:IAO_0000119>
+        <obo:IAO_0000115>The 7th day of the week.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000091 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000091">
+        <rdfs:label xml:lang="en">day of birth</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000038"/>
+        <obo:IAO_0000115>A day when an organism (e.g., a human) is born.</obo:IAO_0000115>
+        <obo:IAO_0000118>birth date</obo:IAO_0000118>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000092 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000092">
+        <rdfs:label xml:lang="en">birthday</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000038"/>
+        <rdfs:comment>There is a difference between birthday and birthdate: The former, such as February 29, occurs each year, while the latter is the exact date a person was born (e.g., January 15, 2001).</rdfs:comment>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>the anniversary of the birth of a person</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Birthday</obo:IAO_0000119>
     </owl:Class>
     
 
