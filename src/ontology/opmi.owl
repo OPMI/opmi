@@ -35,7 +35,7 @@
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:contributor xml:lang="en">Sean Mooney</dc:contributor>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.36</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.37</owl:versionInfo>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
         <owl:imports rdf:resource="&obo;opmi/CHEBI_imports.owl"/>
         <owl:imports rdf:resource="&obo;opmi/CMO_import.owl"/>
@@ -106,38 +106,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C46109 -->
-
-    <rdf:Description rdf:about="&obo;NCIT_C46109">
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C17357"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C46110 -->
-
-    <rdf:Description rdf:about="&obo;NCIT_C46110">
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C17357"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C46112 -->
-
-    <rdf:Description rdf:about="&obo;NCIT_C46112">
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C28421"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C46113 -->
-
-    <rdf:Description rdf:about="&obo;NCIT_C46113">
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C28421"/>
-    </rdf:Description>
     
 
 
@@ -1156,6 +1124,272 @@
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <obo:IAO_0000115>the anniversary of the birth of a person</obo:IAO_0000115>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Birthday</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000093 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000093">
+        <rdfs:label xml:lang="en">personal information</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+        <obo:IAO_0000115>information associated with an individual</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.oic.qld.gov.au/guidelines/for-government/access-and-amendment/introduction-to-the-acts/what-is-personal-information</obo:IAO_0000119>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000094 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000094">
+        <rdfs:label xml:lang="en">person name</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000093"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Personal_name</obo:IAO_0000119>
+        <obo:IAO_0000115>A name of a person, which can have different types</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000095 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000095">
+        <rdfs:label xml:lang="en">person first name</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000094"/>
+        <obo:IAO_0000118>forename</obo:IAO_0000118>
+        <obo:IAO_0000118>given name</obo:IAO_0000118>
+        <obo:IAO_0000118>Christian name</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Personal_name</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000096 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000096">
+        <rdfs:label xml:lang="en">person last name</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000094"/>
+        <obo:IAO_0000118>surname</obo:IAO_0000118>
+        <obo:IAO_0000118>family name</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Personal_name</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000097 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000097">
+        <rdfs:label xml:lang="en">person middle name</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000094"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Personal_name</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000098 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000098">
+        <rdfs:label xml:lang="en">person full name</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000094"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Personal_name</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000099 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000099">
+        <rdfs:label xml:lang="en">person legal name</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000094"/>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>A person name that identifies a person for legal, administrative and other official purposes</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Legal_name</obo:IAO_0000119>
+        <obo:IAO_0000118>legal name</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000100 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000100">
+        <rdfs:label xml:lang="en">birth name</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000094"/>
+        <obo:IAO_0000115>A person name that is given at birth</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000101 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000101">
+        <rdfs:label xml:lang="en">person login username</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000094"/>
+        <obo:IAO_0000115>A person name that is used for a person to access a computer system.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000102 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000102">
+        <rdfs:label xml:lang="en">maiden name</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000096"/>
+        <obo:IAO_0000115>A woman&apos;s surname before marriage</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000103 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000103">
+        <rdfs:label xml:lang="en">pseudonym</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000094"/>
+        <obo:IAO_0000115>A person name that is fictitious and generated for a person to perform a particular social role.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000104 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000104">
+        <rdfs:label xml:lang="en">marital status</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000093"/>
+        <obo:IAO_0000115>Personal information that indicates a person&apos;s status in marriage</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Marital_status</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000105 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000105">
+        <rdfs:label xml:lang="en">married marital status</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000104"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Marital_status</obo:IAO_0000119>
+        <obo:IAO_0000118>civil status</obo:IAO_0000118>
+        <obo:IAO_0000118>married</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000106 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000106">
+        <rdfs:label xml:lang="en">single marrital status</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000110"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000107 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000107">
+        <rdfs:label xml:lang="en">divorced marrital status</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000110"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000108 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000108">
+        <rdfs:label xml:lang="en">widowed marrital status</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000110"/>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Widow</obo:IAO_0000119>
+        <obo:IAO_0000115>A marital status that indicates no marriage status due to the death of his/her spouse and no remarriage.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000109 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000109">
+        <rdfs:label xml:lang="en">legally separated marital status</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000105"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000110 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000110">
+        <rdfs:label xml:lang="en">not married marital status</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000104"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000111 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000111">
+        <rdfs:label xml:lang="en">person email address</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000093"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000112 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000112">
+        <rdfs:label xml:lang="en">person phone number</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000093"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000113 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000113">
+        <rdfs:label xml:lang="en">person home phone number</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000112"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000114 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000114">
+        <rdfs:label xml:lang="en">person work phone number</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000112"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000115 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000115">
+        <rdfs:label xml:lang="en">person cell phone number</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000112"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000116 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000116">
+        <rdfs:label xml:lang="en">person address</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000093"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Address</obo:IAO_0000119>
+        <obo:IAO_0000119>The information of a person&apos;s address</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000117 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000117">
+        <rdfs:label xml:lang="en">person home address</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000116"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000118 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000118">
+        <rdfs:label xml:lang="en">person work address</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000116"/>
     </owl:Class>
     
 

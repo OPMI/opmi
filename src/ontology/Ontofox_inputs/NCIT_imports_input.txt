@@ -12,21 +12,6 @@ http://purl.obolibrary.org/obo/NCIT_C19332 #personal attribute
 http://purl.obolibrary.org/obo/NCIT_C25172 #Employment
 includeAllChildren
 
-http://purl.obolibrary.org/obo/NCIT_C25188 #Marital Status
-includeAllChildren
-
-http://purl.obolibrary.org/obo/NCIT_C20197 #male
-includeAllChildren
-
-http://purl.obolibrary.org/obo/NCIT_C16576 #female
-includeAllChildren
-
-http://purl.obolibrary.org/obo/NCIT_C28421 #sex
-http://purl.obolibrary.org/obo/NCIT_C17357 #gender
-
-http://purl.obolibrary.org/obo/NCIT_C25191 #Personal name
-includeAllChildren
-
 http://purl.obolibrary.org/obo/NCIT_C25150 #Age
 includeAllChildren
 
@@ -61,9 +46,6 @@ includeAllChildren
 http://purl.obolibrary.org/obo/NCIT_C54706 #blood pressure
 includeAllChildren
 
-http://purl.obolibrary.org/obo/NCIT_C42568 #unit by category
-http://purl.obolibrary.org/obo/NCIT_C44276 #unit of temperature
-includeAllChildren
 
 [Top level source term URIs and target direct superclass URIs]
 
@@ -85,12 +67,6 @@ subClassOf http://purl.obolibrary.org/obo/IAO_0000030 #information content entit
 http://purl.obolibrary.org/obo/NCIT_C16745 #insurance
 subClassOf http://purl.obolibrary.org/obo/NCIT_C19332 #personal attribute
 
-http://purl.obolibrary.org/obo/NCIT_C20197 #male
-subClassOf http://purl.obolibrary.org/obo/NCIT_C19332 #personal attribute
-
-http://purl.obolibrary.org/obo/NCIT_C16576 #female
-subClassOf http://purl.obolibrary.org/obo/NCIT_C19332 #personal attribute
-
 http://purl.obolibrary.org/obo/NCIT_C76325 #Birth Weight
 subClassOf http://purl.obolibrary.org/obo/NCIT_C19332 #personal attribute
 
@@ -100,14 +76,8 @@ subClassOf http://purl.obolibrary.org/obo/NCIT_C19332 #personal attribute
 http://purl.obolibrary.org/obo/NCIT_C25347 #height
 subClassOf http://purl.obolibrary.org/obo/NCIT_C19332 #personal attribute
 
-http://purl.obolibrary.org/obo/NCIT_C25191 #Personal name
-subClassOf http://purl.obolibrary.org/obo/IAO_0000030 #information content entity 
-
 http://purl.obolibrary.org/obo/NCIT_C138901 #Body mass index finding
 subClassOf http://purl.obolibrary.org/obo/OGMS_0000083 #physical examination finding
-
-http://purl.obolibrary.org/obo/NCIT_C42568 #unit by category
-subClassOf http://purl.obolibrary.org/obo/IAO_0000030 #information content entity 
 
 http://purl.obolibrary.org/obo/NCIT_C25352 #International Normalized Ratio
 subClassOf http://purl.obolibrary.org/obo/CMO_0000035 #blood measurement
@@ -116,6 +86,6 @@ subClassOf http://purl.obolibrary.org/obo/CMO_0000035 #blood measurement
 includeComputedIntermediates
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAnnotationProperties
 
 [Source annotation URIs to be excluded]

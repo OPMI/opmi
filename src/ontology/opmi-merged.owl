@@ -45,7 +45,7 @@
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:contributor xml:lang="en">Sean Mooney</dc:contributor>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.36</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.37</owl:versionInfo>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
     </owl:Ontology>
     
@@ -70,9 +70,7 @@
 
     <!-- http://protege.stanford.edu/plugins/owl/protege#readOnly -->
 
-    <owl:AnnotationProperty rdf:about="&protege;readOnly">
-        <rdfs:range rdf:resource="&xsd;boolean"/>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&protege;readOnly"/>
     
 
 
@@ -434,7 +432,6 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:NCIT_NHC0>A11</obo:NCIT_NHC0>
         <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
         <oboInOwl:hasExactSynonym>Has_NICHD_Parent</oboInOwl:hasExactSynonym>
-        <rdfs:range rdf:resource="&xsd;anyURI"/>
     </owl:AnnotationProperty>
     
 
@@ -447,7 +444,6 @@ We also have the outstanding issue of how to aim different definitions to differ
         <oboInOwl:hasExactSynonym>code</oboInOwl:hasExactSynonym>
         <obo:NCIT_NHC0>NHC0</obo:NCIT_NHC0>
         <protege:readOnly>true</protege:readOnly>
-        <rdfs:range rdf:resource="&xsd;string"/>
     </owl:AnnotationProperty>
     
 
@@ -463,7 +459,6 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:NCIT_NHC0>P106</obo:NCIT_NHC0>
         <obo:NCIT_P98>In general, applying semantic types aids in allowing users (or computer programs) to draw conclusions about concepts by virtue of the categories to which they have been assigned.  We use a set of semantic types developed for the UMLS Metathesaurus. There are currently 134 semantic types in the UMLS.</obo:NCIT_P98>
         <obo:IAO_0000115>The semantic type describes the sort of thing or category to which a concept belongs in the context of the UMLS semantic network.</obo:IAO_0000115>
-        <rdfs:range rdf:resource="&obo;NCIT_Semantic_Type-enum"/>
     </owl:AnnotationProperty>
     
 
@@ -479,7 +474,6 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:NCIT_P108>Display_Name</obo:NCIT_P108>
         <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
         <obo:NCIT_NHC0>P107</obo:NCIT_NHC0>
-        <rdfs:range rdf:resource="&xsd;string"/>
     </owl:AnnotationProperty>
     
 
@@ -496,7 +490,6 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:NCIT_P107>Preferred Name</obo:NCIT_P107>
         <oboInOwl:hasExactSynonym>Preferred_Name</oboInOwl:hasExactSynonym>
         <obo:NCIT_P108>Preferred_Name</obo:NCIT_P108>
-        <rdfs:range rdf:resource="&xsd;string"/>
     </owl:AnnotationProperty>
     
 
@@ -511,7 +504,6 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:NCIT_P108>UMLS_CUI</obo:NCIT_P108>
         <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
         <obo:NCIT_P107>UMLS CUI</obo:NCIT_P107>
-        <rdfs:range rdf:resource="&xsd;string"/>
     </owl:AnnotationProperty>
     
 
@@ -520,13 +512,12 @@ We also have the outstanding issue of how to aim different definitions to differ
 
     <owl:AnnotationProperty rdf:about="&obo;NCIT_P208">
         <rdfs:label>NCI_META_CUI</rdfs:label>
-        <oboInOwl:hasExactSynonym>NCI_META_CUI</oboInOwl:hasExactSynonym>
         <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
         <obo:NCIT_P108>NCI_META_CUI</obo:NCIT_P108>
+        <oboInOwl:hasExactSynonym>NCI_META_CUI</oboInOwl:hasExactSynonym>
         <obo:NCIT_P107>NCI Metathesaurus CUI</obo:NCIT_P107>
         <obo:IAO_0000115>Contains a Concept Unique Identifier for those concepts that appear in NCI Metathesaurus but not in the NLM UMLS.</obo:IAO_0000115>
         <obo:NCIT_NHC0>P208</obo:NCIT_NHC0>
-        <rdfs:range rdf:resource="&xsd;string"/>
     </owl:AnnotationProperty>
     
 
@@ -541,7 +532,6 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:NCIT_P108>Concept_Status</obo:NCIT_P108>
         <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
         <oboInOwl:hasExactSynonym>Concept_Status</oboInOwl:hasExactSynonym>
-        <rdfs:range rdf:resource="&obo;NCIT_Concept_Status-enum"/>
     </owl:AnnotationProperty>
     
 
@@ -556,7 +546,6 @@ We also have the outstanding issue of how to aim different definitions to differ
         <oboInOwl:hasExactSynonym>Contributing_Source</oboInOwl:hasExactSynonym>
         <obo:NCIT_NHC0>P322</obo:NCIT_NHC0>
         <obo:NCIT_P108>Contributing_Source</obo:NCIT_P108>
-        <rdfs:range rdf:resource="&obo;NCIT_Contributing_Source-enum"/>
     </owl:AnnotationProperty>
     
 
@@ -571,7 +560,6 @@ We also have the outstanding issue of how to aim different definitions to differ
         <oboInOwl:hasExactSynonym>ALT_DEFINITION</oboInOwl:hasExactSynonym>
         <obo:NCIT_NHC0>P325</obo:NCIT_NHC0>
         <obo:IAO_0000115>English language definitions of what a source other than NCI means by the concept. These are limited to 1024 characters. They include information about the definition&apos;s source in a form that can easily be interpreted by software.</obo:IAO_0000115>
-        <rdfs:range rdf:resource="&obo;NCIT_textArea"/>
     </owl:AnnotationProperty>
     
 
@@ -580,13 +568,12 @@ We also have the outstanding issue of how to aim different definitions to differ
 
     <owl:AnnotationProperty rdf:about="&obo;NCIT_P366">
         <rdfs:label>Legacy_Concept_Name</rdfs:label>
-        <oboInOwl:hasExactSynonym>Legacy Concept Name</oboInOwl:hasExactSynonym>
         <obo:IAO_0000115>A retired unique concept identifier created and stored as Concept Name by legacy EVS software.  Use of these values was long discouraged, but continued as late as 2009 when creation of new values ceased and Concept Name was retired.  Legacy values are intended solely to help resolve and update earlier coding.</obo:IAO_0000115>
         <obo:NCIT_P108>Legacy Concept Name</obo:NCIT_P108>
+        <oboInOwl:hasExactSynonym>Legacy Concept Name</oboInOwl:hasExactSynonym>
         <protege:readOnly>true</protege:readOnly>
         <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
         <obo:NCIT_NHC0>P366</obo:NCIT_NHC0>
-        <rdfs:range rdf:resource="&xsd;string"/>
     </owl:AnnotationProperty>
     
 
@@ -600,7 +587,6 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:NCIT_P108>NICHD_Hierarchy_Term</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>NICHD_Hierarchy_Term</oboInOwl:hasExactSynonym>
         <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
-        <rdfs:range rdf:resource="&xsd;string"/>
     </owl:AnnotationProperty>
     
 
@@ -615,7 +601,6 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:NCIT_NHC0>P98</obo:NCIT_NHC0>
         <obo:IAO_0000115>Design notes are notations made by NCI vocabulary curators. They are intended to provide supplemental, unstructured information to the user or additional insight about the concept.</obo:IAO_0000115>
         <obo:NCIT_P108>DesignNote</obo:NCIT_P108>
-        <rdfs:range rdf:resource="&xsd;string"/>
     </owl:AnnotationProperty>
     
 
@@ -1155,30 +1140,6 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCIT_Concept_Status-enum -->
-
-    <rdfs:Datatype rdf:about="&obo;NCIT_Concept_Status-enum"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_Contributing_Source-enum -->
-
-    <rdfs:Datatype rdf:about="&obo;NCIT_Contributing_Source-enum"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_Semantic_Type-enum -->
-
-    <rdfs:Datatype rdf:about="&obo;NCIT_Semantic_Type-enum"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_textArea -->
-
-    <rdfs:Datatype rdf:about="&obo;NCIT_textArea"/>
-    
-
-
     <!-- http://www.w3.org/2001/XMLSchema#date -->
 
     <rdfs:Datatype rdf:about="&xsd;date"/>
@@ -1251,20 +1212,20 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasDefinition>
             <rdf:Description/>
         </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
         <owl:equivalentProperty>
             <rdf:Description>
                 <owl:inverseOf rdf:resource="&obo;BFO_0000051"/>
             </rdf:Description>
         </owl:equivalentProperty>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
         <oboInOwl:hasDefinition>
             <rdf:Description/>
         </oboInOwl:hasDefinition>
@@ -1412,15 +1373,15 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000412 rdf:resource="&obo;ro.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;uberon.owl"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;RO_0002091"/>
-            <rdf:Description rdf:about="&obo;BFO_0000062"/>
-        </owl:propertyChainAxiom>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="&obo;RO_0002092"/>
             <rdf:Description rdf:about="&obo;BFO_0000062"/>
         </owl:propertyChainAxiom>
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="&obo;BFO_0000050"/>
+            <rdf:Description rdf:about="&obo;BFO_0000062"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;RO_0002091"/>
             <rdf:Description rdf:about="&obo;BFO_0000062"/>
         </owl:propertyChainAxiom>
     </owl:ObjectProperty>
@@ -1447,11 +1408,11 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000412 rdf:resource="&obo;ro.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;uberon.owl"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;BFO_0000050"/>
+            <rdf:Description rdf:about="&obo;RO_0002092"/>
             <rdf:Description rdf:about="&obo;BFO_0000063"/>
         </owl:propertyChainAxiom>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;RO_0002092"/>
+            <rdf:Description rdf:about="&obo;BFO_0000050"/>
             <rdf:Description rdf:about="&obo;BFO_0000063"/>
         </owl:propertyChainAxiom>
     </owl:ObjectProperty>
@@ -1502,9 +1463,18 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasDefinition>
             <rdf:Description/>
         </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;BFO_0000066"/>
             <rdf:Description rdf:about="&obo;BFO_0000050"/>
+            <rdf:Description rdf:about="&obo;BFO_0000066"/>
         </owl:propertyChainAxiom>
         <oboInOwl:hasDefinition>
             <rdf:Description/>
@@ -1512,25 +1482,16 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasDefinition>
             <rdf:Description/>
         </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;BFO_0000050"/>
             <rdf:Description rdf:about="&obo;BFO_0000066"/>
+            <rdf:Description rdf:about="&obo;BFO_0000050"/>
         </owl:propertyChainAxiom>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
         <oboInOwl:hasDefinition>
             <rdf:Description/>
         </oboInOwl:hasDefinition>
@@ -2223,10 +2184,10 @@ in: process &apos;has participant&apos; some (participant &apos;has quality&apos
 
     <owl:ObjectProperty rdf:about="&obo;RO_0002090">
         <rdfs:label xml:lang="en">immediately precedes</rdfs:label>
-        <rdfs:comment xml:lang="en">X immediately_precedes_Y iff: end(X) simultaneous_with start(Y)</rdfs:comment>
         <obo:IAO_0000118>ends_at_start_of</obo:IAO_0000118>
         <obo:IAO_0000118>meets</obo:IAO_0000118>
         <obo:IAO_0000117>David Osumi-Sutherland</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">X immediately_precedes_Y iff: end(X) simultaneous_with start(Y)</rdfs:comment>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/ro/subsets#ro-eco"/>
         <obo:RO_0002575 rdf:resource="&obo;BFO_0000063"/>
         <rdfs:subPropertyOf rdf:resource="&obo;BFO_0000063"/>
@@ -2305,16 +2266,16 @@ in: process &apos;has participant&apos; some (participant &apos;has quality&apos
         <obo:IAO_0000412 rdf:resource="&obo;ro.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;uberon.owl"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;BFO_0000050"/>
+            <rdf:Description rdf:about="&obo;BFO_0000050"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;BFO_0000051"/>
+            <rdf:Description rdf:about="&obo;BFO_0000050"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="&obo;BFO_0000051"/>
             <rdf:Description rdf:about="&obo;RO_0002131"/>
-        </owl:propertyChainAxiom>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;BFO_0000050"/>
-            <rdf:Description rdf:about="&obo;BFO_0000050"/>
-        </owl:propertyChainAxiom>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;BFO_0000051"/>
-            <rdf:Description rdf:about="&obo;BFO_0000050"/>
         </owl:propertyChainAxiom>
     </owl:ObjectProperty>
     
@@ -2535,11 +2496,11 @@ in: process &apos;has participant&apos; some (participant &apos;has quality&apos
         <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
         <obo:IAO_0000119 rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/20064205"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;RO_0000052"/>
+            <rdf:Description rdf:about="&obo;RO_0002314"/>
             <rdf:Description rdf:about="&obo;BFO_0000050"/>
         </owl:propertyChainAxiom>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;RO_0002314"/>
+            <rdf:Description rdf:about="&obo;RO_0000052"/>
             <rdf:Description rdf:about="&obo;BFO_0000050"/>
         </owl:propertyChainAxiom>
     </owl:ObjectProperty>
@@ -13831,14 +13792,14 @@ resulting from the influence of human beings on nature.</obo:IAO_0000115>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0001015"/>
-                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
+                <owl:onClass rdf:resource="&obo;ENVO_00000073"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0001015"/>
-                <owl:onClass rdf:resource="&obo;ENVO_00000073"/>
-                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ENVO</oboInOwl:hasOBONamespace>
@@ -13881,14 +13842,14 @@ resulting from the influence of human beings on nature.</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="&obo;ENVO_00000002"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
-                <owl:someValuesFrom rdf:resource="&obo;ENVO_01000996"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;ENVO_01000983"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;ENVO_01000983"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
+                <owl:someValuesFrom rdf:resource="&obo;ENVO_01000996"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A feature that has been constructed by deliberate human effort.</obo:IAO_0000115>
@@ -14216,15 +14177,15 @@ resulting from the influence of human beings on nature.</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="&obo;ENVO_00002297"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:onClass rdf:resource="&obo;ENVO_01000799"/>
-                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onProperty rdf:resource="&obo;RO_0002219"/>
+                <owl:someValuesFrom rdf:resource="&obo;ENVO_01000637"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002219"/>
-                <owl:someValuesFrom rdf:resource="&obo;ENVO_01000637"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:onClass rdf:resource="&obo;ENVO_01000799"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasRelatedSynonym>celestial object</oboInOwl:hasRelatedSynonym>
@@ -14328,14 +14289,14 @@ resulting from the influence of human beings on nature.</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="&obo;ENVO_02500027"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002234"/>
-                <owl:someValuesFrom rdf:resource="&obo;ENVO_01000313"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002233"/>
+                <owl:someValuesFrom rdf:resource="&obo;ENVO_01000951"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002233"/>
-                <owl:someValuesFrom rdf:resource="&obo;ENVO_01000951"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002234"/>
+                <owl:someValuesFrom rdf:resource="&obo;ENVO_01000313"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>anthropization</oboInOwl:hasExactSynonym>
@@ -15096,13 +15057,13 @@ Previous. An information content entity is a non-realizable information entity t
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000005"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000007"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000007"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">2/3/2009 Comment from OBI review.
@@ -17468,43 +17429,6 @@ The term is used in the following meaning of being self generated. It does not s
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCIT_C16576 -->
-
-    <owl:Class rdf:about="&obo;NCIT_C16576">
-        <rdfs:label>Female</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C19332"/>
-        <oboInOwl:hasExactSynonym>F</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
-        <obo:NCIT_P106>Organism Attribute</obo:NCIT_P106>
-        <oboInOwl:hasExactSynonym>Female</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P366>Female</obo:NCIT_P366>
-        <obo:NCIT_P371>Female</obo:NCIT_P371>
-        <obo:NCIT_P322>FDA</obo:NCIT_P322>
-        <obo:NCIT_P325>A person who belongs to the sex that normally produces ova. The term is used to indicate biological sex distinctions, or cultural gender role distinctions, or both. (NCI)</obo:NCIT_P325>
-        <obo:NCIT_P207>C0015780</obo:NCIT_P207>
-        <obo:NCIT_P322>NICHD</obo:NCIT_P322>
-        <oboInOwl:hasExactSynonym>FEMALE</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000115>A person who belongs to the sex that normally produces ova. The term is used to indicate biological sex distinctions, or cultural gender role distinctions, or both.</obo:IAO_0000115>
-        <obo:NCIT_P108>Female</obo:NCIT_P108>
-        <obo:NCIT_NHC0>C16576</obo:NCIT_NHC0>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C113350"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C19752"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C54447"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C54452"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66731"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66732"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C77526"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C88088"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C89506"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C90259"/>
-        <obo:NCIT_A11 rdf:resource="&obo;NCIT_C28421"/>
-        <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/NCIT_C16665 -->
 
     <owl:Class rdf:about="&obo;NCIT_C16665">
@@ -17609,28 +17533,6 @@ The term is used in the following meaning of being self generated. It does not s
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C89506"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C90259"/>
         <obo:NCIT_A11 rdf:resource="&obo;NCIT_C16495"/>
-        <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C17357 -->
-
-    <owl:Class rdf:about="&obo;NCIT_C17357">
-        <rdfs:label>Gender</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C19332"/>
-        <obo:NCIT_P322>CDISC-GLOSS</obo:NCIT_P322>
-        <obo:NCIT_NHC0>C17357</obo:NCIT_NHC0>
-        <obo:NCIT_P108>Gender</obo:NCIT_P108>
-        <obo:NCIT_P207>C0079399</obo:NCIT_P207>
-        <obo:NCIT_P366>Gender</obo:NCIT_P366>
-        <oboInOwl:hasExactSynonym>gender</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P325>Subject self-identification re: masculine/feminine. [IOM] See also sex.</obo:NCIT_P325>
-        <obo:NCIT_P106>Organism Attribute</obo:NCIT_P106>
-        <obo:IAO_0000115>The assemblage of properties that distinguish people on the basis of the societal roles expected for the two sexes.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>Gender</oboInOwl:hasExactSynonym>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C67497"/>
         <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
     </owl:Class>
     
@@ -17888,44 +17790,6 @@ The term is used in the following meaning of being self generated. It does not s
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCIT_C20197 -->
-
-    <owl:Class rdf:about="&obo;NCIT_C20197">
-        <rdfs:label>Male</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C19332"/>
-        <obo:NCIT_P322>NICHD</obo:NCIT_P322>
-        <obo:NCIT_P371>Male</obo:NCIT_P371>
-        <obo:NCIT_P366>Male</obo:NCIT_P366>
-        <obo:IAO_0000115>A person who belongs to the sex that normally produces sperm. The term is used to indicate biological sex distinctions, cultural gender role distinctions, or both.</obo:IAO_0000115>
-        <obo:NCIT_NHC0>C20197</obo:NCIT_NHC0>
-        <obo:NCIT_P207>C0086582</obo:NCIT_P207>
-        <obo:NCIT_P106>Organism Attribute</obo:NCIT_P106>
-        <oboInOwl:hasExactSynonym>MALE</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Human, Male</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P325>A person who belongs to the sex that normally produces sperm. The term is used to indicate biological sex distinctions, cultural gender role distinctions, or both. (NCI)</obo:NCIT_P325>
-        <obo:NCIT_P322>FDA</obo:NCIT_P322>
-        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
-        <oboInOwl:hasExactSynonym>Male</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P108>Male</obo:NCIT_P108>
-        <oboInOwl:hasExactSynonym>M</oboInOwl:hasExactSynonym>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C113350"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C19752"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C54447"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C54452"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66731"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66732"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C77526"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C88088"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C89506"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C90259"/>
-        <obo:NCIT_A11 rdf:resource="&obo;NCIT_C28421"/>
-        <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/NCIT_C25150 -->
 
     <owl:Class rdf:about="&obo;NCIT_C25150">
@@ -17978,63 +17842,6 @@ The term is used in the following meaning of being self generated. It does not s
         <obo:NCIT_P207>C0014003</obo:NCIT_P207>
         <oboInOwl:hasExactSynonym>Employed</oboInOwl:hasExactSynonym>
         <obo:IAO_0000115>The state of being engaged in an activity or service for wages or salary; the occupation for which you are paid.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C25188 -->
-
-    <owl:Class rdf:about="&obo;NCIT_C25188">
-        <rdfs:label>Marital Status</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C19332"/>
-        <oboInOwl:hasExactSynonym>MARISTAT</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P108>Marital Status</obo:NCIT_P108>
-        <obo:IAO_0000115>A demographic parameter indicating a person&apos;s current conjugal status.</obo:IAO_0000115>
-        <obo:NCIT_P325>A demographic parameter indicating a person&apos;s current conjugal status.</obo:NCIT_P325>
-        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
-        <obo:NCIT_NHC0>C25188</obo:NCIT_NHC0>
-        <obo:NCIT_P207>C0024819</obo:NCIT_P207>
-        <obo:NCIT_P366>Marital_Status</obo:NCIT_P366>
-        <obo:NCIT_P106>Organism Attribute</obo:NCIT_P106>
-        <oboInOwl:hasExactSynonym>MaritalStatusUB92</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Marital Status</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P322>HL7</obo:NCIT_P322>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C103330"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C74559"/>
-        <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C25191 -->
-
-    <owl:Class rdf:about="&obo;NCIT_C25191">
-        <rdfs:label>Person Name</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
-        <obo:NCIT_P108>Person Name</obo:NCIT_P108>
-        <obo:NCIT_P325>A non-unique textual identifier for the person. Examples include but are not limited to proper name, nickname, legal name. [BRIDG]</obo:NCIT_P325>
-        <obo:NCIT_P366>Name</obo:NCIT_P366>
-        <obo:IAO_0000115>A word or group of words indicating the identity of a person usually consisting of a first (personal) name and a last (family) name with an optional middle name. In some cultural traditions the family name comes first.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>Contact Name</oboInOwl:hasExactSynonym>
-        <obo:NCIT_NHC0>C25191</obo:NCIT_NHC0>
-        <obo:NCIT_P325>A non-unique textual identifier for the person. EXAMPLE(S): proper name, nickname, legal name</obo:NCIT_P325>
-        <oboInOwl:hasExactSynonym>Person.name</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Name</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P106>Organism Attribute</obo:NCIT_P106>
-        <obo:NCIT_P322>BRIDG</obo:NCIT_P322>
-        <obo:NCIT_P322>CareLex</obo:NCIT_P322>
-        <oboInOwl:hasExactSynonym>Person Name</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P371>Person Name</obo:NCIT_P371>
-        <obo:NCIT_P207>C1547383</obo:NCIT_P207>
-        <obo:NCIT_P322>NICHD</obo:NCIT_P322>
-        <oboInOwl:hasExactSynonym>Name of Person</oboInOwl:hasExactSynonym>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C114548"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C89506"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C90259"/>
-        <obo:NCIT_A11 rdf:resource="&obo;NCIT_C90492"/>
         <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
     </owl:Class>
     
@@ -18151,65 +17958,6 @@ The term is used in the following meaning of being self generated. It does not s
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCIT_C25381 -->
-
-    <owl:Class rdf:about="&obo;NCIT_C25381">
-        <rdfs:label>Maiden Name</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C25191"/>
-        <obo:NCIT_P366>Maiden_Name</obo:NCIT_P366>
-        <obo:NCIT_P106>Organism Attribute</obo:NCIT_P106>
-        <obo:NCIT_NHC0>C25381</obo:NCIT_NHC0>
-        <obo:IAO_0000115>A woman&apos;s surname before marriage.</obo:IAO_0000115>
-        <obo:NCIT_P371>Maiden Name</obo:NCIT_P371>
-        <oboInOwl:hasExactSynonym>Maiden Name</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P108>Maiden Name</obo:NCIT_P108>
-        <obo:NCIT_P207>C0806887</obo:NCIT_P207>
-        <oboInOwl:hasExactSynonym>Maiden</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P322>NICHD</obo:NCIT_P322>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C89506"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C90259"/>
-        <obo:NCIT_A11 rdf:resource="&obo;NCIT_C90492"/>
-        <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C28421 -->
-
-    <owl:Class rdf:about="&obo;NCIT_C28421">
-        <rdfs:label>Sex</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C19332"/>
-        <obo:NCIT_P108>Sex</obo:NCIT_P108>
-        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
-        <obo:NCIT_P322>CDISC-GLOSS</obo:NCIT_P322>
-        <obo:NCIT_NHC0>C28421</obo:NCIT_NHC0>
-        <obo:NCIT_P322>NICHD</obo:NCIT_P322>
-        <oboInOwl:hasExactSynonym>sex</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P322>FDA</obo:NCIT_P322>
-        <obo:NCIT_P371>Sex</obo:NCIT_P371>
-        <obo:NCIT_P366>Sex</obo:NCIT_P366>
-        <obo:NCIT_P106>Organism Attribute</obo:NCIT_P106>
-        <obo:NCIT_P207>C1522384</obo:NCIT_P207>
-        <obo:NCIT_P325>Phenotypic expression of chromosomal makeup that defines a study subject as male, female, or other. Compare to gender.</obo:NCIT_P325>
-        <oboInOwl:hasExactSynonym>Gender</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>SEX</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Sex</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000115>The assemblage of physical properties or qualities by which male is distinguished from female; the physical difference between male and female; the distinguishing peculiarity of male or female.</obo:IAO_0000115>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C19752"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C54447"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C67497"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C83187"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C83188"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C88088"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C89506"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C90259"/>
-        <obo:NCIT_A11 rdf:resource="&obo;NCIT_C25447"/>
-        <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/NCIT_C34724 -->
 
     <owl:Class rdf:about="&obo;NCIT_C34724">
@@ -18274,44 +18022,6 @@ The term is used in the following meaning of being self generated. It does not s
         <obo:IAO_0000115>The length of a person&apos;s life, stated in years since birth.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C89415"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C91101"/>
-        <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C40974 -->
-
-    <owl:Class rdf:about="&obo;NCIT_C40974">
-        <rdfs:label>First Name</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C25191"/>
-        <obo:IAO_0000115>A word or group of words indicating a person&apos;s first (personal or given) name; the name that precedes the surname.</obo:IAO_0000115>
-        <obo:NCIT_P108>First Name</obo:NCIT_P108>
-        <obo:NCIT_P106>Organism Attribute</obo:NCIT_P106>
-        <oboInOwl:hasExactSynonym>Forename</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P366>First_Name</obo:NCIT_P366>
-        <obo:NCIT_P207>C1443235</obo:NCIT_P207>
-        <oboInOwl:hasExactSynonym>Given Name</oboInOwl:hasExactSynonym>
-        <obo:NCIT_NHC0>C40974</obo:NCIT_NHC0>
-        <oboInOwl:hasExactSynonym>First Name</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C40975 -->
-
-    <owl:Class rdf:about="&obo;NCIT_C40975">
-        <rdfs:label>Last Name</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C25191"/>
-        <obo:NCIT_P366>Last_Name</obo:NCIT_P366>
-        <obo:NCIT_P106>Organism Attribute</obo:NCIT_P106>
-        <obo:NCIT_P207>C1301584</obo:NCIT_P207>
-        <oboInOwl:hasExactSynonym>Surname</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Last Name</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P108>Last Name</obo:NCIT_P108>
-        <obo:IAO_0000115>A word or group of words indicating a person&apos;s last (family) name.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>Family Name</oboInOwl:hasExactSynonym>
-        <obo:NCIT_NHC0>C40975</obo:NCIT_NHC0>
         <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
     </owl:Class>
     
@@ -18579,93 +18289,6 @@ The term is used in the following meaning of being self generated. It does not s
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCIT_C42532 -->
-
-    <owl:Class rdf:about="&obo;NCIT_C42532">
-        <rdfs:label>Unit of International System of Units</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
-        <obo:NCIT_P207>C1705302</obo:NCIT_P207>
-        <obo:NCIT_P366>Unit_of_International_System_of_Units</obo:NCIT_P366>
-        <obo:IAO_0000115>A base or derived unit of weight or measure that belongs to the decimal International System of Units (Systeme International d&apos;Unites, SI) derived from and extending the metric system.</obo:IAO_0000115>
-        <obo:NCIT_P106>Quantitative Concept</obo:NCIT_P106>
-        <oboInOwl:hasExactSynonym>SI Unit</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P108>Unit of International System of Units</obo:NCIT_P108>
-        <obo:NCIT_NHC0>C42532</obo:NCIT_NHC0>
-        <oboInOwl:hasExactSynonym>Unit of International System of Units</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C42537 -->
-
-    <owl:Class rdf:about="&obo;NCIT_C42537">
-        <rdfs:label>Kelvin</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C42532"/>
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C44276"/>
-        <obo:NCIT_P322>ICH</obo:NCIT_P322>
-        <obo:NCIT_P325>A basic unit of thermodynamic temperature, one of the seven base units of the International System of Units (Systeme International d&apos;Unites, SI). It is 1/273.16th of the thermodynamic temperature of the triple point of water, This sets the size of the kelvin unit for temperature differences and defines the thermodynamic temperature of an equilibrium mixture of waters ice-liquid-vapor as 273.16 K, where 0 K is the lowest possible temperature (&quot;absolute zero&quot;).</obo:NCIT_P325>
-        <obo:NCIT_P98>Named after the Scottish mathematician and physicist William Thomson 1st Lord Kelvin.</obo:NCIT_P98>
-        <oboInOwl:hasExactSynonym>K</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Degree Kelvin</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P106>Quantitative Concept</obo:NCIT_P106>
-        <obo:NCIT_P207>C0439239</obo:NCIT_P207>
-        <obo:NCIT_P322>UCUM</obo:NCIT_P322>
-        <oboInOwl:hasExactSynonym>kelvin</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000115>A basic unit of thermodynamic temperature, one of the seven base units of the International System of Units (Systeme International d&apos;Unites, SI). It is 1/273.16th of the thermodynamic temperature of the triple point of water, This sets the size of the kelvin unit for temperature differences and defines the thermodynamic temperature of an equilibrium mixture of waters ice-liquid-vapor as 273.16 K, where 0 K is the lowest possible temperature (&quot;absolute zero&quot;).</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>Kelvin</oboInOwl:hasExactSynonym>
-        <obo:NCIT_NHC0>C42537</obo:NCIT_NHC0>
-        <obo:NCIT_P108>Kelvin</obo:NCIT_P108>
-        <obo:NCIT_P366>Kelvin</obo:NCIT_P366>
-        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66770"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C67567"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C68668"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C71620"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C77526"/>
-        <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C42559 -->
-
-    <owl:Class rdf:about="&obo;NCIT_C42559">
-        <rdfs:label>Degree Celsius</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C42532"/>
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C44276"/>
-        <obo:NCIT_P322>ICH</obo:NCIT_P322>
-        <obo:NCIT_P322>NCPDP</obo:NCIT_P322>
-        <oboInOwl:hasExactSynonym>C</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Degree Celsius</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Celsius Degree</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P106>Quantitative Concept</obo:NCIT_P106>
-        <obo:NCIT_P207>C0439237</obo:NCIT_P207>
-        <oboInOwl:hasExactSynonym>celsius temperature</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Degree Centigrade</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Celsius</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P108>Degree Celsius</obo:NCIT_P108>
-        <obo:NCIT_P366>Degree_Celsius</obo:NCIT_P366>
-        <oboInOwl:hasExactSynonym>Cel</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P325>A unit of temperature of the temperature scale designed so that the freezing point of water is 0 degrees and the boiling point is 100 degrees at standard atmospheric pressure. The current official definition of the Celsius sets 0.01 C to be at the triple point of water and a degree to be 1/273.16 of the difference in temperature between the triple point of water and absolute zero. One degree Celsius represents the same temperature difference as one Kelvin. (NCI)</obo:NCIT_P325>
-        <obo:NCIT_NHC0>C42559</obo:NCIT_NHC0>
-        <obo:IAO_0000115>A unit of temperature of the temperature scale designed so that the freezing point of water is 0 degrees and the boiling point is 100 degrees at standard atmospheric pressure. The current official definition of the Celsius sets 0.01 C to be at the triple point of water and a degree to be 1/273.16 of the difference in temperature between the triple point of water and absolute zero. One degree Celsius represents the same temperature difference as one Kelvin.</obo:IAO_0000115>
-        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66770"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C68668"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C71620"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C77526"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C89415"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C91101"/>
-        <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/NCIT_C42568 -->
 
     <owl:Class rdf:about="&obo;NCIT_C42568">
@@ -18678,30 +18301,6 @@ The term is used in the following meaning of being self generated. It does not s
         <obo:NCIT_P108>Unit by Category</obo:NCIT_P108>
         <obo:NCIT_P366>Unit_by_Category</obo:NCIT_P366>
         <obo:NCIT_P106>Classification</obo:NCIT_P106>
-        <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C42694 -->
-
-    <owl:Class rdf:about="&obo;NCIT_C42694">
-        <rdfs:label>Login Name</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C25191"/>
-        <obo:IAO_0000115>The account name used by a person to access a computer system.</obo:IAO_0000115>
-        <obo:NCIT_P325>The account name used by a person to access a computer system.</obo:NCIT_P325>
-        <oboInOwl:hasExactSynonym>Username</oboInOwl:hasExactSynonym>
-        <obo:NCIT_NHC0>C42694</obo:NCIT_NHC0>
-        <oboInOwl:hasExactSynonym>Login Name</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Account Name</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P322>CareLex</obo:NCIT_P322>
-        <obo:NCIT_P366>Login_Name</obo:NCIT_P366>
-        <obo:NCIT_P106>Intellectual Product</obo:NCIT_P106>
-        <obo:NCIT_P207>C1708731</obo:NCIT_P207>
-        <oboInOwl:hasExactSynonym>User ID</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>User Name</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P108>Login Name</obo:NCIT_P108>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C114548"/>
         <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
     </owl:Class>
     
@@ -26188,56 +25787,6 @@ The term is used in the following meaning of being self generated. It does not s
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C77527"/>
-        <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C44276 -->
-
-    <owl:Class rdf:about="&obo;NCIT_C44276">
-        <rdfs:label>Unit of Temperature</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C42568"/>
-        <obo:NCIT_P207>C0439235</obo:NCIT_P207>
-        <oboInOwl:hasExactSynonym>Temperature Unit</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000115>An indication of the type of unit of measure being used to express a temperature.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>Unit of Temperature</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P108>Unit of Temperature</obo:NCIT_P108>
-        <obo:NCIT_P366>Unit_of_Temperature</obo:NCIT_P366>
-        <obo:NCIT_NHC0>C44276</obo:NCIT_NHC0>
-        <obo:NCIT_P310>Header_Concept</obo:NCIT_P310>
-        <obo:NCIT_P106>Quantitative Concept</obo:NCIT_P106>
-        <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C44277 -->
-
-    <owl:Class rdf:about="&obo;NCIT_C44277">
-        <rdfs:label>Degree Fahrenheit</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C44276"/>
-        <obo:NCIT_P98>The Fahrenheit temperature scale is named after the German physicist Gabriel Fahrenheit (1686-1736), who proposed it in 1724.</obo:NCIT_P98>
-        <oboInOwl:hasExactSynonym>F</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P322>NCPDP</obo:NCIT_P322>
-        <obo:NCIT_P108>Degree Fahrenheit</obo:NCIT_P108>
-        <obo:NCIT_P325>The Fahrenheit temperature scale is named after the German physicist Gabriel Fahrenheit (1686-1736), who proposed it in 1724. In this scale, the freezing point of water is 32 degrees Fahrenheit and the boiling point is 212 degrees, placing the boiling and melting points of water 180 degrees apart. In this scale a degree Fahrenheit is 5/9ths of a Kelvin (or of a degree Celsius), and minus 40 degrees Fahrenheit is equal to minus 40 degrees Celsius. (NCI)</obo:NCIT_P325>
-        <oboInOwl:hasExactSynonym>[degF]</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P366>Degree_Fahrenheit</obo:NCIT_P366>
-        <obo:IAO_0000115>A unit of temperature of the temperature scale designed so that the freezing point of water is 32 degrees and the boiling point is 212 degrees, placing the boiling and melting points of water 180 degrees apart. One degree Fahrenheit is 5/9ths of a kelvin (or of a degree Celsius), and minus 40 degrees Fahrenheit is equal to minus 40 degrees Celsius.</obo:IAO_0000115>
-        <obo:NCIT_NHC0>C44277</obo:NCIT_NHC0>
-        <oboInOwl:hasExactSynonym>Fahrenheit</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P106>Quantitative Concept</obo:NCIT_P106>
-        <obo:NCIT_P207>C0456628</obo:NCIT_P207>
-        <oboInOwl:hasExactSynonym>Degree Fahrenheit</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66770"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C71620"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C77526"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C89415"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C91101"/>
         <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
     </owl:Class>
     
@@ -33817,138 +33366,6 @@ The term is used in the following meaning of being self generated. It does not s
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCIT_C46107 -->
-
-    <owl:Class rdf:about="&obo;NCIT_C46107">
-        <rdfs:label>Male, Self-Report</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C20197"/>
-        <oboInOwl:hasExactSynonym>Male, Self-Reported</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P207>C1706429</obo:NCIT_P207>
-        <oboInOwl:hasExactSynonym>Male Sex, Self Report</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Male, Self-Report</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P366>Male_Self-Report</obo:NCIT_P366>
-        <oboInOwl:hasExactSynonym>Male</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P106>Qualitative Concept</obo:NCIT_P106>
-        <obo:NCIT_NHC0>C46107</obo:NCIT_NHC0>
-        <obo:IAO_0000115>An individual who reports to be male, the sex that ordinarily produces sperm.</obo:IAO_0000115>
-        <obo:NCIT_P108>Male, Self-Report</obo:NCIT_P108>
-        <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C46108 -->
-
-    <owl:Class rdf:about="&obo;NCIT_C46108">
-        <rdfs:label>Female, Self-Report</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C16576"/>
-        <obo:IAO_0000115>An individual who reports to be female, the sex that ordinarily produces ova.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>Female Sex, Self-Report</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Female</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Female, Self-Reported</oboInOwl:hasExactSynonym>
-        <obo:NCIT_NHC0>C46108</obo:NCIT_NHC0>
-        <obo:NCIT_P108>Female, Self-Report</obo:NCIT_P108>
-        <obo:NCIT_P106>Qualitative Concept</obo:NCIT_P106>
-        <obo:NCIT_P366>Female_Self-Report</obo:NCIT_P366>
-        <obo:NCIT_P207>C1705497</obo:NCIT_P207>
-        <oboInOwl:hasExactSynonym>Female, Self-Report</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C46109 -->
-
-    <owl:Class rdf:about="&obo;NCIT_C46109">
-        <rdfs:label>Male Gender</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C17357"/>
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C20197"/>
-        <obo:NCIT_P207>C1706180</obo:NCIT_P207>
-        <obo:NCIT_P108>Male Gender</obo:NCIT_P108>
-        <oboInOwl:hasExactSynonym>Male Gender, Self Report</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Male Gender, Self Reported</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P366>Male_Gender</obo:NCIT_P366>
-        <obo:NCIT_P106>Qualitative Concept</obo:NCIT_P106>
-        <obo:NCIT_NHC0>C46109</obo:NCIT_NHC0>
-        <oboInOwl:hasExactSynonym>Male</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Male Gender</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000115>An individual who reports belonging to the cultural gender role distinction of male.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C46110 -->
-
-    <owl:Class rdf:about="&obo;NCIT_C46110">
-        <rdfs:label>Female Gender</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C16576"/>
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C17357"/>
-        <obo:NCIT_P208>CL448708</obo:NCIT_P208>
-        <oboInOwl:hasExactSynonym>Female Gender, Self Reported</oboInOwl:hasExactSynonym>
-        <obo:NCIT_NHC0>C46110</obo:NCIT_NHC0>
-        <obo:NCIT_P366>Female_Gender</obo:NCIT_P366>
-        <oboInOwl:hasExactSynonym>Female</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Female Gender</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Female Gender, Self Report</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000115>An individual who reports belonging to the cultural gender role distinction of female.</obo:IAO_0000115>
-        <obo:NCIT_P108>Female Gender</obo:NCIT_P108>
-        <obo:NCIT_P106>Qualitative Concept</obo:NCIT_P106>
-        <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C46112 -->
-
-    <owl:Class rdf:about="&obo;NCIT_C46112">
-        <rdfs:label>Male Phenotype</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C20197"/>
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C28421"/>
-        <obo:NCIT_P366>Male_Phenotype</obo:NCIT_P366>
-        <obo:NCIT_P106>Qualitative Concept</obo:NCIT_P106>
-        <oboInOwl:hasExactSynonym>Male</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>MALE</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000115>An animal who is observed by researcher or clinician to be male, the sex that ordinarily produces sperm.</obo:IAO_0000115>
-        <obo:NCIT_NHC0>C46112</obo:NCIT_NHC0>
-        <obo:NCIT_P325>Presence of male gonadal tissue or external phenotype.</obo:NCIT_P325>
-        <obo:NCIT_P207>C1706428</obo:NCIT_P207>
-        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
-        <obo:NCIT_P108>Male Phenotype</obo:NCIT_P108>
-        <oboInOwl:hasExactSynonym>Male Phenotype</oboInOwl:hasExactSynonym>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C124320"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C77526"/>
-        <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C46113 -->
-
-    <owl:Class rdf:about="&obo;NCIT_C46113">
-        <rdfs:label>Female Phenotype</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C16576"/>
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C28421"/>
-        <obo:NCIT_P106>Qualitative Concept</obo:NCIT_P106>
-        <obo:NCIT_P108>Female Phenotype</obo:NCIT_P108>
-        <oboInOwl:hasExactSynonym>FEMALE</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P325>Presence of female gonadal tissue or external phenotype.</obo:NCIT_P325>
-        <obo:NCIT_NHC0>C46113</obo:NCIT_NHC0>
-        <obo:IAO_0000115>An animal who is observed by researcher or clinician to be female, the sex that ordinarily produces ova.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>Female</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P207>C1705498</obo:NCIT_P207>
-        <oboInOwl:hasExactSynonym>Female Phenotype</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P366>Female_Phenotype</obo:NCIT_P366>
-        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C124320"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C77526"/>
-        <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/NCIT_C49679 -->
 
     <owl:Class rdf:about="&obo;NCIT_C49679">
@@ -33979,132 +33396,6 @@ The term is used in the following meaning of being self generated. It does not s
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCIT_C51773 -->
-
-    <owl:Class rdf:about="&obo;NCIT_C51773">
-        <rdfs:label>Married</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C25188"/>
-        <obo:NCIT_P106>Organism Attribute</obo:NCIT_P106>
-        <oboInOwl:hasExactSynonym>Married</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P366>Married_Status</obo:NCIT_P366>
-        <oboInOwl:hasExactSynonym>Married Status</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P208>CL355270</obo:NCIT_P208>
-        <obo:NCIT_P322>HL7</obo:NCIT_P322>
-        <obo:NCIT_P108>Married</obo:NCIT_P108>
-        <oboInOwl:hasExactSynonym>MARRIED</oboInOwl:hasExactSynonym>
-        <obo:NCIT_NHC0>C51773</obo:NCIT_NHC0>
-        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
-        <obo:IAO_0000115>Indicates a person currently joined in a legally binding matrimonial union.  Classify common law marriage as married.  Includes married couples living together and not living together.</obo:IAO_0000115>
-        <obo:NCIT_P325>A current marriage contract is active. (HL7)</obo:NCIT_P325>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C76348"/>
-        <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C51774 -->
-
-    <owl:Class rdf:about="&obo;NCIT_C51774">
-        <rdfs:label>Never Married</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C25188"/>
-        <obo:NCIT_P366>Never_Married_Status</obo:NCIT_P366>
-        <oboInOwl:hasExactSynonym>Never Married Status</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P207>C0027952</obo:NCIT_P207>
-        <obo:IAO_0000115>Indicates a person who has never been married or whose marriages have been annulled.</obo:IAO_0000115>
-        <obo:NCIT_P325>No marriage contract has ever been entered. (HL7)</obo:NCIT_P325>
-        <obo:NCIT_P108>Never Married</obo:NCIT_P108>
-        <oboInOwl:hasExactSynonym>NEVER MARRIED</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P322>HL7</obo:NCIT_P322>
-        <oboInOwl:hasExactSynonym>Never Married</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P106>Organism Attribute</obo:NCIT_P106>
-        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
-        <obo:NCIT_NHC0>C51774</obo:NCIT_NHC0>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C76348"/>
-        <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C51775 -->
-
-    <owl:Class rdf:about="&obo;NCIT_C51775">
-        <rdfs:label>Widowed</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C25188"/>
-        <obo:NCIT_NHC0>C51775</obo:NCIT_NHC0>
-        <obo:NCIT_P207>C0206275</obo:NCIT_P207>
-        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
-        <obo:NCIT_P106>Organism Attribute</obo:NCIT_P106>
-        <oboInOwl:hasExactSynonym>Widowed Status</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000115>Indicates a person who is no longer married because of the death of his/her spouse and has not remarried.</obo:IAO_0000115>
-        <obo:NCIT_P108>Widowed</obo:NCIT_P108>
-        <oboInOwl:hasExactSynonym>Widowed</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>WIDOWED</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P325>The spouse has died. (HL7)</obo:NCIT_P325>
-        <obo:NCIT_P322>HL7</obo:NCIT_P322>
-        <obo:NCIT_P366>Widowed_Status</obo:NCIT_P366>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C76348"/>
-        <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C51776 -->
-
-    <owl:Class rdf:about="&obo;NCIT_C51776">
-        <rdfs:label>Divorced</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C25188"/>
-        <obo:NCIT_P322>HL7</obo:NCIT_P322>
-        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
-        <obo:NCIT_P108>Divorced</obo:NCIT_P108>
-        <oboInOwl:hasExactSynonym>DIVORCED</oboInOwl:hasExactSynonym>
-        <obo:NCIT_NHC0>C51776</obo:NCIT_NHC0>
-        <obo:NCIT_P106>Organism Attribute</obo:NCIT_P106>
-        <obo:NCIT_P207>C0012828</obo:NCIT_P207>
-        <obo:NCIT_P366>Divorced_Status</obo:NCIT_P366>
-        <obo:IAO_0000115>Indicates a person whose marriage has been legally dissolved and has not remarried.</obo:IAO_0000115>
-        <obo:NCIT_P325>Marriage contract has been declared dissolved and inactive. (HL7)</obo:NCIT_P325>
-        <oboInOwl:hasExactSynonym>Divorced</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Divorced Status</oboInOwl:hasExactSynonym>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C76348"/>
-        <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C51777 -->
-
-    <owl:Class rdf:about="&obo;NCIT_C51777">
-        <rdfs:label>Separated</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C25188"/>
-        <obo:NCIT_P322>HL7</obo:NCIT_P322>
-        <oboInOwl:hasExactSynonym>Separated Status</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P366>Separated_Status</obo:NCIT_P366>
-        <obo:NCIT_P108>Separated</obo:NCIT_P108>
-        <obo:NCIT_P106>Organism Attribute</obo:NCIT_P106>
-        <obo:NCIT_NHC0>C51777</obo:NCIT_NHC0>
-        <oboInOwl:hasExactSynonym>Separated</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Legally Separated</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000115>Indicates a person living apart from his/her spouse by legal arrangement.</obo:IAO_0000115>
-        <obo:NCIT_P325>A person living apart from his/her spouse by legal arrangement. (HL7)</obo:NCIT_P325>
-        <obo:NCIT_P208>CL423159</obo:NCIT_P208>
-        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
-        <oboInOwl:hasExactSynonym>LEGALLY SEPARATED</oboInOwl:hasExactSynonym>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C76348"/>
-        <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/NCIT_C52658 -->
 
     <owl:Class rdf:about="&obo;NCIT_C52658">
@@ -34125,34 +33416,6 @@ The term is used in the following meaning of being self generated. It does not s
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C111108"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
-        <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C53262 -->
-
-    <owl:Class rdf:about="&obo;NCIT_C53262">
-        <rdfs:label>Domestic Partnership</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C25188"/>
-        <oboInOwl:hasExactSynonym>DOMESTIC PARTNER</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P325>Person declares that a domestic partnership relationship exists. (HL7)</obo:NCIT_P325>
-        <obo:NCIT_P322>HL7</obo:NCIT_P322>
-        <oboInOwl:hasExactSynonym>Domestic Partner</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P366>Domestic_Partnership</obo:NCIT_P366>
-        <obo:IAO_0000115>Indicates a person who is a member of an unmarried couple, including same sex couples, living together in longstanding relationships, that are registered or unregistered.</obo:IAO_0000115>
-        <obo:NCIT_NHC0>C53262</obo:NCIT_NHC0>
-        <obo:NCIT_P108>Domestic Partnership</obo:NCIT_P108>
-        <oboInOwl:hasExactSynonym>Domestic Partnership</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P207>C0683559</obo:NCIT_P207>
-        <obo:NCIT_P106>Organism Attribute</obo:NCIT_P106>
-        <oboInOwl:hasExactSynonym>Domestic partner</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100130"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C76348"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C78735"/>
         <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
     </owl:Class>
     
@@ -34334,44 +33597,6 @@ The term is used in the following meaning of being self generated. It does not s
         <obo:IAO_0000115>The fraction of a population that does not speak English.</obo:IAO_0000115>
         <obo:NCIT_NHC0>C53343</obo:NCIT_NHC0>
         <oboInOwl:hasExactSynonym>Percent non-English Speakers</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C54011 -->
-
-    <owl:Class rdf:about="&obo;NCIT_C54011">
-        <rdfs:label>Castrated Male</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C20197"/>
-        <obo:NCIT_P106>Qualitative Concept</obo:NCIT_P106>
-        <obo:IAO_0000115>A male individual who has had his testicles removed.</obo:IAO_0000115>
-        <obo:NCIT_P207>C1319065</obo:NCIT_P207>
-        <obo:NCIT_P108>Castrated Male</obo:NCIT_P108>
-        <oboInOwl:hasExactSynonym>Castrated Male</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Neutered</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P366>Castrated_Male</obo:NCIT_P366>
-        <obo:NCIT_NHC0>C54011</obo:NCIT_NHC0>
-        <obo:NCIT_P322>FDA</obo:NCIT_P322>
-        <oboInOwl:hasExactSynonym>Neutered Male</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C54014 -->
-
-    <owl:Class rdf:about="&obo;NCIT_C54014">
-        <rdfs:label>Castrated Female</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C16576"/>
-        <oboInOwl:hasExactSynonym>Castrated Female</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000115>A female individual who has had her ovaries removed.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>Spayed Female</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P366>Castrated_Female</obo:NCIT_P366>
-        <obo:NCIT_P207>C1319066</obo:NCIT_P207>
-        <obo:NCIT_NHC0>C54014</obo:NCIT_NHC0>
-        <obo:NCIT_P106>Qualitative Concept</obo:NCIT_P106>
-        <obo:NCIT_P108>Castrated Female</obo:NCIT_P108>
         <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
     </owl:Class>
     
@@ -34650,6 +33875,7 @@ The term is used in the following meaning of being self generated. It does not s
 
     <owl:Class rdf:about="&obo;NCIT_C67123">
         <rdfs:label>1st Grade Completion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCIT_C17953"/>
         <rdfs:subClassOf rdf:resource="&obo;OPMI_0000020"/>
         <oboInOwl:hasExactSynonym>1st Grade</oboInOwl:hasExactSynonym>
         <obo:NCIT_P106>Organism Attribute</obo:NCIT_P106>
@@ -34670,6 +33896,7 @@ The term is used in the following meaning of being self generated. It does not s
 
     <owl:Class rdf:about="&obo;NCIT_C67124">
         <rdfs:label>2nd Grade Completion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCIT_C17953"/>
         <rdfs:subClassOf rdf:resource="&obo;OPMI_0000020"/>
         <oboInOwl:hasExactSynonym>2nd Grade Completion</oboInOwl:hasExactSynonym>
         <obo:NCIT_P108>2nd Grade Completion</obo:NCIT_P108>
@@ -34690,11 +33917,12 @@ The term is used in the following meaning of being self generated. It does not s
 
     <owl:Class rdf:about="&obo;NCIT_C67125">
         <rdfs:label>3rd Grade Completion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCIT_C17953"/>
         <rdfs:subClassOf rdf:resource="&obo;OPMI_0000020"/>
         <obo:NCIT_P207>C1883635</obo:NCIT_P207>
-        <obo:NCIT_P108>3rd Grade Completion</obo:NCIT_P108>
         <obo:NCIT_P366>_3rd_Grade</obo:NCIT_P366>
         <oboInOwl:hasExactSynonym>3rd Grade Completion</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P108>3rd Grade Completion</obo:NCIT_P108>
         <obo:NCIT_P106>Organism Attribute</obo:NCIT_P106>
         <obo:NCIT_NHC0>C67125</obo:NCIT_NHC0>
         <obo:IAO_0000115>Indicates that 3rd grade is the highest level of educational achievement.</obo:IAO_0000115>
@@ -34710,6 +33938,7 @@ The term is used in the following meaning of being self generated. It does not s
 
     <owl:Class rdf:about="&obo;NCIT_C67126">
         <rdfs:label>4th Grade Completion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCIT_C17953"/>
         <rdfs:subClassOf rdf:resource="&obo;OPMI_0000020"/>
         <obo:NCIT_P366>_4th_Grade</obo:NCIT_P366>
         <obo:NCIT_P108>4th Grade Completion</obo:NCIT_P108>
@@ -34730,6 +33959,7 @@ The term is used in the following meaning of being self generated. It does not s
 
     <owl:Class rdf:about="&obo;NCIT_C67127">
         <rdfs:label>5th Grade Completion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCIT_C17953"/>
         <rdfs:subClassOf rdf:resource="&obo;OPMI_0000020"/>
         <obo:NCIT_NHC0>C67127</obo:NCIT_NHC0>
         <obo:NCIT_P366>_5th_Grade</obo:NCIT_P366>
@@ -34750,6 +33980,7 @@ The term is used in the following meaning of being self generated. It does not s
 
     <owl:Class rdf:about="&obo;NCIT_C67128">
         <rdfs:label>6th Grade Completion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCIT_C17953"/>
         <rdfs:subClassOf rdf:resource="&obo;OPMI_0000020"/>
         <obo:NCIT_P366>_6th_Grade</obo:NCIT_P366>
         <obo:NCIT_P106>Organism Attribute</obo:NCIT_P106>
@@ -34770,14 +34001,15 @@ The term is used in the following meaning of being self generated. It does not s
 
     <owl:Class rdf:about="&obo;NCIT_C67129">
         <rdfs:label>7th Grade Completion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCIT_C17953"/>
         <rdfs:subClassOf rdf:resource="&obo;OPMI_0000020"/>
         <oboInOwl:hasExactSynonym>7th Grade</oboInOwl:hasExactSynonym>
         <obo:NCIT_P366>_7th_Grade</obo:NCIT_P366>
         <obo:NCIT_P207>C1883651</obo:NCIT_P207>
         <obo:NCIT_P106>Organism Attribute</obo:NCIT_P106>
+        <obo:NCIT_P108>7th Grade Completion</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>Completed 7th Grade</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>7th Grade Completion</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P108>7th Grade Completion</obo:NCIT_P108>
         <obo:NCIT_NHC0>C67129</obo:NCIT_NHC0>
         <obo:IAO_0000115>Indicates that 7th grade is the highest level of educational achievement.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C19752"/>
@@ -34790,15 +34022,16 @@ The term is used in the following meaning of being self generated. It does not s
 
     <owl:Class rdf:about="&obo;NCIT_C67130">
         <rdfs:label>8th Grade Completion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCIT_C17953"/>
         <rdfs:subClassOf rdf:resource="&obo;OPMI_0000017"/>
         <oboInOwl:hasExactSynonym>Completed 8th Grade</oboInOwl:hasExactSynonym>
         <obo:NCIT_P106>Organism Attribute</obo:NCIT_P106>
         <obo:NCIT_P366>_8th_Grade</obo:NCIT_P366>
+        <obo:NCIT_P108>8th Grade Completion</obo:NCIT_P108>
         <obo:NCIT_NHC0>C67130</obo:NCIT_NHC0>
         <oboInOwl:hasExactSynonym>8th Grade</oboInOwl:hasExactSynonym>
         <obo:IAO_0000115>Indicates that 8th grade is the highest level of educational achievement.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>8th Grade Completion</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P108>8th Grade Completion</obo:NCIT_P108>
         <obo:NCIT_P207>C1883653</obo:NCIT_P207>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C19752"/>
         <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
@@ -34810,15 +34043,16 @@ The term is used in the following meaning of being self generated. It does not s
 
     <owl:Class rdf:about="&obo;NCIT_C67131">
         <rdfs:label>9th Grade Completion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCIT_C17953"/>
         <rdfs:subClassOf rdf:resource="&obo;OPMI_0000017"/>
         <oboInOwl:hasExactSynonym>Completed 9th Grade</oboInOwl:hasExactSynonym>
         <obo:NCIT_P207>C1883654</obo:NCIT_P207>
         <obo:NCIT_P106>Organism Attribute</obo:NCIT_P106>
         <obo:NCIT_NHC0>C67131</obo:NCIT_NHC0>
         <oboInOwl:hasExactSynonym>9th Grade</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>9th Grade Completion</oboInOwl:hasExactSynonym>
         <obo:IAO_0000115>Indicates that 9th grade is the highest level of educational achievement.</obo:IAO_0000115>
         <obo:NCIT_P108>9th Grade Completion</obo:NCIT_P108>
+        <oboInOwl:hasExactSynonym>9th Grade Completion</oboInOwl:hasExactSynonym>
         <obo:NCIT_P366>_9th_Grade</obo:NCIT_P366>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C19752"/>
         <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
@@ -34830,6 +34064,7 @@ The term is used in the following meaning of being self generated. It does not s
 
     <owl:Class rdf:about="&obo;NCIT_C67132">
         <rdfs:label>10th Grade Completion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCIT_C17953"/>
         <rdfs:subClassOf rdf:resource="&obo;OPMI_0000017"/>
         <obo:NCIT_P207>C1883613</obo:NCIT_P207>
         <oboInOwl:hasExactSynonym>10th Grade Completion</oboInOwl:hasExactSynonym>
@@ -34850,6 +34085,7 @@ The term is used in the following meaning of being self generated. It does not s
 
     <owl:Class rdf:about="&obo;NCIT_C67133">
         <rdfs:label>11th Grade Completion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCIT_C17953"/>
         <rdfs:subClassOf rdf:resource="&obo;OPMI_0000017"/>
         <obo:IAO_0000115>Indicates that 11th grade is the highest level of educational achievement.</obo:IAO_0000115>
         <obo:NCIT_NHC0>C67133</obo:NCIT_NHC0>
@@ -35194,25 +34430,6 @@ The term is used in the following meaning of being self generated. It does not s
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCIT_C69257 -->
-
-    <owl:Class rdf:about="&obo;NCIT_C69257">
-        <rdfs:label>Subject Name</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C25191"/>
-        <obo:NCIT_NHC0>C69257</obo:NCIT_NHC0>
-        <obo:IAO_0000115>The name of the individual of interest.</obo:IAO_0000115>
-        <obo:NCIT_P366>Subject_Name</obo:NCIT_P366>
-        <oboInOwl:hasExactSynonym>Subject Name</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P108>Subject Name</obo:NCIT_P108>
-        <obo:NCIT_P207>C2348580</obo:NCIT_P207>
-        <obo:NCIT_P325>Name of patient who is the subject of observations.</obo:NCIT_P325>
-        <obo:NCIT_P106>Intellectual Product</obo:NCIT_P106>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C69186"/>
-        <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/NCIT_C69260 -->
 
     <owl:Class rdf:about="&obo;NCIT_C69260">
@@ -35501,81 +34718,6 @@ The term is used in the following meaning of being self generated. It does not s
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCIT_C76240 -->
-
-    <owl:Class rdf:about="&obo;NCIT_C76240">
-        <rdfs:label>Annulled</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C25188"/>
-        <oboInOwl:hasExactSynonym>Annulled Status</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Annulled</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
-        <obo:IAO_0000115>A marital status in which a voidable marriage is legally declared null and void, as though it never existed. Specific grounds for annullment vary within the presiding jurisdiction, whether geographic or religious.</obo:IAO_0000115>
-        <obo:NCIT_P322>HL7</obo:NCIT_P322>
-        <obo:NCIT_P106>Organism Attribute</obo:NCIT_P106>
-        <obo:NCIT_P108>Annulled</obo:NCIT_P108>
-        <obo:NCIT_P207>C1549109</obo:NCIT_P207>
-        <obo:NCIT_NHC0>C76240</obo:NCIT_NHC0>
-        <oboInOwl:hasExactSynonym>ANNULLED</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P366>Annulled</obo:NCIT_P366>
-        <obo:NCIT_P325>Marriage contract has been declared null and to not have existed. (HL7)</obo:NCIT_P325>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C76348"/>
-        <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C76241 -->
-
-    <owl:Class rdf:about="&obo;NCIT_C76241">
-        <rdfs:label>Interlocutory Marital Status</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C25188"/>
-        <obo:NCIT_P207>C1549108</obo:NCIT_P207>
-        <obo:NCIT_P322>HL7</obo:NCIT_P322>
-        <obo:IAO_0000115>The condition existing when an order or judgement is considered temporary until either a specified period of time has passed or specific information is provided to assist in rendering a permanent decision.</obo:IAO_0000115>
-        <obo:NCIT_P108>Interlocutory Marital Status</obo:NCIT_P108>
-        <oboInOwl:hasExactSynonym>Interlocutory Marital Status</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>INTERLOCUTORY</oboInOwl:hasExactSynonym>
-        <obo:NCIT_NHC0>C76241</obo:NCIT_NHC0>
-        <obo:NCIT_P325>Temporary order issued during the course of litigation. (HL7)</obo:NCIT_P325>
-        <oboInOwl:hasExactSynonym>Interlocutory</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P366>Interlocutory</obo:NCIT_P366>
-        <obo:NCIT_P106>Organism Attribute</obo:NCIT_P106>
-        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C76348"/>
-        <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C76242 -->
-
-    <owl:Class rdf:about="&obo;NCIT_C76242">
-        <rdfs:label>Polygamous</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C25188"/>
-        <oboInOwl:hasExactSynonym>Polygamous Status</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P106>Organism Attribute</obo:NCIT_P106>
-        <obo:NCIT_NHC0>C76242</obo:NCIT_NHC0>
-        <oboInOwl:hasExactSynonym>POLYGAMOUS</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P207>C1551028</obo:NCIT_P207>
-        <obo:NCIT_P325>More than 1 current spouse. (HL7)</obo:NCIT_P325>
-        <obo:IAO_0000115>A type of living arrangement or mating system in which at least one member of a relationship has more than one mate.</obo:IAO_0000115>
-        <obo:NCIT_P366>Polygamous</obo:NCIT_P366>
-        <oboInOwl:hasExactSynonym>Polygamous</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P108>Polygamous</obo:NCIT_P108>
-        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
-        <obo:NCIT_P322>HL7</obo:NCIT_P322>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C76348"/>
-        <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/NCIT_C76325 -->
 
     <owl:Class rdf:about="&obo;NCIT_C76325">
@@ -35853,23 +34995,6 @@ The term is used in the following meaning of being self generated. It does not s
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCIT_C80244 -->
-
-    <owl:Class rdf:about="&obo;NCIT_C80244">
-        <rdfs:label>Pseudonym</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C25191"/>
-        <obo:IAO_0000115>A fictitious name used when the person performs a particular social role.</obo:IAO_0000115>
-        <obo:NCIT_P366>Pseudonym</obo:NCIT_P366>
-        <obo:NCIT_P207>C0033824</obo:NCIT_P207>
-        <obo:NCIT_NHC0>C80244</obo:NCIT_NHC0>
-        <obo:NCIT_P106>Organism Attribute</obo:NCIT_P106>
-        <obo:NCIT_P108>Pseudonym</obo:NCIT_P108>
-        <oboInOwl:hasExactSynonym>Pseudonym</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/NCIT_C81328 -->
 
     <owl:Class rdf:about="&obo;NCIT_C81328">
@@ -35918,38 +35043,6 @@ The term is used in the following meaning of being self generated. It does not s
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCIT_C86031 -->
-
-    <owl:Class rdf:about="&obo;NCIT_C86031">
-        <rdfs:label>XY Female</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C16576"/>
-        <obo:NCIT_P106>Organism Attribute</obo:NCIT_P106>
-        <obo:IAO_0000115>A person who has a chromosome composition of 46 XY and who is phenotypically female.</obo:IAO_0000115>
-        <obo:NCIT_P207>C0432470</obo:NCIT_P207>
-        <obo:NCIT_NHC0>C86031</obo:NCIT_NHC0>
-        <oboInOwl:hasExactSynonym>XY Female</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P108>XY Female</obo:NCIT_P108>
-        <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C86032 -->
-
-    <owl:Class rdf:about="&obo;NCIT_C86032">
-        <rdfs:label>XX Male</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C20197"/>
-        <obo:NCIT_P207>C0432475</obo:NCIT_P207>
-        <obo:NCIT_P106>Organism Attribute</obo:NCIT_P106>
-        <obo:IAO_0000115>A person who has a chromosome composition of 46 XX and who is phenotypically male.</obo:IAO_0000115>
-        <obo:NCIT_NHC0>C86032</obo:NCIT_NHC0>
-        <oboInOwl:hasExactSynonym>XX Male</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P108>XX Male</obo:NCIT_P108>
-        <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/NCIT_C86558 -->
 
     <owl:Class rdf:about="&obo;NCIT_C86558">
@@ -35982,29 +35075,6 @@ The term is used in the following meaning of being self generated. It does not s
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C89506"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C90259"/>
         <obo:NCIT_A11 rdf:resource="&obo;NCIT_C118807"/>
-        <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C90381 -->
-
-    <owl:Class rdf:about="&obo;NCIT_C90381">
-        <rdfs:label>Environmental Temperature Units</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C44276"/>
-        <obo:NCIT_P108>Environmental Temperature Units</obo:NCIT_P108>
-        <obo:NCIT_NHC0>C90381</obo:NCIT_NHC0>
-        <obo:NCIT_P106>Quantitative Concept</obo:NCIT_P106>
-        <oboInOwl:hasExactSynonym>Environmental Temperature Units</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000115>The units of measure that are used to express the temperature of the surroundings.</obo:IAO_0000115>
-        <obo:NCIT_P325>The units of measure that are used to express the temperature of the surroundings. (NCI)</obo:NCIT_P325>
-        <obo:NCIT_P207>C2983602</obo:NCIT_P207>
-        <oboInOwl:hasExactSynonym>ENVTEMPU</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C77526"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C90007"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C90009"/>
         <obo:IAO_0000412 rdf:resource="&obo;ncit.owl"/>
     </owl:Class>
     
@@ -36571,13 +35641,7 @@ objectives is a planned process.</obo:IAO_0000116>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBI_0000471"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBI_0000338"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000572"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -36599,7 +35663,13 @@ objectives is a planned process.</obo:IAO_0000116>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000572"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0000338"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0000471"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000232 rdf:datatype="&xsd;string">Could add specific objective specification</obo:IAO_0000232>
@@ -36624,14 +35694,14 @@ editor = PRS</obo:IAO_0000232>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000023"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
-                <owl:someValuesFrom rdf:resource="&obo;BFO_0000040"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
+                <owl:allValuesFrom rdf:resource="&obo;OBI_0000070"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
-                <owl:allValuesFrom rdf:resource="&obo;OBI_0000070"/>
+                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="&obo;BFO_0000040"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000232 rdf:datatype="&xsd;string">Feb 10, 2009.  changes after discussion at OBI Consortium Workshop Feb 2-6, 2009.  accepted as core term.</obo:IAO_0000232>
@@ -36677,12 +35747,6 @@ editor = PRS</obo:IAO_0000232>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBI_0000067"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -36705,6 +35769,12 @@ editor = PRS</obo:IAO_0000232>
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0000067"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000112 rdf:datatype="&xsd;string">Assay the wavelength of light emitted by excited Neon atoms. Count of geese flying over a house.</obo:IAO_0000112>
@@ -36772,12 +35842,6 @@ editor = PRS</obo:IAO_0000232>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:allValuesFrom rdf:resource="&obo;BFO_0000040"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
                 <owl:someValuesFrom rdf:resource="&obo;OBI_0000047"/>
             </owl:Restriction>
@@ -36785,13 +35849,19 @@ editor = PRS</obo:IAO_0000232>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;BFO_0000040"/>
+                <owl:allValuesFrom rdf:resource="&obo;BFO_0000040"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
                 <owl:allValuesFrom rdf:resource="&obo;BFO_0000040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;BFO_0000040"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000112 rdf:datatype="&xsd;string">A cell lysis, production of a cloning vector, creating a buffer.</obo:IAO_0000112>
@@ -37202,14 +36272,14 @@ for now.</obo:IAO_0000116>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000070"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBI_0000437"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000109"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000109"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0000437"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000117 rdf:datatype="&xsd;string">Alan Ruttenberg</obo:IAO_0000117>
@@ -37399,12 +36469,6 @@ for now.</obo:IAO_0000116>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0001479"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBI_0000112"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
                 <owl:someValuesFrom rdf:resource="&obo;OBI_0600005"/>
             </owl:Restriction>
@@ -37413,6 +36477,12 @@ for now.</obo:IAO_0000116>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0001000"/>
                 <owl:someValuesFrom rdf:resource="&obo;UBERON_0000178"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0000112"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000117 rdf:datatype="&xsd;string">Bjoern Peters</obo:IAO_0000117>
@@ -37444,14 +36514,14 @@ for now.</obo:IAO_0000116>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBI_0100051"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;BFO_0000040"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;BFO_0000040"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0100051"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000232 rdf:datatype="&xsd;string">5/31/2012: This process is not necessarily an acquisition, as specimens may be collected from materials already in posession</obo:IAO_0000232>
@@ -37790,32 +36860,13 @@ defines and states the requirements (positive or negative) for an entity to be c
         <rdfs:subClassOf rdf:resource="&obo;OBI_0001928"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
                 <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="&obo;OBI_0000181"/>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                                        <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
-                                <owl:someValuesFrom rdf:resource="&obo;OBI_0000097"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0000059"/>
+                        <owl:someValuesFrom rdf:resource="&obo;OBI_0500026"/>
+                    </owl:Restriction>
                 </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBI_0000810"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -37836,12 +36887,31 @@ defines and states the requirements (positive or negative) for an entity to be c
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0000810"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
                 <owl:someValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;RO_0000059"/>
-                        <owl:someValuesFrom rdf:resource="&obo;OBI_0500026"/>
-                    </owl:Restriction>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&obo;OBI_0000181"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                                        <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
+                                <owl:someValuesFrom rdf:resource="&obo;OBI_0000097"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -37871,14 +36941,14 @@ defines and states the requirements (positive or negative) for an entity to be c
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBI_0100051"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0000684"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBI_0000684"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0100051"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119 xml:lang="en">IEDB</obo:IAO_0000119>
@@ -38486,19 +37556,6 @@ defines and states the requirements (positive or negative) for an entity to be c
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0000052"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;OBI_0000245"/>
-                            <rdf:Description rdf:about="&obo;OBI_0100026"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
@@ -38507,6 +37564,19 @@ defines and states the requirements (positive or negative) for an entity to be c
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;OBI_0000245"/>
+                            <rdf:Description rdf:about="&obo;OBI_0100026"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A role inhering in an entity realized by social interactions in human society.</obo:IAO_0000115>
@@ -39035,6 +38105,12 @@ A patient sustaining an injury who has been admitted to the hospital, transferre
         <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000572"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0000052"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -39047,12 +38123,6 @@ A patient sustaining an injury who has been admitted to the hospital, transferre
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000572"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A US cenus reference person role is a human social role that inheres in a Homo sapiens who is a member of a household and is realized by other persons in the household being recorded in the US census in relation to that person.</obo:IAO_0000115>
@@ -40178,6 +39248,272 @@ last accessed June 30, 2015</obo:IAO_0000119>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000093 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000093">
+        <rdfs:label xml:lang="en">personal information</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+        <obo:IAO_0000115>information associated with an individual</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.oic.qld.gov.au/guidelines/for-government/access-and-amendment/introduction-to-the-acts/what-is-personal-information</obo:IAO_0000119>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000094 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000094">
+        <rdfs:label xml:lang="en">person name</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000093"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Personal_name</obo:IAO_0000119>
+        <obo:IAO_0000115>A name of a person, which can have different types</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000095 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000095">
+        <rdfs:label xml:lang="en">person first name</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000094"/>
+        <obo:IAO_0000118>forename</obo:IAO_0000118>
+        <obo:IAO_0000118>given name</obo:IAO_0000118>
+        <obo:IAO_0000118>Christian name</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Personal_name</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000096 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000096">
+        <rdfs:label xml:lang="en">person last name</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000094"/>
+        <obo:IAO_0000118>surname</obo:IAO_0000118>
+        <obo:IAO_0000118>family name</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Personal_name</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000097 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000097">
+        <rdfs:label xml:lang="en">person middle name</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000094"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Personal_name</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000098 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000098">
+        <rdfs:label xml:lang="en">person full name</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000094"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Personal_name</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000099 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000099">
+        <rdfs:label xml:lang="en">person legal name</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000094"/>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>A person name that identifies a person for legal, administrative and other official purposes</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Legal_name</obo:IAO_0000119>
+        <obo:IAO_0000118>legal name</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000100 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000100">
+        <rdfs:label xml:lang="en">birth name</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000094"/>
+        <obo:IAO_0000115>A person name that is given at birth</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000101 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000101">
+        <rdfs:label xml:lang="en">person login username</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000094"/>
+        <obo:IAO_0000115>A person name that is used for a person to access a computer system.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000102 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000102">
+        <rdfs:label xml:lang="en">maiden name</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000096"/>
+        <obo:IAO_0000115>A woman&apos;s surname before marriage</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000103 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000103">
+        <rdfs:label xml:lang="en">pseudonym</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000094"/>
+        <obo:IAO_0000115>A person name that is fictitious and generated for a person to perform a particular social role.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000104 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000104">
+        <rdfs:label xml:lang="en">marital status</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000093"/>
+        <obo:IAO_0000115>Personal information that indicates a person&apos;s status in marriage</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Marital_status</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000105 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000105">
+        <rdfs:label xml:lang="en">married marital status</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000104"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Marital_status</obo:IAO_0000119>
+        <obo:IAO_0000118>civil status</obo:IAO_0000118>
+        <obo:IAO_0000118>married</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000106 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000106">
+        <rdfs:label xml:lang="en">single marrital status</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000110"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000107 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000107">
+        <rdfs:label xml:lang="en">divorced marrital status</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000110"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000108 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000108">
+        <rdfs:label xml:lang="en">widowed marrital status</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000110"/>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Widow</obo:IAO_0000119>
+        <obo:IAO_0000115>A marital status that indicates no marriage status due to the death of his/her spouse and no remarriage.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000109 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000109">
+        <rdfs:label xml:lang="en">legally separated marital status</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000105"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000110 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000110">
+        <rdfs:label xml:lang="en">not married marital status</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000104"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000111 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000111">
+        <rdfs:label xml:lang="en">person email address</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000093"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000112 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000112">
+        <rdfs:label xml:lang="en">person phone number</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000093"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000113 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000113">
+        <rdfs:label xml:lang="en">person home phone number</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000112"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000114 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000114">
+        <rdfs:label xml:lang="en">person work phone number</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000112"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000115 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000115">
+        <rdfs:label xml:lang="en">person cell phone number</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000112"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000116 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000116">
+        <rdfs:label xml:lang="en">person address</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000093"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Address</obo:IAO_0000119>
+        <obo:IAO_0000119>The information of a person&apos;s address</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000117 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000117">
+        <rdfs:label xml:lang="en">person home address</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000116"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000118 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000118">
+        <rdfs:label xml:lang="en">person work address</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000116"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PATO_0000011 -->
 
     <owl:Class rdf:about="&obo;PATO_0000011">
@@ -40468,12 +39804,6 @@ last accessed June 30, 2015</obo:IAO_0000119>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000063"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000066"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000063"/>
                 <owl:someValuesFrom rdf:resource="&obo;UBERON_0000092"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -40481,6 +39811,12 @@ last accessed June 30, 2015</obo:IAO_0000119>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="&obo;UBERON_0000104"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000063"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000066"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A life cycle stage that starts with fertilization and ends with the fully formed embryo.</obo:IAO_0000115>
@@ -40514,13 +39850,13 @@ last accessed June 30, 2015</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000105"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002229"/>
                 <owl:someValuesFrom rdf:resource="&obo;UBERON_0000104"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002229"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="&obo;UBERON_0000104"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -40544,14 +39880,14 @@ last accessed June 30, 2015</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000105"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000104"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000062"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000068"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000062"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000068"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000104"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BilaDO:0000003</oboInOwl:hasDbXref>
@@ -40582,6 +39918,12 @@ last accessed June 30, 2015</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002224"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000106"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0002230"/>
                 <owl:someValuesFrom rdf:resource="&obo;UBERON_0000071"/>
             </owl:Restriction>
@@ -40590,12 +39932,6 @@ last accessed June 30, 2015</obo:IAO_0000119>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="&obo;UBERON_0000105"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002224"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000106"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">An entire span of an organism&apos;s life, commencing with the zygote stage and ending in the death of the organism.</obo:IAO_0000115>
@@ -40752,14 +40088,14 @@ last accessed June 30, 2015</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000067"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000062"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000107"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000068"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000068"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000062"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000107"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">An early stage of embryonic development in animals. It is produced by cleavage of a fertilized ovum and consists of a spherical layer of around 128 cells surrounding a central fluid-filled cavity called the blastocoel. The blastula follows the morula and precedes the gastrula in the developmental sequence.</obo:IAO_0000115>
@@ -40794,14 +40130,14 @@ last accessed June 30, 2015</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000067"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000062"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000108"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000068"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000068"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000062"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000108"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A stage defined by complex and coordinated series of cellular movements that occurs at the end of cleavage during embryonic development of most animals. The details of gastrulation vary from species to species, but usually result in the formation of the three primary germ layers, ectoderm, mesoderm and endoderm.</obo:IAO_0000115>
@@ -40838,14 +40174,14 @@ last accessed June 30, 2015</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000067"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000062"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000109"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000068"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000068"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000062"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000109"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BILS:0000110</oboInOwl:hasDbXref>
@@ -40870,14 +40206,14 @@ last accessed June 30, 2015</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000067"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000068"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000062"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000110"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000062"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000110"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000068"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A stage at which the ectoderm, endoderm, and mesoderm develop into the internal organs of the organism.</obo:IAO_0000115>
@@ -41071,14 +40407,14 @@ last accessed June 30, 2015</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000105"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0018685"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0007221"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0007221"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0018685"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Nursing stage that follows the neonate stage in mammals and ends at weaning.</obo:IAO_0000115>
@@ -41686,16 +41022,6 @@ If you are interested in participating in the development of OGMS, please send e
         <owl:versionInfo xml:lang="en">Vision Release; 1.1.356</owl:versionInfo>
         <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;dron.owl">
-        <dc:creator>William Hogan</dc:creator>
-        <dc:creator>Mathias Brochhausen</dc:creator>
-        <dc:creator>Josh Hanna</dc:creator>
-        <rdfs:comment>DrOn contains content developed by the National Library of Medicine in RxNorm.  In creating DrOn, we have used RxNorm content only with SAB = RXNORM.</rdfs:comment>
-        <rdfs:comment>An ontology of drugs.</rdfs:comment>
-        <dc:creator>Eric Joseph</dc:creator>
-        <rdfs:comment xml:lang="en">When citing DrOn, use the permanent URL of the ontology: http://purl.obolibrary.org/obo/dron.owl.  When referencing a specific component of the DrOn, such as a class, object property, annotation property, or individual, use the Uniform Resource Identifier (URI) of that component.</rdfs:comment>
-        <dc:license xml:lang="en">https://creativecommons.org/licenses/by/3.0/</dc:license>
-    </rdf:Description>
     <rdf:Description rdf:about="&obo;envo.owl">
         <oboInOwl:default-namespace rdf:datatype="&xsd;string">ENVO</oboInOwl:default-namespace>
         <rdfs:comment rdf:datatype="&xsd;string">ENVO is an ontology which represents knowledge about environments,environmental processes, ecosystems, habitats, and related entities. It interoperates with other ontologies in the OBO Foundry and Library. 
@@ -41723,6 +41049,16 @@ Please see www.environmentontology.org for more information and citations.</rdfs
         <rdfs:comment rdf:datatype="&xsd;string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/envo/modules/entity_attribute_location.owl&gt;))) [Axioms: 131 Logical Axioms: 22]</rdfs:comment>
         <rdfs:comment rdf:datatype="&xsd;string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/envo/modules/entity_quality_location.owl&gt;))) [Axioms: 45 Logical Axioms: 6]</rdfs:comment>
         <rdfs:comment rdf:datatype="&xsd;string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/envo/modules/process_attribute.owl&gt;))) [Axioms: 21 Logical Axioms: 2]</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;dron.owl">
+        <dc:creator>William Hogan</dc:creator>
+        <dc:creator>Mathias Brochhausen</dc:creator>
+        <dc:creator>Josh Hanna</dc:creator>
+        <rdfs:comment>DrOn contains content developed by the National Library of Medicine in RxNorm.  In creating DrOn, we have used RxNorm content only with SAB = RXNORM.</rdfs:comment>
+        <rdfs:comment>An ontology of drugs.</rdfs:comment>
+        <dc:creator>Eric Joseph</dc:creator>
+        <rdfs:comment xml:lang="en">When citing DrOn, use the permanent URL of the ontology: http://purl.obolibrary.org/obo/dron.owl.  When referencing a specific component of the DrOn, such as a class, object property, annotation property, or individual, use the Uniform Resource Identifier (URI) of that component.</rdfs:comment>
+        <dc:license xml:lang="en">https://creativecommons.org/licenses/by/3.0/</dc:license>
     </rdf:Description>
 </rdf:RDF>
 
