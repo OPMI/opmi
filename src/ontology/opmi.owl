@@ -22,7 +22,7 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="&obo;opmi.owl">
-        <dc:date>2-2-2019</dc:date>
+        <dc:date>2-3-2019</dc:date>
         <dc:contributor xml:lang="en">Becky Steck</dc:contributor>
         <dc:contributor xml:lang="en">Christopher Park</dc:contributor>
         <dc:creator xml:lang="en">Fred Dowd</dc:creator>
@@ -35,7 +35,7 @@
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:contributor xml:lang="en">Sean Mooney</dc:contributor>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.37</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.38</owl:versionInfo>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
         <owl:imports rdf:resource="&obo;opmi/CHEBI_imports.owl"/>
         <owl:imports rdf:resource="&obo;opmi/CMO_import.owl"/>
@@ -76,6 +76,28 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000127 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;OPMI_0000127">
+        <rdfs:label xml:lang="en">term mapping to NCIT ID</rdfs:label>
+        <obo:IAO_0000115>A subproperty of seeAlso that represents a NCIT identifier mapped to the specified term</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <rdfs:subPropertyOf rdf:resource="&rdfs;seeAlso"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000128 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;OPMI_0000128">
+        <rdfs:label xml:lang="en">term mapping to UMLS CUI</rdfs:label>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>A subproperty of seeAlso that represents a UMLS CUI identifier mapped to the specified term</obo:IAO_0000115>
+        <rdfs:subPropertyOf rdf:resource="&rdfs;seeAlso"/>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -106,94 +128,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C67123 -->
-
-    <rdf:Description rdf:about="&obo;NCIT_C67123">
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000020"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C67124 -->
-
-    <rdf:Description rdf:about="&obo;NCIT_C67124">
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000020"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C67125 -->
-
-    <rdf:Description rdf:about="&obo;NCIT_C67125">
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000020"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C67126 -->
-
-    <rdf:Description rdf:about="&obo;NCIT_C67126">
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000020"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C67127 -->
-
-    <rdf:Description rdf:about="&obo;NCIT_C67127">
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000020"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C67128 -->
-
-    <rdf:Description rdf:about="&obo;NCIT_C67128">
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000020"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C67129 -->
-
-    <rdf:Description rdf:about="&obo;NCIT_C67129">
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000020"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C67130 -->
-
-    <rdf:Description rdf:about="&obo;NCIT_C67130">
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000017"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C67131 -->
-
-    <rdf:Description rdf:about="&obo;NCIT_C67131">
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000017"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C67132 -->
-
-    <rdf:Description rdf:about="&obo;NCIT_C67132">
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000017"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C67133 -->
-
-    <rdf:Description rdf:about="&obo;NCIT_C67133">
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000017"/>
-    </rdf:Description>
     
 
 
@@ -236,7 +170,7 @@
 
     <owl:Class rdf:about="&obo;OPMI_0000003">
         <rdfs:label xml:lang="en">household size</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C17468"/>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000506"/>
         <obo:IAO_0000119>https://www.healthcare.gov/income-and-household-information/household-size/</obo:IAO_0000119>
         <rdfs:comment>We may use IRS&apos;s definition: https://www.healthcare.gov/income-and-household-information/household-size/</rdfs:comment>
         <obo:IAO_0000115>the number of people living together supported jointly by an household income</obo:IAO_0000115>
@@ -284,7 +218,7 @@
 
     <owl:Class rdf:about="&obo;OPMI_0000008">
         <rdfs:label xml:lang="en">individual plan insurance (paid by the member)</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C16745"/>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000155"/>
     </owl:Class>
     
 
@@ -293,7 +227,7 @@
 
     <owl:Class rdf:about="&obo;OPMI_0000009">
         <rdfs:label xml:lang="en">group plan insurance through employee union</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C16745"/>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000155"/>
     </owl:Class>
     
 
@@ -302,7 +236,7 @@
 
     <owl:Class rdf:about="&obo;OPMI_0000010">
         <rdfs:label xml:lang="en">USA government health plan insurance</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C16745"/>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000155"/>
     </owl:Class>
     
 
@@ -311,7 +245,7 @@
 
     <owl:Class rdf:about="&obo;OPMI_0000011">
         <rdfs:label xml:lang="en">no insurance status</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C16745"/>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000155"/>
     </owl:Class>
     
 
@@ -365,8 +299,9 @@
     <!-- http://purl.obolibrary.org/obo/OPMI_0000017 -->
 
     <owl:Class rdf:about="&obo;OPMI_0000017">
-        <rdfs:label xml:lang="en">high than 8th grade but less than 12th grade completion</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C17953"/>
+        <rdfs:label xml:lang="en">higher than 7th but less than 12th Grade education level</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000111"/>
+        <obo:IAO_0000115>An education level that indicates a grade of higher than 7th but lower than 12 as the highest level of educational achievement.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -392,8 +327,9 @@
     <!-- http://purl.obolibrary.org/obo/OPMI_0000020 -->
 
     <owl:Class rdf:about="&obo;OPMI_0000020">
-        <rdfs:label xml:lang="en">less than 8th grade completion</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C17953"/>
+        <rdfs:label xml:lang="en">less than 8th Grade education level</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000111"/>
+        <obo:IAO_0000115>An education level that indicates the 7th grade complete or less as the highest level of educational achievement.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -401,8 +337,9 @@
     <!-- http://purl.obolibrary.org/obo/OPMI_0000021 -->
 
     <owl:Class rdf:about="&obo;OPMI_0000021">
-        <rdfs:label xml:lang="en">high school completed, GED or equivalent</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCIT_C17953"/>
+        <rdfs:label xml:lang="en">high school completion, GED or equivalent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000111"/>
+        <obo:IAO_0000115>An education level that indicates that the highest level of education achievement for a person is a high school completion, GED, or equivalent</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1132,7 +1069,24 @@
 
     <owl:Class rdf:about="&obo;OPMI_0000093">
         <rdfs:label xml:lang="en">personal information</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;IAO_0000030"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                        <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>information associated with an individual</obo:IAO_0000115>
         <obo:IAO_0000119>https://www.oic.qld.gov.au/guidelines/for-government/access-and-amendment/introduction-to-the-acts/what-is-personal-information</obo:IAO_0000119>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
@@ -1323,8 +1277,8 @@
     <!-- http://purl.obolibrary.org/obo/OPMI_0000111 -->
 
     <owl:Class rdf:about="&obo;OPMI_0000111">
-        <rdfs:label xml:lang="en">person email address</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000093"/>
+        <rdfs:label xml:lang="en">education level</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000121"/>
     </owl:Class>
     
 
@@ -1332,8 +1286,12 @@
     <!-- http://purl.obolibrary.org/obo/OPMI_0000112 -->
 
     <owl:Class rdf:about="&obo;OPMI_0000112">
-        <rdfs:label xml:lang="en">person phone number</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000093"/>
+        <rdfs:label xml:lang="en">telephone number</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000577"/>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>A telephone number is a sequence of digits assigned to a fixed-line telephone subscriber station connected to a telephone line or to a wireless electronic telephony device, such as a radio telephone or a mobile telephone, or to other devices for data transmission via the public switched telephone network (PSTN) or other public and private networks.</obo:IAO_0000115>
+        <obo:IAO_0000118>phone number</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Telephone_number</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -1341,8 +1299,11 @@
     <!-- http://purl.obolibrary.org/obo/OPMI_0000113 -->
 
     <owl:Class rdf:about="&obo;OPMI_0000113">
-        <rdfs:label xml:lang="en">person home phone number</rdfs:label>
+        <rdfs:label xml:lang="en">home telephone number</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OPMI_0000112"/>
+        <obo:IAO_0000118>home phone number</obo:IAO_0000118>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>A telephone number used for a phone at home</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1350,8 +1311,11 @@
     <!-- http://purl.obolibrary.org/obo/OPMI_0000114 -->
 
     <owl:Class rdf:about="&obo;OPMI_0000114">
-        <rdfs:label xml:lang="en">person work phone number</rdfs:label>
+        <rdfs:label xml:lang="en">work telephone number</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OPMI_0000112"/>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>A telephone number used for a phone at work</obo:IAO_0000115>
+        <obo:IAO_0000118>work phone number</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1359,8 +1323,12 @@
     <!-- http://purl.obolibrary.org/obo/OPMI_0000115 -->
 
     <owl:Class rdf:about="&obo;OPMI_0000115">
-        <rdfs:label xml:lang="en">person cell phone number</rdfs:label>
+        <rdfs:label>cellular telephone number</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OPMI_0000112"/>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>cellular phone number</obo:IAO_0000118>
+        <obo:IAO_0000117>A telephone number that is used in a cellular device</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">cell phone number</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1368,10 +1336,14 @@
     <!-- http://purl.obolibrary.org/obo/OPMI_0000116 -->
 
     <owl:Class rdf:about="&obo;OPMI_0000116">
-        <rdfs:label xml:lang="en">person address</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000093"/>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Address</obo:IAO_0000119>
-        <obo:IAO_0000119>The information of a person&apos;s address</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">unemployment status</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000122"/>
+        <obo:OPMI_0000128>C0041674</obo:OPMI_0000128>
+        <obo:IAO_0000115>The status of actively looking for employment, but not being currently employed.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Unemployment</obo:IAO_0000119>
+        <obo:OPMI_0000127>NCIT_C75563</obo:OPMI_0000127>
+        <obo:IAO_0000118>joblessness</obo:IAO_0000118>
+        <obo:IAO_0000118>unemployment</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1379,8 +1351,8 @@
     <!-- http://purl.obolibrary.org/obo/OPMI_0000117 -->
 
     <owl:Class rdf:about="&obo;OPMI_0000117">
-        <rdfs:label xml:lang="en">person home address</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000116"/>
+        <rdfs:label xml:lang="en">home postal address</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000422"/>
     </owl:Class>
     
 
@@ -1388,8 +1360,465 @@
     <!-- http://purl.obolibrary.org/obo/OPMI_0000118 -->
 
     <owl:Class rdf:about="&obo;OPMI_0000118">
-        <rdfs:label xml:lang="en">person work address</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000116"/>
+        <rdfs:label xml:lang="en">work postal address</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000422"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000119 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000119">
+        <rdfs:label xml:lang="en">postal code</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000577"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000422"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Postal_code</obo:IAO_0000119>
+        <obo:IAO_0000115>A series of letters or digits or both, sometimes including spaces or punctuation, included in a postal address for the purpose of sorting mail.</obo:IAO_0000115>
+        <obo:IAO_0000118>postcode</obo:IAO_0000118>
+        <obo:IAO_0000118>post code</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000120 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000120">
+        <rdfs:label xml:lang="en">ZIP code</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000119"/>
+        <obo:IAO_0000115>A ZIP Code is a postal code used by the United States Postal Service (USPS)。 The term ZIP is an acronym for Zone Improvement Plan。</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/ZIP_Code</obo:IAO_0000119>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000121 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000121">
+        <rdfs:label xml:lang="en">socioeconomic status</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000093"/>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>The personal information that indicates an individual&apos;s or his/her family&apos;s economic and social position in relation to others, based on income, education, and occupation.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Socioeconomic_status</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000122 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000122">
+        <rdfs:label xml:lang="en">employment status</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000121"/>
+        <obo:IAO_0000119>https://definitions.uslegal.com/e/employment-status/</obo:IAO_0000119>
+        <obo:IAO_0000115>An socioeconomic status that indicates the status of being employed in an occupation to perform an activity or service for wage or salary. It is the status of a worker in a company or institute on the basis of the contract of work or duration of work done.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Employment</obo:IAO_0000119>
+        <obo:OPMI_0000127>NCIT_C25172</obo:OPMI_0000127>
+        <obo:OPMI_0000128>C0014003</obo:OPMI_0000128>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000123 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000123">
+        <rdfs:label xml:lang="en">full time employment status</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000122"/>
+        <obo:IAO_0000115>A state of employment in which a person works for a minimum number of hours defined as full-time by their employer.</obo:IAO_0000115>
+        <obo:OPMI_0000128>C0682295</obo:OPMI_0000128>
+        <obo:OPMI_0000127>NCIT_C52658</obo:OPMI_0000127>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Full-time</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000124 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000124">
+        <rdfs:label xml:lang="en">part time employment status</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000122"/>
+        <obo:IAO_0000118>part-time contract</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Part-time_contract</obo:IAO_0000119>
+        <obo:OPMI_0000127>NCIT_C75562</obo:OPMI_0000127>
+        <obo:IAO_0000115>a status of employment that carries fewer hours per week than a full-time job.</obo:IAO_0000115>
+        <obo:IAO_0000118>part-time employment</obo:IAO_0000118>
+        <obo:OPMI_0000128>C0682294</obo:OPMI_0000128>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000125 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000125">
+        <rdfs:label xml:lang="en">hourly employment status</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000122"/>
+        <obo:OPMI_0000128>C0681101</obo:OPMI_0000128>
+        <obo:OPMI_0000127>NCIT_C116002</obo:OPMI_0000127>
+        <obo:IAO_0000115>an employment status where the work is arranged and paid on a hourly basis.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000126 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000126">
+        <rdfs:label xml:lang="en">self-employment status</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000122"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Self-employment</obo:IAO_0000119>
+        <obo:IAO_0000115>The state of working for oneself rather than an employer.</obo:IAO_0000115>
+        <obo:OPMI_0000128>C0425092</obo:OPMI_0000128>
+        <obo:OPMI_0000127>NCIT_C116000</obo:OPMI_0000127>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000129 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000129">
+        <rdfs:label xml:lang="en">temporary employment status</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000122"/>
+        <obo:IAO_0000118>odd job</obo:IAO_0000118>
+        <obo:IAO_0000115>An employment situation where the working arrangement is limited to a certain period of time based on the needs of the employing organization.</obo:IAO_0000115>
+        <obo:IAO_0000118>temporary work</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Temporary_work</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000130 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000130">
+        <rdfs:label xml:lang="en">Master&apos;s degree education level</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000111"/>
+        <obo:IAO_0000115>An education level that indicates that the highest level of education achievement for a person is a Master&apos;s degree.</obo:IAO_0000115>
+        <obo:IAO_0000118>MS degree completed</obo:IAO_0000118>
+        <obo:IAO_0000118>M.S. degree education level</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000131 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000131">
+        <rdfs:label xml:lang="en">academic Doctorate degree education level</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000111"/>
+        <obo:IAO_0000115>An education level that indicates that the highest level of education achievement for a person is an academic Doctorate degree</obo:IAO_0000115>
+        <obo:IAO_0000118>PhD degree completed</obo:IAO_0000118>
+        <obo:IAO_0000118>Ph.D. degree education level</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000132 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000132">
+        <rdfs:label xml:lang="en">no formal school education level</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000111"/>
+        <obo:IAO_0000115>An education level that indicates that a person does not have formal school education.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000133 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000133">
+        <rdfs:label xml:lang="en">high school education level</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000021"/>
+        <obo:IAO_0000115>An education level that indicates that the highest level of education achievement for a person is a high school completion.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000134 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000134">
+        <rdfs:label xml:lang="en">Bachelor&apos;s degree education level</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000111"/>
+        <obo:IAO_0000118>B.S. degree education level</obo:IAO_0000118>
+        <obo:IAO_0000118>B.S. degree completed</obo:IAO_0000118>
+        <obo:IAO_0000118>Bacholar&apos;s degree completed</obo:IAO_0000118>
+        <obo:IAO_0000115>An education level that indicates that the highest level of education achievement for a person is a Bachelor&apos;s degree</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000135 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000135">
+        <rdfs:label xml:lang="en">professional doctorate degree education level</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000111"/>
+        <obo:OPMI_0000127>NCIT_C70558</obo:OPMI_0000127>
+        <obo:OPMI_0000128>C2347690</obo:OPMI_0000128>
+        <obo:IAO_0000115>An education level that indicates that a person has obtained a degree allowing them to practice a profession, such as law, medicine, music, or ministry.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000136 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000136">
+        <rdfs:label xml:lang="en">M.D. completion education level</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000135"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000137 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000137">
+        <rdfs:label xml:lang="en">Pharmacy complete education level</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000135"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000138 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000138">
+        <rdfs:label xml:lang="en">kindergarten completion education level</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000111"/>
+        <obo:IAO_0000115>An education level that indicates that the highest level of education achievement for a person is kindergarten completion.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000139 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000139">
+        <rdfs:label xml:lang="en">preschool completion education level</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000111"/>
+        <obo:IAO_0000115>An education level that indicates that the highest level of education achievement for a person is preschool.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000140 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000140">
+        <rdfs:label xml:lang="en">GED education level</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000021"/>
+        <obo:IAO_0000118>general equivalency diploma completion</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/General_Educational_Development</obo:IAO_0000119>
+        <obo:IAO_0000115>An education level that indicates that the highest level of education achievement for a person is the pass of a General Education Development (GED) tests. The GED tests are a group of four subject tests which, when passed, provide certification that the test taker has United States or Canadian high school-level academic skills.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000141 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000141">
+        <rdfs:label xml:lang="en">1st Grade education level</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000111"/>
+        <obo:IAO_0000115>An education level that indicates that the highest level of education achievement for a person is the 1st Grade elementary school completion.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000142 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000142">
+        <rdfs:label xml:lang="en">2nd Grade education level</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000111"/>
+        <obo:IAO_0000115>An education level that indicates that the highest level of education achievement for a person is the second Grade elementary school completion.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000143 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000143">
+        <rdfs:label xml:lang="en">3rd Grade education level</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000111"/>
+        <obo:IAO_0000115>An education level that indicates that the highest level of education achievement for a person is the third Grade elementary school completion.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000144 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000144">
+        <rdfs:label xml:lang="en">4th Grade education level</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000111"/>
+        <obo:IAO_0000115>An education level that indicates that the highest level of education achievement for a person is the 4th Grade elementary school completion.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000145 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000145">
+        <rdfs:label xml:lang="en">5th Grade education level</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000111"/>
+        <obo:IAO_0000115>An education level that indicates that the highest level of education achievement for a person is the 5th Grade elementary school completion.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000146 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000146">
+        <rdfs:label xml:lang="en">6th Grade education level</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000111"/>
+        <obo:IAO_0000115>An education level that indicates that the highest level of education achievement for a person is the 6th Grade elementary school completion.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000147 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000147">
+        <rdfs:label xml:lang="en">7th Grade education level</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000111"/>
+        <obo:IAO_0000115>An education level that indicates that the highest level of education achievement for a person is the 7th Grade elementary school completion.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000148 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000148">
+        <rdfs:label xml:lang="en">8th Grade education level</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000111"/>
+        <obo:IAO_0000115>An education level that indicates that the highest level of education achievement for a person is the 8th Grade elementary school completion.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000149 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000149">
+        <rdfs:label xml:lang="en">9th Grade education level</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000111"/>
+        <obo:IAO_0000115>An education level that indicates that the highest level of education achievement for a person is the 9th Grade elementary school completion.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000150 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000150">
+        <rdfs:label xml:lang="en">10th Grade education level</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000111"/>
+        <obo:IAO_0000115>An education level that indicates that the highest level of education achievement for a person is the 10th Grade elementary school completion.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000151 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000151">
+        <rdfs:label xml:lang="en">11th Grade education level</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000111"/>
+        <obo:IAO_0000115>An education level that indicates that the highest level of education achievement for a person is the 11th Grade elementary school completion.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000152 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000152">
+        <rdfs:label xml:lang="en">12th Grade education level</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000111"/>
+        <obo:IAO_0000115>An education level that indicates that the highest level of education achievement for a person is the 12th Grade elementary school completion.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000153 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000153">
+        <rdfs:label xml:lang="en">associate academic degree education level</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000111"/>
+        <obo:IAO_0000115>An education level that indicates that the highest level of education achievement for a person is a degree from a 2 year college program.</obo:IAO_0000115>
+        <obo:OPMI_0000127>NCIT_C19752</obo:OPMI_0000127>
+        <obo:OPMI_0000128>C1879750</obo:OPMI_0000128>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000154 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000154">
+        <rdfs:label xml:lang="en">vocational program completion education level</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000111"/>
+        <obo:OPMI_0000128>C1883542</obo:OPMI_0000128>
+        <obo:IAO_0000115>An education level that indicates that the highest level of education achievement for a person is a degree from an occupational, technical, or vocational program</obo:IAO_0000115>
+        <obo:OPMI_0000127>NCIT_C67141</obo:OPMI_0000127>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000155 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000155">
+        <rdfs:label xml:lang="en">health insurance plan</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000093"/>
+        <obo:OPMI_0000127>NCIT_C16745</obo:OPMI_0000127>
+        <obo:OPMI_0000128>C0021672</obo:OPMI_0000128>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000156 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000156">
+        <rdfs:label xml:lang="en">Medicaid</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000010"/>
+        <obo:IAO_0000115>A joint federal and state program that helps with medical costs for some people with limited income and resources.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Medicaid</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000157 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000157">
+        <rdfs:label xml:lang="en">Medicare</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000010"/>
+        <obo:IAO_0000115>Medicare is a national health insurance program in the United States, begun in 1966 under the Social Security Administration and now administered by the Centers for Medicare and Medicaid Services (CMS).</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Medicare_(United_States)</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000158 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000158">
+        <rdfs:label xml:lang="en">private health insurance plan</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000155"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000159 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000159">
+        <rdfs:label xml:lang="en">worker compensation insurance plan</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000155"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000160 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000160">
+        <rdfs:label xml:lang="en">body weight</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000128"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000161 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000161">
+        <rdfs:label xml:lang="en">birth weight</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000160"/>
     </owl:Class>
     
 

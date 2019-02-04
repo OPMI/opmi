@@ -11,11 +11,18 @@ includeAllChildren
 http://purl.obolibrary.org/obo/OMRSE_00000007 #gender role
 includeAllChildren
 
+http://purl.obolibrary.org/obo/OMRSE_00000506 #socio-economic data
+includeAllChildren
+
 http://purl.obolibrary.org/obo/OMRSE_00000039 #smoker role
 includeAllChildren
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/BFO_0000023 #role
+
+http://purl.obolibrary.org/obo/OMRSE_00000506 #socio-economic data
+subClassOf http://purl.obolibrary.org/obo/IAO_0000027 #data
+
 
 [Source term retrieval setting]
 includeAllIntermediates
