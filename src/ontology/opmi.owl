@@ -131,6 +131,27 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000429 -->
+
+    <rdf:Description rdf:about="&obo;IAO_0000429">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_9606 -->
+
+    <rdf:Description rdf:about="&obo;NCBITaxon_9606">
+        <obo:IAO_0000118>person</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OPMI_0000001 -->
 
     <owl:Class rdf:about="&obo;OPMI_0000001">
@@ -1859,6 +1880,34 @@
     <owl:Class rdf:about="&obo;OPMI_0000165">
         <rdfs:label xml:lang="en">study ID</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000577"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000166 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000166">
+        <rdfs:label xml:lang="en">2nd care provider</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000163"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000167 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000167">
+        <rdfs:label xml:lang="en">3rd care provider</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000163"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000168 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000168">
+        <rdfs:label xml:lang="en">2nd email address</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000429"/>
+        <obo:IAO_0000115>An email address that is used secondary after the de fault first email address.</obo:IAO_0000115>
     </owl:Class>
     
 

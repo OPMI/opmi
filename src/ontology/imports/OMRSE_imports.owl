@@ -531,6 +531,26 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000219 -->
+
+    <owl:ObjectProperty rdf:about="&obo;IAO_0000219">
+        <rdfs:label xml:lang="en">denotes</rdfs:label>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <obo:IAO_0000116 xml:lang="en">2009-11-10 Alan Ruttenberg. Old definition said the following to emphasize the generic nature of this relation. We no longer have &apos;specifically denotes&apos;, which would have been primitive, so make this relation primitive.
+g denotes r =def 
+r is a portion of reality
+there is some c that is a concretization of g 
+every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
+        <obo:IAO_0000112 xml:lang="en">A person&apos;s name denotes the person. A variable name in a computer program denotes some piece of memory. Lexically equivalent strings can denote different things, for instance &quot;Alan&quot; can denote different people. In each case of use, there is a case of the denotation relation obtaining, between &quot;Alan&quot; and the person that is being named.</obo:IAO_0000112>
+        <obo:IAO_0000119 xml:lang="en">Conversations with Barry Smith, Werner Ceusters, Bjoern Peters, Michel Dumontier, Melanie Courtot, James Malone, Bill Hogan</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">denotes is a primitive, instance-level, relation obtaining between an information content entity and some portion of reality. Denotation is what happens when someone creates an information content entity E in order to specifically refer to something. The only relation between E and the thing is that E can be used to &apos;pick out&apos; the thing. This relation connects those two together. Freedictionary.com sense 3: To signify directly; refer to specifically</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
+        <rdfs:subPropertyOf rdf:resource="&obo;IAO_0000136"/>
+        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0021011 -->
 
     <owl:ObjectProperty rdf:about="&obo;IAO_0021011">
@@ -1158,6 +1178,27 @@ JAR: A data item is an approximately justified approximately true approximate be
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000028 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000028">
+        <rdfs:label xml:lang="en">symbol</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+        <obo:IAO_0000116 xml:lang="en">20091104, MC: this needs work and will most probably change</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">2014-03-31: We would like to have a deeper analysis of &apos;mark&apos; and &apos;sign&apos; in the future (see https://code.google.com/p/information-artifact-ontology/issues/detail?id=154).</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is a mark(s) or character(s) used as a conventional representation of another entity.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON: James A. Overton</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Jonathan Rees</obo:IAO_0000117>
+        <obo:IAO_0000112 xml:lang="en">a serial number such as &quot;12324X&quot;</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a stop sign</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a written proper name such as &quot;OBI&quot;</obo:IAO_0000112>
+        <obo:IAO_0000119 xml:lang="en">based on Oxford English Dictionary</obo:IAO_0000119>
+        <obo:IAO_0000111 xml:lang="en">symbol</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
 
     <owl:Class rdf:about="&obo;IAO_0000030">
@@ -1217,6 +1258,26 @@ Previous. An information content entity is a non-realizable information entity t
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000100 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000100">
+        <rdfs:label xml:lang="en">data set</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+        <obo:IAO_0000116 xml:lang="en">2009/10/23 Alan Ruttenberg. The intention is that this term represent collections of like data. So this isn&apos;t for, e.g. the whole contents of a cel file, which includes parameters, metadata etc. This is more like java arrays of a certain rather specific type</obo:IAO_0000116>
+        <obo:IAO_0000116>2014-05-05: Data sets are aggregates and thus must include two or more data items. We have chosen not to add logical axioms to make this restriction.</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">A data item that is an aggregate of other data items of the same type that have something in common. Averages and distributions can be determined for data sets.</obo:IAO_0000115>
+        <obo:IAO_0000112 xml:lang="en">Intensity values in a CEL file or from multiple CEL files comprise a data set (as opposed to the CEL files themselves).</obo:IAO_0000112>
+        <obo:IAO_0000119 xml:lang="en">OBI_0000042</obo:IAO_0000119>
+        <obo:IAO_0000111 xml:lang="en">data set</obo:IAO_0000111>
+        <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">person:Allyson Lister</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">person:Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000102 -->
 
     <owl:Class rdf:about="&obo;IAO_0000102">
@@ -1251,14 +1312,14 @@ Previous. An information content entity is a non-realizable information entity t
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000310"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000030"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000030"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000310"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000116 xml:lang="en">6/11/9: Edited at OBI workshop. We need to be able identify a child form of information artifact which corresponds to something enduring (not brain like). This used to be restricted to physical document or digital entity as the output, but that excludes e.g. an audio cassette tape</obo:IAO_0000116>
@@ -1267,6 +1328,98 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000115 xml:lang="en">a planned process in which a document is created or added to by including the specified input in it.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">wikipedia http://en.wikipedia.org/wiki/Documenting</obo:IAO_0000119>
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000577 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000577">
+        <rdfs:label xml:lang="en">centrally registered identifier symbol</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000028"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000578"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000118>CRID symbol</obo:IAO_0000118>
+        <obo:IAO_0000115 xml:lang="en">A symbol that is part of a CRID and that is sufficient to look up a record from the CRID&apos;s registry.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Original proposal from Bjoern, discussions at IAO calls</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Hogan</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000112 xml:lang="en">The sentence &quot;The article has Pubmed ID 12345.&quot; contains a CRID that has two parts: one part is the CRID symbol, which is &apos;12345&apos;; the other part denotes the CRID registry, which is Pubmed.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
+        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000578 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000578">
+        <rdfs:label xml:lang="en">CRID</rdfs:label>
+        <rdfs:label xml:lang="en">centrally registered identifier</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000577"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;IAO_0000219"/>
+                        <owl:someValuesFrom rdf:resource="&obo;IAO_0000579"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000412 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/iao.owl</obo:IAO_0000412>
+        <obo:IAO_0000116 xml:lang="en">2014-05-05: In defining this term we take no position on what the CRID denotes. In particular do not assume it denotes a *record* in the CRID registry (since the registry might not have &apos;records&apos;).</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Alan, IAO call 20101124: potentially the CRID denotes the instance it was associated with during creation. 
+</obo:IAO_0000116>
+        <obo:IAO_0000118>Centrally Registered IDentifier</obo:IAO_0000118>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that consists of a CRID symbol and additional information about the CRID registry to which it belongs.</obo:IAO_0000115>
+        <obo:IAO_0000118>CRID</obo:IAO_0000118>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that consists of a CRID symbol and additional information about which CRID registry it belongs. </obo:IAO_0000115>
+        <obo:IAO_0000112 xml:lang="en">Entries in a Column of which the header is &quot;Pubmed ID&quot; </obo:IAO_0000112>
+        <obo:IAO_0000116 xml:lang="en">Note, IAO call 20101124: URIs are not always CRID, as not centrally registered. We acknowledge that CRID is a subset of a larger identifier class, but this subset fulfills our current needs. OBI PURLs are CRID as they are registered with OCLC. UPCs (Universal Product Codes from AC Nielsen)are not CRID as they are not centrally registered.</obo:IAO_0000116>
+        <obo:IAO_0000119 xml:lang="en">Original proposal from Bjoern, discussions at IAO calls</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Hogan</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000112 xml:lang="en">PMID:12345</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">The following URL: &quot;http://www.ncbi.nlm.nih.gov/pubmed/19918065&quot;</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">The following sentence contains a CRID: &quot;The article with Pubmed ID: 19918065&quot;. </obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">The sentence &quot;The article has Pubmed ID 12345.&quot; contains a CRID that has two parts: one part is the CRID symbol, which is &apos;12345&apos;; the other part denotes the CRID registry, which is Pubmed.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
+        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000579 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000579">
+        <rdfs:label xml:lang="en">centrally registered identifier registry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000100"/>
+        <obo:IAO_0000118>CRID registry</obo:IAO_0000118>
+        <obo:IAO_0000115 xml:lang="en">A CRID registry is a dataset of CRID records, each consisting of a CRID symbol and additional information which was recorded in the dataset through a assigning a centrally registered identifier process.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Original proposal from Bjoern, discussions at IAO calls</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Hogan</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000112 xml:lang="en">PubMed is a CRID registry. It has a dataset of PubMed identifiers associated with journal articles. </obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
         <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
     </owl:Class>
     
@@ -1420,8 +1573,6 @@ The term is used in the following meaning of being self generated. It does not s
 
     <owl:Class rdf:about="&obo;NCBITaxon_9606">
         <rdfs:label xml:lang="en">Homo sapiens</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_9606"/>
-        <rdfs:subClassOf rdf:resource="&obo;OBI_0100026"/>
         <obo:IAO_0000118 rdf:datatype="&xsd;string">human being</obo:IAO_0000118>
         <obo:IAO_0000111 xml:lang="en">Homo sapiens</obo:IAO_0000111>
         <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
@@ -1583,6 +1734,20 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000116>At the scale of organism (as opposed to the cellular scale or the population scale), an injury is typically the result of a catastrophic event. Consider the implications of making &apos;injury&apos; a subtype of &apos;disorder&apos;.</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">A part of an organism that has undergone a change in structural integrity and has a higher chance of dysfunction or causing dysfunction in another structure.</obo:IAO_0000115>
         <obo:IAO_0000232>creation date: 2011-09-20T09:57:44Z</obo:IAO_0000232>
+        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000000 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000000">
+        <rdfs:label xml:lang="en">social security number</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000578"/>
+        <obo:IAO_0000118>SSN</obo:IAO_0000118>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Social_Security_number</obo:IAO_0000119>
+        <obo:IAO_0000115>Social Security Number(SSN) is a Centrally Registered IDentifier that is a nine-digit number issued to U.S. citizens, permanent residents, and temporary (working) residents under section 205(c) of the Social Security Act, codified as 42 U.S.C. § 405(c). The number is issued to an individual by the Social Security Administration, an independent agency of the United States government. Its primary purpose is to track individuals for Social Security purposes.</obo:IAO_0000115>
+        <dc:creator>Cheng Chen(cxchen1@ualr.edu)</dc:creator>
         <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
     </owl:Class>
     
@@ -2009,19 +2174,6 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0000052"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;OBI_0000245"/>
-                            <rdf:Description rdf:about="&obo;OBI_0100026"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
@@ -2030,6 +2182,19 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;OBI_0000245"/>
+                            <rdf:Description rdf:about="&obo;OBI_0100026"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A role inhering in an entity realized by social interactions in human society.</obo:IAO_0000115>
@@ -2558,12 +2723,6 @@ A patient sustaining an injury who has been admitted to the hospital, transferre
         <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000572"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0000052"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -2576,6 +2735,12 @@ A patient sustaining an injury who has been admitted to the hospital, transferre
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000572"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A US cenus reference person role is a human social role that inheres in a Homo sapiens who is a member of a household and is realized by other persons in the household being recorded in the US census in relation to that person.</obo:IAO_0000115>
@@ -2770,10 +2935,40 @@ last accessed June 30, 2015</obo:IAO_0000119>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000500 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000500">
+        <rdfs:label xml:lang="en">employment data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000506"/>
+        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000501 -->
 
     <owl:Class rdf:about="&obo;OMRSE_00000501">
         <rdfs:label xml:lang="en">income data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000506"/>
+        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000502 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000502">
+        <rdfs:label xml:lang="en">government assistance health care plan data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000506"/>
+        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000503 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000503">
+        <rdfs:label xml:lang="en">health care plan data</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000506"/>
         <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
     </owl:Class>
