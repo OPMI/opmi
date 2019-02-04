@@ -627,6 +627,8 @@
     <owl:Class rdf:about="&obo;OPMI_0000048">
         <rdfs:label xml:lang="en">contact information form</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+        <obo:IAO_0000117>Edison Ong, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>A form that includes the information of contact for a person</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1188,6 +1190,8 @@
     <owl:Class rdf:about="&obo;OPMI_0000102">
         <rdfs:label xml:lang="en">maiden name</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OPMI_0000096"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Maiden_and_married_names</obo:IAO_0000119>
+        <obo:IAO_0000117>Edison Ong, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000115>A woman&apos;s surname before marriage</obo:IAO_0000115>
     </owl:Class>
     
@@ -1819,6 +1823,42 @@
     <owl:Class rdf:about="&obo;OPMI_0000161">
         <rdfs:label xml:lang="en">birth weight</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OPMI_0000160"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000162 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000162">
+        <rdfs:label xml:lang="en">emergency contact phone number</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000112"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000163 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000163">
+        <rdfs:label xml:lang="en">care provider</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_9606"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000164 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000164">
+        <rdfs:label xml:lang="en">1st care provider</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000163"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000165 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000165">
+        <rdfs:label xml:lang="en">study ID</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000577"/>
     </owl:Class>
     
 
