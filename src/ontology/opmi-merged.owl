@@ -32,7 +32,7 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="&obo;opmi.owl">
-        <dc:date>2-3-2019</dc:date>
+        <dc:date>2-7-2019</dc:date>
         <dc:contributor xml:lang="en">Becky Steck</dc:contributor>
         <dc:contributor xml:lang="en">Christopher Park</dc:contributor>
         <dc:creator xml:lang="en">Fred Dowd</dc:creator>
@@ -45,7 +45,7 @@
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:contributor xml:lang="en">Sean Mooney</dc:contributor>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.39</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.42</owl:versionInfo>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
     </owl:Ontology>
     
@@ -1208,6 +1208,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <rdfs:subPropertyOf rdf:resource="&obo;RO_0002131"/>
         <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;oae.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
@@ -1219,23 +1220,23 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasDefinition>
             <rdf:Description/>
         </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
         <owl:equivalentProperty>
             <rdf:Description>
                 <owl:inverseOf rdf:resource="&obo;BFO_0000051"/>
             </rdf:Description>
         </owl:equivalentProperty>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
         <oboInOwl:hasDefinition>
             <rdf:Description/>
         </oboInOwl:hasDefinition>
@@ -1284,6 +1285,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:subPropertyOf rdf:resource="&obo;RO_0002507"/>
         <obo:IAO_0000412 rdf:resource="&obo;dron.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;oae.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
@@ -1399,11 +1401,11 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             <rdf:Description rdf:about="&obo;BFO_0000062"/>
         </owl:propertyChainAxiom>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;RO_0002092"/>
+            <rdf:Description rdf:about="&obo;BFO_0000050"/>
             <rdf:Description rdf:about="&obo;BFO_0000062"/>
         </owl:propertyChainAxiom>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;BFO_0000050"/>
+            <rdf:Description rdf:about="&obo;RO_0002092"/>
             <rdf:Description rdf:about="&obo;BFO_0000062"/>
         </owl:propertyChainAxiom>
     </owl:ObjectProperty>
@@ -1430,11 +1432,11 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000412 rdf:resource="&obo;ro.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;uberon.owl"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;RO_0002092"/>
+            <rdf:Description rdf:about="&obo;BFO_0000050"/>
             <rdf:Description rdf:about="&obo;BFO_0000063"/>
         </owl:propertyChainAxiom>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;BFO_0000050"/>
+            <rdf:Description rdf:about="&obo;RO_0002092"/>
             <rdf:Description rdf:about="&obo;BFO_0000063"/>
         </owl:propertyChainAxiom>
     </owl:ObjectProperty>
@@ -1479,9 +1481,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasDefinition>
             <rdf:Description/>
         </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="&obo;BFO_0000050"/>
             <rdf:Description rdf:about="&obo;BFO_0000066"/>
@@ -1507,31 +1506,34 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasDefinition>
             <rdf:Description/>
         </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="&obo;BFO_0000066"/>
             <rdf:Description rdf:about="&obo;BFO_0000050"/>
         </owl:propertyChainAxiom>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
         <oboInOwl:hasDefinition>
             <rdf:Description/>
         </oboInOwl:hasDefinition>
@@ -1559,6 +1561,18 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000039 -->
+
+    <owl:ObjectProperty rdf:about="&obo;IAO_0000039">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">has measurement unit label</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&obo;BFO_0000051"/>
+        <rdfs:range rdf:resource="&obo;IAO_0000003"/>
+        <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
 
     <owl:ObjectProperty rdf:about="&obo;IAO_0000136">
@@ -1581,12 +1595,37 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000219 -->
+
+    <owl:ObjectProperty rdf:about="&obo;IAO_0000219">
+        <rdfs:label xml:lang="en">denotes</rdfs:label>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <obo:IAO_0000116 xml:lang="en">2009-11-10 Alan Ruttenberg. Old definition said the following to emphasize the generic nature of this relation. We no longer have &apos;specifically denotes&apos;, which would have been primitive, so make this relation primitive.
+g denotes r =def 
+r is a portion of reality
+there is some c that is a concretization of g 
+every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
+        <obo:IAO_0000112 xml:lang="en">A person&apos;s name denotes the person. A variable name in a computer program denotes some piece of memory. Lexically equivalent strings can denote different things, for instance &quot;Alan&quot; can denote different people. In each case of use, there is a case of the denotation relation obtaining, between &quot;Alan&quot; and the person that is being named.</obo:IAO_0000112>
+        <obo:IAO_0000119 xml:lang="en">Conversations with Barry Smith, Werner Ceusters, Bjoern Peters, Michel Dumontier, Melanie Courtot, James Malone, Bill Hogan</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">denotes is a primitive, instance-level, relation obtaining between an information content entity and some portion of reality. Denotation is what happens when someone creates an information content entity E in order to specifically refer to something. The only relation between E and the thing is that E can be used to &apos;pick out&apos; the thing. This relation connects those two together. Freedictionary.com sense 3: To signify directly; refer to specifically</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
+        <rdfs:subPropertyOf rdf:resource="&obo;IAO_0000136"/>
+        <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000413 -->
 
     <owl:ObjectProperty rdf:about="&obo;IAO_0000413">
         <rdfs:label xml:lang="en">is duration of</rdfs:label>
+        <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">relates a process to a time-measurement-datum that represents the duration of the process</obo:IAO_0000115>
+        <rdfs:range rdf:resource="&obo;BFO_0000015"/>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
         <rdfs:subPropertyOf rdf:resource="&obo;IAO_0000136"/>
+        <rdfs:domain rdf:resource="&obo;IAO_0000416"/>
         <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
     </owl:ObjectProperty>
     
@@ -1860,6 +1899,32 @@ in: process &apos;has participant&apos; some (participant &apos;has quality&apos
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000171 -->
+
+    <owl:ObjectProperty rdf:about="&obo;OPMI_0000171">
+        <rdfs:label xml:lang="en">has question</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000185 -->
+
+    <owl:ObjectProperty rdf:about="&obo;OPMI_0000185">
+        <rdfs:label xml:lang="en">form generated by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000186 -->
+
+    <owl:ObjectProperty rdf:about="&obo;OPMI_0000186">
+        <rdfs:label xml:lang="en">has answer</rdfs:label>
+        <obo:IAO_0000115>An object property that indicates a relation between a question and an answer</obo:IAO_0000115>
+        <obo:IAO_0000118>has answer to question</obo:IAO_0000118>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0000052 -->
 
     <owl:ObjectProperty rdf:about="&obo;RO_0000052">
@@ -1964,11 +2029,6 @@ in: process &apos;has participant&apos; some (participant &apos;has quality&apos
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
         <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;BFO_0000051"/>
-            <rdf:Description rdf:about="&obo;BFO_0000055"/>
-            <rdf:Description rdf:about="&obo;RO_0000052"/>
-        </owl:propertyChainAxiom>
         <owl:equivalentProperty>
             <rdf:Description>
                 <owl:inverseOf rdf:resource="&obo;RO_0000056"/>
@@ -1977,6 +2037,11 @@ in: process &apos;has participant&apos; some (participant &apos;has quality&apos
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="&obo;BFO_0000051"/>
             <rdf:Description rdf:about="&obo;RO_0000057"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;BFO_0000051"/>
+            <rdf:Description rdf:about="&obo;BFO_0000055"/>
+            <rdf:Description rdf:about="&obo;RO_0000052"/>
         </owl:propertyChainAxiom>
     </owl:ObjectProperty>
     
@@ -2293,11 +2358,11 @@ in: process &apos;has participant&apos; some (participant &apos;has quality&apos
         </owl:propertyChainAxiom>
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="&obo;BFO_0000051"/>
-            <rdf:Description rdf:about="&obo;BFO_0000050"/>
+            <rdf:Description rdf:about="&obo;RO_0002131"/>
         </owl:propertyChainAxiom>
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="&obo;BFO_0000051"/>
-            <rdf:Description rdf:about="&obo;RO_0002131"/>
+            <rdf:Description rdf:about="&obo;BFO_0000050"/>
         </owl:propertyChainAxiom>
     </owl:ObjectProperty>
     
@@ -2816,6 +2881,30 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000004 -->
+
+    <owl:DatatypeProperty rdf:about="&obo;IAO_0000004">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">has measurement value</rdfs:label>
+        <rdfs:domain rdf:resource="&obo;IAO_0000032"/>
+        <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -2842,6 +2931,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;dron.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;oae.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;ogms.owl"/>
@@ -2872,6 +2962,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;dron.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;oae.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;ogms.owl"/>
@@ -2892,16 +2983,17 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000115 xml:lang="en">An entity that has temporal parts and that happens, unfolds or develops through time.</obo:IAO_0000115>
         <obo:IAO_0000600 xml:lang="en">An occurrent is an entity that unfolds itself in time or it is the instantaneous boundary of such an entity (for example a beginning or an ending) or it is a temporal or spatiotemporal region which such an entity occupies_temporal_region or occupies_spatiotemporal_region. (axiom label in BFO2 Reference: [077-002])</obo:IAO_0000600>
         <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: every occurrent that is not a temporal or spatiotemporal region is s-dependent on some independent continuant that is not a spatial region</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: s-dependence obtains between every process and its participants in the sense that, as a matter of necessity, this process could not have existed unless these or those participants existed also. A process may have a succession of participants at different phases of its unfolding. Thus there may be different players on the field at different times during the course of a football game; but the process which is the entire game s-depends_on all of these players nonetheless. Some temporal parts of this process will s-depend_on on only some of the players.</obo:IAO_0000116>
         <obo:BFO_0000180>Occurrent</obo:BFO_0000180>
-        <obo:IAO_0000116 xml:lang="en">Occurrent doesn&apos;t have a closure axiom because the subclasses don&apos;t necessarily exhaust all possibilites. An example would be the sum of a process and the process boundary of another process.</obo:IAO_0000116>
-        <obo:BFO_0000179>occurrent</obo:BFO_0000179>
+        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: s-dependence obtains between every process and its participants in the sense that, as a matter of necessity, this process could not have existed unless these or those participants existed also. A process may have a succession of participants at different phases of its unfolding. Thus there may be different players on the field at different times during the course of a football game; but the process which is the entire game s-depends_on all of these players nonetheless. Some temporal parts of this process will s-depend_on on only some of the players.</obo:IAO_0000116>
         <obo:IAO_0000601 xml:lang="en">Every occurrent occupies_spatiotemporal_region some spatiotemporal region. (axiom label in BFO2 Reference: [108-001])</obo:IAO_0000601>
+        <obo:IAO_0000116 xml:lang="en">Occurrent doesn&apos;t have a closure axiom because the subclasses don&apos;t necessarily exhaust all possibilites. An example would be the sum of a process and the process boundary of another process.</obo:IAO_0000116>
         <obo:IAO_0000601 xml:lang="en">b is an occurrent entity iff b is an entity that has temporal parts. (axiom label in BFO2 Reference: [079-001])</obo:IAO_0000601>
+        <obo:BFO_0000179>occurrent</obo:BFO_0000179>
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;dron.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;oae.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;ogms.owl"/>
@@ -2939,6 +3031,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;dron.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;oae.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
@@ -2975,12 +3068,12 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000602>(iff (Process a) (and (Occurrent a) (exists (b) (properTemporalPartOf b a)) (exists (c t) (and (MaterialEntity c) (specificallyDependsOnAt a c t))))) // axiom label in BFO2 CLIF: [083-003] </obo:IAO_0000602>
         <obo:IAO_0000115 xml:lang="en">An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t.</obo:IAO_0000115>
         <obo:IAO_0000112 xml:lang="en">a process of meiosis</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])</obo:IAO_0000115>
         <obo:BFO_0000179>process</obo:BFO_0000179>
         <obo:BFO_0000180>Process</obo:BFO_0000180>
         <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: The realm of occurrents is less pervasively marked by the presence of natural units than is the case in the realm of independent continuants. Thus there is here no counterpart of ‘object’. In BFO 1.0 ‘process’ served as such a counterpart. In BFO 2.0 ‘process’ is, rather, the occurrent counterpart of ‘material entity’. Those natural – as contrasted with engineered, which here means: deliberately executed – units which do exist in the realm of occurrents are typically either parasitic on the existence of natural units on the continuant side, or they are fiat in nature. Thus we can count lives; we can count football games; we can count chemical reactions performed in experiments or in chemical manufacturing. We cannot count the processes taking place, for instance, in an episode of insect mating behavior.Even where natural units are identifiable, for example cycles in a cyclical process such as the beating of a heart or an organism’s sleep/wake cycle, the processes in question form a sequence with no discontinuities (temporal gaps) of the sort that we find for instance where billiard balls or zebrafish or planets are separated by clear spatial gaps. Lives of organisms are process units, but they too unfold in a continuous series from other, prior processes such as fertilization, and they unfold in turn in continuous series of post-life processes such as post-mortem decay. Clear examples of boundaries of processes are almost always of the fiat sort (midnight, a time of death as declared in an operating theater or on a death certificate, the initiation of a state of war)</obo:IAO_0000116>
         <obo:IAO_0000112 xml:lang="en">a process of cell-division, \ a beating of the heart</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">a process of sleeping</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])</obo:IAO_0000115>
         <obo:IAO_0000112 xml:lang="en">the course of a disease</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the flight of a bird</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the life of an organism</obo:IAO_0000112>
@@ -2989,6 +3082,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;dron.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;oae.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;ogms.owl"/>
@@ -3171,10 +3265,10 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="&obo;BFO_0000029">
         <rdfs:label xml:lang="en">site</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000141"/>
-        <obo:BFO_0000179>site</obo:BFO_0000179>
-        <obo:BFO_0000180>Site</obo:BFO_0000180>
         <obo:IAO_0000602>(forall (x) (if (Site x) (ImmaterialEntity x))) // axiom label in BFO2 CLIF: [034-002] </obo:IAO_0000602>
         <obo:IAO_0000112 xml:lang="en">Manhattan Canyon)</obo:IAO_0000112>
+        <obo:BFO_0000179>site</obo:BFO_0000179>
+        <obo:BFO_0000180>Site</obo:BFO_0000180>
         <obo:IAO_0000112 xml:lang="en">a hole in the interior of a portion of cheese</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">a rabbit hole</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">an air traffic control region defined in the airspace above an airport</obo:IAO_0000112>
@@ -3191,6 +3285,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000112 xml:lang="en">the lumen of your gut</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">your left nostril (a fiat part – the opening – of your left nasal cavity)</obo:IAO_0000112>
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
     </owl:Class>
     
@@ -3331,6 +3426,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: Immaterial entities are divided into two subgroups:boundaries and sites, which bound, or are demarcated in relation, to material entities, and which can thus change location, shape and size and as their material hosts move or change shape or size (for example: your nasal passage; the hold of a ship; the boundary of Wales (which moves with the rotation of the Earth) [38, 7, 10</obo:IAO_0000116>
         <obo:BFO_0000180>ImmaterialEntity</obo:BFO_0000180>
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
     </owl:Class>
     
@@ -13814,14 +13910,14 @@ resulting from the influence of human beings on nature.</obo:IAO_0000115>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0001015"/>
-                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
+                <owl:onClass rdf:resource="&obo;ENVO_00000073"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0001015"/>
-                <owl:onClass rdf:resource="&obo;ENVO_00000073"/>
-                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ENVO</oboInOwl:hasOBONamespace>
@@ -14199,15 +14295,15 @@ resulting from the influence of human beings on nature.</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="&obo;ENVO_00002297"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002219"/>
-                <owl:someValuesFrom rdf:resource="&obo;ENVO_01000637"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:onClass rdf:resource="&obo;ENVO_01000799"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:onClass rdf:resource="&obo;ENVO_01000799"/>
-                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onProperty rdf:resource="&obo;RO_0002219"/>
+                <owl:someValuesFrom rdf:resource="&obo;ENVO_01000637"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasRelatedSynonym>celestial object</oboInOwl:hasRelatedSynonym>
@@ -14336,12 +14432,6 @@ resulting from the influence of human beings on nature.</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="&obo;ENVO_01000813"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002131"/>
-                <owl:someValuesFrom rdf:resource="&obo;ENVO_01000817"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="&obo;ENVO_00000070"/>
             </owl:Restriction>
@@ -14350,6 +14440,12 @@ resulting from the influence of human beings on nature.</obo:IAO_0000115>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="&obo;ENVO_00003074"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002131"/>
+                <owl:someValuesFrom rdf:resource="&obo;ENVO_01000817"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>The gravitational sphere of influence referenced in this class&apos; definition is the Hill sphere: a region in which an object dominates the attraction of satellites despite gravitational perturbations.</rdfs:comment>
@@ -14422,41 +14518,6 @@ resulting from the influence of human beings on nature.</obo:IAO_0000115>
 
     <owl:Class rdf:about="&obo;ENVO_01001110">
         <rdfs:label xml:lang="en">ecosystem</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;ENVO_01000254"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_131567"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="&obo;PCO_0000000"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;RO_0002507"/>
-                        <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_131567"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;RO_0002507"/>
-                        <owl:someValuesFrom rdf:resource="&obo;PCO_0000000"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;RO_0002507"/>
-                        <owl:someValuesFrom rdf:resource="&obo;PO_0025131"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;RO_0002507"/>
-                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001062"/>
-                    </owl:Restriction>
-                </owl:unionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;ENVO_01000254"/>
         <rdfs:comment>This class will be primarily filled by inference, any environmental system which necessarily includes living parts should be autoclassified here.</rdfs:comment>
         <obo:IAO_0000115>An environmental system which includes both living and non-living components.</obo:IAO_0000115>
@@ -14515,6 +14576,19 @@ resulting from the influence of human beings on nature.</obo:IAO_0000115>
         </rdfs:subClassOf>
         <obo:IAO_0000115>An environmental process which is driven by the action of humans.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00000448 -->
+
+    <owl:Class rdf:about="&obo;GAZ_00000448">
+        <rdfs:label rdf:datatype="&xsd;string">geographic location</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000029"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A reference to a place on the Earth, by its name or by its geographical location.</obo:IAO_0000115>
+        <obo:IAO_0000111 rdf:datatype="&xsd;string">geographic location</obo:IAO_0000111>
+        <obo:IAO_0000412 rdf:resource="&obo;gaz.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
     </owl:Class>
     
 
@@ -14873,6 +14947,28 @@ resulting from the influence of human beings on nature.</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000003 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000003">
+        <rdfs:label xml:lang="en">measurement unit label</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000009"/>
+        <obo:IAO_0000116 xml:lang="en">2009-03-16: provenance: a term measurement unit was
+proposed for OBI (OBI_0000176) , edited by Chris Stoeckert and
+Cristian Cocos, and subsequently moved to IAO where the objective for
+which the original term was defined was satisfied with the definition
+of this, different, term.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">2009-03-16: review of this term done during during the OBI workshop winter 2009 and the current definition was considered acceptable for use in OBI. If there is a need to modify this definition please notify OBI.</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">A measurement unit label is as a label that is part of a scalar measurement datum and denotes a unit of measure.</obo:IAO_0000115>
+        <obo:IAO_0000112 xml:lang="en">Examples of measurement unit labels are liters, inches, weight per volume.</obo:IAO_0000112>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">measurement unit label</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+        <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000005 -->
 
     <owl:Class rdf:about="&obo;IAO_0000005">
@@ -14912,12 +15008,33 @@ resulting from the influence of human beings on nature.</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000009 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000009">
+        <rdfs:label xml:lang="en">datum label</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+        <obo:IAO_0000232>9/22/11 BP: changed the rdfs:label for this class from &apos;label&apos; to &apos;datum label&apos; to convey that this class is not intended to cover all kinds of labels (stickers, radiolabels, etc.), and not even all kind of textual labels, but rather the kind of labels occuring in a datum. 
+</obo:IAO_0000232>
+        <obo:IAO_0000115 xml:lang="en">A label is a symbol that is part of some other datum and is used to either partially define  the denotation of that datum or to provide a means for identifying the datum as a member of the set of data with the same label</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">GROUP: IAO</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">datum label</obo:IAO_0000111>
+        <obo:IAO_0000116 xml:lang="en">http://www.golovchenko.org/cgi-bin/wnsearch?q=label#4n</obo:IAO_0000116>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+        <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000017 -->
 
     <owl:Class rdf:about="&obo;IAO_0000017">
         <rdfs:label xml:lang="en">model number</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000028"/>
         <obo:IAO_0000115 xml:lang="en">A model number is an information content entity specifically borne by catalogs, design specifications, advertising materials, inventory systems and similar  that is about manufactured objects of the same class. The model number is an alternative term for the class. The manufactered objects may or may not also bear the model number. Model numbers can be encoded in a variety of other information objects, such as bar codes, numerals, or patterns of dots.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Person: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000116 xml:lang="en">manufactered items may have more than one model number, sometimes by rebranding, or because companies are sold and the products issued new model numbers</obo:IAO_0000116>
+        <obo:IAO_0000111 xml:lang="en">model number</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
         <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
     </owl:Class>
     
@@ -14961,8 +15078,20 @@ JAR: A data item is an approximately justified approximately true approximate be
     <owl:Class rdf:about="&obo;IAO_0000028">
         <rdfs:label xml:lang="en">symbol</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+        <obo:IAO_0000116 xml:lang="en">20091104, MC: this needs work and will most probably change</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">2014-03-31: We would like to have a deeper analysis of &apos;mark&apos; and &apos;sign&apos; in the future (see https://code.google.com/p/information-artifact-ontology/issues/detail?id=154).</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">2014-03-31: We would like to have a deeper analysis of &apos;mark&apos; and &apos;sign&apos; in the future (see https://github.com/information-artifact-ontology/IAO/issues/154).</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">An information content entity that is a mark(s) or character(s) used as a conventional representation of another entity.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON: James A. Overton</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Jonathan Rees</obo:IAO_0000117>
+        <obo:IAO_0000112 xml:lang="en">a serial number such as &quot;12324X&quot;</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a stop sign</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a written proper name such as &quot;OBI&quot;</obo:IAO_0000112>
+        <obo:IAO_0000119 xml:lang="en">based on Oxford English Dictionary</obo:IAO_0000119>
+        <obo:IAO_0000111 xml:lang="en">symbol</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
         <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
     </owl:Class>
     
 
@@ -14973,6 +15102,9 @@ JAR: A data item is an approximately justified approximately true approximate be
         <rdfs:label xml:lang="en">numeral</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000028"/>
         <obo:IAO_0000115 xml:lang="en">A symbol that denotes a number.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Jonathan Rees</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">numeral</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
         <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
     </owl:Class>
     
@@ -15016,7 +15148,40 @@ Previous. An information content entity is a non-realizable information entity t
     <owl:Class rdf:about="&obo;IAO_0000031">
         <rdfs:label xml:lang="en">integer numeral</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000029"/>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Jonathan Rees</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">a numeral that denotes an integer</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">integer numeral</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+        <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000032 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000032">
+        <rdfs:label xml:lang="en">scalar measurement datum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000109"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000039"/>
+                <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000004"/>
+                <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">10 feet. 3 ml.</obo:IAO_0000112>
+        <obo:IAO_0000116 xml:lang="en">2009-03-16: we decided to keep datum singular in scalar measurement datum, as in
+this case we explicitly refer to the singular form</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000116 xml:lang="en">Would write this as: has_part some &apos;measurement unit label&apos; and has_part some numeral and has_part exactly 2, except for the fact that this won&apos;t let us take advantage of OWL reasoning over the numbers. Instead use has measurment value property to represent the same. Use has measurement unit label (subproperty of has_part) so we can easily say that there is only one of them.</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">a scalar measurement datum is a measurement datum that is composed of two parts, numerals and a unit label.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
         <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
     </owl:Class>
     
@@ -15052,6 +15217,13 @@ Previous. An information content entity is a non-realizable information entity t
         <rdfs:label xml:lang="en">dot plot</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000038"/>
         <obo:IAO_0000115 xml:lang="en">A dot plot is a report graph which is a graphical representation of data where each data point is represented by a single dot placed on coordinates corresponding to data point values in particular dimensions.</obo:IAO_0000115>
+        <obo:IAO_0000112 xml:lang="en">Dot plot of SSC-H and FSC-H.</obo:IAO_0000112>
+        <obo:IAO_0000119 xml:lang="en">OBI_0000123</obo:IAO_0000119>
+        <obo:IAO_0000111 xml:lang="en">dot plot</obo:IAO_0000111>
+        <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">person:Allyson Lister</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">person:Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000002"/>
         <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
     </owl:Class>
     
@@ -15063,6 +15235,13 @@ Previous. An information content entity is a non-realizable information entity t
         <rdfs:label xml:lang="en">graph</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000309"/>
         <obo:IAO_0000115 xml:lang="en">A diagram that presents one or more tuples of information by mapping those tuples in to a two dimensional space in a non arbitrary way.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">OBI_0000240</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">graph</obo:IAO_0000111>
+        <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">person:Allyson Lister</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
         <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
     </owl:Class>
     
@@ -15073,6 +15252,14 @@ Previous. An information content entity is a non-realizable information entity t
     <owl:Class rdf:about="&obo;IAO_0000057">
         <rdfs:label xml:lang="en">contour plot</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000038"/>
+        <obo:IAO_0000112 xml:lang="en">Contour plot of SSC-H, FSC-H, and FL1-H.</obo:IAO_0000112>
+        <obo:IAO_0000119 xml:lang="en">OBI_0000246</obo:IAO_0000119>
+        <obo:IAO_0000111 xml:lang="en">contour plot</obo:IAO_0000111>
+        <obo:IAO_0000116 xml:lang="en">generically_dependent_continuants</obo:IAO_0000116>
+        <obo:IAO_0000119 xml:lang="en">group:Flow Cytometry community</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">person:Allyson Lister</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">person:Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000002"/>
         <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
     </owl:Class>
     
@@ -15106,6 +15293,7 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000111 xml:lang="en">curation status specification</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
         <obo:IAO_0000412 rdf:resource="&obo;dron.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;ogms.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
@@ -15119,6 +15307,13 @@ Previous. An information content entity is a non-realizable information entity t
         <rdfs:label xml:lang="en">density plot</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000038"/>
         <obo:IAO_0000115 xml:lang="en">A density plot is a report graph which is a graphical representation of data where the tint of a particular pixel corresponds to some kind of function corresponding the the amount of data points relativelly with their distance from the the pixel.</obo:IAO_0000115>
+        <obo:IAO_0000112 xml:lang="en">Density plot of SSC-H and FSC-H.</obo:IAO_0000112>
+        <obo:IAO_0000119 xml:lang="en">OBI_0000179</obo:IAO_0000119>
+        <obo:IAO_0000111 xml:lang="en">density plot</obo:IAO_0000111>
+        <obo:IAO_0000119 xml:lang="en">group:Flow Cytometry community</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">person:Allyson Lister</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">person:Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000002"/>
         <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
     </owl:Class>
     
@@ -15139,7 +15334,9 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000117 xml:lang="en">person:Allyson Lister</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">person:Chris Stoeckert</obo:IAO_0000117>
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+        <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
     </owl:Class>
     
 
@@ -15150,6 +15347,13 @@ Previous. An information content entity is a non-realizable information entity t
         <rdfs:label xml:lang="en">image</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000308"/>
         <obo:IAO_0000115 xml:lang="en">An image is an affine projection to a two dimensional surface, of measurements of some quality of an entity or entities repeated at regular intervals across a spatial range, where the measurements are represented as color and luminosity on the projected on surface.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">OBI_0000030</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
+        <obo:IAO_0000111 xml:lang="en">image</obo:IAO_0000111>
+        <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">person:Allyson</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">person:Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
         <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
     </owl:Class>
     
@@ -15163,6 +15367,7 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000117 rdf:datatype="&xsd;string">Person:Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">data about an ontology part is a data item about a part of an ontology, for example a term</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="&obo;dron.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;ogms.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
@@ -15240,6 +15445,10 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <rdfs:label xml:lang="en">version number</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000028"/>
         <obo:IAO_0000115 xml:lang="en">A version number is an information content entity which is a sequence of characters borne by part of each of a class of manufactured products or its packaging and indicates its order within a set of other products having the same name.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">GROUP: IAO</obo:IAO_0000117>
+        <obo:IAO_0000116 xml:lang="en">Note: we feel that at the moment we are happy with a general version number, and that we will subclass as needed in the future. For example, see 7. genome sequence version</obo:IAO_0000116>
+        <obo:IAO_0000111 xml:lang="en">version number</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
         <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
     </owl:Class>
     
@@ -15251,6 +15460,10 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <rdfs:label xml:lang="en">serial number</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000028"/>
         <obo:IAO_0000115 xml:lang="en">A serial number is an information content entity which is a unique sequence of characters borne by part of manufactured product or its packaging that is assigned to each individual in some class of products, and so can serve as a way to identify an individual product within the class. Serial numbers can be encoded in a variety of other information objects, such as bar codes, numerals, or patterns of dots.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">GROUP: IAO</obo:IAO_0000117>
+        <obo:IAO_0000116 xml:lang="en">Note: during the call there was some confusion between serial number and model number. We agreed that it would be very helpful for all those terms to have example of usages - please add if you have any :-)</obo:IAO_0000116>
+        <obo:IAO_0000111 xml:lang="en">serial number</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
         <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
     </owl:Class>
     
@@ -15262,6 +15475,10 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <rdfs:label xml:lang="en">lot number</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000028"/>
         <obo:IAO_0000115 xml:lang="en">A lot number is an information content entity which is an identical sequence of character borne by part of manufactured product or its packaging for each instances of a product class in a discrete batch of an item. Lot numbers are usually assigned to each separate production run of an item. Manufacturing as a lot might be due to a variety of reasons, for example,  a single process during which many individuals are made from the same portion of source material. Lot numbers can be encoded in a pattern  of other information objects, such as bar codes, numerals, or patterns of dots.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">GROUP: IAO</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">batch number</obo:IAO_0000118>
+        <obo:IAO_0000111 xml:lang="en">lot number</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
         <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
     </owl:Class>
     
@@ -15274,6 +15491,12 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000038"/>
         <obo:IAO_0000115 xml:lang="en">A histogram is a report graph which is a statistical description of a
 distribution in terms of occurrence frequencies of different event classes.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:James Malone</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">histogram</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
         <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
     </owl:Class>
     
@@ -15287,6 +15510,12 @@ distribution in terms of occurrence frequencies of different event classes.</obo
         <obo:IAO_0000115 xml:lang="en">A heatmap is a report graph which is a graphical representation of data
 where the values taken by a variable(s) are shown as colors in a
 two-dimensional map.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:James Malone</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">heatmap</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
         <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
     </owl:Class>
     
@@ -15299,6 +15528,12 @@ two-dimensional map.</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000038"/>
         <obo:IAO_0000115 xml:lang="en">A Venn diagram is a report graph showing all hypothetically possible
 logical relations between a finite collection of sets.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:James Malone</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">Venn diagram</obo:IAO_0000111>
+        <obo:IAO_0000119 xml:lang="en">WEB: http://en.wikipedia.org/wiki/Venn_diagram</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
         <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
     </owl:Class>
     
@@ -15312,6 +15547,14 @@ logical relations between a finite collection of sets.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">A dendrogram is a report graph which is a tree diagram
 frequently used to illustrate the arrangement of the clusters produced by a
 clustering algorithm.</obo:IAO_0000115>
+        <obo:IAO_0000112 xml:lang="en">Dendrograms are often used in computational biology to
+illustrate the clustering of genes.</obo:IAO_0000112>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:James Malone</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">WEB: http://en.wikipedia.org/wiki/Dendrogram</obo:IAO_0000119>
+        <obo:IAO_0000111 xml:lang="en">dendrogram</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
         <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
     </owl:Class>
     
@@ -15323,6 +15566,14 @@ clustering algorithm.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">scatter plot</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000038"/>
         <obo:IAO_0000115 xml:lang="en">A scatterplot is a graph which uses Cartesian coordinates to display values for two variables for a set of data. The data is displayed as a collection of points, each having the value of one variable determining the position on the horizontal axis and the value of the other variable determining the position on the vertical axis.</obo:IAO_0000115>
+        <obo:IAO_0000112 xml:lang="en">Comparison of gene expression values in two samples can be displayed in a scatter plot</obo:IAO_0000112>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:James Malone</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">WEB: http://en.wikipedia.org/wiki/Scatterplot</obo:IAO_0000119>
+        <obo:IAO_0000111 xml:lang="en">scatter plot</obo:IAO_0000111>
+        <obo:IAO_0000118 xml:lang="en">scattergraph</obo:IAO_0000118>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
         <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
     </owl:Class>
     
@@ -15334,6 +15585,11 @@ clustering algorithm.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">photograph</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000101"/>
         <obo:IAO_0000115 xml:lang="en">A photograph is created by projecting an image onto a photosensitive surface such as a chemically treated plate or film, CCD receptor, etc.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Joanne Luciano</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">WEB: http://en.wiktionary.org/wiki/photograph</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
         <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
     </owl:Class>
     
@@ -15363,7 +15619,17 @@ clustering algorithm.</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;IAO_0000301">
         <rdfs:label xml:lang="en">citation</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000300"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000310"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
+        <obo:IAO_0000112 xml:lang="en">Verspoor, K., Cohen, KB., Hunter, L. Textual characteristics of traditional and Open Access scientific journals are similar, BMC Bioinformatics 2009, 10:183.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">a textual entity intended to identify a particular publication</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">citation</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
         <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
     </owl:Class>
     
@@ -15375,6 +15641,10 @@ clustering algorithm.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">document title</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000300"/>
         <obo:IAO_0000115 xml:lang="en">A textual entity that names a document</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
+        <obo:IAO_0000112 xml:lang="en">Textual characteristics of traditional and Open Access scientific journals are similar</obo:IAO_0000112>
+        <obo:IAO_0000111 xml:lang="en">document title</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
         <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
     </owl:Class>
     
@@ -15386,6 +15656,13 @@ clustering algorithm.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">table</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000300"/>
         <obo:IAO_0000115 xml:lang="en">A textual entity that contains a two-dimensional arrangement of texts repeated at regular intervals across a spatial range, such that the spatial relationships among the constituent texts expresses propositions</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">table</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">| T     F
+--+-----
+T   | T     F
+F   |  F    F</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
         <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
     </owl:Class>
     
@@ -15397,6 +15674,10 @@ clustering algorithm.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">figure</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
         <obo:IAO_0000115 xml:lang="en">An information content entity consisting of a two dimensional arrangement of information content entities such that the arrangement itself is about something.</obo:IAO_0000115>
+        <obo:IAO_0000112 xml:lang="en">Any picture, diagram or table</obo:IAO_0000112>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">figure</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
         <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
     </owl:Class>
     
@@ -15408,6 +15689,10 @@ clustering algorithm.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">diagram</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000308"/>
         <obo:IAO_0000115 xml:lang="en">A figure that expresses one or more propositions</obo:IAO_0000115>
+        <obo:IAO_0000112 xml:lang="en">A molecular structure ribbon cartoon showing helices, turns and sheets and their relations to each other in space.</obo:IAO_0000112>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">diagram</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
         <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
     </owl:Class>
     
@@ -15423,6 +15708,7 @@ clustering algorithm.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
         <obo:IAO_0000111 xml:lang="en">document</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
+        <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
     </owl:Class>
@@ -15434,7 +15720,40 @@ clustering algorithm.</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;IAO_0000415">
         <rdfs:label xml:lang="en">hypothesis textual entity</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000300"/>
+        <obo:IAO_0000116 xml:lang="en">2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">A textual entity that expresses an assertion that is intended to be tested.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">hypothesis textual entity</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">that fucoidan has a small statistically significant effect on AT3 level but no useful clinical effect as in-vivo anticoagulant, a paraphrase of part of the last paragraph of the discussion section of the paper &apos;Pilot clinical study to evaluate the anticoagulant activity of fucoidan&apos;, by Lowenthal et. al.PMID:19696660</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
+        <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000416 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000416">
+        <rdfs:label xml:lang="en">time measurement datum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000032"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;IAO_0000039"/>
+                        <owl:allValuesFrom rdf:resource="&obo;UO_0000003"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;IAO_0000413"/>
+                        <owl:allValuesFrom rdf:resource="&obo;BFO_0000015"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000116 xml:lang="en">2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">A scalar measurement datum that is the result of measuring a temporal interval</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
         <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
     </owl:Class>
     
@@ -15445,7 +15764,15 @@ clustering algorithm.</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;IAO_0000422">
         <rdfs:label xml:lang="en">postal address</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000300"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo;GAZ_00000448"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A textual entity that is used as directive to deliver something to a person, or organization</obo:IAO_0000115>
+        <obo:IAO_0000116>2010-05-24 Alan Ruttenberg. Use label for the string representation. See issue https://github.com/information-artifact-ontology/IAO/issues/59</obo:IAO_0000116>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
         <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
     </owl:Class>
     
@@ -15456,6 +15783,17 @@ clustering algorithm.</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;IAO_0000429">
         <rdfs:label xml:lang="en">email address</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000116 xml:lang="en">Alan Ruttenberg 1/3/2012 - Provisional id, see issue at https://github.com/information-artifact-ontology/IAO/issues/130&amp;thanks=130&amp;ts=1325636583</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Person:Chris Stoeckart</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">email address</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
         <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
     </owl:Class>
     
@@ -15497,6 +15835,13 @@ clustering algorithm.</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000038"/>
         <obo:IAO_0000115 xml:lang="en">A line graph is a type of graph created by connecting a series of data
 points together with a line.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">WEB: http://en.wikipedia.org/wiki/Line_chart</obo:IAO_0000119>
+        <obo:IAO_0000118 xml:lang="en">line chart</obo:IAO_0000118>
+        <obo:IAO_0000111 xml:lang="en">line graph</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
         <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
     </owl:Class>
     
@@ -15507,8 +15852,92 @@ points together with a line.</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;IAO_0000577">
         <rdfs:label xml:lang="en">centrally registered identifier symbol</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000028"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000578"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000118>CRID symbol</obo:IAO_0000118>
         <obo:IAO_0000115 xml:lang="en">A symbol that is part of a CRID and that is sufficient to look up a record from the CRID&apos;s registry.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Original proposal from Bjoern, discussions at IAO calls</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Hogan</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000112 xml:lang="en">The sentence &quot;The article has Pubmed ID 12345.&quot; contains a CRID that has two parts: one part is the CRID symbol, which is &apos;12345&apos;; the other part denotes the CRID registry, which is Pubmed.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
         <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000578 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000578">
+        <rdfs:label xml:lang="en">CRID</rdfs:label>
+        <rdfs:label xml:lang="en">centrally registered identifier</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000577"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;IAO_0000219"/>
+                        <owl:someValuesFrom rdf:resource="&obo;IAO_0000579"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000412 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/iao.owl</obo:IAO_0000412>
+        <obo:IAO_0000116 xml:lang="en">2014-05-05: In defining this term we take no position on what the CRID denotes. In particular do not assume it denotes a *record* in the CRID registry (since the registry might not have &apos;records&apos;).</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Alan, IAO call 20101124: potentially the CRID denotes the instance it was associated with during creation. 
+</obo:IAO_0000116>
+        <obo:IAO_0000118>Centrally Registered IDentifier</obo:IAO_0000118>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that consists of a CRID symbol and additional information about the CRID registry to which it belongs.</obo:IAO_0000115>
+        <obo:IAO_0000118>CRID</obo:IAO_0000118>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that consists of a CRID symbol and additional information about which CRID registry it belongs. </obo:IAO_0000115>
+        <obo:IAO_0000112 xml:lang="en">Entries in a Column of which the header is &quot;Pubmed ID&quot; </obo:IAO_0000112>
+        <obo:IAO_0000116 xml:lang="en">Note, IAO call 20101124: URIs are not always CRID, as not centrally registered. We acknowledge that CRID is a subset of a larger identifier class, but this subset fulfills our current needs. OBI PURLs are CRID as they are registered with OCLC. UPCs (Universal Product Codes from AC Nielsen)are not CRID as they are not centrally registered.</obo:IAO_0000116>
+        <obo:IAO_0000119 xml:lang="en">Original proposal from Bjoern, discussions at IAO calls</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Hogan</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000112 xml:lang="en">PMID:12345</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">The following URL: &quot;http://www.ncbi.nlm.nih.gov/pubmed/19918065&quot;</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">The following sentence contains a CRID: &quot;The article with Pubmed ID: 19918065&quot;. </obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">The sentence &quot;The article has Pubmed ID 12345.&quot; contains a CRID that has two parts: one part is the CRID symbol, which is &apos;12345&apos;; the other part denotes the CRID registry, which is Pubmed.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
+        <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000579 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000579">
+        <rdfs:label xml:lang="en">centrally registered identifier registry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000100"/>
+        <obo:IAO_0000118>CRID registry</obo:IAO_0000118>
+        <obo:IAO_0000115 xml:lang="en">A CRID registry is a dataset of CRID records, each consisting of a CRID symbol and additional information which was recorded in the dataset through a assigning a centrally registered identifier process.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Original proposal from Bjoern, discussions at IAO calls</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Hogan</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000112 xml:lang="en">PubMed is a CRID registry. It has a dataset of PubMed identifiers associated with journal articles. </obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
+        <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
     </owl:Class>
     
 
@@ -15518,7 +15947,15 @@ points together with a line.</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;IAO_0000590">
         <rdfs:label xml:lang="en">written name</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000300"/>
+        <obo:IAO_0000112 xml:lang="en">&quot;Bill Clinton&quot;</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">&quot;The Eiffel Tower&quot;</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">&quot;United States of America&quot;</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A textual entity that denotes a particular in reality.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Hogan</obo:IAO_0000117>
+        <obo:IAO_0000232 xml:lang="en">The qualifier &quot;written&quot; is to set it apart from spoken names.  Also, note the restrictions to particulars.  We are not naming universals.   We could however, be naming, attributive collections which are particulars, so &quot;All people located in the boundaries of the city of Little Rock, AR on June 18, 2011 at 9:50a CDT&quot; would be a name.</obo:IAO_0000232>
+        <obo:IAO_0000119 xml:lang="en">https://github.com/information-artifact-ontology/IAO/issues/114</obo:IAO_0000119>
+        <obo:IAO_0000111 xml:lang="en">written name</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
         <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
     </owl:Class>
     
@@ -15530,7 +15967,13 @@ points together with a line.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">author information textual entity</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000300"/>
         <obo:IAO_0000115 xml:lang="en">A textual entity expression information about an author of a document. This information may include biographical information and may discuss how the authors&apos; professional experiences are relevant to the work described in the document.</obo:IAO_0000115>
+        <obo:IAO_0000112 xml:lang="en">From Takon. Ann Gen Psychiatry. 2011; 10: 25. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3204268/):
+
+IT [the author] is the lead paediatrician for ADHD services in East Hertfordshire, UK, where she runs a weekly joint ADHD clinic with the Child and Adolescent psychiatrist and works within an ADHD specialist team. IT also sees children with other neurodisability issues who may have comorbid ADHD, where the presentation may be more complex and challenging to manage. IT has vast experience in managing children with complex ADHD. She has 18 years of experience in paediatrics and also has extensive experience in the use of psychopharmacologic agents in managing children with ADHD.</obo:IAO_0000112>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">author information textual entity</obo:IAO_0000111>
         <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
     </owl:Class>
     
 
@@ -15541,7 +15984,13 @@ points together with a line.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">case report textual entity</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000300"/>
         <obo:IAO_0000115 xml:lang="en">A textual entity that expresses a detailed account of a portion of the medical history for a specific patient.</obo:IAO_0000115>
+        <obo:IAO_0000112 xml:lang="en">Excerpt from Taglia et al. Acta Myol. 2012 Dec; 31(3): 201–203. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3631801/):
+
+The patient is a 50-year-old man. His medical history was not contributory. At the age of 37 years, he complained of persistent fatigue and dyspnoea even for modest efforts and oedema of lower limbs. The patient was examined at the department of internal medicine of the local hospital, and hospitalised with a diagnosis of dilated cardiomyopathy probably consequence of a myocarditis process. Soon after he was transferred to the cardiologic department of the regional hospital, and pharmacologically treated for heart failure and pulmonary hypertension.</obo:IAO_0000112>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">case report textual entity</obo:IAO_0000111>
         <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
     </owl:Class>
     
 
@@ -15707,20 +16156,6 @@ The term is used in the following meaning of being self generated. It does not s
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1 -->
-
-    <owl:Class rdf:about="&obo;NCBITaxon_1">
-        <rdfs:label rdf:datatype="&xsd;string">root</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">all</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
-        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
-        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_10239 -->
 
     <owl:Class rdf:about="&obo;NCBITaxon_10239">
@@ -15729,127 +16164,6 @@ The term is used in the following meaning of being self generated. It does not s
         <obo:IAO_0000111 rdf:datatype="&xsd;string">Viruses</obo:IAO_0000111>
         <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_117570 -->
-
-    <owl:Class rdf:about="&obo;NCBITaxon_117570">
-        <rdfs:label rdf:datatype="&xsd;string">Teleostomi</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_7776"/>
-        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_117571 -->
-
-    <owl:Class rdf:about="&obo;NCBITaxon_117571">
-        <rdfs:label rdf:datatype="&xsd;string">Euteleostomi</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_117570"/>
-        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_7742"/>
-        <obo:IAO_0000111 rdf:datatype="&xsd;string">Euteleostomi</obo:IAO_0000111>
-        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">bony vertebrates</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000118 rdf:datatype="&xsd;string">bony vertebrates</obo:IAO_0000118>
-        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
-        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_131567 -->
-
-    <owl:Class rdf:about="&obo;NCBITaxon_131567">
-        <rdfs:label rdf:datatype="&xsd;string">cellular organisms</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_1"/>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">biota</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
-        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
-        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1338369 -->
-
-    <owl:Class rdf:about="&obo;NCBITaxon_1338369">
-        <rdfs:label rdf:datatype="&xsd;string">Dipnotetrapodomorpha</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_8287"/>
-        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1437010 -->
-
-    <owl:Class rdf:about="&obo;NCBITaxon_1437010">
-        <rdfs:label rdf:datatype="&xsd;string">Boreoeutheria</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_9347"/>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Boreotheria</oboInOwl:hasRelatedSynonym>
-        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2 -->
-
-    <owl:Class rdf:about="&obo;NCBITaxon_2">
-        <rdfs:label rdf:datatype="&xsd;string">Bacteria</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_131567"/>
-        <rdfs:subClassOf rdf:resource="&obo;OBI_0100026"/>
-        <obo:IAO_0000111 rdf:datatype="&xsd;string">Bacteria</obo:IAO_0000111>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:11</oboInOwl:hasDbXref>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Monera</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:10425795</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:10425796</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:10425797</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:10490293</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:10843050</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:10939651</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:10939673</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:10939677</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:11211268</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:11321083</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:11321113</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:11411719</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:11540071</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:11542017</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:11542087</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:11760965</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:12054223</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:2112744</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:270744</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:8123559</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:8590690</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:9103655</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:9336922</oboInOwl:hasDbXref>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Procaryotae</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Prokaryota</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Prokaryotae</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">bacteria</oboInOwl:hasRelatedSynonym>
-        <obo:IAO_0000118 rdf:datatype="&xsd;string">eubacteria</obo:IAO_0000118>
-        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">eubacteria</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">not Bacteria Haeckel 1894</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">prokaryote</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">prokaryotes</oboInOwl:hasRelatedSynonym>
-        <ncbitaxon:has_rank rdf:resource="&obo;NCBITaxon_superkingdom"/>
-        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_207598 -->
-
-    <owl:Class rdf:about="&obo;NCBITaxon_207598">
-        <rdfs:label rdf:datatype="&xsd;string">Homininae</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_9604"/>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Homo/Pan/Gorilla group</oboInOwl:hasRelatedSynonym>
-        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
     </owl:Class>
     
 
@@ -15870,7 +16184,6 @@ The term is used in the following meaning of being self generated. It does not s
 
     <owl:Class rdf:about="&obo;NCBITaxon_2759">
         <rdfs:label rdf:datatype="&xsd;string">Eukaryota</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_131567"/>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0100026"/>
         <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Eucarya</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Eucaryotae</oboInOwl:hasRelatedSynonym>
@@ -15893,310 +16206,14 @@ The term is used in the following meaning of being self generated. It does not s
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_314146 -->
-
-    <owl:Class rdf:about="&obo;NCBITaxon_314146">
-        <rdfs:label rdf:datatype="&xsd;string">Euarchontoglires</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_1437010"/>
-        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_40674"/>
-        <obo:IAO_0000111 rdf:datatype="&xsd;string">Euarchontoglires</obo:IAO_0000111>
-        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
-        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_314293 -->
-
-    <owl:Class rdf:about="&obo;NCBITaxon_314293">
-        <rdfs:label rdf:datatype="&xsd;string">Simiiformes</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_376913"/>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Anthropoidea</oboInOwl:hasRelatedSynonym>
-        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_314295 -->
-
-    <owl:Class rdf:about="&obo;NCBITaxon_314295">
-        <rdfs:label rdf:datatype="&xsd;string">Hominoidea</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_9526"/>
-        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">ape</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">apes</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_32523 -->
-
-    <owl:Class rdf:about="&obo;NCBITaxon_32523">
-        <rdfs:label rdf:datatype="&xsd;string">Tetrapoda</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_117571"/>
-        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_1338369"/>
-        <obo:IAO_0000111 rdf:datatype="&xsd;string">Tetrapoda</obo:IAO_0000111>
-        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">tetrapods</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000118 rdf:datatype="&xsd;string">tetrapods</obo:IAO_0000118>
-        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
-        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_32524 -->
-
-    <owl:Class rdf:about="&obo;NCBITaxon_32524">
-        <rdfs:label rdf:datatype="&xsd;string">Amniota</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_32523"/>
-        <obo:IAO_0000111 rdf:datatype="&xsd;string">Amniota</obo:IAO_0000111>
-        <obo:IAO_0000118 rdf:datatype="&xsd;string">amniotes</obo:IAO_0000118>
-        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">amniotes</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
-        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_32525 -->
-
-    <owl:Class rdf:about="&obo;NCBITaxon_32525">
-        <rdfs:label rdf:datatype="&xsd;string">Theria &lt;Mammalia&gt;</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_40674"/>
-        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Theria</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_33154 -->
-
-    <owl:Class rdf:about="&obo;NCBITaxon_33154">
-        <rdfs:label rdf:datatype="&xsd;string">Opisthokonta</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_2759"/>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Fungi/Metazoa group</oboInOwl:hasRelatedSynonym>
-        <obo:IAO_0000111 rdf:datatype="&xsd;string">Opisthokonta</obo:IAO_0000111>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">opisthokonts</oboInOwl:hasRelatedSynonym>
-        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
-        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_33208 -->
-
-    <owl:Class rdf:about="&obo;NCBITaxon_33208">
-        <rdfs:label rdf:datatype="&xsd;string">Metazoa</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_33154"/>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Animalia</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">animals</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">metazoans</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">multicellular animals</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_33213 -->
-
-    <owl:Class rdf:about="&obo;NCBITaxon_33213">
-        <rdfs:label rdf:datatype="&xsd;string">Bilateria</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_33154"/>
-        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_6072"/>
-        <obo:IAO_0000111 rdf:datatype="&xsd;string">Bilateria</obo:IAO_0000111>
-        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
-        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_33511 -->
-
-    <owl:Class rdf:about="&obo;NCBITaxon_33511">
-        <rdfs:label rdf:datatype="&xsd;string">Deuterostomia</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_33213"/>
-        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">deuterostomes</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_376913 -->
-
-    <owl:Class rdf:about="&obo;NCBITaxon_376913">
-        <rdfs:label rdf:datatype="&xsd;string">Haplorrhini</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_9443"/>
-        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_40674 -->
-
-    <owl:Class rdf:about="&obo;NCBITaxon_40674">
-        <rdfs:label rdf:datatype="&xsd;string">Mammalia</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_32524"/>
-        <obo:IAO_0000111 rdf:datatype="&xsd;string">Mammalia</obo:IAO_0000111>
-        <obo:IAO_0000118 rdf:datatype="&xsd;string">mammals</obo:IAO_0000118>
-        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">mammals</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">mammals</oboInOwl:hasRelatedSynonym>
-        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
-        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_6072 -->
-
-    <owl:Class rdf:about="&obo;NCBITaxon_6072">
-        <rdfs:label rdf:datatype="&xsd;string">Eumetazoa</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_33208"/>
-        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_7711 -->
-
-    <owl:Class rdf:about="&obo;NCBITaxon_7711">
-        <rdfs:label rdf:datatype="&xsd;string">Chordata</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_33511"/>
-        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">chordates</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">chordates</oboInOwl:hasRelatedSynonym>
-        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_7742 -->
-
-    <owl:Class rdf:about="&obo;NCBITaxon_7742">
-        <rdfs:label rdf:datatype="&xsd;string">Vertebrata &lt;Metazoa&gt;</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_33213"/>
-        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_89593"/>
-        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Vertebrata</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000118 rdf:datatype="&xsd;string">Vertebrata</obo:IAO_0000118>
-        <obo:IAO_0000111 rdf:datatype="&xsd;string">Vertebrata &lt;Metazoa&gt;</obo:IAO_0000111>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">vertebrates</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">vertebrates</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000118 rdf:datatype="&xsd;string">vertebrates</obo:IAO_0000118>
-        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
-        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_7776 -->
-
-    <owl:Class rdf:about="&obo;NCBITaxon_7776">
-        <rdfs:label rdf:datatype="&xsd;string">Gnathostomata &lt;vertebrate&gt;</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_7742"/>
-        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Gnathostomata</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">jawed vertebrates</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_8287 -->
-
-    <owl:Class rdf:about="&obo;NCBITaxon_8287">
-        <rdfs:label rdf:datatype="&xsd;string">Sarcopterygii</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_117571"/>
-        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_89593 -->
-
-    <owl:Class rdf:about="&obo;NCBITaxon_89593">
-        <rdfs:label rdf:datatype="&xsd;string">Craniata &lt;chordata&gt;</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_7711"/>
-        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Craniata</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_9347 -->
-
-    <owl:Class rdf:about="&obo;NCBITaxon_9347">
-        <rdfs:label rdf:datatype="&xsd;string">Eutheria</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_32525"/>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Placentalia</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">eutherian mammals</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">placental mammals</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">placentals</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">placentals</oboInOwl:hasRelatedSynonym>
-        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_9443 -->
-
-    <owl:Class rdf:about="&obo;NCBITaxon_9443">
-        <rdfs:label rdf:datatype="&xsd;string">Primates</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_314146"/>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Primata</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">primate</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">primates</oboInOwl:hasRelatedSynonym>
-        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_9526 -->
-
-    <owl:Class rdf:about="&obo;NCBITaxon_9526">
-        <rdfs:label rdf:datatype="&xsd;string">Catarrhini</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_314293"/>
-        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_9604 -->
-
-    <owl:Class rdf:about="&obo;NCBITaxon_9604">
-        <rdfs:label rdf:datatype="&xsd;string">Hominidae</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_314295"/>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Pongidae</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">great apes</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_9605 -->
-
-    <owl:Class rdf:about="&obo;NCBITaxon_9605">
-        <rdfs:label rdf:datatype="&xsd;string">Homo</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_207598"/>
-        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_9606 -->
 
     <owl:Class rdf:about="&obo;NCBITaxon_9606">
         <rdfs:label rdf:datatype="&xsd;string">Homo sapiens</rdfs:label>
         <rdfs:label xml:lang="en">Homo sapiens</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_2759"/>
-        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_314146"/>
-        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_9605"/>
-        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_9606"/>
-        <rdfs:subClassOf rdf:resource="&obo;OBI_0100026"/>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">Homo sapiens</obo:IAO_0000118>
         <obo:IAO_0000111 rdf:datatype="&xsd;string">Homo sapiens</obo:IAO_0000111>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">human</oboInOwl:hasExactSynonym>
         <obo:IAO_0000118 rdf:datatype="&xsd;string">human</obo:IAO_0000118>
@@ -16206,6 +16223,7 @@ The term is used in the following meaning of being self generated. It does not s
         <obo:IAO_0000118 rdf:datatype="&xsd;string">man</obo:IAO_0000118>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
         <obo:IAO_0000111 xml:lang="en">Homo sapiens</obo:IAO_0000111>
+        <obo:IAO_0000118>person</obo:IAO_0000118>
         <ncbitaxon:has_rank rdf:resource="&obo;NCBITaxon_species"/>
         <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
@@ -35000,19 +35018,13 @@ objectives is a planned process.</obo:IAO_0000116>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000572"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0000471"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="&obo;OBI_0000338"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBI_0000471"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -35029,6 +35041,12 @@ objectives is a planned process.</obo:IAO_0000116>
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000572"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000232 rdf:datatype="&xsd;string">Could add specific objective specification</obo:IAO_0000232>
@@ -35201,12 +35219,6 @@ editor = PRS</obo:IAO_0000232>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;BFO_0000040"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
                 <owl:someValuesFrom rdf:resource="&obo;OBI_0000047"/>
             </owl:Restriction>
@@ -35221,6 +35233,12 @@ editor = PRS</obo:IAO_0000232>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
                 <owl:allValuesFrom rdf:resource="&obo;BFO_0000040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;BFO_0000040"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000112 rdf:datatype="&xsd;string">A cell lysis, production of a cloning vector, creating a buffer.</obo:IAO_0000112>
@@ -35798,13 +35816,13 @@ for now.</obo:IAO_0000116>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000643"/>
-                <owl:someValuesFrom rdf:resource="&obo;CHEBI_23367"/>
+                <owl:allValuesFrom rdf:resource="&obo;CHEBI_23367"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000643"/>
-                <owl:allValuesFrom rdf:resource="&obo;CHEBI_23367"/>
+                <owl:someValuesFrom rdf:resource="&obo;CHEBI_23367"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000111 rdf:datatype="&xsd;string">scattered molecular aggregate</obo:IAO_0000111>
@@ -35873,14 +35891,14 @@ for now.</obo:IAO_0000116>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBI_0100051"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;BFO_0000040"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;BFO_0000040"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0100051"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000232 rdf:datatype="&xsd;string">5/31/2012: This process is not necessarily an acquisition, as specimens may be collected from materials already in posession</obo:IAO_0000232>
@@ -36106,16 +36124,6 @@ The following are NOT conclusions based on data: data themselves; results from p
 
     <owl:Class rdf:about="&obo;OBI_0100026">
         <rdfs:label xml:lang="en">organism</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;NCBITaxon_10239"/>
-                    <rdf:Description rdf:about="&obo;NCBITaxon_2"/>
-                    <rdf:Description rdf:about="&obo;NCBITaxon_2157"/>
-                    <rdf:Description rdf:about="&obo;NCBITaxon_2759"/>
-                </owl:unionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000030"/>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
         <obo:IAO_0000116 rdf:datatype="&xsd;string">10/21/09: This is a placeholder term, that should ideally be imported from the NCBI taxonomy, but the high level hierarchy there does not suit our needs (includes plasmids and &apos;other organisms&apos;)</obo:IAO_0000116>
@@ -36219,33 +36227,6 @@ defines and states the requirements (positive or negative) for an entity to be c
         <rdfs:subClassOf rdf:resource="&obo;OBI_0001928"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;OBI_0000181"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
-                <owl:someValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;RO_0000059"/>
-                        <owl:someValuesFrom rdf:resource="&obo;OBI_0500026"/>
-                    </owl:Restriction>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -36274,6 +36255,33 @@ defines and states the requirements (positive or negative) for an entity to be c
                 <owl:someValuesFrom rdf:resource="&obo;OBI_0000810"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0000059"/>
+                        <owl:someValuesFrom rdf:resource="&obo;OBI_0500026"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;OBI_0000181"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000116 rdf:datatype="&xsd;string">As with group assignment, should the specified output here be an organism which bears a role</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">A planned process with the objective to obtain a population of human subjects to participate in an investigation by determining eligibility of subjects and obtaining informed consent.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Bjoern Peters</obo:IAO_0000117>
@@ -36294,14 +36302,14 @@ defines and states the requirements (positive or negative) for an entity to be c
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000659"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBI_0000684"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0100026"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBI_0100026"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0000684"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -36490,6 +36498,20 @@ defines and states the requirements (positive or negative) for an entity to be c
         <obo:IAO_0000119>http://groups.google.com/group/ogms-discuss/browse_thread/thread/2a7008f311fac766/e7de486c94dfd82e</obo:IAO_0000119>
         <obo:IAO_0000232>creation date: 2011-09-20T09:57:44Z</obo:IAO_0000232>
         <obo:IAO_0000412 rdf:resource="&obo;ogms.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000000 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000000">
+        <rdfs:label xml:lang="en">social security number</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000578"/>
+        <obo:IAO_0000118>SSN</obo:IAO_0000118>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Social_Security_number</obo:IAO_0000119>
+        <obo:IAO_0000115>Social Security Number(SSN) is a Centrally Registered IDentifier that is a nine-digit number issued to U.S. citizens, permanent residents, and temporary (working) residents under section 205(c) of the Social Security Act, codified as 42 U.S.C. § 405(c). The number is issued to an individual by the Social Security Administration, an independent agency of the United States government. Its primary purpose is to track individuals for Social Security purposes.</obo:IAO_0000115>
+        <dc:creator>Cheng Chen(cxchen1@ualr.edu)</dc:creator>
+        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
     </owl:Class>
     
 
@@ -36915,19 +36937,6 @@ defines and states the requirements (positive or negative) for an entity to be c
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0000052"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;OBI_0000245"/>
-                            <rdf:Description rdf:about="&obo;OBI_0100026"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
@@ -36936,6 +36945,19 @@ defines and states the requirements (positive or negative) for an entity to be c
                         </owl:unionOf>
                     </owl:Class>
                 </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;OBI_0000245"/>
+                            <rdf:Description rdf:about="&obo;OBI_0100026"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A role inhering in an entity realized by social interactions in human society.</obo:IAO_0000115>
@@ -37464,12 +37486,6 @@ A patient sustaining an injury who has been admitted to the hospital, transferre
         <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000572"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0000052"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -37482,6 +37498,12 @@ A patient sustaining an injury who has been admitted to the hospital, transferre
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000572"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A US cenus reference person role is a human social role that inheres in a Homo sapiens who is a member of a household and is realized by other persons in the household being recorded in the US census in relation to that person.</obo:IAO_0000115>
@@ -37676,10 +37698,40 @@ last accessed June 30, 2015</obo:IAO_0000119>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000500 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000500">
+        <rdfs:label xml:lang="en">employment data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000506"/>
+        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000501 -->
 
     <owl:Class rdf:about="&obo;OMRSE_00000501">
         <rdfs:label xml:lang="en">income data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000506"/>
+        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000502 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000502">
+        <rdfs:label xml:lang="en">government assistance health care plan data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000506"/>
+        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000503 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000503">
+        <rdfs:label xml:lang="en">health care plan data</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000506"/>
         <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
     </owl:Class>
@@ -37965,8 +38017,9 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OPMI_0000025 -->
 
     <owl:Class rdf:about="&obo;OPMI_0000025">
-        <rdfs:label xml:lang="en">do not know answer to question</rdfs:label>
+        <rdfs:label xml:lang="en">unknow answer to question</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OPMI_0000022"/>
+        <obo:IAO_0000118>do not know answer to question</obo:IAO_0000118>
         <obo:IAO_0000117>Fred Dowd, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000115>An answer to question that indicates the response to the specified question is unknown.</obo:IAO_0000115>
     </owl:Class>
@@ -38119,11 +38172,12 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OPMI_0000039 -->
 
     <owl:Class rdf:about="&obo;OPMI_0000039">
-        <rdfs:label xml:lang="en">form</rdfs:label>
+        <rdfs:label xml:lang="en">clinical report form</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000310"/>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Form_(document)</obo:IAO_0000119>
-        <obo:IAO_0000115>a document (printed or electronic) with spaces in which to write or enter data</obo:IAO_0000115>
+        <obo:IAO_0000115>A case report form (or CRF) is a paper or electronic questionnaire specifically used in clinical trial research</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>CRF</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Case_report_form</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -38212,6 +38266,8 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <owl:Class rdf:about="&obo;OPMI_0000048">
         <rdfs:label xml:lang="en">contact information form</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+        <obo:IAO_0000117>Edison Ong, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>A form that includes the information of contact for a person</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -38773,6 +38829,8 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <owl:Class rdf:about="&obo;OPMI_0000102">
         <rdfs:label xml:lang="en">maiden name</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OPMI_0000096"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Maiden_and_married_names</obo:IAO_0000119>
+        <obo:IAO_0000117>Edison Ong, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000115>A woman&apos;s surname before marriage</obo:IAO_0000115>
     </owl:Class>
     
@@ -39408,6 +39466,708 @@ last accessed June 30, 2015</obo:IAO_0000119>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000162 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000162">
+        <rdfs:label xml:lang="en">emergency contact phone number</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000112"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000163 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000163">
+        <rdfs:label xml:lang="en">care provider</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_9606"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000164 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000164">
+        <rdfs:label xml:lang="en">1st care provider</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000163"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000165 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000165">
+        <rdfs:label xml:lang="en">study ID</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000577"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000166 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000166">
+        <rdfs:label xml:lang="en">2nd care provider</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000163"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000167 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000167">
+        <rdfs:label xml:lang="en">3rd care provider</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000163"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000168 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000168">
+        <rdfs:label xml:lang="en">2nd email address</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000429"/>
+        <obo:IAO_0000115>An email address that is used secondary after the de fault first email address.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000169 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000169">
+        <rdfs:label xml:lang="en">age question</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000030"/>
+        <obo:IAO_0000117>Fred Dowd, Oliver he</obo:IAO_0000117>
+        <obo:IAO_0000115>A textual question about age</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000170 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000170">
+        <rdfs:label xml:lang="en">Whether age less than 18 years old</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000169"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OPMI_0000186"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;OPMI_0000023"/>
+                            <rdf:Description rdf:about="&obo;OPMI_0000024"/>
+                            <rdf:Description rdf:about="&obo;OPMI_0000025"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo;PATO_0000011"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A textual question that asks whether a person&apos;s age is less than 18 years old</obo:IAO_0000115>
+        <obo:IAO_0000117>Fred Dowd, Oliver He</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000172 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000172">
+        <rdfs:label xml:lang="en">KPMP eligibility assessment form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000032"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OPMI_0000171"/>
+                <owl:someValuesFrom rdf:resource="&obo;OPMI_0000174"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OPMI_0000171"/>
+                <owl:someValuesFrom rdf:resource="&obo;OPMI_0000179"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OPMI_0000171"/>
+                <owl:someValuesFrom rdf:resource="&obo;OPMI_0000181"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OPMI_0000185"/>
+                <owl:hasValue rdf:resource="&obo;OPMI_0000184"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OPMI_0000171"/>
+                <owl:someValuesFrom rdf:resource="&obo;OPMI_0000170"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An eligibility assessment form that is designed and used by the Kidney Precision Medicine Project (KPMP; http://kpmp.org) organization.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000173 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000173">
+        <rdfs:label xml:lang="en">BMI question</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000174 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000174">
+        <rdfs:label xml:lang="en">Whether BMI greater than 40 kg per m2</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000173"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo;NCIT_C138933"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000118>Whether BMI greater than 40 kg/m2</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000175 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000175">
+        <rdfs:label xml:lang="en">BMI greater than 40 kg per m2</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCIT_C138901"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000176 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000176">
+        <rdfs:label xml:lang="en">question about blood transfusion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000177 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000177">
+        <rdfs:label xml:lang="en">Whether unwilling to receive blood transfusion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000176"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000178 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000178">
+        <rdfs:label xml:lang="en">pregnancy question</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000179 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000179">
+        <rdfs:label xml:lang="en">Whether pregnant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000178"/>
+        <obo:IAO_0000117>Fred Dowd, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>Whether pregnancy occurs now</obo:IAO_0000118>
+        <obo:IAO_0000115>A pregnancy question that asks whether a person is pregnant at the moment of being questioned</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000180 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000180">
+        <rdfs:label xml:lang="en">transplant question</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000181 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000181">
+        <rdfs:label xml:lang="en">Whether transplant recipient</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000180"/>
+        <obo:IAO_0000117>Fred Dowd, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>A transplant question that asks whether a person has received some transplant (includes solid transplant and bone marrow). Example transplants are kidney transplant and heart transplant.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000182 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000182">
+        <rdfs:label xml:lang="en">Whether kidney transplant recipient</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000181"/>
+        <obo:IAO_0000115>A transplant question that asks whether a person has received a kidney transplant.</obo:IAO_0000115>
+        <obo:IAO_0000117>Fred Dowd, Oliver He</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000183 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000183">
+        <rdfs:label xml:lang="en">KPMP clinical report form</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;OPMI_0000039"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;OPMI_0000185"/>
+                        <owl:hasValue rdf:resource="&obo;OPMI_0000184"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OPMI_0000185"/>
+                <owl:hasValue rdf:resource="&obo;OPMI_0000184"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000187 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000187">
+        <rdfs:label xml:lang="en">KPMP biopsy procedure form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000042"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OPMI_0000185"/>
+                <owl:hasValue rdf:resource="&obo;OPMI_0000184"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A biopsy procedure form that is designed and used by the Kidney Precision Medicine Project (KPMP) organization.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000188 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000188">
+        <rdfs:label xml:lang="en">KPMP biosample collection form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000049"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OPMI_0000185"/>
+                <owl:hasValue rdf:resource="&obo;OPMI_0000184"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A biosample collection form that is designed and used by the Kidney Precision Medicine Project (KPMP) organization.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000189 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000189">
+        <rdfs:label xml:lang="en">KPMP adverse event entry form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000068"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OPMI_0000185"/>
+                <owl:hasValue rdf:resource="&obo;OPMI_0000184"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An adverse event entry form that is designed and used by the Kidney Precision Medicine Project (KPMP) organization.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000190 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000190">
+        <rdfs:label xml:lang="en">KPMP biopsy safety checklist form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000059"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OPMI_0000185"/>
+                <owl:hasValue rdf:resource="&obo;OPMI_0000184"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A biopsy safety checklist form that is designed and used by the Kidney Precision Medicine Project (KPMP) organization.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000191 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000191">
+        <rdfs:label xml:lang="en">KPMP clinic reception form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000050"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OPMI_0000185"/>
+                <owl:hasValue rdf:resource="&obo;OPMI_0000184"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A clinic reception form that is designed and used by the Kidney Precision Medicine Project (KPMP) organization.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000192 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000192">
+        <rdfs:label xml:lang="en">KPMP contact information form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000048"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OPMI_0000185"/>
+                <owl:hasValue rdf:resource="&obo;OPMI_0000184"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A contact information form that is designed and used by the Kidney Precision Medicine Project (KPMP) organization.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000193 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000193">
+        <rdfs:label xml:lang="en">KPMP demographic information form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000033"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OPMI_0000185"/>
+                <owl:hasValue rdf:resource="&obo;OPMI_0000184"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000194 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000194">
+        <rdfs:label xml:lang="en">KPMP health literacy questionnaire form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000058"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OPMI_0000185"/>
+                <owl:hasValue rdf:resource="&obo;OPMI_0000184"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000195 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000195">
+        <rdfs:label xml:lang="en">KPMP HIPAA release form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000047"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OPMI_0000185"/>
+                <owl:hasValue rdf:resource="&obo;OPMI_0000184"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000196 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000196">
+        <rdfs:label xml:lang="en">KPMP AKI hospitalization form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000055"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OPMI_0000185"/>
+                <owl:hasValue rdf:resource="&obo;OPMI_0000184"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000197 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000197">
+        <rdfs:label xml:lang="en">KPMP CKD hospitalization form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000056"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OPMI_0000185"/>
+                <owl:hasValue rdf:resource="&obo;OPMI_0000184"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000198 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000198">
+        <rdfs:label xml:lang="en">KPMP laboratory result form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OPMI_0000185"/>
+                <owl:hasValue rdf:resource="&obo;OPMI_0000184"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000199 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000199">
+        <rdfs:label xml:lang="en">KPMP medical history form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000031"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OPMI_0000185"/>
+                <owl:hasValue rdf:resource="&obo;OPMI_0000184"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000200 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000200">
+        <rdfs:label xml:lang="en">KPMP medical records release form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000044"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OPMI_0000185"/>
+                <owl:hasValue rdf:resource="&obo;OPMI_0000184"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000201 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000201">
+        <rdfs:label xml:lang="en">KPMP medications form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000051"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OPMI_0000185"/>
+                <owl:hasValue rdf:resource="&obo;OPMI_0000184"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000202 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000202">
+        <rdfs:label xml:lang="en">KPMP new patient form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000041"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OPMI_0000185"/>
+                <owl:hasValue rdf:resource="&obo;OPMI_0000184"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000203 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000203">
+        <rdfs:label xml:lang="en">KPMP participant reported outcome measures form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000057"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OPMI_0000185"/>
+                <owl:hasValue rdf:resource="&obo;OPMI_0000184"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000204 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000204">
+        <rdfs:label xml:lang="en">KPMP participant study status form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000052"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OPMI_0000185"/>
+                <owl:hasValue rdf:resource="&obo;OPMI_0000184"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000205 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000205">
+        <rdfs:label xml:lang="en">KPMP pathology images upload form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000062"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OPMI_0000185"/>
+                <owl:hasValue rdf:resource="&obo;OPMI_0000184"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000206 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000206">
+        <rdfs:label xml:lang="en">KPMP patient experience survey form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000067"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OPMI_0000185"/>
+                <owl:hasValue rdf:resource="&obo;OPMI_0000184"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000207 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000207">
+        <rdfs:label xml:lang="en">KPMP personal history form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000054"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OPMI_0000185"/>
+                <owl:hasValue rdf:resource="&obo;OPMI_0000184"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000208 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000208">
+        <rdfs:label xml:lang="en">KPMP physical measurement form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000034"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OPMI_0000185"/>
+                <owl:hasValue rdf:resource="&obo;OPMI_0000184"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000209 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000209">
+        <rdfs:label xml:lang="en">KPMP post biopsy form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000060"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OPMI_0000185"/>
+                <owl:hasValue rdf:resource="&obo;OPMI_0000184"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000210 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000210">
+        <rdfs:label xml:lang="en">KPMP tissue tracking form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000061"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OPMI_0000185"/>
+                <owl:hasValue rdf:resource="&obo;OPMI_0000184"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000211 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000211">
+        <rdfs:label xml:lang="en">KPMP Dx core - .jpg images QC form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000063"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OPMI_0000185"/>
+                <owl:hasValue rdf:resource="&obo;OPMI_0000184"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000212 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000212">
+        <rdfs:label xml:lang="en">KPMP Dx core - disease categories form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000064"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OPMI_0000185"/>
+                <owl:hasValue rdf:resource="&obo;OPMI_0000184"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000213 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000213">
+        <rdfs:label xml:lang="en">KPMP central path quality metrics assessment Dx core form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000065"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OPMI_0000185"/>
+                <owl:hasValue rdf:resource="&obo;OPMI_0000184"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000214 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000214">
+        <rdfs:label xml:lang="en">KPMP central path quality metrics assessment interrogation core form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000066"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OPMI_0000185"/>
+                <owl:hasValue rdf:resource="&obo;OPMI_0000184"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PATO_0000011 -->
 
     <owl:Class rdf:about="&obo;PATO_0000011">
@@ -39620,8 +40380,8 @@ last accessed June 30, 2015</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000105"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000063"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000071"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000092"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -39632,8 +40392,8 @@ last accessed June 30, 2015</obo:IAO_0000119>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000092"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000063"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000071"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0001043</oboInOwl:hasDbXref>
@@ -39697,6 +40457,12 @@ last accessed June 30, 2015</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000105"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000063"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000066"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="&obo;UBERON_0000104"/>
             </owl:Restriction>
@@ -39705,12 +40471,6 @@ last accessed June 30, 2015</obo:IAO_0000119>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000063"/>
                 <owl:someValuesFrom rdf:resource="&obo;UBERON_0000092"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000063"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000066"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A life cycle stage that starts with fertilization and ends with the fully formed embryo.</obo:IAO_0000115>
@@ -39774,14 +40534,14 @@ last accessed June 30, 2015</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000105"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000104"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000062"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000068"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000062"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000068"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000104"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BilaDO:0000003</oboInOwl:hasDbXref>
@@ -39818,14 +40578,14 @@ last accessed June 30, 2015</obo:IAO_0000119>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000105"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002224"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000106"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002224"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000106"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000105"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">An entire span of an organism&apos;s life, commencing with the zygote stage and ending in the death of the organism.</obo:IAO_0000115>
@@ -39896,14 +40656,14 @@ last accessed June 30, 2015</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000067"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002223"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000104"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000068"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000068"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002223"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000104"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">1-cell stage</oboInOwl:hasExactSynonym>
@@ -39982,14 +40742,14 @@ last accessed June 30, 2015</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000067"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000062"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000107"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000068"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000068"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000062"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000107"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">An early stage of embryonic development in animals. It is produced by cleavage of a fertilized ovum and consists of a spherical layer of around 128 cells surrounding a central fluid-filled cavity called the blastocoel. The blastula follows the morula and precedes the gastrula in the developmental sequence.</obo:IAO_0000115>
@@ -40024,14 +40784,14 @@ last accessed June 30, 2015</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000067"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000068"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000062"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000108"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000062"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000108"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000068"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A stage defined by complex and coordinated series of cellular movements that occurs at the end of cleavage during embryonic development of most animals. The details of gastrulation vary from species to species, but usually result in the formation of the three primary germ layers, ectoderm, mesoderm and endoderm.</obo:IAO_0000115>
@@ -40068,14 +40828,14 @@ last accessed June 30, 2015</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000067"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000068"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000062"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000109"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000062"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000109"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000068"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BILS:0000110</oboInOwl:hasDbXref>
@@ -40100,14 +40860,14 @@ last accessed June 30, 2015</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000067"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000068"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000062"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000110"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000062"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000110"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000068"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A stage at which the ectoderm, endoderm, and mesoderm develop into the internal organs of the organism.</obo:IAO_0000115>
@@ -40322,6 +41082,19 @@ last accessed June 30, 2015</obo:IAO_0000119>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UO_0000003 -->
+
+    <owl:Class rdf:about="&obo;UO_0000003">
+        <rdfs:label rdf:datatype="&xsd;string">time unit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000003"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A unit which is a standard measure of the dimension in which events occur in sequence.</obo:IAO_0000115>
+        <obo:IAO_0000111 rdf:datatype="&xsd;string">time unit</obo:IAO_0000111>
+        <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;uo.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.w3.org/2002/07/owl#Thing -->
 
     <owl:Class rdf:about="&owl;Thing">
@@ -40443,6 +41216,15 @@ last accessed June 30, 2015</obo:IAO_0000119>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000184 -->
+
+    <owl:NamedIndividual rdf:about="&obo;OPMI_0000184">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label xml:lang="en">KPMP organization</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0001901 -->
 
     <owl:NamedIndividual rdf:about="&obo;RO_0001901">
@@ -40484,7 +41266,62 @@ This interpretation is *not* the same as an at-all-times relation
 
     <!-- http://purl.obolibrary.org/obo/iao.owl -->
 
-    <owl:NamedIndividual rdf:about="&obo;iao.owl"/>
+    <owl:NamedIndividual rdf:about="&obo;iao.owl">
+        <rdfs:comment rdf:datatype="&xsd;string">An information artifact is, loosely, a dependent continuant or its bearer that is created as the result of one or more intentional processes. Examples: uniprot, the english language, the contents of this document or a printout of it, the temperature measurements from a weather balloon. For more information, see the project home page at https://github.com/information-artifact-ontology/IAO</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">IDs allocated to related efforts: PNO: IAO_0020000-IAO_0020999, D_ACTS: IAO_0021000-IAO_0021999</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">IDs allocated to subdomains of IAO. pno.owl: IAO_0020000-IAO_0020999, d-acts.owl: IAO_0021000-IAO_0021999</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">The Information Artifact Ontology (IAO) is licensed under the Creative Commons Attribution License (CC-BY) version 4.0. You are free to share (copy and redistribute the material in any medium or format) and adapt (remix, transform, and build upon the material) for any purpose, even commercially. for any purpose, even commercially. The licensor cannot revoke these freedoms as long as you follow the license terms. You must give appropriate credit (by using the original ontology IRI for the whole ontology and original term IRIs for individual terms), provide a link to the license, and indicate if any changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use. For more information see http://www.obofoundry.org/docs/Citation.html</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">This version of the ontology is the merge of all its imports and has added axioms inferred by an OWL reasoner</rdfs:comment>
+        <protege:defaultLanguage rdf:datatype="&xsd;string">en</protege:defaultLanguage>
+        <dc:license rdf:datatype="&xsd;string">http://creativecommons.org/licenses/by/4.0/</dc:license>
+        <dc:contributor xml:lang="en">Adam Goldstein</dc:contributor>
+        <dc:contributor xml:lang="en">Alan Ruttenberg</dc:contributor>
+        <dc:contributor xml:lang="en">Albert Goldfain</dc:contributor>
+        <dc:contributor xml:lang="en">Barry Smith</dc:contributor>
+        <dc:contributor xml:lang="en">Bjoern Peters</dc:contributor>
+        <dc:contributor xml:lang="en">Carlo Torniai</dc:contributor>
+        <dc:contributor xml:lang="en">Chris Mungall</dc:contributor>
+        <dc:contributor xml:lang="en">Chris Stoeckert</dc:contributor>
+        <dc:contributor xml:lang="en">Christian A. Boelling</dc:contributor>
+        <dc:contributor xml:lang="en">Darren Natale</dc:contributor>
+        <dc:contributor xml:lang="en">David Osumi-Sutherland</dc:contributor>
+        <dc:contributor xml:lang="en">Gwen Frishkoff</dc:contributor>
+        <dc:contributor xml:lang="en">Holger Stenzhorn</dc:contributor>
+        <dc:contributor xml:lang="en">James A. Overton</dc:contributor>
+        <dc:contributor xml:lang="en">James Malone</dc:contributor>
+        <dc:contributor xml:lang="en">Jennifer Fostel</dc:contributor>
+        <dc:contributor xml:lang="en">Jie Zheng</dc:contributor>
+        <dc:contributor xml:lang="en">Jonathan Rees</dc:contributor>
+        <dc:contributor xml:lang="en">Larisa Soldatova</dc:contributor>
+        <dc:contributor xml:lang="en">Lawrence Hunter</dc:contributor>
+        <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
+        <dc:contributor xml:lang="en">Matt Brush</dc:contributor>
+        <dc:contributor xml:lang="en">Melanie Courtot</dc:contributor>
+        <dc:contributor xml:lang="en">Michel Dumontier</dc:contributor>
+        <dc:contributor xml:lang="en">Paolo Ciccarese</dc:contributor>
+        <dc:contributor xml:lang="en">Pat Hayes</dc:contributor>
+        <dc:contributor xml:lang="en">Philippe Rocca-Serra</dc:contributor>
+        <dc:contributor xml:lang="en">Randy Dipert</dc:contributor>
+        <dc:contributor xml:lang="en">Ron Rudnicki</dc:contributor>
+        <dc:contributor xml:lang="en">Satya Sahoo</dc:contributor>
+        <dc:contributor xml:lang="en">Sivaram Arabandi</dc:contributor>
+        <dc:contributor xml:lang="en">Werner Ceusters</dc:contributor>
+        <dc:contributor xml:lang="en">William Duncan</dc:contributor>
+        <dc:contributor xml:lang="en">William Hogan</dc:contributor>
+        <dc:contributor xml:lang="en">Yongqun (Oliver) He</dc:contributor>
+        <obo:IAO_0000412 rdf:resource="&obo;bfo/2.0/bfo.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;iao/2017-03-24/externalByHand.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;iao/2017-03-24/iao-main.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;iao/2017-03-24/iao.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;iao/2017-03-24/import-OBO.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;iao/2017-03-24/obsolete.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;iao/2017-03-24/ontology-metadata.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;iao/2017-03-24/ro/annotations.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;iao/2017-03-24/ro/bfo-axioms.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;iao/2017-03-24/ro/bfo-classes-minimal.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;iao/2017-03-24/ro/core.owl"/>
+        <rdfs:seeAlso rdf:resource="https://github.com/information-artifact-ontology/IAO"/>
+    </owl:NamedIndividual>
     
 
 
@@ -40565,6 +41402,57 @@ This interpretation is *not* the same as an at-all-times relation
         <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
     </rdf:Description>
     <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;dron.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
+    </rdf:Description>
+    <rdf:Description>
         <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
     </rdf:Description>
     <rdf:Description>
@@ -40574,7 +41462,25 @@ This interpretation is *not* the same as an at-all-times relation
         <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
     </rdf:Description>
     <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
     </rdf:Description>
     <rdf:Description>
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
@@ -40587,111 +41493,12 @@ This interpretation is *not* the same as an at-all-times relation
     </rdf:Description>
     <rdf:Description>
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;dron.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;dron.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;dron.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;ogms.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;dron.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
     </rdf:Description>
     <rdf:Description>
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
     </rdf:Description>
     <rdf:Description>
         <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;dron.owl"/>
     </rdf:Description>
     <rdf:Description>
         <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
@@ -40715,46 +41522,31 @@ This interpretation is *not* the same as an at-all-times relation
         <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
     </rdf:Description>
     <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
+    </rdf:Description>
+    <rdf:Description>
         <obo:IAO_0000412 rdf:resource="&obo;dron.owl"/>
     </rdf:Description>
     <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;dron.owl"/>
     </rdf:Description>
     <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;dron.owl"/>
     </rdf:Description>
     <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;dron.owl"/>
     </rdf:Description>
     <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;dron.owl"/>
     </rdf:Description>
     <rdf:Description>
         <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
@@ -40784,31 +41576,16 @@ This interpretation is *not* the same as an at-all-times relation
         <obo:IAO_0000412 rdf:resource="&obo;oae.owl"/>
     </rdf:Description>
     <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
     </rdf:Description>
     <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
     </rdf:Description>
     <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
     </rdf:Description>
     <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="&obo;envo.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
     </rdf:Description>
     <rdf:Description>
         <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
@@ -40823,7 +41600,73 @@ This interpretation is *not* the same as an at-all-times relation
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
     </rdf:Description>
     <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
+    </rdf:Description>
+    <rdf:Description>
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="&obo;ogms.owl"/>
     </rdf:Description>
     <rdf:Description>
         <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
