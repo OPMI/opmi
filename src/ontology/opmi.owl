@@ -22,7 +22,7 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="&obo;opmi.owl">
-        <dc:date>2-12-2019</dc:date>
+        <dc:date>2-13-2019</dc:date>
         <dc:contributor xml:lang="en">Becky Steck</dc:contributor>
         <dc:contributor xml:lang="en">Christopher Park</dc:contributor>
         <dc:creator xml:lang="en">Fred Dowd</dc:creator>
@@ -35,7 +35,7 @@
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:contributor xml:lang="en">Sean Mooney</dc:contributor>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.43</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.44</owl:versionInfo>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
         <owl:imports rdf:resource="&obo;opmi/CHEBI_imports.owl"/>
         <owl:imports rdf:resource="&obo;opmi/CMO_import.owl"/>
@@ -520,7 +520,7 @@
 
     <owl:Class rdf:about="&obo;OPMI_0000031">
         <rdfs:label xml:lang="en">medical history form</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000267"/>
     </owl:Class>
     
 
@@ -529,7 +529,7 @@
 
     <owl:Class rdf:about="&obo;OPMI_0000032">
         <rdfs:label xml:lang="en">eligibility assessment form</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000266"/>
         <obo:IAO_0000115>A form with questions that is used to assess a person&apos;s eligibility to participate in a specific study (e.g., kidney precision medicine project).</obo:IAO_0000115>
         <obo:IAO_0000117>Fred Down, Oliver He</obo:IAO_0000117>
     </owl:Class>
@@ -540,7 +540,7 @@
 
     <owl:Class rdf:about="&obo;OPMI_0000033">
         <rdfs:label xml:lang="en">demographic information form</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000267"/>
         <obo:IAO_0000119>https://www.investopedia.com/terms/d/demographics.asp</obo:IAO_0000119>
         <obo:IAO_0000117>Fred Dowd, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000115>A form with questions that includes statistical data related to particular groups within a population where a person belongs to</obo:IAO_0000115>
@@ -553,7 +553,7 @@
 
     <owl:Class rdf:about="&obo;OPMI_0000034">
         <rdfs:label xml:lang="en">physical measurement form</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000267"/>
     </owl:Class>
     
 
@@ -629,7 +629,7 @@
 
     <owl:Class rdf:about="&obo;OPMI_0000041">
         <rdfs:label xml:lang="en">new patient form</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000266"/>
         <obo:IAO_0000117>Fred Down, Oliver He</obo:IAO_0000117>
     </owl:Class>
     
@@ -639,7 +639,7 @@
 
     <owl:Class rdf:about="&obo;OPMI_0000042">
         <rdfs:label xml:lang="en">biopsy procedure form</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000263"/>
         <obo:IAO_0000117>Fred Down, Oliver He</obo:IAO_0000117>
     </owl:Class>
     
@@ -657,8 +657,8 @@
     <!-- http://purl.obolibrary.org/obo/OPMI_0000044 -->
 
     <owl:Class rdf:about="&obo;OPMI_0000044">
-        <rdfs:label xml:lang="en">medical records release form</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+        <rdfs:label xml:lang="en">consent form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000266"/>
         <obo:IAO_0000117>Fred Down, Oliver He</obo:IAO_0000117>
     </owl:Class>
     
@@ -685,20 +685,11 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OPMI_0000047 -->
-
-    <owl:Class rdf:about="&obo;OPMI_0000047">
-        <rdfs:label xml:lang="en">HIPAA release form</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OPMI_0000048 -->
 
     <owl:Class rdf:about="&obo;OPMI_0000048">
         <rdfs:label xml:lang="en">contact information form</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000266"/>
         <obo:IAO_0000117>Edison Ong, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000115>A form that includes the information of contact for a person</obo:IAO_0000115>
     </owl:Class>
@@ -727,7 +718,7 @@
 
     <owl:Class rdf:about="&obo;OPMI_0000051">
         <rdfs:label xml:lang="en">medications form</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000266"/>
     </owl:Class>
     
 
@@ -736,7 +727,7 @@
 
     <owl:Class rdf:about="&obo;OPMI_0000052">
         <rdfs:label xml:lang="en">participant study status form</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000266"/>
     </owl:Class>
     
 
@@ -754,7 +745,7 @@
 
     <owl:Class rdf:about="&obo;OPMI_0000054">
         <rdfs:label xml:lang="en">personal history form</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000267"/>
     </owl:Class>
     
 
@@ -781,7 +772,9 @@
 
     <owl:Class rdf:about="&obo;OPMI_0000057">
         <rdfs:label xml:lang="en">participant reported outcome measures form</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000267"/>
+        <obo:IAO_0000117>Fred Dowd, Oliver He</obo:IAO_0000117>
+        <rdfs:comment>This should be a paper form</rdfs:comment>
     </owl:Class>
     
 
@@ -790,7 +783,7 @@
 
     <owl:Class rdf:about="&obo;OPMI_0000058">
         <rdfs:label xml:lang="en">health literacy questionnaire form</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000267"/>
     </owl:Class>
     
 
@@ -799,7 +792,7 @@
 
     <owl:Class rdf:about="&obo;OPMI_0000059">
         <rdfs:label xml:lang="en">biopsy safety checklist form</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000263"/>
     </owl:Class>
     
 
@@ -808,7 +801,7 @@
 
     <owl:Class rdf:about="&obo;OPMI_0000060">
         <rdfs:label xml:lang="en">post biopsy form</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000263"/>
     </owl:Class>
     
 
@@ -817,7 +810,7 @@
 
     <owl:Class rdf:about="&obo;OPMI_0000061">
         <rdfs:label xml:lang="en">tissue tracking form</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000263"/>
     </owl:Class>
     
 
@@ -826,7 +819,7 @@
 
     <owl:Class rdf:about="&obo;OPMI_0000062">
         <rdfs:label xml:lang="en">pathology images upload form</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000265"/>
     </owl:Class>
     
 
@@ -834,8 +827,9 @@
     <!-- http://purl.obolibrary.org/obo/OPMI_0000063 -->
 
     <owl:Class rdf:about="&obo;OPMI_0000063">
-        <rdfs:label xml:lang="en">Dx core - .jpg images QC form</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+        <rdfs:label xml:lang="en">diagnostic core .jpg images QC form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000265"/>
+        <obo:IAO_0000118>Dx core - .jpg images QC form</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -843,8 +837,9 @@
     <!-- http://purl.obolibrary.org/obo/OPMI_0000064 -->
 
     <owl:Class rdf:about="&obo;OPMI_0000064">
-        <rdfs:label xml:lang="en">Dx core - disease categories form</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+        <rdfs:label xml:lang="en">diagnostic core - disease categories form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000265"/>
+        <obo:IAO_0000118>Dx core - disease categories form</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -853,7 +848,7 @@
 
     <owl:Class rdf:about="&obo;OPMI_0000065">
         <rdfs:label xml:lang="en">central path quality metrics assessment Dx core form</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000265"/>
     </owl:Class>
     
 
@@ -862,7 +857,7 @@
 
     <owl:Class rdf:about="&obo;OPMI_0000066">
         <rdfs:label xml:lang="en">central path quality metrics assessment interrogation core form</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000265"/>
     </owl:Class>
     
 
@@ -870,8 +865,8 @@
     <!-- http://purl.obolibrary.org/obo/OPMI_0000067 -->
 
     <owl:Class rdf:about="&obo;OPMI_0000067">
-        <rdfs:label xml:lang="en">patient experience survey form</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+        <rdfs:label xml:lang="en">post-biopsy patient experience survey form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000263"/>
     </owl:Class>
     
 
@@ -880,7 +875,7 @@
 
     <owl:Class rdf:about="&obo;OPMI_0000068">
         <rdfs:label xml:lang="en">adverse event entry form</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000266"/>
     </owl:Class>
     
 
@@ -1467,9 +1462,9 @@
     <owl:Class rdf:about="&obo;OPMI_0000120">
         <rdfs:label xml:lang="en">ZIP code</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OPMI_0000119"/>
-        <obo:IAO_0000115>A ZIP Code is a postal code used by the United States Postal Service (USPS)。 The term ZIP is an acronym for Zone Improvement Plan。</obo:IAO_0000115>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/ZIP_Code</obo:IAO_0000119>
-        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>A ZIP Code is a postal code used by the United States Postal Service (USPS). The term ZIP is an acronym for Zone Improvement Plan.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Fred Dowd</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -1984,12 +1979,6 @@
         <rdfs:subClassOf rdf:resource="&obo;OPMI_0000169"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="&obo;PATO_0000011"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OPMI_0000186"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -2000,6 +1989,12 @@
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo;PATO_0000011"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A textual question that asks whether a person&apos;s age is less than 18 years old</obo:IAO_0000115>
@@ -2021,6 +2016,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OPMI_0000185"/>
+                <owl:hasValue rdf:resource="&obo;OPMI_0000184"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OPMI_0000171"/>
                 <owl:someValuesFrom rdf:resource="&obo;OPMI_0000170"/>
             </owl:Restriction>
@@ -2035,12 +2036,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OPMI_0000171"/>
                 <owl:someValuesFrom rdf:resource="&obo;OPMI_0000174"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OPMI_0000185"/>
-                <owl:hasValue rdf:resource="&obo;OPMI_0000184"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>An eligibility assessment form that is designed and used by the Kidney Precision Medicine Project (KPMP; http://kpmp.org) organization.</obo:IAO_0000115>
@@ -2304,21 +2299,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OPMI_0000195 -->
-
-    <owl:Class rdf:about="&obo;OPMI_0000195">
-        <rdfs:label xml:lang="en">KPMP HIPAA release form</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000047"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OPMI_0000185"/>
-                <owl:hasValue rdf:resource="&obo;OPMI_0000184"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OPMI_0000196 -->
 
     <owl:Class rdf:about="&obo;OPMI_0000196">
@@ -2382,7 +2362,7 @@
     <!-- http://purl.obolibrary.org/obo/OPMI_0000200 -->
 
     <owl:Class rdf:about="&obo;OPMI_0000200">
-        <rdfs:label xml:lang="en">KPMP medical records release form</rdfs:label>
+        <rdfs:label xml:lang="en">KPMP consent form</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OPMI_0000044"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2390,6 +2370,8 @@
                 <owl:hasValue rdf:resource="&obo;OPMI_0000184"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>This form is the end of a successful screening process</rdfs:comment>
+        <obo:IAO_0000117>Fred Dowd, Oliver He</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -2937,7 +2919,13 @@
 
     <owl:Class rdf:about="&obo;OPMI_0000246">
         <rdfs:label xml:lang="en">What Zip code</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000242"/>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000260"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo;OPMI_0000120"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -3050,6 +3038,94 @@
     <owl:Class rdf:about="&obo;OPMI_0000258">
         <rdfs:label xml:lang="en">Whether biopsy</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OPMI_0000252"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000259 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000259">
+        <rdfs:label xml:lang="en">CRF filled up by patient</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000260 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000260">
+        <rdfs:label xml:lang="en">What postal code</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000242"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo;OPMI_0000119"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000261 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000261">
+        <rdfs:label xml:lang="en">CRF filled up by research coordinator</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000262 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000262">
+        <rdfs:label xml:lang="en">CRF filled up by biopsy operator</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000263 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000263">
+        <rdfs:label xml:lang="en">biopsy-related CRF</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000264 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000264">
+        <rdfs:label xml:lang="en">post biopsy hospitlization form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000053"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000265 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000265">
+        <rdfs:label xml:lang="en">pathology CRF</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+        <obo:IAO_0000115>A clinical report form that is related to the processing and analysis of tissue of diseased patient.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000266 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000266">
+        <rdfs:label xml:lang="en">screening and patient tracking CRF</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000267 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000267">
+        <rdfs:label xml:lang="en">enrollment CRF</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
     </owl:Class>
     
 
