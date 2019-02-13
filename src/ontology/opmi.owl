@@ -22,7 +22,7 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="&obo;opmi.owl">
-        <dc:date>2-7-2019</dc:date>
+        <dc:date>2-12-2019</dc:date>
         <dc:contributor xml:lang="en">Becky Steck</dc:contributor>
         <dc:contributor xml:lang="en">Christopher Park</dc:contributor>
         <dc:creator xml:lang="en">Fred Dowd</dc:creator>
@@ -35,7 +35,7 @@
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:contributor xml:lang="en">Sean Mooney</dc:contributor>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.42</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.43</owl:versionInfo>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
         <owl:imports rdf:resource="&obo;opmi/CHEBI_imports.owl"/>
         <owl:imports rdf:resource="&obo;opmi/CMO_import.owl"/>
@@ -143,6 +143,29 @@
         <obo:IAO_0000115>An object property that indicates a relation between a question and an answer</obo:IAO_0000115>
         <obo:IAO_0000118>has answer to question</obo:IAO_0000118>
     </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000216 -->
+
+    <owl:DatatypeProperty rdf:about="&obo;OPMI_0000216">
+        <rdfs:label xml:lang="en">has digit number</rdfs:label>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>A data property that represents a relation between a data type and a number of integer digits that the data type has.</obo:IAO_0000115>
+        <obo:IAO_0000112>The data type &quot;last 4 digits of social security number&quot; has digit number of 4.</obo:IAO_0000112>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -1897,8 +1920,9 @@
     <!-- http://purl.obolibrary.org/obo/OPMI_0000164 -->
 
     <owl:Class rdf:about="&obo;OPMI_0000164">
-        <rdfs:label xml:lang="en">1st care provider</rdfs:label>
+        <rdfs:label xml:lang="en">primary care provider</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OPMI_0000163"/>
+        <obo:IAO_0000118>1st care provider</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1915,8 +1939,9 @@
     <!-- http://purl.obolibrary.org/obo/OPMI_0000166 -->
 
     <owl:Class rdf:about="&obo;OPMI_0000166">
-        <rdfs:label xml:lang="en">2nd care provider</rdfs:label>
+        <rdfs:label xml:lang="en">secondary care provider</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OPMI_0000163"/>
+        <obo:IAO_0000118>2nd care provider</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1924,8 +1949,9 @@
     <!-- http://purl.obolibrary.org/obo/OPMI_0000167 -->
 
     <owl:Class rdf:about="&obo;OPMI_0000167">
-        <rdfs:label xml:lang="en">3rd care provider</rdfs:label>
+        <rdfs:label xml:lang="en">tertiary care provider</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OPMI_0000163"/>
+        <obo:IAO_0000118>3rd care provider</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1958,6 +1984,12 @@
         <rdfs:subClassOf rdf:resource="&obo;OPMI_0000169"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo;PATO_0000011"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OPMI_0000186"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -1968,12 +2000,6 @@
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="&obo;PATO_0000011"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A textual question that asks whether a person&apos;s age is less than 18 years old</obo:IAO_0000115>
@@ -1990,13 +2016,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OPMI_0000171"/>
-                <owl:someValuesFrom rdf:resource="&obo;OPMI_0000174"/>
+                <owl:someValuesFrom rdf:resource="&obo;OPMI_0000179"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OPMI_0000171"/>
-                <owl:someValuesFrom rdf:resource="&obo;OPMI_0000179"/>
+                <owl:someValuesFrom rdf:resource="&obo;OPMI_0000170"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2007,14 +2033,14 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OPMI_0000185"/>
-                <owl:hasValue rdf:resource="&obo;OPMI_0000184"/>
+                <owl:onProperty rdf:resource="&obo;OPMI_0000171"/>
+                <owl:someValuesFrom rdf:resource="&obo;OPMI_0000174"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OPMI_0000171"/>
-                <owl:someValuesFrom rdf:resource="&obo;OPMI_0000170"/>
+                <owl:onProperty rdf:resource="&obo;OPMI_0000185"/>
+                <owl:hasValue rdf:resource="&obo;OPMI_0000184"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>An eligibility assessment form that is designed and used by the Kidney Precision Medicine Project (KPMP; http://kpmp.org) organization.</obo:IAO_0000115>
@@ -2578,6 +2604,456 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000215 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000215">
+        <rdfs:label xml:lang="en">last four digits of social security number</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;OMRSE_00000000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000217 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000217">
+        <rdfs:label xml:lang="en">self</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_9606"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Self</obo:IAO_0000119>
+        <obo:IAO_0000115>The self is an individual person as the object of his or her own reflective consciousness.</obo:IAO_0000115>
+        <obo:IAO_0000112>A question in a survey form may ask whether a provided email address belongs to self</obo:IAO_0000112>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>human self</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000218 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000218">
+        <rdfs:label xml:lang="en">email question</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000429"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A textual question about age</obo:IAO_0000115>
+        <obo:IAO_0000117>Fred Dowd, Oliver he</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000219 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000219">
+        <rdfs:label xml:lang="en">What email address</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000218"/>
+        <obo:IAO_0000115>An email question that asks the exact email address</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000220 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000220">
+        <rdfs:label xml:lang="en">Whether self owns email address</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000221"/>
+        <obo:IAO_0000115>An email question that asks whether the email address provided belongs to the person being surveyed.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000221 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000221">
+        <rdfs:label xml:lang="en">Who owns email address</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000218"/>
+        <obo:IAO_0000115>An email question that asks whether the email address provided belongs to the person being surveyed.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000222 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000222">
+        <rdfs:label xml:lang="en">What is your birthday</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo;OPMI_0000092"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A textual question that asks the birthday of the person being surveyed</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000223 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000223">
+        <rdfs:label xml:lang="en">contact name</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000300"/>
+        <obo:IAO_0000115>The textual name of the contact person or organization</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000224 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000224">
+        <rdfs:label xml:lang="en">emergency contact name</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000223"/>
+        <obo:IAO_0000115>The textual name of the contact person or organization that will be contacted during emergency</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000225 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000225">
+        <rdfs:label xml:lang="en">Who owns the 2nd email address</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000221"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000226 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000226">
+        <rdfs:label xml:lang="en">Who owns the 3rd email address</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000221"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000227 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000227">
+        <rdfs:label xml:lang="en">physician information</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000228 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000228">
+        <rdfs:label xml:lang="en">physician specialty information</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000227"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000229 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000229">
+        <rdfs:label xml:lang="en">health care</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Health_care</obo:IAO_0000119>
+        <obo:IAO_0000115>Health care or healthcare is the maintenance or improvement of health via the prevention, diagnosis, and treatment of disease, illness, injury, and other physical and mental impairments in human beings.</obo:IAO_0000115>
+        <obo:IAO_0000118>healthcare</obo:IAO_0000118>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000230 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000230">
+        <rdfs:label xml:lang="en">patient care</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000229"/>
+        <obo:IAO_0000115>A health care rendered for the benefit of a patient.</obo:IAO_0000115>
+        <obo:OPMI_0000127>C15239</obo:OPMI_0000127>
+        <obo:OPMI_0000127>C0017313</obo:OPMI_0000127>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000231 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000231">
+        <rdfs:label xml:lang="en">primary care</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000230"/>
+        <obo:OPMI_0000128>C0033137</obo:OPMI_0000128>
+        <obo:OPMI_0000127>C94340</obo:OPMI_0000127>
+        <obo:IAO_0000115>Primary care refers to the work of health professionals who act as a first point of consultation for all patients within the health care system</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Health_care#Primary_care</obo:IAO_0000119>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000232 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000232">
+        <rdfs:label xml:lang="en">secondary care</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000230"/>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>Secondary care includes acute care: necessary treatment for a short period of time for a brief but serious illness, injury, or other health condition. This care is often found in a hospital emergency department. Secondary care also includes skilled attendance during childbirth, intensive care, and medical imaging services.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Health_care#Secondary_care</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000233 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000233">
+        <rdfs:label xml:lang="en">tertiary care</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000230"/>
+        <obo:IAO_0000115>Tertiary care is specialized consultative health care, usually for inpatients and on referral from a primary or secondary health professional, in a facility that has personnel and facilities for advanced medical investigation and treatment, such as a tertiary referral hospital.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Health_care#Tertiary_care</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000234 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000234">
+        <rdfs:label xml:lang="en">quaternary care</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000230"/>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>The term quaternary care is sometimes used as an extension of tertiary care in reference to advanced levels of medicine which are highly specialized and not widely accessed.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Health_care#Quaternary_care</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000235 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000235">
+        <rdfs:label xml:lang="en">hospital care</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000230"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Health_care#Secondary_care</obo:IAO_0000119>
+        <obo:IAO_0000115>A patient care that is provided in hospital.</obo:IAO_0000115>
+        <rdfs:comment>It is sometimes the synonym of secondary care. However, many secondary care providers, such as psychiatrists, clinical psychologists, occupational therapists, most dental specialties or physiotherapists do not necessarily work in hospitals. Some primary care services are delivered within hospitals. Depending on the organization and policies of the national health system, patients may be required to see a primary care provider for a referral before they can access secondary care.</rdfs:comment>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000236 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000236">
+        <rdfs:label xml:lang="en">nephrology care</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000232"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000237 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000237">
+        <rdfs:label xml:lang="en">endocrinology care</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000232"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000238 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000238">
+        <rdfs:label xml:lang="en">physician question</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000239 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000239">
+        <rdfs:label xml:lang="en">What physician&apos;s specialty</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000238"/>
+        <obo:IAO_0000118>What is the physician&apos;s specialty?</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000240 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000240">
+        <rdfs:label xml:lang="en">hospital question</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000241 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000241">
+        <rdfs:label xml:lang="en">what name of hospital</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000240"/>
+        <obo:IAO_0000118>What is name of clinic or hospital</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000242 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000242">
+        <rdfs:label xml:lang="en">address question</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000030"/>
+        <obo:IAO_0000118>postal address question</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000243 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000243">
+        <rdfs:label xml:lang="en">What street name</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000242"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000244 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000244">
+        <rdfs:label xml:lang="en">What city</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000242"/>
+        <obo:IAO_0000118>What is the city name?</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000245 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000245">
+        <rdfs:label xml:lang="en">What state</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000242"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000246 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000246">
+        <rdfs:label xml:lang="en">What Zip code</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000242"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000247 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000247">
+        <rdfs:label xml:lang="en">What street number and name</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000242"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000248 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000248">
+        <rdfs:label xml:lang="en">What apartment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000242"/>
+        <obo:IAO_0000118>What apartment number</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000249 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000249">
+        <rdfs:label xml:lang="en">What country</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000242"/>
+        <obo:IAO_0000118>Which country?</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000250 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000250">
+        <rdfs:label xml:lang="en">Whether have physician for usual medical care</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000238"/>
+        <obo:IAO_0000118>Do you have physician who provides your usual medical care?</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000251 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000251">
+        <rdfs:label xml:lang="en">nephrology care provider</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000166"/>
+        <obo:IAO_0000118>nephrologist care provider</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000252 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000252">
+        <rdfs:label xml:lang="en">patient condition question</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000253 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000253">
+        <rdfs:label xml:lang="en">Whether diabetic kidney disease (DKD)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000252"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000254 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000254">
+        <rdfs:label xml:lang="en">Whether hypertensive CKD (H-CKD)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000252"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000255 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000255">
+        <rdfs:label xml:lang="en">Whether diabetic nephropathy resisters percutaneous biopsy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000258"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000256 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000256">
+        <rdfs:label xml:lang="en">Whether AKI percutaneous biopsy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000258"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000257 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000257">
+        <rdfs:label xml:lang="en">Whether AKI open biopsy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000258"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000258 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000258">
+        <rdfs:label xml:lang="en">Whether biopsy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000252"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PCO_0000000 -->
 
     <rdf:Description rdf:about="&obo;PCO_0000000">
@@ -2616,6 +3092,23 @@
 
     <rdf:Description rdf:about="&obo;NCIT_C94488">
         <rdfs:label>standing height</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;OPMI_0000184"/>
+        </owl:distinctMembers>
     </rdf:Description>
 </rdf:RDF>
 
