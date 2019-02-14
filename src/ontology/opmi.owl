@@ -35,7 +35,7 @@
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:contributor xml:lang="en">Sean Mooney</dc:contributor>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.44</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.45</owl:versionInfo>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
         <owl:imports rdf:resource="&obo;opmi/CHEBI_imports.owl"/>
         <owl:imports rdf:resource="&obo;opmi/CMO_import.owl"/>
@@ -681,6 +681,17 @@
         <rdfs:subClassOf rdf:resource="&obo;OPMI_0000045"/>
         <obo:IAO_0000117>Fred Dowd, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000112>Medical records release form is usually required to be a paper form that should be signed by the patient who agrees to have his/her medical records released.</obo:IAO_0000112>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000047 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000047">
+        <rdfs:label xml:lang="en">sanitation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
+        <obo:IAO_0000115>A public health process that involves clean drinking water and adequate treatment and disposal of human and animal excreta and sewage.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Sanitation</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -2011,18 +2022,6 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OPMI_0000171"/>
-                <owl:someValuesFrom rdf:resource="&obo;OPMI_0000179"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OPMI_0000185"/>
-                <owl:hasValue rdf:resource="&obo;OPMI_0000184"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OPMI_0000171"/>
                 <owl:someValuesFrom rdf:resource="&obo;OPMI_0000170"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2036,6 +2035,18 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OPMI_0000171"/>
                 <owl:someValuesFrom rdf:resource="&obo;OPMI_0000174"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OPMI_0000185"/>
+                <owl:hasValue rdf:resource="&obo;OPMI_0000184"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OPMI_0000171"/>
+                <owl:someValuesFrom rdf:resource="&obo;OPMI_0000179"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>An eligibility assessment form that is designed and used by the Kidney Precision Medicine Project (KPMP; http://kpmp.org) organization.</obo:IAO_0000115>
