@@ -33,7 +33,7 @@
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.47</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.48</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -39976,6 +39976,13 @@ last accessed June 30, 2015</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000061">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000263"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000288"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A clinical report form that covers the information about the tracking of biopsied tissue</obo:IAO_0000115>
         <rdfs:label xml:lang="en">tissue tracking form</rdfs:label>
     </owl:Class>
     
@@ -54841,8 +54848,8 @@ This interpretation is *not* the same as an at-all-times relation
         <rdfs:comment>DrOn contains content developed by the National Library of Medicine in RxNorm.  In creating DrOn, we have used RxNorm content only with SAB = RXNORM.</rdfs:comment>
         <dc:license xml:lang="en">https://creativecommons.org/licenses/by/3.0/</dc:license>
         <dc:creator>Eric Joseph</dc:creator>
-        <dc:creator>Mathias Brochhausen</dc:creator>
         <rdfs:comment xml:lang="en">When citing DrOn, use the permanent URL of the ontology: http://purl.obolibrary.org/obo/dron.owl.  When referencing a specific component of the DrOn, such as a class, object property, annotation property, or individual, use the Uniform Resource Identifier (URI) of that component.</rdfs:comment>
+        <dc:creator>Mathias Brochhausen</dc:creator>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/envo.owl">
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/envo/imports/chebi_import.owl&gt;))) [Axioms: 2434 Logical Axioms: 1036]</rdfs:comment>
@@ -54856,13 +54863,13 @@ This interpretation is *not* the same as an at-all-times relation
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/envo/modules/entity_attribute.owl&gt;))) [Axioms: 79 Logical Axioms: 12]</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/envo/imports/clo_import.owl&gt;))) [Axioms: 34 Logical Axioms: 8]</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/envo/imports/fao_import.owl&gt;))) [Axioms: 4 Logical Axioms: 0]</rdfs:comment>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/envo/imports/flopo_import.owl&gt;))) [Axioms: 1536 Logical Axioms: 352]</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/envo/imports/ncbitaxon_import.owl&gt;))) [Axioms: 542 Logical Axioms: 123]</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/envo/imports/flopo_import.owl&gt;))) [Axioms: 1536 Logical Axioms: 352]</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/envo/imports/bfo_import.owl&gt;))) [Axioms: 92 Logical Axioms: 35]</rdfs:comment>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/envo/imports/po_import.owl&gt;))) [Axioms: 151 Logical Axioms: 18]</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/envo/imports/uberon_import.owl&gt;))) [Axioms: 24081 Logical Axioms: 4670]</rdfs:comment>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/envo/imports/omp_import.owl&gt;))) [Axioms: 47 Logical Axioms: 11]</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/envo/imports/po_import.owl&gt;))) [Axioms: 151 Logical Axioms: 18]</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/envo/modules/entity_quality_location.owl&gt;))) [Axioms: 45 Logical Axioms: 6]</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/envo/imports/omp_import.owl&gt;))) [Axioms: 47 Logical Axioms: 11]</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENVO is an ontology which represents knowledge about environments,environmental processes, ecosystems, habitats, and related entities. It interoperates with other ontologies in the OBO Foundry and Library. 
 
 New terms or revisions can be requested at https://github.com/EnvironmentOntology/envo/issues/ 
@@ -54882,8 +54889,8 @@ Please see www.environmentontology.org for more information and citations.</rdfs
         <owl:versionInfo xml:lang="en">Vision Release; 1.2.17</owl:versionInfo>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <obo:IAO_0000116 xml:lang="en">Product version</obo:IAO_0000116>
-        <dc:contributor>Darrell R. Abernethy</dc:contributor>
         <dc:creator>Sirarat Sarntivijai</dc:creator>
+        <dc:contributor>Darrell R. Abernethy</dc:contributor>
         <dc:creator>Ling Wan</dc:creator>
         <dc:creator>Rebecca Racz</dc:creator>
         <dc:creator xml:lang="en">Shelley Zhang</dc:creator>
@@ -54937,11 +54944,11 @@ The discussion group is http://groups.google.com/group/ogms-discuss
 If you are interested in participating in the development of OGMS, please send email to albertgoldfain@gmail.com. Be sure to include a google-account username with your request (this will be the username associated with a gmail address).</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/omrse.owl">
-        <rdfs:comment xml:lang="en">This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government&apos;s &quot;meaningful use&quot; criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt</rdfs:comment>
         <dc:creator xml:lang="en">William Hogan</dc:creator>
+        <rdfs:comment xml:lang="en">This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government&apos;s &quot;meaningful use&quot; criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt</rdfs:comment>
         <owl:versionInfo>2017-06-08</owl:versionInfo>
-        <dc:creator xml:lang="en">Mathias Brochhausen</dc:creator>
         <dc:creator>Amanda Hicks</dc:creator>
+        <dc:creator xml:lang="en">Mathias Brochhausen</dc:creator>
         <dc:creator xml:lang="en">Swetha Garimalla</dc:creator>
         <dc:contributor>Daniel Welch</dc:contributor>
         <rdfs:label xml:lang="en">The Ontology of Medically Related Social Entities</rdfs:label>
