@@ -23,7 +23,10 @@ http://purl.obolibrary.org/obo/OBI_0000066 #investigation
 http://purl.obolibrary.org/obo/OBI_0600004 #human subject enrollment
 http://purl.obolibrary.org/obo/OBI_0000520 #clinical chemistry assay
 http://purl.obolibrary.org/obo/OBI_0000032 #clinical research coordinator role
+http://purl.obolibrary.org/obo/OBI_0001898 #comment on investigation
 
+http://purl.obolibrary.org/obo/OBI_0000293 #has_specified_input
+http://purl.obolibrary.org/obo/OBI_0000299 #has_specified_output
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/BFO_0000001 #entity

@@ -1,0 +1,23 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/opmi/MONDO_imports.owl
+
+[Source ontology]
+MONDO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/MONDO_0005240 #kidney disease
+http://purl.obolibrary.org/obo/MONDO_0005300 #CKD
+http://purl.obolibrary.org/obo/MONDO_0002492 #AKI
+http://purl.obolibrary.org/obo/MONDO_0005016 #diabetic nephropathy
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/MONDO_0005240 #kidney disease
+subClassOf http://purl.obolibrary.org/obo/OGMS_0000031 #disease
+
+[Source term retrieval setting]
+includeComputedIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties
+
+[Source annotation URIs to be excluded]

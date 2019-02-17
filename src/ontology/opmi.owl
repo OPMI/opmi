@@ -9,20 +9,22 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:chebi="http://purl.obolibrary.org/obo/chebi/"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:oboInOWL="http://www.geneontology.org/formats/oboInOWL#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/opmi.owl">
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opmi/CHEBI_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opmi/CMO_import.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opmi/DOID_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opmi/DRON_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opmi/ENVO_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opmi/HP_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opmi/IAO_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opmi/ICO_imports.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opmi/MONDO_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opmi/NCBITaxon_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opmi/NCIT_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opmi/OAE_imports.owl"/>
@@ -39,12 +41,12 @@
         <dc:creator xml:lang="en">Jennifer Schaub</dc:creator>
         <dc:creator xml:lang="en">Jie Zheng</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
-        <dc:date>2-16-2019</dc:date>
+        <dc:date>2-17-2019</dc:date>
         <dc:description xml:lang="en">OPMI is a biomedical ontology in the area of precision medicine and its related investigations. It is community-driven and developed by following the OBO Foundry ontology development principles.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.46</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.47</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -600,7 +602,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000039">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
         <obo:IAO_0000115>A case report form (or CRF) is a paper or electronic questionnaire specifically used in clinical trial research</obo:IAO_0000115>
-        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He, Edison Ong, Fred Dowd, Hong Yu</obo:IAO_0000117>
         <obo:IAO_0000118>CRF</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Case_report_form</obo:IAO_0000119>
         <rdfs:label xml:lang="en">clinical report form</rdfs:label>
@@ -1930,6 +1932,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000165">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000577"/>
+        <obo:IAO_0000115>a centrally registered identifier symobol that refers to a specific study</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Edison Ong</obo:IAO_0000117>
         <rdfs:label xml:lang="en">study ID</rdfs:label>
     </owl:Class>
     
@@ -2037,11 +2041,42 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000171"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000253"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000171"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000254"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000171"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000255"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000171"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000256"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000171"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000257"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000185"/>
                 <owl:hasValue rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000184"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>An eligibility assessment form that is designed and used by the Kidney Precision Medicine Project (KPMP; http://kpmp.org) organization.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Edison Ong, Fred Dowd</obo:IAO_0000117>
         <rdfs:label xml:lang="en">KPMP eligibility assessment form</rdfs:label>
     </owl:Class>
     
@@ -2180,7 +2215,7 @@
     <!-- http://purl.obolibrary.org/obo/OPMI_0000187 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000187">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000042"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000043"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000185"/>
@@ -2188,6 +2223,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A biopsy procedure form that is designed and used by the Kidney Precision Medicine Project (KPMP) organization.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Fred Dowd, Edison Ong</obo:IAO_0000117>
         <rdfs:label xml:lang="en">KPMP biopsy procedure form</rdfs:label>
     </owl:Class>
     
@@ -2231,11 +2267,42 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000059"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000171"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000253"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000171"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000254"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000171"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000255"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000171"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000256"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000171"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000257"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000185"/>
                 <owl:hasValue rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000184"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A biopsy safety checklist form that is designed and used by the Kidney Precision Medicine Project (KPMP) organization.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Fred Dowd, Edison Ong</obo:IAO_0000117>
         <rdfs:label xml:lang="en">KPMP biopsy safety checklist form</rdfs:label>
     </owl:Class>
     
@@ -2252,6 +2319,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A clinic reception form that is designed and used by the Kidney Precision Medicine Project (KPMP) organization.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Edison Ong, Fred Dowd</obo:IAO_0000117>
         <rdfs:label xml:lang="en">KPMP clinic reception form</rdfs:label>
     </owl:Class>
     
@@ -3014,6 +3082,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000252">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000282"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">patient condition question</rdfs:label>
     </owl:Class>
     
@@ -3022,7 +3096,7 @@
     <!-- http://purl.obolibrary.org/obo/OPMI_0000253 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000253">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000252"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000284"/>
         <rdfs:label xml:lang="en">Whether diabetic kidney disease (DKD)</rdfs:label>
     </owl:Class>
     
@@ -3031,7 +3105,7 @@
     <!-- http://purl.obolibrary.org/obo/OPMI_0000254 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000254">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000252"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000284"/>
         <rdfs:label xml:lang="en">Whether hypertensive CKD (H-CKD)</rdfs:label>
     </owl:Class>
     
@@ -3119,6 +3193,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000263">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000039"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000274"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">biopsy-related CRF</rdfs:label>
     </owl:Class>
     
@@ -3202,6 +3282,205 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000272">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000269"/>
         <rdfs:label xml:lang="en">Whether scanned HIPAA release form uploaded</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000273 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000273">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005300"/>
+        <obo:IAO_0000115>A chronic kidney disease that is accompanied with elevated blood pressure or hypertension</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>H-CKD</obo:IAO_0000118>
+        <obo:IAO_0000119>https://www.nejm.org/doi/full/10.1056/NEJMoa0910975</obo:IAO_0000119>
+        <rdfs:comment>Oliver note: This term is not shown in MONDO or DOID. May request an addition.</rdfs:comment>
+        <rdfs:label xml:lang="en">hypertensive chronic kidney disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000274 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000274">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0600005"/>
+        <obo:IAO_0000115>a process that obtains a tissue from a living body in order to discover the presence, cause, or extent of a disease, or perform further biomeidcal investigation</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Hong Yu</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.oxforddictionaries.com/definition/biopsy</obo:IAO_0000119>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Biopsy</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">biopsy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000275 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000275">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115>A systematized collection of patient and population electronically-stored health information in a digital format</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Edison Ong</obo:IAO_0000117>
+        <obo:IAO_0000118>EHR</obo:IAO_0000118>
+        <obo:IAO_0000118>EMR</obo:IAO_0000118>
+        <obo:IAO_0000118>electronic medical record</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Electronic_health_record</obo:IAO_0000119>
+        <obo:OPMI_0000127>NCIT_C142529</obo:OPMI_0000127>
+        <rdfs:comment>NCIT definition: A digital version of a patient&apos;s medical history. [def-source: NCI]</rdfs:comment>
+        <rdfs:label xml:lang="en">electronic health record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000276 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000276">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000274"/>
+        <obo:IAO_0000115>A biopsy that takes a small piece of tissue out of a living body through the skin, using only a tiny incision</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Hong Yu</obo:IAO_0000117>
+        <obo:IAO_0000119>http://www.wales.nhs.uk/sitesplus/documents/866/PIU433%284%29%28ABUHB%29%28Active%29%28JAN%2017%29.pdf</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">percutaneous biopsy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000277 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000277">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000276"/>
+        <rdfs:label xml:lang="en">AKi percutaneous biopsy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000278 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000278">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000274"/>
+        <obo:IAO_0000115>A biopsy process in which a surgical incision (cut) is made through the skin to expose and remove tissues</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Hong Yu</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Open_biopsy</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">open biopsy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000279 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000279">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000278"/>
+        <rdfs:label xml:lang="en">AKI open biopsy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000280 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000280">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000276"/>
+        <rdfs:label xml:lang="en">diabetic nephropathy resisters percutaneous biopsy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000281 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000281">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <obo:IAO_0000115>The state of being free from illness or injury</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Edison Ong</obo:IAO_0000117>
+        <obo:IAO_0000118>health state</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.oxforddictionaries.com/definition/health</obo:IAO_0000119>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Health</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">health condition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000282 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000282">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000281"/>
+        <obo:IAO_0000115>The health condition of a patient</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Edison Ong</obo:IAO_0000117>
+        <obo:IAO_0000118>clinical status</obo:IAO_0000118>
+        <obo:IAO_0000118>medical state</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Medical_state</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">patient condition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000283 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000283">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000252"/>
+        <rdfs:label xml:lang="en">Whether diseased</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000284 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000284">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000283"/>
+        <rdfs:label xml:lang="en">Whether kidney diseased</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000285 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000285">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+        <obo:IAO_0000115>the date on which a visit occurs</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:OPMI_0000127>NCIT_C83031</obo:OPMI_0000127>
+        <obo:OPMI_0000128>C1320303</obo:OPMI_0000128>
+        <rdfs:label xml:lang="en">visit date</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000286 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000286">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
+        <obo:IAO_0000115>a machine-readable centrally registered identifier that is represented in a visual format on a surface</obo:IAO_0000115>
+        <obo:IAO_0000118>bar code</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Barcode</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">barcode</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000287 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000287">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000286"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100051"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>a barcode that represents a specific specimen</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">specimen barcode</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000288 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000288">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A planned process that tracks the tissue specimen including tissue vial number, storage location, time of vial arrival to storage, storage temperature, etc.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Edison Ong</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">tissue tracking</rdfs:label>
     </owl:Class>
     
 
