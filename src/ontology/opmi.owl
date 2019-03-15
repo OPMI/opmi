@@ -48,7 +48,7 @@
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.50</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.51</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -143,6 +143,28 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000301 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OPMI_0000301">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000171"/>
+        <obo:IAO_0000115>An object property that represents a relation between a form and a question where the question sets up an exclusion criterion. Specifically, when the answer to the question is Yes, the candidate becomes ineligible for the participation of a study.</obo:IAO_0000115>
+        <obo:IAO_0000117>Fred Dowd, Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">has exclusion question</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000305 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OPMI_0000305">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000171"/>
+        <obo:IAO_0000115>An object property that represents a relation between a form and a question where the question sets up an inclusion criterion. Specifically, when the answer to the question is Yes, then the candidate fulfills a criterion for being eligible for participating in a study. Note that there might be other criteria that the candidate also need to meet in order to be fully eligible. Meanwhile, if the answer is No, the candidate may still be eligible depending on the other restriction.</obo:IAO_0000115>
+        <obo:IAO_0000117>Fred Dowd, Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">has inclusion question</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -162,6 +184,14 @@
         <obo:IAO_0000115>A data property that represents a relation between a data type and a number of integer digits that the data type has.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <rdfs:label xml:lang="en">has digit number</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000306 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/OPMI_0000306">
+        <rdfs:label xml:lang="en">quality measured by year</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -607,7 +637,7 @@
         <obo:IAO_0000117>Oliver He, Edison Ong, Fred Dowd, Hong Yu</obo:IAO_0000117>
         <obo:IAO_0000118>CRF</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Case_report_form</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">clinical report form</rdfs:label>
+        <rdfs:label xml:lang="en">case report form</rdfs:label>
     </owl:Class>
     
 
