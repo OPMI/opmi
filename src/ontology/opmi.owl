@@ -191,6 +191,8 @@
     <!-- http://purl.obolibrary.org/obo/OPMI_0000306 -->
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/OPMI_0000306">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:label xml:lang="en">quality measured by year</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -3747,6 +3749,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0004475">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000011"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000306"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">18</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A age quality that is measured by the value of less than 18 years old</obo:IAO_0000115>
         <obo:IAO_0000117>Fred Dowd, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000118>age less than 18 years old</obo:IAO_0000118>
