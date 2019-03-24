@@ -2069,12 +2069,6 @@
         <rdfs:subClassOf rdf:resource="&obo;OPMI_0000169"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="&obo;OPMI_0004475"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OPMI_0000186"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -2085,6 +2079,12 @@
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo;OPMI_0004475"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A textual question that asks whether a person&apos;s age is less than 18 years old</obo:IAO_0000115>
@@ -2100,26 +2100,14 @@
         <rdfs:subClassOf rdf:resource="&obo;OPMI_0000032"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OPMI_0000305"/>
-                <owl:someValuesFrom rdf:resource="&obo;OPMI_0000256"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OPMI_0000301"/>
-                <owl:someValuesFrom rdf:resource="&obo;OPMI_0000179"/>
+                <owl:someValuesFrom rdf:resource="&obo;OPMI_0000170"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OPMI_0000305"/>
                 <owl:someValuesFrom rdf:resource="&obo;OPMI_0000254"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OPMI_0000301"/>
-                <owl:someValuesFrom rdf:resource="&obo;OPMI_0000181"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2131,7 +2119,31 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OPMI_0000301"/>
-                <owl:someValuesFrom rdf:resource="&obo;OPMI_0000170"/>
+                <owl:someValuesFrom rdf:resource="&obo;OPMI_0000179"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OPMI_0000305"/>
+                <owl:someValuesFrom rdf:resource="&obo;OPMI_0000253"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OPMI_0000305"/>
+                <owl:someValuesFrom rdf:resource="&obo;OPMI_0000255"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OPMI_0000301"/>
+                <owl:someValuesFrom rdf:resource="&obo;OPMI_0000181"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OPMI_0000301"/>
+                <owl:someValuesFrom rdf:resource="&obo;OPMI_0000174"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2143,19 +2155,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OPMI_0000305"/>
-                <owl:someValuesFrom rdf:resource="&obo;OPMI_0000253"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OPMI_0000301"/>
-                <owl:someValuesFrom rdf:resource="&obo;OPMI_0000174"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OPMI_0000305"/>
-                <owl:someValuesFrom rdf:resource="&obo;OPMI_0000255"/>
+                <owl:someValuesFrom rdf:resource="&obo;OPMI_0000256"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>An eligibility assessment form that is designed and used by the Kidney Precision Medicine Project (KPMP; http://kpmp.org) organization.</obo:IAO_0000115>
@@ -2351,7 +2351,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OPMI_0000171"/>
-                <owl:someValuesFrom rdf:resource="&obo;OPMI_0000254"/>
+                <owl:someValuesFrom rdf:resource="&obo;OPMI_0000256"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2363,19 +2363,19 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OPMI_0000171"/>
-                <owl:someValuesFrom rdf:resource="&obo;OPMI_0000257"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OPMI_0000171"/>
-                <owl:someValuesFrom rdf:resource="&obo;OPMI_0000256"/>
+                <owl:someValuesFrom rdf:resource="&obo;OPMI_0000254"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OPMI_0000171"/>
                 <owl:someValuesFrom rdf:resource="&obo;OPMI_0000253"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OPMI_0000171"/>
+                <owl:someValuesFrom rdf:resource="&obo;OPMI_0000257"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2530,25 +2530,25 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OPMI_0000171"/>
-                <owl:someValuesFrom rdf:resource="&obo;OPMI_0000270"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OPMI_0000171"/>
                 <owl:someValuesFrom rdf:resource="&obo;OPMI_0000271"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OPMI_0000171"/>
-                <owl:someValuesFrom rdf:resource="&obo;OPMI_0000268"/>
+                <owl:someValuesFrom rdf:resource="&obo;OPMI_0000270"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OPMI_0000185"/>
                 <owl:hasValue rdf:resource="&obo;OPMI_0000184"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OPMI_0000171"/>
+                <owl:someValuesFrom rdf:resource="&obo;OPMI_0000268"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>This form is the end of a successful screening process</rdfs:comment>
@@ -3773,14 +3773,14 @@
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002233"/>
+                <owl:someValuesFrom rdf:resource="&obo;OPMI_0000030"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002233"/>
-                <owl:someValuesFrom rdf:resource="&obo;OPMI_0000030"/>
+                <owl:onProperty rdf:resource="&obo;RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -3792,6 +3792,37 @@
     <owl:Class rdf:about="&obo;OPMI_0000314">
         <rdfs:label xml:lang="en">CRF filled up by participant candidate</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OPMI_0000039"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000318 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000318">
+        <rdfs:label xml:lang="en">pregnancy test positive</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000018"/>
+        <obo:IAO_0000117>Fred Dowd, Edison Ong, Oliver He</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000319 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000319">
+        <rdfs:label xml:lang="en">hemoglobin test finding</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000018"/>
+        <obo:IAO_0000117>Fred Dowd, Edison Ong, Oliver He</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000320 -->
+
+    <owl:Class rdf:about="&obo;OPMI_0000320">
+        <rdfs:label xml:lang="en">hemoglobin test positive with result &lt; 9 g/dl</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPMI_0000319"/>
+        <obo:IAO_0000117>Fred Dowd, Edison Ong, Oliver He</obo:IAO_0000117>
+        <rdfs:comment>In KPMP, the hemoglobin &lt; 9 g/dl is considered as hemoblobin test positive.</rdfs:comment>
     </owl:Class>
     
 
