@@ -43,13 +43,13 @@
         <dc:creator xml:lang="en">Jennifer Schaub</dc:creator>
         <dc:creator xml:lang="en">Jie Zheng</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
-        <dc:date>3-26-2019</dc:date>
+        <dc:date>4-1-2019</dc:date>
         <dc:description xml:lang="en">OPMI is a biomedical ontology in the area of precision medicine and its related investigations. It is community-driven and developed by following the OBO Foundry ontology development principles.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.64</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.66</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1334,7 +1334,13 @@
     <!-- http://purl.obolibrary.org/obo/OPMI_0000104 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000104">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000093"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000326"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>Personal information that indicates a person&apos;s status in marriage</obo:IAO_0000115>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Marital_status</obo:IAO_0000119>
         <rdfs:label xml:lang="en">marital status</rdfs:label>
@@ -1406,6 +1412,11 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000111">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000121"/>
+        <obo:IAO_0000115>An education level that indicates that the highest level of education achievement for a person.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Edison Ong</obo:IAO_0000117>
+        <obo:IAO_0000118>highest degree of education completed</obo:IAO_0000118>
+        <obo:IAO_0000118>highest degree of education received</obo:IAO_0000118>
+        <obo:IAO_0000118>highest degree of school completed</obo:IAO_0000118>
         <rdfs:label xml:lang="en">education level</rdfs:label>
     </owl:Class>
     
@@ -1529,7 +1540,13 @@
     <!-- http://purl.obolibrary.org/obo/OPMI_0000121 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000121">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000093"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000326"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The personal information that indicates an individual&apos;s or his/her family&apos;s economic and social position in relation to others, based on income, education, and occupation.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Socioeconomic_status</obo:IAO_0000119>
