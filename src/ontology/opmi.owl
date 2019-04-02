@@ -12,6 +12,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:chebi="http://purl.obolibrary.org/obo/chebi/"
+     xmlns:rdfs1="rdfs:"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:uberon="http://purl.obolibrary.org/obo/uberon#"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
@@ -43,13 +44,13 @@
         <dc:creator xml:lang="en">Jennifer Schaub</dc:creator>
         <dc:creator xml:lang="en">Jie Zheng</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
-        <dc:date>4-1-2019</dc:date>
+        <dc:date>4-2-2019</dc:date>
         <dc:description xml:lang="en">OPMI is a biomedical ontology in the area of precision medicine and its related investigations. It is community-driven and developed by following the OBO Foundry ontology development principles.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.66</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.67</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -3085,6 +3086,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000244">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000242"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000856"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000118>What is the city name?</obo:IAO_0000118>
         <rdfs:label xml:lang="en">What city</rdfs:label>
     </owl:Class>
@@ -3950,6 +3957,61 @@
         <obo:IAO_0000115>An exclusion criterion that relates to the process of bleeding</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Edison Ong</obo:IAO_0000117>
         <rdfs:label xml:lang="en">bleeding exclusion criteria</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000331 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000331">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000039"/>
+        <obo:IAO_0000115>A case report form of PROMIS: Patient-Reported Outcomes Measurement Information System. PROMIS is a set of person-centered measures that evaluates and monitors physical, mental, and social health in adults and children. It can be used with the general population and with individuals living with chronic conditions.</obo:IAO_0000115>
+        <obo:IAO_0000117>Fred Dowd, Edison Ong, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>Patient-Reported Outcome Measures form</obo:IAO_0000118>
+        <obo:IAO_0000119>http://www.healthmeasures.net/explore-measurement-systems/promis</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">PROMIS form</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000332 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000332">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
+        <rdfs:label xml:lang="en">kit identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000333 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000333">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000332"/>
+        <obo:IAO_0000115>A centrally registered identifier that is for a kit used in biopsy</obo:IAO_0000115>
+        <obo:IAO_0000117>Fred Dowd, Edison Ong, Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">biopsy kit identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000335 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000335">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000274"/>
+        <obo:IAO_0000115>A biopsy attempt</obo:IAO_0000115>
+        <obo:IAO_0000117>Fred Dowd, Edison Ong, Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">biopsy pass</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000336 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000336">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000274"/>
+        <obo:IAO_0000115>A biopsy that uses needle</obo:IAO_0000115>
+        <obo:IAO_0000117>Fred Dowd, Edison Ong, Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">needle biopsy</rdfs:label>
     </owl:Class>
     
 
