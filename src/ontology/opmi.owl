@@ -50,7 +50,7 @@
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.68</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.69</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -122,6 +122,10 @@
     <!-- http://purl.obolibrary.org/obo/OPMI_0000171 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OPMI_0000171">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000030"/>
+        <obo:IAO_0000115>A &apos;has part&apos; object property that has the range of a textual question</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <rdfs:label xml:lang="en">has question</rdfs:label>
     </owl:ObjectProperty>
     
@@ -3477,13 +3481,14 @@
     <!-- http://purl.obolibrary.org/obo/OPMI_0000281 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000281">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000326"/>
         <obo:IAO_0000115>The state of being free from illness or injury</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Edison Ong</obo:IAO_0000117>
         <obo:IAO_0000118>health state</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.oxforddictionaries.com/definition/health</obo:IAO_0000119>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Health</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">health condition</rdfs:label>
+        <obo:IAO_0000119>https://www.healthknowledge.org.uk/public-health-textbook/research-methods/1c-health-care-evaluation-health-care-assessment/measures-health-status</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">health status</rdfs:label>
     </owl:Class>
     
 
@@ -3491,13 +3496,12 @@
     <!-- http://purl.obolibrary.org/obo/OPMI_0000282 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000282">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000281"/>
-        <obo:IAO_0000115>The health condition of a patient</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <obo:IAO_0000115>The medical state or condition of a patient</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Edison Ong</obo:IAO_0000117>
-        <obo:IAO_0000118>clinical status</obo:IAO_0000118>
         <obo:IAO_0000118>medical state</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Medical_state</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">patient condition</rdfs:label>
+        <rdfs:label xml:lang="en">medical condition</rdfs:label>
     </owl:Class>
     
 
@@ -3994,6 +3998,23 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000334 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000334">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000331"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000171"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000338"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A PROMIS form that is designed and used by the KPMP project (http://kpmp.org).</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">KPMP PROMIS form</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OPMI_0000335 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000335">
@@ -4012,6 +4033,150 @@
         <obo:IAO_0000115>A biopsy that uses needle</obo:IAO_0000115>
         <obo:IAO_0000117>Fred Dowd, Edison Ong, Oliver He</obo:IAO_0000117>
         <rdfs:label xml:lang="en">needle biopsy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000337 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000337">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OPMI_0000030"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000281"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000281"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A textual question about health condition</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Edison Ong</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">health status question</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000338 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000338">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000337"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000281"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A health status question that asks about the condition of a person&apos;s heath, which can be a selection from different options such as Excellent, Very good, Good, Fair, or Poor.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Edison Ong</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">what health status</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000339 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000339">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000281"/>
+        <rdfs:label xml:lang="en">excellent health status</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000340 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000340">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000281"/>
+        <rdfs:label xml:lang="en">very good health status</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000341 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000341">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000281"/>
+        <rdfs:label xml:lang="en">good health status</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000342 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000342">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000281"/>
+        <rdfs:label xml:lang="en">fair health status</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000343 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000343">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000281"/>
+        <rdfs:label xml:lang="en">poor health status</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000344 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000344">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:label xml:lang="en">quality of life</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000345 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000345">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000344"/>
+        <rdfs:label xml:lang="en">excellent quality of life</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000346 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000346">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000344"/>
+        <rdfs:label xml:lang="en">very good quality of life</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000347 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000347">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000344"/>
+        <rdfs:label xml:lang="en">good quality of life</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000348 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000348">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000344"/>
+        <rdfs:label xml:lang="en">fair quality of life</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000349 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000349">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000344"/>
+        <rdfs:label xml:lang="en">poor quality of life</rdfs:label>
     </owl:Class>
     
 
