@@ -8,9 +8,13 @@ CHEBI
 http://purl.obolibrary.org/obo/CHEBI_27933 #beta-lactam antibiotic
 http://purl.obolibrary.org/obo/CHEBI_23066 #cephalosporin
 http://purl.obolibrary.org/obo/CHEBI_17334 #penicillin
+http://purl.obolibrary.org/obo/CHEBI_137431 #antihypotensive agent
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/BFO_0000040 #material entity
+
+http://purl.obolibrary.org/obo/CHEBI_137431 #antihypotensive agent
+subClassOf http://purl.obolibrary.org/obo/BFO_0000023
 
 [Source term retrieval setting]
 includeComputedIntermediates
