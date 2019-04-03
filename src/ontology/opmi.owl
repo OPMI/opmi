@@ -44,13 +44,13 @@
         <dc:creator xml:lang="en">Jennifer Schaub</dc:creator>
         <dc:creator xml:lang="en">Jie Zheng</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
-        <dc:date>4-2-2019</dc:date>
+        <dc:date>4-3-2019</dc:date>
         <dc:description xml:lang="en">OPMI is a biomedical ontology in the area of precision medicine and its related investigations. It is community-driven and developed by following the OBO Foundry ontology development principles.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.69</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.71</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -513,7 +513,9 @@
         <obo:IAO_0000115>An answer to question where one declines to answer the specified question.</obo:IAO_0000115>
         <obo:IAO_0000117>Fred Dowd, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000118>decline to answer</obo:IAO_0000118>
+        <obo:IAO_0000118>declined to provide</obo:IAO_0000118>
         <obo:IAO_0000118>refuse to answer</obo:IAO_0000118>
+        <obo:IAO_0000118>refused to answer</obo:IAO_0000118>
         <rdfs:label xml:lang="en">declined to answer to question</rdfs:label>
     </owl:Class>
     
@@ -3357,6 +3359,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000268">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000195"/>
+        <obo:IAO_0000115>A eligibility question that asks whether a patient is eligible to consent to participate in a project.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Edison Ong</obo:IAO_0000117>
         <rdfs:label xml:lang="en">Whether patient eligible to consent</rdfs:label>
     </owl:Class>
     
@@ -4227,6 +4231,15 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000353 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000353">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+        <rdfs:label xml:lang="en">year</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OPMI_0004475 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0004475">
@@ -4309,6 +4322,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0004482">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000011"/>
+        <obo:IAO_0000117>An age when a disease is first diagnosed</obo:IAO_0000117>
         <rdfs:label xml:lang="en">age at diagnosis of disease</rdfs:label>
     </owl:Class>
     
@@ -4402,6 +4416,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0004491">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000011"/>
+        <obo:IAO_0000115>An age when a disease started in a patient</obo:IAO_0000115>
         <rdfs:label xml:lang="en">age at the start of disease</rdfs:label>
     </owl:Class>
     
@@ -4483,6 +4498,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0004500">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000011"/>
+        <obo:IAO_0000115>An age when a medication is first used</obo:IAO_0000115>
         <rdfs:label xml:lang="en">age at the start of medication</rdfs:label>
     </owl:Class>
     
