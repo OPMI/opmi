@@ -2220,6 +2220,13 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000177">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000176"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000351"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>Edison Ong, Oliver He</obo:IAO_0000117>
         <rdfs:label xml:lang="en">Whether unwilling to receive blood transfusion</rdfs:label>
     </owl:Class>
     
@@ -2466,6 +2473,14 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000195">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0500026"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A textual question that is about eligibility of a person to participate in a project.</obo:IAO_0000115>
+        <obo:IAO_0000117>Edison Ong, Oliver He</obo:IAO_0000117>
         <rdfs:label xml:lang="en">eligibility question</rdfs:label>
     </owl:Class>
     
@@ -4177,6 +4192,37 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000349">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000344"/>
         <rdfs:label xml:lang="en">poor quality of life</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000350 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000350">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000326"/>
+        <rdfs:label xml:lang="en">consent status</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000351 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000351">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000350"/>
+        <obo:IAO_0000115>A consent status that indicates a participant unwilling to receive a procedure of blood transfusion</obo:IAO_0000115>
+        <obo:IAO_0000117>Edison Ong, Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">unwilling to receive a blood transfusion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000352 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000352">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000350"/>
+        <obo:IAO_0000115>A consent status that indicates a participate willing to receive a procedure of blood transfusion</obo:IAO_0000115>
+        <obo:IAO_0000117>Edison Ong, Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">willing to receive a blood transfusion</rdfs:label>
     </owl:Class>
     
 
