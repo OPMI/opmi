@@ -44,13 +44,13 @@
         <dc:creator xml:lang="en">Jennifer Schaub</dc:creator>
         <dc:creator xml:lang="en">Jie Zheng</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
-        <dc:date>4-3-2019</dc:date>
+        <dc:date>4-4-2019</dc:date>
         <dc:description xml:lang="en">OPMI is a biomedical ontology in the area of precision medicine and its related investigations. It is community-driven and developed by following the OBO Foundry ontology development principles.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.72</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.73</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -287,7 +287,7 @@
     <!-- http://purl.obolibrary.org/obo/OPMI_0000004 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000004">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C76325"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000161"/>
         <rdfs:label xml:lang="en">more than 5.5 pounds (2500 grams) birth weight</rdfs:label>
     </owl:Class>
     
@@ -296,7 +296,7 @@
     <!-- http://purl.obolibrary.org/obo/OPMI_0000005 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000005">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C76325"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000161"/>
         <rdfs:label xml:lang="en">less than 5.5 pounds (2500 grams) birth weight</rdfs:label>
     </owl:Class>
     
@@ -305,7 +305,7 @@
     <!-- http://purl.obolibrary.org/obo/OPMI_0000006 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000006">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C76325"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000161"/>
         <rdfs:label xml:lang="en">unknown birth weight</rdfs:label>
     </owl:Class>
     
@@ -314,7 +314,7 @@
     <!-- http://purl.obolibrary.org/obo/OPMI_0000007 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000007">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C76325"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000161"/>
         <rdfs:label xml:lang="en">birth weight declined to answer</rdfs:label>
     </owl:Class>
     
@@ -1970,6 +1970,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000161">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000160"/>
+        <obo:IAO_0000115>A body weight that is obtained immediately after birth</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Edison Ong</obo:IAO_0000117>
+        <obo:OPMI_0000127>NCIT_C76325</obo:OPMI_0000127>
         <rdfs:label xml:lang="en">birth weight</rdfs:label>
     </owl:Class>
     
@@ -4236,6 +4239,31 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000353">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
         <rdfs:label xml:lang="en">year</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000354 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000354">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000030"/>
+        <obo:IAO_0000118>A textual quesition thta is about medical history of a person</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">medical history question</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000355 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000355">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000354"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000161"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">What birth weight</rdfs:label>
     </owl:Class>
     
 
