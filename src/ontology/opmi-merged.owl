@@ -23,19 +23,20 @@
         <dc:contributor xml:lang="en">Becky Steck</dc:contributor>
         <dc:contributor xml:lang="en">Christopher Park</dc:contributor>
         <dc:contributor xml:lang="en">John F. O’Toole</dc:contributor>
+        <dc:contributor>Matthias Kretzler</dc:contributor>
         <dc:contributor xml:lang="en">Sean Mooney</dc:contributor>
         <dc:creator xml:lang="en">Fred Dowd</dc:creator>
         <dc:creator xml:lang="en">Hong Yu</dc:creator>
         <dc:creator xml:lang="en">Jennifer Schaub</dc:creator>
         <dc:creator xml:lang="en">Jie Zheng</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
-        <dc:date>4-3-2019</dc:date>
+        <dc:date>4-26-2019</dc:date>
         <dc:description xml:lang="en">OPMI is a biomedical ontology in the area of precision medicine and its related investigations. It is community-driven and developed by following the OBO Foundry ontology development principles.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.72</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.75</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -35473,7 +35474,7 @@ The term is used in the following meaning of being self generated. It does not s
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C118466"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C89506"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C90259"/>
-        <rdfs:label>Birth Weight</rdfs:label>
+        <rdfs:label>Birth Weight (NCIT)</rdfs:label>
     </owl:Class>
     
 
@@ -39907,7 +39908,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OPMI_0000004 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000004">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C76325"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000161"/>
         <rdfs:label xml:lang="en">more than 5.5 pounds (2500 grams) birth weight</rdfs:label>
     </owl:Class>
     
@@ -39916,7 +39917,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OPMI_0000005 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000005">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C76325"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000161"/>
         <rdfs:label xml:lang="en">less than 5.5 pounds (2500 grams) birth weight</rdfs:label>
     </owl:Class>
     
@@ -39925,7 +39926,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OPMI_0000006 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000006">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C76325"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000161"/>
         <rdfs:label xml:lang="en">unknown birth weight</rdfs:label>
     </owl:Class>
     
@@ -39934,7 +39935,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OPMI_0000007 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000007">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C76325"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000161"/>
         <rdfs:label xml:lang="en">birth weight declined to answer</rdfs:label>
     </owl:Class>
     
@@ -41590,6 +41591,9 @@ last accessed June 30, 2015</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000161">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000160"/>
+        <obo:IAO_0000115>A body weight that is obtained immediately after birth</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Edison Ong</obo:IAO_0000117>
+        <obo:OPMI_0000127>NCIT_C76325</obo:OPMI_0000127>
         <rdfs:label xml:lang="en">birth weight</rdfs:label>
     </owl:Class>
     
@@ -43861,6 +43865,31 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000353">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
         <rdfs:label xml:lang="en">year</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000354 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000354">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000030"/>
+        <obo:IAO_0000118>A textual quesition thta is about medical history of a person</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">medical history question</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000355 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000355">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000354"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000161"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">What birth weight</rdfs:label>
     </owl:Class>
     
 
@@ -56569,8 +56598,8 @@ This interpretation is *not* the same as an at-all-times relation
         <rdfs:comment>DrOn contains content developed by the National Library of Medicine in RxNorm.  In creating DrOn, we have used RxNorm content only with SAB = RXNORM.</rdfs:comment>
         <dc:license xml:lang="en">https://creativecommons.org/licenses/by/3.0/</dc:license>
         <dc:creator>Eric Joseph</dc:creator>
-        <dc:creator>Mathias Brochhausen</dc:creator>
         <rdfs:comment xml:lang="en">When citing DrOn, use the permanent URL of the ontology: http://purl.obolibrary.org/obo/dron.owl.  When referencing a specific component of the DrOn, such as a class, object property, annotation property, or individual, use the Uniform Resource Identifier (URI) of that component.</rdfs:comment>
+        <dc:creator>Mathias Brochhausen</dc:creator>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/envo.owl">
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/envo/imports/chebi_import.owl&gt;))) [Axioms: 2434 Logical Axioms: 1036]</rdfs:comment>
@@ -56580,15 +56609,15 @@ This interpretation is *not* the same as an at-all-times relation
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/envo/imports/go_import.owl&gt;))) [Axioms: 270 Logical Axioms: 76]</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/envo/imports/pco_import.owl&gt;))) [Axioms: 21 Logical Axioms: 3]</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/envo/imports/pato_import.owl&gt;))) [Axioms: 1362 Logical Axioms: 337]</rdfs:comment>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/envo/modules/entity_attribute.owl&gt;))) [Axioms: 79 Logical Axioms: 12]</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/envo/imports/obi_import.owl&gt;))) [Axioms: 50 Logical Axioms: 12]</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/envo/modules/entity_attribute.owl&gt;))) [Axioms: 79 Logical Axioms: 12]</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/envo/imports/clo_import.owl&gt;))) [Axioms: 34 Logical Axioms: 8]</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/envo/imports/fao_import.owl&gt;))) [Axioms: 4 Logical Axioms: 0]</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/envo/imports/flopo_import.owl&gt;))) [Axioms: 1536 Logical Axioms: 352]</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/envo/imports/ncbitaxon_import.owl&gt;))) [Axioms: 542 Logical Axioms: 123]</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/envo/imports/bfo_import.owl&gt;))) [Axioms: 92 Logical Axioms: 35]</rdfs:comment>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/envo/imports/uberon_import.owl&gt;))) [Axioms: 24081 Logical Axioms: 4670]</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/envo/imports/po_import.owl&gt;))) [Axioms: 151 Logical Axioms: 18]</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/envo/imports/uberon_import.owl&gt;))) [Axioms: 24081 Logical Axioms: 4670]</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/envo/imports/omp_import.owl&gt;))) [Axioms: 47 Logical Axioms: 11]</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/envo/modules/entity_quality_location.owl&gt;))) [Axioms: 45 Logical Axioms: 6]</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENVO is an ontology which represents knowledge about environments,environmental processes, ecosystems, habitats, and related entities. It interoperates with other ontologies in the OBO Foundry and Library. 
@@ -56610,16 +56639,16 @@ Please see www.environmentontology.org for more information and citations.</rdfs
         <owl:versionInfo xml:lang="en">Vision Release; 1.2.17</owl:versionInfo>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <obo:IAO_0000116 xml:lang="en">Product version</obo:IAO_0000116>
-        <dc:creator>Sirarat Sarntivijai</dc:creator>
         <dc:contributor>Darrell R. Abernethy</dc:contributor>
+        <dc:creator>Sirarat Sarntivijai</dc:creator>
         <dc:creator>Ling Wan</dc:creator>
         <dc:creator>Rebecca Racz</dc:creator>
         <dc:creator xml:lang="en">Shelley Zhang</dc:creator>
         <dc:creator>Liwei Wang</dc:creator>
         <dc:creator xml:lang="en">Meiu Wong</dc:creator>
         <dc:description xml:lang="en">The Ontology of Adverse Eventsy (OAE) is a biomedical ontology in the domain of adverse events. OAE aims to standardize adverse event annotation, integrate various adverse event data, and support computer-assisted reasoning.  OAE is a community-based ontology. Its development follows the OBO Foundry principles. Vaccine adverse events have been used as an initial testing use case. OAE also studies adverse events associated with the administration of drug and nutritional products, the operation of surgeries, and the usage of medical devices, etc.</dc:description>
-        <dc:title xml:lang="en">OAE: Ontology of Adverse Events</dc:title>
         <dc:creator>Kevin Mo</dc:creator>
+        <dc:title xml:lang="en">OAE: Ontology of Adverse Events</dc:title>
         <dc:creator>Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
         <dc:contributor>Luca Toldo</dc:contributor>
         <dc:creator>Noemi Garg</dc:creator>
@@ -56649,8 +56678,8 @@ Please see www.environmentontology.org for more information and citations.</rdfs
         <dc:creator>Sivaram Arabandi</dc:creator>
         <dc:creator>Lindsay Cowell</dc:creator>
         <dc:date>2009-08-07</dc:date>
-        <dc:creator>Cornelius Rosse</dc:creator>
         <dc:creator>Richard Scheuermann</dc:creator>
+        <dc:creator>Cornelius Rosse</dc:creator>
         <dc:creator>Anand Kumar</dc:creator>
         <rdfs:comment>The Ontology for General Medical Science (OGMS) is based on the papers Toward an Ontological Treatment of Disease and Diagnosis and On Carcinomas and Other Pathological Entities. The ontology attempts to address some of the issues raised at the Workshop on Ontology of Diseases (Dallas, TX). OGMS was formerly called the clinical phenotype ontology. Terms from OGMS hang from the Basic Formal Ontology.
 
@@ -56665,14 +56694,14 @@ If you are interested in participating in the development of OGMS, please send e
         <dc:creator>Barry Smith</dc:creator>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/omrse.owl">
-        <dc:creator xml:lang="en">William Hogan</dc:creator>
         <rdfs:comment xml:lang="en">This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government&apos;s &quot;meaningful use&quot; criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt</rdfs:comment>
-        <owl:versionInfo>2017-06-08</owl:versionInfo>
-        <dc:creator xml:lang="en">Mathias Brochhausen</dc:creator>
+        <dc:creator xml:lang="en">William Hogan</dc:creator>
         <dc:creator>Amanda Hicks</dc:creator>
+        <dc:creator xml:lang="en">Mathias Brochhausen</dc:creator>
+        <owl:versionInfo>2017-06-08</owl:versionInfo>
         <dc:creator xml:lang="en">Swetha Garimalla</dc:creator>
-        <rdfs:label xml:lang="en">The Ontology of Medically Related Social Entities</rdfs:label>
         <dc:contributor>Daniel Welch</dc:contributor>
+        <rdfs:label xml:lang="en">The Ontology of Medically Related Social Entities</rdfs:label>
         <dc:creator xml:lang="en">Shariq Tariq</dc:creator>
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000657">
