@@ -51,7 +51,7 @@
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.76</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.77</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -3608,7 +3608,7 @@
     <!-- http://purl.obolibrary.org/obo/OPMI_0000289 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000289">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000165"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
@@ -3616,11 +3616,13 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A centrally registered identifier that is assigned for a specific clinical trial registered in  the ClinicalTrials.gov. The format for the ClinicalTrials.gov registry number is “NCT” followed by an 8-digit number, e.g.: NCT00000419.</obo:IAO_0000115>
+        <obo:IAO_0000117>Qingliang Leon Li, Asiyah Yu Lin, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000118>NCT identifier</obo:IAO_0000118>
         <obo:IAO_0000118>NCT number</obo:IAO_0000118>
+        <obo:IAO_0000118>National Clinical Trial identifier</obo:IAO_0000118>
         <obo:IAO_0000119>https://clinicaltrials.gov/ct2/about-site/link-to</obo:IAO_0000119>
         <obo:IAO_0000119>https://www.nlm.nih.gov/bsd/policy/clin_trials.html</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">National Clinical Trial identifier</rdfs:label>
+        <rdfs:label xml:lang="en">USA National Clinical Trial identifier</rdfs:label>
     </owl:Class>
     
 
@@ -4269,6 +4271,52 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000356 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000356">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
+        <obo:IAO_0000117>Qingliang Leon Li, Asiyah Yu Lin, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://pubchem.ncbi.nlm.nih.gov/source/NIPH%20Clinical%20Trials%20Search%20of%20Japan</obo:IAO_0000119>
+        <obo:IAO_0000119>https://rctportal.niph.go.jp/en/</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">Japan clinical trial identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000357 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000357">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000356"/>
+        <obo:IAO_0000115>A Japan clinical trial identifier provided by the University Hospital Medical Information Network Center (UMIN-CTR)</obo:IAO_0000115>
+        <obo:IAO_0000117>Qingliang Leon Li, Asiyah Yu Lin, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://rctportal.niph.go.jp/en/</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">UMIN-CTR clinical trial identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000358 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000358">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000356"/>
+        <obo:IAO_0000117>Qingliang Leon Li, Asiyah Yu Lin, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://rctportal.niph.go.jp/en/</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">JAPIC clinical trial identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000359 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000359">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000356"/>
+        <obo:IAO_0000117>Qingliang Leon Li, Asiyah Yu Lin, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://rctportal.niph.go.jp/en/</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">JMACCT clinical trial identifier</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OPMI_0004475 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0004475">
@@ -4583,8 +4631,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0004507">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000066"/>
-        <obo:IAO_0000115>a clinical trial is a medical interventional study where participants are assigned prospectively to an intervention or interventions according to a protocol to evaluate the effect of the intervention(s) on biomedical or other health related outcomes. The Interventions include but are not restricted to drugs, cells and other biological products, surgical procedures, radiologic procedures, devices, behavioural treatments, process-of-care changes, preventive care, etc.</obo:IAO_0000115>
-        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>a clinical trial is a medical interventional study where participants are assigned prospectively to an intervention or interventions according to a protocol to evaluate the safety and efficacy of the intervention(s) on biomedical or other health related outcomes. The Interventions include but are not restricted to drugs, cells and other biological products, surgical procedures, radiologic procedures, devices, behavioral treatments, process-of-care changes, preventive care, etc.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Asiyah Yu Lin, Qingliang Li</obo:IAO_0000117>
         <obo:IAO_0000118>interventional trial</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Clinical_trial</obo:IAO_0000119>
         <obo:IAO_0000119>https://prsinfo.clinicaltrials.gov/definitions.html</obo:IAO_0000119>
@@ -4598,6 +4646,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0004508">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0004507"/>
+        <obo:IAO_0000119>http://purl.obolibrary.org/obo/NCIT_C54721</obo:IAO_0000119>
         <rdfs:label xml:lang="en">Phase 0 clinical trial</rdfs:label>
     </owl:Class>
     
@@ -4609,6 +4658,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0004507"/>
         <obo:IAO_0000115>A clinical trial that is often the first-in-man trial, and it tests within a small group of people (typically 20-80) to evaluate safety, determine safe dosage ranges, and begin to identify side effects. A drug&apos;s side effects could be subtle or long term, or may only happen with a few people, so phase 1 trials are not expected to identify all side effects.</obo:IAO_0000115>
         <obo:IAO_0000118>clinical trial for safety screening</obo:IAO_0000118>
+        <obo:IAO_0000119>http://purl.obolibrary.org/obo/NCIT_C15600</obo:IAO_0000119>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Clinical_trial</obo:IAO_0000119>
         <rdfs:label xml:lang="en">Phase 1 clinical trial</rdfs:label>
     </owl:Class>
