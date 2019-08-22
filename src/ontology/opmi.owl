@@ -40,18 +40,20 @@
         <dc:contributor xml:lang="en">John F. O’Toole</dc:contributor>
         <dc:contributor>Matthias Kretzler</dc:contributor>
         <dc:contributor xml:lang="en">Sean Mooney</dc:contributor>
+        <dc:creator>Asiyah Yu Lin</dc:creator>
         <dc:creator xml:lang="en">Fred Dowd</dc:creator>
         <dc:creator xml:lang="en">Hong Yu</dc:creator>
         <dc:creator xml:lang="en">Jennifer Schaub</dc:creator>
         <dc:creator xml:lang="en">Jie Zheng</dc:creator>
+        <dc:creator>Qingliang Leon Li</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
-        <dc:date>8-20-2019</dc:date>
+        <dc:date>8-22-2019</dc:date>
         <dc:description xml:lang="en">OPMI is a biomedical ontology in the area of precision medicine and its related investigations. It is community-driven and developed by following the OBO Foundry ontology development principles.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.77</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.78</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -168,6 +170,14 @@
         <obo:IAO_0000115>An object property that represents a relation between a form and a question where the question sets up an inclusion criterion. Specifically, when the answer to the question is Yes, then the candidate fulfills a criterion for being eligible for participating in a study. Note that there might be other criteria that the candidate also need to meet in order to be fully eligible. Meanwhile, if the answer is No, the candidate may still be eligible depending on the other restriction.</obo:IAO_0000115>
         <obo:IAO_0000117>Fred Dowd, Oliver He</obo:IAO_0000117>
         <rdfs:label xml:lang="en">has inclusion question</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000366 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OPMI_0000366">
+        <rdfs:label xml:lang="en">has stage</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -4317,6 +4327,155 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000360 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000360">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
+        <obo:IAO_0000112>EudraCT Number: 2007-002422-29</obo:IAO_0000112>
+        <obo:IAO_0000117>Qingliang Leon Li, Asiyah Yu Lin, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>EudraCT identifier</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/EudraCT</obo:IAO_0000119>
+        <obo:IAO_0000119>https://www.clinicaltrialsregister.eu/ctr-search/search</obo:IAO_0000119>
+        <obo:IAO_0000119>https://www.clinicaltrialsregister.eu/ctr-search/search?query=eudract</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">European clinical trial registry identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000363 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000363">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000366"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000368"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000366"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000369"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0004507"/>
+        <rdfs:label xml:lang="en">Phase I/II clinical trial</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000367 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000367">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115>The stage of a clinical trial studying a drug or biological product. The phase is based on the study&apos;s objective, the number of participants, and other characteristics. According to USA FDA, there are five phases: Early Phase 1 (formerly listed as Phase 0), Phase 1, Phase 2, Phase 3, and Phase 4.</obo:IAO_0000115>
+        <obo:IAO_0000117>Leon Li, Asiyah Lin, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.clinicaltrials.gov/ct2/help/glossary/phase</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">clinical trial stage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000368 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000368">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000367"/>
+        <obo:IAO_0000118>Phase 1</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">clinical trial phase 1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000369 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000369">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000367"/>
+        <rdfs:label xml:lang="en">clinical trial phase 2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000370 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000370">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000367"/>
+        <rdfs:label xml:lang="en">clinical trial phase 3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000371 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000371">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000367"/>
+        <rdfs:label xml:lang="en">clinical trial phase 4</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000372 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000372">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000367"/>
+        <obo:IAO_0000118>Early Phase 1</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">clinical trial phase 0</obo:IAO_0000118>
+        <rdfs:label>clinical trial early phase 1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000373 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000373">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000366"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000369"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000366"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000370"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0004507"/>
+        <rdfs:label xml:lang="en">Phase II/III clinical trial</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000374 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000374">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0002807"/>
+        <obo:IAO_0000118>radiation procedure</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">radiation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000375 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000375">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000002"/>
+        <rdfs:label xml:lang="en">genetic intervention</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000376 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000376">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000002"/>
+        <rdfs:label xml:lang="en">behavioral intervention</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OPMI_0004475 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0004475">
@@ -4645,9 +4804,15 @@
     <!-- http://purl.obolibrary.org/obo/OPMI_0004508 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0004508">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000366"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000372"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0004507"/>
         <obo:IAO_0000119>http://purl.obolibrary.org/obo/NCIT_C54721</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">Phase 0 clinical trial</rdfs:label>
+        <rdfs:label xml:lang="en">Early Phase 1 clinical trial</rdfs:label>
     </owl:Class>
     
 
@@ -4655,7 +4820,19 @@
     <!-- http://purl.obolibrary.org/obo/OPMI_0004509 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0004509">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000366"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000368"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0004507"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000366"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000368"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A clinical trial that is often the first-in-man trial, and it tests within a small group of people (typically 20-80) to evaluate safety, determine safe dosage ranges, and begin to identify side effects. A drug&apos;s side effects could be subtle or long term, or may only happen with a few people, so phase 1 trials are not expected to identify all side effects.</obo:IAO_0000115>
         <obo:IAO_0000118>clinical trial for safety screening</obo:IAO_0000118>
         <obo:IAO_0000119>http://purl.obolibrary.org/obo/NCIT_C15600</obo:IAO_0000119>
@@ -4668,6 +4845,12 @@
     <!-- http://purl.obolibrary.org/obo/OPMI_0004510 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0004510">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000366"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000369"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0004507"/>
         <rdfs:label xml:lang="en">Phase 2 clinical trial</rdfs:label>
     </owl:Class>
@@ -4677,6 +4860,12 @@
     <!-- http://purl.obolibrary.org/obo/OPMI_0004511 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0004511">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000366"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000370"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0004507"/>
         <rdfs:label xml:lang="en">Phase 3 clinical trial</rdfs:label>
     </owl:Class>
@@ -4686,6 +4875,12 @@
     <!-- http://purl.obolibrary.org/obo/OPMI_0004512 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0004512">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000366"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000371"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0004507"/>
         <rdfs:label xml:lang="en">Phase 4 clinical trial</rdfs:label>
     </owl:Class>
@@ -4826,6 +5021,28 @@
             </owl:Class>
         </rdf:type>
         <rdfs:label xml:lang="en">filled CRF by candidate 3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000361 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OPMI_0000361">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+        <obo:IAO_0000118>European Union Drug Regulating Authorities Clinical Trials</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/EudraCT</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">EudraCT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000362 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OPMI_0000362">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+        <obo:IAO_0000115>ClinicalTrials.gov is a resource provided by the U.S. National Library of Medicine.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://clinicaltrials.gov/</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">Clinicaltrials.gov</rdfs:label>
     </owl:NamedIndividual>
     
 
