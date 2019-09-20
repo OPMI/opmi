@@ -10,6 +10,7 @@ http://purl.obolibrary.org/obo/ENVO_01000773 #village
 http://purl.obolibrary.org/obo/ENVO_00000856 #city
 http://purl.obolibrary.org/obo/ENVO_00000000 #geographic feature
 http://purl.obolibrary.org/obo/ENVO_00000062 #populated place 
+http://purl.obolibrary.org/obo/ENVO_00000009 #national geopolitical entity, country
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/BFO_0000040 #material entity

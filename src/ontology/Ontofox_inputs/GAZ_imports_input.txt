@@ -1,0 +1,23 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/opmi/GAZ_imports.owl
+
+[Source ontology]
+GAZ
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/GAZ_00002459 #United States of America
+http://purl.obolibrary.org/obo/GAZ_00002747 #Japan 
+http://purl.obolibrary.org/obo/GAZ_00002637 #United Kingdom
+http://purl.obolibrary.org/obo/GAZ_00002845 #China
+
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/ENVO_00000009 #national geopolitical entity, country
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+includeAllAxiomsRecursively
+
+[Source annotation URIs to be excluded]

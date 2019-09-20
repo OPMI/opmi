@@ -14,6 +14,9 @@ http://purl.obolibrary.org/obo/OAE_0004430 # arteriovenous fistula AE
 http://purl.obolibrary.org/obo/OAE_0001410 # soft tissue infection AE
 http://purl.obolibrary.org/obo/OAE_0004431 # puncturing of adjacent organ AE
 http://purl.obolibrary.org/obo/OAE_0000632 # death AE
+http://purl.obolibrary.org/obo/VO_0000001 #vaccine
+http://purl.obolibrary.org/obo/OAE_0000011 #drug administration
+http://purl.obolibrary.org/obo/VO_0000002 #vaccination
 
 http://purl.obolibrary.org/obo/OAE_0000631 #serious adverse event
 includeAllChildren

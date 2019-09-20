@@ -16,6 +16,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:uberon="http://purl.obolibrary.org/obo/uberon#"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:taxslim="http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim#"
      xmlns:oboInOWL="http://www.geneontology.org/formats/oboInOWL#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
@@ -24,6 +25,7 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opmi/CMO_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opmi/DRON_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opmi/ENVO_imports.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opmi/GAZ_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opmi/HP_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opmi/IAO_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opmi/ICO_imports.owl"/>
@@ -47,13 +49,13 @@
         <dc:creator xml:lang="en">Jie Zheng</dc:creator>
         <dc:creator>Qingliang Leon Li</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
-        <dc:date>9-6-2019</dc:date>
+        <dc:date>9-20-2019</dc:date>
         <dc:description xml:lang="en">OPMI is a biomedical ontology in the area of precision medicine and its related investigations. It is community-driven and developed by following the OBO Foundry ontology development principles.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.79</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.80</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -4377,6 +4379,16 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000365 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000365">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000002"/>
+        <obo:IAO_0000117>Leon Li, Asiyah Lin, Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">combinational intervention</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OPMI_0000367 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000367">
@@ -4503,6 +4515,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000374">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0002807"/>
+        <obo:IAO_0000117>Leon Li, Asiyah Lin, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000118>radiation procedure</obo:IAO_0000118>
         <rdfs:label xml:lang="en">radiation</rdfs:label>
     </owl:Class>
@@ -4513,6 +4526,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000375">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000002"/>
+        <obo:IAO_0000117>Leon Li, Asiyah Lin, Oliver He</obo:IAO_0000117>
         <rdfs:label xml:lang="en">genetic intervention</rdfs:label>
     </owl:Class>
     
@@ -4522,6 +4536,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000376">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000002"/>
+        <obo:IAO_0000115>A medical intervention that involves a behavioral process to control, prevent, or treat a behavior problem.</obo:IAO_0000115>
+        <obo:IAO_0000117>Leon Li, Asiyah Lin, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.understood.org/en/learning-attention-issues/treatments-approaches/educational-strategies/behavior-intervention-plans-what-you-need-to-know</obo:IAO_0000119>
         <rdfs:label xml:lang="en">behavioral intervention</rdfs:label>
     </owl:Class>
     
@@ -4844,6 +4861,7 @@
         <obo:IAO_0000115>a clinical trial is a medical interventional study where participants are assigned prospectively to an intervention or interventions according to a protocol to evaluate the safety and efficacy of the intervention(s) on biomedical or other health related outcomes. The Interventions include but are not restricted to drugs, cells and other biological products, surgical procedures, radiologic procedures, devices, behavioral treatments, process-of-care changes, preventive care, etc.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Asiyah Yu Lin, Qingliang Li</obo:IAO_0000117>
         <obo:IAO_0000118>interventional trial</obo:IAO_0000118>
+        <obo:IAO_0000119>https://clinicaltrials.gov/ct2/search/map</obo:IAO_0000119>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Clinical_trial</obo:IAO_0000119>
         <obo:IAO_0000119>https://prsinfo.clinicaltrials.gov/definitions.html</obo:IAO_0000119>
         <obo:IAO_0000119>https://www.who.int/ictrp/en/</obo:IAO_0000119>
