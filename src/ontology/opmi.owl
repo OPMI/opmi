@@ -49,13 +49,13 @@
         <dc:creator xml:lang="en">Jie Zheng</dc:creator>
         <dc:creator>Qingliang Leon Li</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
-        <dc:date>11-08-2019</dc:date>
+        <dc:date>11-13-2019</dc:date>
         <dc:description xml:lang="en">OPMI is a biomedical ontology in the area of precision medicine and its related investigations. It is community-driven and developed by following the OBO Foundry ontology development principles.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.82</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.83</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -4544,6 +4544,77 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000377 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000377">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000066"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>ImmPort study accession: SDY269</obo:IAO_0000112>
+        <obo:IAO_0000117>Edison Ong, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>study accession</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">study accession identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000380 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000380">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
+        <obo:IAO_0000117>Edison Ong, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>title of investigation</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">title of study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000381 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000381">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <rdfs:label xml:lang="en">human subject</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000385 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000385">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
+        <rdfs:label xml:lang="en">biosample identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000386 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000386">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000385"/>
+        <rdfs:label xml:lang="en">GSM identiifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000387 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000387">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000385"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100051"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">ImmPort biosample identifier</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OPMI_0004475 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0004475">
@@ -5145,6 +5216,34 @@
         <obo:IAO_0000115>ClinicalTrials.gov is a resource provided by the U.S. National Library of Medicine.</obo:IAO_0000115>
         <obo:IAO_0000119>https://clinicaltrials.gov/</obo:IAO_0000119>
         <rdfs:label xml:lang="en">Clinicaltrials.gov</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000378 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OPMI_0000378">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000066"/>
+        <rdfs:label xml:lang="en">SDY269 study</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000379 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OPMI_0000379">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000377"/>
+        <obo:IAO_0000136 rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000378"/>
+        <rdfs:label xml:lang="en">SDY269</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000382 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OPMI_0000382">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000381"/>
+        <rdfs:label xml:lang="en">human subject SUB112829</rdfs:label>
     </owl:NamedIndividual>
     
 
