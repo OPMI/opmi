@@ -49,13 +49,13 @@
         <dc:creator xml:lang="en">Jie Zheng</dc:creator>
         <dc:creator>Qingliang Leon Li</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
-        <dc:date>11-13-2019</dc:date>
+        <dc:date>11-15-2019</dc:date>
         <dc:description xml:lang="en">OPMI is a biomedical ontology in the area of precision medicine and its related investigations. It is community-driven and developed by following the OBO Foundry ontology development principles.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.83</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.85</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -3684,6 +3684,12 @@
     <!-- http://purl.obolibrary.org/obo/OPMI_0000293 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000293">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000390"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <obo:IAO_0000115>A person who performs an investigation task and takes the role of an investigator role.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">investigator</rdfs:label>
@@ -4582,6 +4588,32 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000383 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000383">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000391"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <obo:IAO_0000117>Leon Li, Asiyah Lin, Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">contact person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000384 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000384">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000383"/>
+        <obo:IAO_0000117>Leon Li, Asiyah Lin, Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">facility contact</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OPMI_0000385 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000385">
@@ -4611,6 +4643,55 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">ImmPort biosample identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000388 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000388">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000383"/>
+        <obo:IAO_0000117>Leon Li, Asiyah Lin, Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">facility contact backup</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000389 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000389">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000383"/>
+        <obo:IAO_0000117>Leon Li, Asiyah Lin, Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">contact of scientific queries</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000390 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000390">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000202"/>
+        <rdfs:label xml:lang="en">investigator role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000391 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000391">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <obo:IAO_0000115>a role taken by a person who serves as a contact for some process.</obo:IAO_0000115>
+        <obo:IAO_0000117>Leon Li, Asiyah Lin, Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">contact person role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000392 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000392">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0002807"/>
+        <rdfs:label xml:lang="en">Topical ocular hypotensive eye drops</rdfs:label>
     </owl:Class>
     
 
