@@ -49,13 +49,13 @@
         <dc:creator xml:lang="en">Jie Zheng</dc:creator>
         <dc:creator>Qingliang Leon Li</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
-        <dc:date>11-15-2019</dc:date>
+        <dc:date>11-22-2019</dc:date>
         <dc:description xml:lang="en">OPMI is a biomedical ontology in the area of precision medicine and its related investigations. It is community-driven and developed by following the OBO Foundry ontology development principles.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.85</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.86</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -244,6 +244,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000383"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -1455,6 +1461,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000112">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000577"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000383"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A telephone number is a sequence of digits assigned to a fixed-line telephone subscriber station connected to a telephone line or to a wireless electronic telephony device, such as a radio telephone or a mobile telephone, or to other devices for data transmission via the public switched telephone network (PSTN) or other public and private networks.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <obo:IAO_0000118>phone number</obo:IAO_0000118>
@@ -4598,7 +4610,18 @@
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <obo:IAO_0000112>In clinicaltrials.gov, contact information character limits:
+First Name: 62 characters
+Last Name: 62 characters
+Degree: 30 characters
+Phone: 30 characters
+Phone Ext: 14 characters
+Email: 254 characters
+Citation: https://prsinfo.clinicaltrials.gov/definitions.html#StudyOfficials</obo:IAO_0000112>
+        <obo:IAO_0000115>A person who serves as a contact role and has disclosed specified information to be reached. Usually the contact information, such as email and phone number, is provided.,</obo:IAO_0000115>
+        <obo:IAO_0000116>Leon, Asiyah, Oliver: Since each contact needs to provide some contact information, we may need to define the contact information.</obo:IAO_0000116>
         <obo:IAO_0000117>Leon Li, Asiyah Lin, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://prsinfo.clinicaltrials.gov/definitions.html#StudyOfficials</obo:IAO_0000119>
         <rdfs:label xml:lang="en">contact person</rdfs:label>
     </owl:Class>
     
@@ -4608,7 +4631,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000384">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000383"/>
+        <obo:IAO_0000115>A contact person for each facility participating in a study.</obo:IAO_0000115>
         <obo:IAO_0000117>Leon Li, Asiyah Lin, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://prsinfo.clinicaltrials.gov/definitions.html</obo:IAO_0000119>
         <rdfs:label xml:lang="en">facility contact</rdfs:label>
     </owl:Class>
     
@@ -4651,7 +4676,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000388">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000383"/>
+        <obo:IAO_0000115>Person to contact if Facility Contact is not available (that is, a second contact person).</obo:IAO_0000115>
         <obo:IAO_0000117>Leon Li, Asiyah Lin, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://prsinfo.clinicaltrials.gov/definitions.html#StudyOfficials</obo:IAO_0000119>
         <rdfs:label xml:lang="en">facility contact backup</rdfs:label>
     </owl:Class>
     
@@ -4662,6 +4689,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000389">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000383"/>
         <obo:IAO_0000117>Leon Li, Asiyah Lin, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://prsinfo.clinicaltrials.gov/definitions.html#StudyOfficials</obo:IAO_0000119>
         <rdfs:label xml:lang="en">contact of scientific queries</rdfs:label>
     </owl:Class>
     
@@ -4692,6 +4720,83 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000392">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0002807"/>
         <rdfs:label xml:lang="en">Topical ocular hypotensive eye drops</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000393 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000393">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000383"/>
+        <obo:IAO_0000117>Leon Li, Asiyah Lin, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://prsinfo.clinicaltrials.gov/definitions.html#StudyOfficials</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">contact for public queries</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000394 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000394">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <obo:IAO_0000115>A person who is responsible for the overall scientific leadership of the protocol, including study principal investigator</obo:IAO_0000115>
+        <obo:IAO_0000117>Leon Li, Asiyah Lin, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://prsinfo.clinicaltrials.gov/definitions.html#StudyOfficials</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">overall study official</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000395 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000395">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000383"/>
+        <obo:IAO_0000115>A person to whom questions concerning enrollment at any location of the study can be addressed.</obo:IAO_0000115>
+        <obo:IAO_0000117>Leon Li, Asiyah Lin, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>central contact person</obo:IAO_0000118>
+        <obo:IAO_0000119>https://prsinfo.clinicaltrials.gov/definitions.html</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">central contact person of study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000396 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000396">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000383"/>
+        <obo:IAO_0000115>A person to contact if Central Contact is not available.</obo:IAO_0000115>
+        <obo:IAO_0000117>Leon Li, Asiyah Lin, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>central contact person</obo:IAO_0000118>
+        <obo:IAO_0000119>https://prsinfo.clinicaltrials.gov/definitions.html</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">central contact backup of study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000397 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000397">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000383"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000383"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>information content entity about a contact person</obo:IAO_0000115>
+        <obo:IAO_0000117>Leon Li, Asiyah Lin, Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">contact person information</rdfs:label>
     </owl:Class>
     
 
