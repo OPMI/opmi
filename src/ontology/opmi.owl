@@ -49,13 +49,13 @@
         <dc:creator xml:lang="en">Jie Zheng</dc:creator>
         <dc:creator>Qingliang Leon Li</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
-        <dc:date>11-22-2019</dc:date>
+        <dc:date>12-06-2019</dc:date>
         <dc:description xml:lang="en">OPMI is a biomedical ontology in the area of precision medicine and its related investigations. It is community-driven and developed by following the OBO Foundry ontology development principles.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.86</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.87</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -4699,6 +4699,9 @@ Citation: https://prsinfo.clinicaltrials.gov/definitions.html#StudyOfficials</ob
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000390">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000202"/>
+        <obo:IAO_0000115>An investigation agent role that is taken by a human individual</obo:IAO_0000115>
+        <obo:IAO_0000117>Leon Li, Asiyah Lin, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>human investigator role</obo:IAO_0000118>
         <rdfs:label xml:lang="en">investigator role</rdfs:label>
     </owl:Class>
     
@@ -4797,6 +4800,76 @@ Citation: https://prsinfo.clinicaltrials.gov/definitions.html#StudyOfficials</ob
         <obo:IAO_0000115>information content entity about a contact person</obo:IAO_0000115>
         <obo:IAO_0000117>Leon Li, Asiyah Lin, Oliver He</obo:IAO_0000117>
         <rdfs:label xml:lang="en">contact person information</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000398 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000398">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000243"/>
+        <obo:IAO_0000115>A sponsor role taken by an individual, organization, group or other legal entity which takes responsibility for initiating, managing and/or financing a study. The Primary Sponsor is responsible for ensuring that the trial is properly registered. The Primary Sponsor may or may not be the main funder.</obo:IAO_0000115>
+        <obo:IAO_0000117>Leon Li, Asiyah Lin, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.who.int/ictrp/network/trds/en/</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">primary sponsor role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000399 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000399">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000243"/>
+        <obo:IAO_0000115>A sponsor role taken by an additional individual, organization or another legal person, if any, that has agreed with the primary sponsor to take on responsibilities of sponsorship.</obo:IAO_0000115>
+        <obo:IAO_0000117>Leon Li, Asiyah Lin, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>collaborator role</obo:IAO_0000118>
+        <obo:IAO_0000119>https://www.who.int/ictrp/network/trds/en/</obo:IAO_0000119>
+        <rdfs:comment>A secondary sponsor may have agreed to:
+- take on all the responsibilities of sponsorship jointly with the primary sponsor; or
+- form a group with the Primary Sponsor in which the responsibilities of sponsorship are allocated among the members of the group; or
+- act as the Primary Sponsor’s legal representative in relation to some or all of the trial sites.
+by WHO (https://www.who.int/ictrp/network/trds/en/)</rdfs:comment>
+        <rdfs:comment>In clinicaltrials.gov, the secondary sponsor role can be taken by a project collaborator (Reference: https://prsinfo.clinicaltrials.gov/trainTrainer/WHO-ICMJE-ClinTrialsgov-Cross-Ref.pdf). However, a secondary sponsor may serve as a collaborator role, but a collaborator may not serve as a secondary sponsor role.</rdfs:comment>
+        <rdfs:label xml:lang="en">secondary sponsor role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000400 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000400">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000390"/>
+        <obo:IAO_0000115>An investigator role taken by an individual who is designated as responsible party in an by the sponsor</obo:IAO_0000115>
+        <obo:IAO_0000117>Leon Li, Asiyah Lin, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://prsinfo.clinicaltrials.gov/definitions.html</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">principal investigator role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000401 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000401">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000390"/>
+        <obo:IAO_0000115>An investigator role taken by an individual who both initiates and conducts the study</obo:IAO_0000115>
+        <obo:IAO_0000117>Leon Li, Asiyah Lin, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://prsinfo.clinicaltrials.gov/definitions.html</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">sponsor investigator role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000402 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000402">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000202"/>
+        <obo:IAO_0000115>An investigation agent role taken by an agent (an individual, organization, group or another legal entity) who provides support to an investigation. The support may include funding, design, implementation, data analysis or reporting. The responsible party is responsible for confirming all collaborators before listing them.</obo:IAO_0000115>
+        <obo:IAO_0000117>Leon Li, Asiyah Li, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>collaborator role</obo:IAO_0000118>
+        <obo:IAO_0000119>https://prsinfo.clinicaltrials.gov/definitions.html#Collaborators</obo:IAO_0000119>
+        <obo:IAO_0000119>https://www.who.int/ictrp/network/trds/en/</obo:IAO_0000119>
+        <rdfs:comment>A secondary sponsor may serve as a collaborator role. However, a  collaborator may not serve as a secondary sponsor role.</rdfs:comment>
+        <rdfs:label xml:lang="en">investigation collaborator role</rdfs:label>
     </owl:Class>
     
 
