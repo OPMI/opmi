@@ -49,13 +49,13 @@
         <dc:creator xml:lang="en">Jie Zheng</dc:creator>
         <dc:creator>Qingliang Leon Li</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
-        <dc:date>12-13-2019</dc:date>
+        <dc:date>12-20-2019</dc:date>
         <dc:description xml:lang="en">OPMI is a biomedical ontology in the area of precision medicine and its related investigations. It is community-driven and developed by following the OBO Foundry ontology development principles.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.88</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.89</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -4895,6 +4895,7 @@ by WHO (https://www.who.int/ictrp/network/trds/en/)</rdfs:comment>
         <obo:IAO_0000115>An individual, organization, group or other legal entity that involves with any of the following activities: initiating, managing and funding a study</obo:IAO_0000115>
         <obo:IAO_0000117>Leon Li, Asiyah Lin, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.who.int/ictrp/network/trds/en/</obo:IAO_0000119>
+        <obo:OPMI_0000127>NCIT_C48355</obo:OPMI_0000127>
         <rdfs:label xml:lang="en">sponsor</rdfs:label>
     </owl:Class>
     
