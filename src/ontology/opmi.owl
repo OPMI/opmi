@@ -49,13 +49,13 @@
         <dc:creator xml:lang="en">Jie Zheng</dc:creator>
         <dc:creator>Qingliang Leon Li</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
-        <dc:date>12-20-2019</dc:date>
+        <dc:date>1-3-2020</dc:date>
         <dc:description xml:lang="en">OPMI is a biomedical ontology in the area of precision medicine and its related investigations. It is community-driven and developed by following the OBO Foundry ontology development principles.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.89</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.90</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -4011,7 +4011,7 @@
     <!-- http://purl.obolibrary.org/obo/OPMI_0000329 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000329">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001755"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0500026"/>
         <obo:IAO_0000115>a selection criterion (rule) which defines and states the exclusion condition for an entity to be considered as suitable for a given task or participation in a process.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Edison Ong</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6044655/</obo:IAO_0000119>
@@ -4882,6 +4882,36 @@ by WHO (https://www.who.int/ictrp/network/trds/en/)</rdfs:comment>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000403 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000403">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0500026"/>
+        <obo:IAO_0000115>a selection criterion (rule) which defines and states the inclusion condition for an entity to be considered as suitable for a given task or participation in a process.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Edison Ong, Leon Li, Asiyah Lin</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6044655/</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">inclusion criterion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000404 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000404">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000416"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
+        <obo:IAO_0000115>A centrally registered unique identifier assigned by the primary registry to a study including a clinical trial.</obo:IAO_0000115>
+        <obo:IAO_0000117>Qingliang Leon Li, Asiyah Yu Lin, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.who.int/ictrp/network/trds/en/</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">primary registry identifier</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OPMI_0000405 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000405">
@@ -4939,6 +4969,24 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000409 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000409">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000415"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
+        <obo:IAO_0000115>A centrally registered unique identifier besides the primary registry identifier allocated by the Primary Registry, if any.</obo:IAO_0000115>
+        <obo:IAO_0000117>Qingliang Leon Li, Asiyah Yu Lin, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.who.int/ictrp/network/trds/en/</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">secondary registry identifier</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OPMI_0000410 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000410">
@@ -4989,6 +5037,41 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000413 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000413">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <obo:IAO_0000115>A role taken by a string (which may have mixed integer and text) that serves as a unique record.</obo:IAO_0000115>
+        <obo:IAO_0000117>Leon Li, Asiyah Lin, Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">identifier role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000415 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000415">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000413"/>
+        <obo:IAO_0000115>An identifier role that inheres in a unique record which provides an identifier secondary to the primary registry identifier.</obo:IAO_0000115>
+        <obo:IAO_0000117>Qingliang Leon Li, Asiyah Yu Lin, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.who.int/ictrp/network/trds/en/</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">secondary registry identifier role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000416 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000416">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000413"/>
+        <obo:IAO_0000115>An identifier role that is assigned by a primary registry and provides a unique record.</obo:IAO_0000115>
+        <obo:IAO_0000117>Qingliang Leon Li, Asiyah Yu Lin, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.who.int/ictrp/network/trds/en/</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">primary registry identifier role</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OPMI_0004475 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0004475">
@@ -4996,7 +5079,8 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000306"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">17</owl:maxCardinality>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">17</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A age quality that is measured by the value of less than 18 years old</obo:IAO_0000115>
