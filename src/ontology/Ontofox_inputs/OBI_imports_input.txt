@@ -28,6 +28,9 @@ http://purl.obolibrary.org/obo/OBI_0000243 #sponsor role
 http://purl.obolibrary.org/obo/OBI_0000436 #needle
 http://purl.obolibrary.org/obo/OBI_0000661 #ELISA
 
+http://purl.obolibrary.org/obo/OBI_0500026 #eligibility criterion
+includeAllChildren
+
 http://purl.obolibrary.org/obo/OBI_0000293 #has_specified_input
 http://purl.obolibrary.org/obo/OBI_0000299 #has_specified_output
 
