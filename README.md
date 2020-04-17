@@ -11,7 +11,7 @@ This GitHub website is the home page of OPMI.
 
 Collaborations are welcome! 
 
-# Download
+## Download
 
 Use the following URI to download this ontology
 
@@ -19,11 +19,14 @@ Use the following URI to download this ontology
 
 Note that the source ontology is an OWL file.  
 
-# Deposition and Browsing
+## Deposition and Browsing
 
 * Default browsing in Ontobee: [http://www.ontobee.org/ontology/OPMI](http://www.ontobee.org/ontology/OPMI) 
 * Browsing in NCBO BioPortal: [https://bioportal.bioontology.org/ontologies/OPMI](https://bioportal.bioontology.org/ontologies/OPMI)
 
-# Publication
+## CIDO in OBO Foundry: 
+http://obofoundry.org/ontology/cido.html.
+
+## Publication
 
 * He Y, Ong E, Schaub J, Dowd F, O’Toole JF, Siapos A, Reich C, Seager S, Wan L, Yu H, Zheng J, Stoeckert C, Yang X, Yang S, Steck B, Park C, Barisoni L, Kretzler M, Himmelfarb J, Iyengar R, Mooney SD, for the Kidney Precision Medicine Project Consortium. [OPMI: the Ontology of Precision Medicine and Investigation and its support for clinical data and metadata representation and analysis](https://drive.google.com/file/d/1TN3jH4hoh40Saa8adlR_TocREGTNPVlC/view). The 10th International Conference on Biomedical Ontology (ICBO-2019), July 30 - August 2, 2019, Buffalo, NY, USA. 10-page full length article.  
