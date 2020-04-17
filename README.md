@@ -24,8 +24,8 @@ Note that the source ontology is an OWL file.
 * Default browsing in Ontobee: [http://www.ontobee.org/ontology/OPMI](http://www.ontobee.org/ontology/OPMI) 
 * Browsing in NCBO BioPortal: [https://bioportal.bioontology.org/ontologies/OPMI](https://bioportal.bioontology.org/ontologies/OPMI)
 
-## CIDO in OBO Foundry: 
-http://obofoundry.org/ontology/cido.html.
+## OPMI in OBO Foundry: 
+http://obofoundry.org/ontology/opmi.html.
 
 ## Publication
 
