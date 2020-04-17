@@ -19,7 +19,7 @@ Use the following URI to download this ontology
 
 Note that the source ontology is an OWL file.  
 
-# Browsing
+# Deposition and Browsing
 
 * Default browsing in Ontobee: [http://www.ontobee.org/ontology/OPMI](http://www.ontobee.org/ontology/OPMI) 
 * Browsing in NCBO BioPortal: [https://bioportal.bioontology.org/ontologies/OPMI](https://bioportal.bioontology.org/ontologies/OPMI)
