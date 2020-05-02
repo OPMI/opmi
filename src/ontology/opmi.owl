@@ -5148,6 +5148,7 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
         <obo:IAO_0000115>The representation of a presumptive positive conclusion of a diagnostic process, which indicates that the patient is diagnozed as presumptive positive for a hypothetic disease.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <obo:OPMI_0000434>假定阳性诊断</obo:OPMI_0000434>
+        <obo:OPMI_0000434>疑是诊断</obo:OPMI_0000434>
         <rdfs:label xml:lang="en">presumptive positive diagnosis</rdfs:label>
     </owl:Class>
     
