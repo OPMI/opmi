@@ -55,7 +55,7 @@
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.97</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.98</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -5104,6 +5104,28 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Patient</obo:IAO_0000119>
         <dc:creator>Hong Yu, Oliver He</dc:creator>
         <rdfs:label xml:lang="en">human patient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000431 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000431">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000073"/>
+        <obo:IAO_0000115>The representation of a positive conclusion of a diagnostic process, which indicates that the patient is diagnozed as positive for a hypothetic disease.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">positive diagnosis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000432 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000432">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000073"/>
+        <obo:IAO_0000115>The representation of a negative conclusion of a diagnostic process, which indicates that the patient is diagnozed as negative for a hypothetic disease.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">negative diagnosis</rdfs:label>
     </owl:Class>
     
 
