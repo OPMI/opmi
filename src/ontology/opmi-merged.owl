@@ -33,13 +33,13 @@
         <dc:creator xml:lang="en">Jie Zheng</dc:creator>
         <dc:creator>Qingliang Leon Li</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
-        <dc:date>1-31-2020</dc:date>
+        <dc:date>5-15-2020</dc:date>
         <dc:description xml:lang="en">OPMI is a biomedical ontology in the area of precision medicine and its related investigations. It is community-driven and developed by following the OBO Foundry ontology development principles.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.97</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.101</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -694,6 +694,15 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OPMI_0000364">
         <obo:IAO_0000115>An annotation property that refers to a code defined by NCIT</obo:IAO_0000115>
         <rdfs:label xml:lang="en">NCIT code</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000434 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OPMI_0000434">
+        <rdfs:label xml:lang="en">alternative term in Chinese</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000118"/>
     </owl:AnnotationProperty>
     
 
@@ -46462,6 +46471,82 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000417 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000417">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000030"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>a human who is a recipient of a health care service performed by healthcare professionals.</obo:IAO_0000115>
+        <obo:IAO_0000118>patient</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Patient</obo:IAO_0000119>
+        <dc:creator>Hong Yu, Oliver He</dc:creator>
+        <rdfs:label xml:lang="en">human patient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000418 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000418">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000066"/>
+        <obo:IAO_0000115>A systematic, scientific investigation that can be either interventional or observational and involves human beings as research subjects. Human subject research can be either medical (clinical) research or non-medical (e.g., social science) research.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>human investigation</obo:IAO_0000118>
+        <obo:IAO_0000118>human study</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Human_subject_research</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">human subject study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000431 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000431">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000073"/>
+        <obo:IAO_0000115>The representation of a positive conclusion of a diagnostic process, which indicates that the patient is diagnozed as positive for a hypothetic disease.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:OPMI_0000434>阳性诊断</obo:OPMI_0000434>
+        <rdfs:label xml:lang="en">positive diagnosis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000432 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000432">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000073"/>
+        <obo:IAO_0000115>The representation of a negative conclusion of a diagnostic process, which indicates that the patient is diagnozed as negative for a hypothetic disease.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:OPMI_0000434>阴性诊断</obo:OPMI_0000434>
+        <rdfs:label xml:lang="en">negative diagnosis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000433 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000433">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000073"/>
+        <obo:IAO_0000115>The representation of a presumptive positive conclusion of a diagnostic process, which indicates that the patient is diagnozed as presumptive positive for a hypothetic disease.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:OPMI_0000434>假定阳性诊断</obo:OPMI_0000434>
+        <obo:OPMI_0000434>疑是诊断</obo:OPMI_0000434>
+        <rdfs:label xml:lang="en">presumptive positive diagnosis</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OPMI_0004475 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0004475">
@@ -46776,7 +46861,7 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/OPMI_0004507 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0004507">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000066"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000418"/>
         <obo:IAO_0000115>a clinical trial is a medical interventional study where participants are assigned prospectively to an intervention or interventions according to a protocol to evaluate the safety and efficacy of the intervention(s) on biomedical or other health related outcomes. The Interventions include but are not restricted to drugs, cells and other biological products, surgical procedures, radiologic procedures, devices, behavioral treatments, process-of-care changes, preventive care, etc.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Asiyah Yu Lin, Qingliang Li</obo:IAO_0000117>
         <obo:IAO_0000118>interventional trial</obo:IAO_0000118>
@@ -59592,8 +59677,8 @@ This interpretation is *not* the same as an at-all-times relation
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One of the large, unbroken masses of land into which the Earth&apos;s surface is divided.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/gaz.owl"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FTT:540</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TGN:21402</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">continent</rdfs:label>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TGN:21402</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ</oboInOwl:hasOBONamespace>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GeoNames:CONT</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">continental region</oboInOwl:hasExactSynonym>
@@ -59611,8 +59696,8 @@ This interpretation is *not* the same as an at-all-times relation
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ</oboInOwl:hasOBONamespace>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geographic location</rdfs:label>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geographic region {alternative name}</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/gaz.owl"/>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geographic location</obo:IAO_0000111>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/gaz.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00000460">
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ:00000460</oboInOwl:id>
@@ -59625,11 +59710,11 @@ This interpretation is *not* the same as an at-all-times relation
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USA</oboInOwl:hasExactSynonym>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ:00002459</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISO3166-1:US</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISO3166-1:840</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISO3166-1:US</oboInOwl:hasDbXref>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A federal constitutional republic comprising fifty states and a federal district. The country is situated mostly in central North America, where its forty-eight contiguous states and Washington, DC, the capital district, lie between the Pacific and Atlantic Oceans, bordered by Canada to the north and Mexico to the south. The State of Alaska is in the northwest of the continent, with Canada to its east and Russia to the west across the Bering Strait, and the State of Hawaii is in the mid-Pacific. The United States also possesses several territories, or insular areas, that are scattered around the Caribbean and Pacific. The states are divided into smaller administrative regions, called counties in most states, exceptions being Alaska (parts of the state are organized into subdivisions called boroughs; the rest of the state&apos;s territory that is not included in any borough is divided into &quot;census areas&quot;), and Louisiana (which is divided into county-equivalents that are called parishes). There are also independent cities which are within particular states but not part of any particular county or consolidated city-counties. Another type of organization is where the city and county are unified and function as an independent city. There are thirty-nine independent cities in Virginia and other independent cities or city-counties are San Francisco, California, Baltimore, Maryland, St. Louis, Missouri, Denver, Colorado and Carson City, Nevada. Counties can include a number of cities, towns, villages, or hamlets, or sometimes just a part of a city. Counties have varying degrees of political and legal significance, but they are always administrative divisions of the state. Counties in many states are further subdivided into townships, which, by definition, are administrative divisions of a county. In some states, such as Michigan, a township can file a charter with the state government, making itself into a &quot;charter township&quot;, which is a type of mixed municipal and township status (giving the township some of the rights of a city without all of the responsibilities), much in the way a metropolitan municipality is a mixed municipality and county.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">U.S.A</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">United States of America</rdfs:label>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">U.S.A</oboInOwl:hasExactSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/gaz.owl"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISO3166-2:US</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISO3166-1:USA</oboInOwl:hasDbXref>
@@ -59677,16 +59762,16 @@ Please see www.environmentontology.org for more information and citations.</rdfs
         <dc:contributor>Sydni Joubran</dc:contributor>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <obo:IAO_0000116 xml:lang="en">Product version</obo:IAO_0000116>
-        <dc:creator>Sirarat Sarntivijai</dc:creator>
         <dc:contributor>Darrell R. Abernethy</dc:contributor>
+        <dc:creator>Sirarat Sarntivijai</dc:creator>
         <dc:creator>Ling Wan</dc:creator>
         <dc:creator xml:lang="en">Shelley Zhang</dc:creator>
         <dc:creator>Rebecca Racz</dc:creator>
         <dc:creator>Liwei Wang</dc:creator>
         <dc:creator xml:lang="en">Meiu Wong</dc:creator>
         <dc:description xml:lang="en">The Ontology of Adverse Eventsy (OAE) is a biomedical ontology in the domain of adverse events. OAE aims to standardize adverse event annotation, integrate various adverse event data, and support computer-assisted reasoning.  OAE is a community-based ontology. Its development follows the OBO Foundry principles. Vaccine adverse events have been used as an initial testing use case. OAE also studies adverse events associated with the administration of drug and nutritional products, the operation of surgeries, and the usage of medical devices, etc.</dc:description>
-        <dc:creator>Kevin Mo</dc:creator>
         <dc:title xml:lang="en">OAE: Ontology of Adverse Events</dc:title>
+        <dc:creator>Kevin Mo</dc:creator>
         <dc:creator>Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
         <dc:contributor>Luca Toldo</dc:contributor>
         <dc:creator>Noemi Garg</dc:creator>
@@ -59699,8 +59784,8 @@ Please see www.environmentontology.org for more information and citations.</rdfs
         <dc:creator xml:lang="en">Bingjian Yang</dc:creator>
         <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <dc:creator>Qingping Liu</dc:creator>
-        <dc:date>2019-2-21</dc:date>
         <dc:creator>Jiangan Xie</dc:creator>
+        <dc:date>2019-2-21</dc:date>
         <dc:creator>Sydni Joubran</dc:creator>
         <dc:creator>Kelly Yang</dc:creator>
         <dc:creator>David Ameriguian</dc:creator>
@@ -59719,6 +59804,7 @@ Please see www.environmentontology.org for more information and citations.</rdfs
         <dc:creator>Cornelius Rosse</dc:creator>
         <dc:creator>Richard Scheuermann</dc:creator>
         <dc:creator>Anand Kumar</dc:creator>
+        <dc:creator>Barry Smith</dc:creator>
         <rdfs:comment>The Ontology for General Medical Science (OGMS) is based on the papers Toward an Ontological Treatment of Disease and Diagnosis and On Carcinomas and Other Pathological Entities. The ontology attempts to address some of the issues raised at the Workshop on Ontology of Diseases (Dallas, TX). OGMS was formerly called the clinical phenotype ontology. Terms from OGMS hang from the Basic Formal Ontology.
 
 The latest version of OGMS is always available at http://purl.obolibrary.org/obo/ogms.owl
@@ -59729,17 +59815,16 @@ The OGMS developer site is http://code.google.com/p/ogms/
 The discussion group is http://groups.google.com/group/ogms-discuss
 
 If you are interested in participating in the development of OGMS, please send email to albertgoldfain@gmail.com. Be sure to include a google-account username with your request (this will be the username associated with a gmail address).</rdfs:comment>
-        <dc:creator>Barry Smith</dc:creator>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/omrse.owl">
         <rdfs:comment xml:lang="en">This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government&apos;s &quot;meaningful use&quot; criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt</rdfs:comment>
         <dc:creator xml:lang="en">William Hogan</dc:creator>
-        <dc:creator xml:lang="en">Mathias Brochhausen</dc:creator>
-        <dc:creator>Amanda Hicks</dc:creator>
         <owl:versionInfo>2017-06-08</owl:versionInfo>
+        <dc:creator>Amanda Hicks</dc:creator>
+        <dc:creator xml:lang="en">Mathias Brochhausen</dc:creator>
         <dc:creator xml:lang="en">Swetha Garimalla</dc:creator>
-        <rdfs:label xml:lang="en">The Ontology of Medically Related Social Entities</rdfs:label>
         <dc:contributor>Daniel Welch</dc:contributor>
+        <rdfs:label xml:lang="en">The Ontology of Medically Related Social Entities</rdfs:label>
         <dc:creator xml:lang="en">Shariq Tariq</dc:creator>
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000657">
