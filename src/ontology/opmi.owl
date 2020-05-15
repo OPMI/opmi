@@ -49,13 +49,13 @@
         <dc:creator xml:lang="en">Jie Zheng</dc:creator>
         <dc:creator>Qingliang Leon Li</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
-        <dc:date>5-2-2020</dc:date>
+        <dc:date>5-15-2020</dc:date>
         <dc:description xml:lang="en">OPMI is a biomedical ontology in the area of precision medicine and its related investigations. It is community-driven and developed by following the OBO Foundry ontology development principles.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.100</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.101</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -5117,6 +5117,20 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000418 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000418">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000066"/>
+        <obo:IAO_0000115>A systematic, scientific investigation that can be either interventional or observational and involves human beings as research subjects. Human subject research can be either medical (clinical) research or non-medical (e.g., social science) research.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>human investigation</obo:IAO_0000118>
+        <obo:IAO_0000118>human study</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Human_subject_research</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">human subject study</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OPMI_0000431 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000431">
@@ -5468,7 +5482,7 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/OPMI_0004507 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0004507">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000066"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000418"/>
         <obo:IAO_0000115>a clinical trial is a medical interventional study where participants are assigned prospectively to an intervention or interventions according to a protocol to evaluate the safety and efficacy of the intervention(s) on biomedical or other health related outcomes. The Interventions include but are not restricted to drugs, cells and other biological products, surgical procedures, radiologic procedures, devices, behavioral treatments, process-of-care changes, preventive care, etc.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Asiyah Yu Lin, Qingliang Li</obo:IAO_0000117>
         <obo:IAO_0000118>interventional trial</obo:IAO_0000118>
