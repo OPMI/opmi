@@ -11,7 +11,7 @@ OPMI is now supported by the new NIH/NIDDK-supported Kidney Precision Medicine P
 
 OPMI has now been approved to be an OBO Foundry library ontology: http://obofoundry.org/ontology/opmi.html.
 
-Collaborations are welcome. A very active collaboration OPMI has is the the collaboration with clinicaltrials.gov and many collaborators to develop clinical trial-specific terms with the aim to standardize and integrate clinical trial data. See more details in the meeting notes: https://docs.google.com/document/d/1VnmFhqFwfH3qcShiZUTO9ALF-3JKCs2oa3MQ2LotH6U/edit.   
+Collaborations are welcome. A very active collaboration OPMI has is the the collaboration with [clinicaltrials.gov](http://clinicaltrials.gov) and many collaborators to develop clinical trial-specific terms with the aim to standardize and integrate clinical trial data. See more details in the meeting notes: https://docs.google.com/document/d/1VnmFhqFwfH3qcShiZUTO9ALF-3JKCs2oa3MQ2LotH6U/edit.   
 
 ## Download
 
