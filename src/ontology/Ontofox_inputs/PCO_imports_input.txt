@@ -5,17 +5,15 @@ http://purl.obolibrary.org/obo/opmi/PCO_imports.owl
 PCO
 
 [Low level source term URIs]
-http://www.ebi.ac.uk/efo/EFO_0001799 #ethnic group
-includeAllChildren
+http://purl.obolibrary.org/obo/PCO_0000027 #collection of humans 
 
 [Top level source term URIs and target direct superclass URIs]
-http://www.ebi.ac.uk/efo/EFO_0001799 #ethnic group
-subClassOf http://purl.obolibrary.org/obo/BFO_0000040 #material entity
+http://purl.obolibrary.org/obo/BFO_0000040 #material entity
 
 [Source term retrieval setting]
-includeNoIntermediates
+includeAllIntermediates
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAxiomsRecursively
 
 [Source annotation URIs to be excluded]

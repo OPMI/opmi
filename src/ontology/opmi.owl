@@ -36,7 +36,6 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opmi/OBI_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opmi/OGMS_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opmi/OMRSE_imports.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opmi/PATO_imports.owl"/>
         <dc:contributor xml:lang="en">Becky Steck</dc:contributor>
         <dc:contributor xml:lang="en">Christopher Park</dc:contributor>
         <dc:contributor xml:lang="en">John F. O’Toole</dc:contributor>
@@ -4607,6 +4606,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000381">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <obo:IAO_0000115>A livinging individual who is or becomes a participant in research, either as a recipient of a test article or as a control. A subject may be either a healthy human or a patient.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Anthony Huffman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://irb.research.chop.edu/who-human-subject</obo:IAO_0000119>
         <rdfs:label xml:lang="en">human subject</rdfs:label>
     </owl:Class>
     
@@ -5131,6 +5133,18 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000419 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000419">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000023"/>
+        <obo:IAO_0000115>A collection of humans who share a defining characteristic, typically those who are collectively experiencing a common event (e.g., a clincal trial study) in a selected period.</obo:IAO_0000115>
+        <obo:IAO_0000117>Anthony Huffman, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Cohort_study</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">human cohort</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OPMI_0000431 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000431">
@@ -5611,6 +5625,18 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
         <obo:OPMI_0000364>C15603</obo:OPMI_0000364>
         <rdfs:label xml:lang="en">Phase 4 clinical trial</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000011"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000128 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000128"/>
     
 
 
