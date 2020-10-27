@@ -48,13 +48,13 @@
         <dc:creator xml:lang="en">Jie Zheng</dc:creator>
         <dc:creator>Qingliang Leon Li</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
-        <dc:date>5-15-2020</dc:date>
+        <dc:date>10-27-2020</dc:date>
         <dc:description xml:lang="en">OPMI is a biomedical ontology in the area of precision medicine and its related investigations. It is community-driven and developed by following the OBO Foundry ontology development principles.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.101</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.114</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -260,6 +260,14 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000383"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2157 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2157">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000421"/>
     </rdf:Description>
     
 
@@ -5141,6 +5149,83 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
         <obo:IAO_0000117>Anthony Huffman, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Cohort_study</obo:IAO_0000119>
         <rdfs:label xml:lang="en">human cohort</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000420 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000420">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000426"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002215"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000425"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A material entity that is composed of organic structure and is capable of self-replication (with or without host support).</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">organitor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000421 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000421">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000420"/>
+        <rdfs:label xml:lang="en">organism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000422 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000422">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000420"/>
+        <rdfs:label xml:lang="en">anorganism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000423 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000423">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000422"/>
+        <rdfs:label xml:lang="en">viroid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000424 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000424">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000422"/>
+        <rdfs:label xml:lang="en">prion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000425 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000425">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:label xml:lang="en">self-replication</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000426 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000426">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24431"/>
+        <rdfs:label xml:lang="en">organic chemical entity</rdfs:label>
     </owl:Class>
     
 
