@@ -54,7 +54,7 @@
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.114</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.115</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -5171,6 +5171,7 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A material entity that is composed of organic structure and is capable of self-replication (with or without host support).</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5496545/</obo:IAO_0000119>
         <rdfs:label xml:lang="en">organitor</rdfs:label>
     </owl:Class>
     
@@ -5180,6 +5181,8 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000421">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000420"/>
+        <obo:IAO_0000115>An organitor that is composed of one cell or multiple cells and embodies the properties of life.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Organism</obo:IAO_0000119>
         <rdfs:label xml:lang="en">organism</rdfs:label>
     </owl:Class>
     
@@ -5189,6 +5192,7 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000422">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000420"/>
+        <obo:IAO_0000115>An organitor that does not have the unit of cell but it may use the cells to replicate. Anorganism is non-organism organitor.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">anorganism</rdfs:label>
     </owl:Class>
     
@@ -5198,6 +5202,9 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000423">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000422"/>
+        <obo:IAO_0000115></obo:IAO_0000115>
+        <obo:IAO_0000115>An non-organism infectious agent that is composed solely of a short strand of circular, single-stranded RNA and has no protein coating.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Viroid</obo:IAO_0000119>
         <rdfs:label xml:lang="en">viroid</rdfs:label>
     </owl:Class>
     
@@ -5207,6 +5214,8 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000424">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000422"/>
+        <obo:IAO_0000115>A misfolded protein that has the ability to transmit its misfolded shape onto normal variants of the same protein.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Prion</obo:IAO_0000119>
         <rdfs:label xml:lang="en">prion</rdfs:label>
     </owl:Class>
     
@@ -5216,6 +5225,9 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000425">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115>A process of a dynamic system that produces an identiical or similar copy of itself.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Self-replication</obo:IAO_0000119>
         <rdfs:label xml:lang="en">self-replication</rdfs:label>
     </owl:Class>
     
