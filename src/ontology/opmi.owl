@@ -48,13 +48,13 @@
         <dc:creator xml:lang="en">Jie Zheng</dc:creator>
         <dc:creator>Qingliang Leon Li</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
-        <dc:date>10-27-2020</dc:date>
+        <dc:date>11-13-2020</dc:date>
         <dc:description xml:lang="en">OPMI is a biomedical ontology in the area of precision medicine and its related investigations. It is community-driven and developed by following the OBO Foundry ontology development principles.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.115</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.116</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -4614,9 +4614,11 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000381">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-        <obo:IAO_0000115>A livinging individual who is or becomes a participant in research, either as a recipient of a test article or as a control. A subject may be either a healthy human or a patient.</obo:IAO_0000115>
+        <obo:IAO_0000115>A livinging individual who is or becomes a participant in research, either as a recipient of a test article or as a control. A subject may be either a healthy human or a patient. Based on the NIH definition, a living individual about whom an investigator (whether professional or student) conducting the following research: (1) Obtains information or biospecimens through intervention or interaction with the individual, and uses, studies, or analyzes the information or biospecimens; or (2) Obtains, uses, studies, analyzes, or generates identifiable private information or identifiable biospecimens.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Anthony Huffman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://grants.nih.gov/policy/humansubjects/research.htm</obo:IAO_0000119>
         <obo:IAO_0000119>https://irb.research.chop.edu/who-human-subject</obo:IAO_0000119>
+        <obo:IAO_0000119>https://nexus.od.nih.gov/all/2018/08/07/human-subjects-and-clinical-trial-glossary-updates/</obo:IAO_0000119>
         <rdfs:label xml:lang="en">human subject</rdfs:label>
     </owl:Class>
     
@@ -5171,8 +5173,10 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A material entity that is composed of organic structure and is capable of self-replication (with or without host support).</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>organic self-replicating system</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Self-replication</obo:IAO_0000119>
         <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5496545/</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">organitor</rdfs:label>
+        <rdfs:label>self-replicating organic structure</rdfs:label>
     </owl:Class>
     
 
@@ -5182,6 +5186,8 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000421">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000420"/>
         <obo:IAO_0000115>An organitor that is composed of one cell or multiple cells and embodies the properties of life.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>cellular self-replicating organic structure</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Organism</obo:IAO_0000119>
         <rdfs:label xml:lang="en">organism</rdfs:label>
     </owl:Class>
@@ -5193,7 +5199,9 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000422">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000420"/>
         <obo:IAO_0000115>An organitor that does not have the unit of cell but it may use the cells to replicate. Anorganism is non-organism organitor.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">anorganism</rdfs:label>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Self-replication</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">non-organism self-replicating organic structure</rdfs:label>
     </owl:Class>
     
 
@@ -5206,17 +5214,6 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
         <obo:IAO_0000115>An non-organism infectious agent that is composed solely of a short strand of circular, single-stranded RNA and has no protein coating.</obo:IAO_0000115>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Viroid</obo:IAO_0000119>
         <rdfs:label xml:lang="en">viroid</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OPMI_0000424 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000424">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000422"/>
-        <obo:IAO_0000115>A misfolded protein that has the ability to transmit its misfolded shape onto normal variants of the same protein.</obo:IAO_0000115>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Prion</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">prion</rdfs:label>
     </owl:Class>
     
 
@@ -5238,6 +5235,52 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000426">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24431"/>
         <rdfs:label xml:lang="en">organic chemical entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000427 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000427">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000119>https://nexus.od.nih.gov/all/2018/08/07/human-subjects-and-clinical-trial-glossary-updates/</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">human subject age data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000428 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000428">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000427"/>
+        <obo:IAO_0000115>For the purposes of the NIH Policy and Guidelines on the Inclusion of Individuals Across the Lifespan as Participants in Research Involving Human Subjects, a child is defined as an individual under the age of 18 years.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://nexus.od.nih.gov/all/2018/08/07/human-subjects-and-clinical-trial-glossary-updates/</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">child age data of human subject</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000429 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000429">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000427"/>
+        <obo:IAO_0000115>The regular aged adult group is defined here as an individual over 18 years of age.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://nexus.od.nih.gov/all/2018/08/07/human-subjects-and-clinical-trial-glossary-updates/</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">adult age data of human subject</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000430 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000430">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000429"/>
+        <obo:IAO_0000115>For the purposes of the NIH Policy and Guidelines on the Inclusion of Individuals Across the Lifespan as Participants in Research Involving Human Subjects, an older adult is defined as an individual 65 years of age or older.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://nexus.od.nih.gov/all/2018/08/07/human-subjects-and-clinical-trial-glossary-updates/</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">older adult data of human subject</rdfs:label>
     </owl:Class>
     
 
@@ -5275,6 +5318,42 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
         <obo:OPMI_0000434>假定阳性诊断</obo:OPMI_0000434>
         <obo:OPMI_0000434>疑是诊断</obo:OPMI_0000434>
         <rdfs:label xml:lang="en">presumptive positive diagnosis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000435 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000435">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000381"/>
+        <obo:IAO_0000115>A human subject classified as adult, which is defined by NIH as an individual under the age of 18 years. For the purposes of the NIH Policy and Guidelines on the Inclusion of Individuals Across the Lifespan as Participants in Research Involving Human Subjects, a child is defined as an individual under the age of 18 years.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://nexus.od.nih.gov/all/2018/08/07/human-subjects-and-clinical-trial-glossary-updates/</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">child human subject</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000436 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000436">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000437"/>
+        <obo:IAO_0000115>A human subject classified as adult, which is defined by NIH as an individual 65 years of age or older. For the purposes of the NIH Policy and Guidelines on the Inclusion of Individuals Across the Lifespan as Participants in Research Involving Human Subjects, an older adult is defined as an individual 65 years of age or older.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://nexus.od.nih.gov/all/2018/08/07/human-subjects-and-clinical-trial-glossary-updates/</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">older adult human subject</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000437 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000437">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000381"/>
+        <obo:IAO_0000115>A human subject classified as adult, which is defined by NIH as an individual over 18 years of age.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://nexus.od.nih.gov/all/2018/08/07/human-subjects-and-clinical-trial-glossary-updates/</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">adult human subject</rdfs:label>
     </owl:Class>
     
 
@@ -5933,6 +6012,10 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_36469">
+        <obo:IAO_0000115>A misfolded protein that has the ability to transmit its misfolded shape onto normal variants of the same protein.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Prion</obo:IAO_0000119>
+    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C94488">
         <rdfs:label>standing height</rdfs:label>
     </rdf:Description>
