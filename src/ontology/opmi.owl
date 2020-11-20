@@ -48,13 +48,13 @@
         <dc:creator xml:lang="en">Jie Zheng</dc:creator>
         <dc:creator>Qingliang Leon Li</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
-        <dc:date>11-13-2020</dc:date>
+        <dc:date>11-17-2020</dc:date>
         <dc:description xml:lang="en">OPMI is a biomedical ontology in the area of precision medicine and its related investigations. It is community-driven and developed by following the OBO Foundry ontology development principles.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.116</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.117</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -5243,6 +5243,8 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000427">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000115>A measurement datum that is about the age of human subject</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Jie Zheng, Anthony Huffman</obo:IAO_0000117>
         <obo:IAO_0000119>https://nexus.od.nih.gov/all/2018/08/07/human-subjects-and-clinical-trial-glossary-updates/</obo:IAO_0000119>
         <rdfs:label xml:lang="en">human subject age data</rdfs:label>
     </owl:Class>
@@ -5254,9 +5256,10 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000428">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000427"/>
         <obo:IAO_0000115>For the purposes of the NIH Policy and Guidelines on the Inclusion of Individuals Across the Lifespan as Participants in Research Involving Human Subjects, a child is defined as an individual under the age of 18 years.</obo:IAO_0000115>
-        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He, Jie Zheng, Anthony Huffman</obo:IAO_0000117>
+        <obo:IAO_0000118>child human subject</obo:IAO_0000118>
         <obo:IAO_0000119>https://nexus.od.nih.gov/all/2018/08/07/human-subjects-and-clinical-trial-glossary-updates/</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">child age data of human subject</rdfs:label>
+        <rdfs:label xml:lang="en">child age data of human subject (by NIH)</rdfs:label>
     </owl:Class>
     
 
@@ -5266,7 +5269,8 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000429">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000427"/>
         <obo:IAO_0000115>The regular aged adult group is defined here as an individual over 18 years of age.</obo:IAO_0000115>
-        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He, Jie Zheng, Anthony Huffman</obo:IAO_0000117>
+        <obo:IAO_0000118>adult human subject</obo:IAO_0000118>
         <obo:IAO_0000119>https://nexus.od.nih.gov/all/2018/08/07/human-subjects-and-clinical-trial-glossary-updates/</obo:IAO_0000119>
         <rdfs:label xml:lang="en">adult age data of human subject</rdfs:label>
     </owl:Class>
@@ -5278,9 +5282,10 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000430">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000429"/>
         <obo:IAO_0000115>For the purposes of the NIH Policy and Guidelines on the Inclusion of Individuals Across the Lifespan as Participants in Research Involving Human Subjects, an older adult is defined as an individual 65 years of age or older.</obo:IAO_0000115>
-        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He, Jie Zheng, Anthony Huffman</obo:IAO_0000117>
+        <obo:IAO_0000118>older adult human subject</obo:IAO_0000118>
         <obo:IAO_0000119>https://nexus.od.nih.gov/all/2018/08/07/human-subjects-and-clinical-trial-glossary-updates/</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">older adult data of human subject</rdfs:label>
+        <rdfs:label xml:lang="en">older adult data of human subject (by NIH)</rdfs:label>
     </owl:Class>
     
 
