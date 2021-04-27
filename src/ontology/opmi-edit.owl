@@ -42,6 +42,7 @@
         <dc:contributor xml:lang="en">John F. O’Toole</dc:contributor>
         <dc:contributor>Matthias Kretzler</dc:contributor>
         <dc:contributor xml:lang="en">Sean Mooney</dc:contributor>
+        <dc:creator xml:lang="en">Anthony Huffman</dc:creator>
         <dc:creator>Asiyah Yu Lin</dc:creator>
         <dc:creator xml:lang="en">Fred Dowd</dc:creator>
         <dc:creator xml:lang="en">Hong Yu</dc:creator>
@@ -49,13 +50,13 @@
         <dc:creator xml:lang="en">Jie Zheng</dc:creator>
         <dc:creator>Qingliang Leon Li</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
-        <dc:date>11-17-2020</dc:date>
+        <dc:date>4-27-2021</dc:date>
         <dc:description xml:lang="en">OPMI is a biomedical ontology in the area of precision medicine and its related investigations. It is community-driven and developed by following the OBO Foundry ontology development principles.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.117</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.121</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -198,6 +199,50 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OPMI_0000366">
         <rdfs:label xml:lang="en">has process quality</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000424 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OPMI_0000424">
+        <obo:IAO_0000115>An object property that represents a relation between a person with a biological sex and a process where the person has a specific susceptbility to a process</obo:IAO_0000115>
+        <obo:IAO_0000117>Anthony Huffman, Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">has sex-specific susceptibility to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000438 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OPMI_0000438">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000424"/>
+        <obo:IAO_0000115>An object property that represents a relation between a person with a biological sex and a process where the person has an increased susceptbility to a process compared to corresponding male population</obo:IAO_0000115>
+        <obo:IAO_0000117>Anthony Huffman, Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">has increased susceptibility compared to male to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000439 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OPMI_0000439">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000424"/>
+        <obo:IAO_0000112>Male has increased susceptibility to death due to COVID-19 infection compared to female. Note that in this case, the male can mean one single male individual. however, the female here means the whole female population. It is reported that the ratio of deaths in COVID-19 infected males to females is 1·21:1 in high-income countries, but 2·8:1 in low-income countries (Reference: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8023692/).</obo:IAO_0000112>
+        <obo:IAO_0000115>An object property that represents a relation between a person with a biological sex and a process where the person has an increased susceptbility to a process compared to corresponding female population</obo:IAO_0000115>
+        <obo:IAO_0000117>Anthony Huffman, Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">has increased susceptibility compared to female to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000440 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OPMI_0000440">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000424"/>
+        <obo:IAO_0000115>An object property that represents a relation between a person with a biological sex and a process where the person has an increased susceptbility to a process compared to the whole population with all sexes included</obo:IAO_0000115>
+        <obo:IAO_0000117>Anthony Huffman, Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">has increased sex-specific susceptibility compared to sex baseline to</rdfs:label>
     </owl:ObjectProperty>
     
 
