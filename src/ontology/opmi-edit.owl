@@ -5459,8 +5459,11 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <obo:IAO_0000115>A material entity that is an indicator of an underlying biological state or identity</obo:IAO_0000115>
+        <obo:IAO_0000115>A material entity that can be measured and used as an indicator of an underlying biological state or identity.</obo:IAO_0000115>
+        <obo:IAO_0000115>https://en.wikipedia.org/wiki/Biomarker_(cell)</obo:IAO_0000115>
+        <obo:IAO_0000116>The NIH Biomarkers and Surrogate Endpoint Working Group defined a biomarker as “A characteristic that is objectively measured and evaluated as an indicator of normal biological processes, pathogenic processes, or pharmacological responses to a therapeutic intervention” (https://pubmed.ncbi.nlm.nih.gov/11240971/). However, the definition of &apos;characteriistc&apos; is unclear, so we do not use the exact definintion in the ontology.</obo:IAO_0000116>
         <obo:IAO_0000117>Yingtong Liu, Anthony Huffman, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>https://en.wikipedia.org/wiki/Biomarker</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Biomarker_(medicine)</obo:IAO_0000119>
         <rdfs:label xml:lang="en">biomarker</rdfs:label>
     </owl:Class>
@@ -5472,6 +5475,9 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000446">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000445"/>
         <obo:IAO_0000117>Anthony Huffman, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>A biomarker that is indicative of an immune response</obo:IAO_0000119>
+        <obo:IAO_0000119>https://pubmed.ncbi.nlm.nih.gov/22072636/</obo:IAO_0000119>
+        <obo:IAO_0000119>https://pubmed.ncbi.nlm.nih.gov/32286245/</obo:IAO_0000119>
         <rdfs:label xml:lang="en">immune biomarker</rdfs:label>
     </owl:Class>
     
@@ -5511,6 +5517,7 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000450">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000445"/>
+        <obo:IAO_0000115>A biomarker that is indicative of a disease</obo:IAO_0000115>
         <obo:IAO_0000117>Yingtong Liu, Anthony Huffman, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Biomarker_(medicine)</obo:IAO_0000119>
         <rdfs:label xml:lang="en">disease biomarker</rdfs:label>
@@ -5522,10 +5529,159 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000451">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000445"/>
-        <obo:IAO_0000115>A biomarker that is an indicator of a cell type</obo:IAO_0000115>
+        <obo:IAO_0000115>A biomarker that is an indicator of a cell lineage or cell type</obo:IAO_0000115>
         <obo:IAO_0000117>Yingtong Liu, Anthony Huffman, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>cell marker</obo:IAO_0000118>
+        <obo:IAO_0000118>cell type marker</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Biomarker_(medicine)</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">cell biomarker</rdfs:label>
+        <rdfs:label xml:lang="en">cell lineage biomarker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000452 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000452">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000445"/>
+        <obo:IAO_0000117>Oliver He, Yingtong Liu</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Biomarker_(cell)#Molecular_Biomarkers</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">molecular biomarker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000453 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000453">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000445"/>
+        <obo:IAO_0000115>Cellular biomarkers are marked cells that can be isolated, sorted, quantified and characterized by their morphology and physiology, and used in both clinical and laboratory settings for different biomarker applications. An example of a cellular biomarker sorting technique is Fluorescent-activated cell sorting.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Yingtong Liu</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Biomarker</obo:IAO_0000119>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Biomarker_(cell)#Cellular_Biomarkers</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">cellular biomarker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000454 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000454">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000445"/>
+        <obo:IAO_0000117>Oliver He, Yingtong Liu</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Biomarker</obo:IAO_0000119>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Biomarker_(cell)#Imaging_Biomarkers</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">imaging biomarker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000455 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000455">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000445"/>
+        <obo:IAO_0000115>A biomarker that can predict clincal outcome.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Yingtong Liu</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Biomarker</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">predictive biomarker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000456 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000456">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000445"/>
+        <obo:IAO_0000115>A  biomarker that provides information about the patient&apos;s overall outcome, regardless of therapy.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Yingtong Liu</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Biomarker</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">prognostic biomarker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000457 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000457">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000445"/>
+        <obo:IAO_0000115>A biomarker that can serve a role in narrowing down diagnosis, which can lead to diagnosis that is significantly more specific to individual patients.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Yingtong Liu</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Biomarker</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">diagnostic biomarker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000458 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000458">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000452"/>
+        <obo:IAO_0000115>A molecular biomarker at the DNA gene level</obo:IAO_0000115>
+        <obo:IAO_0000115>Oliver He, Yingtong Liu</obo:IAO_0000115>
+        <obo:IAO_0000118>genomic biomarker</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Biomarker_(cell)#Molecular_Biomarkers</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">DNA biomarker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000459 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000459">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000452"/>
+        <obo:IAO_0000115>A molecular biomarker at the RNA level</obo:IAO_0000115>
+        <obo:IAO_0000115>Oliver He, Yingtong Liu</obo:IAO_0000115>
+        <obo:IAO_0000118>transcriptomic biomarker</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Biomarker_(cell)#Molecular_Biomarkers</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">RNA biomarker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000460 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000460">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000452"/>
+        <obo:IAO_0000115>A molecular biomarker at the protein level</obo:IAO_0000115>
+        <obo:IAO_0000115>Oliver He, Yingtong Liu</obo:IAO_0000115>
+        <obo:IAO_0000118>proteomic biomarker</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Biomarker_(cell)#Molecular_Biomarkers</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">protein biomarker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000461 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000461">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000450"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000454"/>
+        <obo:IAO_0000115>A biomarker that is indicative of a disease and achieved through imaging.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Biomarker_(medicine)#Imaging_disease_biomarkers_by_magnetic_resonance_imaging_(MRI)</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">imaging disease biomarker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000463 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000463">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000461"/>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>imaging disease biomarkers by magnetic resonance imaging</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Biomarker_(medicine)#Imaging_disease_biomarkers_by_magnetic_resonance_imaging_(MRI)</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">imaging disease biomarkers by MRI</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000464 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000464">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000450"/>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>A biomarker that is indicative of the presence of cancer in the body</obo:IAO_0000119>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Cancer_biomarker</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">cancer marker</rdfs:label>
     </owl:Class>
     
 
