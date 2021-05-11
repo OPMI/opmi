@@ -5459,7 +5459,9 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115>A material entity that is an indicator of an underlying biological state or identity</obo:IAO_0000115>
         <obo:IAO_0000117>Yingtong Liu, Anthony Huffman, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Biomarker_(medicine)</obo:IAO_0000119>
         <rdfs:label xml:lang="en">biomarker</rdfs:label>
     </owl:Class>
     
@@ -5510,7 +5512,20 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000450">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000445"/>
         <obo:IAO_0000117>Yingtong Liu, Anthony Huffman, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Biomarker_(medicine)</obo:IAO_0000119>
         <rdfs:label xml:lang="en">disease biomarker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000451 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000451">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000445"/>
+        <obo:IAO_0000115>A biomarker that is an indicator of a cell type</obo:IAO_0000115>
+        <obo:IAO_0000117>Yingtong Liu, Anthony Huffman, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Biomarker_(medicine)</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">cell biomarker</rdfs:label>
     </owl:Class>
     
 
