@@ -50,13 +50,13 @@
         <dc:creator xml:lang="en">Jie Zheng</dc:creator>
         <dc:creator>Qingliang Leon Li</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
-        <dc:date>5-10-2021</dc:date>
+        <dc:date>5-29-2021</dc:date>
         <dc:description xml:lang="en">OPMI is a biomedical ontology in the area of precision medicine and its related investigations. It is community-driven and developed by following the OBO Foundry ontology development principles.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.128</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.129</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -5459,7 +5459,7 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <obo:IAO_0000115>A material entity that can be measured and used as an indicator of an underlying biological state or identity.</obo:IAO_0000115>
+        <obo:IAO_0000115>A material entity that has a measurable quality or process profile(s), which can be used as an indicator of an underlying biological state or identity.</obo:IAO_0000115>
         <obo:IAO_0000115>https://en.wikipedia.org/wiki/Biomarker_(cell)</obo:IAO_0000115>
         <obo:IAO_0000116>The NIH Biomarkers and Surrogate Endpoint Working Group defined a biomarker as “A characteristic that is objectively measured and evaluated as an indicator of normal biological processes, pathogenic processes, or pharmacological responses to a therapeutic intervention” (https://pubmed.ncbi.nlm.nih.gov/11240971/). However, the definition of &apos;characteriistc&apos; is unclear, so we do not use the exact definintion in the ontology.</obo:IAO_0000116>
         <obo:IAO_0000117>Yingtong Liu, Anthony Huffman, Oliver He</obo:IAO_0000117>
