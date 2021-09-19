@@ -45,10 +45,12 @@
         <dc:creator xml:lang="en">Anthony Huffman</dc:creator>
         <dc:creator>Asiyah Yu Lin</dc:creator>
         <dc:creator xml:lang="en">Fred Dowd</dc:creator>
+        <dc:creator>Hong Yu</dc:creator>
         <dc:creator xml:lang="en">Hong Yu</dc:creator>
         <dc:creator xml:lang="en">Jennifer Schaub</dc:creator>
         <dc:creator xml:lang="en">Jie Zheng</dc:creator>
         <dc:creator>Qingliang Leon Li</dc:creator>
+        <dc:creator>Suyuan Peng</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
         <dc:date>7-22-2021</dc:date>
         <dc:description xml:lang="en">OPMI is a biomedical ontology in the area of precision medicine and its related investigations. It is community-driven and developed by following the OBO Foundry ontology development principles.</dc:description>
@@ -56,7 +58,7 @@
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.131</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.132</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -5715,6 +5717,46 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
         <obo:IAO_0000115>A disposition that a material entity (e.g., gene or protein) is susceptible to be down-regulated in an organism or virus.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Anthony Huffman</obo:IAO_0000117>
         <rdfs:label xml:lang="en">susceptibility to biological down-regulation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000467 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000467">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
+        <obo:IAO_0000115>A Unified Social Credit Identifier is issued to registered companies and other types of organization by the Chinese government.</obo:IAO_0000115>
+        <obo:IAO_0000117>Suyuan Peng, Hong Yu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Unified_Social_Credit_Identifier</obo:IAO_0000119>
+        <obo:OPMI_0000434>组织机构代码</obo:OPMI_0000434>
+        <rdfs:label xml:lang="en">Unified Social Credit Identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000468 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000468">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+        <obo:IAO_0000117>Suyuan Peng, Hong Yu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>health care organization</obo:IAO_0000118>
+        <obo:IAO_0000119>https://www.sciencedirect.com/topics/nursing-and-health-professions/health-care-organization</obo:IAO_0000119>
+        <obo:OPMI_0000434>医疗机构</obo:OPMI_0000434>
+        <rdfs:label xml:lang="en">healthcare organization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000469 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000469">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
+        <obo:IAO_0000115>A centrality registered identifier for a medical record.</obo:IAO_0000115>
+        <obo:IAO_0000117>Suyuan Peng, Hong Yu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>medical record ID</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Medical_record</obo:IAO_0000119>
+        <obo:OPMI_0000434>病案号</obo:OPMI_0000434>
+        <rdfs:label xml:lang="en">medical record number</rdfs:label>
     </owl:Class>
     
 
