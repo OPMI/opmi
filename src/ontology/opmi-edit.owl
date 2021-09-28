@@ -5761,6 +5761,34 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000471 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000471">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000240"/>
+        <obo:IAO_0000115 xml:lang="zh">指患者在本医疗机构住院诊治的次数</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Suyuan Peng, Hong Yu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="zh">《卫生部关于修订住院病案首页的通知》卫医政发〔2011〕84号</obo:IAO_0000119>
+        <obo:OPMI_0000434 xml:lang="zh">住院次数</obo:OPMI_0000434>
+        <rdfs:label xml:lang="en">number of hospital admissions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000472 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000472">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000416"/>
+        <obo:IAO_0000115 xml:lang="en">A time measurement datum that is about a human being who bears a patient role and specifies the date of the patient&apos;s admission to a hospital</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="zh">指患者实际入病房的接诊时间</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Suyuan Peng, Hong Yu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">http://purl.obolibrary.org/obo/EUPATH_0000319</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="zh">《住院病案首页数据填写质量规范（暂行）》国卫办医发〔2016〕24号</obo:IAO_0000119>
+        <obo:OPMI_0000434 xml:lang="zh">入院时间</obo:OPMI_0000434>
+        <rdfs:label xml:lang="en">date of hospital admission</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OPMI_0004475 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0004475">
