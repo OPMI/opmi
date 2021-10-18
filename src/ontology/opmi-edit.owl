@@ -49,16 +49,17 @@
         <dc:creator xml:lang="en">Hong Yu</dc:creator>
         <dc:creator xml:lang="en">Jennifer Schaub</dc:creator>
         <dc:creator xml:lang="en">Jie Zheng</dc:creator>
+        <dc:creator>Long Tran</dc:creator>
         <dc:creator>Qingliang Leon Li</dc:creator>
         <dc:creator>Suyuan Peng</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
-        <dc:date>7-22-2021</dc:date>
+        <dc:date>10-18-2021</dc:date>
         <dc:description xml:lang="en">OPMI is a biomedical ontology in the area of precision medicine and its related investigations. It is community-driven and developed by following the OBO Foundry ontology development principles.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.132</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.135</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -323,6 +324,12 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_9606 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000047"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000118>human</obo:IAO_0000118>
         <obo:IAO_0000118>person</obo:IAO_0000118>
     </rdf:Description>
@@ -1262,9 +1269,16 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000091">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A day when an organism (e.g., a human) is born.</obo:IAO_0000115>
-        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
         <obo:IAO_0000118>birth date</obo:IAO_0000118>
+        <obo:IAO_0000119>https://www.ohdsi.org/web/wiki/doku.php?id=documentation:cdm:person</obo:IAO_0000119>
         <rdfs:label xml:lang="en">day of birth</rdfs:label>
     </owl:Class>
     
@@ -1274,6 +1288,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000092">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>the anniversary of the birth of a person</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Birthday</obo:IAO_0000119>
@@ -5761,6 +5781,24 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000470 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000470">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A centrally registered identifier that is uniquely assigned to a person.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.ohdsi.org/web/wiki/doku.php?id=documentation:cdm:person</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">person ID</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OPMI_0000471 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000471">
@@ -5785,6 +5823,60 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
         <obo:IAO_0000119 xml:lang="zh">《住院病案首页数据填写质量规范（暂行）》国卫办医发〔2016〕24号</obo:IAO_0000119>
         <obo:OPMI_0000434 xml:lang="zh">入院时间</obo:OPMI_0000434>
         <rdfs:label xml:lang="en">date of hospital admission</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000473 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000473">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A year when an organism (e.g., a human) is born.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.ohdsi.org/web/wiki/doku.php?id=documentation:cdm:person</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">year of birth</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000474 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000474">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A month when an organism (e.g., a human) is born.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.ohdsi.org/web/wiki/doku.php?id=documentation:cdm:person</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">month of birth</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000475 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000475">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000148"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The date and time of birth of a person.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.ohdsi.org/web/wiki/doku.php?id=documentation:cdm:person</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">birth datetime</rdfs:label>
     </owl:Class>
     
 
