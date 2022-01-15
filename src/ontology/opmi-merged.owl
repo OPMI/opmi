@@ -29,18 +29,21 @@
         <dc:creator xml:lang="en">Anthony Huffman</dc:creator>
         <dc:creator>Asiyah Yu Lin</dc:creator>
         <dc:creator xml:lang="en">Fred Dowd</dc:creator>
+        <dc:creator>Hong Yu</dc:creator>
         <dc:creator xml:lang="en">Hong Yu</dc:creator>
         <dc:creator xml:lang="en">Jennifer Schaub</dc:creator>
         <dc:creator xml:lang="en">Jie Zheng</dc:creator>
+        <dc:creator>Long Tran</dc:creator>
         <dc:creator>Qingliang Leon Li</dc:creator>
+        <dc:creator>Suyuan Peng</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
-        <dc:date>5-29-2021</dc:date>
+        <dc:date>1-15-2022</dc:date>
         <dc:description xml:lang="en">OPMI is a biomedical ontology in the area of precision medicine and its related investigations. It is community-driven and developed by following the OBO Foundry ontology development principles.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.130</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.138</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -18932,6 +18935,12 @@ The term is used in the following meaning of being self generated. It does not s
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_314146"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9526"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9605"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000047"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">Homo sapiens</obo:IAO_0000111>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Homo sapiens</obo:IAO_0000111>
         <obo:IAO_0000118>human</obo:IAO_0000118>
@@ -42665,10 +42674,17 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OPMI_0000091 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000091">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000478"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A day when an organism (e.g., a human) is born.</obo:IAO_0000115>
-        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
         <obo:IAO_0000118>birth date</obo:IAO_0000118>
+        <obo:IAO_0000119>https://www.ohdsi.org/web/wiki/doku.php?id=documentation:cdm:person</obo:IAO_0000119>
         <rdfs:label xml:lang="en">day of birth</rdfs:label>
     </owl:Class>
     
@@ -42677,7 +42693,13 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OPMI_0000092 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000092">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000478"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>the anniversary of the birth of a person</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Birthday</obo:IAO_0000119>
@@ -42773,7 +42795,10 @@ last accessed June 30, 2015</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000098">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000094"/>
+        <obo:IAO_0000115 xml:lang="zh">患者本人在公安户籍管理部门正式登记注册的姓氏和名称</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Suyuan Peng, Hong Yu, Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Personal_name</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="zh">《电子病历基本数据集 第10部分：住院病案首页》WS 445.10-2014</obo:IAO_0000119>
         <rdfs:label xml:lang="en">person full name</rdfs:label>
     </owl:Class>
     
@@ -43412,8 +43437,13 @@ last accessed June 30, 2015</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000155">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000093"/>
+        <obo:IAO_0000115 xml:lang="en">The code in the specific coding system for the payment method of the expenses incurred in a single hospitalization of the patient</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="zh">患者单次住院诊疗所发生费用的支付方式的特定编码体系中的代码</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="zh">Suyuan Peng, Hong Yu, Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="zh">《电子病历基本数据集 第10部分：住院病案首页》WS 445.10-2014</obo:IAO_0000119>
         <obo:OPMI_0000127>NCIT_C16745</obo:OPMI_0000127>
         <obo:OPMI_0000128>C0021672</obo:OPMI_0000128>
+        <obo:OPMI_0000434 xml:lang="zh">医疗付费方式</obo:OPMI_0000434>
         <rdfs:label xml:lang="en">health insurance plan</rdfs:label>
     </owl:Class>
     
@@ -47073,6 +47103,17 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000462 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000462">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <obo:IAO_0000115>A disposition that a material entity (e.g., gene or protein) is susceptible to be up or down-regulated in an organism or virus.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Anthony Huffman</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">susceptibility to biological regulation</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OPMI_0000463 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000463">
@@ -47093,6 +47134,213 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
         <obo:IAO_0000119>A biomarker that is indicative of the presence of cancer in the body</obo:IAO_0000119>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Cancer_biomarker</obo:IAO_0000119>
         <rdfs:label xml:lang="en">cancer marker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000465 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000465">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000462"/>
+        <obo:IAO_0000115>A disposition that a material entity (e.g., gene or protein) is susceptible to be up-regulated in an organism or virus.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Anthony Huffman</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">susceptibility to biological up-regulation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000466 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000466">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000462"/>
+        <obo:IAO_0000115>A disposition that a material entity (e.g., gene or protein) is susceptible to be down-regulated in an organism or virus.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Anthony Huffman</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">susceptibility to biological down-regulation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000467 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000467">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
+        <obo:IAO_0000115>A Unified Social Credit Identifier is issued to registered companies and other types of organization by the Chinese government.</obo:IAO_0000115>
+        <obo:IAO_0000117>Suyuan Peng, Hong Yu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Unified_Social_Credit_Identifier</obo:IAO_0000119>
+        <obo:OPMI_0000434>组织机构代码</obo:OPMI_0000434>
+        <rdfs:label xml:lang="en">Unified Social Credit Identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000468 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000468">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+        <obo:IAO_0000117>Suyuan Peng, Hong Yu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>health care organization</obo:IAO_0000118>
+        <obo:IAO_0000119>https://www.sciencedirect.com/topics/nursing-and-health-professions/health-care-organization</obo:IAO_0000119>
+        <obo:OPMI_0000434>医疗机构</obo:OPMI_0000434>
+        <rdfs:label xml:lang="en">healthcare organization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000469 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000469">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
+        <obo:IAO_0000115>A centrality registered identifier for a medical record.</obo:IAO_0000115>
+        <obo:IAO_0000117>Suyuan Peng, Hong Yu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>medical record ID</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Medical_record</obo:IAO_0000119>
+        <obo:OPMI_0000434>病案号</obo:OPMI_0000434>
+        <rdfs:label xml:lang="en">medical record number</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000470 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000470">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A centrally registered identifier that is uniquely assigned to a person.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.ohdsi.org/web/wiki/doku.php?id=documentation:cdm:person</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">person ID</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000471 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000471">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000240"/>
+        <obo:IAO_0000115 xml:lang="zh">指患者在本医疗机构住院诊治的次数</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Suyuan Peng, Hong Yu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="zh">《卫生部关于修订住院病案首页的通知》卫医政发〔2011〕84号</obo:IAO_0000119>
+        <obo:OPMI_0000434 xml:lang="zh">住院次数</obo:OPMI_0000434>
+        <rdfs:label xml:lang="en">number of hospital admissions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000472 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000472">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000416"/>
+        <obo:IAO_0000115 xml:lang="en">A time measurement datum that is about a human being who bears a patient role and specifies the date of the patient&apos;s admission to a hospital</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="zh">指患者实际入病房的接诊时间</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Suyuan Peng, Hong Yu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">http://purl.obolibrary.org/obo/EUPATH_0000319</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="zh">《住院病案首页数据填写质量规范（暂行）》国卫办医发〔2016〕24号</obo:IAO_0000119>
+        <obo:OPMI_0000434 xml:lang="zh">入院时间</obo:OPMI_0000434>
+        <rdfs:label xml:lang="en">date of hospital admission</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000473 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000473">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000353"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000478"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A year when an organism (e.g., a human) is born.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.ohdsi.org/web/wiki/doku.php?id=documentation:cdm:person</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">year of birth</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000474 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000474">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000070"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000478"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A month when an organism (e.g., a human) is born.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.ohdsi.org/web/wiki/doku.php?id=documentation:cdm:person</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">month of birth</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000475 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000475">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000478"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The date and time of birth of a person.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.ohdsi.org/web/wiki/doku.php?id=documentation:cdm:person</obo:IAO_0000119>
+        <obo:IAO_0000119>https://www.ohdsi.org/web/wiki/doku.php?id=documentation:cdm:single-page</obo:IAO_0000119>
+        <rdfs:comment>This term is generated to be equivalent to the &quot;birth_datetime&quot; in OMOP. Also note: in OMOP v6.0, DATETIME fields were made mandatory and date fields were made optional. Reference: https://ohdsi.github.io/CommonDataModel/cdm60.html#PERSON</rdfs:comment>
+        <rdfs:label xml:lang="en">birth datetime</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000476 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000476">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000416"/>
+        <obo:IAO_0000115 xml:lang="en">A time measurement datum that is about a human being who bears a patient role and specifies the date of the patient&apos;s discharge from a hospital</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="zh">出院时间是指患者治疗结束或终止治疗离开病房的时间，其中死亡患者是指其死亡时间；记录时间应当精确到分钟</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Suyuan Peng, Hong Yu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">http://purl.obolibrary.org/obo/EUPATH_0000320</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="zh">《住院病案首页数据填写质量规范（暂行）》国卫办医发〔2016〕24号</obo:IAO_0000119>
+        <obo:OPMI_0000434 xml:lang="zh">入院时间</obo:OPMI_0000434>
+        <rdfs:label xml:lang="zh">date of hospital discharge</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000477 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000477">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000093"/>
+        <obo:IAO_0000115 xml:lang="en">The number of health card for residents of the People&apos;s Republic of China</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="zh">在已统一发放“中华人民共和国居民健康卡”的地区填写健康卡号码，尚未发放“健康卡”的地区填写“-”</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="zh">Suyuan Peng, Hong Yu, Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="zh">《卫生部关于修订住院病案首页的通知》卫医政发〔2011〕84号</obo:IAO_0000119>
+        <obo:OPMI_0000434 xml:lang="zh">健康卡号</obo:OPMI_0000434>
+        <rdfs:label xml:lang="en">residents health card number</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000478 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000478">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+        <obo:IAO_0000115>time that is related to the birth</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>time of birth</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">birth-related time</rdfs:label>
     </owl:Class>
     
 
@@ -47576,6 +47824,9 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000047">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001241"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organismal quality inhering in a bearer by virtue of the bearer&apos;s ability to undergo sexual reproduction in order to differentiate the individuals or types involved.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="zh">患者生理性别在特定编码体系中的代码</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Suyuan Peng, Hong Yu, Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="zh">《电子病历基本数据集 第10部分：住院病案首页》WS 445.10-2014</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0000047</oboInOwl:id>
@@ -60244,8 +60495,8 @@ This interpretation is *not* the same as an at-all-times relation
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00000013">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One of the large, unbroken masses of land into which the Earth&apos;s surface is divided.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ:00000013</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FTT:540</oboInOwl:hasDbXref>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/gaz.owl"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FTT:540</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">continent</rdfs:label>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TGN:21402</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ</oboInOwl:hasOBONamespace>
@@ -60265,8 +60516,8 @@ This interpretation is *not* the same as an at-all-times relation
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ</oboInOwl:hasOBONamespace>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geographic location</rdfs:label>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geographic region {alternative name}</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geographic location</obo:IAO_0000111>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/gaz.owl"/>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geographic location</obo:IAO_0000111>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00000460">
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ:00000460</oboInOwl:id>
@@ -60276,8 +60527,8 @@ This interpretation is *not* the same as an at-all-times relation
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The convention used in gaz.obo is that the Europe-Asia boundary follows the watershed of the Ural Mountains from near Kara, Russia on the Kara Sea to the source of the Ural River, then follows that river to the Caspian Sea. The border then follows the watershed of the Caucasus Mountains from the Caspian Sea to the Black Sea.</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00002459">
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USA</oboInOwl:hasExactSynonym>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ:00002459</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USA</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ</oboInOwl:hasOBONamespace>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISO3166-1:840</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISO3166-1:US</oboInOwl:hasDbXref>
@@ -60285,8 +60536,8 @@ This interpretation is *not* the same as an at-all-times relation
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">U.S.A</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">United States of America</rdfs:label>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/gaz.owl"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISO3166-1:USA</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISO3166-2:US</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISO3166-1:USA</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002415">
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/uberon#grouping_class"/>
@@ -60331,16 +60582,16 @@ Please see www.environmentontology.org for more information and citations.</rdfs
         <dc:contributor>Sydni Joubran</dc:contributor>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <obo:IAO_0000116 xml:lang="en">Product version</obo:IAO_0000116>
-        <dc:creator>Sirarat Sarntivijai</dc:creator>
         <dc:contributor>Darrell R. Abernethy</dc:contributor>
+        <dc:creator>Sirarat Sarntivijai</dc:creator>
         <dc:creator>Ling Wan</dc:creator>
-        <dc:creator>Rebecca Racz</dc:creator>
         <dc:creator xml:lang="en">Shelley Zhang</dc:creator>
+        <dc:creator>Rebecca Racz</dc:creator>
         <dc:creator>Liwei Wang</dc:creator>
         <dc:creator xml:lang="en">Meiu Wong</dc:creator>
         <dc:description xml:lang="en">The Ontology of Adverse Eventsy (OAE) is a biomedical ontology in the domain of adverse events. OAE aims to standardize adverse event annotation, integrate various adverse event data, and support computer-assisted reasoning.  OAE is a community-based ontology. Its development follows the OBO Foundry principles. Vaccine adverse events have been used as an initial testing use case. OAE also studies adverse events associated with the administration of drug and nutritional products, the operation of surgeries, and the usage of medical devices, etc.</dc:description>
-        <dc:title xml:lang="en">OAE: Ontology of Adverse Events</dc:title>
         <dc:creator>Kevin Mo</dc:creator>
+        <dc:title xml:lang="en">OAE: Ontology of Adverse Events</dc:title>
         <dc:creator>Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
         <dc:contributor>Luca Toldo</dc:contributor>
         <dc:creator>Noemi Garg</dc:creator>
@@ -60353,8 +60604,8 @@ Please see www.environmentontology.org for more information and citations.</rdfs
         <dc:creator xml:lang="en">Bingjian Yang</dc:creator>
         <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <dc:creator>Qingping Liu</dc:creator>
-        <dc:creator>Jiangan Xie</dc:creator>
         <dc:date>2019-2-21</dc:date>
+        <dc:creator>Jiangan Xie</dc:creator>
         <dc:creator>Sydni Joubran</dc:creator>
         <dc:creator>Kelly Yang</dc:creator>
         <dc:creator>David Ameriguian</dc:creator>
@@ -60370,8 +60621,8 @@ Please see www.environmentontology.org for more information and citations.</rdfs
         <dc:creator>Sivaram Arabandi</dc:creator>
         <dc:creator>Lindsay Cowell</dc:creator>
         <dc:date>2009-08-07</dc:date>
-        <dc:creator>Richard Scheuermann</dc:creator>
         <dc:creator>Cornelius Rosse</dc:creator>
+        <dc:creator>Richard Scheuermann</dc:creator>
         <dc:creator>Anand Kumar</dc:creator>
         <rdfs:comment>The Ontology for General Medical Science (OGMS) is based on the papers Toward an Ontological Treatment of Disease and Diagnosis and On Carcinomas and Other Pathological Entities. The ontology attempts to address some of the issues raised at the Workshop on Ontology of Diseases (Dallas, TX). OGMS was formerly called the clinical phenotype ontology. Terms from OGMS hang from the Basic Formal Ontology.
 
@@ -60388,12 +60639,12 @@ If you are interested in participating in the development of OGMS, please send e
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/omrse.owl">
         <dc:creator xml:lang="en">William Hogan</dc:creator>
         <rdfs:comment xml:lang="en">This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government&apos;s &quot;meaningful use&quot; criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt</rdfs:comment>
+        <dc:creator xml:lang="en">Mathias Brochhausen</dc:creator>
         <owl:versionInfo>2017-06-08</owl:versionInfo>
         <dc:creator>Amanda Hicks</dc:creator>
-        <dc:creator xml:lang="en">Mathias Brochhausen</dc:creator>
         <dc:creator xml:lang="en">Swetha Garimalla</dc:creator>
-        <dc:contributor>Daniel Welch</dc:contributor>
         <rdfs:label xml:lang="en">The Ontology of Medically Related Social Entities</rdfs:label>
+        <dc:contributor>Daniel Welch</dc:contributor>
         <dc:creator xml:lang="en">Shariq Tariq</dc:creator>
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000657">
