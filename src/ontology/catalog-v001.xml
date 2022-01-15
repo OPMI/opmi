@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/occo.owl" uri="file:/C:/Users/yongqunh/Dropbox%20(University%20of%20Michigan)/Ontology%20projects/RoleO/src/ontology/occo.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/opmi/PATO_imports.owl" uri="imports/PATO_imports.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/opmi/NCIT_imports.owl" uri="imports/NCIT_imports.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/opmi/OMRSE_imports.owl" uri="imports/OMRSE_imports.owl"/>
