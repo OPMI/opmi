@@ -53,13 +53,13 @@
         <dc:creator>Qingliang Leon Li</dc:creator>
         <dc:creator>Suyuan Peng</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
-        <dc:date>1-21-2022</dc:date>
+        <dc:date>1-23-2022</dc:date>
         <dc:description xml:lang="en">OPMI is a biomedical ontology in the area of precision medicine and its related investigations. It is community-driven and developed by following the OBO Foundry ontology development principles.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.140</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.141</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -3686,12 +3686,13 @@
     <!-- http://purl.obolibrary.org/obo/OPMI_0000285 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000285">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
-        <obo:IAO_0000115>the date on which a visit occurs</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000148"/>
+        <obo:IAO_0000115>the date or time on which a visit occurs</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>clinical visit date</obo:IAO_0000118>
         <obo:OPMI_0000127>NCIT_C83031</obo:OPMI_0000127>
         <obo:OPMI_0000128>C1320303</obo:OPMI_0000128>
-        <rdfs:label xml:lang="en">visit date</rdfs:label>
+        <rdfs:label xml:lang="en">visit time</rdfs:label>
     </owl:Class>
     
 
@@ -6041,9 +6042,130 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A vist ocurrence in which the patient&apos;s condition requires admission to a hospital.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>inpatient visit occurrence</obo:IAO_0000118>
         <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#VISIT_OCCURRENCE</obo:IAO_0000119>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Inpatient_care</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">inpatient visit occurrence</rdfs:label>
+        <rdfs:label xml:lang="en">inpatient visit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000485 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000485">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000482"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A vist ocurrence in which a patient attends an outpatient clinic with no plan to stay beyond the duration of the visit.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>outpatient visit occurrence</obo:IAO_0000118>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#VISIT_OCCURRENCE</obo:IAO_0000119>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Patient#Outpatients_and_inpatients</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">outpatient visit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000486 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000486">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000482"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A vist ocurrence in which a patient attends an outpatient clinic with no plan to stay beyond the duration of the visit.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#VISIT_OCCURRENCE</obo:IAO_0000119>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Patient#Outpatients_and_inpatients</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">emergency room visit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000487 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000487">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000285"/>
+        <obo:IAO_0000115>The date on which a visit starts. In the case of an inpatient visit this should be the date the patient was admitted to the hospital or institution. In all other cases this should be the date of the patient-provider interaction.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>clinical visit start date</obo:IAO_0000118>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#VISIT_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">visit start date</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000488 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000488">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000285"/>
+        <obo:IAO_0000115>The date on which a visit ends. For inpatient visits the end date is typically the discharge date. If a Person is still an inpatient in the hospital at the time of the data extract and does not have a visit_end_date, then set the visit_end_date to the date of the data pull.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>clinical visit end date</obo:IAO_0000118>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#VISIT_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">visit end date</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000489 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000489">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+        <obo:IAO_0000115>A temporal region that covers the time period from the visit start time to the visit end time.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">visit duration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000490 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000490">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000285"/>
+        <obo:IAO_0000115>The date and time on which a visit starts. In the case of an inpatient visit this should be the date the patient was admitted to the hospital or institution. In all other cases this should be the date of the patient-provider interaction.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>clinical visit start datetime</obo:IAO_0000118>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#VISIT_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">visit start datetime</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000491 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000491">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000285"/>
+        <obo:IAO_0000115>The date and time on which a visit ends. For inpatient visits the end date is typically the discharge date. If a Person is still an inpatient in the hospital at the time of the data extract and does not have a visit_end_date, then set the visit_end_date to the date of the data pull.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>clinical visit end datetime</obo:IAO_0000118>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#VISIT_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">visit end datetime</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000492 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000492">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000482"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A visit occurrence that occurs for the person prior to the given visit. There could be a few days or a few years in between.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#VISIT_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">preceding visit occurrence</rdfs:label>
     </owl:Class>
     
 
