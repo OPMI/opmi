@@ -53,13 +53,13 @@
         <dc:creator>Qingliang Leon Li</dc:creator>
         <dc:creator>Suyuan Peng</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
-        <dc:date>1-23-2022</dc:date>
+        <dc:date>1-30-2022</dc:date>
         <dc:description xml:lang="en">OPMI is a biomedical ontology in the area of precision medicine and its related investigations. It is community-driven and developed by following the OBO Foundry ontology development principles.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.141</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.142</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -257,6 +257,29 @@
         <obo:IAO_0000115>An object property that represents a relation between an entity and its corresponding identifier that is owned by the entity.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
         <rdfs:label xml:lang="en">has identifier</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000501 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OPMI_0000501">
+        <obo:IAO_0000112>A patient was admitted to the hospital from home or a long-term care facility.</obo:IAO_0000112>
+        <obo:IAO_0000115>An object property  that represents a relation between a patient and a site from which the patient was admitted.</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#VISIT_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">admitted from</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000502 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OPMI_0000502">
+        <obo:IAO_0000112>After a visit, a person was discharged to home or a long-term care site. Typically this applies only to visits that have a length of stay of a day or more.</obo:IAO_0000112>
+        <obo:IAO_0000115>An object property  that represents a relation between a patient and a site to which the patient was discharged after a visit.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#VISIT_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">discharged to</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -3690,9 +3713,10 @@
         <obo:IAO_0000115>the date or time on which a visit occurs</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <obo:IAO_0000118>clinical visit date</obo:IAO_0000118>
+        <obo:IAO_0000118>visit time</obo:IAO_0000118>
         <obo:OPMI_0000127>NCIT_C83031</obo:OPMI_0000127>
         <obo:OPMI_0000128>C1320303</obo:OPMI_0000128>
-        <rdfs:label xml:lang="en">visit time</rdfs:label>
+        <rdfs:label xml:lang="en">visit temporal region</rdfs:label>
     </owl:Class>
     
 
@@ -5215,10 +5239,10 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>a human who is a recipient of a health care service performed by healthcare professionals.</obo:IAO_0000115>
-        <obo:IAO_0000118>patient</obo:IAO_0000118>
+        <obo:IAO_0000118>human patient</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Patient</obo:IAO_0000119>
         <dc:creator>Hong Yu, Oliver He</dc:creator>
-        <rdfs:label xml:lang="en">human patient</rdfs:label>
+        <rdfs:label xml:lang="en">patient</rdfs:label>
     </owl:Class>
     
 
@@ -6082,6 +6106,7 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A vist ocurrence in which a patient attends an outpatient clinic with no plan to stay beyond the duration of the visit.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>ER visit</obo:IAO_0000118>
         <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#VISIT_OCCURRENCE</obo:IAO_0000119>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Patient#Outpatients_and_inpatients</obo:IAO_0000119>
         <rdfs:label xml:lang="en">emergency room visit</rdfs:label>
@@ -6166,6 +6191,298 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
         <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#VISIT_OCCURRENCE</obo:IAO_0000119>
         <rdfs:label xml:lang="en">preceding visit occurrence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000493 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000493">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000482"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A vist ocurrence that includes a visit to the emergency room followed by a subsequent inpatient visit.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#VISIT_OCCURRENCE</obo:IAO_0000119>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Patient#Outpatients_and_inpatients</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">emergency room and inpatient visit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000494 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000494">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000482"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A visit to a dedicated institution for reasons of poor health, at a Care Site, long-term or permanently, with no physician but possibly other Providers permanently available to deliver service around the clock</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#VISIT_OCCURRENCE</obo:IAO_0000119>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Patient#Outpatients_and_inpatients</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">non-hospital institution visit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000495 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000495">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000482"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A visit where a provider visits a person, without a care site, within one day, delivering service</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#VISIT_OCCURRENCE</obo:IAO_0000119>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Patient#Outpatients_and_inpatients</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">home visit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000496 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000496">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000482"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A visit in which a patient engages with a Provider through communication media. A patient can use digital information and communication technologies, such as computers and mobile devices, to access health care services remotely and manage their health care.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#VISIT_OCCURRENCE</obo:IAO_0000119>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Patient#Outpatients_and_inpatients</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">telehealth visit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000497 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000497">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000482"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A visit to the pharmacy for dispensing of drug, at a care site, within one day</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#VISIT_OCCURRENCE</obo:IAO_0000119>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Patient#Outpatients_and_inpatients</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">pharmacy visit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000498 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000498">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000482"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A visit to a dedicated institution, at a care site, within one day, for the purpose of a measurement. The visit is carried out in a medical laboratory or clinical laboratory where tests are carried out on clinical specimens to obtain information about the health of a patient to aid in diagnosis, treatment, and prevention of disease</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#VISIT_OCCURRENCE</obo:IAO_0000119>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Patient#Outpatients_and_inpatients</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">laboratory visit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000499 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000499">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000482"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An interaction with the healthcare system, without a care site, within a day, with no providers involved, for administrative purposes</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#VISIT_OCCURRENCE</obo:IAO_0000119>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Patient#Outpatients_and_inpatients</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">case management visit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000500 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000500">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+        <obo:IAO_0000115>A site that is used as a permanent or semi-permanent residence for one or many humans.</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Home</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">home</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000503 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000503">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A centrally registered identifier that refers to the National Provider Number issued to health care providers in the US by the Centers for Medicare and Medicaid Services (CMS). NPI is assigned for use in all administrative and financial transactions specified by HIPAA.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>National Providier Number</obo:IAO_0000118>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#PERSON</obo:IAO_0000119>
+        <obo:ICO_0000092>http://purl.obolibrary.org/obo/NCIT_C54633</obo:ICO_0000092>
+        <rdfs:label xml:lang="en">National Provider Identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000504 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000504">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A centrally registered identifier that is issued by the Drug Enforcement Administration (DEA), a US federal agency, that allows a provider to write prescriptions for controlled substances.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#PERSON</obo:IAO_0000119>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Drug_Enforcement_Administration</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">DEA identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000505 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000505">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000481"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000506"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An activity or process that is ordered by, or carried out by, a healthcare provider on a patient with a diagnostic or therapeutic purpose.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#PROCEDURE_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">procedure occurrence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000506 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000506">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000505"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A centrally registered identifier that refers to a procedure occurrence, which is an activity or process that is ordered by, or carried out by, a healthcare provider on a patient with a diagnostic or therapeutic purpose.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>procedure occurrence ID</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#PROCEDURE_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">procedure occurrence identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000507 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000507">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000148"/>
+        <obo:IAO_0000115>A temporal region that is associated with a procedure</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>procedure time</obo:IAO_0000118>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#PROCEDURE_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">procedure temporal region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000508 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000508">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000507"/>
+        <obo:IAO_0000115>The date when a procedure starts</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>procedure date</obo:IAO_0000118>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#PROCEDURE_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">procedure start date</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000509 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000509">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000507"/>
+        <obo:IAO_0000115>The date and time when a procedure starts</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>procedure date</obo:IAO_0000118>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#PROCEDURE_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">procedure start datetime</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000510 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000510">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000507"/>
+        <obo:IAO_0000115>The date when a procedure ends</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>procedure date</obo:IAO_0000118>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#PROCEDURE_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">procedure end date</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000511 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000511">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000507"/>
+        <obo:IAO_0000115>The date and time when a procedure ends</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>procedure date</obo:IAO_0000118>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#PROCEDURE_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">procedure end datetime</rdfs:label>
     </owl:Class>
     
 
