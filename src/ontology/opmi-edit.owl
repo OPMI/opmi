@@ -53,13 +53,13 @@
         <dc:creator>Qingliang Leon Li</dc:creator>
         <dc:creator>Suyuan Peng</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
-        <dc:date>2-4-2022</dc:date>
+        <dc:date>2-6-2022</dc:date>
         <dc:description xml:lang="en">OPMI is a biomedical ontology in the area of precision medicine and its related investigations. It is community-driven and developed by following the OBO Foundry ontology development principles.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.143</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.144</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -6496,6 +6496,281 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
         <obo:IAO_0000118>type concept</obo:IAO_0000118>
         <obo:IAO_0000119>https://github.com/OHDSI/Vocabulary-v5.0/wiki/Vocab.-TYPE_CONCEPT</obo:IAO_0000119>
         <rdfs:label xml:lang="en">provenance of record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000513 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000513">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000512"/>
+        <obo:IAO_0000112>As part of the OMOP CDM, PROCEDURE TYPE CONCEPT best represents the provenance of the record, for example whether it came from an EHR record or billing claim. If a procedure is recorded as an EHR encounter, the PROCEDURE_TYPE_CONCEPT would be ‘EHR encounter record’.</obo:IAO_0000112>
+        <obo:IAO_0000115>A provenance of record that determines the provenance of the Procedure record, as in whether the procedure was from an EHR system, insurance claim, registry, or other sources.</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>Procedure Type Concept</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#PROCEDURE_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">provenance of procedure record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000515 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000515">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000512"/>
+        <obo:IAO_0000115>A provenance of record that designates the source (provenance) of the cost data.</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>Cost Type Concept</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#COST</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">provenance of cost record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000516 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000516">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000512"/>
+        <obo:IAO_0000112>As part of the OMOP CDM, use the type concept that be reflects the source of the death record. It is possible that an administrative claims database would source death information from a government file so do not assume the Death Type is the same as the Visit Type, etc.</obo:IAO_0000112>
+        <obo:IAO_0000115>A provenance of record that determines the provenance of the death record, i.e., where it came from.</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>Death Type Concept</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#DEATH</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">provenance of death record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000517 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000517">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000512"/>
+        <obo:IAO_0000115>A provenance of record that determines the provenance of the record, as in whether the record is from administrative claims or EHR.</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>Device Exposure Type Concept</obo:IAO_0000118>
+        <obo:IAO_0000118>Device Type Concept</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#DEVICE_EXPOSURE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">provenance of device record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000518 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000518">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000512"/>
+        <obo:IAO_0000112>As part of the OMOP CDM, choose the drug_type_concept_id that best represents the provenance of the record, for example whether it came from a record of a prescription written or physician administered drug.</obo:IAO_0000112>
+        <obo:IAO_0000115>A provenance of record that determines the provenance of a drug prescription, which delineates prescriptions written, prescriptions dispensed, medication history, patient-reported exposure, etc.</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>Drug Type Concept</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#DRUG_EXPOSURE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">provenance of drug record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000519 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000519">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000512"/>
+        <obo:IAO_0000115>A provenance of record that determines the provenance of the Episode record, as in whether the procedure was from an EHR system, insurance claim, registry, or other sources.</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>Procedure Type Concept</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#EPISODE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">provenance of episode record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000520 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000520">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000512"/>
+        <obo:IAO_0000115>A provenance of record that determines the provenance of the Measurement record, as in whether the procedure was from an EHR system, insurance claim, registry, or other sources.</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>Measurement Type Concept</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#MEASUREMENT</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">provenance of measurement record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000521 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000521">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000512"/>
+        <obo:IAO_0000112>As part of the OMOP CDM, the provenance of the notes most likely will be EHR.</obo:IAO_0000112>
+        <obo:IAO_0000115>A provenance of record that determines the provenance of the note.</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>Note Type Concept</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#NOTE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">provenance of note record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000522 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000522">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000512"/>
+        <obo:IAO_0000115>A provenance of record that determines the provenance of the Observation record, as in whether the measurement was from an EHR system, insurance claim, registry, or other sources.</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>Observation Period Type Concept</obo:IAO_0000118>
+        <obo:IAO_0000118>Observation Type Concept</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#OBSERVATION</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">provenance of observation record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000523 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000523">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000512"/>
+        <obo:IAO_0000115>A provenance of record that determines the source of the specimen record, as in an EHR system.</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>Specimen Type Concept</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#SPECIMEN</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">provenance of specimen record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000524 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000524">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000512"/>
+        <obo:IAO_0000112>As part of the OMOP CDM, populate this field based on the provenance of the visit record, as in whether it came from an EHR record or billing claim.</obo:IAO_0000112>
+        <obo:IAO_0000115>A provenance of record that determines the provenance of the visit record, or where the record comes from.</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>Visit Type Concept</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#PROCEDURE_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">provenance of visit record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000525 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000525">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000512"/>
+        <obo:IAO_0000115>A provenance of record that determines the provenance of the Condition record, as in whether the condition was from an EHR system, insurance claim, registry, or other sources.</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>Condition Occurrence Type Concept</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#CONDITION_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">provenance of condition occurrence record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000527 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000527">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A process event where a person presents a disease or medical condition stated as a diagnosis, a sign, or a symptom, which is either observed by a Provider or reported by the patient.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>medical condition occurrence</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#CONDITION_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">condition occurrence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000528 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000528">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000148"/>
+        <obo:IAO_0000115>the date or time on which a condition occurs</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>clinical condition date</obo:IAO_0000118>
+        <obo:IAO_0000118>condition time</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#CONDITION_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">condition temporal region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000529 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000529">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000528"/>
+        <obo:IAO_0000115>The date on which a condition ends.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>clinical condition end date</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#CONDITION_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">condition end date</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000530 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000530">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000528"/>
+        <obo:IAO_0000115>The date and time on which a clinical condition ends.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>clinical condition end datetime</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#CONDITION_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">condition end datetime</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000531 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000531">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000528"/>
+        <obo:IAO_0000115>The date on which a condition starts.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>clinical condition start date</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#CONDITION_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">condition start date</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000532 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000532">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000528"/>
+        <obo:IAO_0000115>The date and time on which a condition starts.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>clinical condition start datetime</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#CONDITION_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:comment>In OMOP CDM, most often data sources do not have the idea of a start date for a condition. Rather, if a source only has one date associated with a condition record it is acceptable to use that date for both the CONDITION_START_DATE and the CONDITION_END_DATE. Reference: https://ohdsi.github.io/CommonDataModel/cdm54.html#CONDITION_OCCURRENCE</rdfs:comment>
+        <rdfs:label xml:lang="en">condition start datetime</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000533 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000533">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000326"/>
+        <obo:IAO_0000115>The state or status at the point during the visit the diagnosis was given (admitting diagnosis, final diagnosis), whether the diagnosis was determined due to laboratory findings, if the diagnosis was exclusionary, or if it was a preliminary diagnosis, among others.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>diagnosis status</obo:IAO_0000118>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">medical condition status</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000534 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000534">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000007"/>
+        <obo:IAO_0000115>An action specification that indicates why a Condition is no longer valid with respect to the purpose specified within the source data.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#CONDITION_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:comment>In OMOP CDM, a Stop Reason does not necessarily imply that the condition is no longer occurring.</rdfs:comment>
+        <rdfs:label xml:lang="en">medical condition stop reason specification</rdfs:label>
     </owl:Class>
     
 
