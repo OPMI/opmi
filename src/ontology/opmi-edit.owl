@@ -53,13 +53,13 @@
         <dc:creator>Qingliang Leon Li</dc:creator>
         <dc:creator>Suyuan Peng</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
-        <dc:date>2-6-2022</dc:date>
+        <dc:date>2-11-2022</dc:date>
         <dc:description xml:lang="en">OPMI is a biomedical ontology in the area of precision medicine and its related investigations. It is community-driven and developed by following the OBO Foundry ontology development principles.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.144</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.145</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -6514,6 +6514,21 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000514 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000514">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000533"/>
+        <obo:IAO_0000115>The status of being diagnosed as death</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>death diagnosis</obo:IAO_0000118>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms/32895</obo:IAO_0000119>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">death diagnosis status</rdfs:label>
+        <rdfs:seeAlso>OMOP4976965</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OPMI_0000515 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000515">
@@ -6663,6 +6678,23 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000526 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000526">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000533"/>
+        <obo:IAO_0000115>The primary diagnosis refers to the patient condition that demands the most provider resources during the patient’s stay.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>primary diagnosis</obo:IAO_0000118>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms/32902</obo:IAO_0000119>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <obo:IAO_0000119>https://www.definitivehc.com/resources/glossary/primary-diagnosis</obo:IAO_0000119>
+        <rdfs:comment>There is often confusion surrounding primary and principal diagnoses and, consequently, the terms are commonly used interchangeably. While these can be (and frequently are) the same diagnosis in practice, their definitions are distinct. While a principal diagnosis is the underlying cause of patient symptoms, the primary diagnosis is used for healthcare billing purposes. Reference: https://www.definitivehc.com/resources/glossary/primary-diagnosis</rdfs:comment>
+        <rdfs:label xml:lang="en">primary diagnosis status</rdfs:label>
+        <rdfs:seeAlso>OMOP4976972</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OPMI_0000527 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000527">
@@ -6771,6 +6803,33 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
         <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#CONDITION_OCCURRENCE</obo:IAO_0000119>
         <rdfs:comment>In OMOP CDM, a Stop Reason does not necessarily imply that the condition is no longer occurring.</rdfs:comment>
         <rdfs:label xml:lang="en">medical condition stop reason specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000535 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000535">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000526"/>
+        <obo:IAO_0000115>The status of have the primary admission diagnosis</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>primary admission diagnosis</obo:IAO_0000118>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms/32901</obo:IAO_0000119>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">primary admission diagnosis status</rdfs:label>
+        <rdfs:seeAlso>OMOP4976971</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000537 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000537">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000073"/>
+        <obo:IAO_0000115>Principal diagnosis describes the underlying cause behind a patient’s initial hospital admission and is assigned only after a physician has completed necessary tests and examinations.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.definitivehc.com/resources/glossary/principal-diagnosis</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">principal diagnosis</rdfs:label>
     </owl:Class>
     
 
