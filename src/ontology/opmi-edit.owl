@@ -53,13 +53,13 @@
         <dc:creator>Qingliang Leon Li</dc:creator>
         <dc:creator>Suyuan Peng</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
-        <dc:date>2-11-2022</dc:date>
+        <dc:date>2-13-2022</dc:date>
         <dc:description xml:lang="en">OPMI is a biomedical ontology in the area of precision medicine and its related investigations. It is community-driven and developed by following the OBO Foundry ontology development principles.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.145</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.146</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -6789,6 +6789,9 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
         <obo:IAO_0000118>diagnosis status</obo:IAO_0000118>
         <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <obo:IAO_0000119>https://build.fhir.org/ig/HL7/UTG/CodeSystem-condition-clinical.html</obo:IAO_0000119>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#CONDITION_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:comment>In OPMI, we treated medical condition status as a status, which is a realizable entitry. One major section of the branch is various diagnosis condition status. There are basically two types of diagnosis: one type diagnosis is treated as a condition status, the other is diagnosis (OGMS_0000073) as a type of clinical data item. One good example to illustrate the difference is the difference between primary and principal diagnoses. While these can be (and frequently are) the same diagnosis in practice, their definitions are distinct. While a principal diagnosis is the underlying cause of patient symptoms, the primary diagnosis is used for healthcare billing purposes and is a type of medical condition status. Reference: https://www.definitivehc.com/resources/glossary/primary-diagnosis</rdfs:comment>
         <rdfs:label xml:lang="en">medical condition status</rdfs:label>
     </owl:Class>
     
@@ -6822,6 +6825,18 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000536 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000536">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000533"/>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">confirmed diagnosis status</rdfs:label>
+        <rdfs:seeAlso>OMOP4976963</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OPMI_0000537 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000537">
@@ -6830,6 +6845,291 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.definitivehc.com/resources/glossary/principal-diagnosis</obo:IAO_0000119>
         <rdfs:label xml:lang="en">principal diagnosis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000538 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000538">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000533"/>
+        <obo:IAO_0000115>A discharge diagnosis is a final diagnosis given a patient before release from the hospital after all testing, surgery, and workup are complete.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <obo:IAO_0000119>https://medical-dictionary.thefreedictionary.com/discharge+diagnosis</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">discharge diagnosis status</rdfs:label>
+        <rdfs:seeAlso>OMOP4976966</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000539 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000539">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000533"/>
+        <obo:IAO_0000115>A postoperative diagnosis is a diagnosis or diagnoses discovered or confirmed during the surgery. Often it is the same as the preoperative diagnosis.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>primary admission diagnosis</obo:IAO_0000118>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <obo:IAO_0000119>https://ushik.ahrq.gov/ViewItemDetails?system=mdr&amp;itemKey=85779000#:~:text=Definition%3A,same%20as%20the%20Preoperative%20Diagnosis.</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">postoperative diagnosis status</rdfs:label>
+        <rdfs:seeAlso>OMOP4976968</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000540 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000540">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000533"/>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">preliminary diagnosis status</rdfs:label>
+        <rdfs:seeAlso>OMOP4976969</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000541 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000541">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000533"/>
+        <obo:IAO_0000115>A preoperative diagnosis is a surgical diagnosis or diagnoses that are assigned to the patient before the surgical procedure, and is the reason for the surgery. A preoperative diagnosis is, in the opinion of the surgeon, the diagnosis that will be confirmed during surgery.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <obo:IAO_0000119>https://ushik.ahrq.gov/ViewItemDetails?system=mdr&amp;itemKey=85778000#:~:text=Definition%3A,will%20be%20confirmed%20during%20surgery.</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">preoperative diagnosis status</rdfs:label>
+        <rdfs:seeAlso>OMOP4976970</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000542 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000542">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000533"/>
+        <obo:IAO_0000115>An admitting diagnosis is defined as the initial working diagnosis documented by the patient&apos;s admitting or attending physician who determined that inpatient care was necessary.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>admission diagnosis</obo:IAO_0000118>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <obo:IAO_0000119>https://manual.jointcommission.org/releases/TJC2016B/DataElem0540.html#:~:text=Definition%3A&amp;text=The%20admitting%20diagnosis%20is%20defined,that%20inpatient%20care%20was%20necessary.</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">admission diagnosis status</rdfs:label>
+        <rdfs:seeAlso>OMOP4976960</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000543 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000543">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000533"/>
+        <obo:IAO_0000115>A cause of death is an official determination of conditions resulting in a human&apos;s death, which may be recorded on a death certificate. A cause of death is determined by a medical examiner.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>cause of death</obo:IAO_0000118>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Cause_of_death</obo:IAO_0000119>
+        <obo:IAO_0000119>https://www.cdc.gov/nchs/data/misc/hb_cod.pdf</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">cause of death status</rdfs:label>
+        <rdfs:seeAlso>OMOP4976961</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000544 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000544">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000526"/>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">primary referral diagnosis status</rdfs:label>
+        <rdfs:seeAlso>OMOP4976974</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000545 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000545">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000533"/>
+        <obo:IAO_0000115>A referral is a written request from one health professional to another health professional or health service, asking them to diagnose or treat you for a particular condition.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <obo:IAO_0000119>https://www.healthdirect.gov.au/what-is-a-referral#:~:text=A%20referral%20is%20a%20written,you%20for%20a%20particular%20condition.</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">referral diagnosis status</rdfs:label>
+        <rdfs:seeAlso>OMOP4976975</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000546 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000546">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000533"/>
+        <obo:IAO_0000115>A secondary diagnosis is a condition that coexists at the time of admission, that develops subsequently, or that affects the treatment received and/or length of stay.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <obo:IAO_0000119>https://medcom.uiowa.edu/theloop/announcements/understanding-principal-and-secondary-conditions-2</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">secondary diagnosis status</rdfs:label>
+        <rdfs:seeAlso>OMOP4976978</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000547 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000547">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000546"/>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">secondary discharge diagnosis status</rdfs:label>
+        <rdfs:seeAlso>OMOP4976979</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000548 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000548">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000546"/>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">secondary referral diagnosis status</rdfs:label>
+        <rdfs:seeAlso>OMOP4976980</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000549 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000549">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000540"/>
+        <obo:IAO_0000115>The status of have the primary admission diagnosis</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms/32901</obo:IAO_0000119>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">preliminary admission diagnosis status</rdfs:label>
+        <rdfs:seeAlso>OMOP4976971</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000550 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000550">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000540"/>
+        <obo:IAO_0000115>The status of have the primary admission diagnosis</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms/32901</obo:IAO_0000119>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">preliminary discharge diagnosis status</rdfs:label>
+        <rdfs:seeAlso>OMOP4976971</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000551 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000551">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000533"/>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">condition to be diagnosed by procedure status</rdfs:label>
+        <rdfs:seeAlso>OMOP4976962</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000552 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000552">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000533"/>
+        <obo:IAO_0000115>A contributory cause of death is a significant condition that unfavourably influences the course of the morbid process and thus contributes to the fatal outcome, but which is not related to the disease or condition directly causing death.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <obo:IAO_0000119>https://stats.oecd.org/glossary/detail.asp?ID=444</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">contributory cause of death status</rdfs:label>
+        <rdfs:seeAlso>OMOP4976964</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000553 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000553">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000543"/>
+        <obo:IAO_0000115>An immediate cause of death is a final disease, injury, or complication directly causing the death</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <obo:IAO_0000119>https://www.cdc.gov/nchs/data/misc/hb_cod.pdf</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">immediate cause of death status</rdfs:label>
+        <rdfs:seeAlso>OMOP4976967</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000554 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000554">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115>A process of a person’s exposure to a foreign physical object or instrument which is used for diagnostic or therapeutic purposes through a mechanism beyond chemical action. Devices include implantable objects (e.g. pacemakers, stents, artificial joints), medical equipment and supplies (e.g. bandages, crutches, syringes), other instruments used in medical procedures (e.g. sutures, defibrillators) and material used in clinical care (e.g. adhesives, body material, dental material, surgical material).</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#DEVICE_EXPOSURE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">device exposure</rdfs:label>
+        <rdfs:seeAlso>http://purl.obolibrary.org/obo/NCIT_C102617</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000555 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000555">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000526"/>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">primary discarge diagnosis status</rdfs:label>
+        <rdfs:seeAlso>OMOP4976973</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000559 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000559">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000546"/>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">secondary admission diagnosis status</rdfs:label>
+        <rdfs:seeAlso>OMOP4976977</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000560 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000560">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000533"/>
+        <obo:IAO_0000115>A medical condition status in which the subject is not presently experiencing the condition or situation and there is a negligible perceived risk of the condition or situation returning.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms/32906</obo:IAO_0000119>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <obo:IAO_0000119>https://build.fhir.org/ig/HL7/UTG/CodeSystem-condition-clinical.html</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">resolved condition status</rdfs:label>
+        <rdfs:seeAlso>OMOP4976976</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000561 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000561">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000543"/>
+        <obo:IAO_0000115>The underlying cause of death refers to the disease or injury that initiated the train of morbid events leading directly to death or the circumstances of the accident or violence that produced the injury.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <obo:IAO_0000119>https://stats.oecd.org/glossary/detail.asp?ID=2790</obo:IAO_0000119>
+        <obo:IAO_0000119>https://www.cdc.gov/nchs/data/misc/hb_cod.pdf</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">underlying cause of death status</rdfs:label>
+        <rdfs:seeAlso>OMOP4976981</rdfs:seeAlso>
     </owl:Class>
     
 

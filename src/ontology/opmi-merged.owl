@@ -37,13 +37,13 @@
         <dc:creator>Qingliang Leon Li</dc:creator>
         <dc:creator>Suyuan Peng</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
-        <dc:date>1-15-2022</dc:date>
+        <dc:date>2-13-2022</dc:date>
         <dc:description xml:lang="en">OPMI is a biomedical ontology in the area of precision medicine and its related investigations. It is community-driven and developed by following the OBO Foundry ontology development principles.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.138</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.146</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -2449,6 +2449,40 @@ in: process &apos;has participant&apos; some (participant &apos;has quality&apos
         <obo:IAO_0000115>An object property that represents a relation between a person with a biological sex and a process where the person has an increased susceptbility to a process compared to the whole population with all sexes included</obo:IAO_0000115>
         <obo:IAO_0000117>Anthony Huffman, Oliver He</obo:IAO_0000117>
         <rdfs:label xml:lang="en">has increased sex-specific susceptibility compared to sex baseline to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000481 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OPMI_0000481">
+        <obo:IAO_0000112>A care_site has a care_site_id (OMOP: http://ohdsi.github.io/CommonDataModel/cdm54.html#CARE_SITE)</obo:IAO_0000112>
+        <obo:IAO_0000115>An object property that represents a relation between an entity and its corresponding identifier that is owned by the entity.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">has identifier</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000501 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OPMI_0000501">
+        <obo:IAO_0000112>A patient was admitted to the hospital from home or a long-term care facility.</obo:IAO_0000112>
+        <obo:IAO_0000115>An object property  that represents a relation between a patient and a site from which the patient was admitted.</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#VISIT_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">admitted from</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000502 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OPMI_0000502">
+        <obo:IAO_0000112>After a visit, a person was discharged to home or a long-term care site. Typically this applies only to visits that have a length of stay of a day or more.</obo:IAO_0000112>
+        <obo:IAO_0000115>An object property  that represents a relation between a patient and a site to which the patient was discharged after a visit.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#VISIT_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">discharged to</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -17102,7 +17136,6 @@ JAR: A data item is an approximately justified approximately true approximate be
         <obo:IAO_0000112 xml:lang="en">Examples of information content entites include journal articles, data, graphical layouts, and graphs.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">A generically dependent continuant that is about some thing.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">An information content entity is an entity that is generically dependent on some artifact and stands in relation of aboutness to some entity</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">2014-03-10: The use of &quot;thing&quot; is intended to be general enough to include universals and configurations (see https://groups.google.com/d/msg/information-ontology/GBxvYZCk1oc/-L6B5fSBBTQJ).</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">information_content_entity &apos;is_encoded_in&apos; some digital_entity in obi before split (040907). information_content_entity &apos;is_encoded_in&apos; some physical_document in obi before split (040907).
 
@@ -38157,6 +38190,7 @@ objectives is a planned process.</obo:IAO_0000116>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ico.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/oae.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omrse.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/vo.owl"/>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/obi.owl</obo:IAO_0000412>
@@ -40292,7 +40326,7 @@ defines and states the requirements (positive or negative) for an entity to be c
     <!-- http://purl.obolibrary.org/obo/OGMS_0000014 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000014">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000123"/>
         <obo:IAO_0000115 xml:lang="en">A representation that is either the output of a clinical history taking or a physical examination or an image finding, or some combination thereof.</obo:IAO_0000115>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
         <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
@@ -40306,7 +40340,7 @@ defines and states the requirements (positive or negative) for an entity to be c
     <!-- http://purl.obolibrary.org/obo/OGMS_0000015 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000015">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000123"/>
         <obo:IAO_0000115 xml:lang="en">A series of statements representing health-relevant qualities of a patient and of a patient&apos;s family.</obo:IAO_0000115>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
         <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
@@ -40390,7 +40424,7 @@ defines and states the requirements (positive or negative) for an entity to be c
     <!-- http://purl.obolibrary.org/obo/OGMS_0000073 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000073">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000123"/>
         <obo:IAO_0000115 xml:lang="en">The representation of a conclusion of a diagnostic process.</obo:IAO_0000115>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
         <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
@@ -40418,8 +40452,9 @@ defines and states the requirements (positive or negative) for an entity to be c
     <!-- http://purl.obolibrary.org/obo/OGMS_0000090 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000090">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000096"/>
+        <obo:IAO_0000115 xml:lang="en">A planned process whose completion is hypothesized by a health care provider to eliminate, prevent, or alleviate a disorder, the signs and symptoms of a disorder, or a pathological process</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">A processual entity whose completion is hypothesized (by a healthcare provider) to alleviate the signs and symptoms associated with a disorder</obo:IAO_0000115>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
         <obo:IAO_0000119>http://code.google.com/p/ogms/issues/detail?id=35</obo:IAO_0000119>
@@ -40428,6 +40463,22 @@ defines and states the requirements (positive or negative) for an entity to be c
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/ogms.owl</obo:IAO_0000412>
         <rdfs:label>treatment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000096 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000096">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000115 xml:lang="en">A planned process with the objective to improve the health status of a patient that directly involves the treatment, diagnosis, or prevention of disease or injury of a patient</obo:IAO_0000115>
+        <obo:IAO_0000117>Albert Goldfain
+Sagar Jain</obo:IAO_0000117>
+        <obo:IAO_0000119>http://groups.google.com/group/ogms-discuss/browse_thread/thread/a2dbc2ed1dff99d6</obo:IAO_0000119>
+        <obo:IAO_0000232>creation date: 2011-02-21T09:57:44Z
+editor date: 2017-04-18</obo:IAO_0000232>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
+        <rdfs:label>health care process</rdfs:label>
     </owl:Class>
     
 
@@ -40465,13 +40516,25 @@ defines and states the requirements (positive or negative) for an entity to be c
     <!-- http://purl.obolibrary.org/obo/OGMS_0000104 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000104">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <obo:IAO_0000115 xml:lang="en">An interpretive process that has as input a clinical picture of a given patient and as output an assertion to the effect that the patient has a disease, disorder, or syndrome of a certain type, or none of these.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000096"/>
+        <obo:IAO_0000115 xml:lang="en">A health care process that involves the interpretation of a clinical picture from a given patient (input) and the assertion to the effect that the patient has a disease, disorder, or syndrome of a certain type, or none of these (output).</obo:IAO_0000115>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
         <obo:IAO_0000119>http://groups.google.com/group/ogms-discuss/browse_thread/thread/2a7008f311fac766/e7de486c94dfd82e</obo:IAO_0000119>
         <obo:IAO_0000232>creation date: 2011-09-20T09:57:44Z</obo:IAO_0000232>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
         <rdfs:label>diagnostic process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000123 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000123">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000115>A data item that is about a patient and is the specified output of a health care process assay or diagnostic process</obo:IAO_0000115>
+        <obo:IAO_0000232>creation date: 2018-11-27</obo:IAO_0000232>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
+        <rdfs:label xml:lang="en">clinical data item</rdfs:label>
     </owl:Class>
     
 
@@ -45086,12 +45149,14 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OPMI_0000285 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000285">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
-        <obo:IAO_0000115>the date on which a visit occurs</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000148"/>
+        <obo:IAO_0000115>the date or time on which a visit occurs</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>clinical visit date</obo:IAO_0000118>
+        <obo:IAO_0000118>visit time</obo:IAO_0000118>
         <obo:OPMI_0000127>NCIT_C83031</obo:OPMI_0000127>
         <obo:OPMI_0000128>C1320303</obo:OPMI_0000128>
-        <rdfs:label xml:lang="en">visit date</rdfs:label>
+        <rdfs:label xml:lang="en">visit temporal region</rdfs:label>
     </owl:Class>
     
 
@@ -46603,15 +46668,21 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000481"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000470"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000030"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>a human who is a recipient of a health care service performed by healthcare professionals.</obo:IAO_0000115>
-        <obo:IAO_0000118>patient</obo:IAO_0000118>
+        <obo:IAO_0000118>human patient</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Patient</obo:IAO_0000119>
         <dc:creator>Hong Yu, Oliver He</dc:creator>
-        <rdfs:label xml:lang="en">human patient</rdfs:label>
+        <rdfs:label xml:lang="en">patient</rdfs:label>
     </owl:Class>
     
 
@@ -47341,6 +47412,1164 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
         <obo:IAO_0000118>time of birth</obo:IAO_0000118>
         <rdfs:label xml:lang="en">birth-related time</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000479 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000479">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000481"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000480"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A care site is a uniquely identified institutional (physical or organizational) unit where healthcare delivery is practiced, for example, office, ward, hospital, clinic, etc.</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#CARE_SITE</obo:IAO_0000119>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#PERSON</obo:IAO_0000119>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Health_care</obo:IAO_0000119>
+        <rdfs:comment>According to OMOP, care site does not consider the provider (human) information such a specialty. Instead, care site is considered at the institutional level.</rdfs:comment>
+        <rdfs:label xml:lang="en">care site</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000480 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000480">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A centrally registered identifier that refers to where the care provider typically provides the primary care.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>care site id</obo:IAO_0000118>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#CARE_SITE</obo:IAO_0000119>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#PERSON</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">care site identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000482 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000482">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A process event where a person engages with the healthcare system for a duration of time. This includes inpatient or outpatient visit.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#VISIT_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">visit occurrence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000483 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000483">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000482"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A centrally registered identifier that refers to a specific visit occurrence. This identifier identifies a unique interaction between a person and the health care system.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>visit occurrence id</obo:IAO_0000118>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#VISIT_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">visit occurrence identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000484 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000484">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000482"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A vist ocurrence in which the patient&apos;s condition requires admission to a hospital.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>inpatient visit occurrence</obo:IAO_0000118>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#VISIT_OCCURRENCE</obo:IAO_0000119>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Inpatient_care</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">inpatient visit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000485 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000485">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000482"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A vist ocurrence in which a patient attends an outpatient clinic with no plan to stay beyond the duration of the visit.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>outpatient visit occurrence</obo:IAO_0000118>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#VISIT_OCCURRENCE</obo:IAO_0000119>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Patient#Outpatients_and_inpatients</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">outpatient visit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000486 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000486">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000482"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A vist ocurrence in which a patient attends an outpatient clinic with no plan to stay beyond the duration of the visit.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>ER visit</obo:IAO_0000118>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#VISIT_OCCURRENCE</obo:IAO_0000119>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Patient#Outpatients_and_inpatients</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">emergency room visit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000487 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000487">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000285"/>
+        <obo:IAO_0000115>The date on which a visit starts. In the case of an inpatient visit this should be the date the patient was admitted to the hospital or institution. In all other cases this should be the date of the patient-provider interaction.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>clinical visit start date</obo:IAO_0000118>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#VISIT_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">visit start date</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000488 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000488">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000285"/>
+        <obo:IAO_0000115>The date on which a visit ends. For inpatient visits the end date is typically the discharge date. If a Person is still an inpatient in the hospital at the time of the data extract and does not have a visit_end_date, then set the visit_end_date to the date of the data pull.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>clinical visit end date</obo:IAO_0000118>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#VISIT_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">visit end date</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000489 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000489">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+        <obo:IAO_0000115>A temporal region that covers the time period from the visit start time to the visit end time.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">visit duration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000490 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000490">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000285"/>
+        <obo:IAO_0000115>The date and time on which a visit starts. In the case of an inpatient visit this should be the date the patient was admitted to the hospital or institution. In all other cases this should be the date of the patient-provider interaction.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>clinical visit start datetime</obo:IAO_0000118>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#VISIT_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">visit start datetime</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000491 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000491">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000285"/>
+        <obo:IAO_0000115>The date and time on which a visit ends. For inpatient visits the end date is typically the discharge date. If a Person is still an inpatient in the hospital at the time of the data extract and does not have a visit_end_date, then set the visit_end_date to the date of the data pull.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>clinical visit end datetime</obo:IAO_0000118>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#VISIT_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">visit end datetime</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000492 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000492">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000482"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A visit occurrence that occurs for the person prior to the given visit. There could be a few days or a few years in between.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#VISIT_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">preceding visit occurrence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000493 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000493">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000482"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A vist ocurrence that includes a visit to the emergency room followed by a subsequent inpatient visit.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#VISIT_OCCURRENCE</obo:IAO_0000119>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Patient#Outpatients_and_inpatients</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">emergency room and inpatient visit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000494 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000494">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000482"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A visit to a dedicated institution for reasons of poor health, at a Care Site, long-term or permanently, with no physician but possibly other Providers permanently available to deliver service around the clock</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#VISIT_OCCURRENCE</obo:IAO_0000119>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Patient#Outpatients_and_inpatients</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">non-hospital institution visit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000495 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000495">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000482"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A visit where a provider visits a person, without a care site, within one day, delivering service</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#VISIT_OCCURRENCE</obo:IAO_0000119>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Patient#Outpatients_and_inpatients</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">home visit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000496 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000496">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000482"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A visit in which a patient engages with a Provider through communication media. A patient can use digital information and communication technologies, such as computers and mobile devices, to access health care services remotely and manage their health care.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#VISIT_OCCURRENCE</obo:IAO_0000119>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Patient#Outpatients_and_inpatients</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">telehealth visit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000497 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000497">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000482"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A visit to the pharmacy for dispensing of drug, at a care site, within one day</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#VISIT_OCCURRENCE</obo:IAO_0000119>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Patient#Outpatients_and_inpatients</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">pharmacy visit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000498 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000498">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000482"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A visit to a dedicated institution, at a care site, within one day, for the purpose of a measurement. The visit is carried out in a medical laboratory or clinical laboratory where tests are carried out on clinical specimens to obtain information about the health of a patient to aid in diagnosis, treatment, and prevention of disease</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#VISIT_OCCURRENCE</obo:IAO_0000119>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Patient#Outpatients_and_inpatients</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">laboratory visit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000499 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000499">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000482"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An interaction with the healthcare system, without a care site, within a day, with no providers involved, for administrative purposes</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#VISIT_OCCURRENCE</obo:IAO_0000119>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Patient#Outpatients_and_inpatients</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">case management visit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000500 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000500">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+        <obo:IAO_0000115>A site that is used as a permanent or semi-permanent residence for one or many humans.</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Home</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">home</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000503 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000503">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A centrally registered identifier that refers to the National Provider Number issued to health care providers in the US by the Centers for Medicare and Medicaid Services (CMS). NPI is assigned for use in all administrative and financial transactions specified by HIPAA.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>National Providier Number</obo:IAO_0000118>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#PERSON</obo:IAO_0000119>
+        <obo:ICO_0000092>http://purl.obolibrary.org/obo/NCIT_C54633</obo:ICO_0000092>
+        <rdfs:label xml:lang="en">National Provider Identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000504 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000504">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A centrally registered identifier that is issued by the Drug Enforcement Administration (DEA), a US federal agency, that allows a provider to write prescriptions for controlled substances.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#PERSON</obo:IAO_0000119>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Drug_Enforcement_Administration</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">DEA identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000505 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000505">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000481"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000506"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An activity or process that is ordered by, or carried out by, a healthcare provider on a patient with a diagnostic or therapeutic purpose.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#PROCEDURE_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">procedure occurrence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000506 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000506">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000505"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A centrally registered identifier that refers to a procedure occurrence, which is an activity or process that is ordered by, or carried out by, a healthcare provider on a patient with a diagnostic or therapeutic purpose.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>procedure occurrence ID</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#PROCEDURE_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">procedure occurrence identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000507 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000507">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000148"/>
+        <obo:IAO_0000115>A temporal region that is associated with a procedure</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>procedure time</obo:IAO_0000118>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#PROCEDURE_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">procedure temporal region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000508 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000508">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000507"/>
+        <obo:IAO_0000115>The date when a procedure starts</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>procedure date</obo:IAO_0000118>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#PROCEDURE_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">procedure start date</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000509 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000509">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000507"/>
+        <obo:IAO_0000115>The date and time when a procedure starts</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>procedure date</obo:IAO_0000118>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#PROCEDURE_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">procedure start datetime</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000510 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000510">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000507"/>
+        <obo:IAO_0000115>The date when a procedure ends</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>procedure date</obo:IAO_0000118>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#PROCEDURE_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">procedure end date</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000511 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000511">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000507"/>
+        <obo:IAO_0000115>The date and time when a procedure ends</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>procedure date</obo:IAO_0000118>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#PROCEDURE_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">procedure end datetime</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000512 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000512">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115>The information content entity that represents the origin of record such as the clinical form as the origin record of death.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>type concept</obo:IAO_0000118>
+        <obo:IAO_0000119>https://github.com/OHDSI/Vocabulary-v5.0/wiki/Vocab.-TYPE_CONCEPT</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">provenance of record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000513 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000513">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000512"/>
+        <obo:IAO_0000112>As part of the OMOP CDM, PROCEDURE TYPE CONCEPT best represents the provenance of the record, for example whether it came from an EHR record or billing claim. If a procedure is recorded as an EHR encounter, the PROCEDURE_TYPE_CONCEPT would be ‘EHR encounter record’.</obo:IAO_0000112>
+        <obo:IAO_0000115>A provenance of record that determines the provenance of the Procedure record, as in whether the procedure was from an EHR system, insurance claim, registry, or other sources.</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>Procedure Type Concept</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#PROCEDURE_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">provenance of procedure record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000514 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000514">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000533"/>
+        <obo:IAO_0000115>The status of being diagnosed as death</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>death diagnosis</obo:IAO_0000118>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms/32895</obo:IAO_0000119>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">death diagnosis status</rdfs:label>
+        <rdfs:seeAlso>OMOP4976965</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000515 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000515">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000512"/>
+        <obo:IAO_0000115>A provenance of record that designates the source (provenance) of the cost data.</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>Cost Type Concept</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#COST</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">provenance of cost record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000516 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000516">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000512"/>
+        <obo:IAO_0000112>As part of the OMOP CDM, use the type concept that be reflects the source of the death record. It is possible that an administrative claims database would source death information from a government file so do not assume the Death Type is the same as the Visit Type, etc.</obo:IAO_0000112>
+        <obo:IAO_0000115>A provenance of record that determines the provenance of the death record, i.e., where it came from.</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>Death Type Concept</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#DEATH</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">provenance of death record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000517 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000517">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000512"/>
+        <obo:IAO_0000115>A provenance of record that determines the provenance of the record, as in whether the record is from administrative claims or EHR.</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>Device Exposure Type Concept</obo:IAO_0000118>
+        <obo:IAO_0000118>Device Type Concept</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#DEVICE_EXPOSURE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">provenance of device record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000518 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000518">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000512"/>
+        <obo:IAO_0000112>As part of the OMOP CDM, choose the drug_type_concept_id that best represents the provenance of the record, for example whether it came from a record of a prescription written or physician administered drug.</obo:IAO_0000112>
+        <obo:IAO_0000115>A provenance of record that determines the provenance of a drug prescription, which delineates prescriptions written, prescriptions dispensed, medication history, patient-reported exposure, etc.</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>Drug Type Concept</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#DRUG_EXPOSURE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">provenance of drug record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000519 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000519">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000512"/>
+        <obo:IAO_0000115>A provenance of record that determines the provenance of the Episode record, as in whether the procedure was from an EHR system, insurance claim, registry, or other sources.</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>Procedure Type Concept</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#EPISODE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">provenance of episode record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000520 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000520">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000512"/>
+        <obo:IAO_0000115>A provenance of record that determines the provenance of the Measurement record, as in whether the procedure was from an EHR system, insurance claim, registry, or other sources.</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>Measurement Type Concept</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#MEASUREMENT</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">provenance of measurement record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000521 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000521">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000512"/>
+        <obo:IAO_0000112>As part of the OMOP CDM, the provenance of the notes most likely will be EHR.</obo:IAO_0000112>
+        <obo:IAO_0000115>A provenance of record that determines the provenance of the note.</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>Note Type Concept</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#NOTE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">provenance of note record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000522 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000522">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000512"/>
+        <obo:IAO_0000115>A provenance of record that determines the provenance of the Observation record, as in whether the measurement was from an EHR system, insurance claim, registry, or other sources.</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>Observation Period Type Concept</obo:IAO_0000118>
+        <obo:IAO_0000118>Observation Type Concept</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#OBSERVATION</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">provenance of observation record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000523 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000523">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000512"/>
+        <obo:IAO_0000115>A provenance of record that determines the source of the specimen record, as in an EHR system.</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>Specimen Type Concept</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#SPECIMEN</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">provenance of specimen record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000524 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000524">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000512"/>
+        <obo:IAO_0000112>As part of the OMOP CDM, populate this field based on the provenance of the visit record, as in whether it came from an EHR record or billing claim.</obo:IAO_0000112>
+        <obo:IAO_0000115>A provenance of record that determines the provenance of the visit record, or where the record comes from.</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>Visit Type Concept</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#PROCEDURE_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">provenance of visit record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000525 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000525">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000512"/>
+        <obo:IAO_0000115>A provenance of record that determines the provenance of the Condition record, as in whether the condition was from an EHR system, insurance claim, registry, or other sources.</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>Condition Occurrence Type Concept</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#CONDITION_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">provenance of condition occurrence record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000526 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000526">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000533"/>
+        <obo:IAO_0000115>The primary diagnosis refers to the patient condition that demands the most provider resources during the patient’s stay.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>primary diagnosis</obo:IAO_0000118>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms/32902</obo:IAO_0000119>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <obo:IAO_0000119>https://www.definitivehc.com/resources/glossary/primary-diagnosis</obo:IAO_0000119>
+        <rdfs:comment>There is often confusion surrounding primary and principal diagnoses and, consequently, the terms are commonly used interchangeably. While these can be (and frequently are) the same diagnosis in practice, their definitions are distinct. While a principal diagnosis is the underlying cause of patient symptoms, the primary diagnosis is used for healthcare billing purposes. Reference: https://www.definitivehc.com/resources/glossary/primary-diagnosis</rdfs:comment>
+        <rdfs:label xml:lang="en">primary diagnosis status</rdfs:label>
+        <rdfs:seeAlso>OMOP4976972</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000527 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000527">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A process event where a person presents a disease or medical condition stated as a diagnosis, a sign, or a symptom, which is either observed by a Provider or reported by the patient.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>medical condition occurrence</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#CONDITION_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">condition occurrence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000528 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000528">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000148"/>
+        <obo:IAO_0000115>the date or time on which a condition occurs</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>clinical condition date</obo:IAO_0000118>
+        <obo:IAO_0000118>condition time</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#CONDITION_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">condition temporal region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000529 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000529">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000528"/>
+        <obo:IAO_0000115>The date on which a condition ends.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>clinical condition end date</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#CONDITION_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">condition end date</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000530 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000530">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000528"/>
+        <obo:IAO_0000115>The date and time on which a clinical condition ends.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>clinical condition end datetime</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#CONDITION_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">condition end datetime</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000531 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000531">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000528"/>
+        <obo:IAO_0000115>The date on which a condition starts.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>clinical condition start date</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#CONDITION_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">condition start date</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000532 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000532">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000528"/>
+        <obo:IAO_0000115>The date and time on which a condition starts.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>clinical condition start datetime</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#CONDITION_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:comment>In OMOP CDM, most often data sources do not have the idea of a start date for a condition. Rather, if a source only has one date associated with a condition record it is acceptable to use that date for both the CONDITION_START_DATE and the CONDITION_END_DATE. Reference: https://ohdsi.github.io/CommonDataModel/cdm54.html#CONDITION_OCCURRENCE</rdfs:comment>
+        <rdfs:label xml:lang="en">condition start datetime</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000533 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000533">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000326"/>
+        <obo:IAO_0000115>The state or status at the point during the visit the diagnosis was given (admitting diagnosis, final diagnosis), whether the diagnosis was determined due to laboratory findings, if the diagnosis was exclusionary, or if it was a preliminary diagnosis, among others.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>diagnosis status</obo:IAO_0000118>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <obo:IAO_0000119>https://build.fhir.org/ig/HL7/UTG/CodeSystem-condition-clinical.html</obo:IAO_0000119>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#CONDITION_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:comment>In OPMI, we treated medical condition status as a status, which is a realizable entitry. One major section of the branch is various diagnosis condition status. There are basically two types of diagnosis: one type diagnosis is treated as a condition status, the other is diagnosis (OGMS_0000073) as a type of clinical data item. One good example to illustrate the difference is the difference between primary and principal diagnoses. While these can be (and frequently are) the same diagnosis in practice, their definitions are distinct. While a principal diagnosis is the underlying cause of patient symptoms, the primary diagnosis is used for healthcare billing purposes and is a type of medical condition status. Reference: https://www.definitivehc.com/resources/glossary/primary-diagnosis</rdfs:comment>
+        <rdfs:label xml:lang="en">medical condition status</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000534 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000534">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000007"/>
+        <obo:IAO_0000115>An action specification that indicates why a Condition is no longer valid with respect to the purpose specified within the source data.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#CONDITION_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:comment>In OMOP CDM, a Stop Reason does not necessarily imply that the condition is no longer occurring.</rdfs:comment>
+        <rdfs:label xml:lang="en">medical condition stop reason specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000535 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000535">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000526"/>
+        <obo:IAO_0000115>The status of have the primary admission diagnosis</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>primary admission diagnosis</obo:IAO_0000118>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms/32901</obo:IAO_0000119>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">primary admission diagnosis status</rdfs:label>
+        <rdfs:seeAlso>OMOP4976971</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000536 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000536">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000533"/>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">confirmed diagnosis status</rdfs:label>
+        <rdfs:seeAlso>OMOP4976963</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000537 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000537">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000073"/>
+        <obo:IAO_0000115>Principal diagnosis describes the underlying cause behind a patient’s initial hospital admission and is assigned only after a physician has completed necessary tests and examinations.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.definitivehc.com/resources/glossary/principal-diagnosis</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">principal diagnosis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000538 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000538">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000533"/>
+        <obo:IAO_0000115>A discharge diagnosis is a final diagnosis given a patient before release from the hospital after all testing, surgery, and workup are complete.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <obo:IAO_0000119>https://medical-dictionary.thefreedictionary.com/discharge+diagnosis</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">discharge diagnosis status</rdfs:label>
+        <rdfs:seeAlso>OMOP4976966</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000539 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000539">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000533"/>
+        <obo:IAO_0000115>A postoperative diagnosis is a diagnosis or diagnoses discovered or confirmed during the surgery. Often it is the same as the preoperative diagnosis.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>primary admission diagnosis</obo:IAO_0000118>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <obo:IAO_0000119>https://ushik.ahrq.gov/ViewItemDetails?system=mdr&amp;itemKey=85779000#:~:text=Definition%3A,same%20as%20the%20Preoperative%20Diagnosis.</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">postoperative diagnosis status</rdfs:label>
+        <rdfs:seeAlso>OMOP4976968</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000540 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000540">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000533"/>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">preliminary diagnosis status</rdfs:label>
+        <rdfs:seeAlso>OMOP4976969</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000541 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000541">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000533"/>
+        <obo:IAO_0000115>A preoperative diagnosis is a surgical diagnosis or diagnoses that are assigned to the patient before the surgical procedure, and is the reason for the surgery. A preoperative diagnosis is, in the opinion of the surgeon, the diagnosis that will be confirmed during surgery.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <obo:IAO_0000119>https://ushik.ahrq.gov/ViewItemDetails?system=mdr&amp;itemKey=85778000#:~:text=Definition%3A,will%20be%20confirmed%20during%20surgery.</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">preoperative diagnosis status</rdfs:label>
+        <rdfs:seeAlso>OMOP4976970</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000542 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000542">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000533"/>
+        <obo:IAO_0000115>An admitting diagnosis is defined as the initial working diagnosis documented by the patient&apos;s admitting or attending physician who determined that inpatient care was necessary.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>admission diagnosis</obo:IAO_0000118>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <obo:IAO_0000119>https://manual.jointcommission.org/releases/TJC2016B/DataElem0540.html#:~:text=Definition%3A&amp;text=The%20admitting%20diagnosis%20is%20defined,that%20inpatient%20care%20was%20necessary.</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">admission diagnosis status</rdfs:label>
+        <rdfs:seeAlso>OMOP4976960</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000543 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000543">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000533"/>
+        <obo:IAO_0000115>A cause of death is an official determination of conditions resulting in a human&apos;s death, which may be recorded on a death certificate. A cause of death is determined by a medical examiner.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>cause of death</obo:IAO_0000118>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Cause_of_death</obo:IAO_0000119>
+        <obo:IAO_0000119>https://www.cdc.gov/nchs/data/misc/hb_cod.pdf</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">cause of death status</rdfs:label>
+        <rdfs:seeAlso>OMOP4976961</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000544 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000544">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000526"/>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">primary referral diagnosis status</rdfs:label>
+        <rdfs:seeAlso>OMOP4976974</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000545 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000545">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000533"/>
+        <obo:IAO_0000115>A referral is a written request from one health professional to another health professional or health service, asking them to diagnose or treat you for a particular condition.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <obo:IAO_0000119>https://www.healthdirect.gov.au/what-is-a-referral#:~:text=A%20referral%20is%20a%20written,you%20for%20a%20particular%20condition.</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">referral diagnosis status</rdfs:label>
+        <rdfs:seeAlso>OMOP4976975</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000546 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000546">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000533"/>
+        <obo:IAO_0000115>A secondary diagnosis is a condition that coexists at the time of admission, that develops subsequently, or that affects the treatment received and/or length of stay.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <obo:IAO_0000119>https://medcom.uiowa.edu/theloop/announcements/understanding-principal-and-secondary-conditions-2</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">secondary diagnosis status</rdfs:label>
+        <rdfs:seeAlso>OMOP4976978</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000547 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000547">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000546"/>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">secondary discharge diagnosis status</rdfs:label>
+        <rdfs:seeAlso>OMOP4976979</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000548 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000548">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000546"/>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">secondary referral diagnosis status</rdfs:label>
+        <rdfs:seeAlso>OMOP4976980</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000549 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000549">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000540"/>
+        <obo:IAO_0000115>The status of have the primary admission diagnosis</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms/32901</obo:IAO_0000119>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">preliminary admission diagnosis status</rdfs:label>
+        <rdfs:seeAlso>OMOP4976971</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000550 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000550">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000540"/>
+        <obo:IAO_0000115>The status of have the primary admission diagnosis</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms/32901</obo:IAO_0000119>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">preliminary discharge diagnosis status</rdfs:label>
+        <rdfs:seeAlso>OMOP4976971</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000551 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000551">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000533"/>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">condition to be diagnosed by procedure status</rdfs:label>
+        <rdfs:seeAlso>OMOP4976962</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000552 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000552">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000533"/>
+        <obo:IAO_0000115>A contributory cause of death is a significant condition that unfavourably influences the course of the morbid process and thus contributes to the fatal outcome, but which is not related to the disease or condition directly causing death.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <obo:IAO_0000119>https://stats.oecd.org/glossary/detail.asp?ID=444</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">contributory cause of death status</rdfs:label>
+        <rdfs:seeAlso>OMOP4976964</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000553 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000553">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000543"/>
+        <obo:IAO_0000115>An immediate cause of death is a final disease, injury, or complication directly causing the death</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <obo:IAO_0000119>https://www.cdc.gov/nchs/data/misc/hb_cod.pdf</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">immediate cause of death status</rdfs:label>
+        <rdfs:seeAlso>OMOP4976967</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000554 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000554">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115>A process of a person’s exposure to a foreign physical object or instrument which is used for diagnostic or therapeutic purposes through a mechanism beyond chemical action. Devices include implantable objects (e.g. pacemakers, stents, artificial joints), medical equipment and supplies (e.g. bandages, crutches, syringes), other instruments used in medical procedures (e.g. sutures, defibrillators) and material used in clinical care (e.g. adhesives, body material, dental material, surgical material).</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#DEVICE_EXPOSURE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">device exposure</rdfs:label>
+        <rdfs:seeAlso>http://purl.obolibrary.org/obo/NCIT_C102617</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000555 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000555">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000526"/>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">primary discarge diagnosis status</rdfs:label>
+        <rdfs:seeAlso>OMOP4976973</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000559 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000559">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000546"/>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">secondary admission diagnosis status</rdfs:label>
+        <rdfs:seeAlso>OMOP4976977</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000560 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000560">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000533"/>
+        <obo:IAO_0000115>A medical condition status in which the subject is not presently experiencing the condition or situation and there is a negligible perceived risk of the condition or situation returning.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms/32906</obo:IAO_0000119>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <obo:IAO_0000119>https://build.fhir.org/ig/HL7/UTG/CodeSystem-condition-clinical.html</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">resolved condition status</rdfs:label>
+        <rdfs:seeAlso>OMOP4976976</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000561 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000561">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000543"/>
+        <obo:IAO_0000115>The underlying cause of death refers to the disease or injury that initiated the train of morbid events leading directly to death or the circumstances of the accident or violence that produced the injury.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <obo:IAO_0000119>https://stats.oecd.org/glossary/detail.asp?ID=2790</obo:IAO_0000119>
+        <obo:IAO_0000119>https://www.cdc.gov/nchs/data/misc/hb_cod.pdf</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">underlying cause of death status</rdfs:label>
+        <rdfs:seeAlso>OMOP4976981</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -60493,19 +61722,19 @@ This interpretation is *not* the same as an at-all-times relation
      -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00000013">
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One of the large, unbroken masses of land into which the Earth&apos;s surface is divided.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ:00000013</oboInOwl:id>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/gaz.owl"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One of the large, unbroken masses of land into which the Earth&apos;s surface is divided.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FTT:540</oboInOwl:hasDbXref>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">continent</rdfs:label>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/gaz.owl"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TGN:21402</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">continent</rdfs:label>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ</oboInOwl:hasOBONamespace>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GeoNames:CONT</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">continental region</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CONTIN</oboInOwl:hasExactSynonym>
         <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ:00190836</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">continent {alternative name}</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CONTIN</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Continent {alternative name}</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">continent {alternative name}</oboInOwl:hasExactSynonym>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TGN:29000</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00000448">
@@ -60516,8 +61745,8 @@ This interpretation is *not* the same as an at-all-times relation
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ</oboInOwl:hasOBONamespace>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geographic location</rdfs:label>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geographic region {alternative name}</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/gaz.owl"/>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geographic location</obo:IAO_0000111>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/gaz.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00000460">
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ:00000460</oboInOwl:id>
@@ -60527,17 +61756,17 @@ This interpretation is *not* the same as an at-all-times relation
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The convention used in gaz.obo is that the Europe-Asia boundary follows the watershed of the Ural Mountains from near Kara, Russia on the Kara Sea to the source of the Ural River, then follows that river to the Caspian Sea. The border then follows the watershed of the Caucasus Mountains from the Caspian Sea to the Black Sea.</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00002459">
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ:00002459</oboInOwl:id>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USA</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ:00002459</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ</oboInOwl:hasOBONamespace>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISO3166-1:840</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISO3166-1:US</oboInOwl:hasDbXref>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A federal constitutional republic comprising fifty states and a federal district. The country is situated mostly in central North America, where its forty-eight contiguous states and Washington, DC, the capital district, lie between the Pacific and Atlantic Oceans, bordered by Canada to the north and Mexico to the south. The State of Alaska is in the northwest of the continent, with Canada to its east and Russia to the west across the Bering Strait, and the State of Hawaii is in the mid-Pacific. The United States also possesses several territories, or insular areas, that are scattered around the Caribbean and Pacific. The states are divided into smaller administrative regions, called counties in most states, exceptions being Alaska (parts of the state are organized into subdivisions called boroughs; the rest of the state&apos;s territory that is not included in any borough is divided into &quot;census areas&quot;), and Louisiana (which is divided into county-equivalents that are called parishes). There are also independent cities which are within particular states but not part of any particular county or consolidated city-counties. Another type of organization is where the city and county are unified and function as an independent city. There are thirty-nine independent cities in Virginia and other independent cities or city-counties are San Francisco, California, Baltimore, Maryland, St. Louis, Missouri, Denver, Colorado and Carson City, Nevada. Counties can include a number of cities, towns, villages, or hamlets, or sometimes just a part of a city. Counties have varying degrees of political and legal significance, but they are always administrative divisions of the state. Counties in many states are further subdivided into townships, which, by definition, are administrative divisions of a county. In some states, such as Michigan, a township can file a charter with the state government, making itself into a &quot;charter township&quot;, which is a type of mixed municipal and township status (giving the township some of the rights of a city without all of the responsibilities), much in the way a metropolitan municipality is a mixed municipality and county.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">U.S.A</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">United States of America</rdfs:label>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">U.S.A</oboInOwl:hasExactSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/gaz.owl"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISO3166-2:US</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISO3166-1:USA</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISO3166-2:US</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002415">
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/uberon#grouping_class"/>
@@ -60551,8 +61780,8 @@ This interpretation is *not* the same as an at-all-times relation
         <rdfs:comment>DrOn contains content developed by the National Library of Medicine in RxNorm.  In creating DrOn, we have used RxNorm content only with SAB = RXNORM.</rdfs:comment>
         <dc:license xml:lang="en">https://creativecommons.org/licenses/by/3.0/</dc:license>
         <dc:creator>Eric Joseph</dc:creator>
-        <dc:creator>Mathias Brochhausen</dc:creator>
         <rdfs:comment xml:lang="en">When citing DrOn, use the permanent URL of the ontology: http://purl.obolibrary.org/obo/dron.owl.  When referencing a specific component of the DrOn, such as a class, object property, annotation property, or individual, use the Uniform Resource Identifier (URI) of that component.</rdfs:comment>
+        <dc:creator>Mathias Brochhausen</dc:creator>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/envo.owl">
         <dc:creator>http://orcid.org/0000-0002-8343-612X</dc:creator>
@@ -60585,8 +61814,8 @@ Please see www.environmentontology.org for more information and citations.</rdfs
         <dc:contributor>Darrell R. Abernethy</dc:contributor>
         <dc:creator>Sirarat Sarntivijai</dc:creator>
         <dc:creator>Ling Wan</dc:creator>
-        <dc:creator xml:lang="en">Shelley Zhang</dc:creator>
         <dc:creator>Rebecca Racz</dc:creator>
+        <dc:creator xml:lang="en">Shelley Zhang</dc:creator>
         <dc:creator>Liwei Wang</dc:creator>
         <dc:creator xml:lang="en">Meiu Wong</dc:creator>
         <dc:description xml:lang="en">The Ontology of Adverse Eventsy (OAE) is a biomedical ontology in the domain of adverse events. OAE aims to standardize adverse event annotation, integrate various adverse event data, and support computer-assisted reasoning.  OAE is a community-based ontology. Its development follows the OBO Foundry principles. Vaccine adverse events have been used as an initial testing use case. OAE also studies adverse events associated with the administration of drug and nutritional products, the operation of surgeries, and the usage of medical devices, etc.</dc:description>
@@ -60595,8 +61824,8 @@ Please see www.environmentontology.org for more information and citations.</rdfs
         <dc:creator>Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
         <dc:contributor>Luca Toldo</dc:contributor>
         <dc:creator>Noemi Garg</dc:creator>
-        <dc:contributor>Keith Burkhart</dc:contributor>
         <dc:creator>Edison Ong</dc:creator>
+        <dc:contributor>Keith Burkhart</dc:contributor>
         <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
         <dc:contributor>Izabela Birsanescu</dc:contributor>
         <dc:creator>Zuoshuang &quot;Allen&quot; Xiang</dc:creator>
@@ -60612,29 +61841,32 @@ Please see www.environmentontology.org for more information and citations.</rdfs
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ogms.owl">
         <dc:creator>Daniel Merico</dc:creator>
+        <dc:title>Ontology for General Medical Science</dc:title>
         <dc:creator>Werner Ceusters</dc:creator>
+        <dc:creator>Brian Aevermann</dc:creator>
+        <dc:creator>Jie Zheng</dc:creator>
         <dc:creator>Bill Hogan</dc:creator>
         <dc:creator>Albert Goldfain</dc:creator>
-        <rdfs:comment>This ontology is in early development. Expect it to change.</rdfs:comment>
-        <owl:versionInfo>2011-09-20</owl:versionInfo>
         <dc:creator>Alan Ruttenberg</dc:creator>
+        <dc:description xml:lang="en">The Ontology for General Medical Science (OGMS) is an ontology of entities involved in a clinical encounter. OGMS includes very general terms that are used across medical disciplines, including: &apos;disease&apos;, &apos;disorder&apos;, &apos;disease course&apos;, &apos;diagnosis&apos;, &apos;patient&apos;, and &apos;healthcare provider&apos;. OGMS uses the Basic Formal Ontology (BFO) as an upper-level ontology. The scope of OGMS is restricted to humans, but many terms can be applied to a variety of organisms. OGMS provides a formal theory of disease that can be further elaborated by specific disease ontologies. This theory is implemented using OWL-DL and OBO Relation Ontology relations and is available in OWL and OBO formats.
+
+OGMS is based on the papers Toward an Ontological Treatment of Disease and Diagnosis and On Carcinomas and Other Pathological Entities. The ontology attempts to address some of the issues raised at the Workshop on Ontology of Diseases (Dallas, TX) and the Signs, Symptoms, and Findings Workshop(Milan, Italy). OGMS was formerly called the clinical phenotype ontology. Terms from OGMS hang from the Basic Formal Ontology.</dc:description>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-08-19</owl:versionInfo>
         <dc:creator>Sivaram Arabandi</dc:creator>
+        <terms:license>http://creativecommons.org/licenses/by/4.0/</terms:license>
         <dc:creator>Lindsay Cowell</dc:creator>
         <dc:date>2009-08-07</dc:date>
         <dc:creator>Cornelius Rosse</dc:creator>
         <dc:creator>Richard Scheuermann</dc:creator>
         <dc:creator>Anand Kumar</dc:creator>
-        <rdfs:comment>The Ontology for General Medical Science (OGMS) is based on the papers Toward an Ontological Treatment of Disease and Diagnosis and On Carcinomas and Other Pathological Entities. The ontology attempts to address some of the issues raised at the Workshop on Ontology of Diseases (Dallas, TX). OGMS was formerly called the clinical phenotype ontology. Terms from OGMS hang from the Basic Formal Ontology.
-
-The latest version of OGMS is always available at http://purl.obolibrary.org/obo/ogms.owl
-This is version 2011-09-20 aka &apos;0.9&apos;
-http://purl.obolibrary.org/obo/ogms/2011-09-20/ogms.owl
-
-The OGMS developer site is http://code.google.com/p/ogms/
-The discussion group is http://groups.google.com/group/ogms-discuss
-
-If you are interested in participating in the development of OGMS, please send email to albertgoldfain@gmail.com. Be sure to include a google-account username with your request (this will be the username associated with a gmail address).</rdfs:comment>
         <dc:creator>Barry Smith</dc:creator>
+        <rdfs:comment xml:lang="en">The Ontology for General Medical Science (OGMS) is based on the papers Toward an Ontological Treatment of Disease and Diagnosis and On Carcinomas and Other Pathological Entities. The ontology attempts to address some of the issues raised at the Workshop on Ontology of Diseases (Dallas, TX). OGMS was formerly called the clinical phenotype ontology. Terms from OGMS hang from the Basic Formal Ontology.
+
+The latest version of OGMS is available at http://purl.obolibrary.org/obo/ogms.owl
+
+The OGMS developer site is https://github.com/OGMS/ogms
+
+If you are interested in participating in the development of OGMS, please send email to baeverma</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/omrse.owl">
         <dc:creator xml:lang="en">William Hogan</dc:creator>
@@ -60643,8 +61875,8 @@ If you are interested in participating in the development of OGMS, please send e
         <owl:versionInfo>2017-06-08</owl:versionInfo>
         <dc:creator>Amanda Hicks</dc:creator>
         <dc:creator xml:lang="en">Swetha Garimalla</dc:creator>
-        <rdfs:label xml:lang="en">The Ontology of Medically Related Social Entities</rdfs:label>
         <dc:contributor>Daniel Welch</dc:contributor>
+        <rdfs:label xml:lang="en">The Ontology of Medically Related Social Entities</rdfs:label>
         <dc:creator xml:lang="en">Shariq Tariq</dc:creator>
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000657">
