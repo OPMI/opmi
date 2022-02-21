@@ -29,6 +29,7 @@ http://purl.obolibrary.org/obo/OBI_0000436 #needle
 http://purl.obolibrary.org/obo/OBI_0000661 #ELISA
 http://purl.obolibrary.org/obo/OBI_0000938 #categorical measurement datum
 http://purl.obolibrary.org/obo/BFO_0000144 #process profile
+http://purl.obolibrary.org/obo/OBI_0000984 #dose
 
 http://purl.obolibrary.org/obo/OBI_0500026 #eligibility criterion
 includeAllChildren

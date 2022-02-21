@@ -53,13 +53,13 @@
         <dc:creator>Qingliang Leon Li</dc:creator>
         <dc:creator>Suyuan Peng</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
-        <dc:date>2-13-2022</dc:date>
+        <dc:date>2-20-2022</dc:date>
         <dc:description xml:lang="en">OPMI is a biomedical ontology in the area of precision medicine and its related investigations. It is community-driven and developed by following the OBO Foundry ontology development principles.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.146</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.147</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -5945,7 +5945,7 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
         <obo:IAO_0000119 xml:lang="en">http://purl.obolibrary.org/obo/EUPATH_0000320</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="zh">《住院病案首页数据填写质量规范（暂行）》国卫办医发〔2016〕24号</obo:IAO_0000119>
         <obo:OPMI_0000434 xml:lang="zh">入院时间</obo:OPMI_0000434>
-        <rdfs:label xml:lang="zh">date of hospital discharge</rdfs:label>
+        <rdfs:label>date of hospital discharge</rdfs:label>
     </owl:Class>
     
 
@@ -7092,6 +7092,44 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000556 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000556">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000148"/>
+        <obo:IAO_0000115>the date or time on which a device exposure occurs</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#DEVICE_EXPOSURE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">device exposure temporal region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000557 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000557">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000556"/>
+        <obo:IAO_0000115>The date on which a device exposure ends.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#DEVICE_EXPOSURE</obo:IAO_0000119>
+        <rdfs:comment>&quot;Put the end date or discontinuation date as it appears from the source data or leave blank if unavailable.&quot; http://ohdsi.github.io/CommonDataModel/cdm54.html#DEVICE_EXPOSURE</rdfs:comment>
+        <rdfs:label xml:lang="en">device exposure end date</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000558 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000558">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000556"/>
+        <obo:IAO_0000115>The date and time on which a device exposure ends.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#DEVICE_EXPOSURE</obo:IAO_0000119>
+        <rdfs:comment>&quot;If a source does not specify datetime the convention is to set the time to midnight (00:00:0000).&quot; http://ohdsi.github.io/CommonDataModel/cdm54.html#DEVICE_EXPOSURE</rdfs:comment>
+        <rdfs:label xml:lang="en">device exposure end datetime</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OPMI_0000559 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000559">
@@ -7130,6 +7168,180 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
         <obo:IAO_0000119>https://www.cdc.gov/nchs/data/misc/hb_cod.pdf</obo:IAO_0000119>
         <rdfs:label xml:lang="en">underlying cause of death status</rdfs:label>
         <rdfs:seeAlso>OMOP4976981</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000562 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000562">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000556"/>
+        <obo:IAO_0000115>The date on which a device exposure starts.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#DEVICE_EXPOSURE</obo:IAO_0000119>
+        <rdfs:comment>&quot;Valid entries include a start date of a procedure to implant a device, the date of a prescription for a device, or the date of device administration.&quot; http://ohdsi.github.io/CommonDataModel/cdm54.html#DEVICE_EXPOSURE</rdfs:comment>
+        <rdfs:label xml:lang="en">device exposure start date</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000563 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000563">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000556"/>
+        <obo:IAO_0000115>The date and time on which a device exposure starts.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#DEVICE_EXPOSURE</obo:IAO_0000119>
+        <rdfs:comment>&quot;This is not required, though it is in v6. If a source does not specify datetime the convention is to set the time to midnight (00:00:0000).&quot; http://ohdsi.github.io/CommonDataModel/cdm54.html#DEVICE_EXPOSURE</rdfs:comment>
+        <rdfs:label xml:lang="en">device exposure start datetime</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000564 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000564">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000148"/>
+        <obo:IAO_0000115>the date or time on which a drug exposure occurs in a patient</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#DRUG_EXPOSURE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">drug exposure temporal region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000565 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000565">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000564"/>
+        <obo:IAO_0000115>The date on which a drug exposure starts.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#DRUG_EXPOSURE</obo:IAO_0000119>
+        <rdfs:comment>&quot;Valid entries include a start date of a prescription, the date a prescription was filled, or the date on which a Drug administration was recorded. It is a valid ETL choice to use the date the drug was ordered as the DRUG_EXPOSURE_START_DATE.&quot;  http://ohdsi.github.io/CommonDataModel/cdm54.html#DRUG_EXPOSURE</rdfs:comment>
+        <rdfs:label xml:lang="en">drug exposure start date</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000566 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000566">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000564"/>
+        <obo:IAO_0000115>The date and time on which a drug exposure starts.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#DRUG_EXPOSURE</obo:IAO_0000119>
+        <rdfs:comment>&quot;This is not required, though it is in v6. If a source does not specify datetime the convention is to set the time to midnight (00:00:0000).&quot;  http://ohdsi.github.io/CommonDataModel/cdm54.html#DRUG_EXPOSURE</rdfs:comment>
+        <rdfs:label xml:lang="en">drug exposure start datetime</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000567 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000567">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000564"/>
+        <obo:IAO_0000115>The date on which a drug exposure ends for a patient.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#DRUG_EXPOSURE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">drug exposure end date</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000568 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000568">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000564"/>
+        <obo:IAO_0000115>The date and time on which a drug exposure ends for a patient.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#DRUG_EXPOSURE</obo:IAO_0000119>
+        <rdfs:comment>&quot;This is not required, though it is in v6. If a source does not specify datetime the convention is to set the time to midnight (00:00:0000)&quot;. http://ohdsi.github.io/CommonDataModel/cdm54.html#DRUG_EXPOSURE</rdfs:comment>
+        <rdfs:label xml:lang="en">drug exposure end datetime</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000569 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000569">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000007"/>
+        <obo:IAO_0000115>The reason a person stopped a medication as it is represented in the source. Reasons include regimen completed, changed, removed, etc.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#DRUG_EXPOSURE</obo:IAO_0000119>
+        <rdfs:comment>This information is often not populated in source data and it is a valid etl choice to leave it blank if the information does not exist. This field will be retired in v6.0 of the OMOP CDM, .
+http://ohdsi.github.io/CommonDataModel/cdm54.html#DRUG_EXPOSURE</rdfs:comment>
+        <rdfs:label xml:lang="en">drug exposure stop reason specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000570 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000570">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000007"/>
+        <obo:IAO_0000115>An action specification that represents the intended refills at time of the prescription.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>drug refills specification from prescription</obo:IAO_0000118>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#DRUG_EXPOSURE</obo:IAO_0000119>
+        <rdfs:comment>This is only filled in when the record is coming from a prescription. 
+http://ohdsi.github.io/CommonDataModel/cdm54.html#DRUG_EXPOSURE</rdfs:comment>
+        <rdfs:label xml:lang="en">drug refills specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000571 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000571">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000564"/>
+        <obo:IAO_0000115>The end date of a drug exposure as it appears in the source data</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#DRUG_EXPOSURE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">drug exposure verbatim end date</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000572 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000572">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115>An exposure or contact of a person to a drug. The drug exposure includes drug dispensing or administration for a person.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#DRUG_EXPOSURE</obo:IAO_0000119>
+        <obo:IAO_0000232>This term is used in OMOP CDM. This term appears similar to &apos;drug administration&apos;. However, drug exposure also covers involuntary, but drug administration usually means voluntary. More discussion is needed.</obo:IAO_0000232>
+        <obo:OPMI_0000127>http://purl.obolibrary.org/obo/NCIT_C41362</obo:OPMI_0000127>
+        <rdfs:label xml:lang="en">drug exposure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000573 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000573">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000112>In drug exposure, the quantity refers to number of pieces, e.g. tablets.
+In the example: 20
+Ingredient dose= quantity x amount_value [amount_unit_concept_id]
+Acetaminophen dose = 20 x 500mg = 10,000mg
+Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
+        <obo:IAO_0000115>The quantity of drug exposure refers to the number of drug pieces, e.g. tablets, that are exposed to a person.</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#DRUG_EXPOSURE</obo:IAO_0000119>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/drug_dose.html</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">quantity of drug exposure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000574 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000574">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000115>This days of the supply of a drug that is given on the prescription.</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>days supply of drug</obo:IAO_0000118>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#DRUG_EXPOSURE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">days of drug supply</rdfs:label>
     </owl:Class>
     
 
