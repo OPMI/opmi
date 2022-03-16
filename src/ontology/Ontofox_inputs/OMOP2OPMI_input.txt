@@ -1,0 +1,152 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/opmi/OMOP2OPMI.owl
+
+[Source ontology]
+OPMI
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/NCBITaxon_9606 #homo sapiens or human 
+
+# note: you can transfer the data in the "OPMI ID" column in https://docs.google.com/spreadsheets/d/1XGucDd1EsaUzAr5sVNQifnO-0uki7c3dUX4nY8B6Ss8/edit#gid=0
+# to the following format. 
+
+# terms for Person table
+http://purl.obolibrary.org/obo/NCBITaxon_9606
+http://purl.obolibrary.org/obo/OMRSE_00000007
+http://purl.obolibrary.org/obo/PATO_0001894
+http://purl.obolibrary.org/obo/OPMI_0000473
+http://purl.obolibrary.org/obo/OPMI_0000474
+http://purl.obolibrary.org/obo/OPMI_0000091
+http://purl.obolibrary.org/obo/OPMI_0000475
+http://purl.obolibrary.org/obo/NCIT_C17049 
+http://purl.obolibrary.org/obo/NCIT_C16564 
+http://purl.obolibrary.org/obo/GAZ_00000448 
+http://purl.obolibrary.org/obo/OPMI_0000163
+http://purl.obolibrary.org/obo/OPMI_0000480
+
+# terms for Visit_Occurrence table
+http://purl.obolibrary.org/obo/OPMI_0000482
+http://purl.obolibrary.org/obo/OPMI_0000483
+http://purl.obolibrary.org/obo/NCBITaxon_9606
+http://purl.obolibrary.org/obo/OPMI_0000470
+http://purl.obolibrary.org/obo/OPMI_0000487
+http://purl.obolibrary.org/obo/OPMI_0000490
+http://purl.obolibrary.org/obo/OPMI_0000488
+http://purl.obolibrary.org/obo/OPMI_0000491
+http://purl.obolibrary.org/obo/OPMI_0000524
+http://purl.obolibrary.org/obo/OPMI_0000163
+http://purl.obolibrary.org/obo/OPMI_0000480
+http://purl.obolibrary.org/obo/OPMI_0000501
+http://purl.obolibrary.org/obo/OPMI_0000502
+http://purl.obolibrary.org/obo/OPMI_0000492
+http://purl.obolibrary.org/obo/OPMI_0000499
+http://purl.obolibrary.org/obo/OPMI_0000493
+http://purl.obolibrary.org/obo/OPMI_0000486
+http://purl.obolibrary.org/obo/OPMI_0000495
+http://purl.obolibrary.org/obo/OPMI_0000484
+http://purl.obolibrary.org/obo/OPMI_0000498
+http://purl.obolibrary.org/obo/OPMI_0000494
+http://purl.obolibrary.org/obo/OPMI_0000497
+http://purl.obolibrary.org/obo/OPMI_0000485
+http://purl.obolibrary.org/obo/OPMI_0000492
+http://purl.obolibrary.org/obo/OPMI_0000496
+
+
+# terms for Provider table
+http://purl.obolibrary.org/obo/OPMI_0000163
+http://purl.obolibrary.org/obo/OPMI_0000163
+http://purl.obolibrary.org/obo/OPMI_0000503
+http://purl.obolibrary.org/obo/OPMI_0000504
+http://purl.obolibrary.org/obo/OPMI_0000228
+http://purl.obolibrary.org/obo/OPMI_0000480
+http://purl.obolibrary.org/obo/OPMI_0000473
+http://purl.obolibrary.org/obo/OMRSE_00000007
+http://purl.obolibrary.org/obo/PATO_0001894
+http://purl.obolibrary.org/obo/OPMI_0000163
+http://purl.obolibrary.org/obo/OPMI_0000228
+
+# terms for Care_site table
+http://purl.obolibrary.org/obo/OPMI_0000480
+http://purl.obolibrary.org/obo/OPMI_0000479
+http://purl.obolibrary.org/obo/GAZ_00000448 
+http://purl.obolibrary.org/obo/OPMI_0000480
+http://purl.obolibrary.org/obo/OPMI_0000479
+http://purl.obolibrary.org/obo/GAZ_00000448 
+
+# terms for Procedure_occurrence table
+http://purl.obolibrary.org/obo/OPMI_0000506
+http://purl.obolibrary.org/obo/OPMI_0000505
+http://purl.obolibrary.org/obo/NCBITaxon_9606 
+http://purl.obolibrary.org/obo/OAE_0002807
+http://purl.obolibrary.org/obo/OPMI_0000508
+http://purl.obolibrary.org/obo/OPMI_0000509
+http://purl.obolibrary.org/obo/OPMI_0000511
+http://purl.obolibrary.org/obo/OPMI_0000510
+http://purl.obolibrary.org/obo/OPMI_0000513
+http://purl.obolibrary.org/obo/OPMI_0000163
+http://purl.obolibrary.org/obo/OPMI_0000482
+http://purl.obolibrary.org/obo/IAO_0000030
+
+# terms for Drug_exposure table
+http://purl.obolibrary.org/obo/OPMI_0000568
+http://purl.obolibrary.org/obo/OPMI_0000571
+http://purl.obolibrary.org/obo/OPMI_0000518
+http://purl.obolibrary.org/obo/OPMI_0000569
+http://purl.obolibrary.org/obo/OPMI_0000570
+http://purl.obolibrary.org/obo/OPMI_0000573
+http://purl.obolibrary.org/obo/OPMI_0000574
+http://purl.obolibrary.org/obo/IAO_0000132 
+http://purl.obolibrary.org/obo/OPMI_0000163
+http://purl.obolibrary.org/obo/OPMI_0000483
+http://purl.obolibrary.org/obo/EUPATH_0000310 
+
+# terms for Device_exposure table ...
+http://purl.obolibrary.org/obo/OPMI_0000554
+http://purl.obolibrary.org/obo/NCBITaxon_9606 
+http://purl.obolibrary.org/obo/OBI_0000968 
+http://purl.obolibrary.org/obo/OPMI_0000562
+http://purl.obolibrary.org/obo/OPMI_0000563
+http://purl.obolibrary.org/obo/OPMI_0000557
+http://purl.obolibrary.org/obo/OPMI_0000558
+http://purl.obolibrary.org/obo/OPMI_0000517
+http://purl.obolibrary.org/obo/OPMI_0000163
+http://purl.obolibrary.org/obo/OPMI_0000483
+http://purl.obolibrary.org/obo/EUPATH_0000310 
+
+# terms for Condition_occurrence table ...
+http://purl.obolibrary.org/obo/OPMI_0000527
+http://purl.obolibrary.org/obo/NCBITaxon_9606 
+http://purl.obolibrary.org/obo/OPMI_0000282 
+http://purl.obolibrary.org/obo/OPMI_0000531
+http://purl.obolibrary.org/obo/OPMI_0000532
+http://purl.obolibrary.org/obo/OPMI_0000529
+http://purl.obolibrary.org/obo/OPMI_0000530
+http://purl.obolibrary.org/obo/OPMI_0000525
+http://purl.obolibrary.org/obo/OPMI_0000533 # medical condition status 
+http://purl.obolibrary.org/obo/OPMI_0000534
+http://purl.obolibrary.org/obo/OPMI_0000163
+http://purl.obolibrary.org/obo/OPMI_0000483
+http://purl.obolibrary.org/obo/EUPATH_0000310 
+http://purl.obolibrary.org/obo/OPMI_0000543 # cause of death status 
+http://purl.obolibrary.org/obo/OPMI_0000540 # preliminary diagonosis status
+http://purl.obolibrary.org/obo/OPMI_0000526 # primary diagnosis status 
+http://purl.obolibrary.org/obo/OPMI_0000546 # secondary diagnosis status 
+
+# terms for xxx table ...
+
+
+# http://purl.obolibrary.org/obo/.... #provenance of ...
+# includeAllChildren
+
+# note: please check the tutorial: http://ontofox.hegroup.org/tutorial/index.php 
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/BFO_0000001 #entity
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+includeAllAxiomsRecursively
+
+[Source annotation URIs to be excluded]
