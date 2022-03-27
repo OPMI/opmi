@@ -53,13 +53,13 @@
         <dc:creator>Qingliang Leon Li</dc:creator>
         <dc:creator>Suyuan Peng</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
-        <dc:date>3-20-2022</dc:date>
+        <dc:date>3-27-2022</dc:date>
         <dc:description xml:lang="en">OPMI is a biomedical ontology in the area of precision medicine and its related investigations. It is community-driven and developed by following the OBO Foundry ontology development principles.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.152</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.153</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -2064,6 +2064,7 @@
     <!-- http://purl.obolibrary.org/obo/OPMI_0000155 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000155">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000093"/>
         <obo:IAO_0000115 xml:lang="en">The code in the specific coding system for the payment method of the expenses incurred in a single hospitalization of the patient</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="zh">患者单次住院诊疗所发生费用的支付方式的特定编码体系中的代码</obo:IAO_0000115>
@@ -7444,6 +7445,86 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
         <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#MEASUREMENT</obo:IAO_0000119>
         <rdfs:label xml:lang="en">measurement datetime</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000582 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000582">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A unique key given to a Measurement record for a Person. Such record can be used in the ETL for how duplicate Measurements during the same Visit were handled.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>measurement ID</obo:IAO_0000118>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#MEASUREMENT</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">clnical measurement identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000583 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000583">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000093"/>
+        <obo:IAO_0000115>Payer plan is a plan specification that captures the details of the period of time that a person is continuously enrolled under a specific health Plan benefit structure from a given payer. Each person receiving healthcare is typically covered by a health benefit plan, which pays for (fully or partially), or directly provides, the care. These benefit plans are provided by payers, such as health insurances or state or government agencies.</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#PAYER_PLAN_PERIOD</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">payer plan</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000584 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000584">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+        <obo:IAO_0000115>A temporal region that is associated with the payment process defined in a payer plan</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#PAYER_PLAN_PERIOD</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">payer plan temporal region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000585 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000585">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000584"/>
+        <obo:IAO_0000115>A period time of the payment that is covered by a payer plan for a person.</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#PAYER_PLAN_PERIOD</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">payer plan period</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000586 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000586">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000584"/>
+        <obo:IAO_0000115>A date when a payer plan period starts.</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#PAYER_PLAN_PERIOD</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">payer plan period start date</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000587 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000587">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000584"/>
+        <obo:IAO_0000115>A date when a payer plan period ends.</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#PAYER_PLAN_PERIOD</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">payer plan period end date</rdfs:label>
     </owl:Class>
     
 
