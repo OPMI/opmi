@@ -34,6 +34,9 @@ http://purl.obolibrary.org/obo/OBI_0000984 #dose
 http://purl.obolibrary.org/obo/OBI_0500026 #eligibility criterion
 includeAllChildren
 
+http://purl.obolibrary.org/obo/OBI_0001616 #specimen ID
+includeAllChildren
+
 http://purl.obolibrary.org/obo/OBI_0000293 #has_specified_input
 http://purl.obolibrary.org/obo/OBI_0000299 #has_specified_output
 
