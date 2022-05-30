@@ -285,6 +285,19 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000622 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OPMI_0000622">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000326"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000112>An admission diagnosis status has the content of adimission diagnosis (as an information content entity).</obo:IAO_0000112>
+        <obo:IAO_0000115>An object property that represents a relation between a status and an information content entity where the status has its content information defined by the information content entity.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">has status content</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -6022,7 +6035,7 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/OPMI_0000482 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000482">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000588"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
@@ -6384,7 +6397,7 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/OPMI_0000505 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000505">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000588"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000481"/>
@@ -6520,6 +6533,12 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000514">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000533"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000622"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000615"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The status of being diagnosed as death</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
         <obo:IAO_0000118>death diagnosis</obo:IAO_0000118>
@@ -6684,6 +6703,12 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000526">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000533"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000622"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000605"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The primary diagnosis refers to the patient condition that demands the most provider resources during the patient’s stay.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
         <obo:IAO_0000118>primary diagnosis</obo:IAO_0000118>
@@ -6700,7 +6725,7 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/OPMI_0000527 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000527">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000588"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
@@ -6816,6 +6841,12 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000535">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000526"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000622"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The status of have the primary admission diagnosis</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
         <obo:IAO_0000118>primary admission diagnosis</obo:IAO_0000118>
@@ -6831,6 +6862,12 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000536">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000533"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000622"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000614"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
         <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
         <rdfs:label xml:lang="en">confirmed diagnosis status</rdfs:label>
@@ -6855,6 +6892,12 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000538">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000533"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000622"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000616"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A discharge diagnosis is a final diagnosis given a patient before release from the hospital after all testing, surgery, and workup are complete.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
         <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
@@ -6869,6 +6912,12 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000539">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000533"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000622"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000617"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A postoperative diagnosis is a diagnosis or diagnoses discovered or confirmed during the surgery. Often it is the same as the preoperative diagnosis.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
         <obo:IAO_0000118>primary admission diagnosis</obo:IAO_0000118>
@@ -6884,6 +6933,12 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000540">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000533"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000622"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000602"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
         <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
         <rdfs:label xml:lang="en">preliminary diagnosis status</rdfs:label>
@@ -6896,6 +6951,12 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000541">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000533"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000622"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000619"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A preoperative diagnosis is a surgical diagnosis or diagnoses that are assigned to the patient before the surgical procedure, and is the reason for the surgery. A preoperative diagnosis is, in the opinion of the surgeon, the diagnosis that will be confirmed during surgery.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
         <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
@@ -6910,6 +6971,12 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000542">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000533"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000622"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000613"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>An admitting diagnosis is defined as the initial working diagnosis documented by the patient&apos;s admitting or attending physician who determined that inpatient care was necessary.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
         <obo:IAO_0000118>admission diagnosis</obo:IAO_0000118>
@@ -6941,6 +7008,7 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000544">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000526"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000545"/>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
         <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
         <rdfs:label xml:lang="en">primary referral diagnosis status</rdfs:label>
@@ -6953,6 +7021,12 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000545">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000533"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000622"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000620"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A referral is a written request from one health professional to another health professional or health service, asking them to diagnose or treat you for a particular condition.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
         <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
@@ -6967,6 +7041,12 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000546">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000533"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000622"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000609"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A secondary diagnosis is a condition that coexists at the time of admission, that develops subsequently, or that affects the treatment received and/or length of stay.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
         <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
@@ -6980,7 +7060,14 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/OPMI_0000547 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000547">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000538"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000546"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000622"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000611"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
         <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
         <rdfs:label xml:lang="en">secondary discharge diagnosis status</rdfs:label>
@@ -6992,7 +7079,14 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/OPMI_0000548 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000548">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000545"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000546"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000622"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000612"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
         <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
         <rdfs:label xml:lang="en">secondary referral diagnosis status</rdfs:label>
@@ -7005,6 +7099,13 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000549">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000540"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000542"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000622"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000603"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The status of have the primary admission diagnosis</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
         <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms/32901</obo:IAO_0000119>
@@ -7018,7 +7119,14 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/OPMI_0000550 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000550">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000538"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000540"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000622"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000604"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The status of have the primary admission diagnosis</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
         <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms/32901</obo:IAO_0000119>
@@ -7072,7 +7180,7 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/OPMI_0000554 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000554">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000588"/>
         <obo:IAO_0000115>A process of a person’s exposure to a foreign physical object or instrument which is used for diagnostic or therapeutic purposes through a mechanism beyond chemical action. Devices include implantable objects (e.g. pacemakers, stents, artificial joints), medical equipment and supplies (e.g. bandages, crutches, syringes), other instruments used in medical procedures (e.g. sutures, defibrillators) and material used in clinical care (e.g. adhesives, body material, dental material, surgical material).</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
         <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#DEVICE_EXPOSURE</obo:IAO_0000119>
@@ -7086,9 +7194,16 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000555">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000526"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000538"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000622"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000607"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
         <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">primary discarge diagnosis status</rdfs:label>
+        <rdfs:label xml:lang="en">primary discharge diagnosis status</rdfs:label>
         <rdfs:seeAlso>OMOP4976973</rdfs:seeAlso>
     </owl:Class>
     
@@ -7135,7 +7250,14 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/OPMI_0000559 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000559">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000542"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000546"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000622"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000610"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
         <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
         <rdfs:label xml:lang="en">secondary admission diagnosis status</rdfs:label>
@@ -7307,7 +7429,7 @@ http://ohdsi.github.io/CommonDataModel/cdm54.html#DRUG_EXPOSURE</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/OPMI_0000572 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000572">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000588"/>
         <obo:IAO_0000115>An exposure or contact of a person to a drug. The drug exposure includes drug dispensing or administration for a person.</obo:IAO_0000115>
         <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#DRUG_EXPOSURE</obo:IAO_0000119>
         <obo:IAO_0000232>This term is used in OMOP CDM. This term appears similar to &apos;drug administration&apos;. However, drug exposure also covers involuntary, but drug administration usually means voluntary. More discussion is needed.</obo:IAO_0000232>
@@ -7526,6 +7648,426 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
         <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#PAYER_PLAN_PERIOD</obo:IAO_0000119>
         <rdfs:label xml:lang="en">payer plan period end date</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000588 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000588">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:label xml:lang="en">medical occurrence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000589 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000589">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000275"/>
+        <obo:IAO_0000115>An electronic health record that records the information of medical condition.</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>Condition Occurrence Type Concept</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#CONDITION_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">condition occurrence record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000590 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000590">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000275"/>
+        <obo:IAO_0000115>An electronic health record that records the information of medical cost.</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>Cost Type Concept</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#COST</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">electronic health cost record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000591 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000591">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000275"/>
+        <obo:IAO_0000112>As part of the OMOP CDM, use the type concept that be reflects the source of the death record. It is possible that an administrative claims database would source death information from a government file so do not assume the Death Type is the same as the Visit Type, etc.</obo:IAO_0000112>
+        <obo:IAO_0000115>An electronic health record that records the information of the death record of a person.</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>Death Type Concept</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#DEATH</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">electronic death record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000592 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000592">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000275"/>
+        <obo:IAO_0000115>An electronic health record that records the information of medical device usage.</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>Device Exposure Type Concept</obo:IAO_0000118>
+        <obo:IAO_0000118>Device Type Concept</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#DEVICE_EXPOSURE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">electronic device record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000593 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000593">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000275"/>
+        <obo:IAO_0000112>As part of the OMOP CDM, choose the drug_type_concept_id that best represents the provenance of the record, for example whether it came from a record of a prescription written or physician administered drug.</obo:IAO_0000112>
+        <obo:IAO_0000115>An electronic health record that records the information of drug usage including drug prescriptions written, prescriptions dispensed, medication history, patient-reported exposure, etc.</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>Drug Type Concept</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#DRUG_EXPOSURE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">electronic drug record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000595 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000595">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000275"/>
+        <obo:IAO_0000115>An electronic health record that records the information of medical Episode record.</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>Procedure Type Concept</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#EPISODE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">electronic episode record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000596 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000596">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000275"/>
+        <obo:IAO_0000115>An electronic health record that records the information of medical measurement record.</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>Measurement Type Concept</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#MEASUREMENT</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">electronic measurement record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000597 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000597">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000275"/>
+        <obo:IAO_0000112>As part of the OMOP CDM, the provenance of the notes most likely will be EHR.</obo:IAO_0000112>
+        <obo:IAO_0000115>An electronic health record that records the information of medical notes.</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>Note Type Concept</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#NOTE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">electronic health note record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000598 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000598">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000275"/>
+        <obo:IAO_0000115>An electronic health record that records the information of medical observational record.</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>Observation Period Type Concept</obo:IAO_0000118>
+        <obo:IAO_0000118>Observation Type Concept</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#OBSERVATION</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">electronic health observation record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000599 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000599">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000275"/>
+        <obo:IAO_0000112>As part of the OMOP CDM, PROCEDURE TYPE CONCEPT best represents the provenance of the record, for example whether it came from an EHR record or billing claim. If a procedure is recorded as an EHR encounter, the PROCEDURE_TYPE_CONCEPT would be ‘EHR encounter record’.</obo:IAO_0000112>
+        <obo:IAO_0000115>An electronic health record that records the information of Procedure record.</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>Procedure Type Concept</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#PROCEDURE_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">electronic health procedure record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000600 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000600">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000275"/>
+        <obo:IAO_0000115>An electronic health record that records the information of the specimen record.</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>Specimen Type Concept</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#SPECIMEN</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">electronic specimen record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000601 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000601">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000275"/>
+        <obo:IAO_0000112>As part of the OMOP CDM, populate this field based on the provenance of the visit record, as in whether it came from an EHR record or billing claim.</obo:IAO_0000112>
+        <obo:IAO_0000115>An electronic health record that records the information of medical  visit.</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>Visit Type Concept</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#PROCEDURE_OCCURRENCE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">electronic medical visit record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000602 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000602">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000073"/>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">preliminary diagnosis</rdfs:label>
+        <rdfs:seeAlso>OMOP4976969</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000603 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000603">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000602"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000613"/>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms/32901</obo:IAO_0000119>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">preliminary admission diagnosis</rdfs:label>
+        <rdfs:seeAlso>OMOP4976971</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000604 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000604">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000602"/>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms/32901</obo:IAO_0000119>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">preliminary discharge diagnosis</rdfs:label>
+        <rdfs:seeAlso>OMOP4976971</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000605 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000605">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000073"/>
+        <obo:IAO_0000115>The primary diagnosis is a diagnosis of the patient condition that demands the most provider resources during the patient’s stay.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>primary diagnosis</obo:IAO_0000118>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms/32902</obo:IAO_0000119>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <obo:IAO_0000119>https://www.definitivehc.com/resources/glossary/primary-diagnosis</obo:IAO_0000119>
+        <rdfs:comment>There is often confusion surrounding primary and principal diagnoses and, consequently, the terms are commonly used interchangeably. While these can be (and frequently are) the same diagnosis in practice, their definitions are distinct. While a principal diagnosis is the underlying cause of patient symptoms, the primary diagnosis is used for healthcare billing purposes. Reference: https://www.definitivehc.com/resources/glossary/primary-diagnosis</rdfs:comment>
+        <rdfs:label xml:lang="en">primary diagnosis</rdfs:label>
+        <rdfs:seeAlso>OMOP4976972</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000606 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000606">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000605"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000613"/>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>primary admission diagnosis</obo:IAO_0000118>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms/32901</obo:IAO_0000119>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">primary admission diagnosis</rdfs:label>
+        <rdfs:seeAlso>OMOP4976971</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000607 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000607">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000605"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000616"/>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">primary discharge diagnosis</rdfs:label>
+        <rdfs:seeAlso>OMOP4976973</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000608 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000608">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000605"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000620"/>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">primary referral diagnosis</rdfs:label>
+        <rdfs:seeAlso>OMOP4976974</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000609 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000609">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000073"/>
+        <obo:IAO_0000115>A secondary diagnosis is a diagnosis made at the time of admission, that develops subsequently, or that affects the treatment received and/or length of stay.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <obo:IAO_0000119>https://medcom.uiowa.edu/theloop/announcements/understanding-principal-and-secondary-conditions-2</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">secondary diagnosis</rdfs:label>
+        <rdfs:seeAlso>OMOP4976978</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000610 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000610">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000609"/>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">secondary admission diagnosis</rdfs:label>
+        <rdfs:seeAlso>OMOP4976977</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000611 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000611">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000609"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000616"/>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">secondary discharge diagnosis</rdfs:label>
+        <rdfs:seeAlso>OMOP4976979</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000612 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000612">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000609"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000620"/>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">secondary referral diagnosis</rdfs:label>
+        <rdfs:seeAlso>OMOP4976980</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000613 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000613">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000073"/>
+        <obo:IAO_0000115>An admitting diagnosis is defined as the initial working diagnosis documented by the patient&apos;s admitting or attending physician who determined that inpatient care was necessary.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>admission diagnosis</obo:IAO_0000118>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <obo:IAO_0000119>https://manual.jointcommission.org/releases/TJC2016B/DataElem0540.html#:~:text=Definition%3A&amp;text=The%20admitting%20diagnosis%20is%20defined,that%20inpatient%20care%20was%20necessary.</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">admission diagnosis</rdfs:label>
+        <rdfs:seeAlso>OMOP4976960</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000614 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000614">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000073"/>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">confirmed diagnosis</rdfs:label>
+        <rdfs:seeAlso>OMOP4976963</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000615 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000615">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000073"/>
+        <obo:IAO_0000115>The diagnosis of the death of a person</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>death diagnosis</obo:IAO_0000118>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms/32895</obo:IAO_0000119>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">death diagnosis</rdfs:label>
+        <rdfs:seeAlso>OMOP4976965</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000616 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000616">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000073"/>
+        <obo:IAO_0000115>A discharge diagnosis is a final diagnosis given a patient before release from the hospital after all testing, surgery, and workup are complete.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <obo:IAO_0000119>https://medical-dictionary.thefreedictionary.com/discharge+diagnosis</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">discharge diagnosis</rdfs:label>
+        <rdfs:seeAlso>OMOP4976966</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000617 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000617">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000073"/>
+        <obo:IAO_0000115>A postoperative diagnosis is a diagnosis or diagnoses discovered or confirmed during the surgery. Often it is the same as the preoperative diagnosis.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>primary admission diagnosis</obo:IAO_0000118>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <obo:IAO_0000119>https://ushik.ahrq.gov/ViewItemDetails?system=mdr&amp;itemKey=85779000#:~:text=Definition%3A,same%20as%20the%20Preoperative%20Diagnosis.</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">postoperative diagnosis</rdfs:label>
+        <rdfs:seeAlso>OMOP4976968</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000619 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000619">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000073"/>
+        <obo:IAO_0000115>A preoperative diagnosis is a surgical diagnosis or diagnoses that are assigned to the patient before the surgical procedure, and is the reason for the surgery. A preoperative diagnosis is, in the opinion of the surgeon, the diagnosis that will be confirmed during surgery.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <obo:IAO_0000119>https://ushik.ahrq.gov/ViewItemDetails?system=mdr&amp;itemKey=85778000#:~:text=Definition%3A,will%20be%20confirmed%20during%20surgery.</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">preoperative diagnosis</rdfs:label>
+        <rdfs:seeAlso>OMOP4976970</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000620 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000620">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000073"/>
+        <obo:IAO_0000115>A referral is a written request from one health professional to another health professional or health service, asking them to diagnose or treat you for a particular condition.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
+        <obo:IAO_0000119>https://www.healthdirect.gov.au/what-is-a-referral#:~:text=A%20referral%20is%20a%20written,you%20for%20a%20particular%20condition.</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">referral diagnosis</rdfs:label>
+        <rdfs:seeAlso>OMOP4976975</rdfs:seeAlso>
     </owl:Class>
     
 
