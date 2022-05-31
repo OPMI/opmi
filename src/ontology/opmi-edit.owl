@@ -60,7 +60,7 @@
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.157</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.158</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -5304,10 +5304,11 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000425"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A material entity that is composed of organic structure and is capable of self-replication (with or without host support).</obo:IAO_0000115>
+        <obo:IAO_0000115>A material entity that is composed of organic structure and is capable of self-replication (with or without host support). Various types of self-replicating organic structures can be found at: https://en.wikipedia.org/wiki/Template:Self-replicating_organic_structures.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <obo:IAO_0000118>organic self-replicating system</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Self-replication</obo:IAO_0000119>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Template:Self-replicating_organic_structures</obo:IAO_0000119>
         <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5496545/</obo:IAO_0000119>
         <rdfs:label>self-replicating organic structure</rdfs:label>
     </owl:Class>
@@ -5318,11 +5319,12 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000421">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000420"/>
-        <obo:IAO_0000115>An organitor that is composed of one cell or multiple cells and embodies the properties of life.</obo:IAO_0000115>
+        <obo:IAO_0000115>A self-replicating organic structure that is composed of one cell or multiple cells and embodies the properties of life.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <obo:IAO_0000118>cellular self-replicating organic structure</obo:IAO_0000118>
+        <obo:IAO_0000118>organism</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Organism</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">organism</rdfs:label>
+        <rdfs:label xml:lang="en">cellular organism</rdfs:label>
     </owl:Class>
     
 
@@ -5331,10 +5333,12 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000422">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000420"/>
-        <obo:IAO_0000115>An organitor that does not have the unit of cell but it may use the cells to replicate. Anorganism is non-organism organitor.</obo:IAO_0000115>
+        <obo:IAO_0000115>A self-replicating organic structure that does not have the unit of cell but it may use the cells to replicate.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>non-cellular self-replicating organic structure</obo:IAO_0000118>
+        <obo:IAO_0000118>non-organism self-replicating organic structure</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Self-replication</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">non-organism self-replicating organic structure</rdfs:label>
+        <rdfs:label xml:lang="en">acellular self-replicating organic structure</rdfs:label>
     </owl:Class>
     
 
