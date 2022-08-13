@@ -60,7 +60,7 @@
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.158</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.160</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -6046,10 +6046,11 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A process event where a person engages with the healthcare system for a duration of time. This includes inpatient or outpatient visit.</obo:IAO_0000115>
+        <obo:IAO_0000115>A medical occurrence where a person engages with the healthcare system for a duration of time.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>visit occurrence</obo:IAO_0000118>
         <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#VISIT_OCCURRENCE</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">visit occurrence</rdfs:label>
+        <rdfs:label xml:lang="en">medical visit</rdfs:label>
     </owl:Class>
     
 
@@ -6208,8 +6209,10 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A visit occurrence that occurs for the person prior to the given visit. There could be a few days or a few years in between.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>preceding visit</obo:IAO_0000118>
+        <obo:IAO_0000118>preceding visit occurrence</obo:IAO_0000118>
         <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#VISIT_OCCURRENCE</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">preceding visit occurrence</rdfs:label>
+        <rdfs:label xml:lang="en">preceding medical visit</rdfs:label>
     </owl:Class>
     
 
@@ -6264,9 +6267,10 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A visit where a provider visits a person, without a care site, within one day, delivering service</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>home visit</obo:IAO_0000118>
         <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#VISIT_OCCURRENCE</obo:IAO_0000119>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Patient#Outpatients_and_inpatients</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">home visit</rdfs:label>
+        <rdfs:label xml:lang="en">home medical visit</rdfs:label>
     </owl:Class>
     
 
@@ -6321,9 +6325,11 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A visit to a dedicated institution, at a care site, within one day, for the purpose of a measurement. The visit is carried out in a medical laboratory or clinical laboratory where tests are carried out on clinical specimens to obtain information about the health of a patient to aid in diagnosis, treatment, and prevention of disease</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>laboratory clinical visit</obo:IAO_0000118>
+        <obo:IAO_0000118>laboratory visit</obo:IAO_0000118>
         <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#VISIT_OCCURRENCE</obo:IAO_0000119>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Patient#Outpatients_and_inpatients</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">laboratory visit</rdfs:label>
+        <rdfs:label xml:lang="en">laboratory medical visit</rdfs:label>
     </owl:Class>
     
 
@@ -6338,7 +6344,7 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>An interaction with the healthcare system, without a care site, within a day, with no providers involved, for administrative purposes</obo:IAO_0000115>
+        <obo:IAO_0000115>A medical visit occurrence that involves an interaction with the healthcare system, without a care site, within a day, with no providers involved, for the administrative purpose of patient case management.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
         <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#VISIT_OCCURRENCE</obo:IAO_0000119>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Patient#Outpatients_and_inpatients</obo:IAO_0000119>
@@ -6414,10 +6420,11 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>An activity or process that is ordered by, or carried out by, a healthcare provider on a patient with a diagnostic or therapeutic purpose.</obo:IAO_0000115>
+        <obo:IAO_0000115>A medicl occurrence that is ordered by, or carried out by, a healthcare provider on a patient with a diagnostic or therapeutic purpose.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>procedure occurrence</obo:IAO_0000118>
         <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#PROCEDURE_OCCURRENCE</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">procedure occurrence</rdfs:label>
+        <rdfs:label xml:lang="en">medical procedure occurrence</rdfs:label>
     </owl:Class>
     
 
@@ -6736,11 +6743,12 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A process event where a person presents a disease or medical condition stated as a diagnosis, a sign, or a symptom, which is either observed by a Provider or reported by the patient.</obo:IAO_0000115>
+        <obo:IAO_0000115>A medicl occurrence where a person presents a disease or medical condition stated as a diagnosis, a sign, or a symptom, which is either observed by a Provider or reported by the patient.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>condition occurrence</obo:IAO_0000118>
         <obo:IAO_0000118>medical condition occurrence</obo:IAO_0000118>
         <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#CONDITION_OCCURRENCE</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">condition occurrence</rdfs:label>
+        <rdfs:label xml:lang="en">medical condition occurrence</rdfs:label>
     </owl:Class>
     
 
@@ -7184,11 +7192,12 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/OPMI_0000554 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000554">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000588"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000618"/>
         <obo:IAO_0000115>A process of a person’s exposure to a foreign physical object or instrument which is used for diagnostic or therapeutic purposes through a mechanism beyond chemical action. Devices include implantable objects (e.g. pacemakers, stents, artificial joints), medical equipment and supplies (e.g. bandages, crutches, syringes), other instruments used in medical procedures (e.g. sutures, defibrillators) and material used in clinical care (e.g. adhesives, body material, dental material, surgical material).</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>device exposure</obo:IAO_0000118>
         <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#DEVICE_EXPOSURE</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">device exposure</rdfs:label>
+        <rdfs:label xml:lang="en">medical device exposure</rdfs:label>
         <rdfs:seeAlso>http://purl.obolibrary.org/obo/NCIT_C102617</rdfs:seeAlso>
     </owl:Class>
     
@@ -7433,7 +7442,7 @@ http://ohdsi.github.io/CommonDataModel/cdm54.html#DRUG_EXPOSURE</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/OPMI_0000572 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000572">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000588"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000618"/>
         <obo:IAO_0000115>An exposure or contact of a person to a drug. The drug exposure includes drug dispensing or administration for a person.</obo:IAO_0000115>
         <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#DRUG_EXPOSURE</obo:IAO_0000119>
         <obo:IAO_0000232>This term is used in OMOP CDM. This term appears similar to &apos;drug administration&apos;. However, drug exposure also covers involuntary, but drug administration usually means voluntary. More discussion is needed.</obo:IAO_0000232>
@@ -7660,6 +7669,9 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000588">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115>A process that a patient experiences over a period of time.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html</obo:IAO_0000119>
         <rdfs:label xml:lang="en">medical occurrence</rdfs:label>
     </owl:Class>
     
@@ -7729,6 +7741,21 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
         <obo:IAO_0000118>Drug Type Concept</obo:IAO_0000118>
         <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#DRUG_EXPOSURE</obo:IAO_0000119>
         <rdfs:label xml:lang="en">electronic drug record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000594 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000594">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000115>A data item that captures clinical facts about a patient obtained in the context of examination, questioning or a procedure.</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>medical observation</obo:IAO_0000118>
+        <obo:IAO_0000118>observation</obo:IAO_0000118>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#OBSERVATION</obo:IAO_0000119>
+        <rdfs:comment>This term is dervied from OMOP:Observation term. Observations differ from Measurements in that they do not require a standardized test or some other activity to generate clinical fact. Typical observations are medical history, family history, the stated need for certain treatment, social circumstances, lifestyle choices, healthcare utilization patterns, etc.</rdfs:comment>
+        <rdfs:label xml:lang="en">medical observation data</rdfs:label>
     </owl:Class>
     
 
@@ -8044,6 +8071,18 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
         <obo:IAO_0000119>https://ushik.ahrq.gov/ViewItemDetails?system=mdr&amp;itemKey=85779000#:~:text=Definition%3A,same%20as%20the%20Preoperative%20Diagnosis.</obo:IAO_0000119>
         <rdfs:label xml:lang="en">postoperative diagnosis</rdfs:label>
         <rdfs:seeAlso>OMOP4976968</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000618 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000618">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000588"/>
+        <obo:IAO_0000115>A medical occurrence in which a patience is exposed to a medical related material entity such as drug or medical device. Medical exposure refers primarily to exposure incurred by patients for the purpose of medical diagnosis or treatment.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.sciencedirect.com/topics/engineering/medical-exposure</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">medical exposure</rdfs:label>
     </owl:Class>
     
 
