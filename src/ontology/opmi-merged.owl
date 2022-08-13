@@ -37,13 +37,13 @@
         <dc:creator>Qingliang Leon Li</dc:creator>
         <dc:creator>Suyuan Peng</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
-        <dc:date>5-31-2022</dc:date>
+        <dc:date>8-13-2022</dc:date>
         <dc:description xml:lang="en">OPMI is a biomedical ontology in the area of precision medicine and its related investigations. It is community-driven and developed by following the OBO Foundry ontology development principles.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.158</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.161</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1478,11 +1478,6 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
     <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
-        <owl:equivalentProperty>
-            <rdf:Description>
-                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-            </rdf:Description>
-        </owl:equivalentProperty>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
@@ -18634,6 +18629,7 @@ The term is used in the following meaning of being self generated. It does not s
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_10239 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10239">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000422"/>
         <obo:IAO_0000111>Viruses</obo:IAO_0000111>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
@@ -18702,6 +18698,7 @@ The term is used in the following meaning of being self generated. It does not s
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_2 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000421"/>
         <obo:IAO_0000111>Bacteria</obo:IAO_0000111>
         <obo:IAO_0000118>eubacteria</obo:IAO_0000118>
@@ -18764,6 +18761,7 @@ The term is used in the following meaning of being self generated. It does not s
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_2157 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2157">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000421"/>
         <obo:IAO_0000111>Archaea</obo:IAO_0000111>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
@@ -18815,6 +18813,7 @@ The term is used in the following meaning of being self generated. It does not s
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_2759 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2759">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000421"/>
         <obo:IAO_0000111>Eukaryota</obo:IAO_0000111>
         <obo:IAO_0000118>eucaryotes</obo:IAO_0000118>
@@ -41219,6 +41218,16 @@ The following are NOT conclusions based on data: data themselves; results from p
     <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100026">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2157"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2759"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <obo:IAO_0000111 xml:lang="en">organism</obo:IAO_0000111>
@@ -49099,10 +49108,11 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A process event where a person engages with the healthcare system for a duration of time. This includes inpatient or outpatient visit.</obo:IAO_0000115>
+        <obo:IAO_0000115>A medical occurrence where a person engages with the healthcare system for a duration of time.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>visit occurrence</obo:IAO_0000118>
         <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#VISIT_OCCURRENCE</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">visit occurrence</rdfs:label>
+        <rdfs:label xml:lang="en">medical visit</rdfs:label>
     </owl:Class>
     
 
@@ -49261,8 +49271,10 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A visit occurrence that occurs for the person prior to the given visit. There could be a few days or a few years in between.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>preceding visit</obo:IAO_0000118>
+        <obo:IAO_0000118>preceding visit occurrence</obo:IAO_0000118>
         <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#VISIT_OCCURRENCE</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">preceding visit occurrence</rdfs:label>
+        <rdfs:label xml:lang="en">preceding medical visit</rdfs:label>
     </owl:Class>
     
 
@@ -49317,9 +49329,10 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A visit where a provider visits a person, without a care site, within one day, delivering service</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>home visit</obo:IAO_0000118>
         <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#VISIT_OCCURRENCE</obo:IAO_0000119>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Patient#Outpatients_and_inpatients</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">home visit</rdfs:label>
+        <rdfs:label xml:lang="en">home medical visit</rdfs:label>
     </owl:Class>
     
 
@@ -49374,9 +49387,11 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A visit to a dedicated institution, at a care site, within one day, for the purpose of a measurement. The visit is carried out in a medical laboratory or clinical laboratory where tests are carried out on clinical specimens to obtain information about the health of a patient to aid in diagnosis, treatment, and prevention of disease</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>laboratory clinical visit</obo:IAO_0000118>
+        <obo:IAO_0000118>laboratory visit</obo:IAO_0000118>
         <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#VISIT_OCCURRENCE</obo:IAO_0000119>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Patient#Outpatients_and_inpatients</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">laboratory visit</rdfs:label>
+        <rdfs:label xml:lang="en">laboratory medical visit</rdfs:label>
     </owl:Class>
     
 
@@ -49391,7 +49406,7 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>An interaction with the healthcare system, without a care site, within a day, with no providers involved, for administrative purposes</obo:IAO_0000115>
+        <obo:IAO_0000115>A medical visit occurrence that involves an interaction with the healthcare system, without a care site, within a day, with no providers involved, for the administrative purpose of patient case management.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
         <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#VISIT_OCCURRENCE</obo:IAO_0000119>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Patient#Outpatients_and_inpatients</obo:IAO_0000119>
@@ -49467,10 +49482,11 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>An activity or process that is ordered by, or carried out by, a healthcare provider on a patient with a diagnostic or therapeutic purpose.</obo:IAO_0000115>
+        <obo:IAO_0000115>A medicl occurrence that is ordered by, or carried out by, a healthcare provider on a patient with a diagnostic or therapeutic purpose.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>procedure occurrence</obo:IAO_0000118>
         <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#PROCEDURE_OCCURRENCE</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">procedure occurrence</rdfs:label>
+        <rdfs:label xml:lang="en">medical procedure occurrence</rdfs:label>
     </owl:Class>
     
 
@@ -49789,11 +49805,12 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A process event where a person presents a disease or medical condition stated as a diagnosis, a sign, or a symptom, which is either observed by a Provider or reported by the patient.</obo:IAO_0000115>
+        <obo:IAO_0000115>A medicl occurrence where a person presents a disease or medical condition stated as a diagnosis, a sign, or a symptom, which is either observed by a Provider or reported by the patient.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>condition occurrence</obo:IAO_0000118>
         <obo:IAO_0000118>medical condition occurrence</obo:IAO_0000118>
         <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#CONDITION_OCCURRENCE</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">condition occurrence</rdfs:label>
+        <rdfs:label xml:lang="en">medical condition occurrence</rdfs:label>
     </owl:Class>
     
 
@@ -50237,11 +50254,12 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/OPMI_0000554 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000554">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000588"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000618"/>
         <obo:IAO_0000115>A process of a person’s exposure to a foreign physical object or instrument which is used for diagnostic or therapeutic purposes through a mechanism beyond chemical action. Devices include implantable objects (e.g. pacemakers, stents, artificial joints), medical equipment and supplies (e.g. bandages, crutches, syringes), other instruments used in medical procedures (e.g. sutures, defibrillators) and material used in clinical care (e.g. adhesives, body material, dental material, surgical material).</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000118>device exposure</obo:IAO_0000118>
         <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#DEVICE_EXPOSURE</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">device exposure</rdfs:label>
+        <rdfs:label xml:lang="en">medical device exposure</rdfs:label>
         <rdfs:seeAlso>http://purl.obolibrary.org/obo/NCIT_C102617</rdfs:seeAlso>
     </owl:Class>
     
@@ -50486,7 +50504,7 @@ http://ohdsi.github.io/CommonDataModel/cdm54.html#DRUG_EXPOSURE</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/OPMI_0000572 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000572">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000588"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000618"/>
         <obo:IAO_0000115>An exposure or contact of a person to a drug. The drug exposure includes drug dispensing or administration for a person.</obo:IAO_0000115>
         <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#DRUG_EXPOSURE</obo:IAO_0000119>
         <obo:IAO_0000232>This term is used in OMOP CDM. This term appears similar to &apos;drug administration&apos;. However, drug exposure also covers involuntary, but drug administration usually means voluntary. More discussion is needed.</obo:IAO_0000232>
@@ -50713,6 +50731,9 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000588">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115>A process that a patient experiences over a period of time.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html</obo:IAO_0000119>
         <rdfs:label xml:lang="en">medical occurrence</rdfs:label>
     </owl:Class>
     
@@ -50782,6 +50803,21 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
         <obo:IAO_0000118>Drug Type Concept</obo:IAO_0000118>
         <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#DRUG_EXPOSURE</obo:IAO_0000119>
         <rdfs:label xml:lang="en">electronic drug record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000594 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000594">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000115>A data item that captures clinical facts about a patient obtained in the context of examination, questioning or a procedure.</obo:IAO_0000115>
+        <obo:IAO_0000117>Long Tran, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>medical observation</obo:IAO_0000118>
+        <obo:IAO_0000118>observation</obo:IAO_0000118>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#OBSERVATION</obo:IAO_0000119>
+        <rdfs:comment>This term is dervied from OMOP:Observation term. Observations differ from Measurements in that they do not require a standardized test or some other activity to generate clinical fact. Typical observations are medical history, family history, the stated need for certain treatment, social circumstances, lifestyle choices, healthcare utilization patterns, etc.</rdfs:comment>
+        <rdfs:label xml:lang="en">medical observation data</rdfs:label>
     </owl:Class>
     
 
@@ -51097,6 +51133,18 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
         <obo:IAO_0000119>https://ushik.ahrq.gov/ViewItemDetails?system=mdr&amp;itemKey=85779000#:~:text=Definition%3A,same%20as%20the%20Preoperative%20Diagnosis.</obo:IAO_0000119>
         <rdfs:label xml:lang="en">postoperative diagnosis</rdfs:label>
         <rdfs:seeAlso>OMOP4976968</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000618 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000618">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000588"/>
+        <obo:IAO_0000115>A medical occurrence in which a patience is exposed to a medical related material entity such as drug or medical device. Medical exposure refers primarily to exposure incurred by patients for the purpose of medical diagnosis or treatment.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.sciencedirect.com/topics/engineering/medical-exposure</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">medical exposure</rdfs:label>
     </owl:Class>
     
 
@@ -64440,13 +64488,13 @@ This interpretation is *not* the same as an at-all-times relation
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ:00000013</oboInOwl:id>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FTT:540</oboInOwl:hasDbXref>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/gaz.owl"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">continent</rdfs:label>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TGN:21402</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">continent</rdfs:label>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ</oboInOwl:hasOBONamespace>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GeoNames:CONT</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">continental region</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CONTIN</oboInOwl:hasExactSynonym>
         <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ:00190836</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CONTIN</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">continent {alternative name}</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Continent {alternative name}</oboInOwl:hasExactSynonym>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TGN:29000</oboInOwl:hasDbXref>
@@ -64470,17 +64518,17 @@ This interpretation is *not* the same as an at-all-times relation
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The convention used in gaz.obo is that the Europe-Asia boundary follows the watershed of the Ural Mountains from near Kara, Russia on the Kara Sea to the source of the Ural River, then follows that river to the Caspian Sea. The border then follows the watershed of the Caucasus Mountains from the Caspian Sea to the Black Sea.</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00002459">
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USA</oboInOwl:hasExactSynonym>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ:00002459</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USA</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISO3166-1:840</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISO3166-1:US</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISO3166-1:840</oboInOwl:hasDbXref>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A federal constitutional republic comprising fifty states and a federal district. The country is situated mostly in central North America, where its forty-eight contiguous states and Washington, DC, the capital district, lie between the Pacific and Atlantic Oceans, bordered by Canada to the north and Mexico to the south. The State of Alaska is in the northwest of the continent, with Canada to its east and Russia to the west across the Bering Strait, and the State of Hawaii is in the mid-Pacific. The United States also possesses several territories, or insular areas, that are scattered around the Caribbean and Pacific. The states are divided into smaller administrative regions, called counties in most states, exceptions being Alaska (parts of the state are organized into subdivisions called boroughs; the rest of the state&apos;s territory that is not included in any borough is divided into &quot;census areas&quot;), and Louisiana (which is divided into county-equivalents that are called parishes). There are also independent cities which are within particular states but not part of any particular county or consolidated city-counties. Another type of organization is where the city and county are unified and function as an independent city. There are thirty-nine independent cities in Virginia and other independent cities or city-counties are San Francisco, California, Baltimore, Maryland, St. Louis, Missouri, Denver, Colorado and Carson City, Nevada. Counties can include a number of cities, towns, villages, or hamlets, or sometimes just a part of a city. Counties have varying degrees of political and legal significance, but they are always administrative divisions of the state. Counties in many states are further subdivided into townships, which, by definition, are administrative divisions of a county. In some states, such as Michigan, a township can file a charter with the state government, making itself into a &quot;charter township&quot;, which is a type of mixed municipal and township status (giving the township some of the rights of a city without all of the responsibilities), much in the way a metropolitan municipality is a mixed municipality and county.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">U.S.A</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">United States of America</rdfs:label>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/gaz.owl"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISO3166-1:USA</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISO3166-2:US</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISO3166-1:USA</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002415">
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/uberon#grouping_class"/>
@@ -64488,8 +64536,8 @@ This interpretation is *not* the same as an at-all-times relation
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/dron.owl">
-        <dc:creator>Josh Hanna</dc:creator>
         <rdfs:comment>An ontology of drugs.</rdfs:comment>
+        <dc:creator>Josh Hanna</dc:creator>
         <dc:creator>William Hogan</dc:creator>
         <rdfs:comment>DrOn contains content developed by the National Library of Medicine in RxNorm.  In creating DrOn, we have used RxNorm content only with SAB = RXNORM.</rdfs:comment>
         <dc:license xml:lang="en">https://creativecommons.org/licenses/by/3.0/</dc:license>
@@ -64528,13 +64576,13 @@ Please see www.environmentontology.org for more information and citations.</rdfs
         <dc:contributor>Darrell R. Abernethy</dc:contributor>
         <dc:creator>Sirarat Sarntivijai</dc:creator>
         <dc:creator>Ling Wan</dc:creator>
-        <dc:creator>Rebecca Racz</dc:creator>
         <dc:creator xml:lang="en">Shelley Zhang</dc:creator>
+        <dc:creator>Rebecca Racz</dc:creator>
         <dc:creator>Liwei Wang</dc:creator>
         <dc:creator xml:lang="en">Meiu Wong</dc:creator>
         <dc:description xml:lang="en">The Ontology of Adverse Eventsy (OAE) is a biomedical ontology in the domain of adverse events. OAE aims to standardize adverse event annotation, integrate various adverse event data, and support computer-assisted reasoning.  OAE is a community-based ontology. Its development follows the OBO Foundry principles. Vaccine adverse events have been used as an initial testing use case. OAE also studies adverse events associated with the administration of drug and nutritional products, the operation of surgeries, and the usage of medical devices, etc.</dc:description>
-        <dc:creator>Kevin Mo</dc:creator>
         <dc:title xml:lang="en">OAE: Ontology of Adverse Events</dc:title>
+        <dc:creator>Kevin Mo</dc:creator>
         <dc:creator>Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
         <dc:contributor>Luca Toldo</dc:contributor>
         <dc:creator>Noemi Garg</dc:creator>
@@ -64556,22 +64604,22 @@ Please see www.environmentontology.org for more information and citations.</rdfs
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/obib.owl">
         <dc:contributor>Alice Nzinga</dc:contributor>
         <dc:source xml:lang="en">MIABIS_v2_accepted and UPenn Biobank ontology</dc:source>
-        <dc:contributor>Roxana Merino-Martinez</dc:contributor>
         <dc:contributor>William R. Hogan</dc:contributor>
+        <dc:contributor>Roxana Merino-Martinez</dc:contributor>
         <dc:contributor>Sanela Kjellqvist</dc:contributor>
         <dc:contributor>Loreana Norlin</dc:contributor>
         <dc:description>The Ontology for Biobanking (OBIB) is an ontology for the annotation and modeling of the activities, contents, and administration of a biobank. Biobanks are facilities that store specimens, such as bodily fluids and tissues, typically along with specimen annotation and clinical data. OBIB is based on a subset of the Ontology for Biomedical Investigation (OBI), has the Basic Formal Ontology (BFO) as its upper ontology, and is developed following OBO Foundry principles. The first version of OBIB resulted from the merging of two existing biobank-related ontologies, OMIABIS and biobank ontology.</dc:description>
-        <dc:contributor>Jan-Eric Litton</dc:contributor>
         <dc:contributor>Chris Stoeckert</dc:contributor>
+        <dc:contributor>Jan-Eric Litton</dc:contributor>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
-        <dc:title xml:lang="en">Ontology for BIoBanking (OBIB)</dc:title>
         <owl:versionInfo xml:lang="en">development version</owl:versionInfo>
+        <dc:title xml:lang="en">Ontology for BIoBanking (OBIB)</dc:title>
         <dc:contributor>Jie Zheng</dc:contributor>
         <dc:contributor>Mathias Brochhausen</dc:contributor>
         <dc:contributor>Mikael Eriksson</dc:contributor>
         <dc:contributor>Maria Anderberg</dc:contributor>
-        <dc:contributor>Martin N. Fransson</dc:contributor>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-11-12</owl:versionInfo>
+        <dc:contributor>Martin N. Fransson</dc:contributor>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ogms.owl">
         <dc:creator>Daniel Merico</dc:creator>

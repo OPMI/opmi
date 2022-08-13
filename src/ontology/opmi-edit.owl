@@ -54,13 +54,13 @@
         <dc:creator>Qingliang Leon Li</dc:creator>
         <dc:creator>Suyuan Peng</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
-        <dc:date>5-31-2022</dc:date>
+        <dc:date>8-13-2022</dc:date>
         <dc:description xml:lang="en">OPMI is a biomedical ontology in the area of precision medicine and its related investigations. It is community-driven and developed by following the OBO Foundry ontology development principles.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.160</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.161</owl:versionInfo>
     </owl:Ontology>
     
 
