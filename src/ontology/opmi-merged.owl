@@ -37,13 +37,13 @@
         <dc:creator>Qingliang Leon Li</dc:creator>
         <dc:creator>Suyuan Peng</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
-        <dc:date>8-13-2022</dc:date>
+        <dc:date>3-15-2024</dc:date>
         <dc:description xml:lang="en">OPMI is a biomedical ontology in the area of precision medicine and its related investigations. It is community-driven and developed by following the OBO Foundry ontology development principles.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.161</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.166</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -48408,9 +48408,11 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/OPMI_0000423 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000423">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000422"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000623"/>
         <obo:IAO_0000115></obo:IAO_0000115>
         <obo:IAO_0000115>An non-organism infectious agent that is composed solely of a short strand of circular, single-stranded RNA and has no protein coating.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Mobile_genetic_elements</obo:IAO_0000119>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Viroid</obo:IAO_0000119>
         <rdfs:label xml:lang="en">viroid</rdfs:label>
     </owl:Class>
@@ -51173,6 +51175,57 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
         <obo:IAO_0000119>https://www.healthdirect.gov.au/what-is-a-referral#:~:text=A%20referral%20is%20a%20written,you%20for%20a%20particular%20condition.</obo:IAO_0000119>
         <rdfs:label xml:lang="en">referral diagnosis</rdfs:label>
         <rdfs:seeAlso>OMOP4976975</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000621 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000621">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000422"/>
+        <obo:IAO_0000115>An acellular self-replicating organic structure that is composed of nucleic acid</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Template:Self-replicating_organic_structures</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">self-replicating nucleic acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000623 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000623">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000621"/>
+        <obo:IAO_0000115>A self-replicating nucleic acid that can move around within a genome, or that can be transferred from one species or replicon to another.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Mobile_genetic_elements</obo:IAO_0000119>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Template:Self-replicating_organic_structures</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">mobile genetic element</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000624 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000624">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000623"/>
+        <obo:IAO_0000115>A mobile genetic element that is composed of a generally circular extrachromosomal DNA molecule and is able to replicate and be transmitted independent of chromosomal DNA.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Mobile_genetic_elements</obo:IAO_0000119>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Template:Self-replicating_organic_structures</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">plasmid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000625 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000625">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000623"/>
+        <obo:IAO_0000115>A mobile genetic element that is composed of a DNA sequence and can move and replicate in different parts of a cell&apos;s genome.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Mobile_genetic_elements</obo:IAO_0000119>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Template:Self-replicating_organic_structures</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">transposon</rdfs:label>
     </owl:Class>
     
 
@@ -64484,10 +64537,10 @@ This interpretation is *not* the same as an at-all-times relation
      -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00000013">
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One of the large, unbroken masses of land into which the Earth&apos;s surface is divided.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ:00000013</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FTT:540</oboInOwl:hasDbXref>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One of the large, unbroken masses of land into which the Earth&apos;s surface is divided.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/gaz.owl"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FTT:540</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TGN:21402</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">continent</rdfs:label>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ</oboInOwl:hasOBONamespace>
@@ -64518,14 +64571,14 @@ This interpretation is *not* the same as an at-all-times relation
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The convention used in gaz.obo is that the Europe-Asia boundary follows the watershed of the Ural Mountains from near Kara, Russia on the Kara Sea to the source of the Ural River, then follows that river to the Caspian Sea. The border then follows the watershed of the Caucasus Mountains from the Caspian Sea to the Black Sea.</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00002459">
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ:00002459</oboInOwl:id>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USA</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ:00002459</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ</oboInOwl:hasOBONamespace>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISO3166-1:US</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISO3166-1:840</oboInOwl:hasDbXref>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A federal constitutional republic comprising fifty states and a federal district. The country is situated mostly in central North America, where its forty-eight contiguous states and Washington, DC, the capital district, lie between the Pacific and Atlantic Oceans, bordered by Canada to the north and Mexico to the south. The State of Alaska is in the northwest of the continent, with Canada to its east and Russia to the west across the Bering Strait, and the State of Hawaii is in the mid-Pacific. The United States also possesses several territories, or insular areas, that are scattered around the Caribbean and Pacific. The states are divided into smaller administrative regions, called counties in most states, exceptions being Alaska (parts of the state are organized into subdivisions called boroughs; the rest of the state&apos;s territory that is not included in any borough is divided into &quot;census areas&quot;), and Louisiana (which is divided into county-equivalents that are called parishes). There are also independent cities which are within particular states but not part of any particular county or consolidated city-counties. Another type of organization is where the city and county are unified and function as an independent city. There are thirty-nine independent cities in Virginia and other independent cities or city-counties are San Francisco, California, Baltimore, Maryland, St. Louis, Missouri, Denver, Colorado and Carson City, Nevada. Counties can include a number of cities, towns, villages, or hamlets, or sometimes just a part of a city. Counties have varying degrees of political and legal significance, but they are always administrative divisions of the state. Counties in many states are further subdivided into townships, which, by definition, are administrative divisions of a county. In some states, such as Michigan, a township can file a charter with the state government, making itself into a &quot;charter township&quot;, which is a type of mixed municipal and township status (giving the township some of the rights of a city without all of the responsibilities), much in the way a metropolitan municipality is a mixed municipality and county.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">U.S.A</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">United States of America</rdfs:label>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">U.S.A</oboInOwl:hasExactSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/gaz.owl"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISO3166-2:US</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISO3166-1:USA</oboInOwl:hasDbXref>
@@ -64542,8 +64595,8 @@ This interpretation is *not* the same as an at-all-times relation
         <rdfs:comment>DrOn contains content developed by the National Library of Medicine in RxNorm.  In creating DrOn, we have used RxNorm content only with SAB = RXNORM.</rdfs:comment>
         <dc:license xml:lang="en">https://creativecommons.org/licenses/by/3.0/</dc:license>
         <dc:creator>Eric Joseph</dc:creator>
-        <rdfs:comment xml:lang="en">When citing DrOn, use the permanent URL of the ontology: http://purl.obolibrary.org/obo/dron.owl.  When referencing a specific component of the DrOn, such as a class, object property, annotation property, or individual, use the Uniform Resource Identifier (URI) of that component.</rdfs:comment>
         <dc:creator>Mathias Brochhausen</dc:creator>
+        <rdfs:comment xml:lang="en">When citing DrOn, use the permanent URL of the ontology: http://purl.obolibrary.org/obo/dron.owl.  When referencing a specific component of the DrOn, such as a class, object property, annotation property, or individual, use the Uniform Resource Identifier (URI) of that component.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/envo.owl">
         <dc:creator>http://orcid.org/0000-0002-8343-612X</dc:creator>
@@ -64552,8 +64605,8 @@ This interpretation is *not* the same as an at-all-times relation
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/envo/modules/chemical_concentration.owl&gt;) VersionIRI(&lt;null&gt;))) [Axioms: 186 Logical Axioms: 30]</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/envo/modules/entity_quality_location.owl&gt;) VersionIRI(&lt;null&gt;))) [Axioms: 40 Logical Axioms: 6]</rdfs:comment>
         <dc:creator>http://orcid.org/0000-0002-4366-3088</dc:creator>
-        <dc:creator>http://orcid.org/0000-0003-1604-1512</dc:creator>
         <dc:creator>http://orcid.org/0000-0002-6601-2165</dc:creator>
+        <dc:creator>http://orcid.org/0000-0003-1604-1512</dc:creator>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/envo/modules/entity_attribute_location.owl&gt;) VersionIRI(&lt;null&gt;))) [Axioms: 132 Logical Axioms: 23]</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENVO is an ontology which represents knowledge about environments,environmental processes, ecosystems, habitats, and related entities. It interoperates with other ontologies in the OBO Foundry and Library. 
 
@@ -64581,13 +64634,13 @@ Please see www.environmentontology.org for more information and citations.</rdfs
         <dc:creator>Liwei Wang</dc:creator>
         <dc:creator xml:lang="en">Meiu Wong</dc:creator>
         <dc:description xml:lang="en">The Ontology of Adverse Eventsy (OAE) is a biomedical ontology in the domain of adverse events. OAE aims to standardize adverse event annotation, integrate various adverse event data, and support computer-assisted reasoning.  OAE is a community-based ontology. Its development follows the OBO Foundry principles. Vaccine adverse events have been used as an initial testing use case. OAE also studies adverse events associated with the administration of drug and nutritional products, the operation of surgeries, and the usage of medical devices, etc.</dc:description>
-        <dc:title xml:lang="en">OAE: Ontology of Adverse Events</dc:title>
         <dc:creator>Kevin Mo</dc:creator>
+        <dc:title xml:lang="en">OAE: Ontology of Adverse Events</dc:title>
         <dc:creator>Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
         <dc:contributor>Luca Toldo</dc:contributor>
         <dc:creator>Noemi Garg</dc:creator>
-        <dc:creator>Edison Ong</dc:creator>
         <dc:contributor>Keith Burkhart</dc:contributor>
+        <dc:creator>Edison Ong</dc:creator>
         <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
         <dc:contributor>Izabela Birsanescu</dc:contributor>
         <dc:creator>Zuoshuang &quot;Allen&quot; Xiang</dc:creator>
@@ -64604,13 +64657,13 @@ Please see www.environmentontology.org for more information and citations.</rdfs
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/obib.owl">
         <dc:contributor>Alice Nzinga</dc:contributor>
         <dc:source xml:lang="en">MIABIS_v2_accepted and UPenn Biobank ontology</dc:source>
-        <dc:contributor>William R. Hogan</dc:contributor>
         <dc:contributor>Roxana Merino-Martinez</dc:contributor>
+        <dc:contributor>William R. Hogan</dc:contributor>
         <dc:contributor>Sanela Kjellqvist</dc:contributor>
         <dc:contributor>Loreana Norlin</dc:contributor>
         <dc:description>The Ontology for Biobanking (OBIB) is an ontology for the annotation and modeling of the activities, contents, and administration of a biobank. Biobanks are facilities that store specimens, such as bodily fluids and tissues, typically along with specimen annotation and clinical data. OBIB is based on a subset of the Ontology for Biomedical Investigation (OBI), has the Basic Formal Ontology (BFO) as its upper ontology, and is developed following OBO Foundry principles. The first version of OBIB resulted from the merging of two existing biobank-related ontologies, OMIABIS and biobank ontology.</dc:description>
-        <dc:contributor>Chris Stoeckert</dc:contributor>
         <dc:contributor>Jan-Eric Litton</dc:contributor>
+        <dc:contributor>Chris Stoeckert</dc:contributor>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <owl:versionInfo xml:lang="en">development version</owl:versionInfo>
         <dc:title xml:lang="en">Ontology for BIoBanking (OBIB)</dc:title>
@@ -64618,8 +64671,8 @@ Please see www.environmentontology.org for more information and citations.</rdfs
         <dc:contributor>Mathias Brochhausen</dc:contributor>
         <dc:contributor>Mikael Eriksson</dc:contributor>
         <dc:contributor>Maria Anderberg</dc:contributor>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-11-12</owl:versionInfo>
         <dc:contributor>Martin N. Fransson</dc:contributor>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-11-12</owl:versionInfo>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ogms.owl">
         <dc:creator>Daniel Merico</dc:creator>
@@ -64638,10 +64691,9 @@ OGMS is based on the papers Toward an Ontological Treatment of Disease and Diagn
         <terms:license>http://creativecommons.org/licenses/by/4.0/</terms:license>
         <dc:creator>Lindsay Cowell</dc:creator>
         <dc:date>2009-08-07</dc:date>
-        <dc:creator>Cornelius Rosse</dc:creator>
         <dc:creator>Richard Scheuermann</dc:creator>
+        <dc:creator>Cornelius Rosse</dc:creator>
         <dc:creator>Anand Kumar</dc:creator>
-        <dc:creator>Barry Smith</dc:creator>
         <rdfs:comment xml:lang="en">The Ontology for General Medical Science (OGMS) is based on the papers Toward an Ontological Treatment of Disease and Diagnosis and On Carcinomas and Other Pathological Entities. The ontology attempts to address some of the issues raised at the Workshop on Ontology of Diseases (Dallas, TX). OGMS was formerly called the clinical phenotype ontology. Terms from OGMS hang from the Basic Formal Ontology.
 
 The latest version of OGMS is available at http://purl.obolibrary.org/obo/ogms.owl
@@ -64649,16 +64701,17 @@ The latest version of OGMS is available at http://purl.obolibrary.org/obo/ogms.o
 The OGMS developer site is https://github.com/OGMS/ogms
 
 If you are interested in participating in the development of OGMS, please send email to baeverma</rdfs:comment>
+        <dc:creator>Barry Smith</dc:creator>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/omrse.owl">
         <dc:creator xml:lang="en">William Hogan</dc:creator>
         <rdfs:comment xml:lang="en">This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government&apos;s &quot;meaningful use&quot; criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt</rdfs:comment>
-        <dc:creator xml:lang="en">Mathias Brochhausen</dc:creator>
-        <dc:creator>Amanda Hicks</dc:creator>
         <owl:versionInfo>2017-06-08</owl:versionInfo>
+        <dc:creator>Amanda Hicks</dc:creator>
+        <dc:creator xml:lang="en">Mathias Brochhausen</dc:creator>
         <dc:creator xml:lang="en">Swetha Garimalla</dc:creator>
-        <rdfs:label xml:lang="en">The Ontology of Medically Related Social Entities</rdfs:label>
         <dc:contributor>Daniel Welch</dc:contributor>
+        <rdfs:label xml:lang="en">The Ontology of Medically Related Social Entities</rdfs:label>
         <dc:creator xml:lang="en">Shariq Tariq</dc:creator>
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000657">
