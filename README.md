@@ -13,6 +13,24 @@ OPMI has now been approved to be an OBO Foundry library ontology: http://obofoun
 
 Collaborations are welcome. A very active collaboration OPMI has is the the collaboration with [clinicaltrials.gov](http://clinicaltrials.gov) and many collaborators to develop clinical trial-specific terms with the aim to standardize and integrate clinical trial data. See more details in the meeting notes: https://docs.google.com/document/d/1VnmFhqFwfH3qcShiZUTO9ALF-3JKCs2oa3MQ2LotH6U/edit.   
 
+## Developers 
+
+The developers of the OPMI including many from the University of Michigan: 
+
+- Yongqun "Oliver" He
+- Jie Zheng
+- Jennifer Schaub
+- Anthony Huffman
+- Long Tran
+- Minh-Y Hoang Nguyen
+
+Other OPMI developers include: 
+- Asiyah Yu Lin
+- Qingliang Leon Li, NIH
+- Hong Yu, 
+- Fred Dowd, University of Washington, Seattle
+- Suyuan Peng, Peking University.
+
 ## Download
 
 Use the following URI to download this ontology
