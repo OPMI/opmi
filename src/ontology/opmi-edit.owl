@@ -47,7 +47,6 @@
         <dc:creator>Asiyah Yu Lin</dc:creator>
         <dc:creator xml:lang="en">Fred Dowd</dc:creator>
         <dc:creator>Hong Yu</dc:creator>
-        <dc:creator xml:lang="en">Hong Yu</dc:creator>
         <dc:creator xml:lang="en">Jennifer Schaub</dc:creator>
         <dc:creator xml:lang="en">Jie Zheng</dc:creator>
         <dc:creator>Long Tran</dc:creator>
@@ -55,13 +54,13 @@
         <dc:creator>Qingliang Leon Li</dc:creator>
         <dc:creator>Suyuan Peng</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
-        <dc:date>3-24-2025</dc:date>
+        <dc:date>3-31-2025</dc:date>
         <dc:description xml:lang="en">OPMI is a biomedical ontology in the area of precision medicine and its related investigations. It is community-driven and developed by following the OBO Foundry ontology development principles.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.167</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.168</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -8188,6 +8187,120 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000627 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000627">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000628"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002224"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000629"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002224"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000631"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002230"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000630"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002230"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000632"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A medical episode is a medical event that aggregates lower-level clinical events (e.g., visit occurrence, drug exposure, procedure occurrence, device occurrence)  into a higher-level abstraction representing clinically and analytically relevant disease phases, outcomes, and treatments.</obo:IAO_0000115>
+        <obo:IAO_0000117>Minh-Y Nguyen</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#episode</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">medical episode</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000628 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000628">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000627"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A medical episode event connects qualifying specific clinical events (such as condition or procedure occurrence, or measurement) to the appropriate episode entry.</obo:IAO_0000115>
+        <obo:IAO_0000117>Minh-Y Nguyen</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#episode_event</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">medical episode event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000629 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000629">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000148"/>
+        <obo:IAO_0000115>The date when a medical episode begins.</obo:IAO_0000115>
+        <obo:IAO_0000117>Minh-Y Nguyen</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#episode</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">episode start date</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000630 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000630">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000148"/>
+        <obo:IAO_0000115>The date when a medical episode ends.</obo:IAO_0000115>
+        <obo:IAO_0000117>Minh-Y Nguyen</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#episode</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">episode end date</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000631 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000631">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000148"/>
+        <obo:IAO_0000115>The date and time when a medical episode begins.</obo:IAO_0000115>
+        <obo:IAO_0000117>Minh-Y Nguyen</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#episode</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">episode start datetime</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000632 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000632">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000148"/>
+        <obo:IAO_0000115>The date and time when a medical episode ends.</obo:IAO_0000115>
+        <obo:IAO_0000117>Minh-Y Nguyen</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#episode</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">episode end datetime</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OPMI_0004475 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0004475">
@@ -8880,5 +8993,5 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
 
