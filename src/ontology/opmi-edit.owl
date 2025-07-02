@@ -61,7 +61,7 @@
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.173</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.175</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -8357,12 +8357,753 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A source value that refers to a person identifier assigned by the original data source, such as a hospital where the person sees doctors.</obo:IAO_0000115>
+        <obo:IAO_0000115>A person source value that refers to a person identifier assigned by the original data source, such as a hospital where the person sees doctors.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
         <obo:IAO_0000118>person_source_value</obo:IAO_0000118>
         <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#PERSON</obo:IAO_0000119>
         <rdfs:label xml:lang="en">person source value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000637 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000637">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000635"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A gender source value refers to the biological sex of the person from original data source. Only use for reference.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>gender_source_value</obo:IAO_0000118>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#PERSON</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">gender source value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000638 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000638">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000635"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A race source value that refers to the race of the person from the original data source. For reference only.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>race_source_value</obo:IAO_0000118>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#PERSON</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">race source value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000639 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000639">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000635"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A ethnicity source value that refers to the ethnicity of the person from the original data source. For reference only.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>ethnicity_source_value</obo:IAO_0000118>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#PERSON</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">ethnicity source value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000640 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000640">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000635"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A visit source value that refers to the original term used to describe the visit type (e.g., inpatient, outpatient, emergency) in the source data. For reference only.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>visit_source_value</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#visit_occurrence</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">visit source value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000641 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000641">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000635"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A discharge destination source value that refers to the verbatim value from the original data source describing where the patient was discharged to. For reference only.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>discharged_to_source_value</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#visit_occurrence</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">discharged to source value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000642 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000642">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000635"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A visit detail source value that refers to the original description of the visit type (e.g., inpatient, outpatient, emergency) from the source data. For reference only.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>visit_detail_source_value</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#visit_detail</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">visit detail source value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000643 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000643">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000635"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An admission source value that refers to where the patient was admitted from, as recorded in the original data source (e.g., home, another hospital, emergency room). For reference only.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>admitted_from_source_value</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#visit_detail</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">admitted from source value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000644 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000644">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000635"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A condition source value that refers to the condition as recorded in the original data source (e.g., ICD-10 or Read code). For reference only.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>condition_source_value</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#condition_occurrence</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">condition source value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000645 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000645">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000635"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A concept that corresponds to the condition source value, which may not be standard. Not recommended for analysis, as it is not required to use Standard Concepts. Use only when no suitable Standard Concept exists to capture the necessary source detail. Prefer using condition_concept_id for consistent, standardized analytics across the network.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>condition_status_source_value</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#condition_occurrence</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">condition status source value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000646 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000646">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000635"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A drug exposure source value that refers to the medication as recorded in the original data source (e.g., NDC or Gemscript code). For reference only.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>drug_source_value</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#drug_exposure</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">drug source value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000647 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000647">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000635"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A drug route source value that refers to the route of administration as recorded in the original data source (e.g., oral, intravenous). For reference only.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>route_source_value</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#drug_exposure</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">route source value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000648 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000648">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000635"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A dose unit source value that refers to the verbatim value from the source data representing the dose unit of the drug given. For reference only.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>dose_unit_source_value</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#drug_exposure</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">dose unit source value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000649 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000649">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000635"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A procedure source value that refers to the procedure recorded in the original data source (e.g., CPT4 or OPCS4 code). For reference only.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>procedure_source_value</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#procedure_occurrence</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">procedure source value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000650 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000650">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000635"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A procedure modifier source value that refers to the modifier code recorded in the original data source. For reference only.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>modifier_source_value</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#procedure_occurrence</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">modifier source value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000651 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000651">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000635"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A device source value that refers to the device recorded in the original data source (e.g., NDC or Gemscript code). For reference only.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>device_source_value</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#device_exposure</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">device source value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000652 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000652">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000635"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A unit source value that refers to the unit recorded in the original data source (e.g., mL for blood transfusions). For reference only.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>unit_source_value</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#device_exposure</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">unit source value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000653 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000653">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000635"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A measurement source value that refers to the measurement recorded in the original data source. For reference only.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>measurement_source_value</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#measurement</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">measurement source value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000654 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000654">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000635"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A value source value that refers the verbatim result value of the Measurement from the source data. For reference only.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>value_source_value</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#measurement</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">value source value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000655 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000655">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000635"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An observation source value that refers to the observation recorded in the original data source (e.g., ICD-10 or Read code). For reference only.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>observation_source_value</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#observation</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">observation source value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000656 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000656">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000635"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An qualifier source value that refers to the verbatim value from the source data representing the qualifier of the Observation that occurred. For reference only.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>qualifier_source_value</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#observation</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">qualifier source value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000657 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000657">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000635"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A cause source value that refers to the person&apos;s death cause reason in original data source. For reference only.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>cause_source_value</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#death</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">cause source value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000658 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000658">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000635"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A note source value that refers to the note stored in original source value. For reference only.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>note_source_value</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#note</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">note source value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000659 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000659">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000635"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A specimen source value that refers to the specimen type or description recorded in the original data source. For reference only.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>specimen_source_value</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#specimen</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">specimen source value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000660 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000660">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000635"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An anatomic site source value that refers to the body location recorded in the original data source. For reference only.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>anatomic_site_source_value</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#specimen</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">anatomic site source value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000661 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000661">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000635"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A disease status source value that refers to the condition status (e.g., active, remission) recorded in the original data source. For reference only.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>disease_status_source_value</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#specimen</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">disease status source value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000662 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000662">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000635"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A location source value that refers to the place or address information recorded in the original data source. For reference only.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>location_source_value</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#location</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">location source value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000663 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000663">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000635"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A country source value that refers to the name of the country in the original data source. For reference only.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>country_source_value</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#location</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">country source value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000664 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000664">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000635"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A care site source identifier as recorded in the original data source. May differ from the care site name. For reference only.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>care_site_source_value</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#care_site</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">care site source value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000665 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000665">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000635"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A place of service source value that refers to the setting of care (e.g., outpatient clinic, inpatient hospital) recorded in the original data source. For reference only.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>place_of_service_source_value</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#care_site</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">place of service source value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000666 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000666">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000635"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A provider source value used to link back to the provider in the original data source, typically for ETL validation or error checking. For reference only.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>provider_source_value</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#provider</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">provider source value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000667 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000667">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000635"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A provider specialty source value that refers to the type of healthcare provider or field of expertise recorded in the original data source (e.g., internal medicine, emergency medicine, nursing, physical therapy). For reference only.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>specialty_source_value</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#provider</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">specialty source value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000668 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000668">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000635"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A payer source value that refers to this is the Payer as it appears in the source data. For reference only.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>payer_source_value</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#payer_plan_period</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">payer source value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000669 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000669">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000635"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A plan source value that refers to the insurance or coverage type recorded in the original data source. For reference only.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>plan_source_value</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#payer_plan_period</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">plan source value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000670 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000670">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000635"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A plan sponsor source value that refers to the sponsor or organization responsible for the health plan, as recorded in the original data source. For reference only.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>sponsor_source_value</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#payer_plan_period</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">sponsor source value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000671 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000671">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000635"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A family source value that refers to the common identifier for all individuals covered under the same policy, as recorded in the original data source. For reference only.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>family_source_value</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#payer_plan_period</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">family source value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000672 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000672">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000635"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A stop reason source value that refers to the reason the person left the plan, as recorded in the original data source (if available). For reference only.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>stop_reason_source_value</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#payer_plan_period</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">stop reason source value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000673 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000673">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000635"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A revenue code source value that refers to the billing classification for procedures or conditions, as recorded in the original data source (used in the U.S. hospital system). For reference only.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>revenue_code_source_value</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#cost</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">revenue code source value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000674 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000674">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000635"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A diagnosis-related group (DRG) source value that refers to the classification code for hospital cases (used in the U.S.), as recorded in the original data source. For reference only.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>drg_source_value</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#cost</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">drg source value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000675 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000675">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000635"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An episode source value that refers to the original code for the episode recorded in the source data. This code is mapped to a standard condition concept, and the original value is stored here for reference only.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>episode_source_value</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#episode</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">episode source value</rdfs:label>
     </owl:Class>
     
 
@@ -9059,5 +9800,5 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
 
 
 
-<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
