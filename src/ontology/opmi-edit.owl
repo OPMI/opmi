@@ -55,13 +55,13 @@
         <dc:creator>Suyuan Peng</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
         <dc:creator>Yujia Tian</dc:creator>
-        <dc:date>6-26-2025</dc:date>
+        <dc:date>7-3-2025</dc:date>
         <dc:description xml:lang="en">OPMI is a biomedical ontology in the area of precision medicine and its related investigations. It is community-driven and developed by following the OBO Foundry ontology development principles.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPMI subject: Precision medicine and related investigations</dc:subject>
         <dc:title xml:lang="en">OPMI: Ontology of Precision Medicine and Investigation</dc:title>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.175</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.176</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -8491,7 +8491,7 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>An admission source value that refers to where the patient was admitted from, as recorded in the original data source (e.g., home, another hospital, emergency room). For reference only.</obo:IAO_0000115>
+        <obo:IAO_0000115>An admission source value that refers to where the patient was admitted from, as recorded in the original data source (e.g., home, another hospital, emergency room).</obo:IAO_0000115>
         <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
         <obo:IAO_0000118>admitted_from_source_value</obo:IAO_0000118>
         <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#visit_detail</obo:IAO_0000119>
@@ -8719,7 +8719,7 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>An observation source value that refers to the observation recorded in the original data source (e.g., ICD-10 or Read code). For reference only.</obo:IAO_0000115>
+        <obo:IAO_0000115>An observation source value that refers to the observation recorded in the original data source.</obo:IAO_0000115>
         <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
         <obo:IAO_0000118>observation_source_value</obo:IAO_0000118>
         <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#observation</obo:IAO_0000119>
@@ -8814,7 +8814,7 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>An anatomic site source value that refers to the body location recorded in the original data source. For reference only.</obo:IAO_0000115>
+        <obo:IAO_0000115>An anatomic site source value that refers to the body location recorded in the original data source.</obo:IAO_0000115>
         <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
         <obo:IAO_0000118>anatomic_site_source_value</obo:IAO_0000118>
         <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#specimen</obo:IAO_0000119>
@@ -8890,7 +8890,7 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A care site source identifier as recorded in the original data source. May differ from the care site name. For reference only.</obo:IAO_0000115>
+        <obo:IAO_0000115>A care site source identifier as recorded in the original data source. May differ from the care site name.</obo:IAO_0000115>
         <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
         <obo:IAO_0000118>care_site_source_value</obo:IAO_0000118>
         <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#care_site</obo:IAO_0000119>
@@ -9104,6 +9104,28 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
         <obo:IAO_0000118>episode_source_value</obo:IAO_0000118>
         <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#episode</obo:IAO_0000119>
         <rdfs:label xml:lang="en">episode source value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000676 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000676">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000482"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A medical vist that occurs within the scope of a parent medical visit. Each subvisit represents a meaningful subdivision of the overall visit, such as a change in care setting, a specific unit stay, or an individual service episode (e.g., a claim line), and is linked to a single parent visit.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>detail visit</obo:IAO_0000118>
+        <obo:IAO_0000118>nested visit</obo:IAO_0000118>
+        <obo:IAO_0000118>subvisit</obo:IAO_0000118>
+        <obo:IAO_0000118>visit episode</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Inpatient_care</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">medical subvisit</rdfs:label>
     </owl:Class>
     
 
@@ -9800,5 +9822,5 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
 
