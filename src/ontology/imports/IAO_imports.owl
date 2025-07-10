@@ -1523,6 +1523,16 @@ The patient is a 50-year-old man. His medical history was not contributory. At t
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000679 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000679">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
+        <obo:IAO_0000115 xml:lang="en">A textual entity represents the free text note prvide from provider about a patient notes in given date</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Yujia Tian</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UO_0000003 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000003">

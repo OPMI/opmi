@@ -2167,6 +2167,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000163">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <rdfs:comment>This indicate that the individuals who deliver healthcare, supporting attribution and analysis of care delivery.</rdfs:comment>
         <rdfs:label xml:lang="en">care provider</rdfs:label>
     </owl:Class>
     
@@ -8415,7 +8417,7 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A ethnicity source value that refers to the ethnicity of the person from the original data source. For reference only.</obo:IAO_0000115>
+        <obo:IAO_0000115>A ethnicity source value that refers to the ethnicity of the person from the original data source.</obo:IAO_0000115>
         <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
         <obo:IAO_0000118>ethnicity_source_value</obo:IAO_0000118>
         <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#PERSON</obo:IAO_0000119>
@@ -8453,7 +8455,7 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A discharge destination source value that refers to the verbatim value from the original data source describing where the patient was discharged to. For reference only.</obo:IAO_0000115>
+        <obo:IAO_0000115>A discharge destination source value that refers to the verbatim value from the original data source describing where the patient was discharged to.</obo:IAO_0000115>
         <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
         <obo:IAO_0000118>discharged_to_source_value</obo:IAO_0000118>
         <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#visit_occurrence</obo:IAO_0000119>
@@ -8510,7 +8512,7 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A condition source value that refers to the condition as recorded in the original data source (e.g., ICD-10 or Read code). For reference only.</obo:IAO_0000115>
+        <obo:IAO_0000115>A condition source value that refers to the condition as recorded in the original data source (e.g., ICD-10 or Read code).</obo:IAO_0000115>
         <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
         <obo:IAO_0000118>condition_source_value</obo:IAO_0000118>
         <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#condition_occurrence</obo:IAO_0000119>
@@ -8548,7 +8550,7 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A drug exposure source value that refers to the medication as recorded in the original data source (e.g., NDC or Gemscript code). For reference only.</obo:IAO_0000115>
+        <obo:IAO_0000115>A drug exposure source value that refers to the medication as recorded in the original data source (e.g., NDC or Gemscript code).</obo:IAO_0000115>
         <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
         <obo:IAO_0000118>drug_source_value</obo:IAO_0000118>
         <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#drug_exposure</obo:IAO_0000119>
@@ -8586,7 +8588,7 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A dose unit source value that refers to the verbatim value from the source data representing the dose unit of the drug given. For reference only.</obo:IAO_0000115>
+        <obo:IAO_0000115>A dose unit source value that refers to the verbatim value from the source data representing the dose unit of the drug given.</obo:IAO_0000115>
         <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
         <obo:IAO_0000118>dose_unit_source_value</obo:IAO_0000118>
         <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#drug_exposure</obo:IAO_0000119>
@@ -8643,7 +8645,7 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A device source value that refers to the device recorded in the original data source (e.g., NDC or Gemscript code). For reference only.</obo:IAO_0000115>
+        <obo:IAO_0000115>A device source value that refers to the device recorded in the original data source (e.g., NDC or Gemscript code).</obo:IAO_0000115>
         <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
         <obo:IAO_0000118>device_source_value</obo:IAO_0000118>
         <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#device_exposure</obo:IAO_0000119>
@@ -8757,7 +8759,7 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A cause source value that refers to the person&apos;s death cause reason in original data source. For reference only.</obo:IAO_0000115>
+        <obo:IAO_0000115>A cause source value that refers to the person&apos;s death cause reason in original data source.</obo:IAO_0000115>
         <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
         <obo:IAO_0000118>cause_source_value</obo:IAO_0000118>
         <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#death</obo:IAO_0000119>
@@ -8833,7 +8835,7 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A disease status source value that refers to the condition status (e.g., active, remission) recorded in the original data source. For reference only.</obo:IAO_0000115>
+        <obo:IAO_0000115>A disease status source value that refers to the condition status (e.g., active, remission) recorded in the original data source.</obo:IAO_0000115>
         <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
         <obo:IAO_0000118>disease_status_source_value</obo:IAO_0000118>
         <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#specimen</obo:IAO_0000119>
@@ -8871,7 +8873,7 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A country source value that refers to the name of the country in the original data source. For reference only.</obo:IAO_0000115>
+        <obo:IAO_0000115>A country source value that refers to the name of the country in the original data source.</obo:IAO_0000115>
         <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
         <obo:IAO_0000118>country_source_value</obo:IAO_0000118>
         <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#location</obo:IAO_0000119>
@@ -9080,7 +9082,7 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A diagnosis-related group (DRG) source value that refers to the classification code for hospital cases (used in the U.S.), as recorded in the original data source. For reference only.</obo:IAO_0000115>
+        <obo:IAO_0000115>A diagnosis-related group (DRG) source value that refers to the classification code for hospital cases (used in the U.S.), as recorded in the original data source.</obo:IAO_0000115>
         <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
         <obo:IAO_0000118>drg_source_value</obo:IAO_0000118>
         <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#cost</obo:IAO_0000119>
@@ -9099,7 +9101,7 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>An episode source value that refers to the original code for the episode recorded in the source data. This code is mapped to a standard condition concept, and the original value is stored here for reference only.</obo:IAO_0000115>
+        <obo:IAO_0000115>An episode source value that refers to the original code for the episode recorded in the source data. This code is mapped to a standard condition concept, and the original value is stored here.</obo:IAO_0000115>
         <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
         <obo:IAO_0000118>episode_source_value</obo:IAO_0000118>
         <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#episode</obo:IAO_0000119>
@@ -9126,6 +9128,98 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
         <obo:IAO_0000118>visit episode</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Inpatient_care</obo:IAO_0000119>
         <rdfs:label xml:lang="en">medical subvisit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000677 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000677">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000564"/>
+        <obo:IAO_0000115>It is based on drug exposure table to combined all exposures close enough into a single drug era.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#DRUG_EXPOSURE</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">drug era</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000678 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000678">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000527"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>condition_era groups multiple, closely timed occurrences of the same diagnosis into one interval, making analysis of prevalence, duration, and chronicity much easier and more accurate</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>condition_era</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">medical condition era</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000679 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000679">
+        <rdfs:comment xml:lang="en">clinical note</rdfs:comment>
+        <rdfs:label>clinical note</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000680 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000680">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115>Vocabulary have few related definitions, in linguistics or data science a vocabulary can mean a set of recognized terms or tokens</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">vocabulary</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000681 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000681">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000680"/>
+        <obo:IAO_0000115>Terminology refers to a set of specialized words or expressions used in a specific field, subject, or profession</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">terminology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000682 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000682">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000680"/>
+        <obo:IAO_0000115>Ontology is a formal representation of knowledge as a set of concepts (classes), relationships, and terms within a domain, often with defined meanings and logical structure.</obo:IAO_0000115>
+        <obo:IAO_0000115>Ontology is a kind of control vocabulary.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">ontology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000683 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000683">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A centrally registered identifier that refers to a value defined by the original data source, such as a patient&apos;s value assigned by the original hospital.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#PERSON</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">concept ID</rdfs:label>
     </owl:Class>
     
 
@@ -9822,5 +9916,5 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
 
 
 
-<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
