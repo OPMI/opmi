@@ -9224,6 +9224,405 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000684 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000684">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Transfer the value from different source value into a standard concept.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#source_to_concept_map</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">source concept</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000685 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000685">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000684"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Stores the concept_id corresponding to the concept of &quot;sex at birth&quot; in the source system.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>gender_source_concept_id</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#person</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">gender source concept</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000686 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000686">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000684"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Stores the concept_id corresponding to the concept of race in the source system.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>race_source_concept_id</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#person</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">race source concept</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000687 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000687">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000684"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Stores the concept_id corresponding to the concept of &quot;ethnicity&quot; in the source system.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>ethnicity_source_concept_id</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#person</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">ethnicity source concept</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000688 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000688">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000684"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The visit source concept represents the concept_id from the source system that was used to encode the type of visit—this is only populated if the source stores visit types as concept IDs; otherwise it is set to 0.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>visit_source_concept_id</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#visit_occurrence</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">visit source concept</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000689 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000689">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000684"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>visit_source_concept_id stores the identifier of the concept originally used by the source system to represent the visit type—only included if the source itself recorded visits using concept IDs; otherwise, it’s set to 0.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>visit_detail_source_concept_id</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#visit_occurrence</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">visit detail source concept</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000690 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000690">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000684"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The concept identifier representing the original condition code from the source data, which may be non-standard and primarily used when greater source detail is needed.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>condition_source_concept_id</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#condition_occurrence</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">condition source concept</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000691 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000691">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000684"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A concept identifier representing the original drug code from the source data, used when standard concepts do not capture sufficient detail.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>drug_source_concept_id</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#drug_exposure</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">drug source concept</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000692 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000692">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000684"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A concept identifier representing the original procedure code from the source data, used when standard concepts do not fully capture the procedure details.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>procedure_source_concept_id</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#procedure_occurrence</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">procedure source concept</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000693 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000693">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000684"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A concept identifier that captures the original device code from the source data when standard device concepts do not provide sufficient detail.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>device_source_concept_id</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#device_exposure</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">device source concept</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000694 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000694">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000684"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A concept identifier that captures the original unit of measurement from the source data when standard unit concepts are insufficient.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>unit_source_concept_id</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#device_exposure</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">unit source concept</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000695 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000695">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000684"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A concept identifier used to capture the original source-specific measurement type when standard concepts are insufficient to represent it.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>measurement_source_concept_id</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#measurement</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">measurement source concept</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000696 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000696">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000684"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A concept identifier used to capture the original source-specific observation when standardized concepts are not sufficient to represent its detail.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>observation_source_concept_id</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#observation</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">observation source concept</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000697 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000697">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000684"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A concept identifier used to record the original cause of death as coded in the source system, even if it is not standardized.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>cause_source_concept_id</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#death</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">cause source concept</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000698 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000698">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000684"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A concept identifier that represents the original source code for clinical terms extracted from notes using natural language processing.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>note_nlp_source_concept_id</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#note_nlp</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">note nlp source concept</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000699 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000699">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000684"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A concept identifier that represents the source code for provider specialty, if recorded using a supported vocabulary; often zero when proprietary codes are used.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>specialty_source_concept_id</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#provider</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">specialty source concept</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000700 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000700">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000684"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A concept identifier that represents the source code for the payer (e.g., insurance provider) from the original data, when available in a supported vocabulary.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>payer_source_concept_id</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#payer_plan_period</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">payer source concept</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000701 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000701">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000684"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A concept identifier representing the source code for the insurance plan in the original data, when the plan is coded using a vocabulary supported by the data network.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>plan_source_concept_id</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#payer_plan_period</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">plan source concept</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000702 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000702">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000684"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A concept identifier representing the source code for the sponsor of the insurance plan, if the source data uses a supported vocabulary.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>sponser_source_concept_id</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#payer_plan_period</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">sponsor source concept</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000703 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000703">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000684"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A concept identifier representing the coded reason for stopping a treatment or drug, based on the original source vocabulary.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>stop_reason_source_concept_id</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#payer_plan_period</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">stop reason source concept</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000704 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000704">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000684"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The source code for the Episode as it appears in the original source data.
+This code is mapped to a Standard Condition Concept in the Standardized Vocabularies, and the original code is stored here for reference.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
+        <obo:IAO_0000118>episode_source_concept_id</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#episode</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">episode source concept</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OPMI_0004475 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0004475">
