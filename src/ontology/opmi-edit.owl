@@ -9237,7 +9237,7 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
         <obo:IAO_0000115>Transfer the value from different source value into a standard concept.</obo:IAO_0000115>
         <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
         <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#source_to_concept_map</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">source concept</rdfs:label>
+        <rdfs:label xml:lang="en">source concept identifier</rdfs:label>
     </owl:Class>
     
 
@@ -9256,7 +9256,7 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
         <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
         <obo:IAO_0000118>gender_source_concept_id</obo:IAO_0000118>
         <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#person</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">gender source concept</rdfs:label>
+        <rdfs:label xml:lang="en">gender source concept identifier</rdfs:label>
     </owl:Class>
     
 
@@ -9275,7 +9275,7 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
         <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
         <obo:IAO_0000118>race_source_concept_id</obo:IAO_0000118>
         <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#person</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">race source concept</rdfs:label>
+        <rdfs:label xml:lang="en">race source concept identifier</rdfs:label>
     </owl:Class>
     
 
@@ -9294,7 +9294,7 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
         <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
         <obo:IAO_0000118>ethnicity_source_concept_id</obo:IAO_0000118>
         <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#person</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">ethnicity source concept</rdfs:label>
+        <rdfs:label xml:lang="en">ethnicity source concept identifier</rdfs:label>
     </owl:Class>
     
 
@@ -9313,7 +9313,7 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
         <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
         <obo:IAO_0000118>visit_source_concept_id</obo:IAO_0000118>
         <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#visit_occurrence</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">visit source concept</rdfs:label>
+        <rdfs:label xml:lang="en">visit source concept identifier</rdfs:label>
     </owl:Class>
     
 
@@ -9332,7 +9332,7 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
         <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
         <obo:IAO_0000118>visit_detail_source_concept_id</obo:IAO_0000118>
         <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#visit_occurrence</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">visit detail source concept</rdfs:label>
+        <rdfs:label xml:lang="en">visit detail source concept identifier</rdfs:label>
     </owl:Class>
     
 
@@ -9351,7 +9351,7 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
         <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
         <obo:IAO_0000118>condition_source_concept_id</obo:IAO_0000118>
         <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#condition_occurrence</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">condition source concept</rdfs:label>
+        <rdfs:label xml:lang="en">condition source concept identifier</rdfs:label>
     </owl:Class>
     
 
@@ -9370,7 +9370,7 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
         <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
         <obo:IAO_0000118>drug_source_concept_id</obo:IAO_0000118>
         <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#drug_exposure</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">drug source concept</rdfs:label>
+        <rdfs:label xml:lang="en">drug source concept identifier</rdfs:label>
     </owl:Class>
     
 
@@ -9389,7 +9389,7 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
         <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
         <obo:IAO_0000118>procedure_source_concept_id</obo:IAO_0000118>
         <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#procedure_occurrence</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">procedure source concept</rdfs:label>
+        <rdfs:label xml:lang="en">procedure source concept identifier</rdfs:label>
     </owl:Class>
     
 
@@ -9408,7 +9408,7 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
         <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
         <obo:IAO_0000118>device_source_concept_id</obo:IAO_0000118>
         <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#device_exposure</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">device source concept</rdfs:label>
+        <rdfs:label xml:lang="en">device source concept identifier</rdfs:label>
     </owl:Class>
     
 
@@ -9427,7 +9427,7 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
         <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
         <obo:IAO_0000118>unit_source_concept_id</obo:IAO_0000118>
         <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#device_exposure</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">unit source concept</rdfs:label>
+        <rdfs:label xml:lang="en">unit source concept identifier</rdfs:label>
     </owl:Class>
     
 
@@ -9446,7 +9446,7 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
         <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
         <obo:IAO_0000118>measurement_source_concept_id</obo:IAO_0000118>
         <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#measurement</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">measurement source concept</rdfs:label>
+        <rdfs:label xml:lang="en">measurement source concept identifier</rdfs:label>
     </owl:Class>
     
 
@@ -9465,7 +9465,7 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
         <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
         <obo:IAO_0000118>observation_source_concept_id</obo:IAO_0000118>
         <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#observation</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">observation source concept</rdfs:label>
+        <rdfs:label xml:lang="en">observation source concept identifier</rdfs:label>
     </owl:Class>
     
 
@@ -9484,7 +9484,7 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
         <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
         <obo:IAO_0000118>cause_source_concept_id</obo:IAO_0000118>
         <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#death</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">cause source concept</rdfs:label>
+        <rdfs:label xml:lang="en">cause source concept identifier</rdfs:label>
     </owl:Class>
     
 
@@ -9503,7 +9503,7 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
         <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
         <obo:IAO_0000118>note_nlp_source_concept_id</obo:IAO_0000118>
         <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#note_nlp</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">note nlp source concept</rdfs:label>
+        <rdfs:label xml:lang="en">note nlp source concept identifier</rdfs:label>
     </owl:Class>
     
 
@@ -9522,7 +9522,7 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
         <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
         <obo:IAO_0000118>specialty_source_concept_id</obo:IAO_0000118>
         <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#provider</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">specialty source concept</rdfs:label>
+        <rdfs:label xml:lang="en">specialty source concept identifier</rdfs:label>
     </owl:Class>
     
 
@@ -9541,7 +9541,7 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
         <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
         <obo:IAO_0000118>payer_source_concept_id</obo:IAO_0000118>
         <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#payer_plan_period</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">payer source concept</rdfs:label>
+        <rdfs:label xml:lang="en">payer source concept identifier</rdfs:label>
     </owl:Class>
     
 
@@ -9560,7 +9560,7 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
         <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
         <obo:IAO_0000118>plan_source_concept_id</obo:IAO_0000118>
         <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#payer_plan_period</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">plan source concept</rdfs:label>
+        <rdfs:label xml:lang="en">plan source concept identifier</rdfs:label>
     </owl:Class>
     
 
@@ -9579,7 +9579,7 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
         <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
         <obo:IAO_0000118>sponser_source_concept_id</obo:IAO_0000118>
         <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#payer_plan_period</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">sponsor source concept</rdfs:label>
+        <rdfs:label xml:lang="en">sponsor source concept identifier</rdfs:label>
     </owl:Class>
     
 
@@ -9598,7 +9598,7 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
         <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
         <obo:IAO_0000118>stop_reason_source_concept_id</obo:IAO_0000118>
         <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#payer_plan_period</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">stop reason source concept</rdfs:label>
+        <rdfs:label xml:lang="en">stop reason source concept identifier</rdfs:label>
     </owl:Class>
     
 
@@ -9618,7 +9618,7 @@ This code is mapped to a Standard Condition Concept in the Standardized Vocabula
         <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
         <obo:IAO_0000118>episode_source_concept_id</obo:IAO_0000118>
         <obo:IAO_0000119>https://ohdsi.github.io/CommonDataModel/cdm54.html#episode</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">episode source concept</rdfs:label>
+        <rdfs:label xml:lang="en">episode source concept identifier</rdfs:label>
     </owl:Class>
     
 
