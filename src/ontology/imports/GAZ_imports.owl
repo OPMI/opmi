@@ -1,13 +1,14 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/opmi/GAZ_imports.owl#"
      xml:base="http://purl.obolibrary.org/obo/opmi/GAZ_imports.owl"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/opmi/GAZ_imports.owl"/>
     
 
@@ -20,65 +21,149 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
-        <rdfs:label>alternative term</rdfs:label>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001900">
-        <rdfs:label>temporal interpretation</rdfs:label>
-        <obo:IAO_0000115>An assertion that holds between an OWL Object Property and a temporal interpretation that elucidates how OWL Class Axioms that use this property are to be interpreted in a temporal context.</obo:IAO_0000115>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
-        <rdfs:label>editor note</rdfs:label>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
-        <rdfs:label xml:lang="en">imported from</rdfs:label>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">database_cross_reference</rdfs:label>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_related_synonym</rdfs:label>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
-        <rdfs:label>example of usage</rdfs:label>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
-        <rdfs:label>editor preferred term~editor preferred label</rdfs:label>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_obo_namespace</rdfs:label>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_exact_synonym</rdfs:label>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by"/>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shorthand</rdfs:label>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_alternative_id</rdfs:label>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_narrow_synonym</rdfs:label>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
     
 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Datatypes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
 
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
+        <rdfs:label>editor preferred term~editor preferred label</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
+        <rdfs:label>example of usage</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
+        <rdfs:label>editor note</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
+        <rdfs:label>alternative term</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0001900 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001900">
+        <obo:IAO_0000115>An assertion that holds between an OWL Object Property and a temporal interpretation that elucidates how OWL Class Axioms that use this property are to be interpreted in a temporal context.</obo:IAO_0000115>
+        <rdfs:label>temporal interpretation</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasAlternativeId -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_alternative_id</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">database_cross_reference</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_exact_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_narrow_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_obo_namespace</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_related_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#shorthand -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shorthand</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
     
 
 
@@ -97,31 +182,31 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001025">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">located_in</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">located_in (type level)</rdfs:label>
-        <rdfs:label xml:lang="en">located in</rdfs:label>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0001025"/>
+            <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0001025"/>
+        </owl:propertyChainAxiom>
+        <obo:IAO_0000111 xml:lang="en">located in</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">my brain is located in my head</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">this rat is located in this cage</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">a relation between two independent continuants, the target and the location, in which the target is entirely within the location</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Location as a relation between instances: The primitive instance-level relation c located_in r at t reflects the fact that each continuant is at any given time associated with exactly one spatial region, namely its exact location. Following we can use this relation to define a further instance-level location relation - not between a continuant and the region which it exactly occupies, but rather between one continuant and another. c is located in c1, in this sense, whenever the spatial region occupied by c is part_of the spatial region occupied by c1.    Note that this relation comprehends both the relation of exact location between one continuant and another which obtains when r and r1 are identical (for example, when a portion of fluid exactly fills a cavity), as well as those sorts of inexact location relations which obtain, for example, between brain and head or between ovum and uterus</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Most location relations will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime</obo:IAO_0000116>
+        <obo:IAO_0000118 xml:lang="en">located_in</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/gaz.owl"/>
+        <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
+        <dc:source>http://www.obofoundry.org/ro/#OBO_REL:located_in</dc:source>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RO:0001025</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">file:/Users/michaelashburner/Desktop/gaz/gaz.oboInOwl</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">located_in</oboInOwl:id>
         <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">located_in</oboInOwl:shorthand>
-        <dc:source>http://www.obofoundry.org/ro/#OBO_REL:located_in</dc:source>
-        <obo:IAO_0000116 xml:lang="en">Location as a relation between instances: The primitive instance-level relation c located_in r at t reflects the fact that each continuant is at any given time associated with exactly one spatial region, namely its exact location. Following we can use this relation to define a further instance-level location relation - not between a continuant and the region which it exactly occupies, but rather between one continuant and another. c is located in c1, in this sense, whenever the spatial region occupied by c is part_of the spatial region occupied by c1.    Note that this relation comprehends both the relation of exact location between one continuant and another which obtains when r and r1 are identical (for example, when a portion of fluid exactly fills a cavity), as well as those sorts of inexact location relations which obtain, for example, between brain and head or between ovum and uterus</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">Most location relations will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime</obo:IAO_0000116>
-        <obo:IAO_0000115 xml:lang="en">a relation between two independent continuants, the target and the location, in which the target is entirely within the location</obo:IAO_0000115>
-        <obo:IAO_0000111 xml:lang="en">located in</obo:IAO_0000111>
-        <obo:IAO_0000118 xml:lang="en">located_in</obo:IAO_0000118>
-        <obo:IAO_0000112 xml:lang="en">my brain is located in my head</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">this rat is located in this cage</obo:IAO_0000112>
-        <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/gaz.owl"/>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0001025"/>
-            <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        </owl:propertyChainAxiom>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0001025"/>
-        </owl:propertyChainAxiom>
+        <rdfs:label xml:lang="en">located in</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">located_in</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">located_in (type level)</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -149,10 +234,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00000009 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000009">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">national geopolitical entity</rdfs:label>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A political association with effective dominion over a geographic area.</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENVO</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENVO:00000009</oboInOwl:id>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/gaz.owl"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FTT:424</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FTT:566</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FTT:567</oboInOwl:hasDbXref>
@@ -163,15 +246,17 @@
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TGN:81010</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TGN:81011</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TGN:81102</oboInOwl:hasDbXref>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">country</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Nation</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nation</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">independent nation</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">independent political entity</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">independent sovereign nation</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENVO</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">country</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">political entity</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">state</oboInOwl:hasRelatedSynonym>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/gaz.owl"/>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENVO:00000009</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">national geopolitical entity</rdfs:label>
     </owl:Class>
     
 
@@ -179,48 +264,21 @@
     <!-- http://purl.obolibrary.org/obo/GAZ_00000013 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00000013">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">continent</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GAZ_00000448"/>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CONTIN</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Continent {alternative name}</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FTT:540</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ:00000013</oboInOwl:id>
-        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ:00190836</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GeoNames:CONT</oboInOwl:hasDbXref>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One of the large, unbroken masses of land into which the Earth&#39;s surface is divided.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TGN:21402</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TGN:29000</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">continent {alternative name}</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">continental region</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/gaz.owl"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/GAZ_00000448 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00000448">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geographic location</rdfs:label>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A reference to a place on the Earth, by its name or by its geographical location.</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ:00000448</oboInOwl:id>
-        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ:00000467</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geographic region {alternative name}</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/gaz.owl"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00000448"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/GAZ_00000460 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00000460">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eurasia</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GAZ_00000013"/>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ:00000460</oboInOwl:id>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The convention used in gaz.obo is that the Europe-Asia boundary follows the watershed of the Ural Mountains from near Kara, Russia on the Kara Sea to the source of the Ural River, then follows that river to the Caspian Sea. The border then follows the watershed of the Caucasus Mountains from the Caspian Sea to the Black Sea.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/gaz.owl"/>
     </owl:Class>
     
 
@@ -228,18 +286,7 @@
     <!-- http://purl.obolibrary.org/obo/GAZ_00002459 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00002459">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">United States of America</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GAZ_00000448"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A federal constitutional republic comprising fifty states and a federal district. The country is situated mostly in central North America, where its forty-eight contiguous states and Washington, DC, the capital district, lie between the Pacific and Atlantic Oceans, bordered by Canada to the north and Mexico to the south. The State of Alaska is in the northwest of the continent, with Canada to its east and Russia to the west across the Bering Strait, and the State of Hawaii is in the mid-Pacific. The United States also possesses several territories, or insular areas, that are scattered around the Caribbean and Pacific. The states are divided into smaller administrative regions, called counties in most states, exceptions being Alaska (parts of the state are organized into subdivisions called boroughs; the rest of the state&#39;s territory that is not included in any borough is divided into &quot;census areas&quot;), and Louisiana (which is divided into county-equivalents that are called parishes). There are also independent cities which are within particular states but not part of any particular county or consolidated city-counties. Another type of organization is where the city and county are unified and function as an independent city. There are thirty-nine independent cities in Virginia and other independent cities or city-counties are San Francisco, California, Baltimore, Maryland, St. Louis, Missouri, Denver, Colorado and Carson City, Nevada. Counties can include a number of cities, towns, villages, or hamlets, or sometimes just a part of a city. Counties have varying degrees of political and legal significance, but they are always administrative divisions of the state. Counties in many states are further subdivided into townships, which, by definition, are administrative divisions of a county. In some states, such as Michigan, a township can file a charter with the state government, making itself into a &quot;charter township&quot;, which is a type of mixed municipal and township status (giving the township some of the rights of a city without all of the responsibilities), much in the way a metropolitan municipality is a mixed municipality and county.</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ:00002459</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISO3166-1:840</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISO3166-1:US</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISO3166-1:USA</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISO3166-2:US</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">U.S.A</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USA</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/gaz.owl"/>
     </owl:Class>
     
 
@@ -257,58 +304,29 @@
 
     <!-- http://purl.obolibrary.org/obo/GAZ_00000013 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/GAZ_00000013">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">continent</rdfs:label>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CONTIN</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Continent {alternative name}</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FTT:540</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ:00000013</oboInOwl:id>
-        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ:00190836</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GeoNames:CONT</oboInOwl:hasDbXref>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One of the large, unbroken masses of land into which the Earth&#39;s surface is divided.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TGN:21402</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TGN:29000</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">continent {alternative name}</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">continental region</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/gaz.owl"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/GAZ_00000013"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/GAZ_00000448 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/GAZ_00000448">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geographic location</rdfs:label>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A reference to a place on the Earth, by its name or by its geographical location.</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ:00000448</oboInOwl:id>
-        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ:00000467</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geographic region {alternative name}</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/gaz.owl"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/GAZ_00000448"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/GAZ_00000460 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/GAZ_00000460">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eurasia</rdfs:label>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ:00000460</oboInOwl:id>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The convention used in gaz.obo is that the Europe-Asia boundary follows the watershed of the Ural Mountains from near Kara, Russia on the Kara Sea to the source of the Ural River, then follows that river to the Caspian Sea. The border then follows the watershed of the Caucasus Mountains from the Caspian Sea to the Black Sea.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/gaz.owl"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/GAZ_00000460"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/GAZ_00000464 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/GAZ_00000464">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Europe</rdfs:label>
+        <obo:RO_0001025 rdf:resource="http://purl.obolibrary.org/obo/GAZ_00000460"/>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ:00000464</oboInOwl:id>
-        <obo:RO_0001025 rdf:resource="http://purl.obolibrary.org/obo/GAZ_00000460"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Europe</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -316,40 +334,28 @@
     <!-- http://purl.obolibrary.org/obo/GAZ_00000465 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/GAZ_00000465">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asia</rdfs:label>
+        <obo:RO_0001025 rdf:resource="http://purl.obolibrary.org/obo/GAZ_00000460"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Part of the landmass of Eurasia, with the western portion of the latter occupied by Europe, lying east of the Suez Canal, east of the Ural Mountains, and south of the Caucasus Mountains and the Caspian and Black Seas. It is bounded on the east by the Pacific Ocean, on the south by the Indian Ocean, and on the north by the Arctic Ocean.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ:00000465</oboInOwl:id>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Part of the landmass of Eurasia, with the western portion of the latter occupied by Europe, lying east of the Suez Canal, east of the Ural Mountains, and south of the Caucasus Mountains and the Caspian and Black Seas. It is bounded on the east by the Pacific Ocean, on the south by the Indian Ocean, and on the north by the Arctic Ocean.</obo:IAO_0000115>
-        <obo:RO_0001025 rdf:resource="http://purl.obolibrary.org/obo/GAZ_00000460"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asia</rdfs:label>
     </owl:NamedIndividual>
     
 
 
     <!-- http://purl.obolibrary.org/obo/GAZ_00002459 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/GAZ_00002459">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">United States of America</rdfs:label>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A federal constitutional republic comprising fifty states and a federal district. The country is situated mostly in central North America, where its forty-eight contiguous states and Washington, DC, the capital district, lie between the Pacific and Atlantic Oceans, bordered by Canada to the north and Mexico to the south. The State of Alaska is in the northwest of the continent, with Canada to its east and Russia to the west across the Bering Strait, and the State of Hawaii is in the mid-Pacific. The United States also possesses several territories, or insular areas, that are scattered around the Caribbean and Pacific. The states are divided into smaller administrative regions, called counties in most states, exceptions being Alaska (parts of the state are organized into subdivisions called boroughs; the rest of the state&#39;s territory that is not included in any borough is divided into &quot;census areas&quot;), and Louisiana (which is divided into county-equivalents that are called parishes). There are also independent cities which are within particular states but not part of any particular county or consolidated city-counties. Another type of organization is where the city and county are unified and function as an independent city. There are thirty-nine independent cities in Virginia and other independent cities or city-counties are San Francisco, California, Baltimore, Maryland, St. Louis, Missouri, Denver, Colorado and Carson City, Nevada. Counties can include a number of cities, towns, villages, or hamlets, or sometimes just a part of a city. Counties have varying degrees of political and legal significance, but they are always administrative divisions of the state. Counties in many states are further subdivided into townships, which, by definition, are administrative divisions of a county. In some states, such as Michigan, a township can file a charter with the state government, making itself into a &quot;charter township&quot;, which is a type of mixed municipal and township status (giving the township some of the rights of a city without all of the responsibilities), much in the way a metropolitan municipality is a mixed municipality and county.</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ:00002459</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISO3166-1:840</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISO3166-1:US</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISO3166-1:USA</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISO3166-2:US</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">U.S.A</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USA</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/gaz.owl"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/GAZ_00002459"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/GAZ_00002471 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/GAZ_00002471">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">East Asia</rdfs:label>
+        <obo:RO_0001025 rdf:resource="http://purl.obolibrary.org/obo/GAZ_00000465"/>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ:00002471</oboInOwl:id>
-        <obo:RO_0001025 rdf:resource="http://purl.obolibrary.org/obo/GAZ_00000465"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">East Asia</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -357,21 +363,21 @@
     <!-- http://purl.obolibrary.org/obo/GAZ_00002637 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/GAZ_00002637">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">United Kingdom</rdfs:label>
+        <obo:RO_0001025 rdf:resource="http://purl.obolibrary.org/obo/GAZ_00281547"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A sovereign island country located off the northwestern coast of mainland Europe comprising of the four constituent countries; England, Scotland, Wales and Northern Ireland. It comprises the island of Great Britain, the northeast part of the island of Ireland and many small islands. Apart from Northern Ireland the UK is surrounded by the Atlantic Ocean, the North Sea, the English Channel and the Irish Sea. The largest island, Great Britain, is linked to France by the Channel Tunnel.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Britain</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G.B</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ:00002637</oboInOwl:id>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GB</oboInOwl:hasExactSynonym>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISO3166-1:826</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISO3166-1:GB</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISO3166-1:GBR</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISO3166-2:GB</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Britain</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G.B</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GB</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">U.K. {abbrevation}</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UK</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">United Kingdom of Great Britain and Northern Ireland</oboInOwl:hasExactSynonym>
-        <obo:RO_0001025 rdf:resource="http://purl.obolibrary.org/obo/GAZ_00281547"/>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ:00002637</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">United Kingdom</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -379,12 +385,12 @@
     <!-- http://purl.obolibrary.org/obo/GAZ_00002747 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/GAZ_00002747">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Japan</rdfs:label>
+        <obo:RO_0001025 rdf:resource="http://purl.obolibrary.org/obo/GAZ_00002471"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An island country in East Asia. Located in the Pacific Ocean, it lies to the east of China, Korea and Russia, stretching from the Sea of Okhotsk in the north to the East China Sea in the south.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nippon-koku</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ:00002747</oboInOwl:id>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nippon-koku</oboInOwl:hasExactSynonym>
-        <obo:RO_0001025 rdf:resource="http://purl.obolibrary.org/obo/GAZ_00002471"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Japan</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -393,13 +399,13 @@
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/GAZ_00002845">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000009"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">China</rdfs:label>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A large country in Northeast Asia. China borders 14 nations (counted clockwise from south): Vietnam, Laos, Burma, India, Bhutan, Nepal, Pakistan, Afghanistan, Tajikistan, Kyrgyzstan, Kazakhstan, Russia, Mongolia and North Korea. Additionally the border between PRC and ROC is located in territorial waters. The People&#39;s Republic of China has administrative control over twenty-two provinces and considers Taiwan to be its twenty-third province. There are also five autonomous regions, each with a designated minority group; four municipalities; and two Special Administrative Regions that enjoy considerable autonomy. The People&#39;s Republic of China administers 33 province-level regions, 333 prefecture-level regions, 2,862 county-level regions, 41,636 township-level regions, and several village-level regions.</obo:IAO_0000115>
+        <obo:RO_0001025 rdf:resource="http://purl.obolibrary.org/obo/GAZ_00002846"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A large country in Northeast Asia. China borders 14 nations (counted clockwise from south): Vietnam, Laos, Burma, India, Bhutan, Nepal, Pakistan, Afghanistan, Tajikistan, Kyrgyzstan, Kazakhstan, Russia, Mongolia and North Korea. Additionally the border between PRC and ROC is located in territorial waters. The People&apos;s Republic of China has administrative control over twenty-two provinces and considers Taiwan to be its twenty-third province. There are also five autonomous regions, each with a designated minority group; four municipalities; and two Special Administrative Regions that enjoy considerable autonomy. The People&apos;s Republic of China administers 33 province-level regions, 333 prefecture-level regions, 2,862 county-level regions, 41,636 township-level regions, and several village-level regions.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">People&apos;s Republic of China</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zhonghua Renmin Gongheguo</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ:00002845</oboInOwl:id>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">People&#39;s Republic of China</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zhonghua Renmin Gongheguo</oboInOwl:hasExactSynonym>
-        <obo:RO_0001025 rdf:resource="http://purl.obolibrary.org/obo/GAZ_00002846"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">China</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -407,10 +413,10 @@
     <!-- http://purl.obolibrary.org/obo/GAZ_00002846 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/GAZ_00002846">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Northeast Asia</rdfs:label>
+        <obo:RO_0001025 rdf:resource="http://purl.obolibrary.org/obo/GAZ_00000465"/>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ:00002846</oboInOwl:id>
-        <obo:RO_0001025 rdf:resource="http://purl.obolibrary.org/obo/GAZ_00000465"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Northeast Asia</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -418,17 +424,73 @@
     <!-- http://purl.obolibrary.org/obo/GAZ_00281547 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/GAZ_00281547">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">British Isles</rdfs:label>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-05-16T10:11:46Z</oboInOwl:creation_date>
+        <obo:RO_0001025 rdf:resource="http://purl.obolibrary.org/obo/GAZ_00000464"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A group of islands off the northwest coast of continental Europe that include the islands of Great Britain and Ireland, and over six thousand smaller islands. There are two sovereign states located on the islands: the United Kingdom and the Republic of Ireland. The British Isles also include two dependencies of the United Kingdom: the Isle of Man and, by tradition, the Channel Islands, although the latter are not physically a part of the island group.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">michaelashburner</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-05-16T10:11:46Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ:00281547</oboInOwl:id>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">michaelashburner</oboInOwl:created_by>
-        <obo:RO_0001025 rdf:resource="http://purl.obolibrary.org/obo/GAZ_00000464"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">British Isles</rdfs:label>
     </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00000013">
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ:00000013</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One of the large, unbroken masses of land into which the Earth&apos;s surface is divided.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/gaz.owl"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FTT:540</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TGN:21402</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">continent</rdfs:label>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GeoNames:CONT</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">continental region</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ:00190836</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CONTIN</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">continent {alternative name}</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Continent {alternative name}</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TGN:29000</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00000448">
+        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ:00000467</oboInOwl:hasAlternativeId>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ:00000448</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A reference to a place on the Earth, by its name or by its geographical location.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ</oboInOwl:hasOBONamespace>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geographic location</rdfs:label>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geographic region {alternative name}</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/gaz.owl"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00000460">
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ:00000460</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eurasia</rdfs:label>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/gaz.owl"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The convention used in gaz.obo is that the Europe-Asia boundary follows the watershed of the Ural Mountains from near Kara, Russia on the Kara Sea to the source of the Ural River, then follows that river to the Caspian Sea. The border then follows the watershed of the Caucasus Mountains from the Caspian Sea to the Black Sea.</obo:IAO_0000115>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00002459">
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USA</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ:00002459</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISO3166-1:US</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISO3166-1:840</oboInOwl:hasDbXref>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A federal constitutional republic comprising fifty states and a federal district. The country is situated mostly in central North America, where its forty-eight contiguous states and Washington, DC, the capital district, lie between the Pacific and Atlantic Oceans, bordered by Canada to the north and Mexico to the south. The State of Alaska is in the northwest of the continent, with Canada to its east and Russia to the west across the Bering Strait, and the State of Hawaii is in the mid-Pacific. The United States also possesses several territories, or insular areas, that are scattered around the Caribbean and Pacific. The states are divided into smaller administrative regions, called counties in most states, exceptions being Alaska (parts of the state are organized into subdivisions called boroughs; the rest of the state&apos;s territory that is not included in any borough is divided into &quot;census areas&quot;), and Louisiana (which is divided into county-equivalents that are called parishes). There are also independent cities which are within particular states but not part of any particular county or consolidated city-counties. Another type of organization is where the city and county are unified and function as an independent city. There are thirty-nine independent cities in Virginia and other independent cities or city-counties are San Francisco, California, Baltimore, Maryland, St. Louis, Missouri, Denver, Colorado and Carson City, Nevada. Counties can include a number of cities, towns, villages, or hamlets, or sometimes just a part of a city. Counties have varying degrees of political and legal significance, but they are always administrative divisions of the state. Counties in many states are further subdivided into townships, which, by definition, are administrative divisions of a county. In some states, such as Michigan, a township can file a charter with the state government, making itself into a &quot;charter township&quot;, which is a type of mixed municipal and township status (giving the township some of the rights of a city without all of the responsibilities), much in the way a metropolitan municipality is a mixed municipality and county.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">United States of America</rdfs:label>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">U.S.A</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/gaz.owl"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISO3166-2:US</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISO3166-1:USA</oboInOwl:hasDbXref>
+    </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 1.3.5.1016) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 

@@ -1533,6 +1533,33 @@ The patient is a 50-year-old man. His medical history was not contributory. At t
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000709 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000709">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geographic coordinates are a system of using latitude and longitude to pinpoint exact locations on Earth.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000710 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000710">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000709"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Latitude is a geographic coordinate that specifies the north-south position of a point on the Earth&apos;s surface. It&apos;s measured as an angle, ranging from 0° at the Equator to 90° at the North and South Poles.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000711 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000711">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000709"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Longitude is a geographic coordinate that specifies the east-west position of a point on Earth&apos;s surface. It&apos;s measured in degrees, with the Prime Meridian (passing through Greenwich, England) being 0°.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UO_0000003 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000003">
