@@ -24,6 +24,11 @@ http://purl.obolibrary.org/obo/HP_0000939 #Osteoporosis
 http://purl.obolibrary.org/obo/HP_0000964 #Eczema
 http://purl.obolibrary.org/obo/HP_0005110 #atrial fibrillation
 http://purl.obolibrary.org/obo/HP_0000118 #Phenotypic abnormality
+http://purl.obolibrary.org/obo/HP_0000822 #Hypertension
+http://purl.obolibrary.org/obo/HP_0001541 #Ascites
+http://purl.obolibrary.org/obo/HP_0002619 #Varicose veins
+http://purl.obolibrary.org/obo/HP_0011675 #Arrhythmia
+http://purl.obolibrary.org/obo/HP_0032106 #Conjunctival icterus
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/HP_0000118 #Phenotypic abnormality

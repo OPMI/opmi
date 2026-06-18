@@ -46,6 +46,43 @@ http://purl.obolibrary.org/obo/CMO_0000125
 http://purl.obolibrary.org/obo/CMO_0000591
 http://purl.obolibrary.org/obo/CMO_0000210
 http://purl.obolibrary.org/obo/CMO_0000257
+http://purl.obolibrary.org/obo/CMO_0000012 #body weight
+http://purl.obolibrary.org/obo/CMO_0000026 #blood hemoglobin level
+http://purl.obolibrary.org/obo/CMO_0000027 #white blood cell count
+http://purl.obolibrary.org/obo/CMO_0000051 #totcholesterole
+http://purl.obolibrary.org/obo/CMO_0000052 #hdl
+http://purl.obolibrary.org/obo/CMO_0000053 #ldl
+http://purl.obolibrary.org/obo/CMO_0000105 #BMI
+http://purl.obolibrary.org/obo/CMO_0000106 #height
+http://purl.obolibrary.org/obo/CMO_0000118 #triglyceride
+http://purl.obolibrary.org/obo/CMO_0000123 #bilirubin
+http://purl.obolibrary.org/obo/CMO_0000211 #pp
+http://purl.obolibrary.org/obo/CMO_0000242 #waist
+http://purl.obolibrary.org/obo/CMO_0000304 #fatmassindex
+http://purl.obolibrary.org/obo/CMO_0000306 #ffmassindex
+http://purl.obolibrary.org/obo/CMO_0000496 #potassium
+http://purl.obolibrary.org/obo/CMO_0000499 #sodium
+http://purl.obolibrary.org/obo/CMO_0000549 #albumin
+http://purl.obolibrary.org/obo/CMO_0000574 #alt
+http://purl.obolibrary.org/obo/CMO_0000576 #alp
+http://purl.obolibrary.org/obo/CMO_0000580 #ast
+http://purl.obolibrary.org/obo/CMO_0000648 #vldl
+http://purl.obolibrary.org/obo/CMO_0001088 #liver fibrotic lesion measurement
+http://purl.obolibrary.org/obo/CMO_0001148 #muscle_mass
+http://purl.obolibrary.org/obo/CMO_0002183 #vat
+http://purl.obolibrary.org/obo/CMO_0002786 #hba1c
+http://purl.obolibrary.org/obo/CMO_0003160 #crp
+http://purl.obolibrary.org/obo/CMO_0003876 #carbamide
+http://purl.obolibrary.org/obo/CMO_0003942 #totbodywater
+http://purl.obolibrary.org/obo/CMO_0003944 #ffmass
+http://purl.obolibrary.org/obo/CMO_0002557 #cardiovascular disease severity
+http://purl.obolibrary.org/obo/CMO_0000305 #total body fat mass
+http://purl.obolibrary.org/obo/CMO_0000767 #blood creatinine measurement
+http://purl.obolibrary.org/obo/CMO_0002478 #liver protein/peptide measurement
+http://purl.obolibrary.org/obo/CMO_0002187
+http://purl.obolibrary.org/obo/CMO_0000227 #cell measurement
+http://purl.obolibrary.org/obo/CMO_0000035 #blood measurement
+http://purl.obolibrary.org/obo/CMO_0000036 #complete blood count and differential
 
 
 [Top level source term URIs and target direct superclass URIs]

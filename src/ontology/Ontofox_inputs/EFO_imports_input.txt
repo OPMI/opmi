@@ -8,9 +8,13 @@ EFO
 http://www.ebi.ac.uk/efo/EFO_0001799 #ethnic group
 includeAllChildren
 
+http://www.ebi.ac.uk/efo/EFO_0004578 #homocysteine
+
 [Top level source term URIs and target direct superclass URIs]
 http://www.ebi.ac.uk/efo/EFO_0001799 #ethnic group
 subClassOf http://purl.obolibrary.org/obo/BFO_0000040 #material entity
+http://www.ebi.ac.uk/efo/EFO_0004578 #homocysteine
+subClassOf http://purl.obolibrary.org/obo/CMO_0002557 #cardiovascular disease severity measurement
 
 [Source term retrieval setting]
 includeNoIntermediates
