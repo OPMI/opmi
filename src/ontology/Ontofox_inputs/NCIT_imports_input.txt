@@ -103,7 +103,7 @@ subClassOf http://purl.obolibrary.org/obo/CMO_0002478 #liver protein/peptide mea
 http://purl.obolibrary.org/obo/NCIT_C147385 #fibrosis score
 subClassOf http://purl.obolibrary.org/obo/CMO_0001088 #liver fibrotic lesion measurement
 http://purl.obolibrary.org/obo/NCIT_C174123 #Controlled Attenuation Parameter
-subClassOf http://purl.obolibrary.org/obo/CMO_0002187 #liver fat morphological measurement
+subClassOf http://purl.obolibrary.org/obo/CMO_0000000 #Measurement
 
 
 [Source term retrieval setting]

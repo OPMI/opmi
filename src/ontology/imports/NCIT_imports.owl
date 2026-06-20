@@ -321,6 +321,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CMO_0000000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000000"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CMO_0000035 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000035"/>
@@ -330,12 +336,6 @@
     <!-- http://purl.obolibrary.org/obo/CMO_0001088 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0001088"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CMO_0002187 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0002187"/>
     
 
 
@@ -6027,7 +6027,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C174123">
         <rdfs:label>Controlled Attenuation Parameter</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0002187"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000000"/>
         <oboInOwl:hasExactSynonym>Controlled Attenuation Parameter</oboInOwl:hasExactSynonym>
         <obo:NCIT_P106>Quantitative Concept</obo:NCIT_P106>
         <obo:NCIT_P208>CL1412909</obo:NCIT_P208>
@@ -30753,5 +30753,5 @@ http://purl.obolibrary.org/obo/OGMS_0000083
 http://purl.obolibrary.org/obo/CMO_0000035
 http://purl.obolibrary.org/obo/CMO_0002478
 http://purl.obolibrary.org/obo/CMO_0001088
-http://purl.obolibrary.org/obo/CMO_0002187
+http://purl.obolibrary.org/obo/CMO_0000000
 -->
