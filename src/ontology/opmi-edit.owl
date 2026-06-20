@@ -2084,7 +2084,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000093"/>
         <obo:IAO_0000115 xml:lang="en">The code in the specific coding system for the payment method of the expenses incurred in a single hospitalization of the patient</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="zh">患者单次住院诊疗所发生费用的支付方式的特定编码体系中的代码</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="zh">Suyuan Peng, Hong Yu, Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000117>Suyuan Peng, Hong Yu, Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="zh">《电子病历基本数据集 第10部分：住院病案首页》WS 445.10-2014</obo:IAO_0000119>
         <obo:OPMI_0000127>NCIT_C16745</obo:OPMI_0000127>
         <obo:OPMI_0000128>C0021672</obo:OPMI_0000128>
@@ -3013,7 +3013,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000429"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A textual question about age</obo:IAO_0000115>
+        <obo:IAO_0000115>A textual question about email</obo:IAO_0000115>
         <obo:IAO_0000117>Fred Dowd, Oliver he</obo:IAO_0000117>
         <rdfs:label xml:lang="en">email question</rdfs:label>
     </owl:Class>
@@ -3044,7 +3044,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000221">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000218"/>
-        <obo:IAO_0000115>An email question that asks whether the email address provided belongs to the person being surveyed.</obo:IAO_0000115>
+        <obo:IAO_0000115>An email question that asks who owns the email address.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Who owns email address</rdfs:label>
     </owl:Class>
     
@@ -4158,7 +4158,6 @@
     <!-- http://purl.obolibrary.org/obo/OPMI_0000329 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000329">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000414"/>
         <obo:IAO_0000115>a selection criterion (rule) which defines and states the exclusion condition for an entity to be considered as suitable for a given task or participation in a process.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Edison Ong</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6044655/</obo:IAO_0000119>
@@ -5039,7 +5038,6 @@ by WHO (https://www.who.int/ictrp/network/trds/en/)</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/OPMI_0000403 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000403">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000414"/>
         <obo:IAO_0000115>a selection criterion (rule) which defines and states the inclusion condition for an entity to be considered as suitable for a given task or participation in a process.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Edison Ong, Leon Li, Asiyah Lin</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6044655/</obo:IAO_0000119>
@@ -5185,7 +5183,7 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000293"/>
-        <obo:IAO_0000115>An investigator role taken by an individual who both initiates and conducts the study</obo:IAO_0000115>
+        <obo:IAO_0000115>An investigator who both initiates and conducts the study.</obo:IAO_0000115>
         <obo:IAO_0000117>Leon Li, Asiyah Lin, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>https://prsinfo.clinicaltrials.gov/definitions.html</obo:IAO_0000119>
         <rdfs:label xml:lang="en">sponsor investigator</rdfs:label>
@@ -5200,14 +5198,6 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
         <obo:IAO_0000115>A role taken by a string (which may have mixed integer and text) that serves as a unique record.</obo:IAO_0000115>
         <obo:IAO_0000117>Leon Li, Asiyah Lin, Oliver He</obo:IAO_0000117>
         <rdfs:label xml:lang="en">identifier role</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OPMI_0000414 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000414">
-        <rdfs:label xml:lang="en">obsolete class</rdfs:label>
     </owl:Class>
     
 
@@ -5352,7 +5342,6 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000423">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000623"/>
-        <obo:IAO_0000115></obo:IAO_0000115>
         <obo:IAO_0000115>An non-organism infectious agent that is composed solely of a short strand of circular, single-stranded RNA and has no protein coating.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Mobile_genetic_elements</obo:IAO_0000119>
@@ -5714,7 +5703,7 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000458">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000452"/>
         <obo:IAO_0000115>A molecular biomarker at the DNA gene level</obo:IAO_0000115>
-        <obo:IAO_0000115>Oliver He, Yingtong Liu</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Yingtong Liu</obo:IAO_0000117>
         <obo:IAO_0000118>genomic biomarker</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Biomarker_(cell)#Molecular_Biomarkers</obo:IAO_0000119>
         <rdfs:label xml:lang="en">DNA biomarker</rdfs:label>
@@ -5727,7 +5716,7 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000459">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000452"/>
         <obo:IAO_0000115>A molecular biomarker at the RNA level</obo:IAO_0000115>
-        <obo:IAO_0000115>Oliver He, Yingtong Liu</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Yingtong Liu</obo:IAO_0000117>
         <obo:IAO_0000118>transcriptomic biomarker</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Biomarker_(cell)#Molecular_Biomarkers</obo:IAO_0000119>
         <rdfs:label xml:lang="en">RNA biomarker</rdfs:label>
@@ -5740,7 +5729,7 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000460">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000452"/>
         <obo:IAO_0000115>A molecular biomarker at the protein level</obo:IAO_0000115>
-        <obo:IAO_0000115>Oliver He, Yingtong Liu</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Yingtong Liu</obo:IAO_0000117>
         <obo:IAO_0000118>proteomic biomarker</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Biomarker_(cell)#Molecular_Biomarkers</obo:IAO_0000119>
         <rdfs:label xml:lang="en">protein biomarker</rdfs:label>
@@ -6131,7 +6120,7 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A vist ocurrence in which a patient attends an outpatient clinic with no plan to stay beyond the duration of the visit.</obo:IAO_0000115>
+        <obo:IAO_0000115>A vist ocurrence in which a patient visits an emergeny room with no plan to stay beyond the duration of the visit.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
         <obo:IAO_0000118>ER visit</obo:IAO_0000118>
         <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#VISIT_OCCURRENCE</obo:IAO_0000119>
@@ -8015,7 +8004,7 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000613">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000073"/>
-        <obo:IAO_0000115>An admitting diagnosis is defined as the initial working diagnosis documented by the patient&apos;s admitting or attending physician who determined that inpatient care was necessary.</obo:IAO_0000115>
+        <obo:IAO_0000115>An admitting diagnosis is defined as the initial working diagnosis documented by the patient&apos;s admitting.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
         <obo:IAO_0000118>admission diagnosis</obo:IAO_0000118>
         <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
@@ -9200,7 +9189,6 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000682">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000680"/>
         <obo:IAO_0000115>Ontology is a formal representation of knowledge as a set of concepts (classes), relationships, and terms within a domain, often with defined meanings and logical structure.</obo:IAO_0000115>
-        <obo:IAO_0000115>Ontology is a kind of control vocabulary.</obo:IAO_0000115>
         <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
         <rdfs:label xml:lang="en">ontology</rdfs:label>
     </owl:Class>
@@ -10041,7 +10029,6 @@ This code is mapped to a Standard Condition Concept in the Standardized Vocabula
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0004507"/>
-        <obo:IAO_0000115>A clinical trial that is at Early Phase 1 or Phase 0</obo:IAO_0000115>
         <obo:IAO_0000115>A clinical trial that is at an Early Phase i or Phase 0, which is designed to use an investigational agent that is available only in very limited quantities and which has never previously given to humans or for which there is extremely limited human experience. Phase 0 clinical trials are intended to enable researchers to understand the path of the drug in the body and its efficacy. Adverse event reporting in Phase 0 trials is expedited. [def-source: NCI]</obo:IAO_0000115>
         <obo:IAO_0000117>Leon Li, Asiyah Lin, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000118>Phase 0 clinical trial</obo:IAO_0000118>
@@ -10118,7 +10105,6 @@ This code is mapped to a Standard Condition Concept in the Standardized Vocabula
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0004507"/>
-        <obo:IAO_0000115>A clinical trial that is at Phase 3</obo:IAO_0000115>
         <obo:IAO_0000115>A clinical trial that is at Phase 3, which is designed to investigate the efficacy of the biomedical or behavioral intervention in large groups of human subjects (from several hundred to several thousand), to confirm efficacy, to monitor adverse reactions to the new medication or treatment regimen with respect to long-term use and by comparing the intervention to other standard or experimental interventions as well as to a placebo. [def-source: NCI]</obo:IAO_0000115>
         <obo:IAO_0000117>Leon Li, Asiyah Lin, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000118>Phase III trial</obo:IAO_0000118>
