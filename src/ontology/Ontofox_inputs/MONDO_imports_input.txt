@@ -9,9 +9,20 @@ http://purl.obolibrary.org/obo/MONDO_0005240 #kidney disease
 http://purl.obolibrary.org/obo/MONDO_0005300 #CKD
 http://purl.obolibrary.org/obo/MONDO_0002492 #AKI
 http://purl.obolibrary.org/obo/MONDO_0005016 #diabetic nephropathy
+http://purl.obolibrary.org/obo/MONDO_0001711 #hepatic encephalopathy
+http://purl.obolibrary.org/obo/MONDO_0002525 #dyslipidaemia
+http://purl.obolibrary.org/obo/MONDO_0005083 #psoriasis
+http://purl.obolibrary.org/obo/MONDO_0005148 #diabetes
+http://purl.obolibrary.org/obo/MONDO_0005267 #heart disease
+http://purl.obolibrary.org/obo/MONDO_0007256 #hcc
+http://purl.obolibrary.org/obo/MONDO_0008487 #pco
+http://purl.obolibrary.org/obo/MONDO_0024644 #ihd
 
 [Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/MONDO_0005240 #kidney disease
+#http://purl.obolibrary.org/obo/MONDO_0005240 #kidney disease
+#subClassOf http://purl.obolibrary.org/obo/OGMS_0000031 #disease
+#http://purl.obolibrary.org/obo/MONDO_0005267 #heart disease
+http://purl.obolibrary.org/obo/MONDO_0700096 #human disease
 subClassOf http://purl.obolibrary.org/obo/OGMS_0000031 #disease
 
 [Source term retrieval setting]

@@ -46,6 +46,9 @@ includeAllChildren
 http://purl.obolibrary.org/obo/NCIT_C54706 #blood pressure
 includeAllChildren
 
+http://purl.obolibrary.org/obo/NCIT_C74737 #ferritin
+http://purl.obolibrary.org/obo/NCIT_C147385 #fibrosis score
+http://purl.obolibrary.org/obo/NCIT_C174123 #Controlled Attenuation Parameter
 
 [Top level source term URIs and target direct superclass URIs]
 
@@ -67,6 +70,13 @@ subClassOf http://purl.obolibrary.org/obo/IAO_0000030 #information content entit
 http://purl.obolibrary.org/obo/NCIT_C16745 #insurance
 subClassOf http://purl.obolibrary.org/obo/NCIT_C19332 #personal attribute
 
+http://purl.obolibrary.org/obo/NCIT_C70694 #Managed Healthcare Plan
+subClassOf http://purl.obolibrary.org/obo/NCIT_C157356 #Health Insurance
+
+
+http://purl.obolibrary.org/obo/NCIT_C54706 #blood pressure
+subClassOf http://purl.obolibrary.org/obo/NCIT_C19332 #personal attribute
+
 http://purl.obolibrary.org/obo/NCIT_C76325 #Birth Weight
 subClassOf http://purl.obolibrary.org/obo/NCIT_C19332 #personal attribute
 
@@ -76,11 +86,25 @@ subClassOf http://purl.obolibrary.org/obo/NCIT_C19332 #personal attribute
 http://purl.obolibrary.org/obo/NCIT_C25347 #height
 subClassOf http://purl.obolibrary.org/obo/NCIT_C19332 #personal attribute
 
+http://purl.obolibrary.org/obo/NCIT_C25150 #age
+subClassOf http://purl.obolibrary.org/obo/NCIT_C19332 #personal attribute
+
+http://purl.obolibrary.org/obo/NCIT_C171086 #Person Status
+subClassOf http://purl.obolibrary.org/obo/NCIT_C19332 #personal attribute
+
 http://purl.obolibrary.org/obo/NCIT_C138901 #Body mass index finding
 subClassOf http://purl.obolibrary.org/obo/OGMS_0000083 #physical examination finding
 
 http://purl.obolibrary.org/obo/NCIT_C25352 #International Normalized Ratio
 subClassOf http://purl.obolibrary.org/obo/CMO_0000035 #blood measurement
+
+http://purl.obolibrary.org/obo/NCIT_C74737 #ferritin
+subClassOf http://purl.obolibrary.org/obo/CMO_0002478 #liver protein/peptide measurement
+http://purl.obolibrary.org/obo/NCIT_C147385 #fibrosis score
+subClassOf http://purl.obolibrary.org/obo/CMO_0001088 #liver fibrotic lesion measurement
+http://purl.obolibrary.org/obo/NCIT_C174123 #Controlled Attenuation Parameter
+subClassOf http://purl.obolibrary.org/obo/CMO_0000000 #Measurement
+
 
 [Source term retrieval setting]
 includeComputedIntermediates

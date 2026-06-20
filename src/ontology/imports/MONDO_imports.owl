@@ -8,6 +8,8 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:mondo="http://purl.obolibrary.org/obo/mondo#"
+     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/opmi/MONDO_imports.owl"/>
     
@@ -24,34 +26,74 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000179 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000179"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000180 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000180"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
+        <obo:IAO_0000111 xml:lang="en">editor preferred term</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">The concise, meaningful, and human-friendly name for a class or property preferred by the ontology developers. (US-English)</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
+        <obo:IAO_0000111 xml:lang="en">example of usage</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A phrase describing how a term should be used and/or a citation to a work which uses it. May also include other kinds of examples that facilitate immediate understanding, such as widely know prototypes or instances of a class, or cases where a relation is said to hold.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">example of usage</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
+        <obo:IAO_0000111 xml:lang="en">has curation status</obo:IAO_0000111>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Bill Bug</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">has curation status</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
+        <obo:IAO_0000111 xml:lang="en">definition</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">2012-04-05: 
+Barry Smith
+
+The official OBI definition, explaining the meaning of a class or property: &apos;Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions&apos;  is terrible.
+
+Can you fix to something like:
+
+A statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.
+
+Alan Ruttenberg
+
+Your proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can&apos;t be evaluated by those criteria. 
+
+On the specifics of the proposed definition:
+
+We don&apos;t have definitions of &apos;meaning&apos; or &apos;expression&apos; or &apos;property&apos;. For &apos;reference&apos; in the intended sense I think we use the term &apos;denotation&apos;. For &apos;expression&apos;, I think we you mean symbol, or identifier. For &apos;meaning&apos; it differs for class and property. For class we want documentation that let&apos;s the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let&apos;s the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The &apos;intended reader&apos; part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. 
+
+Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. 
+
+We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.  </obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <rdfs:label>definition</rdfs:label>
+        <rdfs:label xml:lang="en">definition</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -59,8 +101,69 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
+        <obo:IAO_0000111 xml:lang="en">editor note</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">An administrative note intended for its editor. It may not be included in the publication version of the ontology, so it should contain nothing necessary for end users to understand the ontology.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obofoundry.org/obo/obi&gt;</obo:IAO_0000119>
         <rdfs:label xml:lang="en">editor note</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
+        <obo:IAO_0000111 xml:lang="en">term editor</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">Name of editor entering the term in the file. The term editor is a point of contact for information regarding the term. The term editor may be, but is not always, the author of the definition, which may have been worked upon by several people</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">20110707, MC: label update to term editor and definition modified accordingly. See https://github.com/information-artifact-ontology/IAO/issues/115.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">term editor</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
+        <obo:IAO_0000111 xml:lang="en">definition source</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">Formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">definition source</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000233 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000233">
+        <obo:IAO_0000111 xml:lang="en">term tracker item</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">the URI for an OBI Terms ticket at sourceforge, such as https://sourceforge.net/p/obi/obi-terms/772/</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">An IRI or similar locator for a request or discussion of an ontology term.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg</obo:IAO_0000119>
+        <rdfs:comment xml:lang="en">The &apos;tracker item&apos; can associate a tracker with a specific ontology term.</rdfs:comment>
+        <rdfs:label xml:lang="en">term tracker item</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000234 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000234">
+        <obo:IAO_0000111 xml:lang="en">ontology term requester</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">The name of the person, project, or organization that motivated inclusion of an ontology term by requesting its addition.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg</obo:IAO_0000119>
+        <rdfs:comment>The &apos;term requester&apos; can credit the person, organization or project who request the ontology term.</rdfs:comment>
+        <rdfs:label xml:lang="en">ontology term requester</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -73,28 +176,108 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000600 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000589 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000600"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000589">
+        <obo:IAO_0000111 xml:lang="en">OBO foundry unique label</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">An alternative name for a class or property which is unique across the OBO Foundry.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">The intended usage of that property is as follow: OBO foundry unique labels are automatically generated based on regular expressions provided by each ontology, so that SO could specify unique label = &apos;sequence &apos; + [label], etc. , MA could specify &apos;mouse + [label]&apos; etc. Upon importing terms, ontology developers can choose to use the &apos;OBO foundry unique label&apos; for an imported term or not. The same applies to tools .</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Chris Mungall</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBO Foundry &lt;http://obofoundry.org/&gt;</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">OBO foundry unique label</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000601 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0006012 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000601"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0006012">
+        <obo:IAO_0000111 xml:lang="en">scheduled for obsoletion on or after</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Used when the class or object is scheduled for obsoletion/deprecation on or after a particular date.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Chris Mungall, Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000233 xml:lang="en">https://github.com/geneontology/go-ontology/issues/15532</obo:IAO_0000233>
+        <obo:IAO_0000233 xml:lang="en">https://github.com/information-artifact-ontology/ontology-metadata/issues/32</obo:IAO_0000233>
+        <obo:IAO_0000234 xml:lang="en">GO ontology</obo:IAO_0000234>
+        <rdfs:label xml:lang="en">scheduled for obsoletion on or after</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000602 -->
+    <!-- http://purl.obolibrary.org/obo/RO_0002175 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000602"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002175"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mondo#curated_content_resource -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#curated_content_resource">
+        <obo:IAO_0000115>A curated content resource is a web-resource that contains curated content about the ontology term.</obo:IAO_0000115>
+        <oboInOwl:id>curated_content_resource</oboInOwl:id>
+        <oboInOwl:is_class_level rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_class_level>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <rdfs:comment>This property is likely to change the ID. Please do not use in production systems.</rdfs:comment>
+        <rdfs:label>curated content resource</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mondo#excluded_subClassOf -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#excluded_subClassOf">
+        <oboInOwl:id>excluded_subClassOf</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <rdfs:label>excluded subClassOf</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mondo#should_conform_to -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#should_conform_to">
+        <oboInOwl:id>should_conform_to</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <rdfs:label>should_conform_to</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/conformsTo -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/conformsTo"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasAlternativeId -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId">
+        <rdfs:label>has_alternative_id</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym">
+        <rdfs:label>has_broad_synonym</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">database_cross_reference</rdfs:label>
+        <rdfs:label>database_cross_reference</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -102,7 +285,7 @@
     <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_exact_synonym</rdfs:label>
+        <rdfs:label>has_exact_synonym</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -110,7 +293,7 @@
     <!-- http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_narrow_synonym</rdfs:label>
+        <rdfs:label>has_narrow_synonym</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -118,21 +301,43 @@
     <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_related_synonym</rdfs:label>
+        <rdfs:label>has_related_synonym</rdfs:label>
     </owl:AnnotationProperty>
     
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#id -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id">
+        <rdfs:label>id</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">in_subset</rdfs:label>
+        <rdfs:label>in_subset</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#is_class_level -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#is_class_level"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#is_metadata_tag -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#is_metadata_tag"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#shorthand -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand">
+        <rdfs:label>shorthand</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -149,6 +354,25 @@
     
 
 
+    <!-- http://www.w3.org/2000/01/rdf-schema#seeAlso -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
+        <oboInOwl:hasDbXref>http://www.w3.org/2000/01/rdf-schema#seeAlso</oboInOwl:hasDbXref>
+        <oboInOwl:id>seeAlso</oboInOwl:id>
+        <oboInOwl:is_class_level rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_class_level>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>seeAlso</oboInOwl:shorthand>
+        <rdfs:label>seeAlso</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broadMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#broadMatch"/>
+    
+
+
     <!-- http://www.w3.org/2004/02/skos/core#closeMatch -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#closeMatch"/>
@@ -158,6 +382,12 @@
     <!-- http://www.w3.org/2004/02/skos/core#exactMatch -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#narrowMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
     
 
 
@@ -172,20 +402,162 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
+    <!-- http://purl.obolibrary.org/obo/MONDO_0001711 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001">
-        <obo:BFO_0000179>entity</obo:BFO_0000179>
-        <obo:BFO_0000180>Entity</obo:BFO_0000180>
-        <obo:IAO_0000112 xml:lang="en">Julius Caesar</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">Verdi’s Requiem</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">the Second World War</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">your body mass index</obo:IAO_0000112>
-        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: In all areas of empirical inquiry we encounter general terms of two sorts. First are general terms which refer to universals or types:animaltuberculosissurgical procedurediseaseSecond, are general terms used to refer to groups of entities which instantiate a given universal but do not correspond to the extension of any subuniversal of that universal because there is nothing intrinsic to the entities in question by virtue of which they – and only they – are counted as belonging to the given group. Examples are: animal purchased by the Emperortuberculosis diagnosed on a Wednesdaysurgical procedure performed on a patient from Stockholmperson identified as candidate for clinical trial #2056-555person who is signatory of Form 656-PPVpainting by Leonardo da VinciSuch terms, which represent what are called ‘specializations’ in [81</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">Entity doesn&apos;t have a closure axiom because the subclasses don&apos;t necessarily exhaust all possibilites. For example Werner Ceusters &apos;portions of reality&apos; include 4 sorts, entities (as BFO construes them), universals, configurations, and relations. It is an open question as to whether entities as construed in BFO will at some point also include these other portions of reality. See, for example, &apos;How to track absolutely everything&apos; at http://www.referent-tracking.com/_RTU/papers/CeustersICbookRevised.pdf</obo:IAO_0000116>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0001711">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_7770006"/>
+        <obo:IAO_0000115>Hepatic encephalopathy is a syndrome observed in some patients with cirrhosis. It is defined as a spectrum of neuropsychiatric abnormalities in patients with liver dysfunction, when other known brain disease has been excluded.Signs and symptomsmay be debilitating, and they can begin mildly and gradually, or occur suddenly and severely. They may includepersonality or moodchanges, intellectual impairment, abnormal movements,a depressed level of consciousness, and other symptoms.There are several theories regarding the exact cause, butdevelopment of the condition isprobablyat least partiallydue to the effect of substances that are toxic to nerve tissue (neurotoxic), which are typically present with liver damage and/or liver disease. Treatment depends upon the severity of mental status changes and upon the certainty of the diagnosis.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mondo.owl"/>
-        <obo:IAO_0000600 xml:lang="en">An entity is anything that exists or has existed or will exist. (axiom label in BFO2 Reference: [001-001])</obo:IAO_0000600>
-        <rdfs:label xml:lang="en">entity</rdfs:label>
+        <mondo:curated_content_resource rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/hepatic_encephalopathy</mondo:curated_content_resource>
+        <oboInOwl:hasDbXref>DOID:13413</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GARD:0027587</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:572.2</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MEDGEN:5513</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D006501</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C79596</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:13920009</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0019151</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>icd11.foundation:1769383160</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>portal-systemic encephalopathy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Hepatoencephalopathy</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>encephalopathy, hepatic</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>MONDO:0001711</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#doid_rare"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#gard_rare"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#rare"/>
+        <rdfs:label>hepatic encephalopathy</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://rarediseases.info.nih.gov/diseases/10452/hepatic-encephalopathy</rdfs:seeAlso>
+        <skos:exactMatch rdf:resource="http://id.who.int/icd/entity/1769383160"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/medgen/5513"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/mesh/D006501"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/snomedct/13920009"/>
+        <skos:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0019151"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_13413"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C79596"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0002082 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0002082">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005070"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005151"/>
+        <obo:IAO_0000115>A benign or malignant neoplasm arising from the epithelial cells of an endocrine organ. Representative examples include pituitary gland adenoma, pituitary gland carcinoma, thyroid gland carcinoma, carcinoid tumor, and neuroendocrine carcinoma.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mondo.owl"/>
+        <terms:conformsTo rdf:resource="http://purl.obolibrary.org/obo/mondo/patterns/neoplasm.yaml"/>
+        <oboInOwl:hasDbXref>EFO:0003769</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:239.7</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MEDGEN:4044</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C3010</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:387922007</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0014132</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>endocrine gland neoplasm (disease)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>endocrine gland tumor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>endocrine gland tumour</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>endocrine neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>endocrine system neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>endocrine system tumor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>endocrine system tumour</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>endocrine tumor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>endocrine tumour</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>neoplasm of endocrine gland</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>tumor of endocrine gland</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>tumour of endocrine gland</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>malignant endocrine tumor</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>malignant endocrine tumour</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:id>MONDO:0002082</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#otar"/>
+        <rdfs:label>endocrine gland neoplasm</rdfs:label>
+        <skos:exactMatch rdf:resource="http://identifiers.org/medgen/4044"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/snomedct/387922007"/>
+        <skos:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0014132"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3010"/>
+        <skos:exactMatch rdf:resource="http://www.ebi.ac.uk/efo/EFO_0003769"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0002356 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0002356">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0004335"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005151"/>
+        <obo:IAO_0000115>A non-neoplastic or neoplastic disorder that affects the pancreas. Representative examples of non-neoplastic disorders include pancreatitis and pancreatic insufficiency. Representative examples of neoplastic disorders include cystadenomas, carcinomas, lymphomas, and neuroendocrine neoplasms.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mondo.owl"/>
+        <mondo:curated_content_resource rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/pancreas_disease</mondo:curated_content_resource>
+        <terms:conformsTo rdf:resource="http://purl.obolibrary.org/obo/mondo/patterns/location.yaml"/>
+        <terms:conformsTo rdf:resource="http://purl.obolibrary.org/obo/mondo/patterns/location_top.yaml"/>
+        <oboInOwl:hasDbXref>DOID:26</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EFO:0009605</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10CM:K86.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:577.8</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:577.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MEDGEN:14583</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D010182</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C26842</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:3855007</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0030286</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>icd11.foundation:1726554290</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>disease of pancreas</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease or disorder of pancreas</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disorder of pancreas</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>pancreas disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>pancreas disease or disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>pancreatic disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>disease, pancreatic</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>diseases, pancreatic</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>pancreatic disease</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>MONDO:0002356</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#otar"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#rare_grouping"/>
+        <rdfs:label>pancreas disorder</rdfs:label>
+        <skos:exactMatch rdf:resource="http://id.who.int/icd/entity/1726554290"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/medgen/14583"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/mesh/D010182"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/snomedct/3855007"/>
+        <skos:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0030286"/>
+        <skos:exactMatch rdf:resource="http://purl.bioontology.org/ontology/ICD10CM/K86.9"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_26"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C26842"/>
+        <skos:exactMatch rdf:resource="http://www.ebi.ac.uk/efo/EFO_0009605"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0002406 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0002406">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005093"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_7770007"/>
+        <obo:IAO_0000115>An inflammatory process affecting the skin. Signs include red rash, itching, and blister formation. Representative examples are contact dermatitis, atopic dermatitis, and seborrheic dermatitis.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mondo.owl"/>
+        <mondo:curated_content_resource rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/dermatitis</mondo:curated_content_resource>
+        <terms:conformsTo rdf:resource="http://purl.obolibrary.org/obo/mondo/patterns/inflammatory_disease_by_site.yaml"/>
+        <terms:conformsTo rdf:resource="http://purl.obolibrary.org/obo/mondo/patterns/specific_infectious_disease_by_location.yaml"/>
+        <terms:conformsTo rdf:resource="http://purl.obolibrary.org/obo/mondo/patterns/specific_inflammatory_disease_by_site.yaml"/>
+        <oboInOwl:hasDbXref>DOID:2723</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:692.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MEDGEN:849741</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D003872</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C2983</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:43116000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C3875321</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>inflammation of skin</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>inflammation of the skin</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>inflammation of zone of skin</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>inflammatory skin disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>skin inflammation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>zone of skin inflammation</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>MONDO:0002406</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#otar"/>
+        <rdfs:label>dermatitis</rdfs:label>
+        <skos:exactMatch rdf:resource="http://identifiers.org/medgen/849741"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/mesh/D003872"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/snomedct/43116000"/>
+        <skos:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C3875321"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_2723"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C2983"/>
     </owl:Class>
     
 
@@ -194,23 +566,563 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0002492">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005240"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sudden and sustained deterioration of the kidney function characterized by decreased glomerular filtration rate, increased serum creatinine or oliguria.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0700096"/>
+        <obo:IAO_0000115>Sudden and sustained deterioration of the kidney function characterized by decreased glomerular filtration rate, increased serum creatinine or oliguria.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/monarch-initiative/mondo/issues/9613</obo:IAO_0000233>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mondo.owl"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:3021</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD10:N17</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D058186</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C26808</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AKI</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ARF</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">acute kidney injury</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">acute renal failure</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kidney failure, acute</oboInOwl:hasExactSynonym>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0002492</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">acute kidney failure</rdfs:label>
-        <skos:closeMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0022660"/>
+        <mondo:curated_content_resource rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/acute_kidney_failure</mondo:curated_content_resource>
+        <oboInOwl:hasDbXref>DOID:3021</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10CM:N17</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MEDGEN:388570</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D058186</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C26808</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C2609414</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>icd11.foundation:476391827</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>AKI</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ARF</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>acute kidney failure</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>acute renal failure</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>kidney failure, acute</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>MONDO:0002492</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#otar"/>
+        <rdfs:label>acute kidney injury</rdfs:label>
+        <skos:exactMatch rdf:resource="http://id.who.int/icd/entity/476391827"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/medgen/388570"/>
         <skos:exactMatch rdf:resource="http://identifiers.org/mesh/D058186"/>
+        <skos:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C2609414"/>
+        <skos:exactMatch rdf:resource="http://purl.bioontology.org/ontology/ICD10CM/N17"/>
         <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_3021"/>
         <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C26808"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0002514 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0002514">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002515"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021223"/>
+        <obo:IAO_0000115>A benign or malignant neoplasm that affects the liver parenchyma, bile ducts, and gallbladder. Representative examples of benign neoplasms include hepatocellular adenoma, bile duct adenoma, and gallbladder lipoma. Representative examples of malignant neoplasms include hepatocellular carcinoma, intrahepatic and extrahepatic cholangiocarcinoma, and gallbladder carcinoma.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mondo.owl"/>
+        <terms:conformsTo rdf:resource="http://purl.obolibrary.org/obo/mondo/patterns/neoplasm.yaml"/>
+        <oboInOwl:hasDbXref>DOID:0080355</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EFO:0008550</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MEDGEN:208891</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C8614</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0854196</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>hepatic and biliary neoplasms</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hepatic and biliary tumors</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hepatic and biliary tumours</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hepatic, biliary, and gallbladder neoplasms</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hepato-biliary neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hepato-biliary tumor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hepato-biliary tumour</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hepatobiliary neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hepatobiliary system neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hepatobiliary system neoplasm (disease)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hepatobiliary system tumor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hepatobiliary system tumour</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hepatobiliary tumor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hepatobiliary tumors</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hepatobiliary tumour</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hepatobiliary tumours</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>liver and biliary neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>liver and biliary system neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>neoplasm of hepatobiliary system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>tumor of hepatobiliary system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>tumour of hepatobiliary system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>hepatobiliary benign neoplasm</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:id>MONDO:0002514</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#otar"/>
+        <rdfs:label>hepatobiliary neoplasm</rdfs:label>
+        <skos:exactMatch rdf:resource="http://identifiers.org/medgen/208891"/>
+        <skos:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0854196"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_0080355"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C8614"/>
+        <skos:exactMatch rdf:resource="http://www.ebi.ac.uk/efo/EFO_0008550"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0002515 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0002515">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0004335"/>
+        <obo:IAO_0000115>A non-neoplastic or neoplastic disorder that affects the liver, bile ducts, and gallbladder. Representative examples of non-neoplastic disorders include hepatitis, cirrhosis, cholangitis, and cholecystitis. Representative examples of neoplastic disorders include hepatocellular adenoma, hepatocellular carcinoma, and cholangiocarcinoma.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mondo.owl"/>
+        <terms:conformsTo rdf:resource="http://purl.obolibrary.org/obo/mondo/patterns/location.yaml"/>
+        <terms:conformsTo rdf:resource="http://purl.obolibrary.org/obo/mondo/patterns/location_top.yaml"/>
+        <oboInOwl:hasDbXref>DOID:3118</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EFO:0010284</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MEDGEN:82758</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C3959</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0267792</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>disease of hepatobiliary system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease or disorder of hepatobiliary system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disorder of hepatobiliary system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hepatobiliary disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hepatobiliary system disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hepatobiliary system disease or disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>liver and biliary disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>liver and biliary disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>liver and biliary system disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>MONDO:0002515</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#otar"/>
+        <rdfs:label>hepatobiliary disorder</rdfs:label>
+        <skos:exactMatch rdf:resource="http://identifiers.org/medgen/82758"/>
+        <skos:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0267792"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_3118"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3959"/>
+        <skos:exactMatch rdf:resource="http://www.ebi.ac.uk/efo/EFO_0010284"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0002516 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0002516">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0004335"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0004992"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021223"/>
+        <obo:IAO_0000115>A primary or metastatic malignant neoplasm involving any part of the digestive system.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mondo.owl"/>
+        <mondo:curated_content_resource rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/gastrointestinal_system_cancer</mondo:curated_content_resource>
+        <terms:conformsTo rdf:resource="http://purl.obolibrary.org/obo/mondo/patterns/cancer.yaml"/>
+        <oboInOwl:hasBroadSynonym>GI tumor</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>GI tumour</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDbXref>DOID:3119</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10CM:C15-C26</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:239.0</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MEDGEN:148231</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C4890</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0751075</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>cancer of digestive system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>digestive system cancer</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>gastrointestinal system cancer</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>malignant digestive system neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>malignant gastrointestinal neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>malignant gastrointestinal system neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>malignant neoplasm of digestive system</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>MONDO:0002516</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#otar"/>
+        <rdfs:label>digestive system cancer</rdfs:label>
+        <skos:exactMatch rdf:resource="http://identifiers.org/medgen/148231"/>
+        <skos:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0751075"/>
+        <skos:exactMatch rdf:resource="http://purl.bioontology.org/ontology/ICD10CM/C15-C26"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_3119"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4890"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0002525 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0002525">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0019052"/>
+        <obo:IAO_0000115>An inherited metabolic disorder caused by an enzyme deficiency, resulting in an inability to oxidize fatty acids for energy production.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mondo.owl"/>
+        <mondo:curated_content_resource rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/lipid_metabolism_disorder</mondo:curated_content_resource>
+        <terms:conformsTo rdf:resource="http://purl.obolibrary.org/obo/mondo/patterns/specific_disease_by_disrupted_process.yaml"/>
+        <oboInOwl:hasBroadSynonym>disorder of lipid metabolism</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>dyslipidaemia</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>dyslipidemia</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>lipid metabolism disorder</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDbXref>DOID:3146</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GARD:0021314</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:272.8</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:272.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MEDGEN:57587</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MedDRA:10061227</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C97092</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Orphanet:309005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:267431006</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:402788005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0154251</oboInOwl:hasDbXref>
+        <oboInOwl:id>MONDO:0002525</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#disease_grouping"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#gard_rare"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#ordo_group_of_disorders"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#otar"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#rare"/>
+        <rdfs:label>inherited lipid metabolism disorder</rdfs:label>
+        <skos:closeMatch rdf:resource="http://identifiers.org/meddra/10061227"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/medgen/57587"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/snomedct/267431006"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/snomedct/402788005"/>
+        <skos:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0154251"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_3146"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C97092"/>
+        <skos:exactMatch rdf:resource="http://www.orpha.net/ORDO/Orphanet_309005"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0002691 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0002691">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002516"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021069"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0024477"/>
+        <obo:IAO_0000115>An epithelial or non-epithelial malignant neoplasm that arises from the liver. Representative examples include hepatocellular carcinoma, intrahepatic cholangiocarcinoma, lymphoma, and sarcoma.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mondo.owl"/>
+        <mondo:curated_content_resource rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/hepatocellular_carcinoma</mondo:curated_content_resource>
+        <terms:conformsTo rdf:resource="http://purl.obolibrary.org/obo/mondo/patterns/cancer.yaml"/>
+        <oboInOwl:hasDbXref>DOID:3571</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GARD:0027613</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:155.0</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:155.2</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MEDGEN:87520</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C34803</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:93870000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0345904</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>icd11.foundation:1605020868</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>cancer of liver</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hepatic cancer</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>liver cancer</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>malignant liver neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>malignant neoplasm of liver</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>malignant neoplasm of liver, not specified as primary or secondary</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>malignant neoplasm of liver, primary</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>malignant tumour of liver</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>primary liver cancer</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>primary malignant liver neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>primary malignant neoplasm of liver</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>primary cancer of liver</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>primary tumor of the liver</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>primary tumour of the liver</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>MONDO:0002691</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#gard_rare"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#otar"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#rare"/>
+        <rdfs:label>liver cancer</rdfs:label>
+        <skos:exactMatch rdf:resource="http://id.who.int/icd/entity/1605020868"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/medgen/87520"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/snomedct/93870000"/>
+        <skos:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0345904"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_3571"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C34803"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0003847 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0003847">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_7770008"/>
+        <obo:IAO_0000115>A disease that is caused by genetic modifications where those modifications are inherited from a parent&apos;s genome.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mondo.owl"/>
+        <terms:conformsTo rdf:resource="http://purl.obolibrary.org/obo/mondo/patterns/hereditary.yaml"/>
+        <oboInOwl:hasBroadSynonym>genetic condition</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>genetic disease</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>genetic disorder</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDbXref>DOID:630</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EFO:0000508</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:799.89</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MEDGEN:5527</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D030342</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C3101</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:32895009</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0019247</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>hereditary disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hereditary disease or disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hereditary diseases</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>inherited disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>inherited genetic disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>molecular disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Mendelian disease</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:id>MONDO:0003847</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#harrisons_view"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#otar"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#rare_grouping"/>
+        <rdfs:comment>Usage note: this is intended only for diseases with an inherited genetic etiology. Somatic genetic mutations are excluded. Some ontologies use the term &apos;genetic disease&apos; in the sense of inherited disorders only, we are here careful to distinguish.</rdfs:comment>
+        <rdfs:label>hereditary disease</rdfs:label>
+        <skos:exactMatch rdf:resource="http://identifiers.org/medgen/5527"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/mesh/D030342"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/snomedct/32895009"/>
+        <skos:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0019247"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_630"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3101"/>
+        <skos:exactMatch rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000508"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0004335 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0004335">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_7770006"/>
+        <obo:IAO_0000115>A disease or disorder that involves the digestive system.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mondo.owl"/>
+        <mondo:curated_content_resource rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/gastrointestinal_system_disease</mondo:curated_content_resource>
+        <terms:conformsTo rdf:resource="http://purl.obolibrary.org/obo/mondo/patterns/location.yaml"/>
+        <oboInOwl:hasDbXref>DOID:77</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10CM:K00-K95</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:520-579</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:V47.3</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MEDGEN:892790</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D005767</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NANDO:1100013</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C2990</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:53619000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C4023588</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>icd11.foundation:1256772020</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>digestive disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>digestive system disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>digestive system disease or disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>digestive system disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease of digestive system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease or disorder of digestive system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disorder of digestive system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>gastroenterological system disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>gastroenterological system disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>gastrointestinal disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>gastrointestinal system disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>gastrointestinal system disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>stomach or intestinal disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>MONDO:0004335</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#harrisons_view"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#rare_grouping"/>
+        <rdfs:label>digestive system disorder</rdfs:label>
+        <skos:exactMatch rdf:resource="http://id.who.int/icd/entity/1256772020"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/medgen/892790"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/mesh/D005767"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/snomedct/53619000"/>
+        <skos:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C4023588"/>
+        <skos:exactMatch rdf:resource="http://purl.bioontology.org/ontology/ICD10CM/K00-K95"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_77"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C2990"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0004970 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0004970">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0004993"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005626"/>
+        <obo:IAO_0000115>A common cancer characterized by the presence of malignant glandular cells. Morphologically, adenocarcinomas are classified according to the growth pattern (e.g., papillary, alveolar) or according to the secreting product (e.g., mucinous, serous). Representative examples of adenocarcinoma are ductal and lobular breast carcinoma, lung adenocarcinoma, renal cell carcinoma, hepatocellular carcinoma (hepatoma), colon adenocarcinoma, and prostate adenocarcinoma.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mondo.owl"/>
+        <mondo:curated_content_resource rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/adenocarcinoma</mondo:curated_content_resource>
+        <oboInOwl:hasDbXref>CSP:2000-0386</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>DOID:299</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EFO:0000228</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICDO:8140/3</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MEDGEN:122</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D000230</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C2852</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ONCOTREE:ADNOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:443961001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0001418</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>adenocarcinoma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>adenocarcinoma NOS (morphologic abnormality)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>adenocarcinoma, malignant</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>adenocarcinoma, no subtype (morphologic abnormality)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>adenocarcinomas</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>ADNOS</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>MONDO:0004970</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#otar"/>
+        <rdfs:label>adenocarcinoma</rdfs:label>
+        <skos:exactMatch rdf:resource="http://identifiers.org/medgen/122"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/mesh/D000230"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/snomedct/443961001"/>
+        <skos:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0001418"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_299"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C2852"/>
+        <skos:exactMatch rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000228"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0004992 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0004992">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005070"/>
+        <obo:IAO_0000115>A tumor composed of atypical neoplastic, often pleomorphic cells that invade other tissues. Malignant neoplasms often metastasize to distant anatomic sites and may recur after excision. The most common malignant neoplasms are carcinomas (adenocarcinomas or squamous cell carcinomas), Hodgkin and non-Hodgkin lymphomas, leukemias, melanomas, and sarcomas.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mondo.owl"/>
+        <mondo:curated_content_resource rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/cell_type_cancer</mondo:curated_content_resource>
+        <terms:conformsTo rdf:resource="http://purl.obolibrary.org/obo/mondo/patterns/malignant.yaml"/>
+        <oboInOwl:hasDbXref>DOID:0050686</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>DOID:0050687</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>DOID:162</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:195.8</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:199</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:199.1</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICDO:8000/3</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MEDGEN:14297</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C9305</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ONCOTREE:MT</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:363346000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0006826</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>birnlex:406</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>CA</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>cancer</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>cell type cancer</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>malignancy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>malignant growth</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>malignant neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>malignant neoplasm (disease)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>malignant neoplastic disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>malignant tumor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>malignant tumour</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>neoplasm (disease), malignant</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>neoplasm, malignant</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>MT</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>MONDO:0004992</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#otar"/>
+        <rdfs:label>cancer</rdfs:label>
+        <skos:exactMatch rdf:resource="http://identifiers.org/medgen/14297"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/snomedct/363346000"/>
+        <skos:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0006826"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_0050686"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_0050687"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_162"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C9305"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0004993 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0004993">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0004992"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005626"/>
+        <obo:IAO_0000115>A malignant tumor arising from epithelial cells. Carcinomas that arise from glandular epithelium are called adenocarcinomas, those that arise from squamous epithelium are called squamous cell carcinomas, and those that arise from transitional epithelium are called transitional cell carcinomas. Morphologically, the malignant epithelial cells may display abnormal mitotic figures, anaplasia, and necrosis. Carcinomas are graded by the degree of cellular differentiation as well, moderately, or poorly differentiated. Carcinomas invade the surrounding tissues and tend to metastasize to other anatomic sites. Lung carcinoma, skin carcinoma, breast carcinoma, colon carcinoma, and prostate carcinoma are the most frequently seen carcinomas.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mondo.owl"/>
+        <oboInOwl:hasBroadSynonym>epithelioma</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDbXref>CSP:2000-1867</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>DOID:305</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EFO:0000313</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICDO:8010/3</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICDO:8011/3</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MEDGEN:2867</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D002277</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C2916</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:722688002</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0007097</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>Other carcinoma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>carcinoma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>carcinoma, malignant</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>epithelial carcinoma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>epithelioma malignant</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>malignant epithelial neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>malignant epithelial tumor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>malignant epithelial tumour</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>malignant epithelioma</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>MONDO:0004993</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#otar"/>
+        <rdfs:label>carcinoma</rdfs:label>
+        <skos:exactMatch rdf:resource="http://identifiers.org/medgen/2867"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/mesh/D002277"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/snomedct/722688002"/>
+        <skos:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0007097"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_305"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C2916"/>
+        <skos:exactMatch rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000313"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0004995 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0004995">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_7770006"/>
+        <obo:IAO_0000115>A disease involving the cardiovascular system.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mondo.owl"/>
+        <mondo:curated_content_resource rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/cardiovascular_system_disease</mondo:curated_content_resource>
+        <terms:conformsTo rdf:resource="http://purl.obolibrary.org/obo/mondo/patterns/location.yaml"/>
+        <oboInOwl:hasDbXref>DOID:1287</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EFO:0000319</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10CM:I00-I99</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:390-459</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:420-429</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:423</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:423.8</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:424</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:429</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:429.2</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:429.7</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:429.8</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:429.81</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:429.89</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:459.89</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:459.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MEDGEN:2848</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D002318</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NANDO:1100005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C2931</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:49601007</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0007222</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>icd11.foundation:424293435</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>icd11.foundation:426429380</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>cardiovascular disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>cardiovascular disease (CVD)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>cardiovascular disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>cardiovascular system disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>cardiovascular system disease or disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease of cardiovascular system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease or disorder of cardiovascular system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disorder of cardiovascular system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>circulatory system disease</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>MONDO:0004995</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#harrisons_view"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#otar"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#rare_grouping"/>
+        <rdfs:label>cardiovascular disorder</rdfs:label>
+        <skos:broadMatch rdf:resource="http://id.who.int/icd/entity/426429380"/>
+        <skos:broadMatch rdf:resource="http://purl.bioontology.org/ontology/ICD10CM/I00-I99"/>
+        <skos:exactMatch rdf:resource="http://id.who.int/icd/entity/424293435"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/medgen/2848"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/mesh/D002318"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/snomedct/49601007"/>
+        <skos:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0007222"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_1287"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C2931"/>
+        <skos:exactMatch rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000319"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002356"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005066"/>
+        <obo:IAO_0000115>A metabolic disorder characterized by abnormally high blood sugar levels due to diminished production of insulin or insulin resistance/desensitization.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/monarch-initiative/mondo/issues/5723</obo:IAO_0000233>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mondo.owl"/>
+        <obo:IAO_0000589>diabetes mellitus (disease)</obo:IAO_0000589>
+        <mondo:curated_content_resource rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/diabetes_mellitus</mondo:curated_content_resource>
+        <oboInOwl:hasDbXref>DOID:9351</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EFO:0000400</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>HP:0000819</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10CM:E08-E13</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10WHO:E10-E14</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:250</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MEDGEN:8350</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D003920</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NANDO:2100157</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NANDO:2100158</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C2985</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:73211009</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0011849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>icd11.foundation:465177735</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>DM</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>diabetes</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>diabetes mellitus</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>diabetes mellitus (disease)</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>MONDO:0005015</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#otar"/>
+        <rdfs:label>diabetes mellitus</rdfs:label>
+        <skos:exactMatch rdf:resource="http://id.who.int/icd/entity/465177735"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/medgen/8350"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/mesh/D003920"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/snomedct/73211009"/>
+        <skos:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0011849"/>
+        <skos:exactMatch rdf:resource="http://purl.bioontology.org/ontology/ICD10CM/E08-E13"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_9351"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C2985"/>
+        <skos:exactMatch rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000400"/>
+        <skos:exactMatch rdf:resource="https://icd.who.int/browse10/2019/en#/E10-E14"/>
     </owl:Class>
     
 
@@ -218,34 +1130,371 @@
     <!-- http://purl.obolibrary.org/obo/MONDO_0005016 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005066"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005300"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Progressive kidney disorder caused by vascular damage to the glomerular capillaries, in patients with diabetes mellitus. It is usually manifested with nephritic syndrome and glomerulosclerosis.</obo:IAO_0000115>
+        <obo:IAO_0000115>Progressive kidney disorder caused by vascular damage to the glomerular capillaries, in patients with diabetes mellitus. It is usually manifested with nephritic syndrome and glomerulosclerosis.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mondo.owl"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO:0000401</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9:250.4</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9:250.40</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9:583.81</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D003928</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C84417</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCTID:127013003</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diabetic Nephropathy</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diabetic kidney disease</oboInOwl:hasExactSynonym>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0005016</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diabetic nephropathy</rdfs:label>
-        <skos:closeMatch rdf:resource="http://identifiers.org/snomedct/197605007"/>
-        <skos:closeMatch rdf:resource="http://identifiers.org/snomedct/230576004"/>
-        <skos:closeMatch rdf:resource="http://identifiers.org/snomedct/230577008"/>
-        <skos:closeMatch rdf:resource="http://identifiers.org/snomedct/311366001"/>
-        <skos:closeMatch rdf:resource="http://identifiers.org/snomedct/38542009"/>
-        <skos:closeMatch rdf:resource="http://identifiers.org/snomedct/39058009"/>
-        <skos:closeMatch rdf:resource="http://identifiers.org/snomedct/39127005"/>
-        <skos:closeMatch rdf:resource="http://identifiers.org/snomedct/54181000"/>
-        <skos:closeMatch rdf:resource="http://identifiers.org/snomedct/707221002"/>
-        <skos:closeMatch rdf:resource="http://identifiers.org/snomedct/81830002"/>
-        <skos:closeMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0011881"/>
+        <oboInOwl:hasDbXref>EFO:0000401</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:250.4</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:250.40</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:583.81</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MEDGEN:8352</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D003928</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C84417</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:127013003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0011881</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>icd11.foundation:615062102</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>DKD</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>diabetic nephropathy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>type 1 diabetes nephropathy</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>type 2 diabetes nephropathy</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:id>MONDO:0005016</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#otar"/>
+        <rdfs:label>diabetic kidney disease</rdfs:label>
+        <skos:exactMatch rdf:resource="http://id.who.int/icd/entity/615062102"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/medgen/8352"/>
         <skos:exactMatch rdf:resource="http://identifiers.org/mesh/D003928"/>
         <skos:exactMatch rdf:resource="http://identifiers.org/snomedct/127013003"/>
+        <skos:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0011881"/>
         <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C84417"/>
+        <skos:exactMatch rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000401"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005066 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005066">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_7770007"/>
+        <obo:IAO_0000115>A congenital disorder (due to inherited enzyme abnormality) or acquired (due to failure of a metabolically important organ) disorder resulting from an abnormal metabolic process.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mondo.owl"/>
+        <oboInOwl:hasDbXref>DOID:0014667</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EFO:0000589</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10CM:E70-E88</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10WHO:E70-E90</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:277.8</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:277.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MEDGEN:44376</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D008659</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NANDO:1100002</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C3235</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:75934005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0025517</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>disorder of metabolic process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>metabolic disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>metabolic disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>metabolic process disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>MONDO:0005066</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#harrisons_view"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#otar"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#rare_grouping"/>
+        <rdfs:label>metabolic disease</rdfs:label>
+        <skos:exactMatch rdf:resource="http://identifiers.org/medgen/44376"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/mesh/D008659"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/snomedct/75934005"/>
+        <skos:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0025517"/>
+        <skos:exactMatch rdf:resource="http://purl.bioontology.org/ontology/ICD10CM/E70-E88"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_0014667"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3235"/>
+        <skos:exactMatch rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000589"/>
+        <skos:exactMatch rdf:resource="https://icd.who.int/browse10/2019/en#/E70-E90"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005070 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005070">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_7770008"/>
+        <obo:IAO_0000115>A benign or malignant tissue growth resulting from uncontrolled cell proliferation. Benign neoplastic cells resemble normal cells without exhibiting significant cytologic atypia, while malignant cells exhibit overt signs such as dysplastic features, atypical mitotic figures, necrosis, nuclear pleomorphism, and anaplasia. Representative examples of benign neoplasms include papillomas, cystadenomas, and lipomas; malignant neoplasms include carcinomas, sarcomas, lymphomas, and leukemias.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mondo.owl"/>
+        <obo:IAO_0000589>neoplasm (disease)</obo:IAO_0000589>
+        <oboInOwl:hasBroadSynonym>cell process disease</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDbXref>DOID:14566</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EFO:0000616</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>HP:0002664</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10CM:C00-D49</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10CM:C7A-C7A</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10CM:C7B-C7B</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:140-239</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:239.8</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:239.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MEDGEN:10294</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D009369</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C3262</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ONCOTREE:OTHER</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:55342001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0027651</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>disease of cellular proliferation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>neoplasia</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>neoplasm (disease)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>neoplastic disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>neoplastic growth</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>tumor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>tumor disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>tumour</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>tumour disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>other neoplasm</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:id>MONDO:0005070</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#otar"/>
+        <rdfs:label>neoplasm</rdfs:label>
+        <skos:exactMatch rdf:resource="http://identifiers.org/medgen/10294"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/mesh/D009369"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/snomedct/55342001"/>
+        <skos:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0027651"/>
+        <skos:exactMatch rdf:resource="http://purl.bioontology.org/ontology/ICD10CM/C00-D49"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_14566"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3262"/>
+        <skos:exactMatch rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000616"/>
+        <skos:narrowMatch rdf:resource="http://purl.bioontology.org/ontology/ICD10CM/C7A-C7A"/>
+        <skos:narrowMatch rdf:resource="http://purl.bioontology.org/ontology/ICD10CM/C7B-C7B"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005083 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005083">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002406"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0100118"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_7770006"/>
+        <obo:IAO_0000115>An autoimmune condition characterized by red, well-delineated plaques with silvery scales that are usually on the extensor surfaces and scalp. They can occasionally present with these manifestations: pustules; erythema and scaling in intertriginous areas, and erythroderma, that are often distributed on extensor surfaces and scalp.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mondo.owl"/>
+        <mondo:curated_content_resource rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/psoriasis</mondo:curated_content_resource>
+        <mondo:should_conform_to rdf:resource="http://purl.obolibrary.org/obo/mondo/patterns/OMIM_phenotypic_series.yaml"/>
+        <oboInOwl:hasDbXref>DOID:8893</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EFO:0000676</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10CM:L40</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10WHO:L40</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:696</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:696.1</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:696.5</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:696.8</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MEDGEN:10997</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D011565</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C3346</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>OMIMPS:177900</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:9014002</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0033860</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>icd11.foundation:63698555</oboInOwl:hasDbXref>
+        <oboInOwl:id>MONDO:0005083</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#doid_rare"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#otar"/>
+        <rdfs:label>psoriasis</rdfs:label>
+        <skos:exactMatch rdf:resource="http://id.who.int/icd/entity/63698555"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/medgen/10997"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/mesh/D011565"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/snomedct/9014002"/>
+        <skos:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0033860"/>
+        <skos:exactMatch rdf:resource="http://purl.bioontology.org/ontology/ICD10CM/L40"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_8893"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3346"/>
+        <skos:exactMatch rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000676"/>
+        <skos:exactMatch rdf:resource="https://icd.who.int/browse10/2019/en#/L40"/>
+        <skos:exactMatch rdf:resource="https://omim.org/phenotypicSeries/PS177900"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005093 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005093">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_7770006"/>
+        <obo:IAO_0000115>Any deviation from the normal structure or function of the skin or subcutaneous tissue that is manifested by a characteristic set of symptoms and signs.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mondo.owl"/>
+        <mondo:curated_content_resource rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/skin_disease</mondo:curated_content_resource>
+        <terms:conformsTo rdf:resource="http://purl.obolibrary.org/obo/mondo/patterns/location.yaml"/>
+        <terms:conformsTo rdf:resource="http://purl.obolibrary.org/obo/mondo/patterns/location_top.yaml"/>
+        <oboInOwl:hasDbXref>DOID:37</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EFO:0000701</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:702</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:702.8</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:709.8</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MEDGEN:20777</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D012871</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NANDO:2100281</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C3371</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:95320005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0037274</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>cutaneous disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease of zone of skin</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease or disorder of zone of skin</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disorder of skin</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disorder of zone of skin</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>skin diseases and manifestations</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>skin disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>zone of skin disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>zone of skin disease or disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>dermatosis</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>genodermatosis</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:id>MONDO:0005093</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#otar"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#rare_grouping"/>
+        <rdfs:label>skin disorder</rdfs:label>
+        <skos:exactMatch rdf:resource="http://identifiers.org/medgen/20777"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/mesh/D012871"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/snomedct/95320005"/>
+        <skos:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0037274"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_37"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3371"/>
+        <skos:exactMatch rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000701"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005148 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005148">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005015"/>
+        <obo:IAO_0000115>A type of diabetes mellitus that is characterized by insulin resistance or desensitization and increased blood glucose levels. This is a chronic disease that can develop gradually over the life of a patient and can be linked to both environmental factors and heredity.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/monarch-initiative/mondo/issues/4521</obo:IAO_0000233>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/monarch-initiative/mondo/issues/7275</obo:IAO_0000233>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/monarch-initiative/mondo/issues/9097</obo:IAO_0000233>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mondo.owl"/>
+        <mondo:curated_content_resource rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/type_2_diabetes_mellitus</mondo:curated_content_resource>
+        <oboInOwl:hasDbXref>DOID:9352</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10CM:E11</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10WHO:E11</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MEDGEN:41523</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D003924</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NANDO:2200461</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C26747</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>OMIM:125853</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:44054006</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0011860</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>icd11.foundation:119724091</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>NIDDM</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>T2D</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>T2DM</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>T2DM - type 2 diabetes mellitus</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>adult onset diabetes</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>adult-onset diabetes</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>diabetes mellitis type 2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>diabetes mellitis type II</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>diabetes mellitus, noninsulin-dependent</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>diabetes mellitus, noninsulin-dependent, association with</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>diabetes mellitus, noninsulin-dependent, late onset</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>diabetes mellitus, type 2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>diabetes mellitus, type II</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>diabetes, type 2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>insulin resistance, severe, digenic</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>non-insulin dependent diabetes</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>non-insulin dependent diabetes mellitus</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>noninsulin dependent diabetes</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>noninsulin-dependent diabetes mellitus</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>type 2 diabetes</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>type 2 diabetes mellitus</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>type 2 diabetes mellitus non-insulin dependent</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>type II diabetes</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>type II diabetes mellitus</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>diabetes mellitus, noninsulin-dependent, 2</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:id>MONDO:0005148</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#omim_susceptibility"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#otar"/>
+        <rdfs:label>type 2 diabetes mellitus</rdfs:label>
+        <skos:exactMatch rdf:resource="http://id.who.int/icd/entity/119724091"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/medgen/41523"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/mesh/D003924"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/snomedct/44054006"/>
+        <skos:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0011860"/>
+        <skos:exactMatch rdf:resource="http://purl.bioontology.org/ontology/ICD10CM/E11"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_9352"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C26747"/>
+        <skos:exactMatch rdf:resource="https://icd.who.int/browse10/2019/en#/E11"/>
+        <skos:exactMatch rdf:resource="https://omim.org/entry/125853"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005151 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005151">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_7770006"/>
+        <obo:IAO_0000115>A disease involving the endocrine system.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mondo.owl"/>
+        <mondo:curated_content_resource rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/endocrine_system_disease</mondo:curated_content_resource>
+        <mondo:excluded_subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021199"/>
+        <terms:conformsTo rdf:resource="http://purl.obolibrary.org/obo/mondo/patterns/location.yaml"/>
+        <oboInOwl:hasDbXref>DOID:28</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EFO:0001379</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:259.8</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:259.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MEDGEN:4043</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D004700</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NANDO:1100009</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NANDO:2100109</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C3009</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:362969004</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0014130</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>disease of endocrine system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease or disorder of endocrine system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disorder of endocrine system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>endocrine disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>endocrine disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>endocrine system disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>endocrine system disease or disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>endocrine system disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>endocrinopathy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>thyroid or other glandular disorders</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>MONDO:0005151</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#harrisons_view"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#otar"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#rare_grouping"/>
+        <rdfs:label>endocrine system disorder</rdfs:label>
+        <skos:exactMatch rdf:resource="http://identifiers.org/medgen/4043"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/mesh/D004700"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/snomedct/362969004"/>
+        <skos:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0014130"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_28"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3009"/>
+        <skos:exactMatch rdf:resource="http://www.ebi.ac.uk/efo/EFO_0001379"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005154 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005154">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002515"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005151"/>
+        <obo:IAO_0000115>A disease involving the liver.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mondo.owl"/>
+        <mondo:curated_content_resource rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/liver_disease</mondo:curated_content_resource>
+        <terms:conformsTo rdf:resource="http://purl.obolibrary.org/obo/mondo/patterns/location.yaml"/>
+        <terms:conformsTo rdf:resource="http://purl.obolibrary.org/obo/mondo/patterns/location_top.yaml"/>
+        <oboInOwl:hasDbXref>DOID:409</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EFO:0001421</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10CM:K70-K77</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:573.8</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:573.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MEDGEN:893061</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D008107</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C3196</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:235856003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C4021780</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>icd11.foundation:1784240230</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>disease of liver</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease or disorder of liver</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disorder of liver</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hepatic disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hepatic disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>liver and intrahepatic bile duct disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>liver disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>liver disease or disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>liver disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>MONDO:0005154</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#otar"/>
+        <rdfs:label>liver disorder</rdfs:label>
+        <skos:exactMatch rdf:resource="http://id.who.int/icd/entity/1784240230"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/medgen/893061"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/mesh/D008107"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/snomedct/235856003"/>
+        <skos:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C4021780"/>
+        <skos:exactMatch rdf:resource="http://purl.bioontology.org/ontology/ICD10CM/K70-K77"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_409"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3196"/>
+        <skos:exactMatch rdf:resource="http://www.ebi.ac.uk/efo/EFO_0001421"/>
     </owl:Class>
     
 
@@ -253,41 +1502,89 @@
     <!-- http://purl.obolibrary.org/obo/MONDO_0005240 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005240">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000031"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A disease involving the kidney.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_7770006"/>
+        <obo:IAO_0000115>A disease involving the kidney.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mondo.owl"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:557</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO:0003086</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD10:N08</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD10:N28.9</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9:583.81</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D007674</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C3149</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCTID:90708001</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0022658</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease of kidney</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease or disorder of kidney</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disorder of kidney</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kidney disease</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kidney disease or disorder</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kidney disorder</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nephropathy</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">renal disease</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">renal disorder</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disorder of kidney</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0005240</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kidney disease</rdfs:label>
-        <skos:closeMatch rdf:resource="http://identifiers.org/snomedct/155871008"/>
-        <skos:closeMatch rdf:resource="http://identifiers.org/snomedct/266612003"/>
-        <skos:closeMatch rdf:resource="http://identifiers.org/snomedct/266624005"/>
-        <skos:closeMatch rdf:resource="http://identifiers.org/snomedct/266627003"/>
-        <skos:closeMatch rdf:resource="http://identifiers.org/snomedct/274108006"/>
-        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C34843"/>
+        <mondo:curated_content_resource rdf:resource="https://search.clinicalgenome.org/kb/conditions/MONDO:0005240"/>
+        <mondo:curated_content_resource rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/kidney_disease</mondo:curated_content_resource>
+        <terms:conformsTo rdf:resource="http://purl.obolibrary.org/obo/mondo/patterns/location.yaml"/>
+        <terms:conformsTo rdf:resource="http://purl.obolibrary.org/obo/mondo/patterns/location_top.yaml"/>
+        <oboInOwl:hasDbXref>DOID:557</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EFO:0003086</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:583.81</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MEDGEN:9635</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D007674</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C3149</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:90708001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0022658</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>disease of kidney</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease or disorder of kidney</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disorder of kidney</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>kidney disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>kidney disease or disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>kidney disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>renal disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>renal disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>MONDO:0005240</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#clingen"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#otar"/>
+        <rdfs:label>kidney disorder</rdfs:label>
+        <skos:exactMatch rdf:resource="http://identifiers.org/medgen/9635"/>
         <skos:exactMatch rdf:resource="http://identifiers.org/mesh/D007674"/>
         <skos:exactMatch rdf:resource="http://identifiers.org/snomedct/90708001"/>
         <skos:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0022658"/>
         <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_557"/>
         <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3149"/>
+        <skos:exactMatch rdf:resource="http://www.ebi.ac.uk/efo/EFO_0003086"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005267 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005267">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0004995"/>
+        <obo:IAO_0000115>A disease involving the heart and/or pericardium.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mondo.owl"/>
+        <mondo:curated_content_resource rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/heart_disease</mondo:curated_content_resource>
+        <terms:conformsTo rdf:resource="http://purl.obolibrary.org/obo/mondo/patterns/location.yaml"/>
+        <terms:conformsTo rdf:resource="http://purl.obolibrary.org/obo/mondo/patterns/location_top.yaml"/>
+        <oboInOwl:hasDbXref>DOID:114</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EFO:0003777</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:429.89</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:429.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:V47.2</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MEDGEN:5458</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D006331</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C3079</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:56265001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0018799</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>icd11.foundation:1512587470</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>cardiac disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease of heart</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease or disorder of heart</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disorder of heart</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disorder of heart/pericardium</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>heart disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>heart disease or disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>heart disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>heart trouble</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>heart/pericardial disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>heart/pericardial disease or disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>heart/pericardial disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>heart/pericardial trouble</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>MONDO:0005267</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#otar"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#rare_grouping"/>
+        <rdfs:label>heart disorder</rdfs:label>
+        <skos:exactMatch rdf:resource="http://id.who.int/icd/entity/1512587470"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/medgen/5458"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/mesh/D006331"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/snomedct/56265001"/>
+        <skos:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0018799"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_114"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3079"/>
+        <skos:exactMatch rdf:resource="http://www.ebi.ac.uk/efo/EFO_0003777"/>
     </owl:Class>
     
 
@@ -296,39 +1593,606 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005300">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005240"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Impairment of the renal function secondary to chronic kidney damage persisting for three or more months.</obo:IAO_0000115>
+        <obo:IAO_0000115>Impairment of the renal function secondary to chronic kidney damage persisting for three or more months.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/monarch-initiative/mondo/issues/9097</obo:IAO_0000233>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mondo.owl"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COHD:46271022</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:784</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO:0003884</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD10:N18.9</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9:585</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9:585.6</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D007676</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C80078</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCTID:709044004</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0022661</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CKD</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CKD - chronic kidney disease</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chronic kidney disease</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chronic kidney failure</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chronic renal disease</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kidney disease, chronic</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">renal failure - chronic</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chronic renal failure syndrome</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chronic renal insufficiency</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0005300</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chronic kidney disease</rdfs:label>
-        <skos:closeMatch rdf:resource="http://identifiers.org/snomedct/155856009"/>
-        <skos:closeMatch rdf:resource="http://identifiers.org/snomedct/197654000"/>
-        <skos:closeMatch rdf:resource="http://identifiers.org/snomedct/197655004"/>
-        <skos:closeMatch rdf:resource="http://identifiers.org/snomedct/197755007"/>
-        <skos:closeMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C1561643"/>
+        <mondo:curated_content_resource rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/chronic_kidney_disease</mondo:curated_content_resource>
+        <oboInOwl:hasDbXref>DOID:784</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EFO:0003884</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10CM:N18</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10CM:N18.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10WHO:N18</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:585</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MEDGEN:473458</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D007676</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NANDO:2100008</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NANDO:2100023</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C80078</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:709044004</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C1561643</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>icd11.foundation:412389819</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>CKD - chronic kidney disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>chronic kidney disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>chronic renal disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>kidney disease, chronic</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>chronic renal failure syndrome</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:id>MONDO:0005300</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#otar"/>
+        <rdfs:label>chronic kidney disease</rdfs:label>
+        <skos:exactMatch rdf:resource="http://id.who.int/icd/entity/412389819"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/medgen/473458"/>
         <skos:exactMatch rdf:resource="http://identifiers.org/mesh/D007676"/>
         <skos:exactMatch rdf:resource="http://identifiers.org/snomedct/709044004"/>
-        <skos:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0022661"/>
+        <skos:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C1561643"/>
+        <skos:exactMatch rdf:resource="http://purl.bioontology.org/ontology/ICD10CM/N18"/>
+        <skos:exactMatch rdf:resource="http://purl.bioontology.org/ontology/ICD10CM/N18.9"/>
         <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_784"/>
         <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80078"/>
+        <skos:exactMatch rdf:resource="http://www.ebi.ac.uk/efo/EFO_0003884"/>
+        <skos:exactMatch rdf:resource="https://icd.who.int/browse10/2019/en#/N18"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005626 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005626">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005070"/>
+        <obo:IAO_0000115>A benign or malignant neoplasm that arises from and is composed of epithelial cells. This category include adenomas, papillomas, and carcinomas.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mondo.owl"/>
+        <oboInOwl:hasDbXref>EFO:0006858</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MEDGEN:277963</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D009375</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C3709</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:118285006</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C1368683</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>epithelial neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>epithelioma</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>MONDO:0005626</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#otar"/>
+        <rdfs:label>epithelial neoplasm</rdfs:label>
+        <skos:exactMatch rdf:resource="http://identifiers.org/medgen/277963"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/mesh/D009375"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/snomedct/118285006"/>
+        <skos:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C1368683"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3709"/>
+        <skos:exactMatch rdf:resource="http://www.ebi.ac.uk/efo/EFO_0006858"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0006181 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0006181">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002516"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0004993"/>
+        <obo:IAO_0000115>A malignant neoplasm that arises from the epithelium of any part of the digestive system. Representative examples include colorectal carcinoma, esophageal carcinoma, and pancreatic carcinoma.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mondo.owl"/>
+        <mondo:curated_content_resource rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/gastrointestinal_carcinoma</mondo:curated_content_resource>
+        <terms:conformsTo rdf:resource="http://purl.obolibrary.org/obo/mondo/patterns/carcinoma.yaml"/>
+        <oboInOwl:hasDbXref>DOID:0050922</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EFO:1000218</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>HP:0002672</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MEDGEN:57467</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C96963</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0151544</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>carcinoma of digestive system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>carcinoma of the gastrointestinal system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>digestive system carcinoma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>gastrointestinal carcinoma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>gastrointestinal carcinoma (disease)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>gastrointestinal system carcinoma</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>MONDO:0006181</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#otar"/>
+        <rdfs:label>digestive system carcinoma</rdfs:label>
+        <skos:exactMatch rdf:resource="http://identifiers.org/medgen/57467"/>
+        <skos:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0151544"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_0050922"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C96963"/>
+        <skos:exactMatch rdf:resource="http://www.ebi.ac.uk/efo/EFO_1000218"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0007256 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0007256">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0004970"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0018531"/>
+        <obo:IAO_0000115>A malignant tumor that arises from hepatocytes. Hepatocellular carcinoma is relatively rare in the United States but very common in all African countries south of the Sahara and in Southeast Asia. Most cases are seen in patients over the age of 50 years, but this tumor can also occur in younger individuals and even in children. Hepatocellular carcinoma is more common in males than females and is associated with hepatitis B, hepatitis C, chronic alcohol abuse and cirrhosis. Serum elevation of alpha-fetoprotein occurs in a large percentage of patients with hepatocellular carcinoma. Grossly, hepatocellular carcinoma may present as a single mass, as multiple nodules, or as diffuse liver involvement. Microscopically, there is a wide range of differentiation from tumor to tumor (well differentiated to poorly differentiated tumors). Hepatocellular carcinomas quickly metastasize to regional lymph nodes and lung. The overall median survival of untreated liver cell carcinoma is about 4 months. The most effective treatment of hepatocellular carcinoma is complete resection of the tumor. Lately, an increasing number of tumors have been treated with liver transplantation.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/monarch-initiative/mondo/issues/4521</obo:IAO_0000233>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/monarch-initiative/mondo/issues/9097</obo:IAO_0000233>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mondo.owl"/>
+        <oboInOwl:hasDbXref>DOID:684</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>DOID:686</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EFO:0000182</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GARD:0016773</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10CM:C22.0</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICDO:8170/3</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MEDGEN:389187</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D006528</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MedDRA:10049010</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NANDO:2200047</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C3099</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NORD:1907</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>OMIM:114550</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ONCOTREE:HCC</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Orphanet:88673</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C2239176</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>icd11.foundation:1294035808</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>HCC</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>cancer, hepatocellular</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>carcinoma of liver</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>carcinoma of liver cells</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>carcinoma of the liver cells</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>carcinoma, hepatocellular, malignant</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hepatoblastoma, somatic</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hepatocellular adenocarcinoma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hepatocellular cancer</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hepatocellular cancer, somatic</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hepatocellular carcinoma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hepatocellular carcinoma, childhood type, somatic</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hepatocellular carcinoma, somatic</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hepatoma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>liver carcinoma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>liver cell cancer (hepatocellular carcinoma)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>liver cell carcinoma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>primary carcinoma of liver cells</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>primary carcinoma of the liver cells</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>adult hepatoma</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>adult primary hepatocellular carcinoma</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:id>MONDO:0007256</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#doid_rare"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#gard_rare"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#nord_rare"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#ordo_group_of_disorders"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#otar"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#rare"/>
+        <rdfs:label>hepatocellular carcinoma</rdfs:label>
+        <skos:closeMatch rdf:resource="http://identifiers.org/meddra/10049010"/>
+        <skos:exactMatch rdf:resource="http://id.who.int/icd/entity/1294035808"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/medgen/389187"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/mesh/D006528"/>
+        <skos:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C2239176"/>
+        <skos:exactMatch rdf:resource="http://purl.bioontology.org/ontology/ICD10CM/C22.0"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_684"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_686"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3099"/>
+        <skos:exactMatch rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000182"/>
+        <skos:exactMatch rdf:resource="http://www.orpha.net/ORDO/Orphanet_88673"/>
+        <skos:exactMatch rdf:resource="https://omim.org/entry/114550"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0008487 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0008487">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0003847"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005151"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_7770006"/>
+        <obo:IAO_0000115>A disorder that manifests as multiple cysts on the ovaries. It results in hormonal imbalances and leads to irregular and abnormal menstrual periods, excess growth of hair, acne eruptions and obesity.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/monarch-initiative/mondo/issues/4521</obo:IAO_0000233>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/monarch-initiative/mondo/issues/9097</obo:IAO_0000233>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mondo.owl"/>
+        <mondo:curated_content_resource rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/polycystic_ovary_syndrome</mondo:curated_content_resource>
+        <mondo:curated_content_resource rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/polycystic_ovary_syndrome_1</mondo:curated_content_resource>
+        <oboInOwl:hasDbXref>DOID:11612</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EFO:0000660</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10CM:E28.2</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:256.4</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MEDGEN:10836</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D011085</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NANDO:2100149</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NANDO:2200409</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C26862</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>OMIM:184700</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Orphanet:3185</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:69878008</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0032460</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>icd11.foundation:1213633323</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>PCOS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Stein-Leventhal syndrome</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>polycystic ovarian disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>polycystic ovaries</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>polycystic ovary syndrome</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>PCOS1</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>polycystic ovary syndrome 1</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:id>MONDO:0008487</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#otar"/>
+        <rdfs:label>polycystic ovary syndrome</rdfs:label>
+        <skos:exactMatch rdf:resource="http://id.who.int/icd/entity/1213633323"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/medgen/10836"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/mesh/D011085"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/snomedct/69878008"/>
+        <skos:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0032460"/>
+        <skos:exactMatch rdf:resource="http://purl.bioontology.org/ontology/ICD10CM/E28.2"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_11612"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C26862"/>
+        <skos:exactMatch rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000660"/>
+        <skos:exactMatch rdf:resource="https://omim.org/entry/184700"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0018531 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0018531">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002691"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0006181"/>
+        <obo:IAO_0000115>A carcinoma that arises from the hepatocytes or intrahepatic bile ducts. The main subtypes are hepatocellular carcinoma (hepatoma) and cholangiocarcinoma.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/monarch-initiative/mondo/issues/9097</obo:IAO_0000233>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mondo.owl"/>
+        <mondo:curated_content_resource rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/carcinoma_of_liver_and_intrahepatic_biliary_tract</mondo:curated_content_resource>
+        <terms:conformsTo rdf:resource="http://purl.obolibrary.org/obo/mondo/patterns/carcinoma.yaml"/>
+        <oboInOwl:hasBroadSynonym>cancer of liver</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>cancer of liver and intrahepatic biliary tract</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>cancer of the liver</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>cancer of the liver and intrahepatic biliary tract</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>carcinoma of liver</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>hepatic cancer</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>liver and intrahepatic bile duct cancer</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>liver cancer</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>liver carcinoma</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>liver/hepatobiliary cancer</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDbXref>GARD:0021786</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MEDGEN:78921</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C7927</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ONCOTREE:HCCIHCH</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Orphanet:424936</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0279000</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>carcinoma of liver and IBT</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>liver and intrahepatic bile duct carcinoma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>liver and intrahepatic biliary tract cancer</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>liver and intrahepatic biliary tract carcinoma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>primary liver carcinoma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>hepatocellular carcinoma plus intrahepatic cholangiocarcinoma</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>MONDO:0018531</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#disease_grouping"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#gard_rare"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#ordo_group_of_disorders"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#otar"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#rare"/>
+        <rdfs:comment>Editor note: In uberon intrahepatic bile ducts are part of the liver, so we equate this with carcinoma of liver; we use hepatocellular for the liver proper</rdfs:comment>
+        <rdfs:label>carcinoma of liver and intrahepatic biliary tract</rdfs:label>
+        <skos:exactMatch rdf:resource="http://identifiers.org/medgen/78921"/>
+        <skos:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0279000"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C7927"/>
+        <skos:exactMatch rdf:resource="http://www.orpha.net/ORDO/Orphanet_424936"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0019052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0019052">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0003847"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005066"/>
+        <obo:IAO_0000115>An inherited disorder resulting from an enzyme defect in biochemical and metabolic pathways affecting proteins, fats, carbohydrates metabolism or organelle function.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/monarch-initiative/mondo/issues/1483</obo:IAO_0000233>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mondo.owl"/>
+        <mondo:curated_content_resource rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/inherited_metabolic_disorder</mondo:curated_content_resource>
+        <terms:conformsTo rdf:resource="http://purl.obolibrary.org/obo/mondo/patterns/hereditary.yaml"/>
+        <oboInOwl:hasDbXref>DOID:655</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GARD:0022508</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MEDGEN:6323</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D008661</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MedDRA:10058097</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MedDRA:10062018</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NANDO:2100159</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C34816</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Orphanet:68367</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:86095007</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0025521</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>icd11.foundation:733825440</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>congenital metabolic disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>congenital metabolism disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hereditary metabolic disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>inborn disorders of metabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>inborn error of metabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>inborn errors of metabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>inborn metabolic disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>inherited disorder of metabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>inherited disorders of metabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>inherited metabolic disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>rare inborn errors of metabolism</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>rare inherited metabolic disorder</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:id>MONDO:0019052</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#disease_grouping"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#gard_rare"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#ordo_group_of_disorders"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#otar"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#rare"/>
+        <rdfs:comment>Note that the ordo class is specifically for rare diseases, but we broaden to be inclusive of HH1</rdfs:comment>
+        <rdfs:label>inborn errors of metabolism</rdfs:label>
+        <skos:closeMatch rdf:resource="http://identifiers.org/meddra/10058097"/>
+        <skos:closeMatch rdf:resource="http://identifiers.org/meddra/10062018"/>
+        <skos:exactMatch rdf:resource="http://id.who.int/icd/entity/733825440"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/medgen/6323"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/mesh/D008661"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/snomedct/86095007"/>
+        <skos:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0025521"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_655"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C34816"/>
+        <skos:exactMatch rdf:resource="http://www.orpha.net/ORDO/Orphanet_68367"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0021069 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0021069">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002082"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0004992"/>
+        <obo:IAO_0000115>A malignant neoplasm affecting the endocrine glands. Representative examples include thyroid gland carcinoma, parathyroid gland carcinoma, pituitary gland carcinoma, and adrenal cortex carcinoma.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mondo.owl"/>
+        <mondo:curated_content_resource rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/endocrine_gland_cancer</mondo:curated_content_resource>
+        <terms:conformsTo rdf:resource="http://purl.obolibrary.org/obo/mondo/patterns/cancer.yaml"/>
+        <oboInOwl:hasBroadSynonym>Endocrine tumour</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>endocrine neoplasm</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDbXref>DOID:170</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:194.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MEDGEN:56319</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D004701</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C3575</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0153658</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>cancer of endocrine gland</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>endocrine cancer</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>endocrine gland cancer</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>endocrine neoplasm, malignant</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>malignant endocrine gland neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>malignant endocrine gland tumor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>malignant endocrine gland tumour</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>malignant endocrine neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>malignant endocrine tumor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>malignant endocrine tumour</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>malignant neoplasm of endocrine gland</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>malignant neoplasm of the endocrine gland</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>malignant tumor of endocrine gland</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>malignant tumor of the endocrine gland</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>malignant tumour of the endocrine gland</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>MONDO:0021069</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#otar"/>
+        <rdfs:label>malignant endocrine neoplasm</rdfs:label>
+        <skos:exactMatch rdf:resource="http://identifiers.org/medgen/56319"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/mesh/D004701"/>
+        <skos:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0153658"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_170"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3575"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0021223 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0021223">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005070"/>
+        <obo:IAO_0000115>A neoplasm (disease) that involves the digestive system.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mondo.owl"/>
+        <terms:conformsTo rdf:resource="http://purl.obolibrary.org/obo/mondo/patterns/neoplasm.yaml"/>
+        <oboInOwl:hasDbXref>EFO:0008549</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MEDGEN:8398</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D005770</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C3052</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0012243</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>GI neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>GI system neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>GI system tumor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>GI system tumour</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>GI tumor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>GI tumour</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>digestive neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>digestive system neoplasm (disease)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>digestive system tumor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>digestive system tumour</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>digestive tumor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>digestive tumour</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>gastrointestinal neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>gastrointestinal system neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>gastrointestinal system tumor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>gastrointestinal system tumour</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>gastrointestinal tumor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>gastrointestinal tumour</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>neoplasm of GI system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>neoplasm of digestive system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>neoplasm of gastrointestinal system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>neoplasm of the GI system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>neoplasm of the digestive system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>neoplasm of the gastrointestinal system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>tumor of GI system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>tumor of digestive system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>tumor of gastrointestinal system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>tumor of the GI system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>tumor of the digestive system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>tumor of the gastrointestinal system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>tumour of GI system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>tumour of digestive system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>tumour of gastrointestinal system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>tumour of the GI system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>tumour of the digestive system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>tumour of the gastrointestinal system</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>MONDO:0021223</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#otar"/>
+        <rdfs:label>digestive system neoplasm</rdfs:label>
+        <skos:exactMatch rdf:resource="http://identifiers.org/medgen/8398"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/mesh/D005770"/>
+        <skos:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0012243"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3052"/>
+        <skos:exactMatch rdf:resource="http://www.ebi.ac.uk/efo/EFO_0008549"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0024477 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0024477">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002082"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002514"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005154"/>
+        <obo:IAO_0000115>A benign or malignant neoplasm that affects the liver parenchyma or intrahepatic bile ducts. Representative examples of benign neoplasms include hepatocellular adenoma, and bile duct adenoma. Representative examples of malignant neoplasms include hepatocellular carcinoma, intrahepatic cholangiocarcinoma, and lymphoma.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/monarch-initiative/mondo/issues/5166</obo:IAO_0000233>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mondo.owl"/>
+        <mondo:curated_content_resource rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/liver_benign_neoplasm</mondo:curated_content_resource>
+        <terms:conformsTo rdf:resource="http://purl.obolibrary.org/obo/mondo/patterns/neoplasm.yaml"/>
+        <oboInOwl:hasDbXref>DOID:916</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MEDGEN:232599</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C7103</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C7106</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ONCOTREE:LIVER</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:126851005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C1333976</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>epithelial hepatic and intrahepatic bile duct neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hepatic and intrahepatic bile duct neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>liver and intrahepatic bile duct epithelial neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>liver and intrahepatic bile duct neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>liver neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>liver neoplasm (disease)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>liver tumor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>liver tumour</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>neoplasm of liver</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>tumor of liver</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>tumour of liver</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>MONDO:0024477</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#otar"/>
+        <rdfs:label>liver and intrahepatic bile duct neoplasm</rdfs:label>
+        <skos:exactMatch rdf:resource="http://identifiers.org/medgen/232599"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/snomedct/126851005"/>
+        <skos:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C1333976"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_916"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C7103"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C7106"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0024644 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0024644">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0004995"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005267"/>
+        <obo:IAO_0000115>A disorder of cardiac function caused by insufficient blood flow to the muscle tissue of the heart. The decreased blood flow may be due to narrowing of the coronary arteries (coronary artery disease), to obstruction by a thrombus (coronary thrombosis), or less commonly, to diffuse narrowing of arterioles and other small vessels within the heart. Severe interruption of the blood supply to the myocardial tissue may result in necrosis of cardiac muscle (myocardial infarction).</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mondo.owl"/>
+        <oboInOwl:hasDbXref>EFO:1001375</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10CM:I20-I25</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MEDGEN:101801</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D017202</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NANDO:2100070</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C50625</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:414545008</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0151744</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>icd11.foundation:1964269418</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>IHD</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ischaemic disease of myocardium</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ischaemic heart disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ischemic disease of myocardium</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ischemic heart disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>myocardium ischaemic disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>myocardium ischemic disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>disease, ischaemic heart</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>disease, ischemic heart</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>diseases, ischaemic heart</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>diseases, ischemic heart</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>heart disease, ischaemic</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>heart disease, ischemic</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>heart diseases, ischaemic</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>heart diseases, ischemic</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>ischaemic heart diseases</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>ischemia, myocardial</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>ischemias, myocardial</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>ischemic heart diseases</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>myocardial Ischemias</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>MONDO:0024644</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#otar"/>
+        <rdfs:label>myocardial ischemia</rdfs:label>
+        <skos:exactMatch rdf:resource="http://id.who.int/icd/entity/1964269418"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/medgen/101801"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/mesh/D017202"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/snomedct/414545008"/>
+        <skos:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0151744"/>
+        <skos:exactMatch rdf:resource="http://purl.bioontology.org/ontology/ICD10CM/I20-I25"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C50625"/>
+        <skos:exactMatch rdf:resource="http://www.ebi.ac.uk/efo/EFO_1001375"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0100118 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0100118">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0003847"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005093"/>
+        <obo:IAO_0000115>An instance of skin disease that is caused by a modification of the individual&apos;s genome.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/monarch-initiative/mondo/issues/5682</obo:IAO_0000233>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mondo.owl"/>
+        <terms:creator rdf:resource="https://orcid.org/0000-0001-5208-3432"/>
+        <oboInOwl:hasDbXref>MESH:D012873</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:239001006</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>disease, genetic skin</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>diseases, genetic skin</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>genetic skin disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>genetic skin diseases</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>genodermatosis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>skin disease, genetic</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>MONDO:0100118</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#otar"/>
+        <rdfs:label>hereditary skin disorder</rdfs:label>
+        <skos:exactMatch rdf:resource="http://identifiers.org/mesh/D012873"/>
+        <skos:exactMatch rdf:resource="http://identifiers.org/snomedct/239001006"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0700096 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0700096">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000031"/>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/monarch-initiative/mondo/issues/5858</obo:IAO_0000233>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mondo.owl"/>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-4142-7153"/>
+        <oboInOwl:hasExactSynonym>human disease or disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>MONDO:0700096</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/mondo#rare_grouping"/>
+        <rdfs:label>human disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_7770006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_7770006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0700096"/>
+        <obo:IAO_0000115>A grouping class for human diseases classified by the body system or anatomical component primarily affected.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mondo.owl"/>
+        <oboInOwl:id>MONDO:7770006</oboInOwl:id>
+        <rdfs:comment>This term is intended solely for classification purposes and should not be used for direct data annotation.</rdfs:comment>
+        <rdfs:label>disease by body system or component</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_7770007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_7770007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0700096"/>
+        <obo:IAO_0000115>A grouping class for human diseases classified by the molecular, biochemical, cellular, anatomic, developmental or physiological process that is disrupted.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mondo.owl"/>
+        <oboInOwl:id>MONDO:7770007</oboInOwl:id>
+        <rdfs:comment>This term is intended solely for classification purposes and should not be used for direct data annotation.</rdfs:comment>
+        <rdfs:label>disease by developmental or physiological process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_7770008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_7770008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0700096"/>
+        <obo:IAO_0000115>A grouping class for human diseases classified by their etiologic mechanism, encompassing primarily intrinsic (genetic, genomic), primarily extrinsic (e.g., infections, toxins, radiation), and complex multifactorial (e.g. nutritional) causes.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mondo.owl"/>
+        <oboInOwl:id>MONDO:7770008</oboInOwl:id>
+        <rdfs:comment>This term is intended solely for classification purposes and should not be used for direct data annotation.</rdfs:comment>
+        <rdfs:label>disease by etiologic mechanism</rdfs:label>
     </owl:Class>
     
 
@@ -340,5 +2204,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
 
