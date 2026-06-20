@@ -74,7 +74,7 @@ opmi.owl: build/opmi_merged.owl
 	--reasoner ELK \
 	annotate \
 	--ontology-iri "$(OBO)/opmi.owl" \
-	--version-iri "$(OBO)/opmi/$(TODAY)/opmi.owl" \
+	--version-iri "$(OBO)/opmi/releases/$(TODAY)/opmi.owl" \
 	--annotation owl:versionInfo "$(TODAY)" \
 	--output $@
 
