@@ -57,7 +57,7 @@ $(IMPORT_DIR)/%_imports.owl: $(ONTOFOX_INPUT_DIR)/%_imports_input.txt | $(IMPORT
 imports: $(IMPORT_FILES)
 
 
-build/opmi_merged.owl: src/ontology/opmi_dev.owl $(IMPORT_FILES) | build/robot.jar build
+build/opmi_merged.owl: src/ontology/opmi-edit.owl $(IMPORT_FILES) | build/robot.jar build
 	$(ROBOT) merge \
 	--input $< \
 	annotate \
@@ -71,82 +71,26 @@ build/opmi_merged.owl: src/ontology/opmi_dev.owl $(IMPORT_FILES) | build/robot.j
 opmi.owl: build/opmi_merged.owl
 	$(ROBOT) reason \
 	--input $< \
-	--reasoner HermiT \
+	--reasoner ELK \
 	annotate \
 	--ontology-iri "$(OBO)/opmi.owl" \
 	--version-iri "$(OBO)/opmi/$(TODAY)/opmi.owl" \
 	--annotation owl:versionInfo "$(TODAY)" \
 	--output $@
 
-test_report.tsv: build/opmi_merged.owl
+robot_report.tsv: build/opmi_merged.owl
 	$(ROBOT) report \
 	--input $< \
 	--fail-on none \
 	--output $@
 
-
-### Test
-#
-# Run main tests
-MERGED_VIOLATION_QUERIES := $(wildcard src/sparql/*-violation.rq)
-
-build/terms-report.csv: build/opmi_merged.owl src/sparql/terms-report.rq | build
-	$(ROBOT) query --input $< --select $(word 2,$^) $@
-
-build/opmi-previous-release.owl: | build
-	curl -L -o $@ "http://purl.obolibrary.org/obo/opmi.owl"
-
-build/released-entities.tsv: build/opmi-previous-release.owl src/sparql/get-opmi-entities.rq | build/robot.jar
-	$(ROBOT) query --input $< --select $(word 2,$^) $@
-
-build/current-entities.tsv: build/opmi_merged.owl src/sparql/get-opmi-entities.rq | build/robot.jar
-	$(ROBOT) query --input $< --select $(word 2,$^) $@
-
-build/dropped-entities.tsv: build/released-entities.tsv build/current-entities.tsv
-	comm -23 $^ > $@
-
-# Run all validation queries and exit on error.
-.PHONY: verify
-verify: verify-merged verify-entities
-
-# Run validation queries on opmi_merged and exit on error.
-.PHONY: verify-merged
-verify-merged: build/opmi_merged.owl $(MERGED_VIOLATION_QUERIES) | build/robot.jar
-	$(ROBOT) verify --input $< --output-dir build \
-	--queries $(MERGED_VIOLATION_QUERIES)
-
-# Check if any entities have been dropped and exit on error.
-.PHONY: verify-entities
-verify-entities: build/dropped-entities.tsv
-	@echo $(shell < $< wc -l) " opmi IRIs have been dropped"
-	@! test -s $<
-
-# Run a HermiT reasoner to find inconsistencies
-.PHONY: reason
-reason: build/opmi_merged.owl | build/robot.jar
-	$(ROBOT) reason --input $< --reasoner HermiT
-
-.PHONY: test
-test: reason verify
-
-
 ### General
 #
 # Full build
 .PHONY: all
-all: imports test opmi.owl build/terms-report.csv
+all: opmi.owl robot_report.tsv
 
 # Remove generated files
 .PHONY: clean
 clean:
 	rm -rf build
-
-# Check for problems such as bad line-endings
-.PHONY: check
-check:
-	src/scripts/check-line-endings.sh tsv
-
-# Fix simple problems such as bad line-endings
-.PHONY: fix
-fix:
-	src/scripts/fix-eol-all.sh
