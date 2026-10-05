@@ -4145,7 +4145,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000327">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000326"/>
-        <obo:IAO_0000115>The current stage of a clinical study and whether it is or will be open for enrollment</obo:IAO_0000115>
+        <obo:IAO_0000115>The current stage of a clinical study.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>https://clinicaltrials.gov/ct2/help/glossary/recruitment-status</obo:IAO_0000119>
         <rdfs:label xml:lang="en">study status</rdfs:label>
@@ -6724,7 +6724,7 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000605"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>The primary diagnosis refers to the patient condition that demands the most provider resources during the patient’s stay.</obo:IAO_0000115>
+        <obo:IAO_0000115>A medical condition status that a primary diagnosis was given.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
         <obo:IAO_0000118>primary diagnosis</obo:IAO_0000118>
         <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms/32902</obo:IAO_0000119>
@@ -6914,7 +6914,7 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000616"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A discharge diagnosis is a final diagnosis given a patient before release from the hospital after all testing, surgery, and workup are complete.</obo:IAO_0000115>
+        <obo:IAO_0000115>A medical condition status that a discharge diagnosis was given.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
         <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
         <obo:IAO_0000119>https://medical-dictionary.thefreedictionary.com/discharge+diagnosis</obo:IAO_0000119>
@@ -6934,7 +6934,7 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000617"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A postoperative diagnosis is a diagnosis or diagnoses discovered or confirmed during the surgery. Often it is the same as the preoperative diagnosis.</obo:IAO_0000115>
+        <obo:IAO_0000115>A medical condition status that a postoperative diagnosis was given.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
         <obo:IAO_0000118>primary admission diagnosis</obo:IAO_0000118>
         <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
@@ -6973,7 +6973,7 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000619"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A preoperative diagnosis is a surgical diagnosis or diagnoses that are assigned to the patient before the surgical procedure, and is the reason for the surgery. A preoperative diagnosis is, in the opinion of the surgeon, the diagnosis that will be confirmed during surgery.</obo:IAO_0000115>
+        <obo:IAO_0000115>A medical condition status that a preoperative diagnosis was given.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
         <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
         <obo:IAO_0000119>https://ushik.ahrq.gov/ViewItemDetails?system=mdr&amp;itemKey=85778000#:~:text=Definition%3A,will%20be%20confirmed%20during%20surgery.</obo:IAO_0000119>
@@ -6993,7 +6993,7 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000613"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>An admitting diagnosis is defined as the initial working diagnosis documented by the patient&apos;s admitting or attending physician who determined that inpatient care was necessary.</obo:IAO_0000115>
+        <obo:IAO_0000115>A medical condition status that an admission diagnosis was given.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
         <obo:IAO_0000118>admission diagnosis</obo:IAO_0000118>
         <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
@@ -7008,7 +7008,7 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000543">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000533"/>
-        <obo:IAO_0000115>A cause of death is an official determination of conditions resulting in a human&apos;s death, which may be recorded on a death certificate. A cause of death is determined by a medical examiner.</obo:IAO_0000115>
+        <obo:IAO_0000115>A medical condition status that a cause of death was given.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
         <obo:IAO_0000118>cause of death</obo:IAO_0000118>
         <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
@@ -7043,7 +7043,7 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000620"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A referral is a written request from one health professional to another health professional or health service, asking them to diagnose or treat you for a particular condition.</obo:IAO_0000115>
+        <obo:IAO_0000115>A medical condition status that a referral diagnosis was given.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
         <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
         <obo:IAO_0000119>https://www.healthdirect.gov.au/what-is-a-referral#:~:text=A%20referral%20is%20a%20written,you%20for%20a%20particular%20condition.</obo:IAO_0000119>
@@ -7063,7 +7063,7 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000609"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A secondary diagnosis is a condition that coexists at the time of admission, that develops subsequently, or that affects the treatment received and/or length of stay.</obo:IAO_0000115>
+        <obo:IAO_0000115>A medical condition status that a secondary diagnosis was given.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
         <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
         <obo:IAO_0000119>https://medcom.uiowa.edu/theloop/announcements/understanding-principal-and-secondary-conditions-2</obo:IAO_0000119>
@@ -7122,7 +7122,7 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000603"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>The status of have the primary admission diagnosis</obo:IAO_0000115>
+        <obo:IAO_0000115>The status of have the preliminary admission diagnosis</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
         <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms/32901</obo:IAO_0000119>
         <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
@@ -7143,7 +7143,7 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000604"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>The status of have the primary admission diagnosis</obo:IAO_0000115>
+        <obo:IAO_0000115>The status of have the preliminary discharge diagnosis</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
         <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms/32901</obo:IAO_0000119>
         <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
@@ -7169,7 +7169,7 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000552">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000533"/>
-        <obo:IAO_0000115>A contributory cause of death is a significant condition that unfavourably influences the course of the morbid process and thus contributes to the fatal outcome, but which is not related to the disease or condition directly causing death.</obo:IAO_0000115>
+        <obo:IAO_0000115>A medical condition status that a contributory cause was given.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
         <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
         <obo:IAO_0000119>https://stats.oecd.org/glossary/detail.asp?ID=444</obo:IAO_0000119>
@@ -7287,7 +7287,7 @@ Reference: https://www.who.int/ictrp/network/trds/en/</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000560">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000533"/>
-        <obo:IAO_0000115>A medical condition status in which the subject is not presently experiencing the condition or situation and there is a negligible perceived risk of the condition or situation returning.</obo:IAO_0000115>
+        <obo:IAO_0000115>A medical condition status that a resolved condition was given.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Long Tran</obo:IAO_0000117>
         <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms/32906</obo:IAO_0000119>
         <obo:IAO_0000119>https://athena.ohdsi.org/search-terms/terms?domain=Condition+Status</obo:IAO_0000119>
@@ -9214,7 +9214,7 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000479"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A centrally registered identifier that refers to a value defined by the original data source, such as a patient&apos;s value assigned by the original hospital.</obo:IAO_0000115>
+        <obo:IAO_0000115>A centrally registered identifier that refers to a concept.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
         <obo:IAO_0000119>http://ohdsi.github.io/CommonDataModel/cdm54.html#PERSON</obo:IAO_0000119>
@@ -9632,7 +9632,7 @@ This code is mapped to a Standard Condition Concept in the Standardized Vocabula
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>The date and time of death of a person.</obo:IAO_0000115>
+        <obo:IAO_0000115>The date of death of a person.</obo:IAO_0000115>
         <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.ohdsi.org/web/wiki/doku.php?id=documentation:cdm:person</obo:IAO_0000119>
         <obo:IAO_0000119>https://www.ohdsi.org/web/wiki/doku.php?id=documentation:cdm:single-page</obo:IAO_0000119>
