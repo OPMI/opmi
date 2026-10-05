@@ -21,7 +21,7 @@
      xmlns:oboInOWL="http://www.geneontology.org/formats/oboInOWL#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/opmi.owl">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/opmi-edit.owl">
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opmi/CHEBI_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opmi/CMO_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opmi/DRON_imports.owl"/>
@@ -341,6 +341,14 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00000448 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00000448">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+    </rdf:Description>
     
 
 
@@ -9156,6 +9164,7 @@ Daily dose = Acetaminophen dose/drug duration</obo:IAO_0000112>
     <!-- http://purl.obolibrary.org/obo/OPMI_0000679 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000679">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
         <rdfs:comment xml:lang="en">clinical note</rdfs:comment>
         <rdfs:label>clinical note</rdfs:label>
     </owl:Class>
@@ -9668,6 +9677,7 @@ This code is mapped to a Standard Condition Concept in the Standardized Vocabula
     <!-- http://purl.obolibrary.org/obo/OPMI_0000709 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000709">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
         <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
         <rdfs:label xml:lang="en">geographic coordinate</rdfs:label>
     </owl:Class>
@@ -9677,6 +9687,7 @@ This code is mapped to a Standard Condition Concept in the Standardized Vocabula
     <!-- http://purl.obolibrary.org/obo/OPMI_0000710 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000710">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000709"/>
         <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
         <rdfs:label xml:lang="en">latitude</rdfs:label>
     </owl:Class>
@@ -9686,6 +9697,7 @@ This code is mapped to a Standard Condition Concept in the Standardized Vocabula
     <!-- http://purl.obolibrary.org/obo/OPMI_0000711 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000711">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000709"/>
         <obo:IAO_0000117>Yujia Tian</obo:IAO_0000117>
         <rdfs:label xml:lang="en">longitude</rdfs:label>
     </owl:Class>
@@ -10132,6 +10144,107 @@ This code is mapped to a Standard Condition Concept in the Standardized Vocabula
         <obo:NCIT_P207>C0282462</obo:NCIT_P207>
         <obo:OPMI_0000364>C15603</obo:OPMI_0000364>
         <rdfs:label xml:lang="en">Phase 4 clinical trial</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_9000000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_9000000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000101"/>
+        <rdfs:label xml:lang="en">CT image</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_9000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_9000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000101"/>
+        <rdfs:label xml:lang="en">CT series</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_9000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_9000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <rdfs:label xml:lang="en">DICOM segmentation specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_9000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_9000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <rdfs:label xml:lang="en">DICOM softcopy presentation state specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_9000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_9000005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000832"/>
+        <obo:IAO_0000118>CT scanner</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">computed tomography scanner</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_9000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_9000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:label xml:lang="en">CT scanner parameter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_9000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_9000007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_9000006"/>
+        <obo:IAO_0000118>effective mAs</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">CT effective milli-ampere second</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_9000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_9000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_9000006"/>
+        <rdfs:label xml:lang="en">CT kilo volt peak</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_9000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_9000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_9000006"/>
+        <rdfs:label xml:lang="en">CT milli-ampere second</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_9000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_9000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_9000006"/>
+        <rdfs:label xml:lang="en">CT pitch</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_9000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_9000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_9000006"/>
+        <rdfs:label xml:lang="en">CT table feed per rotation</rdfs:label>
     </owl:Class>
     
 
