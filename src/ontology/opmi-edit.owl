@@ -10152,6 +10152,8 @@ This code is mapped to a Standard Condition Concept in the Standardized Vocabula
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_9000000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000101"/>
+        <obo:IAO_0000115>Two-dimensional, digital cross-sectional matrix that represents the spatial distribution of linear X-ray attenuation coefficients (μ) within a cross-section of the body.</obo:IAO_0000115>
+        <obo:IAO_0000119>Bushberg, J. T., Seibert, J. A., Leidholdt, E. M., &amp; Boone, J. M. (2011/2020). The Essential Physics of Medical Imaging (3rd &amp; 4th eds.). Lippincott Williams &amp; Wilkins.</obo:IAO_0000119>
         <rdfs:label xml:lang="en">CT image</rdfs:label>
     </owl:Class>
     
@@ -10161,6 +10163,9 @@ This code is mapped to a Standard Condition Concept in the Standardized Vocabula
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_9000001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000101"/>
+        <obo:IAO_0000115>An ordered collection of individual 2D cross-sectional CT image slices acquired during a single continuous scan phase, using uniform acquisition settings, or generated through a specific image reconstruction process.</obo:IAO_0000115>
+        <obo:IAO_0000118>CT image series</obo:IAO_0000118>
+        <obo:IAO_0000119>Bushberg, J. T., Seibert, J. A., Leidholdt, E. M., &amp; Boone, J. M. (2011/2020). The Essential Physics of Medical Imaging (3rd &amp; 4th eds.). Lippincott Williams &amp; Wilkins.</obo:IAO_0000119>
         <rdfs:label xml:lang="en">CT series</rdfs:label>
     </owl:Class>
     
@@ -10188,7 +10193,9 @@ This code is mapped to a Standard Condition Concept in the Standardized Vocabula
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_9000005">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000832"/>
+        <obo:IAO_0000115>Medical imaging system that combines rotating X-ray equipment with digital detectors and computer algorithms to produce detailed, cross-sectional tomographic images (&quot;slices&quot;) of internal bodily structures.</obo:IAO_0000115>
         <obo:IAO_0000118>CT scanner</obo:IAO_0000118>
+        <obo:IAO_0000119>Bushberg, J. T., Seibert, J. A., Leidholdt, E. M., &amp; Boone, J. M. (2011/2020). The Essential Physics of Medical Imaging (3rd &amp; 4th eds.). Lippincott Williams &amp; Wilkins.</obo:IAO_0000119>
         <rdfs:label xml:lang="en">computed tomography scanner</rdfs:label>
     </owl:Class>
     
@@ -10198,6 +10205,9 @@ This code is mapped to a Standard Condition Concept in the Standardized Vocabula
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_9000006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000115>Technical variables and operational settings adjusted on a Computed Tomography (CT) system to control X-ray generation, table movement, image reconstruction, and display. These settings directly determine the balance between patient radiation dose and diagnostic image quality (such as resolution, noise, and contrast).</obo:IAO_0000115>
+        <obo:IAO_0000119>Bushberg, J. T., Seibert, J. A., Leidholdt, E. M., &amp; Boone, J. M. (2011/2020). The Essential Physics of Medical Imaging (3rd &amp; 4th eds.). Lippincott Williams &amp; Wilkins.</obo:IAO_0000119>
+        <obo:IAO_0000119>PMID:28524933</obo:IAO_0000119>
         <rdfs:label xml:lang="en">CT scanner parameter</rdfs:label>
     </owl:Class>
     
@@ -10207,7 +10217,10 @@ This code is mapped to a Standard Condition Concept in the Standardized Vocabula
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_9000007">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_9000006"/>
+        <obo:IAO_0000115>Calculated parameter in helical/spiral Computed Tomography that normalizes total exposure relative to table motion (pitch).</obo:IAO_0000115>
         <obo:IAO_0000118>effective mAs</obo:IAO_0000118>
+        <obo:IAO_0000119>European Guidelines on Quality Criteria for Computed Tomography (EUR 16262 EN, 1999/2000).</obo:IAO_0000119>
+        <obo:IAO_0000119>PMID:10587202</obo:IAO_0000119>
         <rdfs:label xml:lang="en">CT effective milli-ampere second</rdfs:label>
     </owl:Class>
     
@@ -10217,6 +10230,11 @@ This code is mapped to a Standard Condition Concept in the Standardized Vocabula
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_9000008">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_9000006"/>
+        <obo:IAO_0000115>The maximum voltage applied across the X-ray tube. Controls energy/penetration power of the X-ray beam and image contrast.</obo:IAO_0000115>
+        <obo:IAO_0000118>Kilovoltage Peak</obo:IAO_0000118>
+        <obo:IAO_0000118>kVp</obo:IAO_0000118>
+        <obo:IAO_0000119>Bushberg, J. T., Seibert, J. A., Leidholdt, E. M., &amp; Boone, J. M. (2011/2020). The Essential Physics of Medical Imaging (3rd &amp; 4th eds.). Lippincott Williams &amp; Wilkins.</obo:IAO_0000119>
+        <obo:IAO_0000119>European Guidelines on Quality Criteria for Computed Tomography (EUR 16262 EN, 1999/2000).</obo:IAO_0000119>
         <rdfs:label xml:lang="en">CT kilo volt peak</rdfs:label>
     </owl:Class>
     
@@ -10226,6 +10244,8 @@ This code is mapped to a Standard Condition Concept in the Standardized Vocabula
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_9000009">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_9000006"/>
+        <obo:IAO_0000115>Quantitative metric in Computed Tomography (and general radiography) that represents the total quantity of X-ray photons generated by the tube during an exposure or scan rotation.</obo:IAO_0000115>
+        <obo:IAO_0000119>Bushberg, J. T., Seibert, J. A., Leidholdt, E. M., &amp; Boone, J. M. (2011/2020). The Essential Physics of Medical Imaging (3rd &amp; 4th eds.). Lippincott Williams &amp; Wilkins.</obo:IAO_0000119>
         <rdfs:label xml:lang="en">CT milli-ampere second</rdfs:label>
     </owl:Class>
     
@@ -10235,6 +10255,9 @@ This code is mapped to a Standard Condition Concept in the Standardized Vocabula
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_9000010">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_9000006"/>
+        <obo:IAO_0000115>The ratio of table feed per 360 degree tube rotation to total beam collimation. A pitch greater than 1 speeds up the scan and reduces dose; a pitch less than 1 increases spatial resolution and dose.</obo:IAO_0000115>
+        <obo:IAO_0000119>Bushberg, J. T., Seibert, J. A., Leidholdt, E. M., &amp; Boone, J. M. (2011/2020). The Essential Physics of Medical Imaging (3rd &amp; 4th eds.). Lippincott Williams &amp; Wilkins.</obo:IAO_0000119>
+        <obo:IAO_0000119>European Guidelines on Quality Criteria for Computed Tomography (EUR 16262 EN, 1999/2000).</obo:IAO_0000119>
         <rdfs:label xml:lang="en">CT pitch</rdfs:label>
     </owl:Class>
     
@@ -10244,6 +10267,8 @@ This code is mapped to a Standard Condition Concept in the Standardized Vocabula
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_9000011">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_9000006"/>
+        <obo:IAO_0000115>Linear distance (measured in millimeters) that the CT patient couch/table advances along the longitudinal axis (z-axis) into the gantry during one complete 360 degree rotation of the X-ray tube assembly.</obo:IAO_0000115>
+        <obo:IAO_0000119>Bushberg, J. T., Seibert, J. A., Leidholdt, E. M., &amp; Boone, J. M. (2011/2020). The Essential Physics of Medical Imaging (3rd &amp; 4th eds.). Lippincott Williams &amp; Wilkins.</obo:IAO_0000119>
         <rdfs:label xml:lang="en">CT table feed per rotation</rdfs:label>
     </owl:Class>
     
