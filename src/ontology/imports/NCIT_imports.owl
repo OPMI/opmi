@@ -5518,6 +5518,83 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCIT_C17204 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C17204">
+        <rdfs:label>Computed Tomography</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <oboInOwl:hasExactSynonym>Computerized Tomography</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P207>C0040405</obo:NCIT_P207>
+        <obo:NCIT_P106>Diagnostic Procedure</obo:NCIT_P106>
+        <oboInOwl:hasExactSynonym>Computed Axial Tomography</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>A method of examining structures within the body by scanning them with X rays and using a computer to construct a series of cross-sectional scans along a single axis.</obo:IAO_0000115>
+        <obo:NCIT_P322>DIPG/DMG</obo:NCIT_P322>
+        <obo:NCIT_P366>Computed_Tomography</obo:NCIT_P366>
+        <obo:NCIT_P325>An imaging technique for examining structures within the body by scanning them with X rays and using a computer to construct a series of cross-sectional scans along a single axis.</obo:NCIT_P325>
+        <obo:NCIT_P322>PCDC</obo:NCIT_P322>
+        <oboInOwl:hasExactSynonym>computerized tomography</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P322>GDC</obo:NCIT_P322>
+        <obo:NCIT_P322>MRCT-Ctr</obo:NCIT_P322>
+        <oboInOwl:hasExactSynonym>CT</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>CAT scan</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Computerized axial tomography (procedure)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>computed tomography</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P108>Computed Tomography</obo:NCIT_P108>
+        <oboInOwl:hasExactSynonym>Computed Tomography</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P322>OORO</obo:NCIT_P322>
+        <oboInOwl:hasExactSynonym>CT Scan</oboInOwl:hasExactSynonym>
+        <obo:NCIT_NHC0>C17204</obo:NCIT_NHC0>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <oboInOwl:hasExactSynonym>Computerized Axial Tomography</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P325>A way to take pictures of the inside of a person&#39;s body using a type of radiation and a computer. (https://mrctcenter.org/glossaryterm/computerized-tomography-ct-scan/)</obo:NCIT_P325>
+        <oboInOwl:hasExactSynonym>CAT</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P322>mCode</obo:NCIT_P322>
+        <oboInOwl:hasExactSynonym>Diagnostic CAT Scan Service Type</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>CT scan</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P107>Computed Tomography</obo:NCIT_P107>
+        <oboInOwl:hasExactSynonym>CT SCAN</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P322>CTRP</obo:NCIT_P322>
+        <oboInOwl:hasExactSynonym>tomography</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P322>FDA</obo:NCIT_P322>
+        <obo:NCIT_P375>CT Scan</obo:NCIT_P375>
+        <oboInOwl:hasExactSynonym>computerized axial tomography</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Diagnostic CAT Scan</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Computerized Tomography (CT) scan</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P325>A series of detailed pictures of areas inside the body; the pictures are created by a computer linked to an x-ray machine.</obo:NCIT_P325>
+        <oboInOwl:hasExactSynonym>CAT Scan</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C101858"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C116977"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C118169"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C157711"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C174237"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C174261"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C177537"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C178115"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C178127"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C179478"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C179481"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C183088"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C183096"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C183102"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C186320"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C186325"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C186333"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C186341"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C192234"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C193006"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C193245"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C203912"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C85492"/>
+        <obo:NCIT_A28 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C117438"/>
+        <obo:NCIT_A32 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17369"/>
+        <obo:NCIT_A35 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C178084"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCIT_C172444 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C172444">
@@ -30735,6 +30812,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000070 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000070"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OGMS_0000083 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000083"/>
@@ -30754,4 +30837,5 @@ http://purl.obolibrary.org/obo/CMO_0000035
 http://purl.obolibrary.org/obo/CMO_0002478
 http://purl.obolibrary.org/obo/CMO_0001088
 http://purl.obolibrary.org/obo/CMO_0000000
+http://purl.obolibrary.org/obo/OBI_0000070
 -->
