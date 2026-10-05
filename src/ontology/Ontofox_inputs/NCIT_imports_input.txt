@@ -50,6 +50,9 @@ http://purl.obolibrary.org/obo/NCIT_C74737 #ferritin
 http://purl.obolibrary.org/obo/NCIT_C147385 #fibrosis score
 http://purl.obolibrary.org/obo/NCIT_C174123 #Controlled Attenuation Parameter
 
+#DICOM
+http://purl.obolibrary.org/obo/NCIT_C17204 #Computed Tomography
+
 [Top level source term URIs and target direct superclass URIs]
 
 http://purl.obolibrary.org/obo/NCIT_C17005 #population group
@@ -105,6 +108,10 @@ subClassOf http://purl.obolibrary.org/obo/CMO_0001088 #liver fibrotic lesion mea
 http://purl.obolibrary.org/obo/NCIT_C174123 #Controlled Attenuation Parameter
 subClassOf http://purl.obolibrary.org/obo/CMO_0000000 #Measurement
 
+
+#DICOM
+http://purl.obolibrary.org/obo/NCIT_C17204 #Computed Tomography
+subClassOf http://purl.obolibrary.org/obo/OBI_0000070 #assay
 
 [Source term retrieval setting]
 includeComputedIntermediates
